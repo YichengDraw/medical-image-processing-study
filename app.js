@@ -2,15 +2,17 @@
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
-const S={data:null,deck:null,page:1,cache:new Map(),pending:new Map(),task:null,seq:0,fit:"page",panel:true,star:new Set(),matches:[],sel:0,collapsed:false};
+const S={data:null,deck:null,page:1,cache:new Map(),pending:new Map(),task:null,seq:0,fit:"page",panel:true,star:new Set(),matches:[],sel:0,collapsed:false,libraryCollapsed:false,theme:"light"};
 let saved={};try{saved=JSON.parse(localStorage.getItem("bmeb316-state")||"{}")}catch{}
 if(Array.isArray(saved.bookmarks))S.star=new Set(saved.bookmarks);
 if(saved.panel!==undefined)S.panel=!!saved.panel;
 if(saved.fit==="width")S.fit="width";
+if(saved.libraryCollapsed===true)S.libraryCollapsed=true;
+if(saved.theme==="dark")S.theme="dark";
 const deck=id=>S.data&&S.data.decks.find(x=>x.id===id);
 const slide=()=>S.data&&S.deck&&S.data.slides[S.deck.id][S.page-1];
 const key=(d,p)=>d+":"+p;
-function save(){try{localStorage.setItem("bmeb316-state",JSON.stringify({last:[S.deck.id,S.page],bookmarks:[...S.star],panel:S.panel,fit:S.fit}))}catch{}}
+function save(){try{localStorage.setItem("bmeb316-state",JSON.stringify({last:[S.deck.id,S.page],bookmarks:[...S.star],panel:S.panel,fit:S.fit,libraryCollapsed:S.libraryCollapsed,theme:S.theme}))}catch{}}
 function route(){let h=decodeURIComponent(location.hash.slice(1)).match(/^([a-z0-9]+)\/(\d+)$/i);if(h&&deck(h[1]))return [h[1],Number(h[2])];return saved.last&&deck(saved.last[0])?saved.last:["lec1",1]}
 function routeWrite(id,p,replace=false){const h="#"+id+"/"+p;if(location.hash===h)return;if(replace)history.replaceState(null,"",h);else history.pushState(null,"",h)}
 function navInit(){
@@ -110,8 +112,43 @@ async function draw(){
   error.textContent="幻灯片加载失败："+String(ex?.message||ex)+"。可点击「原始 PDF」查看文件。";
  }
 }
-function closeLibrary(){$("#library").classList.remove("open");$("#scrim").classList.add("hidden")}
-function openLibrary(){$("#library").classList.add("open");$("#scrim").classList.remove("hidden")}
+function updateLibraryToggle(){
+ const collapsed=S.libraryCollapsed;
+ const mobile=window.matchMedia("(max-width: 750px)").matches;
+ const expanded=mobile?$("#library").classList.contains("open"):!collapsed;
+ $("#app").classList.toggle("library-collapsed",collapsed);
+ $("#menu-trigger").setAttribute("aria-expanded",String(expanded));
+ $("#menu-trigger").setAttribute("aria-label",mobile?(expanded?"收起课程目录":"打开课程目录"):(collapsed?"展开左侧目录":"收起左侧目录"));
+ $("#menu-trigger").title=mobile?"打开/收起课程目录":(collapsed?"展开左侧目录（]）":"收起左侧目录（]）");
+}
+function toggleLibrary(){
+ if(window.matchMedia("(max-width: 750px)").matches){
+  if($("#library").classList.contains("open"))closeLibrary();else openLibrary();
+  return;
+ }
+ S.libraryCollapsed=!S.libraryCollapsed;
+ updateLibraryToggle();
+ save();
+ // Re-fit PDF after available width changes; ResizeObserver covers subsequent resizes.
+ requestAnimationFrame(()=>setTimeout(()=>{if(S.deck)draw()},80));
+}
+function updateTheme(){
+ const dark=S.theme==="dark";
+ document.documentElement.setAttribute("data-theme",S.theme);
+ $("#theme-toggle").textContent=dark?"☀":"☾";
+ $("#theme-toggle").setAttribute("aria-label",dark?"切换亮色模式":"切换暗色模式");
+ $("#theme-toggle").setAttribute("aria-pressed",String(dark));
+ $("#theme-toggle").title=dark?"切换亮色模式":"切换暗色模式（纯黑背景）";
+ const meta=document.querySelector('meta[name="theme-color"]');
+ if(meta)meta.setAttribute("content",dark?"#000000":"#f7f8fc");
+}
+function toggleTheme(){
+ S.theme=S.theme==="dark"?"light":"dark";
+ updateTheme();
+ save();
+}
+function closeLibrary(){$("#library").classList.remove("open");$("#scrim").classList.add("hidden");updateLibraryToggle()}
+function openLibrary(){$("#library").classList.add("open");$("#scrim").classList.remove("hidden");updateLibraryToggle()}
 function navigate(id,p,write=true){
  const d=deck(id);if(!d)return;
  const changed=S.deck?.id!==d.id;S.deck=d;S.page=clamp(Math.round(Number(p)||1),1,d.pages);
@@ -193,6 +230,7 @@ function keydown(e){
  else if(e.key==="ArrowRight"||e.key.toLowerCase()==="j"){e.preventDefault();turn(1)}
  else if(e.key==="ArrowLeft"||e.key.toLowerCase()==="k"){e.preventDefault();turn(-1)}
  else if(e.key==="["){e.preventDefault();togglePanel()}
+ else if(e.key==="]"){e.preventDefault();toggleLibrary()}
  else if(e.key.toLowerCase()==="f"){e.preventDefault();$("#fit-mode").click()}
 }
 function bind(){
@@ -217,11 +255,14 @@ function bind(){
  $("#exam-close").addEventListener("click",()=>closeModal("#exam-modal"));
  $("#exam-dismiss").addEventListener("click",()=>closeModal("#exam-modal"));
  $("#exam-goto").addEventListener("click",()=>{closeModal("#exam-modal");jumpExam()});
- $("#menu-trigger").addEventListener("click",openLibrary);
+ $("#menu-trigger").addEventListener("click",toggleLibrary);
+ $("#library-collapse").addEventListener("click",toggleLibrary);
+ $("#theme-toggle").addEventListener("click",toggleTheme);
  $("#library-close").addEventListener("click",closeLibrary);
  $("#scrim").addEventListener("click",closeLibrary);
  document.querySelectorAll(".modal-overlay").forEach(m=>m.addEventListener("mousedown",e=>{if(e.target===m)m.classList.add("hidden")}));
  document.addEventListener("keydown",keydown);
+ window.addEventListener("resize",updateLibraryToggle);
  window.addEventListener("popstate",()=>{const [id,p]=route();navigate(id,p,false)});
  window.addEventListener("hashchange",()=>{const [id,p]=route();if(S.deck?.id!==id||S.page!==p)navigate(id,p,false)});
  let frame=false;new ResizeObserver(()=>{if(frame)return;frame=true;requestAnimationFrame(()=>{frame=false;if(S.deck)draw()})}).observe($("#slide-stage"));
@@ -231,7 +272,7 @@ function bind(){
   const response=await fetch("data/content.json");if(!response.ok)throw Error("课程索引请求失败："+response.status);
   S.data=await response.json();$("#fit-mode").textContent=S.fit==="page"?"适应页面":"适应宽度";
   if(window.pdfjsLib)pdfjsLib.GlobalWorkerOptions.workerSrc="assets/vendor/pdf.worker.min.js";
-  navInit();bind();const [id,p]=route();navigate(id,p,false);routeWrite(id,p,true);
+  navInit();bind();updateLibraryToggle();updateTheme();const [id,p]=route();navigate(id,p,false);routeWrite(id,p,true);
  }catch(error){
   console.error(error);$("#slide-title").textContent="网站初始化失败";
   $("#pdf-loading").classList.add("hidden");$("#pdf-error").classList.remove("hidden");$("#pdf-error").textContent=String(error);

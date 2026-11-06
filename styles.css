@@ -36,3 +36,161 @@ button,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.33;curs
 /* Hide drawer controls on desktop; show them only when the layout becomes mobile. */
 .mobile-only{display:none!important}
 @media (max-width:750px){.mobile-only{display:inline-flex!important}}
+
+
+/* Desktop library toggle: collapse the full navigation column without touching the right notes. */
+.desktop-only{display:inline-flex}
+.library-head .desktop-only{margin-left:auto;flex:0 0 29px;min-width:29px;height:29px;font-size:21px}
+.library-trigger{flex:none;font-size:18px;line-height:1}
+@media(min-width:751px){
+  #app.library-collapsed .library{display:none}
+  #app.library-collapsed .main-shell{width:100%}
+}
+@media(max-width:750px){
+  .desktop-only{display:none!important}
+  #app.library-collapsed .library{display:flex}
+}
+
+/* AMOLED/true-black theme. The original PDFs intentionally remain unchanged and white. */
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#000000;
+  --paper:#000000;
+  --ink:#e8ecf5;
+  --muted:#a3acc0;
+  --line:#282828;
+  --accent:#91a7ff;
+  --accent-bg:#151b30;
+  --cyan:#65cbcb;
+  --peach:#f6ad7c;
+  --shadow:none;
+}
+:root[data-theme="dark"] body,
+:root[data-theme="dark"] #app,
+:root[data-theme="dark"] .main-shell,
+:root[data-theme="dark"] .workspace,
+:root[data-theme="dark"] .library,
+:root[data-theme="dark"] .topbar,
+:root[data-theme="dark"] .slides-panel,
+:root[data-theme="dark"] .slide-controls,
+:root[data-theme="dark"] .companion-panel,
+:root[data-theme="dark"] .search-modal,
+:root[data-theme="dark"] .exam-modal,
+:root[data-theme="dark"] .slide-stage,
+:root[data-theme="dark"] .pdf-loading{background:#000000;color:var(--ink)}
+:root[data-theme="dark"] .topbar{background:#000000;border-bottom-color:var(--line)}
+:root[data-theme="dark"] .library{border-right-color:var(--line)}
+:root[data-theme="dark"] .slides-panel,
+:root[data-theme="dark"] .companion-panel{border-color:#303030;box-shadow:none}
+:root[data-theme="dark"] .slides-topline,
+:root[data-theme="dark"] .companion-top,
+:root[data-theme="dark"] .slide-controls,
+:root[data-theme="dark"] .companion-footer,
+:root[data-theme="dark"] .companion-intro,
+:root[data-theme="dark"] .evidence-container,
+:root[data-theme="dark"] .library-bottom,
+:root[data-theme="dark"] .page-index-wrap,
+:root[data-theme="dark"] .page-excerpt{border-color:#282828}
+:root[data-theme="dark"] .page-excerpt{border-top-color:#2b2b2b}
+:root[data-theme="dark"] .app-footer,
+:root[data-theme="dark"] .slide-summary,
+:root[data-theme="dark"] .progress-label,
+:root[data-theme="dark"] .status-info,
+:root[data-theme="dark"] .bottom-foot,
+:root[data-theme="dark"] .context-info,
+:root[data-theme="dark"] .concept-only,
+:root[data-theme="dark"] .companion-intro p,
+:root[data-theme="dark"] .companion-footer,
+:root[data-theme="dark"] .companion-kicker{color:#979faf}
+:root[data-theme="dark"] .brand-text strong,
+:root[data-theme="dark"] .companion-intro h2,
+:root[data-theme="dark"] .guide-main,
+:root[data-theme="dark"] .evidence-heading h3,
+:root[data-theme="dark"] .exam-top h2,
+:root[data-theme="dark"] .result-title{color:#edf0f9}
+:root[data-theme="dark"] .section-cap,
+:root[data-theme="dark"] .guide-heading,
+:root[data-theme="dark"] .page-index-heading,
+:root[data-theme="dark"] .nav-header,
+:root[data-theme="dark"] .page-excerpt summary,
+:root[data-theme="dark"] .page-excerpt li,
+:root[data-theme="dark"] .result-desc,
+:root[data-theme="dark"] .modal-footer{color:#a7b0c1}
+:root[data-theme="dark"] .crumb-base,
+:root[data-theme="dark"] .eyebrow,
+:root[data-theme="dark"] .deck-desc,
+:root[data-theme="dark"] .deck-number{color:#8995aa}
+:root[data-theme="dark"] .crumb-current,
+:root[data-theme="dark"] .heading-small,
+:root[data-theme="dark"] .secondary-link{color:#a7b8ff}
+:root[data-theme="dark"] .quick-search,
+:root[data-theme="dark"] .nav-count,
+:root[data-theme="dark"] .icon-btn,
+:root[data-theme="dark"] .mini-btn,
+:root[data-theme="dark"] .nav-arrow,
+:root[data-theme="dark"] .outline-action,
+:root[data-theme="dark"] .small-copy,
+:root[data-theme="dark"] .page-control input,
+:root[data-theme="dark"] .shortcut-hint kbd,
+:root[data-theme="dark"] .source-badge,
+:root[data-theme="dark"] .keyword{background:#101010;border-color:#303030;color:#b3bdcf}
+:root[data-theme="dark"] .quick-search kbd{background:#191919;border-color:#353535;color:#a4abc0}
+:root[data-theme="dark"] .deck-button,
+:root[data-theme="dark"] .page-index-entry{color:#abb6cb}
+:root[data-theme="dark"] .deck-button:hover,
+:root[data-theme="dark"] .page-index-entry:hover{background:#121212}
+:root[data-theme="dark"] .deck-button.active,
+:root[data-theme="dark"] .page-index-entry.active{background:#151c32;color:#afc0ff;border-color:#29375c}
+:root[data-theme="dark"] .deck-button.active .deck-desc,
+:root[data-theme="dark"] .page-index-entry .idx-num{color:#9aa9c4}
+:root[data-theme="dark"] .mini-btn:hover,
+:root[data-theme="dark"] .icon-btn:hover,
+:root[data-theme="dark"] .outline-action:hover,
+:root[data-theme="dark"] .nav-arrow:hover:not(:disabled){background:#17213a;border-color:#536caa;color:#baccff}
+:root[data-theme="dark"] .text-action{color:#a9b8d0}
+:root[data-theme="dark"] .avatar{background:#18213d;color:#b0c0ff}
+:root[data-theme="dark"] .progress-track{background:#292929}
+:root[data-theme="dark"] .progress-fill{background:linear-gradient(90deg,#607ae9,#9ab0fa)}
+:root[data-theme="dark"] .page-label,
+:root[data-theme="dark"] .total-pages{color:#a5aec1}
+:root[data-theme="dark"] .control-split{background:#343434}
+:root[data-theme="dark"] .slide-stage{border:0}
+:root[data-theme="dark"] .slide-stage canvas{background:#fff;box-shadow:0 6px 30px rgba(0,0,0,.75)}
+:root[data-theme="dark"] .spinner{border-color:#2f3450;border-top-color:#a0b2ff}
+:root[data-theme="dark"] .example-box{background:#0e172c;border-left-color:#6d8af5}
+:root[data-theme="dark"] .example-box b{color:#aac0ff}
+:root[data-theme="dark"] .example-box p{color:#c8d5f4}
+:root[data-theme="dark"] .pitfall-box{background:#20170d;color:#dec29e}
+:root[data-theme="dark"] .pitfall-box strong{color:#efbb82}
+:root[data-theme="dark"] .evidence-box{background:#091b19;border-color:#21423d}
+:root[data-theme="dark"] .evidence-box p{color:#c8e7e0}
+:root[data-theme="dark"] .evidence-meta{border-top-color:#25463e;color:#94c6ba}
+:root[data-theme="dark"] .evidence-state{background:#17312d;color:#93ded1}
+:root[data-theme="dark"] .evidence-state.exam{background:#2a1c0d;color:#efbb7a}
+:root[data-theme="dark"] .source-badge.verified{background:#10211f;color:#9cd9ce;border-color:#28453d}
+:root[data-theme="dark"] .evidence-source-more,
+:root[data-theme="dark"] .evidence-source-more p{color:#8fb5ad}
+:root[data-theme="dark"] .modal-overlay{background:#000c}
+:root[data-theme="dark"] .modal-head,
+:root[data-theme="dark"] .modal-footer{border-color:#282828}
+:root[data-theme="dark"] .modal-head input{background:#000;color:#eef1f9}
+:root[data-theme="dark"] .modal-head input::placeholder{color:#7b869a}
+:root[data-theme="dark"] .search-result{color:#c8d2e6}
+:root[data-theme="dark"] .search-result:hover,
+:root[data-theme="dark"] .search-result.active{background:#131a2a;border-color:#263753}
+:root[data-theme="dark"] .result-page{background:#202a49;color:#b5c5ff}
+:root[data-theme="dark"] .assessment-grid div{background:#141414}
+:root[data-theme="dark"] .assessment-grid b,
+:root[data-theme="dark"] .exam-insight strong{color:#aec1ff}
+:root[data-theme="dark"] .assessment-grid span{color:#a1aabd}
+:root[data-theme="dark"] .exam-insight,
+:root[data-theme="dark"] .exam-insight.secondary{background:#0e1424;border-color:#29324e}
+:root[data-theme="dark"] .exam-insight.secondary{background:#101010;border-color:#292929}
+:root[data-theme="dark"] .exam-insight p,
+:root[data-theme="dark"] .exam-insight small{color:#b6c2d6}
+:root[data-theme="dark"] .exam-insight.secondary strong{color:#bac7dd}
+:root[data-theme="dark"] .primary-action{background:#5368c7;border-color:#5368c7;color:#fff}
+:root[data-theme="dark"] .primary-action:hover{background:#6c83e4}
+:root[data-theme="dark"] .scrim{background:#000a}
+:root[data-theme="dark"] *{scrollbar-color:#363636 #000}
+:root[data-theme="dark"] *:focus-visible{outline-color:#90a7ff}

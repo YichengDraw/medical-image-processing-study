@@ -3,11 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#f7f8fc">
   <meta name="description" content="BMEB316 医学图像处理：原始课件与课堂讲解逐页对照，考核重点有录音来源。">
   <title>BMEB316 · 逐页伴读</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%234b64d8'/%3E%3Cpath d='M18 20h29v6H18zm0 12h29v6H18zm0 12h19v6H18z' fill='white'/%3E%3C/svg%3E">
+  <script>
+    // Apply a saved dark theme before the stylesheet paints.
+    try {
+      if (JSON.parse(localStorage.getItem("bmeb316-state") || "{}").theme === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    } catch (_) {}
+  </script>
   <link rel="stylesheet" href="styles.css">
   <script defer src="assets/vendor/pdf.min.js"></script>
   <script defer src="app.js"></script>
@@ -18,6 +26,7 @@
       <div class="library-head">
         <div class="brand-icon"><span class="brand-grid"><i></i><i></i><i></i><i></i></span></div>
         <div class="brand-text"><span class="eyebrow">SUSTech · BMEB316</span><strong>医学图像处理</strong></div>
+        <button id="library-collapse" class="icon-btn desktop-only" aria-label="收起左侧目录" title="收起目录（]）">‹</button>
         <button id="library-close" class="icon-btn mobile-only" aria-label="收起目录">✕</button>
       </div>
       <div class="library-meta"><span class="live-dot"></span> 2026 FALL / LEARNING SPACE</div>
@@ -37,11 +46,12 @@
     <div class="main-shell">
       <header class="topbar">
         <div class="top-left">
-          <button id="menu-trigger" class="icon-btn mobile-only" aria-label="打开课程目录">☰</button>
+          <button id="menu-trigger" class="icon-btn library-trigger" aria-label="收起左侧目录" aria-expanded="true" title="收起/展开左侧目录（]）">☰</button>
           <div class="breadcrumbs"><span class="crumb-base">MY COURSES</span><span class="crumb-sep">/</span><span id="crumb-lecture" class="crumb-current">Lecture 1</span></div>
         </div>
         <div class="top-right">
           <span id="note-status" class="status-info">—</span>
+          <button id="theme-toggle" class="icon-btn theme-switch" aria-label="切换暗色模式" aria-pressed="false" title="切换暗色模式">☾</button>
           <button id="star-btn" class="icon-btn star-btn" aria-label="收藏当前页" title="收藏当前页">☆</button>
           <button id="toggle-panel" class="text-action" title="切换侧栏快捷键 [">隐藏讲解</button>
           <div class="avatar" aria-label="Study Mode">S</div>
