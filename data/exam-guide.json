@@ -1,0 +1,1016 @@
+{
+  "categories": [
+    {
+      "id": "explicit",
+      "label": "明确考核"
+    },
+    {
+      "id": "quiz",
+      "label": "Quiz 复盘"
+    },
+    {
+      "id": "class",
+      "label": "课堂重点"
+    },
+    {
+      "id": "scope",
+      "label": "范围与选读"
+    },
+    {
+      "id": "arrangement",
+      "label": "项目与安排"
+    }
+  ],
+  "entries": [
+    {
+      "id": "assessment",
+      "category": "explicit",
+      "title": "成绩结构：考试、Quiz 与项目各占多少",
+      "body": "课件 Assessment 页列出：Attendance 5%，Quiz 10%，Projects 30%，Final Exam 40%，Final Presentation 15%。这只是成绩构成，不代表每一种题型的分值。来源是 Lecture 1 PDF 第9页；不要把项目30%与展示15%合并后误认为只交一份代码即可。",
+      "anchors": [
+        {
+          "deck": "lec1",
+          "page": 9
+        }
+      ],
+      "status": null,
+      "sourceIds": [],
+      "sourceType": "课件原文"
+    },
+    {
+      "id": "exam-concepts",
+      "category": "explicit",
+      "title": "期末重概念、方法与“为什么”",
+      "body": "老师明确说不要求硬背公式，重点是基本概念、方法选择和为什么这样做。这并不排除简单数值题：后面的 Quiz 复盘包含噪声平均后的标准差计算。复习时应能解释变量含义、条件和实际效果。",
+      "anchors": [
+        {
+          "deck": "lec1",
+          "page": 9
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec0911@06:42",
+        "rec0911@01:01:51"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "exam-no-code",
+      "category": "explicit",
+      "title": "考试不考写代码，但 Lab 仍需理解实现",
+      "body": "老师说考试不考代码，主要考基本概念。不能据此推成“不用做 Lab”：实践项目与考试是不同的考核部分。例：不要求手写 fft2，不等于不需要知道零频、相位和补零。",
+      "anchors": [
+        {
+          "deck": "lec1",
+          "page": 9
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec0911@01:00:14"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "quiz-format",
+      "category": "explicit",
+      "title": "Quiz 形式与期末的关系",
+      "body": "9月11日口头说明 Quiz 大约三次、以选择题考基本概念；后续 Quiz 复盘又说期末可能使用相同题目。应重看错题背后的概念，不把“可能复用”当成题目必然重复或完整题库承诺。转写中的总题数不够清楚，本网站不据此给出确定数量。",
+      "anchors": [
+        {
+          "deck": "lec1",
+          "page": 9
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec0911@40:52",
+        "recFourier@01:30"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "quiz-integrity",
+      "category": "explicit",
+      "title": "Quiz 复盘时不要拍照；这里只整理知识点",
+      "body": "老师在展示 Quiz 解析时明确禁止拍照，并称会按作弊看待。这里因此只归纳解释过的概念、错误原因与学习例子，不整理完整试卷、选项或供转发的题库。",
+      "anchors": [
+        {
+          "deck": "lec1",
+          "page": 9
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFourier@02:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "exam-dc",
+      "category": "explicit",
+      "title": "老师明确提到会考：零频分量表示什么",
+      "body": "采用课件常见的未归一化正 DFT 时，F(0,0)=Σf(x,y)=MN·平均灰度。零频是常量/DC 成分，不是边缘强度。例：4×4 图全为10，则 F(0,0)=160；除以16才是平均值10。老师在01:45:53明确说考试常问零频信号的含义。",
+      "anchors": [
+        {
+          "deck": "lec4p1",
+          "page": 53
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFourier@01:45:53"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "exam-phase",
+      "category": "explicit",
+      "title": "明确要懂：幅值、相位及功率不是一回事",
+      "body": "老师在频域总结中明确指出应理解幅值与相位的含义，不考逐项公式推导。F=|F|e^(jφ)：|F|给出不同频率的强弱，φ对重建的位置/结构关系很重要，功率是|F|²。例：3+4j的幅值5、功率25；不要把幅值图直接当相位图。",
+      "anchors": [
+        {
+          "deck": "lec4p1",
+          "page": 61
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFreq@21:22",
+        "recFreq@13:33"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "exam-padding",
+      "category": "explicit",
+      "title": "明确要懂：为什么补零，补到多大",
+      "body": "DFT 频域相乘对应循环卷积。要用它计算长度A、B序列的线性卷积，应至少补到A+B−1；二维按两个方向分别满足大小之和减一。老师特别说需要掌握这一概念。课件常用2M×2N是一个实现选择，不是所有核的唯一精确最小值。",
+      "anchors": [
+        {
+          "deck": "lec4p1",
+          "page": 69
+        },
+        {
+          "deck": "lec4p2",
+          "page": 12
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFreq@20:22",
+        "recFreq@21:22"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "q-eye",
+      "category": "quiz",
+      "title": "眼睛与相机：调焦方式的课堂对比",
+      "body": "老师复盘时强调眼睛通过晶状体形状改变焦距，晶状体到视网膜的距离基本固定；课件相机模型则通过镜头与成像面的相对位置调焦。注意这是课堂简化比较，不是断言所有现代相机的镜组都完全不改变有效焦距。",
+      "anchors": [
+        {
+          "deck": "lec2p1",
+          "page": 8
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFourier@02:24"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "q-sensor",
+      "category": "quiz",
+      "title": "单点探测器不是 CMOS 阵列",
+      "body": "Quiz 复盘区分单个光电二极管（photodiode）与由多个像素构成的传感器阵列。辨题时先看 single sensor 还是 array，不要因为手机常用 CMOS 就忽略“单个探测点”的限定。",
+      "anchors": [
+        {
+          "deck": "lec2p1",
+          "page": 27
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFourier@05:25"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "q-quantization",
+      "category": "quiz",
+      "title": "量化离散的是强度，不是空间位置",
+      "body": "Quantization 将连续幅值映射到有限代码；sampling 选择空间位置。两者共同完成数字化，但不能把“量化”的定义扩大为两者。例：512×512 是空间网格，8 bit 对应256个强度代码。",
+      "anchors": [
+        {
+          "deck": "lec2p2",
+          "page": 4
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFourier@03:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "q-dynamic-range",
+      "category": "quiz",
+      "title": "动态范围：范围与位深不要混为一谈",
+      "body": "老师在复盘中把可表示强度值的跨度对应到 dynamic range。还应区分数字代码范围与物理探测器动态范围：b bit给2^b个代码，但真实动态范围也受饱和与噪声底限制，不能只看bit数。",
+      "anchors": [
+        {
+          "deck": "lec2p2",
+          "page": 14
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFourier@03:00",
+        "recSampling@24:35"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "q-interpolation",
+      "category": "quiz",
+      "title": "缩放、旋转都可能需要插值",
+      "body": "几何变换决定新坐标落在哪里；新坐标通常不是整数像素中心，因此用 interpolation 估算灰度。例：输出位置落在原图x=1.5，要在邻点间估值；它不是增加新的实测结构。",
+      "anchors": [
+        {
+          "deck": "lec2p2",
+          "page": 22
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFourier@03:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "q-label-map",
+      "category": "quiz",
+      "title": "标签图重采样：优先保持类别值",
+      "body": "老师强调分割标签图通常用 nearest neighbor，避免普通线性/三次插值生成不存在的类别。例：0是背景、1是目标，插出0.4不是一个新组织类别。灰度图与标签图的目标不同，不能共用同一种默认插值。",
+      "anchors": [
+        {
+          "deck": "lec2p2",
+          "page": 22
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFourier@05:25",
+        "recSampling@39:07"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "q-connectivity",
+      "category": "quiz",
+      "title": "4连通与8连通：先确定允许的路径",
+      "body": "4连通只用上下左右，8连通还允许对角。扩大允许的连接不会增加前景连通块数。老师复盘过对角相连模式中的差别；课件第31/41页则有自己的二值例图，应按当前图逐点数，不把不同图的答案混用。",
+      "anchors": [
+        {
+          "deck": "lec2p2",
+          "page": 34
+        },
+        {
+          "deck": "lec2p2",
+          "page": 41
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFourier@08:02"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "q-average",
+      "category": "quiz",
+      "title": "多帧平均：标准差除以√N，不是N",
+      "body": "在图像对齐、噪声独立、零均值且加性的条件下，N帧平均的噪声方差为σ²/N，标准差为σ/√N。课堂复盘例子是16帧、每帧标准差8，平均后为2。系统误差或运动拖影不满足这种理想改善。",
+      "anchors": [
+        {
+          "deck": "lec2p2",
+          "page": 54
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFourier@06:37"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "q-monotonic",
+      "category": "quiz",
+      "title": "严格递增映射保留灰度排序，不保留直方图形状",
+      "body": "若r₁<r₂且T严格递增，则T(r₁)<T(r₂)。这是老师复盘强调的 pixel ordering，不代表直方图形状不变。数字化取整或饱和会让不同输入合并成同一个输出，因此讨论严格性要留意实现条件。",
+      "anchors": [
+        {
+          "deck": "lec3p1",
+          "page": 40
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFourier@04:25"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "q-histogram-matching",
+      "category": "quiz",
+      "title": "指定目标直方图用 matching，而非直接等同均衡化",
+      "body": "Histogram matching/specification 以给定分布为目标；equalization 以均匀分布为理想目标。老师复盘专门区分两者。有限、量化图像的直方图通常不能保证完美实现连续理论目标。",
+      "anchors": [
+        {
+          "deck": "lec3p1",
+          "page": 53
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFourier@03:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-information",
+      "category": "class",
+      "title": "更多像素、更平滑，不自动等于更准确",
+      "body": "老师把这个问题作为采样章主线：插值增加输出网格点，不增加原采集的独立细节；采集端光子预算固定时，更多像素还可能降低单像素信号。要一起看真实分辨率、噪声和任务。",
+      "anchors": [
+        {
+          "deck": "lec2p2",
+          "page": 6
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recSampling@03:04",
+        "recSampling@09:27"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-nyquist",
+      "category": "class",
+      "title": "采样条件与混叠：最高频率至少要被区分",
+      "body": "理解f_s>2f_max及其带限、均匀采样、理想重建前提。砖墙变假条纹说明欠采样会把高频伪装成低频。降低采样率之前先抑制超出新Nyquist上限的分量；事后插值不能可靠消除已发生的混叠。",
+      "anchors": [
+        {
+          "deck": "lec2p2",
+          "page": 12
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recSampling@15:24",
+        "recSampling@17:53",
+        "recSampling@38:25"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-storage",
+      "category": "class",
+      "title": "位深、假轮廓与存储量",
+      "body": "b bit有2^b个代码；低位深会出现带状假轮廓。未压缩单通道M×N×b bit，512×512×8 bit=256KiB，不计文件头与压缩。空间分辨率与灰度量化精度要分别比较。",
+      "anchors": [
+        {
+          "deck": "lec2p2",
+          "page": 17
+        },
+        {
+          "deck": "lec2p2",
+          "page": 18
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recSampling@27:19",
+        "recSampling@30:30"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-bilinear",
+      "category": "class",
+      "title": "双线性4邻点，双三次通常16邻点",
+      "body": "双线性在两个方向分别做线性插值，中心位置是四角的加权组合；双三次扩展到4×4邻域。更多邻点不意味着总是更真实，尤其标签图要保护离散类别。",
+      "anchors": [
+        {
+          "deck": "lec2p2",
+          "page": 25
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recSampling@42:51",
+        "recSampling@46:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-m-adjacency",
+      "category": "class",
+      "title": "m邻接：共享4邻域是否含前景决定对角连接",
+      "body": "两像素若本就4邻接，满足m邻接；若仅对角相邻，则要求它们共享的4邻域中没有V内像素。检查的是取值属于前景集合V的像素，不是共享位置是否在几何上存在。",
+      "anchors": [
+        {
+          "deck": "lec2p2",
+          "page": 36
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recSampling@01:07:10"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-distance",
+      "category": "class",
+      "title": "同一对像素，三种距离和物理距离可不同",
+      "body": "欧氏用直线长度，D4用坐标差绝对值之和，D8用两者最大值。若像素间距各向异性，要先乘各方向spacing再计算物理长度；不是任何图中都能把像素数直接当毫米。",
+      "anchors": [
+        {
+          "deck": "lec2p2",
+          "page": 48
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recSampling@01:23:03",
+        "recSampling@01:24:31",
+        "recSampling@01:26:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-signed",
+      "category": "class",
+      "title": "减法保留符号，显示范围另处理",
+      "body": "图像差值可能为负；不合适的无符号类型或显示截断会把信息丢掉。DSA等减影应用还需要配准。例：100−150=−50，直接截成0不能反映变化方向。",
+      "anchors": [
+        {
+          "deck": "lec2p2",
+          "page": 58
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recSampling@01:38:17"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-boundary",
+      "category": "class",
+      "title": "核、边界规则、输出尺寸是一套完整定义",
+      "body": "同一均值核配zero padding、replicate或wrap会产生不同边缘。补零可造成边缘暗化，循环延拓会使相对两边相互影响。不能只报“3×3滤波”而省略边界条件。",
+      "anchors": [
+        {
+          "deck": "lec3p2",
+          "page": 20
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recSpatial@11:00",
+        "recSpatial@12:10",
+        "recSpatial@16:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-convolution",
+      "category": "class",
+      "title": "相关与卷积只差什么？核翻转180°",
+      "body": "两者都是移动窗口加权求和，但卷积先旋转核180°。中心对称核时结果相同；非对称核可不同。老师用单位脉冲与不对称核演示区别，避免只背名称。",
+      "anchors": [
+        {
+          "deck": "lec3p2",
+          "page": 21
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recSpatial@18:32",
+        "recSpatial@21:58"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-mean-median",
+      "category": "class",
+      "title": "均值、中值要结合噪声与结构选",
+      "body": "均值降低独立随机波动但会模糊；中值对脉冲噪声较稳健，但会吞掉细线或小目标。老师展示了边缘、细结构和不同窗口形状；“中值总更好”不是课堂图示支持的结论。",
+      "anchors": [
+        {
+          "deck": "lec3p2",
+          "page": 38
+        },
+        {
+          "deck": "lec3p2",
+          "page": 44
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recSpatial@45:11",
+        "recSpatial@52:15",
+        "recSpatial@53:39"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-derivatives",
+      "category": "class",
+      "title": "一阶、二阶导数：看响应形状和噪声代价",
+      "body": "一阶导数对斜坡有响应，二阶对斜率变化响应明显；二阶在阶跃附近常出现正负双响应。高阶变化也会放大噪声。应结合离散示例逐格算，而非把所有亮线都视为真实边界。",
+      "anchors": [
+        {
+          "deck": "lec3p2",
+          "page": 56
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recSpatial@57:53",
+        "recSpatial@01:02:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-laplacian",
+      "category": "class",
+      "title": "Laplacian锐化的加减号取决于核符号",
+      "body": "直接二阶导数压掉常量背景，锐化通常要把适当符号的响应加回原图。使用中心负、周围正的Laplacian核时常写g=f−∇²f；核整体取反时写加号。先辨核，再决定加减。",
+      "anchors": [
+        {
+          "deck": "lec3p2",
+          "page": 67
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recSpatial@01:08:00",
+        "recSpatial@01:09:28"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-unsharp",
+      "category": "class",
+      "title": "Unsharp / highboost：先取细节，再受控加回",
+      "body": "mask=f−f_blur，g=f+k·mask。k决定细节提升程度；过大会增噪、出现光晕。模糊图不是最终目标，而是用来分离细节的中间量。",
+      "anchors": [
+        {
+          "deck": "lec3p2",
+          "page": 73
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recSpatial@01:11:40",
+        "recSpatial@01:13:49"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-noise-estimation",
+      "category": "class",
+      "title": "从均匀ROI估计噪声，而非整图直方图",
+      "body": "老师提出选择近似恒定亮度区域，再观察像素波动分布。整图直方图混入组织结构与照明，不能直接当噪声PDF；ROI也要检查是否含梯度、纹理或饱和。",
+      "anchors": [
+        {
+          "deck": "lec3p2",
+          "page": 85
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFourier@18:29",
+        "recFourier@19:34"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-stripes",
+      "category": "class",
+      "title": "看条纹频谱：方向垂直，越密离中心越远",
+      "body": "水平条纹沿竖直方向变化，主要峰沿竖直频率轴；竖纹反之。条纹变密表示空间频率增高。不要把“物体边缘的方向”直接当成“频率变化方向”。",
+      "anchors": [
+        {
+          "deck": "lec4p1",
+          "page": 73
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFreq@25:01"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-padding-info",
+      "category": "class",
+      "title": "补零可细化频谱取样，不增加原始分辨信息",
+      "body": "增加FFT长度会让同一有限数据对应的频谱曲线采得更密，便于显示或估峰；它没有采集新的细节。另一个“为线性卷积补零”目的，是避免循环回卷，不能把这两个目的混为一谈。",
+      "anchors": [
+        {
+          "deck": "lec4p1",
+          "page": 33
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFreq@26:35"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-translation",
+      "category": "class",
+      "title": "平移改相位，旋转带动频谱旋转",
+      "body": "理想平移引入频率相关的相位因子，不改变幅值/功率谱；旋转会相应旋转频谱坐标。实际裁剪、插值、边界改变可破坏理想条件。fftshift只是频率索引重排，不是原图平移。",
+      "anchors": [
+        {
+          "deck": "lec4p1",
+          "page": 64
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFreq@11:35",
+        "recFreq@12:27",
+        "recFreq@27:19"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-gaussian",
+      "category": "class",
+      "title": "高斯低通：D₀越大，保留高频越多",
+      "body": "按本课公式H=exp[−D²/(2D₀²)]，D₀增大则同一非零D处H增大，所以模糊减弱。理想连续高斯空间核不带振荡负瓣，可避免硬截止造成的振铃；仍会平滑细节。第26页通过D₀=5到230对比效果。",
+      "anchors": [
+        {
+          "deck": "lec4p2",
+          "page": 25
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFreq@01:12:30"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-filter-comparison",
+      "category": "class",
+      "title": "理想、高斯、Butterworth：截止和阶数分别做什么",
+      "body": "理想滤波器硬截止，振铃明显；高斯柔和衰减；Butterworth可调阶数控制过渡陡峭度。同一D₀下各滤波器衰减并不相同，不能仅凭半径数值认定模糊程度相等。",
+      "anchors": [
+        {
+          "deck": "lec4p2",
+          "page": 29
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFreq@01:10:09",
+        "recFreq@01:11:29"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-highpass",
+      "category": "class",
+      "title": "纯高通不保留平均亮度",
+      "body": "常见高通H(0,0)=0，常量/DC成分被去掉，输出多是正负细节响应。想得到“保留原图亮度的锐化”，应使用加回原图或高频强调，不要将纯高通边缘图当最终增强图。",
+      "anchors": [
+        {
+          "deck": "lec4p2",
+          "page": 33
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFreq@01:13:41",
+        "recFreq@01:15:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-homomorphic",
+      "category": "class",
+      "title": "同态滤波：取对数才能把乘法模型拆成加法",
+      "body": "f=i·r，取log得到log i+log r；再衰减缓慢照明、增强较快纹理，逆变换后取指数。γL<1、γH>1控制低频压低与高频增益。零值、模型适用性及噪声放大需注意。",
+      "anchors": [
+        {
+          "deck": "lec4p2",
+          "page": 51
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFreq@01:31:00",
+        "recFreq@01:33:30"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-notch",
+      "category": "class",
+      "title": "周期性干扰：定点陷波而非一刀切全高频",
+      "body": "规则条纹对应频谱中的特定峰，可以针对成对位置抑制。过宽陷波会误伤真实纹理；实值图像通常需保持共轭对称。和圆环带阻相比，定点陷波的方向选择更精细。",
+      "anchors": [
+        {
+          "deck": "lec4p2",
+          "page": 56
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFreq@01:37:00",
+        "recFreq@01:37:48"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "scope-formulas",
+      "category": "scope",
+      "title": "低优先级是公式推导，不是公式含义",
+      "body": "老师说不考具体公式，不等于所有含公式的页都可跳过。至少仍需能说明幅值、相位、DC、补零长度、均值降噪和参数变化的效果；本网站不把“不背推导”扩写成“不会计算”。",
+      "anchors": [
+        {
+          "deck": "lec4p1",
+          "page": 70
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec0911@19:30",
+        "recFreq@21:22"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "scope-recognition",
+      "category": "scope",
+      "title": "Representation / Recognition：老师说涉及较少或可能不讲",
+      "body": "9月18日介绍完整流程时，对后端表示、描述与识别表示会少涉及或可能不涉及。属于课程范围说明，不能转化成对任何以后考试的绝对“不考”承诺。",
+      "anchors": [
+        {
+          "deck": "lec1",
+          "page": 92
+        },
+        {
+          "deck": "lec1",
+          "page": 93
+        }
+      ],
+      "status": "课程范围口径",
+      "sourceIds": [
+        "rec0918@01:24:35",
+        "rec0918@01:25:45"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "scope-compression",
+      "category": "scope",
+      "title": "压缩编码有考试提示，但原转写需谨慎",
+      "body": "9月18日01:23:19在压缩附近有“考试都会考一些图像编码方式”的表述；转写中“每天/每年”等词不可靠，因此只记录为压缩编码值得复习的口头提示，不推定每年固定必考或具体题目。",
+      "anchors": [
+        {
+          "deck": "lec1",
+          "page": 89
+        }
+      ],
+      "status": "转写存在歧义",
+      "sourceIds": [
+        "rec0918@01:23:19"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "scope-homework",
+      "category": "scope",
+      "title": "PPT写Homework，不自动代表本周要交",
+      "body": "老师在空间滤波示例处说原来作为homework、此次认为没必要专门展开；频域结尾则说后面可看这些例子。正式作业是否提交、截止时间仍以Lab文件及公告为准。",
+      "anchors": [
+        {
+          "deck": "lec3p2",
+          "page": 80
+        },
+        {
+          "deck": "lec4p2",
+          "page": 59
+        }
+      ],
+      "status": "以正式布置为准",
+      "sourceIds": [
+        "recFourier@16:00",
+        "recFreq@01:38:46"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "scope-textbook",
+      "category": "scope",
+      "title": "复习参考：教材有大部分基础内容",
+      "body": "老师推荐对不理解的概念回到教材，或提问。课件参考书包含Digital Image Processing及其MATLAB配套。建议先按本课页码和录音理解，再查教材推导；网站不把外部扩展自动列为考核范围。",
+      "anchors": [
+        {
+          "deck": "lec1",
+          "page": 16
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec0911@01:08:49"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "project-outline",
+      "category": "arrangement",
+      "title": "Final project 应展示哪些内容",
+      "body": "Lecture 1第10页列出Introduction、软件功能、涉及的图像处理技术、实现细节和Summary。最终展示应让人看懂任务、方法、效果与局限，不只是播放一个GUI。评分细则以教师正式发布为准。",
+      "anchors": [
+        {
+          "deck": "lec1",
+          "page": 10
+        }
+      ],
+      "status": null,
+      "sourceIds": [],
+      "sourceType": "课件原文"
+    },
+    {
+      "id": "project-open-source",
+      "category": "arrangement",
+      "title": "可以从开源项目修改，但要理解并说明自己的改动",
+      "body": "早期及后续录音都允许从开源代码起步，不要求完全从零写。需读懂功能和图像处理过程，并做适当修改。引用原项目、区分原作者工作与自己新增部分，不能把直接复制当原创。",
+      "anchors": [
+        {
+          "deck": "lec1",
+          "page": 10
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec0911@42:32",
+        "recFreq@05:24"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "project-ai",
+      "category": "arrangement",
+      "title": "AI/深度学习的要求：不要从含糊转写推定全面禁用",
+      "body": "9月11日关于AI的转写有明显歧义，但上下文能确定老师希望项目体现本课方法，不只是端到端黑箱训练；老师还提到曾要求重新做明显全靠AI生成的presentation。具体允许哪些AI辅助应确认课程规则，网站不虚构统一禁令。",
+      "anchors": [
+        {
+          "deck": "lec1",
+          "page": 10
+        }
+      ],
+      "status": "口头转写需核实",
+      "sourceIds": [
+        "rec0911@43:22",
+        "rec0911@46:55",
+        "rec0911@47:03"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "academic-integrity",
+      "category": "arrangement",
+      "title": "考试、作业都强调学术诚信",
+      "body": "老师在开课时对考试和作业强调不要作弊；实践提交也不能只是照搬现成代码而不理解。工具辅助不能代替对结果的核验与解释，任何引用或合作方式仍按正式课程要求执行。",
+      "anchors": [
+        {
+          "deck": "lec1",
+          "page": 9
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec0911@44:40",
+        "rec0918@01:33:07"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "remaining-quizzes",
+      "category": "arrangement",
+      "title": "后两次Quiz：暂计划第13、16周",
+      "body": "频域滤波课开头说还有两次Quiz，可能安排在第13周和第16周。这是当时的口头计划，不是已核实的最终日程；应以助教/Blackboard后续通知为准。",
+      "anchors": [
+        {
+          "deck": "lec4p2",
+          "page": 1
+        }
+      ],
+      "status": "暂定安排",
+      "sourceIds": [
+        "recFreq@04:18"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "remaining-labs",
+      "category": "arrangement",
+      "title": "后续4个Lab：两项项目约给三个星期",
+      "body": "同一段录音提到还有4个Lab作业，大致每两个project安排三个星期。不能据此自行推算每个Lab的截止日期；要看对应项目发布页。",
+      "anchors": [
+        {
+          "deck": "lec4p2",
+          "page": 1
+        }
+      ],
+      "status": "当时教学规划",
+      "sourceIds": [
+        "recFreq@04:18"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "presentation-time",
+      "category": "arrangement",
+      "title": "每人约5分钟；展示周次仍有弹性",
+      "body": "较后的录音说final presentation每人约5分钟，估计安排第14、15周，必要时第16周Quiz后补充。早期开场说法较宽泛，优先注意后续正式通知，不能把早期6–7分钟估计当作最终规则。",
+      "anchors": [
+        {
+          "deck": "lec1",
+          "page": 10
+        }
+      ],
+      "status": "暂定安排",
+      "sourceIds": [
+        "recFreq@05:24"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "class-reschedule",
+      "category": "arrangement",
+      "title": "调课口头通知：11月13日改15日；20日上课、27日运动会",
+      "body": "频域滤波录音开头说明原11月13日课拟调到11月15日星期天下午；11月20日上课、27日因运动会不上。这里保留的是2026年11月6日附近的课堂通知记录，不提供持续更新的实时课表；以正式公告为准。",
+      "anchors": [
+        {
+          "deck": "lec4p2",
+          "page": 1
+        }
+      ],
+      "status": "历史口头通知，需核对",
+      "sourceIds": [
+        "recFreq@02:55",
+        "recFreq@04:18"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "lab-gui",
+      "category": "arrangement",
+      "title": "GUI实践：迁移示例而非只阅读幻灯片",
+      "body": "9月18日上机安排中要求参考GUI实例并在当前工具环境重做一定数量，录音提到至少15个。它属于Lab任务，不是理论考试要写GUI代码。具体数量、打包格式和截止日期应与对应Lab说明交叉确认。",
+      "anchors": [],
+      "status": "以对应Lab要求为准",
+      "sourceIds": [
+        "rec0918@01:39:02",
+        "rec0918@01:39:18"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "lab-theory",
+      "category": "arrangement",
+      "title": "理论课没有常规书面作业；实践任务另计",
+      "body": "开课时说理论方面没有另外的常规作业，主要在上机课完成project；基础不同的同学可能需要课后继续。不能把“理论课无作业”理解成“所有课外任务均可不做”。",
+      "anchors": [
+        {
+          "deck": "lec1",
+          "page": 9
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec0911@07:01"
+      ],
+      "sourceType": "录音+课件"
+    }
+  ],
+  "note": "仅整理已提供课件与6份课堂转写。录音自动转写可能出错；重点≠必考，暂定安排≠最新正式公告。复盘只整理概念，不公布完整试卷。",
+  "navigationDefault": "include-class",
+  "navigationNote": "下个考点按课件顺序、严格从当前页之后查找，不回绕。默认包含课堂重点（不等于必考）；可以取消下方选项，只导航明确考核/Quiz复盘。相同知识点在同一份课件只取一个代表页。"
+}

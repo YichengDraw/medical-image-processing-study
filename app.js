@@ -2,17 +2,18 @@
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
-const S={data:null,deck:null,page:1,cache:new Map(),pending:new Map(),task:null,seq:0,fit:"page",panel:true,star:new Set(),matches:[],sel:0,collapsed:false,libraryCollapsed:false,theme:"light"};
+const S={data:null,deck:null,page:1,cache:new Map(),pending:new Map(),task:null,seq:0,fit:"page",panel:true,star:new Set(),matches:[],sel:0,collapsed:false,libraryCollapsed:false,theme:"light",focusIncludeClass:true,examCategory:"all",modalReturnFocus:null};
 let saved={};try{saved=JSON.parse(localStorage.getItem("bmeb316-state")||"{}")}catch{}
 if(Array.isArray(saved.bookmarks))S.star=new Set(saved.bookmarks);
 if(saved.panel!==undefined)S.panel=!!saved.panel;
 if(saved.fit==="width")S.fit="width";
 if(saved.libraryCollapsed===true)S.libraryCollapsed=true;
 if(saved.theme==="dark")S.theme="dark";
+if(saved.focusIncludeClass===false)S.focusIncludeClass=false;
 const deck=id=>S.data&&S.data.decks.find(x=>x.id===id);
 const slide=()=>S.data&&S.deck&&S.data.slides[S.deck.id][S.page-1];
 const key=(d,p)=>d+":"+p;
-function save(){try{localStorage.setItem("bmeb316-state",JSON.stringify({last:[S.deck.id,S.page],bookmarks:[...S.star],panel:S.panel,fit:S.fit,libraryCollapsed:S.libraryCollapsed,theme:S.theme}))}catch{}}
+function save(){try{localStorage.setItem("bmeb316-state",JSON.stringify({last:[S.deck.id,S.page],bookmarks:[...S.star],panel:S.panel,fit:S.fit,libraryCollapsed:S.libraryCollapsed,theme:S.theme,focusIncludeClass:S.focusIncludeClass}))}catch{}}
 function route(){let h=decodeURIComponent(location.hash.slice(1)).match(/^([a-z0-9]+)\/(\d+)$/i);if(h&&deck(h[1]))return [h[1],Number(h[2])];return saved.last&&deck(saved.last[0])?saved.last:["lec1",1]}
 function routeWrite(id,p,replace=false){const h="#"+id+"/"+p;if(location.hash===h)return;if(replace)history.replaceState(null,"",h);else history.pushState(null,"",h)}
 function navInit(){
@@ -52,32 +53,34 @@ function headUpdate(){
  $("#page-total").textContent="/ "+d.pages;$("#prev-slide").disabled=S.page<=1;$("#next-slide").disabled=S.page>=d.pages;
  $("#pdf-link").href=d.path;$("#pdf-link").download=d.id+".pdf";
  const star=S.star.has(key(d.id,S.page));$("#star-btn").textContent=star?"★":"☆";$("#star-btn").classList.toggle("starred",star);
- $("#note-status").textContent=!d.audio?"此部分未提供对应录音":p.evidence?"已匹配课堂信息":"依据课件辅助理解";
+ $("#note-status").textContent=!d.audio?"此部分未提供对应录音":p.note?.sourceIds?.length?"逐页核对 · 含课堂线索":"逐页核对 · 课件图示解读";
  $("#toggle-panel").style.display=d.audio?"":"none";$("#toggle-panel").textContent=S.panel?"隐藏讲解":"显示讲解";
+ updateFocusButton();
  document.title=p.title+" · "+d.group+" | BMEB316";
+}
+function sourceMarkup(ids,external=[]){
+ const records=S.data.recordings||{},sources=S.data.sources||{};
+ const rows=(ids||[]).map(id=>{
+  const x=sources[id];if(!x)return "";
+  const r=records[x.recording]||{};
+  return '<div class="source-line"><strong>'+esc(r.title||x.recording)+' · '+esc(x.start)+(x.end?'–'+esc(x.end):'')+'</strong><span class="source-filename">'+esc(r.file||'')+'</span><p>'+esc(x.excerpt)+'</p></div>';
+ }).join('');
+ const links=external.filter(x=>/^https:\/\//.test(x.url)).map(x=>'<p><a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">'+esc(x.label)+' ↗</a></p>').join('');
+ if(!rows&&!links)return '';
+ return '<details class="inline-sources"><summary>出处与核对线索'+(ids?.length?' · '+ids.length+'段课堂转写':'')+'</summary><div class="source-caption">按内容对应，不代表精确翻页时间；自动转写可能有错词。省略处用…标记。</div>'+rows+links+'</details>';
 }
 function notes(){
  const grid=$("#study-grid"),panel=$("#companion-panel"),d=S.deck,p=slide();
  if(!d.audio||!S.panel){panel.classList.add("hidden");grid.classList.add("no-companion");return}
  panel.classList.remove("hidden");grid.classList.remove("no-companion");
- const g=p.guide,e=p.evidence;
- $("#companion-kicker").textContent="PAGE "+String(S.page).padStart(2,"0")+" / "+d.group.toUpperCase();
- $("#companion-heading").textContent=p.title;
- $("#source-badge").textContent=e?(e.explicit?"老师明确强调":"有课堂讲授依据"):"课件辅助解读";
- $("#source-badge").classList.toggle("verified",!!e);
- let html="";
- if(g){
-  html+='<div class="guide-block"><h3 class="guide-heading"><i>◈</i> 本页要领</h3><p class="guide-main">'+esc(g.concept)+'</p></div>';
-  if(g.example)html+='<div class="example-box"><b>↗ 一个直接例子</b><p>'+esc(g.example)+'</p></div>';
-  if(g.trap)html+='<div class="pitfall-box"><strong>⚑ 易混 / 注意：</strong>'+esc(g.trap)+'</div>';
- }else html='<p class="concept-only">本页没有能可靠对应的详细注释。请以左侧原始课件为准，不会虚构课堂重点。</p>';
- if(p.excerpt?.length)html+='<details class="page-excerpt"><summary>查看本页 PPT 文字线索</summary><ul>'+p.excerpt.map(s=>'<li>'+esc(s)+'</li>').join("")+'</ul></details>';
- $("#guide-container").innerHTML=html;
- const out=$("#evidence-container");
- if(e)out.innerHTML='<div class="evidence-heading"><h3>讲授重点与出处</h3><span class="evidence-state '+(e.explicit?"exam":"")+'">'+(e.explicit?"考核相关 · 明确":"课堂可核对")+'</span></div><div class="evidence-box"><p>'+esc(e.text)+'</p><div class="evidence-meta"><span class="clock-icon">◷</span><span>'+esc(e.source)+' · '+esc(e.time)+'</span></div><details class="evidence-source-more"><summary>查看转写依据片段（自动转写可能有误）</summary><p>'+esc(e.excerpt)+'</p></details></div>';
- else out.innerHTML='<div class="evidence-heading"><h3>老师讲授信息</h3></div><p class="concept-only">暂未找到与本页可靠对应的录音片段。上面内容属于课件解读，不能据此认定是老师强调的考点。</p>';
- $("#teacher-context").innerHTML='<p class="context-info">标注规则：“明确强调”只用于录音中有直接考核表述的内容；其他讲解是学习提示，而非考试承诺。</p>';
- $(".companion-scroll").scrollTop=0;
+ const n=p.note;
+ $("#source-badge").textContent=n?.sourceIds?.length?"课件 + 课堂讲授":"原始课件逐页解读";
+ $("#source-badge").classList.toggle("verified",Boolean(n?.sourceIds?.length));
+ let html='<article class="page-explanation"><div class="explanation-page">'+esc(d.group)+' · 第 '+S.page+' 页</div><h2>'+esc(p.title)+'</h2>';
+ if(n){html+=n.paragraphs.map(t=>'<p>'+esc(t)+'</p>').join('');html+=sourceMarkup(n.sourceIds,n.externalSources||[])}
+ else html+='<p>本页尚无可核对的逐页注释，请以左侧原始课件为准。</p>';
+ html+='</article>';
+ $("#guide-container").innerHTML=html;$(".companion-scroll").scrollTop=0;
 }
 
 async function loadPDF(d){
@@ -158,35 +161,48 @@ function navigate(id,p,write=true){
  save();if(window.innerWidth<750)closeLibrary();
 }
 function turn(delta){if(S.deck&&S.page+delta>=1&&S.page+delta<=S.deck.pages)navigate(S.deck.id,S.page+delta)}
-function jumpExam(){
- let found=false;
- for(const d of S.data.decks){
-  for(const p of S.data.slides[d.id]){
-   if(found&&p.isExam){navigate(d.id,p.page);return}
-   if(d.id===S.deck.id&&p.page===S.page)found=true;
-  }
- }
- for(const d of S.data.decks){const p=S.data.slides[d.id].find(x=>x.isExam);if(p){navigate(d.id,p.page);return}}
+function shortDeck(d){return d.replace('lec','L').replace('p','·')}
+function nextFocus(){
+ return FocusNavigation.next(S.data.decks,S.data.examGuide.entries,S.deck.id,S.page,S.focusIncludeClass);
 }
+function focusType(p){return p.categories.includes('explicit')?'明确考核':p.categories.includes('quiz')?'Quiz复盘':'课堂重点（非必考）'}
+function updateFocusButton(){
+ const n=nextFocus(),b=$("#next-focus");b.disabled=!n;
+ b.textContent=n?'下个考点 · '+(n.deck===S.deck.id?'':shortDeck(n.deck)+' ')+'P'+n.page+' →':'无后续考点';
+ b.title=n?focusType(n)+'：'+n.titles.join('；')+' · 严格从当前页向后，不回绕':'当前导航范围内没有更后面的考点。可打开考核中心查看全部，或包含课堂重点。';
+}
+function jumpExam(){const n=nextFocus();if(n)navigate(n.deck,n.page);else updateFocusButton()}
+function renderExamHub(){
+ const guide=S.data.examGuide,cats=guide.categories,all=guide.entries;
+ const term=$("#exam-query").value.trim().toLowerCase();
+ const filtered=all.filter(e=>(S.examCategory==='all'||e.category===S.examCategory)&&(!term||(e.title+' '+e.body+' '+(e.status||'')).toLowerCase().includes(term)));
+ $("#exam-subtitle").textContent=all.length+'条 · 明确考核与课堂重点分开标注 · '+S.data.coverage.recordings+'份录音转写';
+ $("#exam-filters").innerHTML=[{id:'all',label:'全部'},...cats].map(c=>'<button data-category="'+esc(c.id)+'" class="exam-filter '+(S.examCategory===c.id?'selected':'')+'" aria-pressed="'+(S.examCategory===c.id)+'">'+esc(c.label)+' <span>'+all.filter(e=>c.id==='all'||e.category===c.id).length+'</span></button>').join('');
+ $("#exam-filters").querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{S.examCategory=b.dataset.category;renderExamHub()}));
+ $("#focus-include-class").checked=S.focusIncludeClass;
+ const n=nextFocus();
+ $("#focus-position").textContent='当前位置：'+shortDeck(S.deck.id)+' P'+S.page+'。'+(n?'下一个：'+shortDeck(n.deck)+' P'+n.page+' · '+focusType(n)+'。':'当前范围内无更后面的考点，不会绕回开头。')+' 同一主题在同一份课件只导航一个代表页。';
+ const label=id=>cats.find(x=>x.id===id)?.label||id;
+ $("#exam-list").innerHTML=filtered.length?filtered.map(e=>'<article class="exam-item"><div class="exam-item-heading"><span class="exam-category category-'+esc(e.category)+'">'+esc(label(e.category))+'</span><h3>'+esc(e.title)+'</h3></div>'+(e.status?'<span class="exam-status">'+esc(e.status)+'</span>':'')+'<p>'+esc(e.body)+'</p><div class="exam-anchors">'+e.anchors.map(a=>'<button class="exam-anchor" data-deck="'+esc(a.deck)+'" data-page="'+a.page+'">'+shortDeck(a.deck)+' · P'+a.page+' ↗</button>').join('')+'</div>'+sourceMarkup(e.sourceIds)+'</article>').join(''):'<p class="exam-empty">当前分类没有匹配项。试试“全部”或其他关键词。</p>';
+ $("#exam-list").querySelectorAll('.exam-anchor').forEach(b=>b.addEventListener('click',()=>{closeModal('#exam-modal');navigate(b.dataset.deck,Number(b.dataset.page))}));
+ $("#exam-source-policy").textContent=guide.note;
+}
+function openExamHub(){renderExamHub();openModal('#exam-modal');$("#exam-query").focus()}
 function copyNote(){
- const p=slide(),g=p?.guide,e=p?.evidence;
- if(!g)return;
- const text=[S.deck.group+" "+S.deck.label+" · P"+S.page,p.title,"本页要领："+g.concept,
-  g.example?"例子："+g.example:"",g.trap?"注意："+g.trap:"",
-  e?"老师课堂讲授："+e.text+"（"+e.source+" "+e.time+"）":""].filter(Boolean).join("\n\n");
- navigator.clipboard.writeText(text).then(()=>{
-  $("#copy-note").textContent="已复制 ✓";setTimeout(()=>$("#copy-note").textContent="复制笔记",1400);
- }).catch(()=>alert("浏览器未获得剪贴板权限，建议手动复制讲解内容。"));
+ const p=slide(),n=p?.note;if(!n)return;
+ const sourceLines=(n.sourceIds||[]).map(id=>{const s=S.data.sources[id],r=S.data.recordings[s.recording];return r.title+' '+s.start});
+ const text=[S.deck.group+' '+S.deck.label+' · P'+S.page,p.title,...n.paragraphs,sourceLines.length?'课堂出处：'+sourceLines.join('；'):'来源：本页原始课件'].join('\n\n');
+ navigator.clipboard.writeText(text).then(()=>{$('#copy-note').textContent='已复制 ✓';setTimeout(()=>$('#copy-note').textContent='复制讲解',1400)}).catch(()=>alert('浏览器未获得剪贴板权限，请手动复制。'));
 }
-function openModal(selector){closeLibrary();$(selector).classList.remove("hidden")}
-function closeModal(selector){$(selector).classList.add("hidden")}
+function openModal(selector){S.modalReturnFocus=document.activeElement;closeLibrary();$(selector).classList.remove('hidden')}
+function closeModal(selector){const el=$(selector);if(el.classList.contains('hidden'))return;el.classList.add('hidden');if(S.modalReturnFocus?.isConnected)S.modalReturnFocus.focus({preventScroll:true})}
 function search(q){
  const str=q.trim().toLowerCase(),found=[];if(!str)return found;
  for(const d of S.data.decks){
   for(const p of S.data.slides[d.id]){
    if(str==="@star"){if(!S.star.has(key(d.id,p.page)))continue}
-   else if(!(p.title+" "+(p.guide?.concept||"")+" "+p.searchText).toLowerCase().includes(str))continue;
-   const score=(p.title.toLowerCase().includes(str)?6:0)+((p.guide?.concept||"").toLowerCase().includes(str)?3:0)+(p.isExam?1:0);
+   else if(!(p.title+" "+(p.note?.paragraphs.join(" ")||"")+" "+p.searchText).toLowerCase().includes(str))continue;
+   const score=(p.title.toLowerCase().includes(str)?6:0)+((p.note?.paragraphs.join(" ")||"").toLowerCase().includes(str)?3:0)+(p.examIds?.length?1:0);
    found.push({deck:d,page:p,score});
   }
  }
@@ -198,7 +214,7 @@ function refreshSearch(){
  if(!q.trim()){area.innerHTML='<div class="search-empty">搜索范围包括全部课件正文和伴读笔记。<br>输入 <b>@star</b> 可查看已收藏的页面。</div>';return}
  if(!S.matches.length){area.innerHTML='<div class="search-empty">找不到 '+esc(q)+'，请换一个关键词或使用英文术语。</div>';return}
  area.innerHTML=S.matches.map((r,i)=>
-  '<button class="search-result '+(i===0?"active":"")+'" data-i="'+i+'"><span class="result-page">P '+r.page.page+'</span><span><span class="result-title">'+esc(r.page.title)+'</span><span class="result-desc">'+esc(r.deck.group+" · "+r.deck.cn)+(r.page.evidence?" · 有老师讲授依据":"")+'</span></span></button>'
+  '<button class="search-result '+(i===0?"active":"")+'" data-i="'+i+'"><span class="result-page">P '+r.page.page+'</span><span><span class="result-title">'+esc(r.page.title)+'</span><span class="result-desc">'+esc(r.deck.group+" · "+r.deck.cn)+(r.page.note?.sourceIds?.length?" · 含课堂讲授线索":"")+'</span></span></button>'
  ).join("");
  area.querySelectorAll(".search-result").forEach(b=>b.addEventListener("click",()=>goResult(Number(b.dataset.i))));
 }
@@ -215,6 +231,7 @@ function togglePanel(){
  S.panel=!S.panel;notes();headUpdate();save();setTimeout(draw,90);
 }
 function keydown(e){
+ if(e.ctrlKey||e.metaKey||e.altKey)return;
  const input=/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName||"");
  const searchOpen=!$("#search-modal").classList.contains("hidden");
  const examOpen=!$("#exam-modal").classList.contains("hidden");
@@ -251,10 +268,12 @@ function bind(){
  $("#search-trigger").addEventListener("click",()=>{openModal("#search-modal");$("#search-box").focus()});
  $("#search-box").addEventListener("input",refreshSearch);
  $("#search-close").addEventListener("click",()=>closeModal("#search-modal"));
- $("#exam-guide").addEventListener("click",()=>openModal("#exam-modal"));
+ $("#exam-guide").addEventListener("click",openExamHub);
+ $("#exam-top-trigger").addEventListener("click",openExamHub);
+ $("#exam-query").addEventListener("input",renderExamHub);
+ $("#focus-include-class").addEventListener("change",e=>{S.focusIncludeClass=e.target.checked;save();updateFocusButton();renderExamHub()});
  $("#exam-close").addEventListener("click",()=>closeModal("#exam-modal"));
  $("#exam-dismiss").addEventListener("click",()=>closeModal("#exam-modal"));
- $("#exam-goto").addEventListener("click",()=>{closeModal("#exam-modal");jumpExam()});
  $("#menu-trigger").addEventListener("click",toggleLibrary);
  $("#library-collapse").addEventListener("click",toggleLibrary);
  $("#theme-toggle").addEventListener("click",toggleTheme);
@@ -269,8 +288,8 @@ function bind(){
 }
 (async function init(){
  try{
-  const response=await fetch("data/content.json");if(!response.ok)throw Error("课程索引请求失败："+response.status);
-  S.data=await response.json();$("#fit-mode").textContent=S.fit==="page"?"适应页面":"适应宽度";
+  const response=await fetch("data/content.json?v=visual-v2");if(!response.ok)throw Error("课程索引请求失败："+response.status);
+  S.data=await response.json();if(S.data.schemaVersion!==2)throw Error("课程数据版本未更新，请刷新页面");$("#fit-mode").textContent=S.fit==="page"?"适应页面":"适应宽度";
   if(window.pdfjsLib)pdfjsLib.GlobalWorkerOptions.workerSrc="assets/vendor/pdf.worker.min.js";
   navInit();bind();updateLibraryToggle();updateTheme();const [id,p]=route();navigate(id,p,false);routeWrite(id,p,true);
  }catch(error){

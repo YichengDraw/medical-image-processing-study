@@ -16,9 +16,10 @@
       }
     } catch (_) {}
   </script>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=visual-v2">
   <script defer src="assets/vendor/pdf.min.js"></script>
-  <script defer src="app.js"></script>
+  <script defer src="focus-navigation.js?v=visual-v2"></script>
+  <script defer src="app.js?v=visual-v2"></script>
 </head>
 <body>
   <div id="app">
@@ -38,7 +39,7 @@
         <div id="page-index" class="page-index"></div>
       </div>
       <div class="library-bottom">
-        <button id="exam-guide" class="outline-action">◎ <span>考核信息与学习策略</span></button>
+        <button id="exam-guide" class="outline-action">◎ <span>考核中心 · 全部重点</span></button>
         <div class="bottom-foot">依据课件及已提供录音整理<br>重点标注 ≠ 押题保证</div>
       </div>
     </aside>
@@ -51,6 +52,7 @@
         </div>
         <div class="top-right">
           <span id="note-status" class="status-info">—</span>
+          <button id="exam-top-trigger" class="text-action exam-top-trigger" title="查看全部考核口径、Quiz复盘和课堂重点">考核中心</button>
           <button id="theme-toggle" class="icon-btn theme-switch" aria-label="切换暗色模式" aria-pressed="false" title="切换暗色模式">☾</button>
           <button id="star-btn" class="icon-btn star-btn" aria-label="收藏当前页" title="收藏当前页">☆</button>
           <button id="toggle-panel" class="text-action" title="切换侧栏快捷键 [">隐藏讲解</button>
@@ -89,19 +91,16 @@
               <span class="shortcut-hint"><kbd>←</kbd><kbd>→</kbd> 翻页</span>
               <span class="spacer"></span>
               <button id="first-slide" class="secondary-link" title="回到本讲首页">首页</button>
-              <button id="next-focus" class="secondary-link" title="跳转到下一个老师明确强调的页面">下个考点 ↗</button>
+              <button id="next-focus" class="secondary-link" title="从当前页向后查找考核/课堂重点，不回绕">下个考点 ↗</button>
             </div>
           </section>
 
           <aside id="companion-panel" class="companion-panel" aria-label="逐页讲解侧栏">
             <div class="companion-top"><span class="section-cap"><span class="cap-indicator cyan"></span> STUDY COMPANION</span><span id="source-badge" class="source-badge">课件解读</span></div>
             <div class="companion-scroll">
-              <div class="companion-intro"><div id="companion-kicker" class="companion-kicker">逐页伴读</div><h2 id="companion-heading">这一页真正要懂什么？</h2><p>读左边 PPT，右边只提取需要理解的内容。</p></div>
               <div id="guide-container" class="guide-container"></div>
-              <div id="evidence-container" class="evidence-container"></div>
-              <div id="teacher-context" class="teacher-context"></div>
             </div>
-            <div class="companion-footer"><span>💡 先理解概念，再返回左边核对公式或图示</span><button id="copy-note" class="small-copy">复制笔记</button></div>
+            <div class="companion-footer"><span>按当前页图示讲解 · 录音出处收在文末</span><button id="copy-note" class="small-copy">复制讲解</button></div>
           </aside>
         </div>
         <footer class="app-footer"><span>Medical Image Processing / Yiming Li</span><span>由课程课件与课堂录音转写整理 · 非官方学习网站</span></footer>
@@ -112,12 +111,16 @@
     <div id="search-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="全课程搜索">
       <div class="search-modal"><div class="modal-head"><span>⌕</span><input id="search-box" type="search" autocomplete="off" spellcheck="false" placeholder="搜索 Nyquist、卷积、位深、相位…"><button id="search-close" class="icon-btn" aria-label="关闭搜索">ESC</button></div><div id="search-results" class="search-results"></div><div class="modal-footer">可搜索 7 份课件的原文及伴读笔记 · Enter 跳转 · Esc 关闭</div></div>
     </div>
-    <div id="exam-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="课程考核指南">
-      <div class="exam-modal"><div class="exam-top"><div><span class="eyebrow blue">COURSE ASSESSMENT</span><h2>考核信息 · 备考导航</h2></div><button id="exam-close" class="icon-btn" aria-label="关闭">✕</button></div>
+    <div id="exam-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="exam-title">
+      <div class="exam-modal exam-hub">
+        <div class="exam-top"><div><span class="eyebrow blue">COURSE ASSESSMENT &amp; REVIEW</span><h2 id="exam-title">考核中心</h2><p id="exam-subtitle" class="exam-subtitle"></p></div><button id="exam-close" class="icon-btn" aria-label="关闭考核中心">✕</button></div>
         <div class="assessment-grid"><div><b>40%</b><span>Final Exam</span></div><div><b>30%</b><span>Projects</span></div><div><b>15%</b><span>Presentation</span></div><div><b>10%</b><span>Quiz</span></div><div><b>5%</b><span>Attendance</span></div></div>
-        <div class="exam-insight"><strong>老师明确说过</strong><p>期末主要考核基本概念与方法选择，不考写代码、也不要求逐项推导复杂公式；Quiz 以选择题为主，部分题目可能在期末复现。</p><small>来源：09月11日课堂录音 · 19:30、40:52、01:00:14；Quiz 复盘录音 · 01:30</small></div>
-        <div class="exam-insight secondary"><strong>如何使用这个网站</strong><p>先在左侧理解每页图示，再看右侧概念与例子；有录音依据的页会显示老师强调和时间。点击「下个考点」可以快速检查明确强调的页面。</p><small>注意：口头表述可能有转写误差；普通知识点推荐不等于老师承诺必考。</small></div>
-        <div class="modal-actions"><button id="exam-goto" class="primary-action">前往明确强调的页面</button><button id="exam-dismiss" class="outline-action">继续阅读</button></div>
+        <div class="exam-search"><label for="exam-query">搜索全部考核信息</label><input id="exam-query" type="search" placeholder="零频、补零、不考、Quiz、展示时间…" autocomplete="off"></div>
+        <div id="exam-filters" class="exam-filters" aria-label="考核信息分类"></div>
+        <label class="focus-scope"><input id="focus-include-class" type="checkbox" checked>“下个考点”也包含课堂重点（不等于必考）</label>
+        <p id="focus-position" class="focus-position"></p>
+        <div id="exam-list" class="exam-list" aria-live="polite"></div>
+        <div class="exam-hub-footer"><span id="exam-source-policy"></span><button id="exam-dismiss" class="outline-action">返回课件</button></div>
       </div>
     </div>
   </div>
