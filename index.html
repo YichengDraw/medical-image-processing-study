@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f7f8fc">
+  <meta name="description" content="BMEB316 医学图像处理：原始课件与课堂讲解逐页对照，考核重点有录音来源。">
+  <title>BMEB316 · 逐页伴读</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%234b64d8'/%3E%3Cpath d='M18 20h29v6H18zm0 12h29v6H18zm0 12h19v6H18z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="assets/vendor/pdf.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div id="app">
+    <aside id="library" class="library" aria-label="课程目录">
+      <div class="library-head">
+        <div class="brand-icon"><span class="brand-grid"><i></i><i></i><i></i><i></i></span></div>
+        <div class="brand-text"><span class="eyebrow">SUSTech · BMEB316</span><strong>医学图像处理</strong></div>
+        <button id="library-close" class="icon-btn mobile-only" aria-label="收起目录">✕</button>
+      </div>
+      <div class="library-meta"><span class="live-dot"></span> 2026 FALL / LEARNING SPACE</div>
+      <button class="quick-search" id="search-trigger"><span class="search-icon">⌕</span><span>搜索概念、章节或课件</span><kbd>/</kbd></button>
+      <div class="nav-header"><span>课程目录</span><span id="deck-counter" class="nav-count">—</span></div>
+      <nav id="deck-list" class="deck-list"></nav>
+      <div class="page-index-wrap">
+        <div class="page-index-heading"><span>本讲索引</span><button id="index-collapse" aria-label="折叠本讲索引" class="subtle-btn">−</button></div>
+        <div id="page-index" class="page-index"></div>
+      </div>
+      <div class="library-bottom">
+        <button id="exam-guide" class="outline-action">◎ <span>考核信息与学习策略</span></button>
+        <div class="bottom-foot">依据课件及已提供录音整理<br>重点标注 ≠ 押题保证</div>
+      </div>
+    </aside>
+
+    <div class="main-shell">
+      <header class="topbar">
+        <div class="top-left">
+          <button id="menu-trigger" class="icon-btn mobile-only" aria-label="打开课程目录">☰</button>
+          <div class="breadcrumbs"><span class="crumb-base">MY COURSES</span><span class="crumb-sep">/</span><span id="crumb-lecture" class="crumb-current">Lecture 1</span></div>
+        </div>
+        <div class="top-right">
+          <span id="note-status" class="status-info">—</span>
+          <button id="star-btn" class="icon-btn star-btn" aria-label="收藏当前页" title="收藏当前页">☆</button>
+          <button id="toggle-panel" class="text-action" title="切换侧栏快捷键 [">隐藏讲解</button>
+          <div class="avatar" aria-label="Study Mode">S</div>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <div class="lecture-heading">
+          <div class="heading-main">
+            <div class="heading-small"><span id="slide-section">LECTURE 1</span><span class="tiny-sep">·</span><span id="lecture-subname">Introduction</span></div>
+            <h1 id="slide-title">正在读取课件…</h1>
+            <p id="slide-summary" class="slide-summary">原始幻灯片与讲授线索同步呈现。</p>
+          </div>
+          <div class="heading-tools"><span id="lecture-progress-label" class="progress-label">— / —</span><div class="progress-track"><div id="lecture-progress-bar" class="progress-fill"></div></div></div>
+        </div>
+        <div id="study-grid" class="study-grid">
+          <section id="slides-panel" class="slides-panel" aria-label="原始课件">
+            <div class="slides-topline">
+              <span class="section-cap"><span class="cap-indicator"></span> ORIGINAL SLIDES</span>
+              <div class="viewer-actions">
+                <button id="fit-mode" class="mini-btn" title="自适应屏幕或宽度">适应页面</button>
+                <a id="pdf-link" href="#" target="_blank" rel="noopener" class="mini-btn" title="下载原版 PDF">原始 PDF ↗</a>
+              </div>
+            </div>
+            <div id="slide-stage" class="slide-stage" tabindex="0">
+              <div id="pdf-loading" class="pdf-loading"><div class="spinner"></div><span>正在渲染课件…</span></div>
+              <canvas id="pdf-canvas" role="img" aria-label="原始 PDF 幻灯片"></canvas>
+              <div id="pdf-error" class="pdf-error hidden">课件无法载入。请确认网络及 PDF 文件路径。</div>
+            </div>
+            <div class="slide-controls">
+              <button id="prev-slide" class="nav-arrow" aria-label="上一页">‹</button>
+              <div class="page-control"><span class="page-label">PAGE</span><input id="page-input" type="number" min="1" value="1" aria-label="跳转到第几页"><span id="page-total" class="total-pages">/ —</span></div>
+              <button id="next-slide" class="nav-arrow" aria-label="下一页">›</button>
+              <div class="control-split"></div>
+              <span class="shortcut-hint"><kbd>←</kbd><kbd>→</kbd> 翻页</span>
+              <span class="spacer"></span>
+              <button id="first-slide" class="secondary-link" title="回到本讲首页">首页</button>
+              <button id="next-focus" class="secondary-link" title="跳转到下一个老师明确强调的页面">下个考点 ↗</button>
+            </div>
+          </section>
+
+          <aside id="companion-panel" class="companion-panel" aria-label="逐页讲解侧栏">
+            <div class="companion-top"><span class="section-cap"><span class="cap-indicator cyan"></span> STUDY COMPANION</span><span id="source-badge" class="source-badge">课件解读</span></div>
+            <div class="companion-scroll">
+              <div class="companion-intro"><div id="companion-kicker" class="companion-kicker">逐页伴读</div><h2 id="companion-heading">这一页真正要懂什么？</h2><p>读左边 PPT，右边只提取需要理解的内容。</p></div>
+              <div id="guide-container" class="guide-container"></div>
+              <div id="evidence-container" class="evidence-container"></div>
+              <div id="teacher-context" class="teacher-context"></div>
+            </div>
+            <div class="companion-footer"><span>💡 先理解概念，再返回左边核对公式或图示</span><button id="copy-note" class="small-copy">复制笔记</button></div>
+          </aside>
+        </div>
+        <footer class="app-footer"><span>Medical Image Processing / Yiming Li</span><span>由课程课件与课堂录音转写整理 · 非官方学习网站</span></footer>
+      </main>
+    </div>
+
+    <div id="scrim" class="scrim hidden"></div>
+    <div id="search-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="全课程搜索">
+      <div class="search-modal"><div class="modal-head"><span>⌕</span><input id="search-box" type="search" autocomplete="off" spellcheck="false" placeholder="搜索 Nyquist、卷积、位深、相位…"><button id="search-close" class="icon-btn" aria-label="关闭搜索">ESC</button></div><div id="search-results" class="search-results"></div><div class="modal-footer">可搜索 7 份课件的原文及伴读笔记 · Enter 跳转 · Esc 关闭</div></div>
+    </div>
+    <div id="exam-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="课程考核指南">
+      <div class="exam-modal"><div class="exam-top"><div><span class="eyebrow blue">COURSE ASSESSMENT</span><h2>考核信息 · 备考导航</h2></div><button id="exam-close" class="icon-btn" aria-label="关闭">✕</button></div>
+        <div class="assessment-grid"><div><b>40%</b><span>Final Exam</span></div><div><b>30%</b><span>Projects</span></div><div><b>15%</b><span>Presentation</span></div><div><b>10%</b><span>Quiz</span></div><div><b>5%</b><span>Attendance</span></div></div>
+        <div class="exam-insight"><strong>老师明确说过</strong><p>期末主要考核基本概念与方法选择，不考写代码、也不要求逐项推导复杂公式；Quiz 以选择题为主，部分题目可能在期末复现。</p><small>来源：09月11日课堂录音 · 19:30、40:52、01:00:14；Quiz 复盘录音 · 01:30</small></div>
+        <div class="exam-insight secondary"><strong>如何使用这个网站</strong><p>先在左侧理解每页图示，再看右侧概念与例子；有录音依据的页会显示老师强调和时间。点击「下个考点」可以快速检查明确强调的页面。</p><small>注意：口头表述可能有转写误差；普通知识点推荐不等于老师承诺必考。</small></div>
+        <div class="modal-actions"><button id="exam-goto" class="primary-action">前往明确强调的页面</button><button id="exam-dismiss" class="outline-action">继续阅读</button></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

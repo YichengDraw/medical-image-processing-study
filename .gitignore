@@ -1,0 +1,7 @@
+# Private source transcripts and local environments
+.source-transcripts/
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
