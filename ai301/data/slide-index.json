@@ -1,0 +1,1272 @@
+{
+  "decks": [
+    {
+      "id": "lec1",
+      "group": "Lecture 1",
+      "label": "Introduction",
+      "cn": "计算机系统、性能与设计思想",
+      "file": "AI301Lecture1.pdf",
+      "color": "#5d87ef",
+      "pages": 23,
+      "path": "ai301/assets/pdfs/lec1.pdf",
+      "firstSlide": "课程导论 · Computer System Architecture",
+      "audio": false,
+      "audioSources": []
+    },
+    {
+      "id": "lab1",
+      "group": "Lab 1",
+      "label": "Fundamentals",
+      "cn": "性能、存储容量与芯片成本练习",
+      "file": "Lab1.pdf",
+      "color": "#729ae9",
+      "pages": 19,
+      "path": "ai301/assets/pdfs/lab1.pdf",
+      "firstSlide": "Lab 1 · 计算机体系结构基础练习",
+      "audio": false,
+      "audioSources": []
+    },
+    {
+      "id": "lec2",
+      "group": "Lecture 2",
+      "label": "Digital Logic Review",
+      "cn": "数字表示、组合逻辑与时序电路",
+      "file": "AI301_Lecture2.pdf",
+      "color": "#9d78e9",
+      "pages": 41,
+      "path": "ai301/assets/pdfs/lec2.pdf",
+      "firstSlide": "数字逻辑复习 · Digital Logic Review",
+      "audio": true,
+      "audioSources": []
+    },
+    {
+      "id": "lab2",
+      "group": "Lab 2",
+      "label": "Digital Logic",
+      "cn": "逻辑门、加法器与时序波形练习",
+      "file": "AI301_Lab2.pdf",
+      "color": "#ac8be9",
+      "pages": 12,
+      "path": "ai301/assets/pdfs/lab2.pdf",
+      "firstSlide": "Lab 2 · 数字逻辑练习",
+      "audio": false,
+      "audioSources": []
+    },
+    {
+      "id": "lec3",
+      "group": "Lecture 3",
+      "label": "Instruction Set Architecture",
+      "cn": "MIPS指令、寻址与过程调用",
+      "file": "AI301_Lecture3(1).pdf",
+      "color": "#27a58a",
+      "pages": 67,
+      "path": "ai301/assets/pdfs/lec3.pdf",
+      "firstSlide": "指令集体系结构 · Instruction Set Architecture",
+      "audio": true,
+      "audioSources": []
+    },
+    {
+      "id": "lec4",
+      "group": "Lecture 4",
+      "label": "Arithmetic and Logic Unit",
+      "cn": "ALU、整数运算与浮点数",
+      "file": "Lecture4.pdf",
+      "color": "#e89b5a",
+      "pages": 37,
+      "path": "ai301/assets/pdfs/lec4.pdf",
+      "firstSlide": "算术逻辑单元 · Arithmetic and Logic Unit",
+      "audio": true,
+      "audioSources": []
+    },
+    {
+      "id": "lec5",
+      "group": "Lecture 5",
+      "label": "Datapath",
+      "cn": "单周期数据通路与控制",
+      "file": "Lecture5.pdf",
+      "color": "#d57490",
+      "pages": 33,
+      "path": "ai301/assets/pdfs/lec5.pdf",
+      "firstSlide": "数据通路 · Datapath",
+      "audio": true,
+      "audioSources": []
+    }
+  ],
+  "slides": {
+    "lec1": [
+      {
+        "page": 1,
+        "title": "课程导论 · Computer System Architecture",
+        "searchText": "课程导论 · Computer System Architecture\nComputer System Architecture\nLecture 1 - Introduction\n"
+      },
+      {
+        "page": 2,
+        "title": "摩尔定律与计算机革命",
+        "searchText": "摩尔定律与计算机革命\nIntroduction - The Computer Revolution\nMoore’s Law: integrated circuit resources double every 18–24 months;\nPredicted in 1965 by Gordon Moore, co-founder of Intel;\nResult in smaller, faster, and more affordable computing devices.\n"
+      },
+      {
+        "page": 3,
+        "title": "计算机系统的应用",
+        "searchText": "计算机系统的应用\nIntroduction - The Computer Revolution\nComputing Systems\nSmart Mobility: Microprocessors powering safety & autonomy.\nPersonal Tech: Smartphones as essential digital hubs.\nScientific Discovery: Supercomputers for climate & genomics.\nHealthcare: Wearable devices for monitoring & recording.\nGoal: To master the fundamental principles governing all computing systems.\n"
+      },
+      {
+        "page": 4,
+        "title": "个人电脑、服务器、超算与嵌入式系统",
+        "searchText": "个人电脑、服务器、超算与嵌入式系统\nClasses of Computing Applications\nPersonal Computers\nPurpose: Designed for individual \nuse, handling everyday tasks.\nTraits: Balanced performance, \naffordability, and broad software \ncompatibility for personal use.\nServers\nPurpose: Run larger programs for \nmultiple users, typically accessed \nvia a network.\nTraits: Optimized for reliability, \nscalability, and high throughput to \nrun 24/7 without interruption.\nSupercomputers\nPurpose: Servers with the highest \nperformance and cost. Tackle \ncomplex computational challenges.\nTraits: Extreme processing power, \nthe peak of computing capability.\nEmbedded Computers\nPurpose: Designed to run one \napplication, normally integrated \nwith the hardware and delivered \nas a single system.\nTraits: Compact size, low cost and \npower consumption, tailored for \ndedicated functions.\n"
+      },
+      {
+        "page": 5,
+        "title": "Post-PC时代：移动设备与云计算",
+        "searchText": "Post-PC时代：移动设备与云计算\nThe PostPC Era\nPersonal Mobile Devices (PMDs)\nKey Features: Small wireless devices to connect to \nthe Internet; battery-powered and touch-sensitive. \nExamples: smartphones, tablets, wearables.\nImpact: Drives innovation in low-power processors \nand user-centric design, with billions of units \nmanufactured every year.\nCloud Computing\nKey Features: Large collections of servers that provide \nservices over the Internet; rely upon giant datacenters \n- Warehouse Scale Computers (WSCs).\nImpact: Software as a Service (SaaS) deployed via \nthe cloud delivers software and data as a service over \nthe Internet, using a thin program that runs on local \nclient devices.\n"
+      },
+      {
+        "page": 6,
+        "title": "设计思想：摩尔定律与抽象",
+        "searchText": "设计思想：摩尔定律与抽象\nGreat Ideas in Computer Architecture (1/4)\n01\nDesign for Moore's Law\nAs computer designs can take years, the resources \navailable per chip can easily double or quadruple \nbetween the start and finish of the project. \nComputer architects must anticipate where the \ntechnology will be when the design finishes rather \nthan design for where it starts.\n02\nUse Abstraction to Simplify Design\nA major productivity technique for hardware and \nsoftware is to use abstractions to represent the \ndesign at different levels of representation; lower-\nlevel details are hidden to offer a simpler model at \nhigher levels.\n"
+      },
+      {
+        "page": 7,
+        "title": "设计思想：常见情况与并行",
+        "searchText": "设计思想：常见情况与并行\nGreat Ideas in Computer Architecture (2/4)\nMaking the common case fast will tend to enhance \nperformance better than optimizing the rare case. \nWe focus on optimizing for frequently occurring \nscenarios to maximize overall efficiency. \nPerform operations in parallel to fully utilize \nhardware resources. This principle leverages multi-\ncore architectures and concurrent processing, \nturning idle cycles into productive work.\n03\nMake the Common Case Fast\n04 Performance via Parallelism\n"
+      },
+      {
+        "page": 8,
+        "title": "设计思想：流水线与预测",
+        "searchText": "设计思想：流水线与预测\nGreat Ideas in Computer Architecture (3/4)\nBreak instruction execution into sequential stages \n(fetch, decode, execute, write-back) to enable \nconcurrent processing. This parallelism allows \nmultiple instructions to overlap in execution.\nSpeculate on future outcomes (e.g., branch direction \nor load values) to keep the pipeline filled and avoid \ncostly stalls. Through prediction, processors could \nmaintain high utilization even when facing conditional \noperations or memory access latency.\n05 Performance via Pipelining\n06 Performance via Prediction\n"
+      },
+      {
+        "page": 9,
+        "title": "设计思想：存储层次与冗余",
+        "searchText": "设计思想：存储层次与冗余\nGreat Ideas in Computer Architecture (4/4)\nPlace the fastest, smallest, and most expensive \nmemory (cache) at the top of the hierarchy, and the \nslowest, largest, and cheapest at the bottom. Create \na storage system that optimizes both performance \nand affordability, ensuring data is readily available \nwhen needed.\nMake systems dependable by including redundant \ncomponents that can take over when a failure \noccurs. This fault-tolerant design is essential for \nmission-critical applications where stable system \noperation is the key concern.\n07\nHierarchy of Memories\n08 Dependability via Redundancy\n"
+      },
+      {
+        "page": 10,
+        "title": "程序之下：应用层",
+        "searchText": "程序之下：应用层\nBelow Your Program\n01 Application Layer\nCrafted using high-level languages \nsuch as Python, Java, and C++.\nl\nClose to human logic\nl\nConcise & improved productivity\nl\nPlatform portability\n"
+      },
+      {
+        "page": 11,
+        "title": "程序之下：系统软件",
+        "searchText": "程序之下：系统软件\nBelow Your Program\n02 System Software\nThe critical intermediary layer.\nCompiler translates high-level \nlanguage statements into \nassembly language statements.\nOperating System (OS) manages \nhardware resources, memory, I/O \noperations, and task scheduling \nfor applications.\n"
+      },
+      {
+        "page": 12,
+        "title": "程序之下：硬件与机器语言",
+        "searchText": "程序之下：硬件与机器语言\nBelow Your Program\n03 Hardware Layer\nPhysical foundation of the stack.\nIt executes the binary machine \nlanguage instructions.\nAssembler translates assembly \nlanguage statements into \nmachine language instructions.\n"
+      },
+      {
+        "page": 13,
+        "title": "计算机的五个经典组成部分",
+        "searchText": "计算机的五个经典组成部分\nUnder the Covers - The Hardware Components\n5 classic components of a computer.\nThe processor (CPU) gets instructions and data from memory. \nInput writes data to memory, and output reads data from \nmemory. Control sends the signals that determine the \noperations of the datapath, memory, input, and output.\n01. Input\nBring information into \nthe computer\n(e.g., keyboard).\n02. Output\nSend computation result \nout of the computer \n(e.g., display).\n03. Memory\nStore programs when \nthey are running and \ndata needed by \nrunning programs.\n04. Datapath\nComponent of the processor. \nPerform arithmetic and logical \noperations on data (e.g., ALU).\n05. Control\nComponent of the processor. \nCommand the datapath, memory, \nand I/O devices according to the \ninstructions of the program.\n"
+      },
+      {
+        "page": 14,
+        "title": "处理器芯片中的功能模块",
+        "searchText": "处理器芯片中的功能模块\nUnder the Covers - The Hardware Components\nProcessor integrated circuit example.\n01. Input\nBring information into \nthe computer\n(e.g., keyboard).\n02. Output\nSend computation result \nout of the computer \n(e.g., display).\n03. Memory\nStore programs when \nthey are running and \ndata needed by \nrunning programs.\n04. Datapath\nComponent of the processor. \nPerform arithmetic and logical \noperations on data (e.g., ALU).\n05. Control\nComponent of the processor. \nCommand the datapath, memory, \nand I/O devices according to the \ninstructions of the program.\n"
+      },
+      {
+        "page": 15,
+        "title": "程序执行：输入目标代码",
+        "searchText": "程序执行：输入目标代码\nUnder the Covers - The Hardware Components\nCode Input to Device\n"
+      },
+      {
+        "page": 16,
+        "title": "程序执行：代码存入内存",
+        "searchText": "程序执行：代码存入内存\nUnder the Covers - The Hardware Components\nCode Stored in Memory\n"
+      },
+      {
+        "page": 17,
+        "title": "程序执行：从内存取指令",
+        "searchText": "程序执行：从内存取指令\nUnder the Covers - The Hardware Components\nCode Fetch from Memory\n"
+      },
+      {
+        "page": 18,
+        "title": "程序执行：译码与执行",
+        "searchText": "程序执行：译码与执行\nUnder the Covers - The Hardware Components\nControl decodes the instruction to determine what to execute \nDatapath executes the instruction as directed by control\n"
+      },
+      {
+        "page": 19,
+        "title": "程序执行：输出数据",
+        "searchText": "程序执行：输出数据\nUnder the Covers - The Hardware Components\nData Output to Device\n"
+      },
+      {
+        "page": 20,
+        "title": "晶体管、芯片制造与存储技术",
+        "searchText": "晶体管、芯片制造与存储技术\nTechnologies for Building Processors and Memory\nTransistors & VLSI\nTransistors: The fundamental on/off \nswitches of digital logic.\nVery large-scale integrated (VLSI)\ncircuit: A device containing hundreds \nof thousands to millions of transistors.\nIC Manufacturing\nWafer: A silicon slice no more than 0.1 \ninches thick where hundreds of chips \nare fabricated.\nYield: The percentage of good\n(functional) chips from the total \nnumber of chips on the wafer.\nMemory Technologies\nSRAM/DRAM: Fast, costly cache vs. \ndense, affordable main memory.\nNon-Volatile: Flash memory\npreserves data without power.\n"
+      },
+      {
+        "page": 21,
+        "title": "性能、响应时间与吞吐率",
+        "searchText": "性能、响应时间与吞吐率\nPerformance\nWhat is Performance? Defined as 1 / Execution Time, it measures how quickly a task is completed. A computer \nis faster if it finishes the same work in less time. For example, if Computer A takes 10s and Computer B takes 15s for \nthe same task, A is 1.5 times faster (15s / 10s) than B.\nResponse Time (Execution time)\nThe total time required for the computer to \ncomplete a task, including disk accesses, memory \naccesses, I/O activities, operating system overhead, \nCPU execution time, etc.\nThroughput (Bandwidth)\nThe number of tasks completed per unit time. \n"
+      },
+      {
+        "page": 22,
+        "title": "CPU性能公式：IC × CPI × 时钟周期",
+        "searchText": "CPU性能公式：IC × CPI × 时钟周期\nThe Performance Equation\nCPU Time = Instruction Count × Cycles per Instruction (CPI) × Clock Cycle Time\nInstruction Count\nThe total number of instructions \nexecuted by the program.\nCycles per Instruction (CPI)\nThe average number of clock \ncycles required to execute a \nsingle instruction.\nClock Cycle Time\nThe duration for one clock period, \nusually of the processor clock, \nwhich runs at a constant rate.\nTo improve overall system performance, we must reduce the value of one or more of these three factors \n— there are no shortcuts!\n"
+      },
+      {
+        "page": 23,
+        "title": "功耗墙与多处理器",
+        "searchText": "功耗墙与多处理器\nThe Power Wall & The Shift to Multiprocessors\nThe Power Wall\nThe physical limit where increasing clock rate leads to \nunsustainable heat and power consumption. Chips \ncould no longer be cooled efficiently.\nFrom Uniprocessors to Multiprocessors\nIntroduce parallelism to process with multiple cores.\nPerformance gains from dividing tasks across cores,\nbut requires software designed for parallel execution.\n"
+      }
+    ],
+    "lab1": [
+      {
+        "page": 1,
+        "title": "Lab 1 · 计算机体系结构基础练习",
+        "searchText": "Lab 1 · 计算机体系结构基础练习\nAI301\nComputer System Architecture \nLab1\n"
+      },
+      {
+        "page": 2,
+        "title": "本次练习目录",
+        "searchText": "本次练习目录\nContents\n2\n1. Concepts about types of computers\n2. Program running flow\n3. Simple calculation about storage\n4. CPI\n5. Integrated Circuit cost\n6. Simple calculation about parallel computation\n"
+      },
+      {
+        "page": 3,
+        "title": "Q1：计算机类型（上）",
+        "searchText": "Q1：计算机类型（上）\nQuestion 1\n3\nQ1. Aside from the smart cell phones used by a billion people, list and \ndescribe four other types of computers.\nPersonal computer (includes workstation and laptop): Personal computers \nemphasize delivery of good performance to single users at low cost and usually \nexecute third-party software.\nPersonal mobile device (PMD, includes tablets): PMDs are battery operated with \nwireless connectivity to the Internet and typically cost hundreds of dollars, and, \nlike PCs, users can download software (“apps”) to run on them. Unlike PCs, they \nno longer have a keyboard and mouse, and are more likely to rely on a touch-\nsensitive screen or even speech input.\nServer: Computer used to run large problems and usually accessed via a \nnetwork.\n"
+      },
+      {
+        "page": 4,
+        "title": "Q1：计算机类型（下）",
+        "searchText": "Q1：计算机类型（下）\nQuestion 1\n4\nWarehouse scale computer: Thousands of processors forming a large cluster.\nSupercomputer: Computer composed of hundreds to thousands of processors and \nterabytes of memory.\nEmbedded computer: Computer designed to run one application or one set of \nrelated applications and integrated into a single system.\n"
+      },
+      {
+        "page": 5,
+        "title": "Q2：高级语言到机器代码",
+        "searchText": "Q2：高级语言到机器代码\nQuestion 2\n5\nQ2. Describe the steps that transform a \nprogram written in a high-level language such \nas C into a representation that is directly \nexecuted by a computer processor.\nThe program is compiled into an assembly language \nprogram, which is then assembled into a machine \nlanguage program.\n"
+      },
+      {
+        "page": 6,
+        "title": "Q3：帧缓冲容量与传输时间",
+        "searchText": "Q3：帧缓冲容量与传输时间\nQuestion 3\n6\nQ3. Assume a color display using 8 bits for each of the primary colors \n(red, green, blue) per pixel and a frame size of 1280 × 1024.\na. What is the minimum size in bytes of the frame buffer to store a\nframe?\nb. How long would it take, at a minimum, for the frame to be sent over\na 100 Mbit/s network?\n"
+      },
+      {
+        "page": 7,
+        "title": "Q3：图像存储与带宽计算答案",
+        "searchText": "Q3：图像存储与带宽计算答案\nQuestion 3\n7\nQ3. Assume a color display using 8 bits for each of the primary colors (red, green, blue) per pixel and a frame size of 1280 ×\n1024.\na. What is the minimum size in bytes of the frame buffer to store a frame?\nb. How long would it take, at a minimum, for the frame to be sent over a 100 Mbit/s network?\n"
+      },
+      {
+        "page": 8,
+        "title": "SI单位前缀",
+        "searchText": "SI单位前缀\nMetric prefix\n8\n"
+      },
+      {
+        "page": 9,
+        "title": "CPI：每条指令的平均时钟周期",
+        "searchText": "CPI：每条指令的平均时钟周期\n9\nCPI\nCPI: Cycles per instruction, is one aspect of a processor's performance: the average \nnumber of clock cycles per instruction for a program or program fragment \n"
+      },
+      {
+        "page": 10,
+        "title": "Q4：两种代码序列的性能比较",
+        "searchText": "Q4：两种代码序列的性能比较\nQuestion 4\n"
+      },
+      {
+        "page": 11,
+        "title": "Q4：指令数、周期数与平均CPI",
+        "searchText": "Q4：指令数、周期数与平均CPI\nQuestion 4\n"
+      },
+      {
+        "page": 12,
+        "title": "Q5：三个处理器的性能比较",
+        "searchText": "Q5：三个处理器的性能比较\nQuestion 5\nConsider three different processors P1, P2, and P3 executing the same \ninstruction set. P1 has a 3 GHz clock rate and a CPI of 1.5. P2 has a 2.5 GHz \nclock rate and a CPI of 1.0. P3 has a 4.0 GHz clock rate and has a CPI of 2.2.\na. Which processor has the highest performance expressed in instructions\nper second?\nb. If the processors each execute a program in 10 seconds, find the number\nof cycles and the number of instructions.\n11\n"
+      },
+      {
+        "page": 13,
+        "title": "Q5：时钟频率、周期数与指令数",
+        "searchText": "Q5：时钟频率、周期数与指令数\nQuestion 5\n12\nConsider three different processors P1, P2, and P3 executing the same instruction set. P1 has a \n3 GHz clock rate and a CPI of 1.5. P2 has a 2.5 GHz clock rate and a CPI of 1.0. P3 has a 4.0 GHz \nclock rate and has a CPI of 2.2.\na. Which processor has the highest performance expressed in instructions per second?\nb. If the processors each execute a program in 10 seconds, find the number of cycles and\nthe number of instructions.\n"
+      },
+      {
+        "page": 14,
+        "title": "芯片制造：晶粒成本与良率",
+        "searchText": "芯片制造：晶粒成本与良率\nCost per wafer \nCost per die = Die per wafer x yield \nWafer area \nDies per wafer ：：：：\nDie area \nYield= [1 +(Defects per area x Die area/2)]2 \n1\nIntegrated Circuit cost\nDefect: A microscopic flaw in a wafer or in patterning steps that can result in \nthe failure of the die containing that defect. \nDie: The individual rectangular sections that are cut from a wafer, more\ninformally known as chips.\nYield: The percentage of good dies from the total number of dies on the wafer.\n"
+      },
+      {
+        "page": 15,
+        "title": "Q6：晶圆成本与缺陷密度",
+        "searchText": "Q6：晶圆成本与缺陷密度\nQuestion 6\n16\nQ6. Assume a 15 cm diameter wafer has a cost of 12, contains 84 dies, and has\n0.020 defects/cm 2 . Assume a 20 cm diameter wafer has a cost of 15, contains \n100 dies, and has 0.031 defects/cm 2 .\na. Find the yield for both wafers.\nb. Find the cost per die for both wafers.\nc. If the number of dies per wafer is increased by 10% and the defects per area\nunit increases by 15%, find the die area and yield.\nd. Assume a fabrication process improves the yield from 0.92 to 0.95. Find the\ndefects per area unit for each version of the technology given a die area of\n200 mm 2 .\n"
+      },
+      {
+        "page": 16,
+        "title": "Q6：良率与单位晶粒成本",
+        "searchText": "Q6：良率与单位晶粒成本\nQuestion 6\n17\nQ6. Assume a 15 cm diameter wafer has a cost of 12, contains 84 dies, and has 0.020 defects/cm 2 . \nAssume a 20 cm diameter wafer has a cost of 15, contains 100 dies, and has 0.031 defects/cm 2 .\na. Find the yield for both wafers.\nb. Find the cost per die for both wafers.\n"
+      },
+      {
+        "page": 17,
+        "title": "Q6：晶粒数量变化与工艺改进",
+        "searchText": "Q6：晶粒数量变化与工艺改进\nQuestion 6\n18\nQ6. Assume a 15 cm diameter wafer has a cost of 12, contains 84 dies, and has 0.020 defects/cm 2 . \nAssume a 20 cm diameter wafer has a cost of 15, contains 100 dies, and has 0.031 defects/cm 2 .\nc. If the number of dies per wafer is increased by 10% and the defects per area unit increases by 15%,\nfind the die area and yield.\nd. Assume a fabrication process improves the yield from 0.92 to 0.95. Find the defects per area unit for\neach version of the technology given a die area of 200 mm 2 .\n"
+      },
+      {
+        "page": 18,
+        "title": "Q7：并行开销与加速比",
+        "searchText": "Q7：并行开销与加速比\nQuestion 7\n19\nQ7. When a program is adapted to run on multiple processors in a multiprocessor system, \nthe execution time on each processor is comprised of computing time and the overhead \ntime required for locked critical sections and/or to send data from one processor to \nanother.\nAssume a program requires t = 100 s of execution time on one processor. When run p \nprocessors, each processor requires t/p s, as well as an additional 4 s of overhead, \nirrespective of the number of processors. Compute the per-processor execution time for 2, \n4, 8, 16, 32, 64, and 128 processors. For each case, list the corresponding speedup relative \nto a single processor and the ratio between actual speedup versus ideal speedup (speedup \nif there was no overhead).\n"
+      },
+      {
+        "page": 19,
+        "title": "Q7：执行时间、加速比与并行效率",
+        "searchText": "Q7：执行时间、加速比与并行效率\nQuestion 7\n20\nQ7. When a program is adapted to run on multiple processors in a multiprocessor system, the execution time on each \nprocessor is comprised of computing time and the overhead time required for locked critical sections and/or to send data \nfrom one processor to another.\nAssume a program requires t = 100 s of execution time on one processor. When run p processors, each processor requires t/p \ns, as well as an additional 4 s of overhead, irrespective of the number of processors. Compute the per-processor execution \ntime for 2, 4, 8, 16, 32, 64, and 128 processors. For each case, list the corresponding speedup relative to a single processor \nand the ratio between actual speedup versus ideal speedup (speedup if there was no overhead).\n"
+      }
+    ],
+    "lec2": [
+      {
+        "page": 1,
+        "title": "数字逻辑复习 · Digital Logic Review",
+        "searchText": "数字逻辑复习 · Digital Logic Review\n1\nComputer System Architecture\nLecture 2 - Digital Logic Review\n"
+      },
+      {
+        "page": 2,
+        "title": "复习：系统软件",
+        "searchText": "复习：系统软件\n2\nSystem Software\nCompiler translates high-level \nlanguage statements into \nassembly language statements.\nOperating System (OS)\nmanages hardware resources, \nmemory, I/O operations, and \ntask scheduling for applications.\nReview\n"
+      },
+      {
+        "page": 3,
+        "title": "复习：计算机的五个组成部分",
+        "searchText": "复习：计算机的五个组成部分\n3\nReview\n5 classic components of a computer.\n01. Input\nBring information \ninto the computer\n(e.g., keyboard).\n02. Output\nSend computation \nresult out of the \ncomputer\n(e.g., display).\n03. Memory\nStore programs \nwhen they are \nrunning and data \nneeded by them.\n04. Datapath\nComponent of the processor. \nPerform arithmetic and \nlogical operations on data \n(e.g., ALU).\n05. Control\nComponent of the processor. \nCommand the datapath, \nmemory, and I/O devices \naccording to the instructions \nof the program.\n"
+      },
+      {
+        "page": 4,
+        "title": "模拟信号与数字信号",
+        "searchText": "模拟信号与数字信号\nAnalog vs. Digital\n• Analog Signal\n• Vary smoothly over  time\n• Continuously  valued\n• Digital Signal\n• Maintain a constant level  \nthen changes to another  \nconstant level\n• Discretely  valued\n4\n"
+      },
+      {
+        "page": 5,
+        "title": "十进制、二进制、八进制与十六进制",
+        "searchText": "十进制、二进制、八进制与十六进制\n5\nSystem Name\nDecimal\nBinary\nOctal\nHexadecimal\nRadix\n10\n2\n8\n16\n0\n0000\n0\n0\n1\n0001\n1\n1\n2\n0010\n2\n2\n3\n0011\n3\n3\n4\n0100\n4\n4\n5\n0101\n5\n5\n6\n0110\n6\n6\n7\n0111\n7\n7\n8\n1000\n10\n8\n9\n1001\n11\n9\n10\n1010\n12\nA\n11\n1011\n13\nB\n12\n1100\n14\nC\n13\n1101\n15\nD\n14\n1110\n16\nE\n15\n1111\n17\nF\n16\n10000\n20\n10\n5\nBase\n• Base (Radix): the total number of digits allowed in the number system.\n"
+      },
+      {
+        "page": 6,
+        "title": "数制与位权",
+        "searchText": "数制与位权\n6\nNumber Systems\n• Decimal numbers\n• Binary numbers\n10\n+ 7´101 + 4´100\n5374\n= 5´103 + 3´102\n1’s column  \n10’s column  \n100’s column  \n1000’s column\nfive  \nthousands\nthree  \nhundreds\nseven  \ntens\nfour  \nones\n10\n2\n1101 =1´ 23 +1´ 22 + 0´ 21 +1´ 20 =13\n1’s\ncolumn\n2’s\ncolumn\n4’s\ncolumn\n8’s\ncolumn\none  \neight\none  \nfour\nzero  \ntwo\none  \none\n"
+      },
+      {
+        "page": 7,
+        "title": "二进制与十进制转换",
+        "searchText": "二进制与十进制转换\n7\nDecimal vs Binary Numbers\n• Binary to decimal conversion:\n• Convert 100112 to decimal\n• 16×1 + 8×0 + 4×0 + 2×1 + 1×1 = 1910\n• Decimal to binary conversion:\n• Convert 4710 to binary\n• 32×1 + 16×0 + 8×1 + 4×1 + 2×1 + 1×1 = 1011112\n• N-digit decimal number\nRange: [0, 10N−1]\n• How many values? 10N\n• Example: 3-digit decimal number:\n• 103 = 1000 possible values\nRange: [000, 999]\n• N-digit binary number\nRange: [0, 2N−1]\n• How many values? 2N\n• Example: 3-digit binary number:\n• 23 = 8 possible values\nRange: [0002, 1112]\n"
+      },
+      {
+        "page": 8,
+        "title": "十六进制转换",
+        "searchText": "十六进制转换\nHexadecimal Numbers\n8\n• Hexadecimal to binary conversion:\n• 4AF16 (or 0x4AF)\n• 0100 1010 11112\n• Hexadecimal to decimal conversion:\n• 4AF16 (or 0x4AF)\n• 162×4 + 161×10 + 160×15\n= 119910\n"
+      },
+      {
+        "page": 9,
+        "title": "无符号数与二进制补码",
+        "searchText": "无符号数与二进制补码\nUnsigned and Signed Numbers\nHexadecimal\nBinary\nDecimal  \n(Unsigned)\nDecimal\n(2’s Complement)\n0x8F\n0111 1111\n127\n127\n0x8E\n0111 1110\n126\n126\n…\n…\n…\n…\n0x02\n0000 0010\n2\n2\n0x01\n0000 0001\n1\n1\n0x00\n0000 0000\n0\n0\n0xFF\n1111 1111\n28−1 = 255\n−1\n0xFE\n1111 1110\n254\n−2\n…\n…\n…\n…\n0x82\n1000 0010\n130\n−126\n0x81\n1000 0001\n129\n−127\n0x80\n1000 0000\n128\n−128\nComplement all bits  \n1000 0000\nThen add 1\n1000 0001\nComplement all bits  \n0000 0001\nThen add 1\n0000 0010\n9\n"
+      },
+      {
+        "page": 10,
+        "title": "练习：n位补码的取值范围",
+        "searchText": "练习：n位补码的取值范围\n10\nExercise\n• Ex 1: For a n-bit 2’s complement signed binary  \nnumeral system, what’s the largest positive  \nnumber and the smallest negative number?\n"
+      },
+      {
+        "page": 11,
+        "title": "数字电路与组合逻辑",
+        "searchText": "数字电路与组合逻辑\nDigital Circuits\n11\n• Combinational circuits consist of logic gates with\ninputs and outputs. The output is directly dependent \non the input at the current state.\n• Sequential circuits have memory. The output depends \non both the current inputs as well as the stored values\nof the circuit.\n"
+      },
+      {
+        "page": 12,
+        "title": "逻辑电平与噪声容限",
+        "searchText": "逻辑电平与噪声容限\nLogic Levels\nReceiver\nForbidden  \nZone\nNML\nNMH\nInput Characteristics\nOutput Characteristics\nVO H\nVDD\nVOL\nGND\nVIH  \nVIL\nLogic High  \nInput Range\nLogic Low  \nInput Range\nLogic High  \nOutput Range\nLogic Low\nOutput Range\n12\nDriver\n• Active High: High voltage activates/enables the pin\n• Active Low: Low voltage activates/enables the pin\n"
+      },
+      {
+        "page": 13,
+        "title": "基本逻辑门",
+        "searchText": "基本逻辑门\nLogic Gates\nOR\nNOR\nAND\nNAND\nbuffer\nNOT (inverter)\nXOR\nXNOR\n13\n"
+      },
+      {
+        "page": 14,
+        "title": "真值表：以NOR为例",
+        "searchText": "真值表：以NOR为例\nTruth Table\n• A tool for describing how the output of a logic circuit  \ndepends on the logic levels presented at the inputs.\n• The number of input combinations will equal 2N for an\nN-input truth table\nLogic  \nCircuit\n14\nA\nB\nZ\nInputs\nOutput\n"
+      },
+      {
+        "page": 15,
+        "title": "练习：三输入XNOR真值表",
+        "searchText": "练习：三输入XNOR真值表\n15\nExercise\n• Ex 2: Draw the truth table of a 3-input XNOR\ngate.\n"
+      },
+      {
+        "page": 16,
+        "title": "组合电路的输入与输出",
+        "searchText": "组合电路的输入与输出\nCombinational Circuits\n…\n…\n16\nInput X\nOutput Z\nCombinational  \nCircuits\nZ = F(X)\n• In combinational circuits, the output at any time is a \ndirect function of the applied external inputs\n"
+      },
+      {
+        "page": 17,
+        "title": "组合逻辑的设计流程",
+        "searchText": "组合逻辑的设计流程\nDesign Procedure of  \nCombinational Circuits\nCircuit  \nSpecification\nTruth Table\n(How many input/output?)\nMinimization\n(K-maps, algebraic manipulation, CAD tools)\nLogic Diagram\n17\n"
+      },
+      {
+        "page": 18,
+        "title": "练习：只用NAND实现AB+CD",
+        "searchText": "练习：只用NAND实现AB+CD\n18\nExercise\n• Ex 3: Implement AB+CD using NAND gates  \nonly.\n"
+      },
+      {
+        "page": 19,
+        "title": "传播延迟与关键路径",
+        "searchText": "传播延迟与关键路径\nPropagation Delay\n• Propagation delay: the delay between the arrival\nof signal at the input and the change of output.\n• A circuit is considered to be fast if its propagation \ndelay is small.\nX  \nY\nZ\nDelay between input (X, Y) and change in output Z.\n19\n"
+      },
+      {
+        "page": 20,
+        "title": "时序图中的传播延迟",
+        "searchText": "时序图中的传播延迟\nTiming Diagram\n• The timing diagram shows the values of the input signals \nto a circuit with respect to time as a waveform, together\nwith another waveform for the output.\nX\nInputs\nY\nPropagation delay = τ\nOutput\nZ\nTime\n20\n"
+      },
+      {
+        "page": 21,
+        "title": "扇入与扇出",
+        "searchText": "扇入与扇出\n• Fan-in is the number of inputs to a gate.\nE.g. fan-in = 3 for a 3-input XNOR gate.\n• Fan-out is the number of load gates that can be\ndriven by a driver gate.\n• There is a limitation on fan-in and fan-out for any gate.\nFan-out = 3\n21\nFan-in & Fan-out\nFan-in = 2\n"
+      },
+      {
+        "page": 22,
+        "title": "缓冲器与驱动能力",
+        "searchText": "缓冲器与驱动能力\nBuffers\n• Output = Input\n• Help increase the driving strength (how much load \na gate can drive) of a circuit\n• Do not affect the logical level\n22\n"
+      },
+      {
+        "page": 23,
+        "title": "译码器：二进制到独热输出",
+        "searchText": "译码器：二进制到独热输出\n23\n• Information is represented by binary codes\n• A decoder is a minterm generator for producing product \nthat includes all input variables, e.g.\n̅𝐴𝐵𝐶, 𝐴%𝐵̅𝐶, 𝐴𝐵𝐶\n• N inputs, 2N outputs (One-hot: only one output HIGH at once)\nDecoders\nBinary 2-to-4 Decoder\nNote: “x” denotes don’t care.\n"
+      },
+      {
+        "page": 24,
+        "title": "2→4译码器的逻辑电路",
+        "searchText": "2→4译码器的逻辑电路\n2-to-4 Decoder Logic Diagram\n24\nDecoders\n"
+      },
+      {
+        "page": 25,
+        "title": "译码器的指令与设备控制应用",
+        "searchText": "译码器的指令与设备控制应用\nDecoder Applications\n• Decode 3-bit opcodes:\n• Home automation:\nop0\nop1\nop2\nADD  \nSUB  \nAND  \nXOR  \nNOT  \nLOAD  \nSTORE  \nJUMP\nC0  \nC1\n25\nLight  \nA/C  \nDoor  \nTV\n"
+      },
+      {
+        "page": 26,
+        "title": "用译码器构造全加器",
+        "searchText": "用译码器构造全加器\nDecoders as Binary Adder\n26\n"
+      },
+      {
+        "page": 27,
+        "title": "多路选择器 · Multiplexers",
+        "searchText": "多路选择器 · Multiplexers\nMultiplexers\n• A data selector for directing one of 2n input to the output.\n• Selection is done based on a set of n select bits.\n…\n2n-to-1  \nMUX\n27\n2n inputs\n1 output\nn select bits\n"
+      },
+      {
+        "page": 28,
+        "title": "时序电路与状态",
+        "searchText": "时序电路与状态\nSequential Circuits\n• Have memory (short-term)\n• Storage elements (latch, flip-flop) store state\n28\n"
+      },
+      {
+        "page": 29,
+        "title": "双稳态电路",
+        "searchText": "双稳态电路\nBistable Circuit\n• Fundamental building block  \nof other state elements\n• Two outputs: Q, Q\n• No inputs\n̅\n.\n29\n• Consider the two possible cases:\n• Q = 0: then Q̅ = 1, Q = 0 (consistent)\n• Q = 1: then Q̅ = 0, Q = 1 (consistent)\n• Stores 1 bit of state in the state variable, Q (or Q̅ ).\n• Problem: no inputs to control the state.\n"
+      },
+      {
+        "page": 30,
+        "title": "SR锁存器的四种输入",
+        "searchText": "SR锁存器的四种输入\nSet/Reset Latch\n• SR Latch\n• Consider the four possible cases:\n• S = 1, R = 0\n• S = 0, R = 1\n• S = 0, R = 0\n• S = 1, R = 1\n30\n"
+      },
+      {
+        "page": 31,
+        "title": "SR锁存器：置位与复位",
+        "searchText": "SR锁存器：置位与复位\nSR Latch Analysis\n31\n• S = 1, R = 0:\n• then Q = 1 and Q̅ = 0\n• S = 0, R = 1:\n• then Q = 0 and Q̅ = 1\n"
+      },
+      {
+        "page": 32,
+        "title": "SR锁存器：保持与非法状态",
+        "searchText": "SR锁存器：保持与非法状态\n• S = 0, R = 0:\n• then Q = Qprev\n• Memory\n32\n• S = 1, R = 1:\n• then Q = 0, Q̅ = 0\n• Invalid (Q = Q̅)\nSR Latch Analysis\n"
+      },
+      {
+        "page": 33,
+        "title": "SR锁存器符号与特性表",
+        "searchText": "SR锁存器符号与特性表\nSR Latch Symbol\n• SR (Set/Reset) Latch stores one bit of state (Q)\n• Control stored value using S, R inputs\n• Set: Make the output 1  \n(S = 1, R = 0, Q = 1)\n• Reset: Make the output 0  \n(S = 0, R = 1, Q = 0)\n33\n"
+      },
+      {
+        "page": 34,
+        "title": "门控D锁存器",
+        "searchText": "门控D锁存器\nGated D Latch\n• Two inputs: CLK, D\n• CLK: controls when the output changes.\n• D (data input): controls what the output changes to.\n• When CLK = 1, transparent\nD passes through to Q\n• When CLK = 0, opaque\nQ holds its previous value\n34\n"
+      },
+      {
+        "page": 35,
+        "title": "主从式D触发器",
+        "searchText": "主从式D触发器\nMaster-Slave D Flip-Flop\n• Two back-to-back D latches controlled by\ncomplementary clocks.\n• When CLK = 0\n• L1 is transparent, L2 is opaque\n• D passes through to Y\n• When CLK = 1\n• L1 is opaque, L2 is transparent\n• Y passes through to Q\n• On the rising edge of the clock (CLK rises from 0 to 1), \nD passes through to Q.\nCLK\nCLK\nN\nCLK\nD\nD\nQ\nL1\nQ\nD\nQ\nQ\nL2\nQ\nQ\nY\n35\n"
+      },
+      {
+        "page": 36,
+        "title": "边沿触发D触发器",
+        "searchText": "边沿触发D触发器\nEdge-Triggered D Flip-Flop\n• Inputs: CLK, D\n• Samples D on rising edge of CLK\n• When CLK rises from 0 to 1, D passes \nthrough to Q\n• Otherwise, Q holds its previous value\n• Edge-triggered\n• Activated on the clock edge\nD Flip-Flop  \nSymbols\nD\nQ\nQ\n36\n"
+      },
+      {
+        "page": 37,
+        "title": "锁存器与触发器的波形对照",
+        "searchText": "锁存器与触发器的波形对照\nLatch and Flip-Flop\n• Latch is level-sensitive.\n• Flip-flop is edge-triggered.\n37\n"
+      },
+      {
+        "page": 38,
+        "title": "多位寄存器",
+        "searchText": "多位寄存器\n38\nRegisters\n• A register is a simple memory device composed of \na series of flip-flops wired together so that they \nshare a common clock pulse.\n• It stores data and instructions for quick processing.\n• Registers come in various sizes and types. The size \nof a register is closely tied to the  structure of the\nprocessor.\n"
+      },
+      {
+        "page": 39,
+        "title": "4位并行寄存器",
+        "searchText": "4位并行寄存器\n4-Bit Register\n• 4 D flip-flops\n• Common Clock\n• At each positive-edge, 4  \nbits are loaded in parallel,\noverwriting previous data.\n• Common Clear\n• When Clear = 0, all flip-\nflops are cleared\nasynchronously\n39\n"
+      },
+      {
+        "page": 40,
+        "title": "串行输入输出移位寄存器",
+        "searchText": "串行输入输出移位寄存器\nShift Registers\n• Shift register: A register which can shift its stored bits\nin one or both directions.\n• Serial-in, serial-out \n• At each positive-edge, 4 bits are loaded in parallel,\noverwriting previous data.\n40\n"
+      },
+      {
+        "page": 41,
+        "title": "可并行装载的双向移位寄存器",
+        "searchText": "可并行装载的双向移位寄存器\nBidirectional Shift Register with  \nParallel Load\n41\n"
+      }
+    ],
+    "lab2": [
+      {
+        "page": 1,
+        "title": "Lab 2 · 数字逻辑练习",
+        "searchText": "Lab 2 · 数字逻辑练习\n1\nComputer System Architecture\nLab 2 - Digital Logic Review\n"
+      },
+      {
+        "page": 2,
+        "title": "Q1：8位补码加法与溢出",
+        "searchText": "Q1：8位补码加法与溢出\nQuestion 1\n"
+      },
+      {
+        "page": 3,
+        "title": "Q2：布尔表达式真值表",
+        "searchText": "Q2：布尔表达式真值表\nQuestion 2\nConstruct a truth table for the Boolean expression:\n𝑋= (𝐴+ 𝐵)(𝐵+ 𝐶)(𝐶+ 𝐴)\n"
+      },
+      {
+        "page": 4,
+        "title": "基本逻辑门符号",
+        "searchText": "基本逻辑门符号\nOR\nNOR\nAND\nNAND\nbuffer\nNOT (inverter)\nXOR\nXNOR\n4\nLogic Gates\n"
+      },
+      {
+        "page": 5,
+        "title": "Q3：只用NAND实现XOR",
+        "searchText": "Q3：只用NAND实现XOR\nQuestion 3\nImplement the XOR gate using NAND gates only.\n"
+      },
+      {
+        "page": 6,
+        "title": "Q4：用4选1MUX构造全加器",
+        "searchText": "Q4：用4选1MUX构造全加器\nQuestion 4\n"
+      },
+      {
+        "page": 7,
+        "title": "Q5：SR锁存器的延迟波形",
+        "searchText": "Q5：SR锁存器的延迟波形\nQuestion 5\nDraw the outputs of an SR latch for the input waveforms shown below.\nAssume that the propagation delay of a NOR gate is 10ns.\n"
+      },
+      {
+        "page": 8,
+        "title": "Q6：4位奇偶校验波形",
+        "searchText": "Q6：4位奇偶校验波形\nQuestion 6\n"
+      },
+      {
+        "page": 9,
+        "title": "Q7：计数器译码输出毛刺",
+        "searchText": "Q7：计数器译码输出毛刺\nQuestion 7\n"
+      },
+      {
+        "page": 10,
+        "title": "Q8：移位与并行装载的输出波形",
+        "searchText": "Q8：移位与并行装载的输出波形\nQuestion 8\n"
+      },
+      {
+        "page": 11,
+        "title": "Q9：74HC194双向移位寄存器",
+        "searchText": "Q9：74HC194双向移位寄存器\nQuestion 9\n"
+      },
+      {
+        "page": 12,
+        "title": "Q10：异步计数器时序图",
+        "searchText": "Q10：异步计数器时序图\nQuestion 10\n"
+      }
+    ],
+    "lec3": [
+      {
+        "page": 1,
+        "title": "指令集体系结构 · Instruction Set Architecture",
+        "searchText": "指令集体系结构 · Instruction Set Architecture\n1\nComputer System Architecture\nLecture 3 - Instruction Set Architecture\nSeptember 2026\n"
+      },
+      {
+        "page": 2,
+        "title": "机器设计的两个基本原则",
+        "searchText": "机器设计的两个基本原则\nTwo Key Principles of Machine  \nDesign\n1. Instructions are represented  \nas (binary) numbers and, as  \nsuch, are indistinguishable  \nfrom data.\n2. Programs are stored in  \nalterable memory (that can  \nbe read from or written to)  \njust like data.\n2\n"
+      },
+      {
+        "page": 3,
+        "title": "存储程序概念",
+        "searchText": "存储程序概念\n3\nStored-Program Concept\n• Programs can be shipped as files of binary  \nnumbers – binary-code compatibility.\n• Computers can inherit ready-made software  \nprovided they are compatible with an existing ISA.\n• A small number of ISAs.\n"
+      },
+      {
+        "page": 4,
+        "title": "汇编语言指令",
+        "searchText": "汇编语言指令\n4\nAssembly Language Instructions\n• The language of the machine\n• Goal: make it easy to build the hardware and the compiler \nwhile maximizing performance and minimizing cost.\n• The MIPS ISA\n• Microprocessor without Interlocked Pipeline Stages\n• Similar to other ISAs developed since the 1980’s\n• Used by Broadcom, Cisco, NEC, Nintendo, Sony, etc.\n• Design Goals:\n• Maximize performance, minimize cost, reduce design time  \n(time-to-market), minimize memory space (embedded  \nsystems), minimize power consumption (mobile systems).\n"
+      },
+      {
+        "page": 5,
+        "title": "CISC与RISC",
+        "searchText": "CISC与RISC\nCISC vs. RISC\n5\n• Complex Instruction Set Computer (CISC)\n• Lots of instructions of variable size, very memory  \noptimal, typically less registers.\n• Intel x86\n• Reduced Instruction Set Computer (RISC)\n• Instructions, all of a fixed size, more registers,  \noptimized for speed.\n• Usually called a “Load/Store” architecture.\n• MIPS, Sun SPARC, HP PA-RISC, IBM PowerPC\n"
+      },
+      {
+        "page": 6,
+        "title": "RISC设计思想",
+        "searchText": "RISC设计思想\n6\nRISC – Reduced Instruction Set  \nComputer\n• RISC Philosophy\n• fixed instruction lengths\n• load-store instruction sets \n• limited number of addressing modes\n• limited number of operations\n• Instruction sets are measured by how well compilers \nuse them, not by how well assembly language \nprogrammers use them.\n"
+      },
+      {
+        "page": 7,
+        "title": "MIPS的四条设计原则",
+        "searchText": "MIPS的四条设计原则\n7\nMIPS (RISC) Design Principles\n1.\nSimplicity favors regularity\n• fixed size instructions\n• small number of instruction formats\n• opcode always the first 6 bits\n2.\nSmaller is faster\n• limited instruction set\n• limited number of registers\n• limited number of addressing modes\n3.\nMake the common case fast\n• arithmetic operands from the registers (load-store machine)\n• allow instructions to contain immediate operands\n4.\nGood design demands good compromises\n• three instruction formats\n"
+      },
+      {
+        "page": 8,
+        "title": "MIPS指令类别与指令格式",
+        "searchText": "MIPS指令类别与指令格式\nMIPS ISA\n• Instruction Categories\n• Load/Store\n• Computational\n• Jump and Branch\n• Floating Point\n• Memory Management\n• Special\n• 3 instruction formats: all 32-bit wide\n8\nPC\nHI\nLO\nRegisters\nOP\nrs\nrt\nrd\nshamt\nfunct\nOP\nrs\nrt\nimmediate\nOP\njump target\nR format  \nI format  \nJ   format\nR0–R31\n"
+      },
+      {
+        "page": 9,
+        "title": "MIPS寄存器堆的读写端口",
+        "searchText": "MIPS寄存器堆的读写端口\nMIPS Registers\n• Holds thirty-two 32-bit registers\n• Two read ports\n• One write ports\n• To allow writing, enable the \nwrite control bit.\n9\n"
+      },
+      {
+        "page": 10,
+        "title": "寄存器与主存的区别",
+        "searchText": "寄存器与主存的区别\n10\nMIPS Registers II\n• Registers are\n• Faster than main memory\n• But registers with more locations are slower\n• Read/write port increase impacts speed quadratically\n• Easier for a complier to use\n• (A*B) – (C*D) – (E*F) can do multiplications in any order\n• Can hold variables\n• code density improves\n"
+      },
+      {
+        "page": 11,
+        "title": "MIPS寄存器使用约定",
+        "searchText": "MIPS寄存器使用约定\n11\nMIPS Register Convention\nName\nRegister Number\nUsage\nPreserved on call?\n$zero\n0\nConstant value 0\nN/A\n$at\n1\n(Reserved for assembler)\nNo\n$v0–$v1\n2–3\nReturned values\nNo\n$a0–$a3\n4–7\nArguments\nNo\n$t0–$t7\n8–15\nTemporaries\nNo\n$s0–$s7\n16–23\nSaved values\nYes\n$t8–$t9\n24–25\nTemporaries\nNo\n$k0–$k1\n26–27\n(Reserved for OS)\nNo\n$gp\n28\nGlobal pointer\nYes\n$sp\n29\nStack pointer\nYes\n$fp\n30\nFrame pointer\nYes\n$ra\n31\nReturn address\nYes\n"
+      },
+      {
+        "page": 12,
+        "title": "三操作数算术指令",
+        "searchText": "三操作数算术指令\n12\nArithmetic Operations\n• Add and subtract, three operands\n• Two sources and one destination\nadd a, b, c\n# a gets b + c\n• All arithmetic operations have this form\n• Design Principle 1: Simplicity favors  \nregularity\n• Regularity makes implementation simpler\n• Simplicity enables higher performance at lower cost\n"
+      },
+      {
+        "page": 13,
+        "title": "算术表达式的MIPS翻译",
+        "searchText": "算术表达式的MIPS翻译\n13\nArithmetic Example\n• C code:\nf = (g + h) - (i + j);\n• Compiled MIPS code:\nadd t0, g, h  \nadd t1, i, j  \nsub f, t0, t1\n# temp t0 = g + h   \n# temp t1 = i + j   \n# f = t0 - t1\n• Using registers (f–j are stored in $s0–$s4):\nadd $t0, $s1, $s2\n# $t0 = g + h\nadd $t1, $s3, $s4\n# $t1 = i + j\nsub $s0, $t0, $t1\n# f = $t0 - $t1\n"
+      },
+      {
+        "page": 14,
+        "title": "寄存器操作数",
+        "searchText": "寄存器操作数\n14\nRegister Operands\n• Arithmetic instructions use register operands\n• MIPS has 32 × 32-bit registers\n• Use for frequently accessed data\n• Numbered 0 to 31\n• 32-bit data called a “word”\n• Assembler names (convention)\n• $t0, $t1, …, $t9 for temporary values\n• $s0, $s1, …, $s7 for saved variables\n• Design Principle 2: Smaller is faster\n• (main memory: millions of locations)\n"
+      },
+      {
+        "page": 15,
+        "title": "访存操作数与字节地址",
+        "searchText": "访存操作数与字节地址\n15\nMemory Operands\n• Main memory used for composite data\n• Arrays, structures, dynamic data\n• To apply arithmetic operations\n• Load values from memory into registers\n• Store result from register to memory\n• Memory is byte addressed\n• Each address identifies an 8-bit byte\n• Words are aligned in memory\n• Address must be a multiple of 4\n• MIPS is Big Endian\n• Most-significant byte at least address of a word\n• Little Endian: least-significant byte at least address\n"
+      },
+      {
+        "page": 16,
+        "title": "大端序与小端序",
+        "searchText": "大端序与小端序\n16\nBig Endian / Little Endian\n3\n2\n1\n0\n0\n1\n2\n3\nMSB\nLSB\n• Big Endian: leftmost byte is word address\n• IBM 360/370, Motorola 68k, MIPS, Sparc, HP PA\n• Little Endian: rightmost byte is word address\n• Intel 80x86, DEC Vax, DEC Alpha\nLittle Endian byte 0\nBig Endian byte 0\n"
+      },
+      {
+        "page": 17,
+        "title": "数组访问：g = h + A[8]",
+        "searchText": "数组访问：g = h + A[8]\nMemory Operand Example 1\nlw\n$t0, 32($s3)\n# load word  \nadd\n$s1, $s2, $t0\nOffset\nBase register\n• C code:\ng = h + A[8];\n• g in $s1, h in $s2, base address of A in $s3\n• Compiled MIPS code:\n• Index 8 requires offset of 32 (4 bytes × 8 words)\n17\n"
+      },
+      {
+        "page": 18,
+        "title": "数组读写：A[12] = h + A[8]",
+        "searchText": "数组读写：A[12] = h + A[8]\nMemory Operand Example 2\n• C code:\nA[12] = h + A[8];\n• h in $s2, base address of A in $s3\n• Compiled MIPS code?\n18\n"
+      },
+      {
+        "page": 19,
+        "title": "寄存器与内存的访问成本",
+        "searchText": "寄存器与内存的访问成本\n20\nRegisters vs. Memory\n• Registers are faster to access than memory\n• Operating on memory data requires loads and  \nstores\n• More instructions to be executed\n• Compiler must use registers for variables as  \nmuch as possible\n• Only spill to memory for less frequently used  \nvariables\n• Register optimization is important!\n"
+      },
+      {
+        "page": 20,
+        "title": "立即数操作数",
+        "searchText": "立即数操作数\n21\nImmediate Operands\n• Constant data specified in an instruction\naddi $s3, $s3, 4\n• No subtract immediate instruction\n• Just use a negative constant\naddi $s2, $s1, -1\n• Design Principle 3: Make the common case  \nfast\n• Small constants are common\n• Immediate operand avoids a load instruction\n"
+      },
+      {
+        "page": 21,
+        "title": "常数零寄存器$zero",
+        "searchText": "常数零寄存器$zero\n22\nThe Constant Zero\n• MIPS register 0 ($zero) is the constant 0\n• Cannot be overwritten\n• Useful for common operations\n• E.g., move between registers\nadd\n$t2, $s1, $zero\n"
+      },
+      {
+        "page": 22,
+        "title": "无符号整数与有符号补码",
+        "searchText": "无符号整数与有符号补码\n23\nBinary Integers\n• Unsigned Binary Integers\n• Range: 0 to +2n – 1\n• 32 bit: 0 to +4,294,967,295\n• 2’s-Complement Signed Integers\n• Range: –2(n – 1) to +2(n – 1) – 1\n• 32 bits: –2,147,483,648 to +2,147,483,647\n• Bit 31 is sign bit: 1 is negative, 0 is positive\n• Some specific numbers\n• 0:\n0000 0000 … 0000\n• –1: 1111 1111 … 1111\n• Most-negative: 1000 0000 … 0000\n• Most-positive:\n0111 1111 … 1111\n"
+      },
+      {
+        "page": 23,
+        "title": "符号扩展",
+        "searchText": "符号扩展\n24\nSign Extension\n• Representing a number using more bits\n• Preserve the numeric value\n• In MIPS instruction set\n• addi: extend immediate value\n• lb, lh: extend loaded byte/halfword\n• beq, bne: extend the displacement\n• Replicate the sign bit to the left\n• compare unsigned values: extend with 0s\n• Examples: 8-bit to 16-bit\n• +2: 0000 0010 => 0000 0000 0000 0010\n• –2: 1111 1110 => 1111 1111 1111 1110\n"
+      },
+      {
+        "page": 24,
+        "title": "MIPS指令格式总览",
+        "searchText": "MIPS指令格式总览\nMIPS ISA\n• Instruction Categories\n• Load/Store\n• Computational\n• Jump and Branch\n• Floating Point\n• Memory Management\n• Special\n• 3 instruction formats: all 32-bit wide\n24\nR0–R31\nPC\nHI\nLO\nRegisters\nOP\nrs\nrt\nrd\nshamt\nfunct\nOP\nrs\nrt\nimmediate\nOP\njump target\nR format  \nI format  \nJ format\n"
+      },
+      {
+        "page": 25,
+        "title": "R格式的六个字段",
+        "searchText": "R格式的六个字段\n26\nMIPS Instruction Fields\n• MIPS fields are given names to make them easier to  \nrefer to.\n• op:\n6-bit\nopcode that specifies the operation\n• rs:\n5-bit\nthe first register source operand\n• rt:\n5-bit\nthe second register source operand\n• rd:\n5-bit\nthe register destination operand\n• shamt: 5-bit\nshift amount\n• funct:\n6-bit\nfunction code that selects specific \nvariant of the operation\n6\n5\n5\n5\n5\n6\nop\nrs\nrt\nrd\nshamt\nfunct\n"
+      },
+      {
+        "page": 26,
+        "title": "R格式编码：add",
+        "searchText": "R格式编码：add\nR-format Example\nop\nrs\nrt\nrd\nshamt\nfunct\n6 bits\n5 bits\n5 bits\n5 bits\n5 bits\n6 bits\n0\n$s1\n$s2\n$t0\n0\n32\nadd $t0, $s1, $s2\n$t0 Î R8\n$s1 Î R17\n$s2 Î R18\n0\n17\n18\n8\n0\n32\n000000\n10001\n10010\n01000\n00000\n100000\n0000 0010 0011 0010 0100 0000 0010 00002 = 0232402016\n27\n"
+      },
+      {
+        "page": 27,
+        "title": "I格式与16位立即数",
+        "searchText": "I格式与16位立即数\n28\nMIPS I-format Instructions\n• Immediate arithmetic and load/store instructions\n• rt: destination or source register number\n• Constant: (–215) to (+215 – 1)\n• Address: offset added to base address in rs\n• Design Principle 4: Good design demands good  \ncompromises\n• Different formats complicate decoding, but allow 32-bit  \ninstructions uniformly\n• Keep formats as similar as possible\nop\nrs\nrt\nconstant or address\n6 bits\n5 bits\n5 bits\n16 bits\n"
+      },
+      {
+        "page": 28,
+        "title": "I格式编码：lw",
+        "searchText": "I格式编码：lw\nLoad/Store (I-format)\nop\nrs\nrt\nconstant or address\n6 bits\n5 bits\nlw $t0, 24($s3)\n5 bits\n16 bits\n35\n19\n8\n24\n= 0x120040AC\nMemory\n0xFFFFFFFF\n0x120040AC\n0x12004094\nData\n0x0000000C\n0x00000008\n0x00000004\n0x00000000\nAddress\n$s3\n$t0 Î R8\n$s3 Î R19\n$t0\n$t0 = data[0x120040AC]\n29\n$s3 = 0x12004094\n$s3 + 24 = 0x12004094 + 0x18\n"
+      },
+      {
+        "page": 29,
+        "title": "MIPS指令编码表",
+        "searchText": "MIPS指令编码表\n30\nMIPS Instruction Encoding\nInstruction\nFormat\nop\nrs\nrt\nrd\nshamt\nfunct\naddress\nadd\nR\n0\nreg\nreg\nreg\n0\n32\nsub\nR\n0\nreg\nreg\nreg\n0\n34\naddi\nI\n8\nreg\nreg\nconstant\nlw\nI\n35\nreg\nreg\naddress\nsw\nI\n43\nreg\nreg\naddress\nreg: 0–31  \nconstant/address: 16-bit\n"
+      },
+      {
+        "page": 30,
+        "title": "C代码到机器代码：数组更新",
+        "searchText": "C代码到机器代码：数组更新\n31\nTranslating C Code to Machine Code\n• C code:\nA[300] = h + A[300];\n• h in $s2, base address of A in $t1\n• Compiled MIPS code?\n• Machine code?\n"
+      },
+      {
+        "page": 31,
+        "title": "按位逻辑运算",
+        "searchText": "按位逻辑运算\n34\nLogical Operations\n• Instructions for bitwise manipulation\n• Useful for extracting and inserting groups of  \nbits in a word\nOperation\nC\nJava\nMIPS\nShift Left\n<<\n<<\nsll\nShift Right\n>>\n>>>\nsrl\nBitwise AND\n&\n&\nand, andi\nBitwise OR\n|\n|\nor, ori\nBitwise NOT\n~\n~\nnor\n"
+      },
+      {
+        "page": 32,
+        "title": "逻辑移位sll与srl",
+        "searchText": "逻辑移位sll与srl\nShift Operations\n35\n• shamt: how many positions to shift\n• Shift Left Logical (sll):\n• Shift left and fill with bit 0\n• sll by i bits equals multiplication by 2i\n• Shift Right Logical (srl):\n• Shift right and fill with bit 0\n• srl by i bits equals division by 2i (for unsigned\nnumbers)\nop\nrs\nrt\nrd\nshamt\nfunct\n6 bits\n5 bits\n5 bits\n5 bits\n5 bits\n6 bits\n"
+      },
+      {
+        "page": 33,
+        "title": "AND：按位掩码",
+        "searchText": "AND：按位掩码\nAND Operations\n36\n0000 0000 0000 0000 0000 1101 1100 0000\n0000 0000 0000 0000 0011 1100 0000 0000\n0000 0000 0000 0000 0000 1100 0000 0000\n• Useful to mask bits in a word\n• Select some bits, clear others to 0\nand $t0, $t1, $t2\n$t2\n$t1\n$t0\n• What else operation can isolate a field in a word?\n"
+      },
+      {
+        "page": 34,
+        "title": "OR：按位置位",
+        "searchText": "OR：按位置位\nOR Operations\n0000 0000 0000 0000 0000 1101 1100 0000\n0000 0000 0000 0000 0011 1100 0000 0000\n0000 0000 0000 0000 0011 1101 1100 0000\n37\n• Useful to include bits in a word\n• Set some bits to 1, leave others unchanged\nor $t0, $t1, $t2\n$t2\n$t1\n$t0\n"
+      },
+      {
+        "page": 35,
+        "title": "NOR与按位取反",
+        "searchText": "NOR与按位取反\n38\nNOT Operations\n• Useful to invert bits in a word\n• Change 0 to 1, and 1 to 0\n• NOR: 3-operand instruction\n• a NOR b == NOT (a OR b)\nnor $t0, $t1, $zero\n$t1\n0000 0000 0000 0000 0011 1100 0000 0000\n$t0\n1111 1111 1111 1111 1100 0011 1111 1111\n"
+      },
+      {
+        "page": 36,
+        "title": "逻辑指令与立即数扩展",
+        "searchText": "逻辑指令与立即数扩展\n39\nMIPS Logical Operations\nand\n$t0, $t1, $t2\n# $t0 = $t1 & $t2\nor\n$t0, $t1, $t2\n# $t0 = $t1 | $t2\nnor\n$t0, $t1, $t2\n# $t0 = not($t1 |\n• There are a number of bit-wise logical  \noperations in the MIPS ISA\n• R-format\n$t2)\n• I-format\nandi\n$t0, $t1, 0xFF00\n# $t0 = $t1 & 0x0000FF00\nori\n$t0, $t1, 0xFF00\n# $t0 = $t1 | 0X0000FF00\n"
+      },
+      {
+        "page": 37,
+        "title": "条件分支beq与bne",
+        "searchText": "条件分支beq与bne\n40\nConditional Operations\n• Branch to a labeled instruction if a condition is  \ntrue\n• Otherwise, continue sequentially\n• beq rs, rt, L1\n• if (rs == rt) branch to instruction labeled L1\n• bne rs, rt, L1\n• if (rs != rt) branch to instruction labeled L1\n• j L1\n• unconditional jump to instruction labeled L1\n"
+      },
+      {
+        "page": 38,
+        "title": "if/else的MIPS翻译",
+        "searchText": "if/else的MIPS翻译\nCompiling If Statements\n• C code:\nif (i == j) f = g + h;  \nelse f = g – h;\n• f in $s0, g in $s1, h in $s2\n• Compiled MIPS code:\nbne $s3, $s4, Else\n# go to Else if i≠j\nadd $s0, $s1, $s2\n# f=g+h (skipped if i≠j)\n# go to Exit\n# f=g-h (skipped if i=j)\nj\nExit\nElse: sub $s0, $s1, $s2  \nExit: ...\nAssembler calculates addresses\n41\n"
+      },
+      {
+        "page": 39,
+        "title": "while循环的MIPS翻译",
+        "searchText": "while循环的MIPS翻译\nCompiling Loop Statements\n• C code:\nwhile (save[i] == k) i += 1;\n• i in $s3, k in $s5, address of save in $s6\n• Compiled MIPS code?\n"
+      },
+      {
+        "page": 40,
+        "title": "基本块 · Basic Blocks",
+        "searchText": "基本块 · Basic Blocks\nBasic Blocks\n• A basic block is a sequence of instructions with\n• No embedded branches (except at end)\n• No branch targets or branch labels (except at beginning)\n• A compiler identifies basic blocks  \nfor optimization\n44\n"
+      },
+      {
+        "page": 41,
+        "title": "比较指令slt与slti",
+        "searchText": "比较指令slt与slti\n45\nMore Conditional Operations\n• Set result to 1 if a condition is true\n• Otherwise, set to 0\n• slt rd, rs, rt\n• if (rs < rt) rd = 1; else rd = 0;\n• slti rt, rs, constant\n• if (rs < constant) rt = 1; else rt = 0;\n• Use in combination with beq, bne\nslt $t0, $s1, $s2\n# if ($s1 < $s2)\nbne $t0, $zero, L\n# branch to L\n"
+      },
+      {
+        "page": 42,
+        "title": "比较与分支的设计取舍",
+        "searchText": "比较与分支的设计取舍\n46\nBranch Instruction Design\n• Why not blt, bge, etc? \n• Hardware for <, ≥, … slower than =, ≠\n• Combining with branch involves more work per  \ninstruction, requiring a slower clock\n• All instructions penalized!\n• beq and bne are the common case\n"
+      },
+      {
+        "page": 43,
+        "title": "有符号与无符号比较",
+        "searchText": "有符号与无符号比较\n47\nSigned vs. Unsigned\n• Signed comparison: slt, slti\n• Unsigned comparison: sltu, sltui\n• Example:\n• $s0 = 1111 1111 1111 1111 1111 1111 1111 1111\n• $s1 = 0000 0000 0000 0000 0000 0000 0000 0000\nslt\n$t0, $s0, $s1\n# signed\n• $s0 = −1, $s1 = 0, $s0 < $s1 Î $t0 = 1\nsltu\n$t0, $s0, $s1\n# unsigned\n• $s0 = +4,294,967,295, $s1 = 0, $s0 > $s1 Î $t0 = 0\n"
+      },
+      {
+        "page": 44,
+        "title": "用无符号比较检查数组边界",
+        "searchText": "用无符号比较检查数组边界\n48\nBounds Check Shortcut\nsltu $t0, $s1, $t2\nbeq\n$t0, $zero, IOOB\n# $t0 = 0 if\n# $s1 >= $t2 (max)\n# or $s1 < 0 (min)\n# go to IOOB if $t0 = 0\n• Negative integers in two’s complement look \nlike large numbers in unsigned notation.\n• An unsigned comparison of x < y also checks if \nx is negative as well as if x is less than y\n• Treating signed numbers as if they were unsigned  \ngives a low cost way of checking if 0 ≤ x < y \n(index out of bounds for arrays)\n"
+      },
+      {
+        "page": 45,
+        "title": "过程调用：调用者与被调用者",
+        "searchText": "过程调用：调用者与被调用者\n49\nProcedure Calling\n• Caller: the program that instigates a procedure \nand provides the necessary parameter values.\n• Callee: a procedure that executes a series of \nstored instructions based on parameters provided \nby the caller and then returns control to the caller.\n"
+      },
+      {
+        "page": 46,
+        "title": "过程调用的六个步骤",
+        "searchText": "过程调用的六个步骤\n50\nProcedure Calling\n1.\nMain routine (caller) places parameters in a place  \nwhere the procedure (callee) can access them\n• $a0–$a3: four argument registers\n2.\nCaller transfers control to the callee\n3.\nCallee acquires the storage resources needed\n4.\nCallee performs the desired task\n5.\nCallee places the result value in a place where the  \ncaller can access it\n• $v0–$v1: two value registers for result values\n6.\nCallee returns control to the caller\n• $ra: one return address register to return to the point of origin\n"
+      },
+      {
+        "page": 47,
+        "title": "过程调用中的寄存器约定",
+        "searchText": "过程调用中的寄存器约定\n51\nRegister Usage\n• $a0–$a3: arguments (reg 4–7)\n• $v0, $v1: result values (reg 2 and 3)\n• $t0–$t9: temporaries\n• Can be overwritten by callee\n• $s0–$s7: saved\n• Must be saved/restored by callee\n• $gp: global pointer for static data (reg 28)\n• $sp: stack pointer (reg 29)\n• $fp: frame pointer (reg 30)\n• $ra: return address (reg 31)\n"
+      },
+      {
+        "page": 48,
+        "title": "jal调用与jr返回",
+        "searchText": "jal调用与jr返回\n52\nProcedure Call Instructions\n• Procedure call: jump and link (jal)\njal ProcedureLabel\n• Address of following instruction is put in $ra\n• Jumps to target address\n• Procedure return: jump register (jr)\njr $ra\n• Copies $ra to PC\n• PC (program counter): the register containing address \nof the instruction in the program being executed.\n"
+      },
+      {
+        "page": 49,
+        "title": "叶子过程的C语言示例",
+        "searchText": "叶子过程的C语言示例\n53\nint f;\nf = (g + h) – (i + j);\n• C code:\nint leaf_example (int g, int h, int i, int j)\n{\nreturn f;\n}\n• Arguments g–j in $a0–$a3\n• f in $s0 (hence, need to save $s0 on stack)\n• Result in $v0\nLeaf Procedure Example\n"
+      },
+      {
+        "page": 50,
+        "title": "叶子过程的MIPS实现",
+        "searchText": "叶子过程的MIPS实现\nLeaf Procedure Example\n• MIPS code:\n54\nSP (stack pointer): A value denoting the most recently allocated \naddress in a stack that shows where registers should be spilled \nor where old register values can be found. \n"
+      },
+      {
+        "page": 51,
+        "title": "栈布局与保存、恢复寄存器",
+        "searchText": "栈布局与保存、恢复寄存器\n55\nStack Layout\nMemory\n0xFFFFFFFF\n$sp Æ\n0x00000000\nAddress\nData\nMemory\n0xFFFFFFFF\n$sp Æ\n$s0\n0x00000000\nAddress\nData\nMemory\n0xFFFFFFFF\n$sp Æ\n0x00000000\nAddress\nData\nBefore procedure call\nDuring procedure call\nAfter procedure call\nSP (stack pointer): A value denoting the most recently allocated \naddress in a stack that shows where registers should be spilled \nor where old register values can be found. \n"
+      },
+      {
+        "page": 52,
+        "title": "非叶子过程与返回地址",
+        "searchText": "非叶子过程与返回地址\n56\nNon-Leaf Procedures\n• Procedures that call other procedures\n• For nested call, caller needs to save on stack:\n• Its return address\n• Any arguments and temporaries needed after the call\n• Restore from the stack after the call\n"
+      },
+      {
+        "page": 53,
+        "title": "递归阶乘的C语言示例",
+        "searchText": "递归阶乘的C语言示例\n57\nNon-Leaf Procedure Example\n• C code:\nint fact (int n)\n{\nif (n < 1) return f;\nelse return n * fact(n – 1);\n}\n• Arguments n in $a0\n• Result in $v0\n"
+      },
+      {
+        "page": 54,
+        "title": "递归阶乘的MIPS实现",
+        "searchText": "递归阶乘的MIPS实现\nNon-Leaf Procedure Example\n• MIPS code:\n58\n"
+      },
+      {
+        "page": 55,
+        "title": "过程帧与栈上的局部数据",
+        "searchText": "过程帧与栈上的局部数据\nLocal Data on the Stack\n• Procedure frame (activation record): The segment of the stack \ncontaining a procedure's saved registers and local variables.\n• FP (frame pointer): A value denoting the location of the saved \nregisters and local variables for a given procedure.\n59\n"
+      },
+      {
+        "page": 56,
+        "title": "程序、静态区、堆与栈",
+        "searchText": "程序、静态区、堆与栈\nMemory Layout\n• Text: program code\n• Static data: global  \nvariables\n• e.g., static variables in C,  \nconstant arrays and strings\n• $gp initialized to address  \nallowing ±offsets into this  \nsegment\n• Dynamic data: heap\n• e.g., malloc in C, new in  \nJava\n• Stack: automatic storage\n60\n"
+      },
+      {
+        "page": 57,
+        "title": "字符编码",
+        "searchText": "字符编码\n61\nCharacter Data\n• Byte-encoded character sets\n• ASCII: 128 characters\n• 95 graphic, 33 control\n• Latin-1: 256 characters\n• ASCII, +96 more graphic characters\n• Unicode: 32-bit character set\n• Used in Java, C++ wide characters, …\n• Most of the world’s alphabets, plus symbols\n• UTF-8, UTF-16: variable-length encodings\n"
+      },
+      {
+        "page": 58,
+        "title": "字节与半字访存",
+        "searchText": "字节与半字访存\n62\nByte/Halfword Operations\nlb rt, offset(rs)\nlh rt, offset(rs)\n• Sign extend to 32 bits in rt\nlbu rt, offset(rs)\nlhu rt, offset(rs)\n• Zero extend to 32 bits in rt\nsb rt, offset(rs)\nsh rt, offset(rs)\n• Store just rightmost byte/halfword\n• Could use bitwise operations\n• MIPS byte/halfword load/store\n• String processing is a common case\n"
+      },
+      {
+        "page": 59,
+        "title": "用lui和ori构造32位常数",
+        "searchText": "用lui和ori构造32位常数\n63\n32-bit Constants\n• Most constants are small\n• 16-bit immediate is sufficient\n• For the occasional 32-bit constant\nlui rt, constant\n• Copies 16-bit constant to left (upper) 16 bits of rt\n• Clears right 16 bits of rt to 0\nlui $s0, 61\nori $s0, $s0, 2304\n0000 0000 0011 1101\n0000 0000 0000 0000\n0000 0000 0011 1101\n0000 1001 0000 0000\n"
+      },
+      {
+        "page": 60,
+        "title": "分支的PC相对寻址",
+        "searchText": "分支的PC相对寻址\n64\nBranch Addressing\n• Branch instructions specify\n• Opcode, two registers, target address\n• Most branch targets are near branch\n• Forward or backward\n• PC-relative addressing\n• Target address = PC + offset × 4\n• PC already incremented by 4 by this time\nop\nrs\nrt\nconstant or address\n6 bits\n5 bits\n5 bits\n16 bits\n"
+      },
+      {
+        "page": 61,
+        "title": "分支目标地址计算",
+        "searchText": "分支目标地址计算\nSpecifying Branch Destinations\noffset\n00\nsign-extend\n• Program Counter (PC) gets updated (PC+4) when  \nfetched.\n• Branch distance is limited to −215 to +215−1 (word)  \ninstructions away.\n16-bit address\nPC\n+\n+\n16\n32\n32\n4\n32\n32\nBranch destination address\n32\n65\n"
+      },
+      {
+        "page": 62,
+        "title": "跳转指令的伪直接寻址",
+        "searchText": "跳转指令的伪直接寻址\n66\nJump Addressing\n• Jump (j and jal) targets could be anywhere  \nin text segment\n• Encode full address in instruction\n• Pseudodirect jump addressing\nop\naddress\n6 bits\n26 bits\nPC[31:28]\naddress\n00\n4 bits\n26 bits\n2 bits\n"
+      },
+      {
+        "page": 63,
+        "title": "跳转目标地址拼接",
+        "searchText": "跳转目标地址拼接\nJump Addressing\naddress\n00\n• Target address must be within the 256-MB region.\n26-bit address\nPC\n26\n32\n32\nJump destination address\nPC[31:28]\n4\n67\n"
+      },
+      {
+        "page": 64,
+        "title": "超出分支范围时的代码改写",
+        "searchText": "超出分支范围时的代码改写\n68\nBranching Far Away\n• If branch target is too far to encode with 16-bit  \noffset, assembler rewrites the code:\nbeq $s0, $s1, L1\nmay be replaced by\nbne $s0, $s1, L2   \nj\nL1\nL2: ...\n"
+      },
+      {
+        "page": 65,
+        "title": "五种寻址方式总结",
+        "searchText": "五种寻址方式总结\nAddressing Mode Summary\n69\n"
+      },
+      {
+        "page": 66,
+        "title": "C程序的编译、汇编与链接",
+        "searchText": "C程序的编译、汇编与链接\nC Code Translation Hierachy\n70\n"
+      },
+      {
+        "page": 67,
+        "title": "MIPS处理器组织概览",
+        "searchText": "MIPS处理器组织概览\nMIPS Organization So Far\n71\n"
+      }
+    ],
+    "lec4": [
+      {
+        "page": 1,
+        "title": "算术逻辑单元 · Arithmetic and Logic Unit",
+        "searchText": "算术逻辑单元 · Arithmetic and Logic Unit\n1\nComputer System Architecture\nLecture 4 - Arithmetic and Logic Unit\n"
+      },
+      {
+        "page": 2,
+        "title": "计算机算术概览",
+        "searchText": "计算机算术概览\n2\nArithmetic for Computers\n• Operations on integers\n• Addition and subtraction\n• Multiplication and division\n• Dealing with overflow\n• Floating-point real numbers\n• Representation and operations\n"
+      },
+      {
+        "page": 3,
+        "title": "MIPS ALU需要支持的操作",
+        "searchText": "MIPS ALU需要支持的操作\nMIPS Arithmetic and Logic Unit\n(ALU)\n• Must support the Arithmetic/Logic  \noperations of the ISA\n• add, addi, addiu, addu\n• sub, subu\n• mult, multu, div, divu\n• sqrt\n• and, andi, nor, or, ori, xor, xori\n• beq, bne, slt, slti, sltiu, sltu\n• With special handling for\n• sign extend – addi, addiu, slti,  \nsltiu\n• zero extend – andi, ori, xori\n• overflow detection – add, addi, sub\n32\n32\nALU \n32\n3\nA\nB\nresult\n4\nm (operation)\nzero\noverflow\n"
+      },
+      {
+        "page": 4,
+        "title": "算术逻辑指令的编码",
+        "searchText": "算术逻辑指令的编码\n4\nMIPS Arithmetic and Logic  \nInstructions\nop\nrs\nrt\nrd\nshamt\nfunct\nop\nrs\nrt\nimmediate\nR format\nI format\nop\nfunct\nadd\n000000 100000\naddu 000000 100001\nsub\n000000 100010\nsubu 000000 100011\nand\n000000 100100\nor\n000000 100101\nxor\n000000 100110\nnor\n000000 100111\nop\nfunct\nslt\n000000 101010\nsltu 000000 101011\nR-format\nI-format\nop\naddi\n001000\naddiu 001001\nslti\n001010\nsltiu 001011\nandi\n001100\nori\n001101\nxori\n001110\nlui\n001111\n"
+      },
+      {
+        "page": 5,
+        "title": "1位ALU：逻辑、加减与选择",
+        "searchText": "1位ALU：逻辑、加减与选择\n(Simplyfied) 1-bit MIPS ALU\n• and, or, nor,  \nadd, sub, slt\n5\n"
+      },
+      {
+        "page": 6,
+        "title": "由1位ALU组成32位ALU",
+        "searchText": "由1位ALU组成32位ALU\n1-bit ALU\n6\nFinal 32-bit ALU\n"
+      },
+      {
+        "page": 7,
+        "title": "串行进位的性能瓶颈",
+        "searchText": "串行进位的性能瓶颈\nPerformance Issues\n• Critical path of n-bit ripple-carry adder is n*CP\n• Wait for carry out\n• Design trick (use hardware)\n• Carry-lookahead adder\n7\n"
+      },
+      {
+        "page": 8,
+        "title": "全加器与进位表达式",
+        "searchText": "全加器与进位表达式\nRipple-Carry vs Carry-Lookahead Adder\na0  \nb0  \nc0\ns0\nc1\ns0 = a0  b0  c0\nc1 = a0b0 + a0c0 + b0c0\n8\n"
+      },
+      {
+        "page": 9,
+        "title": "行波进位与超前进位",
+        "searchText": "行波进位与超前进位\nRipple-Carry Adder\n9\nCarry-Lookahead Adder\nRipple-Carry vs Carry-Lookahead Adder\nc1 = a0b0 + (a0 + b0)c0  \nc1 = g0 + p0c0\nc2 = g1 + p1g0 + p1p0c0\n"
+      },
+      {
+        "page": 10,
+        "title": "整数加法与有符号溢出",
+        "searchText": "整数加法与有符号溢出\nInteger Addition\n• Example: 7 + 6\n• Overflow if result out of range\n• Adding positive and negative operands, no overflow\n• Adding two positive operands\n• Overflow if result sign is 1\n• Adding two negative operands\n• Overflow if result sign is 0\n(0)\n(0)\n(1)\n(1)\n(0)\n(C\n…\n0\n0\n0\n1\n1\n1\n+\n…\n0\n0\n0\n1\n1\n0\n…\n(0)\n0\n(0)\n0\n(0)\n1\n(1)\n1\n(1)\n0\n(0)\n1\n10\narries)\n"
+      },
+      {
+        "page": 11,
+        "title": "整数减法与有符号溢出",
+        "searchText": "整数减法与有符号溢出\nInteger Subtraction\n• Add negation of second operand\n• Example: 7 – 6 = 7 + (–6)\n• Overflow if result out of range\n• Subtracting 2 positive or 2 negative operands, no overflow\n• Subtracting positive from negative operand\n• Overflow if result sign is 0\n• Subtracting negative from positive operand\n• Overflow if result sign is 1\n+\n+7:\n–6:\n+1:\n0000 0000 … 0000 0111\n1111 1111 … 1111 1010\n0000 0000 … 0000 0001\n11\n"
+      },
+      {
+        "page": 12,
+        "title": "溢出的判定与异常处理",
+        "searchText": "溢出的判定与异常处理\n12\nDealing with Overflow\n• Overflow occurs when the result of an operation cannot \nbe represented in 32-bits\n• Sign bit contains a value bit of the result\n• MIPS signifies overflow with an exception (interrupt)\n• An unscheduled procedure call\n• Exception program counter (EPC) saves the address\nOperation\nOperand A\nOperand B\nResult indicating overflow\nA + B\n≥ 0\n≥ 0\n< 0\nA + B\n< 0\n< 0\n≥ 0\nA − B\n≥ 0\n< 0\n< 0\nA − B\n< 0\n≥ 0\n≥ 0\n"
+      },
+      {
+        "page": 13,
+        "title": "MIPS溢出与无异常算术指令",
+        "searchText": "MIPS溢出与无异常算术指令\n13\nDealing with Overflow\n• Some languages (e.g., C) ignore overflow\n• Use MIPS addu, addui, subu instructions\n• Other languages (e.g., Ada, Fortran) require  \nraising an exception\n• Use MIPS add, addi, sub instructions\n• On overflow, invoke exception handler\n• Save PC in EPC\n• Jump to predefined handler address\n• Instruction mfc0 retrieves EPC value to return after \ncorrective action\n"
+      },
+      {
+        "page": 14,
+        "title": "移位加法实现乘法",
+        "searchText": "移位加法实现乘法\n14\nMultiplication\n• More complicated than addition\n• Can be accomplished via shifting and adding\n• Double precision product is produced\n• More time and more area is required\n0010\n× \n1011 \n0010\n0010\n0000\n \n0010 \n00010110\n(multiplicand)  \n(multiplier)\n(partial product array)\n(product)\n"
+      },
+      {
+        "page": 15,
+        "title": "第一版乘法器硬件",
+        "searchText": "第一版乘法器硬件\nMultiplication Hardware  \n(1st Version)\n15\n"
+      },
+      {
+        "page": 16,
+        "title": "逐位乘法算法",
+        "searchText": "逐位乘法算法\nMultiplication Algorithm\n16\n"
+      },
+      {
+        "page": 17,
+        "title": "练习：0010 × 0011",
+        "searchText": "练习：0010 × 0011\n17\n• Calculate 0010×0011\nExercise\n"
+      },
+      {
+        "page": 18,
+        "title": "改进乘法器：合并寄存器",
+        "searchText": "改进乘法器：合并寄存器\nRefined Multiplication Hardware\ngrowing product; diminishing multiplier\n19\n"
+      },
+      {
+        "page": 19,
+        "title": "MIPS乘法指令与HI/LO",
+        "searchText": "MIPS乘法指令与HI/LO\n20\nMIPS Multiplication Instruction\n• Two 32-bit registers for product\n• HI: most-significant 32 bits\n• LO: least-significant 32-bits\n• Instructions\n• mult rs, rt / multu rs, rt \n• 64-bit product in HI/LO\n• mfhi rd / mflo rd\n• Move from HI/LO to rd\n• Can test HI value to see if product overflows 32 bits\n• mul rd, rs, rt\n• Least-significant 32 bits of product ➔ rd\n"
+      },
+      {
+        "page": 20,
+        "title": "整数除法的商与余数",
+        "searchText": "整数除法的商与余数\nDivision\n• Dividend = Quotient × Divisor + Remainder\n21\n"
+      },
+      {
+        "page": 21,
+        "title": "第一版除法器硬件",
+        "searchText": "第一版除法器硬件\nDivision Hardware (1st Version)\n22\n"
+      },
+      {
+        "page": 22,
+        "title": "恢复余数除法算法",
+        "searchText": "恢复余数除法算法\nDivision Algorithm\n23\n"
+      },
+      {
+        "page": 23,
+        "title": "练习：00000111 ÷ 0010",
+        "searchText": "练习：00000111 ÷ 0010\n24\n• Divide 00000111 by 0010\nExercise\n"
+      },
+      {
+        "page": 24,
+        "title": "优化除法器",
+        "searchText": "优化除法器\nOptimized Divider\n• One cycle per partial-remainder subtraction\n• Looks a lot like a multiplier!\n• Same hardware can be used for both\n26\n"
+      },
+      {
+        "page": 25,
+        "title": "MIPS除法指令与HI/LO",
+        "searchText": "MIPS除法指令与HI/LO\n27\nMIPS Division Instruction\n• Use HI/LO registers for result\n• HI: 32-bit remainder\n• LO: 32-bit quotient\n• Instructions\n• div rs, rt / divu rs, rt\n• No overflow or divide-by-0 checking\n• Software must perform checks if required\n• Use mfhi, mflo to access result\n"
+      },
+      {
+        "page": 26,
+        "title": "浮点数与规格化表示",
+        "searchText": "浮点数与规格化表示\n28\nFloating-Point Numbers\n• Representation for non-integral numbers\n• Including very small and very large numbers\n• Like scientific notation\n• –2.34 × 1056\n•  +0.002 × 10–4\n•  +987.02 × 109\n• In binary\n• ±1.xxxxxxx2 × 2yyyy\n• Types float and double in C\n(normalized)\n(not normalized)\n"
+      },
+      {
+        "page": 27,
+        "title": "IEEE 754浮点数标准",
+        "searchText": "IEEE 754浮点数标准\n29\nFloating-Point Standard\n• Defined by IEEE 754-1985 standard\n• Developed in response to divergence of  \nrepresentations\n• Portability issues for scientific code\n• Now almost universally adopted\n• Two representations\n• Single precision (32-bit)\n• Double precision (64-bit)\n"
+      },
+      {
+        "page": 28,
+        "title": "单精度浮点数的编码",
+        "searchText": "单精度浮点数的编码\n30\n• s: sign bit (0 → non-negative, 1 → negative)\n• Normalized significand:\n• 1+fraction\n• exponent:\n• All numbers are shifted up by 127 to be stored \n(become unsigned numbers)\n• True exponent = 0 ➔ exponent = 127\n• True exponent = −127 ➔ exponent = 0 (reserved)\n• True exponent = 127 ➔ exponent = 254\ns exponent\nfraction/mantissa\nIEEE Floating-Point Format  \n(Single-Precision)\n1 bit \n8 bits \n23 bits\nx = (−1)s × (1+fraction) × 2(exponent−127)\n"
+      },
+      {
+        "page": 29,
+        "title": "双精度浮点数的编码",
+        "searchText": "双精度浮点数的编码\nIEEE Floating-Point Format\ns\nexponent\nfraction/mantissa\n1 bit\n11 bits\n52 bits\nx = (−1)s × (1+fraction) × 2(exponent−1023)\ns exponent\nfraction/mantissa\n1 bit \n8 bits \n23 bits\nx = (−1)s × (1+fraction) × 2(exponent−127)\nSingle-Precision\nDouble-Precision\nexponent\nfraction\nValue represented\n0000 0000\n0\n0\n1111 1111\n0\n±∞\n1111 1111\nnon-zero\nNaN \n31\n"
+      },
+      {
+        "page": 30,
+        "title": "练习：−0.75的单、双精度编码",
+        "searchText": "练习：−0.75的单、双精度编码\n32\nExercise\n• How to represent –0.75 in IEEE single and double \nprecision binary floating-point format?\n"
+      },
+      {
+        "page": 31,
+        "title": "浮点加法：十进制示例",
+        "searchText": "浮点加法：十进制示例\n34\nFloating-Point Addition\n• Consider a 4-digit decimal example\n• 9.999 × 101 + 1.610 × 10–1\n• 1. Align decimal points\n• Shift number with smaller exponent\n• 9.999 × 101 + 0.016 × 101\n• 2. Add significands\n• 9.999 × 101 + 0.016 × 101 = 10.015 × 101\n• 3. Normalize result & check for over/underflow\n• 1.0015 × 102\n• 4. Round and renormalize if necessary\n• 1.002 × 102\n"
+      },
+      {
+        "page": 32,
+        "title": "浮点加法：二进制示例",
+        "searchText": "浮点加法：二进制示例\n35\nFloating-Point Addition\n• Now consider a 4-digit binary example\n• 1.0002 × 2–1 + –1.1102 × 2–2 (0.5 + –0.4375)\n• 1. Align binary points\n• Shift number with smaller exponent\n• 1.0002 × 2–1 + –0.1112 × 2–1\n• 2. Add significands\n• 1.0002 × 2–1 + –0.1112 × 2–1 = 0.0012 × 2–1\n• 3. Normalize result & check for over/underflow\n• 1.0002 × 2–4, with no over/underflow\n• 4. Round and renormalize if necessary\n• 1.0002 × 2–4 (no change) = 0.0625\n"
+      },
+      {
+        "page": 33,
+        "title": "浮点加法器的复杂度",
+        "searchText": "浮点加法器的复杂度\n36\nFP Adder Hardware\n• Much more complex than integer adder\n• Doing it in one clock cycle would take too long\n• Much longer than integer operations\n• Slower clock would penalize all instructions\n• FP adder usually takes several cycles\n• Can be pipelined\n"
+      },
+      {
+        "page": 34,
+        "title": "浮点加法器的四个阶段",
+        "searchText": "浮点加法器的四个阶段\nFP Adder Hardware\nStep 1\nStep 2\nStep 3\nStep 4\n37\n"
+      },
+      {
+        "page": 35,
+        "title": "浮点乘法器与浮点单元",
+        "searchText": "浮点乘法器与浮点单元\n38\n• FP multiplier is of similar complexity to FP adder\n• But uses a multiplier for significands instead of an adder\n• FP arithmetic hardware usually does\n• Addition, subtraction, multiplication, division, reciprocal, \nsquare-root\n• FP \n integer conversion\n• Operations usually takes several cycles\n• Can be pipelined\nFP Arithmetic Hardware\n"
+      },
+      {
+        "page": 36,
+        "title": "MIPS浮点寄存器与访存",
+        "searchText": "MIPS浮点寄存器与访存\n39\nFP Instructions in MIPS\n• FP hardware is coprocessor 1\n• Adjunct processor that extends the ISA\n• Separate FP registers\n• 32 single-precision: $f0, $f1, … $f31\n• Paired for double-precision: $f0/$f1, $f2/$f3, …\n• FP load and store instructions\n• lwc1, ldc1, swc1, sdc1\n• e.g., ldc1 $f8, 32($sp)\n• FP instructions operate only on FP registers\n"
+      },
+      {
+        "page": 37,
+        "title": "MIPS浮点运算与比较分支",
+        "searchText": "MIPS浮点运算与比较分支\n40\nFP Instructions in MIPS\n• Single-precision arithmetic\n• add.s, sub.s, mul.s, div.s\n• e.g., add.s $f0, $f1, $f6\n• Double-precision arithmetic\n• add.d, sub.d, mul.d, div.d\n• e.g., mul.d $f4, $f4, $f6\n• Single- and double-precision comparison\n• c.xx.s, c.xx.d (xx= eq, lt, le, gt, ge)\n• Sets or clears FP condition-code bit\n• e.g. c.lt.s $f3, $f4\n• Branch on FP condition code true or false\n• bc1t, bc1f\n• e.g., bc1t TargetLabel\n"
+      }
+    ],
+    "lec5": [
+      {
+        "page": 1,
+        "title": "数据通路 · Datapath",
+        "searchText": "数据通路 · Datapath\n1\nComputer System Architecture\nLecture 5 - Datapath\n"
+      },
+      {
+        "page": 2,
+        "title": "简化MIPS：数据通路与控制",
+        "searchText": "简化MIPS：数据通路与控制\nThe Processor: Datapath and Control\n• Our implementation of the MIPS is simplified\n• Memory-reference instructions: lw, sw\n• Arithmetic-logical instructions:\nadd, sub, and, or, slt\n• Control flow instructions: beq, j\n• Generic implementation\n• use the program counter (PC) to  \nsupply the instruction address and \nfetch the instruction from memory  \n(and update the PC)\n• decode the instruction (and read registers)\n• execute the instruction\n• All instructions (except j) use the ALU after reading theregisters\nFetch  \nPC=PC+4\nDecode\nExecute\n2\n"
+      },
+      {
+        "page": 3,
+        "title": "时钟、状态元件与组合逻辑",
+        "searchText": "时钟、状态元件与组合逻辑\nClocking Methodology\n• Assumes state elements are written on every clock cycle; if not,  \nneed explicit write control signal\n• write occurs only when both the write control is asserted and the\nclock edge occurs\n• The clocking methodology defines when data in a state element is  \nvalid and stable relative to the clock.\n• State elements: a memory element such as a register\n• Edge-triggered: all state changes occur on a clock edge\n• Typical execution\n• read contents of state elements send values through  \ncombinational logic write results to one or more state elements\n3\n"
+      },
+      {
+        "page": 4,
+        "title": "取指令：指令存储器与PC+4",
+        "searchText": "取指令：指令存储器与PC+4\nFetching Instructions\n• Fetching instructions involves\n• reading the instruction from the\nInstruction Memory\n• updating the PC value to be the\naddress of the next (sequential)\ninstruction\n• PC is updated every clock cycle,  \nso it does not need an explicit  \nwrite control signal just a clock  \nsignal\n• Reading from the Instruction  \nMemory is a combinational  \nactivity, so it doesn’t need an\nexplicit read control signal\nFetch  \nPC=PC+4\nDecode\nExecute\nNew PC value\n4\n"
+      },
+      {
+        "page": 5,
+        "title": "指令译码与寄存器读取",
+        "searchText": "指令译码与寄存器读取\nDecoding Instructions\n• Decoding instructions  \ninvolves\n• sending the fetched  \ninstruction’s opcode and\nfunction field bits to the  \ncontrol unit\n• reading two values from the  \nRegisters\n• register addresses are  \ncontained in the instruction\nFetch  \nPC=PC+4\nDecode\nExecute\n5\n"
+      },
+      {
+        "page": 6,
+        "title": "读端口常开与写使能",
+        "searchText": "读端口常开与写使能\n6\n• Note that both read ports of the Registers are  \nactive for all instructions during the decode  \ncycle, using the rs and rt instruction field  \naddresses\n• Since haven’t decoded the instruction yet, don’t  \nknow what the instruction is.\n• Just in case the instruction uses values from the  \nRegisters do “work ahead” by reading the two  \nsource operands\nReading Registers “Just in Case”\n"
+      },
+      {
+        "page": 7,
+        "title": "执行R格式算术逻辑操作",
+        "searchText": "执行R格式算术逻辑操作\nExecuting R Format Operations\n• R format operations (add, sub, slt, and, or)\nop\nrs\nrt\nrd\nshamt\nfunct\n31\n25\n20\n15\n10\n5\n0\nR format\n• perform operation (op and funct) on values in rs and rt\n• store the result back into the Registers (into location rd)\nFetch  \nPC=PC+4\nDecode\nExecute\n• Note that register is not written every cycle (e.g. sw), so we  \nneed an explicit write control signal for the Registers\n7\n"
+      },
+      {
+        "page": 8,
+        "title": "Load/Store：地址计算",
+        "searchText": "Load/Store：地址计算\n8\nExecuting Load and Store  \nOperations\n• Load and store operations have to\nOP\nrs\nrt\noffset\nI format\n• compute a memory address by adding the base  \nregister (in rs) to the 16-bit signed offset field in the  \ninstruction\n• base register was read from the Registers during decode\n• offset value in the low order 16 bits of the instruction, must  \nbe sign-extended to create a 32-bit signed value\n• store value, read from the Registers during  \ndecode, must be written to the Data Memory\n• load value, read from the Data Memory, must be  \nstored in the Registers\n31\n25\n20\n15\n0\n"
+      },
+      {
+        "page": 9,
+        "title": "Load/Store：数据存储器与写回",
+        "searchText": "Load/Store：数据存储器与写回\nExecuting Load and Store  \nOperations\n=1 when sw\n9\n=1 when lw\n"
+      },
+      {
+        "page": 10,
+        "title": "条件分支：比较与目标地址",
+        "searchText": "条件分支：比较与目标地址\n• Branch operations have to\n10\nExecuting Branch Operations\nOP\nrs\nrt\noffset\n31\n25\n20\n15\n0\nI format\n• compare the operands read from the Registers during \ndecode (rs and rt values) for equality (zero ALU output)\n• compute the branch target address by adding the updated PC \nto the sign-extended 16-bit offset field in the instruction\n• “base register” is the updated PC\n• offset value in the low order 16 bits of the instruction must\nbe sign extended to create a 32-bit signed value and then\nshifted left 2 bits\n"
+      },
+      {
+        "page": 11,
+        "title": "beq分支的数据通路",
+        "searchText": "beq分支的数据通路\nExecuting Branch Operations\n11\n"
+      },
+      {
+        "page": 12,
+        "title": "Jump：跳转目标拼接",
+        "searchText": "Jump：跳转目标拼接\nExecuting Jump Operations\n• Jump operations have to\n• replace the lower 28 bits of the PC with the lower  \n26 bits of the fetched instruction shifted left by 2 bits\nop\njump target address\nJ format\n31\n25\n0\n12\nmost significant 4 bits\n"
+      },
+      {
+        "page": 13,
+        "title": "单周期数据通路的组合原则",
+        "searchText": "单周期数据通路的组合原则\nCreating a Single Datapath from  \nthe Parts\n13\n• Assemble the datapath segments and add control lines  \nand multiplexors as needed\n• Single-cycle design – fetch, decode and execute each  \ninstructions in one clock cycle\n• no datapath resource can be used more than once per  \ninstruction, so some must be duplicated\n• Multiplexors needed at the input of shared elements with  \ncontrol lines to do the selection\n• write signals to control writing to the Register File and Data  \nMemory\n• Cycle time is determined by length of the longest path\n"
+      },
+      {
+        "page": 14,
+        "title": "合并R型与访存指令通路",
+        "searchText": "合并R型与访存指令通路\nDatapath for R-type and Memory  \nInstructions\n14\n"
+      },
+      {
+        "page": 15,
+        "title": "在数据通路中加入分支",
+        "searchText": "在数据通路中加入分支\nAdding Branch Instructions\n15\n"
+      },
+      {
+        "page": 16,
+        "title": "单周期控制与稳定时间",
+        "searchText": "单周期控制与稳定时间\n16\nOur Simple Control Structure\n• We wait for everything to settle down\n• ALU might not produce “right answer” right away\n• Combinational logic: ALU, adders, muxes, shifter, sign-extender\n• Use write signals along with the clock edge to determine when  \nto write to sequential elements (PC, Registers, and Data Memory) \n• The clock cycle time is determined by the logic delay  \nthrough the longest path\n"
+      },
+      {
+        "page": 17,
+        "title": "控制信号与多路选择器",
+        "searchText": "控制信号与多路选择器\nAdding the Control\n• Selecting the operations to perform (ALU, Register and Memory  \nread/write)\n• Controlling the flow of data (multiplexor inputs)\n• Information comes from the 32 bits of the instruction\n• Observations\n• op field always in  \nbits 31–26\n• addresses of two  \nregisters to be read\nare always specified by the rs and rt fields (bits 25–21 and 20–16)\n• base register for lw and sw always in rs (bits 25–21)\n• address of register to be written is in one of two places:\nin rt (bits 20–16) for lw; in rd (bits 15–11) for R-type instructions\n• offset for beq, lw, and sw always in bits 15–0\n17\n"
+      },
+      {
+        "page": 18,
+        "title": "初步完整的单周期数据通路",
+        "searchText": "初步完整的单周期数据通路\n(Almost) Complete Single-Cycle  \nDatapath\n18\n"
+      },
+      {
+        "page": 19,
+        "title": "ALU控制码",
+        "searchText": "ALU控制码\n19\nALU Control\n• ALU used for\n• Load/Store: add\n• Branch: subtract (compare in beq)\n• R-type: depends on funct field\nALU Control\nFunction\n0000\nAND\n0001\nOR\n0010\nadd\n0011\nsubtract\n0111\nset-on-less-than\n1100\nNOR\n"
+      },
+      {
+        "page": 20,
+        "title": "由ALUOp与funct生成ALU控制",
+        "searchText": "由ALUOp与funct生成ALU控制\n20\nALU Control\n• Assume 2-bit ALUOp derived from opcode\n• Combinational logic derives ALU control\nopcode\nALUOp\nOpeation\nfunct\nALU function\nALU control\nlw\n00\nload word\nXXXXXX\nadd\n0010\nsw\n00\nstore word\nXXXXXX\nadd\n0010\nbeq\n01\nbranch equal\nXXXXXX\nsubtract\n0110\nR-type\n10\nadd\n100000\nadd\n0010\nsubtract\n100010\nsubtract\n0110\nADD\n100100\nAND\n0000\nOR\n100101\nOR\n0001\nset-on-less-than\n101010\nset-on-less-than\n0111\n"
+      },
+      {
+        "page": 21,
+        "title": "ALU控制真值表",
+        "searchText": "ALU控制真值表\n21\nDesigning the Main Control Unit\nALUOp\nFunct field\nOperation\nALUOp1\nALUOp0\nF5\nF4\nF3\nF2\nF1\nF0\n0\n0\nX\nX\nX\nX\nX\nX\n0010\nX\n1\nX\nX\nX\nX\nX\nX\n0110\n1\nX\nX\nX\n0\n0\n0\n0\n0010\n1\nX\nX\nX\n0\n0\n1\n0\n0110\n1\nX\nX\nX\n0\n1\n0\n0\n0000\n1\nX\nX\nX\n0\n1\n0\n1\n0001\n1\nX\nX\nX\n1\n0\n1\n0\n0111\n"
+      },
+      {
+        "page": 22,
+        "title": "主控制器与指令字段",
+        "searchText": "主控制器与指令字段\nThe Main Control Unit\n• Control signals derived from instruction\n31:26\n25:21\n20:16\n15:11\n10:6\n5:0\nR-type\n35 or 43\nrs\nrt\naddress\n31:26\n25:21\n20:16\n15:0\nLoad/Store\n4\nrs\nrt\naddress\n31:26\n25:21\n20:16\n15:0\nBranch\nopcode\nalways  \nread\nread,  \nexcept  \nfor load\nwrite for  \nR-type  \nand load\n0\nrs\nrt\nrd\nshamt\nfunct\nsign-extend  \nand add\n22\n"
+      },
+      {
+        "page": 23,
+        "title": "含主控制器的数据通路",
+        "searchText": "含主控制器的数据通路\n(Almost) Complete Single-Cycle  \nDatapath\n23\n"
+      },
+      {
+        "page": 24,
+        "title": "设置R型、lw与beq的控制信号",
+        "searchText": "设置R型、lw与beq的控制信号\nDatapath with Control\n24\nHow to set control bits for R-type / load / beq instructions?\n"
+      },
+      {
+        "page": 25,
+        "title": "R型指令的数据流与控制",
+        "searchText": "R型指令的数据流与控制\n1\n0\n25\nR-type Instruction\n0\n2-bit\n"
+      },
+      {
+        "page": 26,
+        "title": "lw指令的数据流与控制",
+        "searchText": "lw指令的数据流与控制\n1\n0\n26\n1\nLoad Instruction\n"
+      },
+      {
+        "page": 27,
+        "title": "beq指令的数据流与控制",
+        "searchText": "beq指令的数据流与控制\nBranch-on-Equal Instruction\n0\n0\n0\n1\n27\n"
+      },
+      {
+        "page": 28,
+        "title": "主控制信号表",
+        "searchText": "主控制信号表\n28\nControl Lines\nInstruction\nRegDst\nALUSrc\nMemtoRe\ng\nRegWrite\nMemRead\nMemWrite\nBranch\nALUOp\nR-type\n000000\n1\n0\n0\n1\n0\n0\n0\n10\nlw\n100011\n0\n1\n1\n1\n1\n0\n0\n00\nsw\n101011\nX\n1\nX\n0\n0\n1\n0\n00\nbeq\n000100\nX\n0\nX\n0\n0\n0\n1\n01\n"
+      },
+      {
+        "page": 29,
+        "title": "加入Jump控制",
+        "searchText": "加入Jump控制\n29\nImplementing Jumps\n2\naddress\n31:26\n25:0\n• Jump uses word address\n• Update PC with concatenation of\n• Top 4 bits of old PC\n• 26-bit jump address\n• 00 (shifting)\n• Need an extra control signal decoded from opcode\nJump\n"
+      },
+      {
+        "page": 30,
+        "title": "支持Jump的完整数据通路",
+        "searchText": "支持Jump的完整数据通路\nDatapath With Jumps Added\n0\n0\n0\n30\n"
+      },
+      {
+        "page": 31,
+        "title": "指令关键路径与周期计算",
+        "searchText": "指令关键路径与周期计算\nInstruction Critical Paths\n• Calculate cycle time assuming negligible delays (for muxes,  \ncontrol unit, sign extend, PC access, shift left 2, wires) except:\n• Instruction and Data Memory (4 ns)\n• ALU and adders (2 ns)\n• Register File access (reads or writes) (1 ns)\nInstruction\nI Mem\nReg Rd\nALU Op\nD Mem\nReg Wr\nTotal\nR-type\n4\n1\n2\n1\n8\nload\n4\n1\n2\n4\n1\n12\nstore\n4\n1\n2\n4\n11\nbeq\n4\n1\n2\n7\njump\n4\n4\n31\n"
+      },
+      {
+        "page": 32,
+        "title": "最长路径与单周期性能",
+        "searchText": "最长路径与单周期性能\n32\nPerformance Issues\n• Longest delay determines clock period\n• Critical path: load instruction\n• Instruction Memory → Registers →ALU\n→ Data Memory →Registers\n• Not feasible to vary period for different  \ninstructions\n• Violates design principle\n• Making the common case fast\n"
+      },
+      {
+        "page": 33,
+        "title": "单周期设计的优点与局限",
+        "searchText": "单周期设计的优点与局限\nSingle Cycle Disadvantages &  \nAdvantages\nlw\nsw\nwaste\n• Uses the clock cycle inefficiently – the clock cycle must  \nbe timed to accommodate the slowest instruction\nCycle 1\nCycle 2\nClk\n• Wasteful of area – some functional units (e.g., adders) \nmust be duplicated\n• Simple and easy to understand\n33\n"
+      }
+    ]
+  },
+  "assessment": {}
+}

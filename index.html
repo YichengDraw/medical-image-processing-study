@@ -11,22 +11,23 @@
   <script>
     // Apply a saved dark theme before the stylesheet paints.
     try {
-      if (JSON.parse(localStorage.getItem("bmeb316-state") || "{}").theme === "dark") {
+      const stateKey = new URLSearchParams(location.search).get("course") === "ai301" ? "ai301-state" : "bmeb316-state";
+      if (JSON.parse(localStorage.getItem(stateKey) || "{}").theme === "dark") {
         document.documentElement.setAttribute("data-theme", "dark");
       }
     } catch (_) {}
   </script>
-  <link rel="stylesheet" href="styles.css?v=visual-v2">
+  <link rel="stylesheet" href="styles.css?v=courses-v1">
   <script defer src="assets/vendor/pdf.min.js"></script>
   <script defer src="focus-navigation.js?v=visual-v2"></script>
-  <script defer src="app.js?v=visual-v2"></script>
+  <script defer src="app.js?v=courses-v1"></script>
 </head>
 <body>
   <div id="app">
     <aside id="library" class="library" aria-label="课程目录">
       <div class="library-head">
         <div class="brand-icon"><span class="brand-grid"><i></i><i></i><i></i><i></i></span></div>
-        <div class="brand-text"><span class="eyebrow">SUSTech · BMEB316</span><strong>医学图像处理</strong></div>
+        <div class="brand-text"><span id="brand-code" class="eyebrow">SUSTech · BMEB316</span><strong id="brand-name">医学图像处理</strong></div>
         <button id="library-collapse" class="icon-btn desktop-only" aria-label="收起左侧目录" title="收起目录（]）">‹</button>
         <button id="library-close" class="icon-btn mobile-only" aria-label="收起目录">✕</button>
       </div>
@@ -48,7 +49,8 @@
       <header class="topbar">
         <div class="top-left">
           <button id="menu-trigger" class="icon-btn library-trigger" aria-label="收起左侧目录" aria-expanded="true" title="收起/展开左侧目录（]）">☰</button>
-          <div class="breadcrumbs"><span class="crumb-base">MY COURSES</span><span class="crumb-sep">/</span><span id="crumb-lecture" class="crumb-current">Lecture 1</span></div>
+          <select id="course-select" class="course-select" aria-label="切换课程" title="切换课程，保留各课程的阅读进度与收藏"><option value="bmeb316">医学图像处理</option><option value="ai301">计算机体系结构</option></select>
+          <div class="breadcrumbs"><span class="crumb-sep">/</span><span id="crumb-lecture" class="crumb-current">Lecture 1</span></div>
         </div>
         <div class="top-right">
           <span id="note-status" class="status-info">—</span>
@@ -103,18 +105,18 @@
             <div class="companion-footer"><span>按当前页图示讲解 · 录音出处收在文末</span><button id="copy-note" class="small-copy">复制讲解</button></div>
           </aside>
         </div>
-        <footer class="app-footer"><span>Medical Image Processing / Yiming Li</span><span>由课程课件与课堂录音转写整理 · 非官方学习网站</span></footer>
+        <footer class="app-footer"><span id="course-footer">Medical Image Processing / Yiming Li</span><span>由课程课件与课堂录音转写整理 · 非官方学习网站</span></footer>
       </main>
     </div>
 
     <div id="scrim" class="scrim hidden"></div>
     <div id="search-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="全课程搜索">
-      <div class="search-modal"><div class="modal-head"><span>⌕</span><input id="search-box" type="search" autocomplete="off" spellcheck="false" placeholder="搜索 Nyquist、卷积、位深、相位…"><button id="search-close" class="icon-btn" aria-label="关闭搜索">ESC</button></div><div id="search-results" class="search-results"></div><div class="modal-footer">可搜索 7 份课件的原文及伴读笔记 · Enter 跳转 · Esc 关闭</div></div>
+      <div class="search-modal"><div class="modal-head"><span>⌕</span><input id="search-box" type="search" autocomplete="off" spellcheck="false" placeholder="搜索 Nyquist、卷积、位深、相位…"><button id="search-close" class="icon-btn" aria-label="关闭搜索">ESC</button></div><div id="search-results" class="search-results"></div><div id="search-footer" class="modal-footer">可搜索课件原文及伴读笔记 · Enter 跳转 · Esc 关闭</div></div>
     </div>
     <div id="exam-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="exam-title">
       <div class="exam-modal exam-hub">
         <div class="exam-top"><div><span class="eyebrow blue">COURSE ASSESSMENT &amp; REVIEW</span><h2 id="exam-title">考核中心</h2><p id="exam-subtitle" class="exam-subtitle"></p></div><button id="exam-close" class="icon-btn" aria-label="关闭考核中心">✕</button></div>
-        <div class="assessment-grid"><div><b>40%</b><span>Final Exam</span></div><div><b>30%</b><span>Projects</span></div><div><b>15%</b><span>Presentation</span></div><div><b>10%</b><span>Quiz</span></div><div><b>5%</b><span>Attendance</span></div></div>
+        <div id="assessment-grid" class="assessment-grid hidden"></div>
         <div class="exam-search"><label for="exam-query">搜索全部考核信息</label><input id="exam-query" type="search" placeholder="零频、补零、不考、Quiz、展示时间…" autocomplete="off"></div>
         <div id="exam-filters" class="exam-filters" aria-label="考核信息分类"></div>
         <label class="focus-scope"><input id="focus-include-class" type="checkbox" checked>“下个考点”也包含课堂重点（不等于必考）</label>

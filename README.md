@@ -1,8 +1,30 @@
-# BMEB316 · Medical Image Processing 逐页伴读
+# BMEB316 / AI301 · 课程逐页伴读
 
 原始课件在左、与当页图示对应的中文讲解在右。课堂说明、公式含义、例图观察与必要的纠错写在一个连贯讲解块内。非官方学习辅助网站。
 
-## 当前版本
+顶部课程选择器可在医学图像处理与计算机体系结构之间切换。默认入口仍为医学图像处理；体系结构入口为 `?course=ai301`。两课独立保存阅读进度、收藏、显示设置和主题。
+
+## AI301 · 计算机体系结构
+
+2026-11-08 ai301-v1：7份PDF、232页全部逐页查看原图；6份课堂转写支持135页独立讲解，97页仅展示PPT。讲解按实际录音覆盖逐页开启，不把一份录音覆盖推定为整讲全部页面都讲过。
+
+| 课件 | 页数 | 有录音支持的讲解页（PDF实际页序） |
+|---|---:|---|
+| Lecture 1 Introduction | 23 | 无，PPT-only |
+| Lab 1 Fundamentals | 19 | 无，PPT-only |
+| Lecture 2 Digital Logic Review | 41 | P3–41 |
+| Lab 2 Digital Logic | 12 | 无，PPT-only |
+| Lecture 3 Instruction Set Architecture | 67 | P1–23、P25–30、P32–65 |
+| Lecture 4 Arithmetic and Logic Unit | 37 | P2、P3、P5–7、P27–37 |
+| Lecture 5 Datapath | 33 | P2–18 |
+
+AI301考核中心共38条：明确考核2条、课堂重点与标注来源的课件练习29条、范围/勘误5条、课程安排2条。现有材料没有可确认的已考Quiz复盘，因此该类别保持为空；Quiz准备要求放入“明确考核”。未给出明确成绩比例，不套用医学课程的百分比。无准确日历日期的口头通知只作为历史记录。
+
+Lecture 2 与 Lab 2 采用无损PDF压缩，未降采样；53页逐页验证文字和渲染像素均与原始文件一致。其余5份PDF逐字节保留。第三讲采用本次提供的67页文件。原文件及网站文件哈希、逐页录音范围、勘误与压缩验证均在 `ai301/data/review-manifest.json`。
+
+运行 `python3 ai301/build_data.py` 重建AI301数据；输入为 `ai301/data/slide-index.json`、`page-notes/*.json`、`sources.json`、`exam-guide.json` 与 `review-manifest.json`。无需私人转写原文件即可重建。`node tests/courses.cjs` 检查课程隔离和局部录音显示，`node tests/ai301.cjs` 检查232页两种导航范围及数据完整性。
+
+## BMEB316 · 医学图像处理原内容版本
 
 2026-11-06 visual-v2。7份PDF、516页均逐页查看渲染画面；其中有整讲录音覆盖的395页各有独立讲解，不再将同一概述扩展到多个页面。没有整讲录音的121页仅显示原始PDF。
 

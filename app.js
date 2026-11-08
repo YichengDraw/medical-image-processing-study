@@ -1,9 +1,15 @@
-/* BMEB316 Medical Image Processing · original PDF + teacher-context companion */
+/* Course study space · original PDF + teacher-context companion */
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+const courseId=new URLSearchParams(location.search).get("course")==="ai301"?"ai301":"bmeb316";
+const course={
+ bmeb316:{code:"BMEB316",name:"医学图像处理",data:"data/content.json",footer:"Medical Image Processing / Yiming Li",search:"搜索 Nyquist、卷积、位深、相位…",examSearch:"零频、补零、不考、Quiz、展示时间…"},
+ ai301:{code:"AI301",name:"计算机体系结构",data:"ai301/data/content.json",footer:"AI301 / Computer System Architecture",search:"搜索 MIPS、补码、寄存器、数据通路…",examSearch:"指令、性能、Quiz、实验、考核范围…"}
+}[courseId];
+const stateKey=courseId+"-state";
 const S={data:null,deck:null,page:1,cache:new Map(),pending:new Map(),task:null,seq:0,fit:"page",panel:true,star:new Set(),matches:[],sel:0,collapsed:false,libraryCollapsed:false,theme:"light",focusIncludeClass:true,examCategory:"all",modalReturnFocus:null};
-let saved={};try{saved=JSON.parse(localStorage.getItem("bmeb316-state")||"{}")}catch{}
+let saved={};try{saved=JSON.parse(localStorage.getItem(stateKey)||"{}")||{}}catch{}
 if(Array.isArray(saved.bookmarks))S.star=new Set(saved.bookmarks);
 if(saved.panel!==undefined)S.panel=!!saved.panel;
 if(saved.fit==="width")S.fit="width";
@@ -13,9 +19,31 @@ if(saved.focusIncludeClass===false)S.focusIncludeClass=false;
 const deck=id=>S.data&&S.data.decks.find(x=>x.id===id);
 const slide=()=>S.data&&S.deck&&S.data.slides[S.deck.id][S.page-1];
 const key=(d,p)=>d+":"+p;
-function save(){try{localStorage.setItem("bmeb316-state",JSON.stringify({last:[S.deck.id,S.page],bookmarks:[...S.star],panel:S.panel,fit:S.fit,libraryCollapsed:S.libraryCollapsed,theme:S.theme,focusIncludeClass:S.focusIncludeClass}))}catch{}}
-function route(){let h=decodeURIComponent(location.hash.slice(1)).match(/^([a-z0-9]+)\/(\d+)$/i);if(h&&deck(h[1]))return [h[1],Number(h[2])];return saved.last&&deck(saved.last[0])?saved.last:["lec1",1]}
+const pageHasAudio=(d,p)=>Boolean(p&&(typeof p.audioSupported==="boolean"?p.audioSupported&&p.note:d?.audio));
+function save(){try{localStorage.setItem(stateKey,JSON.stringify({last:[S.deck.id,S.page],bookmarks:[...S.star],panel:S.panel,fit:S.fit,libraryCollapsed:S.libraryCollapsed,theme:S.theme,focusIncludeClass:S.focusIncludeClass}))}catch{}}
+function route(){let h=location.hash.slice(1).match(/^([a-z0-9]+)\/(\d+)$/i);if(h&&deck(h[1]))return [h[1],Number(h[2])];return saved.last&&deck(saved.last[0])?saved.last:[S.data.decks[0].id,1]}
 function routeWrite(id,p,replace=false){const h="#"+id+"/"+p;if(location.hash===h)return;if(replace)history.replaceState(null,"",h);else history.pushState(null,"",h)}
+function courseInit(){
+ $("#course-select").value=courseId;
+ $("#brand-code").textContent="SUSTech · "+course.code;
+ $("#brand-name").textContent=course.name;
+ $("#course-footer").textContent=course.footer;
+ $("#search-box").placeholder=course.search;
+ $("#exam-query").placeholder=course.examSearch;
+ $("#search-footer").textContent="可搜索 "+S.data.decks.length+" 份课件的原文及伴读笔记 · Enter 跳转 · Esc 关闭";
+ document.querySelector('meta[name="description"]').setAttribute("content",course.code+" "+course.name+"：原始课件与课堂讲解逐页对照，考核重点注明来源。");
+ const labels={exam:"Final Exam",projects:"Projects",presentation:"Presentation",quiz:"Quiz",attendance:"Attendance"};
+ const assessment=S.data.assessment||{},values=Object.entries(labels).filter(([id])=>typeof assessment[id]==="number"&&Number.isFinite(assessment[id]));
+ const grid=$("#assessment-grid");grid.classList.toggle("hidden",!values.length);
+ grid.innerHTML=values.map(([id,label])=>'<div><b>'+esc(assessment[id])+'%</b><span>'+label+'</span></div>').join('');
+}
+function switchCourse(id){
+ if(!["bmeb316","ai301"].includes(id)||id===courseId)return;
+ if(S.deck)save();
+ const url=new URL(location.href);
+ if(id==="ai301")url.searchParams.set("course",id);else url.searchParams.delete("course");
+ url.hash="";location.assign(url.href);
+}
 function navInit(){
  const nav=$("#deck-list");nav.innerHTML="";
  S.data.decks.forEach(d=>{
@@ -53,10 +81,11 @@ function headUpdate(){
  $("#page-total").textContent="/ "+d.pages;$("#prev-slide").disabled=S.page<=1;$("#next-slide").disabled=S.page>=d.pages;
  $("#pdf-link").href=d.path;$("#pdf-link").download=d.id+".pdf";
  const star=S.star.has(key(d.id,S.page));$("#star-btn").textContent=star?"★":"☆";$("#star-btn").classList.toggle("starred",star);
- $("#note-status").textContent=!d.audio?"此部分未提供对应录音":p.note?.sourceIds?.length?"逐页核对 · 含课堂线索":"逐页核对 · 课件图示解读";
- $("#toggle-panel").style.display=d.audio?"":"none";$("#toggle-panel").textContent=S.panel?"隐藏讲解":"显示讲解";
+ const hasAudio=pageHasAudio(d,p);
+ $("#note-status").textContent=!hasAudio?"本页未提供对应录音":p.note?.sourceIds?.length?"逐页核对 · 含课堂线索":"逐页核对 · 课件图示解读";
+ $("#toggle-panel").style.display=hasAudio?"":"none";$("#toggle-panel").textContent=S.panel?"隐藏讲解":"显示讲解";
  updateFocusButton();
- document.title=p.title+" · "+d.group+" | BMEB316";
+ document.title=p.title+" · "+d.group+" | "+course.code;
 }
 function sourceMarkup(ids,external=[]){
  const records=S.data.recordings||{},sources=S.data.sources||{};
@@ -71,7 +100,7 @@ function sourceMarkup(ids,external=[]){
 }
 function notes(){
  const grid=$("#study-grid"),panel=$("#companion-panel"),d=S.deck,p=slide();
- if(!d.audio||!S.panel){panel.classList.add("hidden");grid.classList.add("no-companion");return}
+ if(!pageHasAudio(d,p)||!S.panel){panel.classList.add("hidden");grid.classList.add("no-companion");return}
  panel.classList.remove("hidden");grid.classList.remove("no-companion");
  const n=p.note;
  $("#source-badge").textContent=n?.sourceIds?.length?"课件 + 课堂讲授":"原始课件逐页解读";
@@ -161,7 +190,7 @@ function navigate(id,p,write=true){
  save();if(window.innerWidth<750)closeLibrary();
 }
 function turn(delta){if(S.deck&&S.page+delta>=1&&S.page+delta<=S.deck.pages)navigate(S.deck.id,S.page+delta)}
-function shortDeck(d){return d.replace('lec','L').replace('p','·')}
+function shortDeck(d){return d.startsWith('lab')?'Lab '+d.slice(3):d.replace('lec','L').replace('p','·')}
 function nextFocus(){
  return FocusNavigation.next(S.data.decks,S.data.examGuide.entries,S.deck.id,S.page,S.focusIncludeClass);
 }
@@ -227,7 +256,7 @@ function focusResult(){
  $("#search-results").querySelector(".active")?.scrollIntoView({block:"nearest"});
 }
 function togglePanel(){
- if(!S.deck?.audio)return;
+ if(!pageHasAudio(S.deck,slide()))return;
  S.panel=!S.panel;notes();headUpdate();save();setTimeout(draw,90);
 }
 function keydown(e){
@@ -251,6 +280,7 @@ function keydown(e){
  else if(e.key.toLowerCase()==="f"){e.preventDefault();$("#fit-mode").click()}
 }
 function bind(){
+ $("#course-select").addEventListener("change",e=>switchCourse(e.target.value));
  $("#prev-slide").addEventListener("click",()=>turn(-1));$("#next-slide").addEventListener("click",()=>turn(1));
  $("#first-slide").addEventListener("click",()=>navigate(S.deck.id,1));$("#next-focus").addEventListener("click",jumpExam);
  $("#page-input").addEventListener("change",e=>navigate(S.deck.id,e.target.value));
@@ -288,10 +318,10 @@ function bind(){
 }
 (async function init(){
  try{
-  const response=await fetch("data/content.json?v=visual-v2");if(!response.ok)throw Error("课程索引请求失败："+response.status);
+  const response=await fetch(course.data+"?v=courses-v1");if(!response.ok)throw Error("课程索引请求失败："+response.status);
   S.data=await response.json();if(S.data.schemaVersion!==2)throw Error("课程数据版本未更新，请刷新页面");$("#fit-mode").textContent=S.fit==="page"?"适应页面":"适应宽度";
   if(window.pdfjsLib)pdfjsLib.GlobalWorkerOptions.workerSrc="assets/vendor/pdf.worker.min.js";
-  navInit();bind();updateLibraryToggle();updateTheme();const [id,p]=route();navigate(id,p,false);routeWrite(id,p,true);
+  courseInit();navInit();bind();updateLibraryToggle();updateTheme();const [id,p]=route();navigate(id,p,false);routeWrite(id,S.page,true);
  }catch(error){
   console.error(error);$("#slide-title").textContent="网站初始化失败";
   $("#pdf-loading").classList.add("hidden");$("#pdf-error").classList.remove("hidden");$("#pdf-error").textContent=String(error);

@@ -1,0 +1,1217 @@
+{
+  "categories": [
+    {
+      "id": "explicit",
+      "label": "明确考核"
+    },
+    {
+      "id": "quiz",
+      "label": "Quiz 复盘"
+    },
+    {
+      "id": "class",
+      "label": "课堂重点"
+    },
+    {
+      "id": "scope",
+      "label": "范围与选读"
+    },
+    {
+      "id": "arrangement",
+      "label": "课程与作业安排"
+    }
+  ],
+  "entries": [
+    {
+      "id": "lab1-die-yield",
+      "category": "class",
+      "title": "课件练习：良率与合格晶粒成本",
+      "body": "按本课给定模型，合格晶粒成本=晶圆成本÷(每片晶粒数×良率)，良率=1/[1+(缺陷密度×晶粒面积)/2]²。Lab 1 Q6的15 cm晶圆例子给出84颗晶粒，良率约0.9593，单颗合格晶粒成本约12/(84×0.9593)=0.1489。代入前先统一面积单位，题目中的模型不能直接当成所有工艺的精确规律。",
+      "anchors": [
+        {
+          "deck": "lec1",
+          "page": 20
+        },
+        {
+          "deck": "lab1",
+          "page": 14
+        },
+        {
+          "deck": "lab1",
+          "page": 15
+        },
+        {
+          "deck": "lab1",
+          "page": 16
+        },
+        {
+          "deck": "lab1",
+          "page": 17
+        }
+      ],
+      "status": "课件练习；无对应录音，非考核承诺",
+      "sourceIds": [],
+      "sourceType": "课件题目与给定答案"
+    },
+    {
+      "id": "lab1-cpu-performance",
+      "category": "class",
+      "title": "课件练习：指令数、平均CPI与CPU时间",
+      "body": "先用总周期数=Σ(各类指令数×该类CPI)，再除以时钟频率得时间；平均CPI应按实际指令数加权。Lab 1 Q4中序列1执行5条、10周期，序列2执行6条、9周期；相同时钟下序列2更快，说明指令更少不一定耗时更短。这是课件练习线索，不是考试题型承诺。",
+      "anchors": [
+        {
+          "deck": "lec1",
+          "page": 21
+        },
+        {
+          "deck": "lec1",
+          "page": 22
+        },
+        {
+          "deck": "lab1",
+          "page": 9
+        },
+        {
+          "deck": "lab1",
+          "page": 10
+        },
+        {
+          "deck": "lab1",
+          "page": 11
+        },
+        {
+          "deck": "lab1",
+          "page": 12
+        },
+        {
+          "deck": "lab1",
+          "page": 13
+        }
+      ],
+      "status": "课件练习；无对应录音，非考核承诺",
+      "sourceIds": [],
+      "sourceType": "课件题目与给定答案"
+    },
+    {
+      "id": "lab1-parallel-overhead",
+      "category": "class",
+      "title": "课件练习：并行开销、加速比与效率",
+      "body": "Lab 1 Q7假设单处理器原程序100秒，并行到p个处理器后每个需100/p秒计算及额外4秒开销。因此T(p)=100/p+4，加速比=100/T(p)，效率=加速比/p。例如p=4时T=29秒，加速比约3.45，效率约0.862。处理器越多不代表效率越高；这是该题的假设模型。",
+      "anchors": [
+        {
+          "deck": "lec1",
+          "page": 23
+        },
+        {
+          "deck": "lab1",
+          "page": 18
+        },
+        {
+          "deck": "lab1",
+          "page": 19
+        }
+      ],
+      "status": "课件练习；无对应录音，非考核承诺",
+      "sourceIds": [],
+      "sourceType": "课件题目与给定答案"
+    },
+    {
+      "id": "lab1-frame-buffer",
+      "category": "class",
+      "title": "课件练习：图像容量与传输时间",
+      "body": "Lab 1 Q3给出1280×1024像素、RGB各8 bit，因此每像素3字节，帧缓冲至少需3,932,160字节。经100 Mbit/s链路传送，理想最短时间为3,932,160×8÷100,000,000≈0.315秒；不要把bit与byte混用。这是依据课件练习与答案整理的自测项，未提供对应课堂录音。",
+      "anchors": [
+        {
+          "deck": "lab1",
+          "page": 6
+        },
+        {
+          "deck": "lab1",
+          "page": 7
+        }
+      ],
+      "status": "课件练习；无对应录音，非考核承诺",
+      "sourceIds": [],
+      "sourceType": "课件题目与给定答案"
+    },
+    {
+      "id": "logic-complement",
+      "category": "class",
+      "title": "补码、符号解释与溢出",
+      "body": "课堂练习要求推导n位补码范围：−2^(n−1)到2^(n−1)−1，并理解同一位串的有符号与无符号解释。8位01111111是127，10000000是−128；课件P9前两行十六进制应为0x7F、0x7E。Lab 2 Q1可自测：73+58的8位结果为10000011，有符号解释是−125，说明正数相加发生溢出。",
+      "anchors": [
+        {
+          "deck": "lec2",
+          "page": 9
+        },
+        {
+          "deck": "lec2",
+          "page": 10
+        },
+        {
+          "deck": "lab2",
+          "page": 2
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec0914@10:29",
+        "rec0914@11:17",
+        "rec0914@12:37",
+        "rec0914@13:11",
+        "rec0914@16:21",
+        "rec0914@16:33"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "logic-gates-truth-table",
+      "category": "class",
+      "title": "逻辑门、真值表与多输入奇偶性",
+      "body": "能从门符号写出完整真值表，并区分OR/XOR、NOR/XNOR。三输入XNOR是偶数个1时输出1；它不表示“所有输入都相等”，例如000输出1而111输出0。课堂P15与Lab 2 Q2、Q3是练习线索，未据此标为必考。",
+      "anchors": [
+        {
+          "deck": "lec2",
+          "page": 13
+        },
+        {
+          "deck": "lec2",
+          "page": 14
+        },
+        {
+          "deck": "lec2",
+          "page": 15
+        },
+        {
+          "deck": "lab2",
+          "page": 3
+        },
+        {
+          "deck": "lab2",
+          "page": 4
+        },
+        {
+          "deck": "lab2",
+          "page": 5
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec0914@22:29",
+        "rec0914@23:02",
+        "rec0914@23:34",
+        "rec0914@23:48",
+        "rec0914@24:12",
+        "rec0914@24:31",
+        "rec0914@24:42",
+        "rec0914@25:29"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "logic-nand-universal",
+      "category": "class",
+      "title": "只用NAND实现组合逻辑",
+      "body": "P18课堂练习要求只用NAND实现AB+CD。先分别得到¬(AB)、¬(CD)，再对两者做NAND，利用德摩根律得到原函数；总共三个NAND门。设计流程是功能要求→真值表→逻辑表达式→电路，并用输入例子验证输出。",
+      "anchors": [
+        {
+          "deck": "lec2",
+          "page": 17
+        },
+        {
+          "deck": "lec2",
+          "page": 18
+        },
+        {
+          "deck": "lab2",
+          "page": 5
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec0914@29:47",
+        "rec0914@30:17",
+        "rec0914@30:38",
+        "rec0914@31:12",
+        "rec0914@32:09"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "logic-minimization-scope",
+      "category": "scope",
+      "title": "逻辑最小化在设计流程中的位置",
+      "body": "老师在30:17将逻辑最小化称为设计流程中可选的优化步骤：不做最小化也可能实现正确功能，只是电路更复杂。这句话没有给出“期末不考逻辑化简”的承诺，不能扩大成免考范围。",
+      "anchors": [
+        {
+          "deck": "lec2",
+          "page": 17
+        }
+      ],
+      "status": "仅说明设计步骤；非免考声明",
+      "sourceIds": [
+        "rec0914@29:47",
+        "rec0914@30:17",
+        "rec0914@30:38"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "logic-delay-path",
+      "category": "class",
+      "title": "传播延迟、关键路径与波形",
+      "body": "实际逻辑门不会瞬时响应。沿每条输入到输出的路径相加门延迟，最长路径限制最晚稳定时间；在波形上要把输出跳变向后移动。例：两条路径分别经过2个与3个同延迟门，不能只看门的总数，必须找经过3个门的路径。",
+      "anchors": [
+        {
+          "deck": "lec2",
+          "page": 19
+        },
+        {
+          "deck": "lec2",
+          "page": 20
+        },
+        {
+          "deck": "lab2",
+          "page": 7
+        },
+        {
+          "deck": "lab2",
+          "page": 9
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec0914@35:14",
+        "rec0914@35:41",
+        "rec0914@36:29",
+        "rec0914@37:06",
+        "rec0914@37:23"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "logic-fan-buffer",
+      "category": "class",
+      "title": "扇入、扇出与缓冲器",
+      "body": "扇入数输入端，扇出描述输出能可靠驱动的负载。缓冲器逻辑上仍是输出=输入，作用是增强驱动能力；驱动太多负载会使边沿变慢。注意这讲讨论的是电路buffer，与内存里的数据缓冲区含义不同。",
+      "anchors": [
+        {
+          "deck": "lec2",
+          "page": 21
+        },
+        {
+          "deck": "lec2",
+          "page": 22
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec0914@37:46",
+        "rec0914@38:06",
+        "rec0914@38:36",
+        "rec0914@39:47",
+        "rec0914@40:18",
+        "rec0914@40:59"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "logic-decoder-adder",
+      "category": "class",
+      "title": "译码器与全加器的最小项",
+      "body": "使能有效时，n→2^n译码器把输入编码变成一条有效输出，不能忽略EN。用3→8译码器实现全加器时，S=D1+D2+D4+D7，C=D3+D5+D6+D7；例如输入101表示三个输入中有两个1，因此CS=10。",
+      "anchors": [
+        {
+          "deck": "lec2",
+          "page": 23
+        },
+        {
+          "deck": "lec2",
+          "page": 24
+        },
+        {
+          "deck": "lec2",
+          "page": 25
+        },
+        {
+          "deck": "lec2",
+          "page": 26
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec0914@41:53",
+        "rec0914@43:03",
+        "rec0914@44:40",
+        "rec0914@44:59",
+        "rec0914@43:43",
+        "rec0914@45:17",
+        "rec0914@56:18",
+        "rec0914@56:40",
+        "rec0914@57:02",
+        "rec0914@58:01",
+        "rec0914@58:59",
+        "rec0914@59:40",
+        "rec0914@59:54"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "logic-multiplexer",
+      "category": "class",
+      "title": "多路选择器的选择端与数据端",
+      "body": "MUX根据选择位，从若干数据输入中选一个传到输出；选择端与数据端的角色不同。4选1时S1S0=10选D2。Lab 2 Q4要求用两个4选1MUX分别构造全加器的和与进位，可先按两位选择输入分组真值表。",
+      "anchors": [
+        {
+          "deck": "lec2",
+          "page": 27
+        },
+        {
+          "deck": "lab2",
+          "page": 6
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec0914@01:00:36",
+        "rec0914@01:32:48",
+        "rec0914@01:33:21"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "logic-sr-state",
+      "category": "class",
+      "title": "SR锁存器的反馈、保持与非法输入",
+      "body": "沿交叉耦合NOR门逐步推导：S/R=10置位、01复位、00保持、11使Q与Q̄都为0而失去互补关系。保持依赖上一个状态；S=R=0本身不能决定初始Q。转写里非法输入处与电路不一致，必须以门电路和课件表格交叉核对。",
+      "anchors": [
+        {
+          "deck": "lec2",
+          "page": 29
+        },
+        {
+          "deck": "lec2",
+          "page": 30
+        },
+        {
+          "deck": "lec2",
+          "page": 31
+        },
+        {
+          "deck": "lec2",
+          "page": 32
+        },
+        {
+          "deck": "lec2",
+          "page": 33
+        },
+        {
+          "deck": "lab2",
+          "page": 7
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec0914@01:02:22",
+        "rec0914@01:02:44",
+        "rec0914@01:02:57",
+        "rec0914@01:03:43",
+        "rec0914@01:03:53",
+        "rec0914@01:04:07",
+        "rec0914@01:04:33",
+        "rec0914@01:05:47",
+        "rec0914@01:06:03",
+        "rec0914@01:06:18",
+        "rec0914@01:06:33",
+        "rec0914@01:07:02",
+        "rec0914@01:07:43",
+        "rec0914@01:07:59",
+        "rec0914@01:08:25"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "logic-latch-flipflop",
+      "category": "class",
+      "title": "D锁存器与D触发器的时序区别",
+      "body": "锁存器在使能有效的整个电平区间透明；边沿触发器只在指定边沿采样。P35的主从结构中，L1在CLK=0透明、L2在CLK=1透明，组合后表现为上升沿触发。读P37波形时逐段问“现在透明还是保持”，不能把所有时钟高电平都当作采样时刻。",
+      "anchors": [
+        {
+          "deck": "lec2",
+          "page": 34
+        },
+        {
+          "deck": "lec2",
+          "page": 35
+        },
+        {
+          "deck": "lec2",
+          "page": 36
+        },
+        {
+          "deck": "lec2",
+          "page": 37
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec0914@01:08:44",
+        "rec0914@01:09:27",
+        "rec0914@01:09:56",
+        "rec0914@01:10:38",
+        "rec0914@01:11:19",
+        "rec0914@01:11:37",
+        "rec0914@01:13:05",
+        "rec0914@01:13:57",
+        "rec0914@01:14:39",
+        "rec0914@01:15:00",
+        "rec0914@01:15:20",
+        "rec0914@01:16:17",
+        "rec0914@01:17:19",
+        "rec0914@01:17:44",
+        "rec0914@01:18:26",
+        "rec0914@01:19:14"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "logic-register-shift",
+      "category": "class",
+      "title": "寄存器、串行移位与并行装载",
+      "body": "能沿4个触发器和每个MUX追踪旧状态怎样变成新状态，区分并行寄存器与移位寄存器。P41的S1S0依次选择保持、右移、左移、并行装载；该图外部CLK先反相，因此有效外部边沿是下降沿。例：1010右移并从左端送入0，得到0101。",
+      "anchors": [
+        {
+          "deck": "lec2",
+          "page": 38
+        },
+        {
+          "deck": "lec2",
+          "page": 39
+        },
+        {
+          "deck": "lec2",
+          "page": 40
+        },
+        {
+          "deck": "lec2",
+          "page": 41
+        },
+        {
+          "deck": "lab2",
+          "page": 10
+        },
+        {
+          "deck": "lab2",
+          "page": 11
+        },
+        {
+          "deck": "lab2",
+          "page": 12
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec0914@01:20:31",
+        "rec0914@01:21:00",
+        "rec0914@01:22:48",
+        "rec0914@01:23:18",
+        "rec0914@01:23:51",
+        "rec0914@01:24:41",
+        "rec0914@01:25:15",
+        "rec0914@01:25:57",
+        "rec0914@01:26:37",
+        "rec0914@01:27:16",
+        "rec0914@01:27:26",
+        "rec0914@01:27:39",
+        "rec0914@01:29:17",
+        "rec0914@01:33:33",
+        "rec0914@01:34:18",
+        "rec0914@01:36:36",
+        "rec0914@01:38:15"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "isa-first-quiz-arrangement",
+      "category": "arrangement",
+      "title": "历史课堂通知：下一周第一次 Quiz",
+      "body": "这份未标课堂日期的录音开头及末尾提到“下周的这节课”进行第一次quiz，末尾提醒带笔，可能需要书写。转写中具体开考分钟不清楚，不能据此安排当前日程；应以课程后续正式通知为准。录音未在这些片段中给出完整考试范围或最终评分比例。",
+      "anchors": [
+        {
+          "deck": "lec3",
+          "page": 1
+        },
+        {
+          "deck": "lec3",
+          "page": 30
+        }
+      ],
+      "status": "课堂历史通知，日期未确认",
+      "sourceIds": [
+        "rec02-s000",
+        "rec02-s161",
+        "rec02-s162"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "isa-current-coverage",
+      "category": "scope",
+      "title": "本阶段着重前三类指令",
+      "body": "讲指令类别时，老师说大部分时间将处理load/store、计算、jump/branch前三类。它说明课堂讲解重心，不代表浮点、存储管理或特殊指令被明确排除出所有后续考核。",
+      "anchors": [
+        {
+          "deck": "lec3",
+          "page": 8
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec02-s041",
+        "rec02-s042",
+        "rec02-s043",
+        "rec02-s044"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "isa-call-convention",
+      "category": "class",
+      "title": "过程调用与寄存器保存责任",
+      "body": "分清caller与callee、参数$a0–$a3、返回值$v0–$v1、返回地址$ra。若callee改动$s寄存器，应保存并恢复；若caller还需要$t寄存器跨调用存活，应由caller保护。嵌套jal会覆盖$ra，不能把“调用”理解成自动保存全部现场。 老师在寄存器表处和过程调用处反复解释同一保存约定，这里合并为一个复习主题。",
+      "anchors": [
+        {
+          "deck": "lec3",
+          "page": 11
+        },
+        {
+          "deck": "lec3",
+          "page": 45
+        },
+        {
+          "deck": "lec3",
+          "page": 46
+        },
+        {
+          "deck": "lec3",
+          "page": 47
+        },
+        {
+          "deck": "lec3",
+          "page": 48
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec03@43:17",
+        "rec04@00:23",
+        "rec03@43:59",
+        "rec03@44:24",
+        "rec04@01:12",
+        "rec04@03:00",
+        "rec03@46:06",
+        "rec03-s085",
+        "rec03-s086",
+        "rec04@18:23",
+        "rec04@02:11",
+        "rec04@04:09",
+        "rec04@05:00",
+        "rec04@05:32",
+        "rec02-s093",
+        "rec02-s094",
+        "rec02-s095",
+        "rec02-s096",
+        "rec02-s079",
+        "rec02-s080"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "isa-array-byte-offset",
+      "category": "class",
+      "title": "课堂练习：A[12] = h + A[8]",
+      "body": "老师现场要求写出读取A[8]、与h相加、保存到A[12]三条指令，并追问写入偏移。32位数组元素对应的两个字节偏移分别为32和48；与后面的A[300]练习共同检验load/store和基址寻址。",
+      "anchors": [
+        {
+          "deck": "lec3",
+          "page": 17
+        },
+        {
+          "deck": "lec3",
+          "page": 18
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec02-s116",
+        "rec02-s119",
+        "rec02-s121",
+        "rec02-s122"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "isa-zero-vs-sign-extension",
+      "category": "class",
+      "title": "讲解重点：逻辑立即数做零扩展",
+      "body": "老师专门对比andi/ori与addi：前两者的16位立即数零扩展，addi按符号扩展。例：0xFF00在andi中扩为0x0000FF00，可能把源寄存器高16位清零。该条是有直接录音支持的讲解重点，未标为必考。",
+      "anchors": [
+        {
+          "deck": "lec3",
+          "page": 20
+        },
+        {
+          "deck": "lec3",
+          "page": 23
+        },
+        {
+          "deck": "lec3",
+          "page": 36
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec03-s017",
+        "rec03-s018",
+        "rec03-s019"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "isa-quiz-translation",
+      "category": "explicit",
+      "title": "Quiz准备：C → 汇编 → 机器码",
+      "body": "老师在A[300]=h+A[300]练习后明确说“at least you need to handle this one to be prepared for the quiz”。需能写load–add–store三步，计算300×4=1200字节偏移，并把各寄存器放入正确的rs、rt、rd字段；可依给定编码表完成二进制转换。该证据限定为录音所说的quiz准备，不能推定所有考试都会出同题。",
+      "anchors": [
+        {
+          "deck": "lec3",
+          "page": 25
+        },
+        {
+          "deck": "lec3",
+          "page": 26
+        },
+        {
+          "deck": "lec3",
+          "page": 27
+        },
+        {
+          "deck": "lec3",
+          "page": 29
+        },
+        {
+          "deck": "lec3",
+          "page": 30
+        }
+      ],
+      "status": "录音明确要求的Quiz准备；未承诺原题必考",
+      "sourceIds": [
+        "rec02-s160",
+        "rec02-s167",
+        "rec02-s170",
+        "rec02-s171",
+        "rec02-s172",
+        "rec02-s173"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "isa-codes-no-memorization",
+      "category": "scope",
+      "title": "Opcode 与 funct 不要求背诵",
+      "body": "在讲解C→汇编→机器码练习时，老师明确说opcode和function code不要求记忆；仍应会查给定表并正确编码。需要区分汇编操作数顺序与机器码字段顺序，以及word下标与byte偏移。不要把“不背编码数值”扩大成“不用掌握指令格式”。",
+      "anchors": [
+        {
+          "deck": "lec3",
+          "page": 25
+        },
+        {
+          "deck": "lec3",
+          "page": 26
+        },
+        {
+          "deck": "lec3",
+          "page": 27
+        },
+        {
+          "deck": "lec3",
+          "page": 29
+        },
+        {
+          "deck": "lec3",
+          "page": 30
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec02-s172",
+        "rec02-s173"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "isa-loop-addressing",
+      "category": "class",
+      "title": "课堂追问：循环第一条为何左移两位",
+      "body": "在while(save[i]==k) i+=1例题中，老师追问sll的作用，并解释i是元素下标，lw使用字节地址，所以先算4i，再加基址；lw的偏移处只能放立即数，不能直接放寄存器。能解释每条指令的数据与控制流，比只抄出代码更有用。",
+      "anchors": [
+        {
+          "deck": "lec3",
+          "page": 39
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec03-s030",
+        "rec03-s032",
+        "rec03-s036",
+        "rec03-s037",
+        "rec03-s038",
+        "rec03-s040",
+        "rec03-s041"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "isa-leaf-stack",
+      "category": "class",
+      "title": "叶子过程与成对的栈操作",
+      "body": "跟着leaf_example逐行解释：$sp减4申请一个字、sw保存$s0、计算并写$v0、lw恢复$s0、$sp加4释放空间、jr返回。叶子过程是不继续调用其他过程，仍可以执行jr $ra。例：$sp从0x1000到0x0FFC再回0x1000。",
+      "anchors": [
+        {
+          "deck": "lec3",
+          "page": 49
+        },
+        {
+          "deck": "lec3",
+          "page": 50
+        },
+        {
+          "deck": "lec3",
+          "page": 51
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec04@06:03",
+        "rec04@06:40",
+        "rec04@07:04",
+        "rec04@07:34",
+        "rec04@08:31",
+        "rec04@09:13",
+        "rec04@10:37",
+        "rec04@12:08",
+        "rec04@13:00",
+        "rec04@14:26",
+        "rec04@15:01",
+        "rec04@16:00",
+        "rec04@16:33"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "isa-factorial-recursion",
+      "category": "class",
+      "title": "递归阶乘：保存原n与返回地址",
+      "body": "老师要求尝试遮住右侧注释，解释每条MIPS指令的作用。每层申请8字节保存$a0与$ra；递归返回后先恢复原n，再乘以子问题结果。本页C代码return f应按下一页代码与录音核对为return 1，基本情况不是返回未定义变量。",
+      "anchors": [
+        {
+          "deck": "lec3",
+          "page": 52
+        },
+        {
+          "deck": "lec3",
+          "page": 53
+        },
+        {
+          "deck": "lec3",
+          "page": 54
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec04@17:06",
+        "rec04@17:52",
+        "rec04@18:23",
+        "rec04@19:06",
+        "rec04@27:57",
+        "rec04@22:10",
+        "rec04@22:31",
+        "rec04@23:00",
+        "rec04@24:36",
+        "rec04@25:53",
+        "rec04@26:29"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "isa-memory-layout",
+      "category": "class",
+      "title": "过程帧、$fp与内存布局",
+      "body": "过程帧集中保存当前过程所需数据；$fp可提供稳定基准，$sp随栈操作变化。区分代码、静态数据、堆和栈，并理解课件中堆向上、栈向下的简化布局。静态数据不是“值不能变”，全局变量也可以更新。",
+      "anchors": [
+        {
+          "deck": "lec3",
+          "page": 55
+        },
+        {
+          "deck": "lec3",
+          "page": 56
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec04@29:22",
+        "rec04@29:50",
+        "rec04@30:22",
+        "rec04@31:12",
+        "rec04@32:27",
+        "rec04@33:15",
+        "rec04@34:24",
+        "rec04@35:02",
+        "rec04@35:34",
+        "rec04@36:19",
+        "rec04@37:28",
+        "rec04@38:00",
+        "rec04@39:24"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "isa-byte-loads",
+      "category": "class",
+      "title": "字节/半字访存与扩展方式",
+      "body": "lb/lh符号扩展，lbu/lhu零扩展，sb/sh只存寄存器低8/16位。例：0x80经lb为0xFFFFFF80，经lbu为0x00000080。字符处理还需明确编码，不能把Unicode一概当成固定16位或32位字符存储。",
+      "anchors": [
+        {
+          "deck": "lec3",
+          "page": 57
+        },
+        {
+          "deck": "lec3",
+          "page": 58
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec04@40:23",
+        "rec04@41:00",
+        "rec04@41:36",
+        "rec04@42:15",
+        "rec04@43:02",
+        "rec04@43:57",
+        "rec04@44:53",
+        "rec04@45:26"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "isa-build-constant",
+      "category": "class",
+      "title": "lui+ori构造32位常数",
+      "body": "先用lui写高16位并清零低16位，再用ori填低16位。课件例子中的61与2304是十进制，最终为0x003D0900；切勿把十进制数字原样当作十六进制。",
+      "anchors": [
+        {
+          "deck": "lec3",
+          "page": 59
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec04@46:56",
+        "rec04@47:39",
+        "rec04@48:37",
+        "rec04@49:12",
+        "rec04@49:51",
+        "rec04@50:41"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "isa-branch-address",
+      "category": "class",
+      "title": "分支寻址：PC+4、符号扩展与左移2位",
+      "body": "能从图解释目标=分支地址+4+sign_extend(offset)×4；offset是16位有符号指令字位移，基准是PC+4。例：当前PC=0x1000，offset=3，目标0x1010；offset=−2，目标0x0FFC。访存lw/sw的偏移按字节计，不照搬这个×4。",
+      "anchors": [
+        {
+          "deck": "lec3",
+          "page": 60
+        },
+        {
+          "deck": "lec3",
+          "page": 61
+        },
+        {
+          "deck": "lec3",
+          "page": 65
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec04@01:00:55",
+        "rec04@01:02:05",
+        "rec04@01:04:06",
+        "rec04@01:06:08",
+        "rec04@01:07:54",
+        "rec04@01:08:31",
+        "rec04@01:09:11",
+        "rec04@01:10:07",
+        "rec04@01:10:32",
+        "rec04@01:11:28",
+        "rec04@01:12:45",
+        "rec04@01:14:00",
+        "rec04@01:14:34",
+        "rec04@01:22:26",
+        "rec04@01:22:45",
+        "rec04@01:23:08",
+        "rec04@01:23:51",
+        "rec04@01:24:19",
+        "rec04@01:24:42",
+        "rec04@01:25:29"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "isa-jump-address",
+      "category": "class",
+      "title": "伪直接跳转与超范围分支改写",
+      "body": "j/jal把取指后PC的高4位、26位字段及00拼接，不能与PC相加，也不能任意跨越256 MiB区域。条件分支太远时，可用反条件近分支跳过一条j；改写后仍要满足j本身的可达范围。",
+      "anchors": [
+        {
+          "deck": "lec3",
+          "page": 62
+        },
+        {
+          "deck": "lec3",
+          "page": 63
+        },
+        {
+          "deck": "lec3",
+          "page": 64
+        },
+        {
+          "deck": "lec3",
+          "page": 65
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "rec04@01:15:41",
+        "rec04@01:16:00",
+        "rec04@01:16:43",
+        "rec04@01:17:15",
+        "rec04@01:18:32",
+        "rec04@01:20:03",
+        "rec04@01:20:38",
+        "rec04@01:21:05",
+        "rec04@01:21:29",
+        "rec04@01:22:26",
+        "rec04@01:22:45",
+        "rec04@01:23:08",
+        "rec04@01:23:51",
+        "rec04@01:24:19",
+        "rec04@01:24:42",
+        "rec04@01:25:29"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "alu-slt-feedback",
+      "category": "class",
+      "title": "课堂追问：slt 为什么只有最低位接 Set",
+      "body": "32 位 slt 的结果只有数值 0 或 1，所以高 31 位的 Less 输入接 0，最高位形成的整体比较判断回送最低位。老师反复区分“两个完整数的比较”与“逐位各自比较”。例如 3<5 输出 000…0001；反之输出全 0。录音用减法符号位解释，完整有符号实现还须处理溢出，不能把溢出后的符号直接当大小关系。",
+      "anchors": [
+        {
+          "deck": "lec4",
+          "page": 5
+        },
+        {
+          "deck": "lec4",
+          "page": 6
+        }
+      ],
+      "status": "课堂反复提问；非必考承诺",
+      "sourceIds": [
+        "rec04@01:39:43",
+        "rec04@01:43:25",
+        "rec04@01:44:29",
+        "rec04@01:47:17"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "fp-hidden-one-exam",
+      "category": "explicit",
+      "title": "考试易错提醒：浮点 fraction 不保存隐含前导 1",
+      "body": "05 录音 28:29–29:10 明确以考试或练习为例，提醒不要把规格化有效数前导的 1 再写入 fraction。课件练习 −0.75=−1.1₂×2⁻¹，单精度应填 s=1、E=126、fraction=100…0，双精度改用 E=1022 与 52 位 fraction；两者的小数域都不是 110…0。这是老师明确指出的易错点，并非承诺该原题必考。",
+      "anchors": [
+        {
+          "deck": "lec4",
+          "page": 28
+        },
+        {
+          "deck": "lec4",
+          "page": 29
+        },
+        {
+          "deck": "lec4",
+          "page": 30
+        }
+      ],
+      "status": "明确提及考试易错；未承诺原题必考",
+      "sourceIds": [
+        "rec05@23:15",
+        "rec05@28:01",
+        "rec05@28:29",
+        "rec05@29:10",
+        "rec05@30:23"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "fp-rounding-rule",
+      "category": "class",
+      "title": "浮点计算先看题目给出的精度与舍入规则",
+      "body": "老师在浮点加法流程旁提醒，练习题会指定向上或向下等舍入规则，应据此处理被舍弃的位。基本顺序是对阶→有效数相加→规格化→舍入；若舍入产生新进位，还要再次规格化。例如四位二进制有效数中，1.1111₂ 向上舍入会得到 10.000₂，需写成 1.000₂×2¹。转写在 homework 后的词不清，不据此断言考试题型或必考范围。",
+      "anchors": [
+        {
+          "deck": "lec4",
+          "page": 31
+        },
+        {
+          "deck": "lec4",
+          "page": 32
+        },
+        {
+          "deck": "lec4",
+          "page": 34
+        }
+      ],
+      "status": "课堂练习提醒",
+      "sourceIds": [
+        "rec05@44:17",
+        "rec05@44:50"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "datapath-write-direction",
+      "category": "class",
+      "title": "从数据流推出 RegWrite 与 MemWrite",
+      "body": "老师围绕 sw、lw、R 型指令反复提问谁需要写入。sw 把 rt 数据送入内存，因此 MemWrite=1、RegWrite=0；lw 把内存数据写入 rt，因此 MemWrite=0、RegWrite=1；R 型算术把 ALU 结果写入 rd，RegWrite=1。例：sw $t0,8($s0) 写入的是 $t0 的值，ALU 算出的 $s0+8 只是地址。用数据流判断，能避开录音个别口误及误转写。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 7
+        },
+        {
+          "deck": "lec5",
+          "page": 8
+        },
+        {
+          "deck": "lec5",
+          "page": 9
+        }
+      ],
+      "status": "课堂提问与解释",
+      "sourceIds": [
+        "rec06@16:53",
+        "rec06@20:13",
+        "rec06@22:31",
+        "rec06@26:12",
+        "rec06@26:40"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "branch-parallel-paths",
+      "category": "class",
+      "title": "课堂问题：分支比较与目标地址能否同时计算",
+      "body": "beq 下方 ALU 比较 rs 与 rt，上方加法器计算 PC+4+(sign-extend(offset)<<2)。两者的输入互不依赖，因此可以并行进行，最后再按分支条件选择下一 PC。例如 rs=rt=7、PC=100、offset=3 时，下方得到 Zero=1，上方得到目标 116。老师在课间前提出此题，课间后明确解释可以并行。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 10
+        },
+        {
+          "deck": "lec5",
+          "page": 11
+        },
+        {
+          "deck": "lec5",
+          "page": 15
+        }
+      ],
+      "status": "课堂明确提问；非必考承诺",
+      "sourceIds": [
+        "rec06@48:36",
+        "rec06@59:52",
+        "rec06@01:00:38",
+        "rec06@01:01:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "jump-pcplus4-slide-errata",
+      "category": "scope",
+      "title": "课件勘误：j 拼接地址的高 4 位取 PC+4",
+      "body": "Lecture 5 P29 写 Top 4 bits of old PC，但 P12 的高 4 位连线来自 PC 加 4 的输出，P30 更明确标注 PC+4[31:28]。应按后两张数据通路图理解：目标地址={ (PC+4)[31:28], instruction[25:0], 00 }。例如当前 PC=0x0FFFFFFC、目标字段为 0 时，PC+4=0x10000000，应跳到 0x10000000；若误用旧 PC 的高 4 位就会错到 0x00000000。大多数地址下两者相同，但跨边界时不同。这里是课件图示交叉核对，P29–30 没有对应上传录音，不标为课堂考核承诺。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 12
+        },
+        {
+          "deck": "lec5",
+          "page": 29
+        },
+        {
+          "deck": "lec5",
+          "page": 30
+        }
+      ],
+      "status": "课件交叉核对；P29–30 未提供对应录音",
+      "sourceIds": [],
+      "sourceType": "课件图示核对"
+    },
+    {
+      "id": "alu-control-slide-errata",
+      "category": "scope",
+      "title": "课件勘误：减法控制码与 AND 行名称",
+      "body": "Lecture 5 P19 把 subtract 的 ALU control 写成 0011，但 P20、P21 的减法行一致为 0110；与本课 ALU 的“B 取反并选择加法通路”设计相符，应按 0110 理解。P20 中 funct=100100 的 R-type 行在 Operation 列误写 ADD，同一行 ALU function 为 AND、ALU control 为 0000，P21 的低位模式 0100 也对应 0000，因此该名称应为 AND。例如 beq 的 ALUOp=01 应得到减法控制 0110，而 AND 指令的 funct=100100 应得到 0000。这是课件之间的交叉核对，上传录音未覆盖这三页，不能归为老师课堂口述或必考内容。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 19
+        },
+        {
+          "deck": "lec5",
+          "page": 20
+        },
+        {
+          "deck": "lec5",
+          "page": 21
+        }
+      ],
+      "status": "课件交叉核对；对应页未提供录音",
+      "sourceIds": [],
+      "sourceType": "课件图示核对"
+    },
+    {
+      "id": "first-assignment-relative-announcement",
+      "category": "arrangement",
+      "title": "第一份作业的口头发布与截止提醒",
+      "body": "05 录音结尾说第一份作业预计在“本周”通过 Blackboard 发布；06 录音开头又提到某个周日的截止时点，并提醒不要等到最后一分钟提交，以防网站异常。这两份录音没有可确认的授课日期，且转写未给出完整日历日期，不能把“本周”或“周日”换算成当前有效截止日期；具体安排需以课程原作业公告为准。",
+      "anchors": [],
+      "status": "相对时间，无法确认日历日期",
+      "sourceIds": [
+        "rec05@01:06:39",
+        "rec06@00:00"
+      ],
+      "sourceType": "录音原文"
+    }
+  ],
+  "note": "依据已提供的7份课件与6份课堂转写。明确要求、课堂重点、课件练习与勘误分别注明；课堂重点和练习不等于必考。未把Quiz准备要求当成已考真题复盘。未注明日期的相对通知仅作历史记录，评分比例与截止时间不作推定。",
+  "navigationDefault": "include-class",
+  "navigationNote": "下个考点严格取当前页之后的代表页，不回绕。默认含课堂重点与标明来源的课件练习；可关闭后仅看明确考核/Quiz复盘。同一主题在同一份课件只导航一次。"
+}

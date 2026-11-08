@@ -1,0 +1,1294 @@
+{
+  "revision": "2026-11-08-ai301-v1",
+  "method": "逐页实际查看PDF渲染图像，结合按段落保留时间戳的课堂转写，独立编写与当页图示对应的连续中文讲解。无直接对应录音的页面仅展示PPT；索引、讲解与考点均使用1起始的物理PDF页码。",
+  "coverage": {
+    "visualPages": 232,
+    "explainedPages": 135,
+    "slidesOnlyPages": 97,
+    "recordings": 6,
+    "examEntries": 38
+  },
+  "decks": [
+    {
+      "id": "lec1",
+      "pages": 23,
+      "sourceFile": "AI301Lecture1.pdf",
+      "sourcePdfSha256": "fcb0b96a2616c6e2eb3704259f30d48e44b74f907db84377391e00ef9aa28895",
+      "pdfSha256": "fcb0b96a2616c6e2eb3704259f30d48e44b74f907db84377391e00ef9aa28895",
+      "sourceBytes": 18643998,
+      "webBytes": 18643998,
+      "visuallyReviewedPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "explainedPages": [],
+      "slidesOnlyPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "recordingCoverage": "未提供本讲对应录音；09月14日开头的五部件复习对应Lec2 P3，不推定为Lec1整讲录音。",
+      "pdfOptimization": {
+        "method": "Byte-identical copy of supplied PDF",
+        "byteIdentical": true
+      }
+    },
+    {
+      "id": "lab1",
+      "pages": 19,
+      "sourceFile": "Lab1.pdf",
+      "sourcePdfSha256": "800b76cb50dcc21f19f9b568c446959928522e9a9ad36021a39400202985b753",
+      "pdfSha256": "800b76cb50dcc21f19f9b568c446959928522e9a9ad36021a39400202985b753",
+      "sourceBytes": 1605162,
+      "webBytes": 1605162,
+      "visuallyReviewedPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "explainedPages": [],
+      "slidesOnlyPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "recordingCoverage": "未提供对应Lab录音；全部保留原PDF。",
+      "pdfOptimization": {
+        "method": "Byte-identical copy of supplied PDF",
+        "byteIdentical": true
+      }
+    },
+    {
+      "id": "lec2",
+      "pages": 41,
+      "sourceFile": "AI301_Lecture2.pdf",
+      "sourcePdfSha256": "8a2554e5c71bee58737508ed41ef40ca86c7b48fe3e8c66a1d95fcd77e6f9040",
+      "pdfSha256": "689a32508e391be4454f0cd92e647cf7f44f883bc9f3475574a034920915f7ca",
+      "sourceBytes": 333155011,
+      "webBytes": 11284837,
+      "visuallyReviewedPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "explainedPages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "slidesOnlyPages": [
+        1,
+        2
+      ],
+      "recordingCoverage": "rec0914从P3五部件复习开始，覆盖至P41；P1–2无直接录音。",
+      "pdfOptimization": {
+        "method": "PyMuPDF 1.26.6: garbage=4, deflate=True, deflate_images=True, deflate_fonts=True, no_new_id=True; no resampling",
+        "verification": {
+          "textExactMatchPages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "pixelExactMatchPages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "renderScale": 1,
+          "originalBytes": 333155011,
+          "webBytes": 11284837,
+          "originalSha256": "8a2554e5c71bee58737508ed41ef40ca86c7b48fe3e8c66a1d95fcd77e6f9040",
+          "pdfSha256": "689a32508e391be4454f0cd92e647cf7f44f883bc9f3475574a034920915f7ca"
+        }
+      }
+    },
+    {
+      "id": "lab2",
+      "pages": 12,
+      "sourceFile": "AI301_Lab2.pdf",
+      "sourcePdfSha256": "7e5a24668d722ddf750c7bbcc07ef59cddeec3ef19930c2944ab6654a3ce203e",
+      "pdfSha256": "4e4f7b58fde9d6880d5929c28873256cabd9f7a29f1adb65dba95fe5a40abf8b",
+      "sourceBytes": 98839351,
+      "webBytes": 10308348,
+      "visuallyReviewedPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "explainedPages": [],
+      "slidesOnlyPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "recordingCoverage": "未提供对应Lab录音；全部保留原PDF。",
+      "pdfOptimization": {
+        "method": "PyMuPDF 1.26.6: garbage=4, deflate=True, deflate_images=True, deflate_fonts=True, no_new_id=True; no resampling",
+        "verification": {
+          "textExactMatchPages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "pixelExactMatchPages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "renderScale": 1,
+          "originalBytes": 98839351,
+          "webBytes": 10308348,
+          "originalSha256": "7e5a24668d722ddf750c7bbcc07ef59cddeec3ef19930c2944ab6654a3ce203e",
+          "pdfSha256": "4e4f7b58fde9d6880d5929c28873256cabd9f7a29f1adb65dba95fe5a40abf8b"
+        }
+      }
+    },
+    {
+      "id": "lec3",
+      "pages": 67,
+      "sourceFile": "AI301_Lecture3(1).pdf",
+      "sourcePdfSha256": "94d8df7da794471b8c5158d086abc193efc9d0d7c62cadba50d6bda8c959ac0f",
+      "pdfSha256": "94d8df7da794471b8c5158d086abc193efc9d0d7c62cadba50d6bda8c959ac0f",
+      "sourceBytes": 1106058,
+      "webBytes": 1106058,
+      "visuallyReviewedPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "explainedPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "slidesOnlyPages": [
+        24,
+        31,
+        66,
+        67
+      ],
+      "recordingCoverage": "rec02覆盖开场及ISA前半；rec03覆盖逻辑移位至调用约定；rec04延续调用、内存与寻址。P24/P31重复总览及P66/P67末页未找到直接讲授。",
+      "pdfOptimization": {
+        "method": "Byte-identical copy of supplied PDF",
+        "byteIdentical": true
+      }
+    },
+    {
+      "id": "lec4",
+      "pages": 37,
+      "sourceFile": "Lecture4.pdf",
+      "sourcePdfSha256": "fa7f5b9c159f4bc5a0f78d0604b91086abbb73187f9243e342f3e327379be86f",
+      "pdfSha256": "fa7f5b9c159f4bc5a0f78d0604b91086abbb73187f9243e342f3e327379be86f",
+      "sourceBytes": 1460330,
+      "webBytes": 1460330,
+      "visuallyReviewedPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "explainedPages": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "slidesOnlyPages": [
+        1,
+        4,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "recordingCoverage": "rec04结尾覆盖ALU简介至串行进位性能；rec05开头直接进入IEEE754回顾。P1/P4/P8–26无直接录音；未把MUX误转写为multiplier当作乘法器讲授。",
+      "pdfOptimization": {
+        "method": "Byte-identical copy of supplied PDF",
+        "byteIdentical": true
+      },
+      "pageObservations": [
+        {
+          "page": 1,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "封面；October 2026；仅作课件标识，不推断录音日期。"
+        },
+        {
+          "page": 2,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "整数与浮点两条内容线；只是目录，不自动认作考核重点。"
+        },
+        {
+          "page": 3,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "32 位 A/B/result，4 位 operation，单独 zero/overflow；符号扩展与零扩展清单。"
+        },
+        {
+          "page": 4,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "R/I 编码表；录音 04 从上一页接口说明直接转入 1-bit ALU，未找到本表逐页讲解。"
+        },
+        {
+          "page": 5,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "1-bit ALU：Ainvert/Binvert、AND/OR/adder/Less 与 4 选 1 MUX。"
+        },
+        {
+          "page": 6,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "32-bit ALU；ALU31 Set 回到 ALU0 Less；高 31 个 Less 为零；OR 后反相产生 Zero。"
+        },
+        {
+          "page": 7,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "n×CP 串行进位延迟；图中 CarryOut 逐级传递。"
+        },
+        {
+          "page": 8,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "全加器 sum XOR 与 carry 三项之和公式。"
+        },
+        {
+          "page": 9,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "Ripple 与 lookahead 两位电路；g=a b、p=a+b；c2 展开。"
+        },
+        {
+          "page": 10,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "7+6 逐位进位例；正负相加不溢出，同号相加关注符号反转。"
+        },
+        {
+          "page": 11,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "7−6=7+(−6) 补码例；两同号数相减不溢出。"
+        },
+        {
+          "page": 12,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "32 位溢出的四类符号表；EPC 与异常。"
+        },
+        {
+          "page": 13,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "add/addu 溢出行为对比；addui 拼写疑误，应 addiu；C ignores overflow 是简化说法。"
+        },
+        {
+          "page": 14,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "0010×1011=00010110 的部分积；乘积双倍位宽。"
+        },
+        {
+          "page": 15,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "64-bit ALU/被乘数/乘积与 32-bit 右移乘数，控制器按最低位判断。"
+        },
+        {
+          "page": 16,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "乘数最低位测试→必要时相加→被乘数左移→乘数右移，32 次循环。"
+        },
+        {
+          "page": 17,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "练习 0010×0011；数值结果 00000110。"
+        },
+        {
+          "page": 18,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "优化乘法：固定 32 位被乘数，64 位 product 右移，产品增长/乘数消耗；页脚 19。"
+        },
+        {
+          "page": 19,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "HI 上半/LO 下半，mult/multu/mfhi/mflo，mul 取低 32 位；页脚 20。"
+        },
+        {
+          "page": 20,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "商×除数+余数；左下长除法数字明确带 ten 下标，不能因只含 0/1 就当二进制。"
+        },
+        {
+          "page": 21,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "初版除法：64 位除数右移，64 位余数，32 位商左移。"
+        },
+        {
+          "page": 22,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "恢复余数除法流程；负差则恢复并商补 0，非负商补 1；33 次循环。"
+        },
+        {
+          "page": 23,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "练习 00000111÷0010；结果商 0011 余 0001。"
+        },
+        {
+          "page": 24,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "32-bit ALU 优化除法，64 位 remainder 可左右移；物理 P24 页脚 26。"
+        },
+        {
+          "page": 25,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "HI 为余数，LO 为商；div/divu 无硬件除零/溢出检查；页脚 27。"
+        },
+        {
+          "page": 26,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "十进制/二进制科学计数法与规格化；±1.x×2^y。"
+        },
+        {
+          "page": 27,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "IEEE754 历史标准与 single 32/double 64 位。"
+        },
+        {
+          "page": 28,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "单精度 1/8/23 布局，bias 127；公式只适用于普通规格化数。"
+        },
+        {
+          "page": 29,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "单精度 0/∞/NaN 表与双精度 1/11/52，bias 1023；未展开 subnormal。"
+        },
+        {
+          "page": 30,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "−0.75 编码练习；答案已通过 struct 浮点打包校验。"
+        },
+        {
+          "page": 31,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "四位十进制浮点加法；对阶用 0.016 简化；最终 1.002×10²。"
+        },
+        {
+          "page": 32,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "四位二进制 0.5−0.4375；结果 1.000×2⁻⁴=0.0625。"
+        },
+        {
+          "page": 33,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "浮点加法组合逻辑更复杂，多周期与流水化动机。"
+        },
+        {
+          "page": 34,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "指数比较、右移、有效数加法、规格化、舍入；舍入后回到规格化的回路已看单页。"
+        },
+        {
+          "page": 35,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "浮点算术硬件概述；录音明确不详细展开乘法。"
+        },
+        {
+          "page": 36,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "FP coprocessor 1，f0–f31，偶奇成对双精度，lwc1/ldc1/swc1/sdc1。"
+        },
+        {
+          "page": 37,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": ".s/.d 算术、比较写 FP 条件码、bc1t/bc1f 分支。"
+        }
+      ],
+      "errataAndCautions": [
+        {
+          "pages": [
+            6
+          ],
+          "kind": "录音简化解释",
+          "detail": "slt 仅查看 A−B 符号位需限定不溢出；有符号完整比较应 Set=sign XOR overflow。已在对应 note 加直接反例。"
+        },
+        {
+          "pages": [
+            13
+          ],
+          "kind": "课件拼写",
+          "detail": "addui 应为 addiu。未提供该页录音，未生成课堂 note。"
+        },
+        {
+          "pages": [
+            13
+          ],
+          "kind": "易误读",
+          "detail": "C ignores overflow 是课件简化叙述，不能解释为 C 标准保证有符号整数溢出回绕；不在无录音页添加口述。"
+        },
+        {
+          "pages": [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "kind": "页脚偏移",
+          "detail": "P18 起页脚与物理页不一致，后续累计有多个跳号；所有 notes/anchors 统一物理 PDF 页码。"
+        },
+        {
+          "pages": [
+            19
+          ],
+          "kind": "易误读",
+          "detail": "HI 检查 32 位乘法溢出须区分无符号与有符号；有符号应检查高半部是否为低半部符号扩展，不能只检验 HI 非零。"
+        },
+        {
+          "pages": [
+            28,
+            29
+          ],
+          "kind": "公式适用范围",
+          "detail": "1+fraction 公式只适用于规格化普通数；E=0,fraction非零的 subnormal 未在表里列出；NaN 是定义的特殊编码。"
+        },
+        {
+          "pages": [
+            31
+          ],
+          "kind": "中间精度",
+          "detail": "对阶精确为 0.01610×10¹，课件写 0.016×10¹；保留全部中间数字也得到相同的四位舍入结果 100.2。"
+        },
+        {
+          "pages": [
+            36
+          ],
+          "kind": "转写校正",
+          "detail": "录音说/误转到 f32；课件明确 32 个寄存器 f0–f31。"
+        }
+      ]
+    },
+    {
+      "id": "lec5",
+      "pages": 33,
+      "sourceFile": "Lecture5.pdf",
+      "sourcePdfSha256": "38c9afbc55072a27df410fdc472af11fad731f35ac8e321f4a22b60597a8251a",
+      "pdfSha256": "38c9afbc55072a27df410fdc472af11fad731f35ac8e321f4a22b60597a8251a",
+      "sourceBytes": 2007699,
+      "webBytes": 2007699,
+      "visuallyReviewedPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "explainedPages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "slidesOnlyPages": [
+        1,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "recordingCoverage": "rec05覆盖指令周期、取指和译码；rec06延续到P18。P1/P19–33无直接对应录音。",
+      "pdfOptimization": {
+        "method": "Byte-identical copy of supplied PDF",
+        "byteIdentical": true
+      },
+      "pageObservations": [
+        {
+          "page": 1,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "封面；October 2026；不据此指定录音授课日期。"
+        },
+        {
+          "page": 2,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "简化 ISA 子集与 fetch/decode/execute 逻辑循环。"
+        },
+        {
+          "page": 3,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "状态元件→组合逻辑→状态元件，边沿与写使能。"
+        },
+        {
+          "page": 4,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "PC 读指令同时单独加 4；PC 下个边沿写入候选地址。"
+        },
+        {
+          "page": 5,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "指令字段分给寄存器堆读端与控制器；5-bit 读地址/32-bit 读数据。"
+        },
+        {
+          "page": 6,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "两个读端均先读 just in case，无用值通过后续选择/写控制隔离。"
+        },
+        {
+          "page": 7,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "R 型 rs/rt 经 ALU 回写 rd；RegWrite 使能。"
+        },
+        {
+          "page": 8,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "lw/sw base+sign-extended 16-bit byte offset；数据方向相反。"
+        },
+        {
+          "page": 9,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "ALU result 是地址，Read data 2 直接到内存写数据；MemRead/MemWrite/RegWrite。"
+        },
+        {
+          "page": 10,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "beq 比较与 PC+4 加字偏移×4；图文为先符号扩展再移位。"
+        },
+        {
+          "page": 11,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "比较 ALU 与分支目标加法器是独立并行路径；不使用完整减法数值。"
+        },
+        {
+          "page": 12,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "j 拼接地址，上 4 位来自 PC+4；指令 26 位左移 2 后拼接。"
+        },
+        {
+          "page": 13,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "单周期资源重复/共享，MUX 与最长路径；说明限于该教学模型。"
+        },
+        {
+          "page": 14,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "ALUSrc 0=rt/1=扩展立即数；MemtoReg 0=ALU/1=内存。"
+        },
+        {
+          "page": 15,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "加上 PCSrc MUX；完整选择需 Branch AND Zero；当前页未画主控制器。"
+        },
+        {
+          "page": 16,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "等待组合逻辑稳定，时钟与写使能控制更新，周期受最长延迟限制。"
+        },
+        {
+          "page": 17,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "opcode/rs/rt/rd/offset 规则字段；lw 目标 rt、R 型目标 rd。"
+        },
+        {
+          "page": 18,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "RegDst 0=rt/1=rd，低 6 位直接到 ALU control；全图单页放大核对。"
+        },
+        {
+          "page": 19,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "ALU control 表中 subtract=0011，与 P20/P21=0110 矛盾。"
+        },
+        {
+          "page": 20,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "ALUOp 表；减法=0110；funct=100100 行误写 ADD，应 AND。"
+        },
+        {
+          "page": 21,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "ALUOp/funct 真值表与 P20 相互核对，单页查看所有位。"
+        },
+        {
+          "page": 22,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "固定指令字段，lw opcode=35、sw=43、beq=4，按十进制写。"
+        },
+        {
+          "page": 23,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "与 P18 相同的 almost-complete datapath，重复示意。"
+        },
+        {
+          "page": 24,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "加入主控制器与 Branch AND Zero；页底要求设置 R/load/beq 控制位。"
+        },
+        {
+          "page": 25,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "R 型突出 RegDst1、ALUSrc0、MemtoReg0、RegWrite1、MemWrite0。"
+        },
+        {
+          "page": 26,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "load 突出 RegDst0、ALUSrc1、MemtoReg1、RegWrite1、MemRead1。"
+        },
+        {
+          "page": 27,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "beq 突出 Branch1、ALUSrc0、RegWrite0、MemRead0/MemWrite0。"
+        },
+        {
+          "page": 28,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "完整 R/lw/sw/beq 控制表；sw/beq 的 RegDst、MemtoReg 为 X。"
+        },
+        {
+          "page": 29,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "Jump opcode=2；文字 old PC 不严谨，应以 P12/P30 的 PC+4 为准。"
+        },
+        {
+          "page": 30,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "Jump 目标拼接线明确 PC+4[31:28]，外层 Jump MUX 选择跳转目标。"
+        },
+        {
+          "page": 31,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "4ns 内存/2ns ALU及加法/1ns 寄存器，R8/load12/store11/beq7/jump4ns。"
+        },
+        {
+          "page": 32,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "最长路径为 lw：指令存储器→寄存器堆→ALU→数据存储器→寄存器堆。"
+        },
+        {
+          "page": 33,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "固定周期受 lw 限制，sw 剩余等待时间；资源复制增加面积。"
+        }
+      ],
+      "errataAndCautions": [
+        {
+          "pages": [
+            7,
+            9,
+            18
+          ],
+          "kind": "录音口误/过度概括",
+          "detail": "sw 的 RegWrite=0；lw 的 RegWrite=1。不能把所有 I 型都概括为不写寄存器。对应页 notes 已校正。"
+        },
+        {
+          "pages": [
+            10,
+            11
+          ],
+          "kind": "位宽风险",
+          "detail": "分支偏移按图先符号扩展到 32 位再左移 2；若在 16 位内先移位会丢高位。"
+        },
+        {
+          "pages": [
+            12,
+            29,
+            30
+          ],
+          "kind": "课件措辞/录音简化",
+          "detail": "J 目标高 4 位严格取 PC+4，P29 写 old PC 不严谨；跨 256MiB 边界时不同。P12 note 已给边界反例。"
+        },
+        {
+          "pages": [
+            15,
+            24,
+            27
+          ],
+          "kind": "未完成控制线",
+          "detail": "P15 的 Zero→PCSrc 解释限当前 beq 语境；完整逻辑应 Branch AND Zero，见 P24/P27。"
+        },
+        {
+          "pages": [
+            19,
+            20,
+            21
+          ],
+          "kind": "课件交叉勘误",
+          "detail": "P19 subtract=0011 与后页不一致，应 0110；P20 funct100100 行 ADD 应 AND。已有 scope 条目。"
+        }
+      ]
+    }
+  ],
+  "sourcePolicy": "只保留讲解及考核条目所用的教师内容片段；完整DOCX及课堂非教学闲谈不随网站发布。来源按内容匹配，不代表精确翻页时间。只有09月14日文件具备明确课堂日期。",
+  "independentChecks": [
+    "Lec2 P9/15/26/32/35/39/40/41 的补码、真值表、反馈与时钟边沿核对。",
+    "Lec3 P48/49/50/53/54/56/57/60–65 的栈、递归、编码和寻址核对。"
+  ],
+  "navigationPolicy": "复用原站严格向后、同主题每份课件一个代表页、不回绕的FocusNavigation。"
+}
