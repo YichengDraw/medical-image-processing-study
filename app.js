@@ -318,7 +318,7 @@ function bind(){
 }
 (async function init(){
  try{
-  const response=await fetch(course.data+"?v=courses-v1");if(!response.ok)throw Error("课程索引请求失败："+response.status);
+  const response=await fetch(course.data+"?v=ai301-20261109");if(!response.ok)throw Error("课程索引请求失败："+response.status);
   S.data=await response.json();if(S.data.schemaVersion!==2)throw Error("课程数据版本未更新，请刷新页面");$("#fit-mode").textContent=S.fit==="page"?"适应页面":"适应宽度";
   if(window.pdfjsLib)pdfjsLib.GlobalWorkerOptions.workerSrc="assets/vendor/pdf.worker.min.js";
   courseInit();navInit();bind();updateLibraryToggle();updateTheme();const [id,p]=route();navigate(id,p,false);routeWrite(id,S.page,true);

@@ -90,6 +90,19 @@
       "firstSlide": "数据通路 · Datapath",
       "audio": true,
       "audioSources": []
+    },
+    {
+      "id": "lec6",
+      "group": "Lecture 6",
+      "label": "Pipelining",
+      "cn": "流水线性能、指令集设计与三类冒险",
+      "file": "Lecture6.pdf",
+      "color": "#4c9bae",
+      "pages": 20,
+      "path": "ai301/assets/pdfs/lec6.pdf",
+      "firstSlide": "流水线：第 6 讲",
+      "audio": true,
+      "audioSources": []
     }
   ],
   "slides": {
@@ -1265,6 +1278,108 @@
         "page": 33,
         "title": "单周期设计的优点与局限",
         "searchText": "单周期设计的优点与局限\nSingle Cycle Disadvantages &  \nAdvantages\nlw\nsw\nwaste\n• Uses the clock cycle inefficiently – the clock cycle must  \nbe timed to accommodate the slowest instruction\nCycle 1\nCycle 2\nClk\n• Wasteful of area – some functional units (e.g., adders) \nmust be duplicated\n• Simple and easy to understand\n33\n"
+      }
+    ],
+    "lec6": [
+      {
+        "page": 1,
+        "title": "流水线：第 6 讲",
+        "searchText": "流水线：第 6 讲\n封面 Pipelining November 2026；无独立录音讲解。\n1\nComputer System Architecture\nLecture 6 - Pipelining\n"
+      },
+      {
+        "page": 2,
+        "title": "单周期回顾：时间与硬件开销",
+        "searchText": "单周期回顾：时间与硬件开销\n最慢指令决定周期 lw sw waste 浪费 浮点乘法 复制加法器 面积 单周期优缺点。\nReview: Single-Cycle  \nDisadvantages & Advantages\nlw\nsw\nwaste\n• Uses the clock cycle inefficiently – the clock cycle must  \nbe timed to accommodate the slowest instruction\n• especially problematic for more complex instructions, e.g.,  \nfloating-point multiplication\nCycle 1 \nCycle 2\nClk\n• May be wasteful of area since some functional units  \n(e.g., adders) must be duplicated since they can not be  \nshared during a clock cycle\n• But it is simple and easy to understand\n2\n"
+      },
+      {
+        "page": 3,
+        "title": "洗衣类比：重叠执行与吞吐量",
+        "searchText": "洗衣类比：重叠执行与吞吐量\n四阶段各半小时；4 批串行 8 小时、流水线 3.5 小时；20 批 40/11.5≈3.478；吞吐量 latency 填充 排空 理想加速比。\nPipelining Analogy\n• Pipelined laundry: overlapping execution\n• Parallelism improves performance\n• 4-load speedup:\n= 8/3.5\n= 2.3\n• 20-load speedup:\n= 40/11.5\n= 3.478\n• Under ideal conditions\n• The speedup from\npipelining ≈\nThe number of pipe  \nstages\n3\n"
+      },
+      {
+        "page": 4,
+        "title": "lw 的五个阶段：IF、ID、EX、MEM、WB",
+        "searchText": "lw 的五个阶段：IF、ID、EX、MEM、WB\n取指 译码 寄存器读取 运算 地址计算 数据访存 写回 load instruction 五级流水线。\n4\nFive Stages of Load Instruction\n• Five stages, one step per stage\n1. IF: Instruction fetch from (instruction) memory\n2. ID: Instruction decode & register read\n3. EX: Execute operation or calculate address\n4. MEM: Access (data) memory operand\n5. WB: Write result back to register\n"
+      },
+      {
+        "page": 5,
+        "title": "性能假设：各阶段延迟与指令耗时",
+        "searchText": "性能假设：各阶段延迟与指令耗时\n寄存器读写 100 ps 其他阶段 200 ps；lw 800、sw 700、R-format 600、beq 500 ps；有效路径与固定周期。\n5\nPipeline Performance\n• Assume time for stages is\n• 100 ps for register read or write\n• 200 ps for other stages\n• Compare pipelined datapath with single-cycle  \ndatapath\nInstruction\nIF\nReg Read\nALU Op\nMem Access\nReg Write\nTotal\nlw\n200\n100\n200\n200\n100\n800\nsw\n200\n100\n200\n200\n700\nR-format\n200\n100\n200\n100\n600\nbeq\n200\n100\n200\n500\n"
+      },
+      {
+        "page": 6,
+        "title": "时序对照：单周期与流水线",
+        "searchText": "时序对照：单周期与流水线\n三条 lw；单周期 800 ps 间隔；流水线 200 ps 时槽；完整时槽口径 1000 ps 单条与 1400 ps 三条，2400/1400≈1.71；稳态吞吐提升 4 倍；寄存器半槽。\nPipeline Performance\n6\n"
+      },
+      {
+        "page": 7,
+        "title": "加速比：阶段平衡、吞吐量与延迟",
+        "searchText": "加速比：阶段平衡、吞吐量与延迟\nPipeline Speedup 平衡阶段 理想间隔除以级数；800/5=160 ps；填充排空；throughput latency；阶段不平衡减少加速比。\nPipeline Speedup\n• If all stages are balanced\n• i.e., all take the same time\n• Speedup due to increased throughput\n• Latency does not decrease\nTime between instructions \nTime between instructionsnonpipelined\npipelined =\n7\nNumber of pipe stages\n• If not balanced, speedup is less\n"
+      },
+      {
+        "page": 8,
+        "title": "ISA 对流水线的支持：定长、规则、访存与对齐",
+        "searchText": "ISA 对流水线的支持：定长、规则、访存与对齐\n32 位 MIPS 定长 规则字段 ID 译码读寄存器并行；load/store EX 地址 MEM 数据访问；操作数对齐；x86 课件写 1–17 字节，官方上限 15 字节，勘误为 1–15。\n8\nPipelining and ISA Design\n• MIPS ISA designed for pipelining\n• All instructions are 32-bits\n• Easier to fetch and decode in one cycle\n• c.f. x86: 1- to 17-byte instructions\n• Few and regular instruction formats\n• Can decode and read registers in one step\n• Load/store addressing\n• Can calculate address in 3rd stage, access memory in  \n4th stage\n• Alignment of memory operands\n• Memory access takes only one cycle\n"
+      },
+      {
+        "page": 9,
+        "title": "三类冒险：结构、数据与控制",
+        "searchText": "三类冒险：结构、数据与控制\nhazards 资源忙 结构冒险 输入依赖 数据冒险 分支结果 控制冒险；今天讲解结束页；解决方法下次讨论。\n9\nHazards\n• Situations that prevent starting the next  \ninstruction in the next cycle\n• Structure hazards\n• A required resource is busy\n• Data hazard\n• Need to wait for previous instruction to complete its  \ndata read/write\n• Control hazard\n• Deciding on control action depends on previous\ninstruction\n"
+      },
+      {
+        "page": 10,
+        "title": "结构冒险：统一存储器冲突",
+        "searchText": "结构冒险：统一存储器冲突\n单端口统一存储器：lw/sw 的 MEM 与 IF 竞争；取指 stall bubble；分离 instruction/data memories caches；本次 PPT-only。\n10\n• Conflict for use of a resource\n• In MIPS pipeline with a single memory\n• Load/store requires data access\n• Instruction fetch would have to stall for that cycle\n• Would cause a pipeline “bubble”\n• Hence, pipelined datapaths require separate\ninstruction/data memories\n• Or separate instruction/data caches\nStructure Hazards\n"
+      },
+      {
+        "page": 11,
+        "title": "数据冒险：add 与 sub 的结果依赖",
+        "searchText": "数据冒险：add 与 sub 的结果依赖\nadd $s0,$t0,$t1；sub $t2,$s0,$t3；RAW 结果依赖 停顿 空泡；本次 PPT-only。\n11\nData Hazards\nadd $s0, $t0, $t1\nsub $t2, $s0, $t3\n• An instruction depends on completion of data  \naccess by a previous instruction\n• We may need to insert a pipeline stall (or\nbubble).\n"
+      },
+      {
+        "page": 12,
+        "title": "转发与旁路：结果生成后提前使用",
+        "searchText": "转发与旁路：结果生成后提前使用\nForwarding Bypassing；add 的 ALU 结果转给下一条 sub，无需等寄存器写回；额外数据通路连接；本次 PPT-only。\nForwarding (or Bypassing)\n• Use result when it is computed\n• Don’t wait for it to be stored in a register\n• Requires extra connections in the datapath\n12\n"
+      },
+      {
+        "page": 13,
+        "title": "Load-use：转发后仍需等待",
+        "searchText": "Load-use：转发后仍需等待\nlw $s0,20($t1) 后接 sub $t2,$s0,$t3；MEM 结果晚于紧邻 EX 所需时刻；不能向时间倒流转发；图示一个空泡向后推进；本次 PPT-only。\nLoad-Use Data Hazard\n• Can’t always avoid stalls by forwarding\n• If value not computed when needed\n• Can’t forward backward in time!\n13\n"
+      },
+      {
+        "page": 14,
+        "title": "指令重排：用独立 load 减少停顿",
+        "searchText": "指令重排：用独立 load 减少停顿\na=b+e; c=b+f；lw 的偏移 0、4、8，sw 的偏移 12、16；将 lw $t4,8($t0) 提前，隔开 load-use；重排前两次停顿；本次 PPT-only。\nReordering Code to  \nAvoid Pipeline Stalls\n• Reorder code to avoid use of load result in the  \nnext instruction\n• Consider the C-code:\na = b + e; c = b + f;\n$t3, $t1, $t2\n$t3, 12($t0)\n$t4, 8($t0)\nlw $t1, 0($t0)  \nlw $t2, 4($t0)  \nadd\nsw  \nlw  \nadd  \nsw\n$t5, $t1, $t4\n$t5, 16($t0)\nlw \n$t1, 0($t0)  \nlw \n$t2, 4($t0)  \nlw \n$t4, 8($t0)  \nadd $t3, $t1, $t2  \nsw \n$t3, 12($t0)  \nadd $t5, $t1, $t4  \nsw \n$t5, 16($t0)\nstall\n14\nstall\n"
+      },
+      {
+        "page": 15,
+        "title": "控制冒险：提前在 ID 判断分支",
+        "searchText": "控制冒险：提前在 ID 判断分支\nbranch outcome 决定后继取指；额外硬件将寄存器比较和目标计算提前到 ID；与今天 EX 判断的示例前提不同；本次 PPT-only。\n15\nControl Hazards\n• Branch determines flow of control\n• Fetching next instruction depends on branch  \noutcome\n• Pipeline can’t always fetch correct instruction\n• Still working on ID stage of branch\n• In MIPS pipeline\n• Need to compare registers and compute target  \nearly in the pipeline\n• Add hardware to do it in ID stage\n"
+      },
+      {
+        "page": 16,
+        "title": "保守分支处理：等待结果再取指",
+        "searchText": "保守分支处理：等待结果再取指\nStall on Branch；等待分支结果；图示正常取指间隔 200 ps 变为 400 ps，ID 判定前提下额外一拍；本次 PPT-only。\nStall on Branch\n• Wait until branch outcome determined before  \nfetching next instruction\n• Conservative approach: Stall immediately after  \nfetching a branch, wait until outcome of branch is  \nknown and fetch branch address.\n16\n"
+      },
+      {
+        "page": 17,
+        "title": "分支预测：先按预测路径取指",
+        "searchText": "分支预测：先按预测路径取指\nBranch Prediction；长流水线停顿代价；预测 not taken 后先取顺序后继，预测错误需恢复；本次 PPT-only。\n17\nBranch Prediction\n• Longer pipelines cannot readily determine  \nbranch outcome early\n• Stall penalty becomes unacceptable\n• Predict outcome of branch\n• Only stall if prediction is wrong\n• In MIPS pipeline\n• Can predict branches not taken\n• Fetch instruction after branch, with no delay\n"
+      },
+      {
+        "page": 18,
+        "title": "预测不跳转：正确与错误的时序",
+        "searchText": "预测不跳转：正确与错误的时序\nPredicting Branches Are Not Taken；预测正确 no penalty；错误图示 bubble；正常取指间隔 200 ps、错误后 400 ps，按 ID 判断模型额外一拍；本次 PPT-only。\nPredicting Branches Are Not Taken\n18\nPrediction Correct\n•\nNo penalty\nPrediction Incorrect\n•\nStall\n"
+      },
+      {
+        "page": 19,
+        "title": "静态与动态分支预测",
+        "searchText": "静态与动态分支预测\n静态预测：向后分支 taken、向前分支 not taken；动态预测记录最近历史，错误时重新取指并更新；本次 PPT-only。\n19\nMore-Realistic Branch Prediction\n• Static branch prediction\n• Based on typical branch behavior\n• Example: loop and if-statement branches\n• Predict backward branches taken\n• Predict forward branches not taken\n• Dynamic branch prediction\n• Hardware measures actual branch behavior\n• e.g., record recent history of each branch\n• Assume future behavior will continue the trend\n• When wrong, stall while re-fetching, and update history\n"
+      },
+      {
+        "page": 20,
+        "title": "流水线总结：吞吐、冒险与 ISA",
+        "searchText": "流水线总结：吞吐、冒险与 ISA\n多条指令重叠 提高 throughput；structure data control hazards；ISA 影响复杂度；same latency 需明确比较口径；本次 PPT-only。\n20\nPipeline Big-Picture Summary\n• Pipelining improves performance by increasing  \ninstruction throughput\n• Executes multiple instructions in parallel\n• Each instruction has the same latency\n• Subject to hazards\n• Structure, data, control\n• Instruction set design affects complexity of  \npipeline implementation\n"
       }
     ]
   },

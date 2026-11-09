@@ -333,10 +333,9 @@
   {
     "page": 18,
     "paragraphs": [
-      "这张“接近完整”的图把各段连起来，并明确画出 RegDst：0 路取 Instruction[20:16]，也就是 lw 的 rt；1 路取 Instruction[15:11]，也就是 R 型算术的 rd。它选择的是写入哪个寄存器的 5 位编号；右侧 MemtoReg 选择的是写入什么 32 位数据，两者各管一件事。",
-      "例如 lw $t0,8($s0)，RegDst=0 选 rt=$t0，ALUSrc=1 选偏移 8，MemtoReg=1 选内存读数据，并令 RegWrite=1。R 型 add 则让 RegDst=1、ALUSrc=0、MemtoReg=0，同样允许写回。sw/beq 不写寄存器，RegWrite=0，这时写地址选择器上即使出现某个编号，也不会修改该寄存器。",
-      "下方 Instruction[5:0] 始终连到 ALU control，但这 6 位只有在相应 R 型指令中才解释为 funct。lw/sw 的这些位属于偏移，ALU 仍应由指令类别控制为地址加法。老师反复用这个例子说明：可以先把候选数据传到位，再由控制决定是否使用，无需为每条连线另建一套“是否值得传送”的判断电路。",
-      "录音末尾用 RegWrite=0 解释无关 rd 位型为何不会写坏状态，这适用于 sw、beq 等不写寄存器的指令；不能概括成所有 I 型指令都不写寄存器，因为 lw 要通过 RegDst 选择 rt 后正常写入。本页仍未画出 opcode 主控制器与 Branch/Zero 的完整连线，现有录音在这一部分结束，后续控制表不据此补写成已讲内容。"
+      "这张“接近完整”的图已把R型运算、lw/sw和beq的数据通路连起来，尚未加入j。RegDst选择写入哪个寄存器的5位编号：0路取Instruction[20:16]，也就是lw的rt；1路取Instruction[15:11]，也就是R型算术的rd。右侧MemtoReg选择的是写入什么32位数据，0选ALU结果，1选内存读数据，两者各管一件事。",
+      "例如lw $t0,8($s0)让RegDst=0选rt，ALUSrc=1选偏移8，MemtoReg=1选内存读数据，并令RegWrite=1；R型add则选rd、第二个源寄存器和ALU结果。老师在11月9日课堂复盘时补充：寄存器写入、数据存储器读写不是每条指令都发生，需要显式使能；本图中的PC每周期更新、寄存器读口直接给出候选数据，所以没有额外画PC写使能或寄存器读使能。这里描述的是当前简化实现，不能扩大成任何CPU都永远不需要这些控制。",
+      "下方Instruction[5:0]始终连到ALU control，但仅在相应R型指令中解释为funct；对lw/sw，这些位属于偏移，ALU仍由指令类别控制为地址加法。各二选一MUX只需1位选择信号，但ALUOp是2位、ALU control输出是4位，不能把所有蓝色控制线都当成1位。本页尚未展开opcode主控制器以及Branch与Zero的组合，11月9日录音已补充这些控制逻辑及完整控制表，后续页面可继续对照阅读。"
     ],
     "sourceIds": [
       "rec06@01:38:45",
@@ -351,7 +350,271 @@
       "rec06@01:45:20",
       "rec06@01:46:25",
       "rec06@01:46:59",
-      "rec06@01:48:51"
+      "rec06@01:48:51",
+      "ai301-r07-s001",
+      "ai301-r07-s002",
+      "ai301-r07-s003",
+      "ai301-r07-s004",
+      "ai301-r07-s005",
+      "ai301-r07-s006",
+      "ai301-r07-s007",
+      "ai301-r07-s008",
+      "ai301-r07-s009",
+      "ai301-r07-s010",
+      "ai301-r07-s011"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 19,
+    "paragraphs": [
+      "ALU要做什么，先由指令的任务决定：lw/sw把基址与符号扩展偏移相加，得到数据内存地址；beq把两个源寄存器相减，再看Zero判断是否相等；R型才需要进一步看funct，选择add、sub、and、or、slt等运算。老师提醒，beq还有一个独立加法器计算分支目标，不要把目标地址加法与主ALU的比较减法混在一起。",
+      "例如beq比较寄存器中的9和9，主ALU做9−9，Zero=1；与此同时，上方通路计算PC+4+(符号扩展偏移左移2位)。下表中subtract写成0011，与后两页控制表不一致，应按0110理解；0010才是加法，0111是小于置位。控制值是4位组合码，不是“0011代表十进制3，所以减3”之类的运算参数。"
+    ],
+    "sourceIds": [
+      "ai301-r07-s012",
+      "ai301-r07-s013",
+      "ai301-r07-s014",
+      "ai301-r07-s015",
+      "ai301-r07-s016",
+      "ai301-r07-s017"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 20,
+    "paragraphs": [
+      "这张表把译码拆成两级：主控制器先看指令最高6位opcode，产生2位ALUOp；ALU控制器再把ALUOp与最低6位funct组合，产生真正送进ALU的4位控制码。ALUOp=00表示做地址加法，01表示为beq做减法，10表示需要读取R型funct继续细分。",
+      "例如lw的低6位其实是偏移的一部分，表中写XXXXXX，表示这些位不会改变本指令的ALU功能，输出仍为0010。R型and的funct=100100，输出0000；这一行Operation列的ADD是笔误，结合funct与ALU function列应读AND。老师当堂问为什么不由主控制器一次性译出全部控制码，并解释分级可降低主控制逻辑的规模、复杂度，也可能改善速度；不能把“多一级”简单等同于一定更慢或一定更快。"
+    ],
+    "sourceIds": [
+      "ai301-r07-s018",
+      "ai301-r07-s019",
+      "ai301-r07-s020",
+      "ai301-r07-s021",
+      "ai301-r07-s022",
+      "ai301-r07-s023",
+      "ai301-r07-s024",
+      "ai301-r07-s025"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 21,
+    "paragraphs": [
+      "这张表实际上给出ALU控制器的输入输出映射：左侧两位ALUOp与六位funct是输入，最右Operation是送往ALU的4位控制码。老师逐行解释X的含义：某一输入位无论取0还是1，都不影响该行要得到的输出，因此可用一行压缩多个等价组合。",
+      "例如ALUOp=00时无需看funct，直接输出0010做加法；当ALUOp=10且funct的低四位F3…F0=1010时，表中输出0111做slt。F5、F4在这份受限指令子集里可简化为X，并不代表任意扩展指令都可以忽略它们。表里还出现ALUOp的X1和1X，这依赖主控制器只产生已定义的00、01、10；不要把未定义的11随意送入后，再要求这些压缩行给出唯一行为。"
+    ],
+    "sourceIds": [
+      "ai301-r07-s026",
+      "ai301-r07-s027",
+      "ai301-r07-s028",
+      "ai301-r07-s029",
+      "ai301-r07-s030",
+      "ai301-r07-s031"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 22,
+    "paragraphs": [
+      "本页把R型、load/store与branch的字段竖向对齐：opcode始终在[31:26]，rs在[25:21]，rt在[20:16]；R型写回rd=[15:11]，lw写回rt，所以写寄存器编号需要一个RegDst选择器。lw/sw/beq的低16位分别作为访存偏移或分支位移，在当前子集里先符号扩展。",
+      "例如sw $t0,8($s0)中，rs=$s0提供基址，rt=$t0提供待写内存的数据；lw $t0,8($s0)仍读rs算地址，但rt表示装入数据的目的寄存器，不需要使用它原来的读出值。图中的“read, except for load”说的是数据是否被指令使用，寄存器读口本身仍可产生候选值。不要把“所有I型都符号扩展”推广到andi/ori，那些逻辑立即指令不在这页的实现子集中。"
+    ],
+    "sourceIds": [
+      "ai301-r07-s032",
+      "ai301-r07-s033",
+      "ai301-r07-s034"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 23,
+    "paragraphs": [
+      "本页重现P18的“接近完整”数据通路，可与11月9日开课复盘及随后ALU控制的说明对照。这里的来源按相同内容对应，不另声称老师曾在本页独立讲述。图下方已画出ALU control：它接收Instruction[5:0]与2位ALUOp，再输出4位ALU控制码；提供ALUOp及各读写、MUX选择信号的主控制器尚未展开，下一页才把它补进整图。",
+      "例如lw $t0,8($s0)，若$s0=0x1000，主控制器应给出ALUOp=00，ALU control据此输出0010，让主ALU算出地址0x1008。此时指令低6位属于偏移，不作为R型funct解释，所以不会改变“做加法”的决定。随后还要由MemRead、MemtoReg、RegWrite等信号完成读内存与写回$t0；仅有ALU control不能代替这些主控制信号。这正好衔接下一页的完整控制网络。"
+    ],
+    "sourceIds": [
+      "ai301-r07-s001",
+      "ai301-r07-s009",
+      "ai301-r07-s010",
+      "ai301-r07-s011",
+      "ai301-r07-s018",
+      "ai301-r07-s019",
+      "ai301-r07-s020",
+      "ai301-r07-s021",
+      "ai301-r07-s022",
+      "ai301-r07-s023",
+      "ai301-r07-s024",
+      "ai301-r07-s025"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 24,
+    "paragraphs": [
+      "与前面的“接近完整”图相比，这里补出了主控制器：指令[31:26]进入Control，蓝色线发出寄存器写入、内存读写、MUX选择、Branch和ALUOp等信号；ALUOp再进入下方ALU control，与funct共同决定ALU功能。右上与门把Branch和Zero合成真正的分支选择信号PCSrc。",
+      "老师在这页让大家先自己推导R型、lw和beq的控制值。可先问“这条指令改写什么状态”，再问“数据从哪条路来”：例如add要写寄存器、不读写数据内存，写回来自ALU；lw也写寄存器，但写回来自数据内存；beq不写寄存器或数据内存，只在相等时改变下一条PC。这样逐条追踪数据与状态变化，就能推出控制表，而不用把一整串0和1孤立地背下来。"
+    ],
+    "sourceIds": [
+      "ai301-r07-s035",
+      "ai301-r07-s036",
+      "ai301-r07-s037",
+      "ai301-r07-s038",
+      "ai301-r07-s045"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 25,
+    "paragraphs": [
+      "红圈把R型实际使用的路径标出来：RegDst=1选rd，ALUSrc=0让ALU第二输入来自rt，MemtoReg=0把ALU结果送回寄存器，RegWrite=1允许写入。数据内存不参与，所以MemRead=0、MemWrite=0；Branch=0使PC顺序前进。ALUOp=10，再由funct选出具体算术或逻辑运算。",
+      "例如add $t0,$t1,$t2读出7和−7，ALU得到0并写回$t0。虽然Zero可能为1，Branch仍为0，与门输出0，所以PC还是PC+4，不会因为结果恰好为0就跳转。图中灰色部分表示本条指令不使用的路径，不能把“通路上可能有值”误认为“这条指令会修改该状态”。"
+    ],
+    "sourceIds": [
+      "ai301-r07-s040",
+      "ai301-r07-s041",
+      "ai301-r07-s042",
+      "ai301-r07-s043",
+      "ai301-r07-s044",
+      "ai301-r07-s045"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 26,
+    "paragraphs": [
+      "lw要完成地址计算、读内存和写回rt三件事：RegDst=0选rt，ALUSrc=1选符号扩展偏移，ALUOp=00令ALU做基址加偏移；MemRead=1、MemWrite=0读取数据内存，再用MemtoReg=1选中读出的数据，RegWrite=1写入寄存器。Branch=0，因此仍顺序取PC+4。",
+      "例如lw $t0,8($s0)，若$s0=0x1000、内存0x1008处的word为42，ALU先算出0x1008，该结果用于数据内存的Address；真正写到$t0的是42，而不是0x1008。老师讲到MemtoReg时专门修正了“ALU结果不重要”的说法：地址结果已经用于访存，只是不作为最终寄存器写回的数据。"
+    ],
+    "sourceIds": [
+      "ai301-r07-s046",
+      "ai301-r07-s047",
+      "ai301-r07-s048",
+      "ai301-r07-s049",
+      "ai301-r07-s050"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 27,
+    "paragraphs": [
+      "beq的主ALU读取rs和rt并相减，所以ALUSrc=0、ALUOp=01，4位ALU控制为0110。它不写寄存器，也不访问数据内存，因此RegWrite、MemRead、MemWrite均为0。上方加法器同时形成PC+4+(符号扩展位移左移2位)这个候选分支地址。",
+      "老师重点解释红圈与门：Branch=1只说明当前是beq，还必须Zero=1表示两个源值相等，PCSrc=Branch AND Zero才会为1并选择分支目标。例如PC=0x1000、位移=3，相等时下一PC=0x1010，不等时为0x1004。不要将Branch直接当成“已经决定跳转”的信号，也不要因RegWrite=0就认为beq不读寄存器。"
+    ],
+    "sourceIds": [
+      "ai301-r07-s050",
+      "ai301-r07-s051",
+      "ai301-r07-s052",
+      "ai301-r07-s053"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 28,
+    "paragraphs": [
+      "这张控制表按RegDst、ALUSrc、MemtoReg、RegWrite、MemRead、MemWrite、Branch、ALUOp的顺序横向读：R型为1、0、0、1、0、0、0、10；lw为0、1、1、1、1、0、0、00；sw为X、1、X、0、0、1、0、00；beq为X、0、X、0、0、0、1、01。最后一项有2位，其他这些控制项各1位。",
+      "老师当堂追问sw与beq为什么在RegDst和MemtoReg列写X。原因已经在同一行：RegWrite=0禁止寄存器状态更新，所以不管MUX选了哪个写寄存器编号、哪份候选写回数据，都不会真正写入。例如sw仍要让ALUSrc=1算地址、MemWrite=1写内存，这两项不能随意写X；don’t-care只属于不影响该指令结果的特定控制位，不表示整条指令可以随意设置。"
+    ],
+    "sourceIds": [
+      "ai301-r07-s054",
+      "ai301-r07-s055",
+      "ai301-r07-s056",
+      "ai301-r07-s057",
+      "ai301-r07-s058"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 29,
+    "paragraphs": [
+      "加入j后，下一PC多了第三种来源。J格式的opcode=2，剩余26位给出目标索引；它先左移2位补00，形成28位，再与PC+4的高4位拼接，得到32位目标地址。主控制器根据opcode产生额外的Jump信号，选择这条目标通路。",
+      "本页文字写“old PC”的高4位，但下一页连线标注和老师在11月9日的讲解都明确是PC+4[31:28]，应按后者读。边界例子最能看出差别：若PC=0x0FFFFFFC，则PC+4=0x10000000；目标索引为0时，j转到0x10000000，而不是0。它也不是把26位目标当作有符号偏移加到PC上，拼接寻址与beq的相对寻址要分开。"
+    ],
+    "sourceIds": [
+      "ai301-r07-s059",
+      "ai301-r07-s060",
+      "ai301-r07-s064"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 30,
+    "paragraphs": [
+      "右上新增一个由Jump控制的MUX，放在原来的分支MUX之后：Jump=0时保留前级已经选好的PC+4或分支目标，Jump=1时直接选择拼接出的j目标。图顶端Instruction[25:0]先左移2位，再接上PC+4[31:28]，这是跳转地址的两部分来源。",
+      "老师让大家比较为何beq旁有与门、j旁没有：beq要同时满足“这是分支指令”和“比较相等”，j则无条件跳转，所以Jump本身就足以控制新MUX。例如j执行时即使旧ALU的Zero恰好为0，也不会阻止跳转。当前实现的是不保存返回地址的j，RegWrite、MemRead、MemWrite均为0；不能把这组信号直接用于需要写$ra的jal。"
+    ],
+    "sourceIds": [
+      "ai301-r07-s060",
+      "ai301-r07-s061",
+      "ai301-r07-s062",
+      "ai301-r07-s063",
+      "ai301-r07-s064",
+      "ai301-r07-s065",
+      "ai301-r07-s066"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 31,
+    "paragraphs": [
+      "本页用一组明确的假设计算组合路径延迟：指令/数据存储器各4ns，ALU及加法器2ns，寄存器堆每次读或写1ns，其余MUX、控制器、符号扩展、PC访问、移位和连线延迟暂忽略。按每条指令真正依赖的数据路径相加，R型为4+1+2+1=8ns，lw为4+1+2+4+1=12ns，sw为4+1+2+4=11ns，beq为4+1+2=7ns，j为4ns。",
+      "老师特别问：lw只需使用rs，而R型、sw、beq往往使用rs与rt，为什么Reg Rd栏仍都写1ns？因为寄存器堆有两个读端口，可同时读两份数据，不能把两个读操作串行加成2ns。lw比sw多出的1ns来自最后的寄存器写回，不是额外读取一个源寄存器。",
+      "表格要按关键路径读，不能把图上所有部件一概串行累加：PC+4加法与取指并行，beq的目标地址计算也与寄存器比较并行，决定最终PC的是较慢的那条依赖路径。这里最长为lw的12ns，所以单周期时钟至少要容纳12ns；表中j的4ns是所需路径延迟，并不表示这个单周期CPU会给j单独安排4ns周期。ns是纳秒，本页数值不要与后面流水线例题的ps混用。"
+    ],
+    "sourceIds": [
+      "ai301-r07-s067",
+      "ai301-r07-s068",
+      "ai301-r07-s069",
+      "ai301-r07-s070",
+      "ai301-r07-s071",
+      "ai301-r07-s072",
+      "ai301-r07-s073",
+      "ai301-r07-s074",
+      "ai301-r07-s075",
+      "ai301-r07-s076"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 32,
+    "paragraphs": [
+      "最长组合路径决定单周期时钟的周期。对于上一页的参数，lw必须依次完成Instruction Memory→Registers→ALU→Data Memory→Registers，耗时12ns，因此它是关键路径。老师休息后再次沿这条链路复盘，强调不是因为lw名称特殊，而是它在各个阶段都有实际工作。",
+      "例如同一CPU执行一条j，数据通路可能在4ns后已就绪，但仍需等待统一的12ns周期结束；执行R型算术也不能临时改成8ns时钟。代价是较短指令跟着最慢路径等待，降低整体效率。本页说不能按不同指令随意变周期，是在讨论当前固定时钟的单周期实现，不是排除以后学习多周期或流水线等不同组织方式。"
+    ],
+    "sourceIds": [
+      "ai301-r07-s081",
+      "ai301-r07-s082",
+      "ai301-r07-s083"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 33,
+    "paragraphs": [
+      "图把lw和sw放进两个等长时钟周期：lw决定了必须留多长时间，sw较早完成后，右侧灰色waste表示它仍要等到周期边界。老师总结单周期的优点是结构直接、容易理解；缺点是时间利用不充分，若再要求更复杂的指令也在一周期完成，最慢路径会把所有指令一起拖长。",
+      "例如沿用上一页的假设，lw需要12ns，sw需要11ns，两条各占一个12ns周期，sw约有1ns等待；图中灰块只是示意，不按精确比例绘制。空间上也有代价：同一周期既要算PC+4、又要完成ALU运算或分支目标计算，某些功能单元不能按时间轮流共用，需要额外副本。下一讲的流水线正从这种时间安排问题出发，把不同指令的不同阶段重叠起来。"
+    ],
+    "sourceIds": [
+      "ai301-r07-s084",
+      "ai301-r07-s085",
+      "ai301-r07-s086",
+      "ai301-r07-s087"
     ],
     "visualReviewed": true,
     "audioSupported": true

@@ -1,12 +1,12 @@
 {
-  "revision": "2026-11-08-ai301-v1",
+  "revision": "2026-11-09-ai301-v2",
   "method": "逐页实际查看PDF渲染图像，结合按段落保留时间戳的课堂转写，独立编写与当页图示对应的连续中文讲解。无直接对应录音的页面仅展示PPT；索引、讲解与考点均使用1起始的物理PDF页码。",
   "coverage": {
-    "visualPages": 232,
-    "explainedPages": 135,
-    "slidesOnlyPages": 97,
-    "recordings": 6,
-    "examEntries": 38
+    "visualPages": 252,
+    "explainedPages": 158,
+    "slidesOnlyPages": 94,
+    "recordings": 7,
+    "examEntries": 44
   },
   "decks": [
     {
@@ -1012,10 +1012,7 @@
         15,
         16,
         17,
-        18
-      ],
-      "slidesOnlyPages": [
-        1,
+        18,
         19,
         20,
         21,
@@ -1032,7 +1029,10 @@
         32,
         33
       ],
-      "recordingCoverage": "rec05覆盖指令周期、取指和译码；rec06延续到P18。P1/P19–33无直接对应录音。",
+      "slidesOnlyPages": [
+        1
+      ],
+      "recordingCoverage": "rec05、rec06覆盖P2–18；11月9日ai301-r07补充P18–33。P23是P18的重复图，按相同内容匹配开课复盘及ALU控制说明，不声称独立翻页或另一次讲述；P1仅PPT。",
       "pdfOptimization": {
         "method": "Byte-identical copy of supplied PDF",
         "byteIdentical": true
@@ -1144,97 +1144,243 @@
           "page": 18,
           "visualReviewed": true,
           "hasAudioNote": true,
-          "observation": "RegDst 0=rt/1=rd，低 6 位直接到 ALU control；全图单页放大核对。"
+          "observation": "P18含RegDst、ALUSrc、MemtoReg、PCSrc和ALU control，尚无主控制器，尚无Jump。 RegDst输入是5位寄存器编号；MemtoReg输入是32位数据。 Instruction[5:0]固定连接ALU control；ALUOp输入在图底部。",
+          "recordingCorrespondence": "direct",
+          "sourceIds": [
+            "ai301-r07-s001",
+            "ai301-r07-s002",
+            "ai301-r07-s003",
+            "ai301-r07-s004",
+            "ai301-r07-s005",
+            "ai301-r07-s006",
+            "ai301-r07-s007",
+            "ai301-r07-s008",
+            "ai301-r07-s009",
+            "ai301-r07-s010",
+            "ai301-r07-s011"
+          ]
         },
         {
           "page": 19,
           "visualReviewed": true,
-          "hasAudioNote": false,
-          "observation": "ALU control 表中 subtract=0011，与 P20/P21=0110 矛盾。"
+          "hasAudioNote": true,
+          "observation": "上部按load/store、branch、R-type三类说明ALU任务。 下表为4位ALU控制码，subtract行原图为0011，P20/P21都为0110。",
+          "recordingCorrespondence": "direct",
+          "sourceIds": [
+            "ai301-r07-s012",
+            "ai301-r07-s013",
+            "ai301-r07-s014",
+            "ai301-r07-s015",
+            "ai301-r07-s016",
+            "ai301-r07-s017"
+          ]
         },
         {
           "page": 20,
           "visualReviewed": true,
-          "hasAudioNote": false,
-          "observation": "ALUOp 表；减法=0110；funct=100100 行误写 ADD，应 AND。"
+          "hasAudioNote": true,
+          "observation": "表列opcode、ALUOp、Operation、funct、ALU function、ALU control，体现两级译码。 R-type的funct=100100一行，Operation写ADD而ALU function写AND，ALU control为0000。",
+          "recordingCorrespondence": "direct",
+          "sourceIds": [
+            "ai301-r07-s018",
+            "ai301-r07-s019",
+            "ai301-r07-s020",
+            "ai301-r07-s021",
+            "ai301-r07-s022",
+            "ai301-r07-s023",
+            "ai301-r07-s024",
+            "ai301-r07-s025"
+          ]
         },
         {
           "page": 21,
           "visualReviewed": true,
-          "hasAudioNote": false,
-          "observation": "ALUOp/funct 真值表与 P20 相互核对，单页查看所有位。"
+          "hasAudioNote": true,
+          "observation": "表列明确为ALUOp1、ALUOp0、F5至F0和Operation；页面标题虽是Designing the Main Control Unit，表本身实现ALU control映射。 第一行00+任意funct输出0010，第二行X1输出0110；R型压缩行用1X与F3…F0。 slt对应F3…F0=1010；录音按F0到F3口述为0101，阅读时注意方向。",
+          "recordingCorrespondence": "direct",
+          "sourceIds": [
+            "ai301-r07-s026",
+            "ai301-r07-s027",
+            "ai301-r07-s028",
+            "ai301-r07-s029",
+            "ai301-r07-s030",
+            "ai301-r07-s031"
+          ]
         },
         {
           "page": 22,
           "visualReviewed": true,
-          "hasAudioNote": false,
-          "observation": "固定指令字段，lw opcode=35、sw=43、beq=4，按十进制写。"
+          "hasAudioNote": true,
+          "observation": "三行格式对齐显示opcode、rs、rt、rd与低16位；箭头分别指向R型rd及load的rt。 图下“always read”“read, except for load”对应本页所列子集的使用语义。",
+          "recordingCorrespondence": "direct",
+          "sourceIds": [
+            "ai301-r07-s032",
+            "ai301-r07-s033",
+            "ai301-r07-s034"
+          ]
         },
         {
           "page": 23,
           "visualReviewed": true,
-          "hasAudioNote": false,
-          "observation": "与 P18 相同的 almost-complete datapath，重复示意。"
+          "hasAudioNote": true,
+          "observation": "P23重现P18的almost-complete datapath：已有ALU control、funct和ALUOp连线，但尚未画出opcode主控制器。 P24才在总图加入main Control及完整控制线，P23可作为两幅图之间的衔接。",
+          "recordingCorrespondence": "content-matched-repeated-diagram",
+          "sourceIds": [
+            "ai301-r07-s001",
+            "ai301-r07-s009",
+            "ai301-r07-s010",
+            "ai301-r07-s011",
+            "ai301-r07-s018",
+            "ai301-r07-s019",
+            "ai301-r07-s020",
+            "ai301-r07-s021",
+            "ai301-r07-s022",
+            "ai301-r07-s023",
+            "ai301-r07-s024",
+            "ai301-r07-s025"
+          ]
         },
         {
           "page": 24,
           "visualReviewed": true,
-          "hasAudioNote": false,
-          "observation": "加入主控制器与 Branch AND Zero；页底要求设置 R/load/beq 控制位。"
+          "hasAudioNote": true,
+          "observation": "Control由Instruction[31:26]驱动，蓝色ALUOp到下方ALU control。 右上Branch与Zero经AND门连接PC选择MUX。 页底明确题目How to set control bits for R-type / load / beq instructions。",
+          "recordingCorrespondence": "direct",
+          "sourceIds": [
+            "ai301-r07-s035",
+            "ai301-r07-s036",
+            "ai301-r07-s037",
+            "ai301-r07-s038",
+            "ai301-r07-s045"
+          ]
         },
         {
           "page": 25,
           "visualReviewed": true,
-          "hasAudioNote": false,
-          "observation": "R 型突出 RegDst1、ALUSrc0、MemtoReg0、RegWrite1、MemWrite0。"
+          "hasAudioNote": true,
+          "observation": "图中红色标注RegWrite=1，两个内存使能0，RegDst圈1，ALUSrc圈0，MemtoReg圈0，PCSrc圈0。 ALU控制底部2-bit标注指ALUOp输入，不是4位ALU control输出。",
+          "recordingCorrespondence": "direct",
+          "sourceIds": [
+            "ai301-r07-s040",
+            "ai301-r07-s041",
+            "ai301-r07-s042",
+            "ai301-r07-s043",
+            "ai301-r07-s044",
+            "ai301-r07-s045"
+          ]
         },
         {
           "page": 26,
           "visualReviewed": true,
-          "hasAudioNote": false,
-          "observation": "load 突出 RegDst0、ALUSrc1、MemtoReg1、RegWrite1、MemRead1。"
+          "hasAudioNote": true,
+          "observation": "红圈RegDst=0、ALUSrc=1、MemtoReg=1、PCSrc=0；RegWrite=1、MemRead=1、MemWrite=0。 灰色rt读数据通路未被lw用于算术或store；ALU结果连接数据内存Address。",
+          "recordingCorrespondence": "direct",
+          "sourceIds": [
+            "ai301-r07-s046",
+            "ai301-r07-s047",
+            "ai301-r07-s048",
+            "ai301-r07-s049",
+            "ai301-r07-s050"
+          ]
         },
         {
           "page": 27,
           "visualReviewed": true,
-          "hasAudioNote": false,
-          "observation": "beq 突出 Branch1、ALUSrc0、RegWrite0、MemRead0/MemWrite0。"
+          "hasAudioNote": true,
+          "observation": "Branch红色1进入AND门，另一路来自主ALU Zero；ALUSrc红圈0。 RegWrite、MemRead、MemWrite标0，RegDst与MemtoReg灰化为无关路径。",
+          "recordingCorrespondence": "direct",
+          "sourceIds": [
+            "ai301-r07-s050",
+            "ai301-r07-s051",
+            "ai301-r07-s052",
+            "ai301-r07-s053"
+          ]
         },
         {
           "page": 28,
           "visualReviewed": true,
-          "hasAudioNote": false,
-          "observation": "完整 R/lw/sw/beq 控制表；sw/beq 的 RegDst、MemtoReg 为 X。"
+          "hasAudioNote": true,
+          "observation": "原表8类控制项与四种指令行均核对，ALUOp为2位。 sw/beq两行仅RegDst和MemtoReg标X，RegWrite均0。",
+          "recordingCorrespondence": "direct",
+          "sourceIds": [
+            "ai301-r07-s054",
+            "ai301-r07-s055",
+            "ai301-r07-s056",
+            "ai301-r07-s057",
+            "ai301-r07-s058"
+          ]
         },
         {
           "page": 29,
           "visualReviewed": true,
-          "hasAudioNote": false,
-          "observation": "Jump opcode=2；文字 old PC 不严谨，应以 P12/P30 的 PC+4 为准。"
+          "hasAudioNote": true,
+          "observation": "J格式opcode=2、address位于[25:0]，文字写word address与拼接00。 P29文字Top 4 bits of old PC与P30图PC+4[31:28]有表述差异；录音41:25明确PC plus four。",
+          "recordingCorrespondence": "direct",
+          "sourceIds": [
+            "ai301-r07-s059",
+            "ai301-r07-s060",
+            "ai301-r07-s064"
+          ]
         },
         {
           "page": 30,
           "visualReviewed": true,
-          "hasAudioNote": false,
-          "observation": "Jump 目标拼接线明确 PC+4[31:28]，外层 Jump MUX 选择跳转目标。"
+          "hasAudioNote": true,
+          "observation": "新增Jump控制线从主控制器到最右PC前MUX；原branch MUX位于前级。 顶端标Instruction[25:0]、26→28、PC+4[31:28]与Jump address[31:0]。 RegWrite、MemRead、MemWrite红色0，普通寄存器/数据内存路径灰化。",
+          "recordingCorrespondence": "direct",
+          "sourceIds": [
+            "ai301-r07-s060",
+            "ai301-r07-s061",
+            "ai301-r07-s062",
+            "ai301-r07-s063",
+            "ai301-r07-s064",
+            "ai301-r07-s065",
+            "ai301-r07-s066"
+          ]
         },
         {
           "page": 31,
           "visualReviewed": true,
-          "hasAudioNote": false,
-          "observation": "4ns 内存/2ns ALU及加法/1ns 寄存器，R8/load12/store11/beq7/jump4ns。"
+          "hasAudioNote": true,
+          "observation": "P31假设清单明确Instr/Data memory=4ns，ALU/adders=2ns，Register read/write=1ns，其余列举项目忽略。 表中R/load/store/beq/jump总延迟分别8、12、11、7、4；load使用全部五列。 两个寄存器读端口可并发，不能将Reg Rd按rs/rt各计一次。",
+          "recordingCorrespondence": "direct",
+          "sourceIds": [
+            "ai301-r07-s067",
+            "ai301-r07-s068",
+            "ai301-r07-s069",
+            "ai301-r07-s070",
+            "ai301-r07-s071",
+            "ai301-r07-s072",
+            "ai301-r07-s073",
+            "ai301-r07-s074",
+            "ai301-r07-s075",
+            "ai301-r07-s076"
+          ]
         },
         {
           "page": 32,
           "visualReviewed": true,
-          "hasAudioNote": false,
-          "observation": "最长路径为 lw：指令存储器→寄存器堆→ALU→数据存储器→寄存器堆。"
+          "hasAudioNote": true,
+          "observation": "页面明确Critical path: load instruction，并列出五段依赖链。 同页指出不同指令不采用不同周期，并联系make common case fast。",
+          "recordingCorrespondence": "direct",
+          "sourceIds": [
+            "ai301-r07-s081",
+            "ai301-r07-s082",
+            "ai301-r07-s083"
+          ]
         },
         {
           "page": 33,
           "visualReviewed": true,
-          "hasAudioNote": false,
-          "observation": "固定周期受 lw 限制，sw 剩余等待时间；资源复制增加面积。"
+          "hasAudioNote": true,
+          "observation": "时序图在相邻同相时钟边界之间标Cycle 1、Cycle 2；lw占满首周期，sw后留waste。 文字列时间低效、重复功能单元占面积、简单易懂三个要点。",
+          "recordingCorrespondence": "direct",
+          "sourceIds": [
+            "ai301-r07-s084",
+            "ai301-r07-s085",
+            "ai301-r07-s086",
+            "ai301-r07-s087"
+          ]
         }
       ],
       "errataAndCautions": [
@@ -1282,13 +1428,479 @@
           "kind": "课件交叉勘误",
           "detail": "P19 subtract=0011 与后页不一致，应 0110；P20 funct100100 行 ADD 应 AND。已有 scope 条目。"
         }
+      ],
+      "contentMatchedRepeatedDiagramPages": [
+        23
+      ]
+    },
+    {
+      "id": "lec6",
+      "pages": 20,
+      "sourceFile": "Lecture6.pdf",
+      "sourcePdfSha256": "9401bf2a32e99c36d78748ac3fbf1a1370143b3666af6a927a6d309b7fd6e771",
+      "pdfSha256": "9401bf2a32e99c36d78748ac3fbf1a1370143b3666af6a927a6d309b7fd6e771",
+      "sourceBytes": 1007086,
+      "webBytes": 1007086,
+      "visuallyReviewedPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "explainedPages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "slidesOnlyPages": [
+        1,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "recordingCoverage": "11月9日ai301-r07支持P2–9；P2按与Lec5 P33相同的复习内容匹配。01:49:02–01:50:13明确将冒险解决方法留待后续，P10–20仅PPT；P1封面不补通用讲解。",
+      "recordingCoverageDetails": {
+        "recordingId": "ai301-r07",
+        "reviewStart": {
+          "sourceId": "ai301-r07-s084",
+          "time": "01:02:28",
+          "page": 2
+        },
+        "pipelineTransition": {
+          "sourceId": "ai301-r07-s087",
+          "time": "01:04:51"
+        },
+        "firstPipelineExample": {
+          "sourceId": "ai301-r07-s088",
+          "time": "01:05:22",
+          "page": 3
+        },
+        "lastSubstantiveSegment": {
+          "sourceId": "ai301-r07-s156",
+          "time": "01:48:27–01:48:58",
+          "page": 9
+        },
+        "boundarySourceIds": [
+          "ai301-r07-s157",
+          "ai301-r07-s158"
+        ],
+        "boundary": "01:49:02–01:50:13 明确下一部分/下次才讨论冒险解法；最后提醒在 Blackboard 提交第一次作业。P10–20 不提供本次课堂 note。",
+        "overlapPolicy": "P2 复现 Lec5 P33 的单周期总结，共享 s084–087；没有独立翻到 Lec6 P2 的证据，正文明确为同内容对应，不能据此声称两次独立讲解。P5 借用 s081–083 说明固定周期，不伪造为该页独立口述。P6 与 P7 共同引用 s124，以同一来源纠正其 800 ps 单条延迟说法。",
+        "notClaimed": "没有把 P9 的结构/数据/控制概述映射为后面 forwarding、load-use 一拍、重排或预测解法已经讲过；没有为封面补通用 note。"
+      },
+      "pdfOptimization": {
+        "method": "Byte-identical copy of supplied PDF",
+        "byteIdentical": true
+      },
+      "pageObservations": [
+        {
+          "page": 1,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "已查看封面，标题 Computer System Architecture / Lecture 6 - Pipelining，日期 November 2026，页脚 1；无独立知识内容，不补泛化 note。",
+          "sourceIds": []
+        },
+        {
+          "page": 2,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "已查看单周期时序图：Cycle 1 为 lw，Cycle 2 为 sw，sw 右侧红字 waste；文字另列最慢指令、浮点乘法、复制单元和简单易懂。与 s084–087 对应，作为过渡复习可讲。 注意：内容与 Lec5 P33 重复，录音没有独立翻到 Lec6 P2 的证据；仅按相同内容对应来源，不宣称另外讲过本页。",
+          "sourceIds": [
+            "ai301-r07-s084",
+            "ai301-r07-s085",
+            "ai301-r07-s086",
+            "ai301-r07-s087"
+          ]
+        },
+        {
+          "page": 3,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "已查看上下两组洗衣时序：四个阶段各半小时；上图四批从 18:00 到次日 02:00，下图从 18:00 到 21:30；4 批和 20 批加速比分别 8/3.5 与 40/11.5。已独立复算。",
+          "sourceIds": [
+            "ai301-r07-s088",
+            "ai301-r07-s089",
+            "ai301-r07-s090",
+            "ai301-r07-s091",
+            "ai301-r07-s092",
+            "ai301-r07-s093",
+            "ai301-r07-s094",
+            "ai301-r07-s095",
+            "ai301-r07-s096",
+            "ai301-r07-s097",
+            "ai301-r07-s098",
+            "ai301-r07-s099",
+            "ai301-r07-s100",
+            "ai301-r07-s101",
+            "ai301-r07-s102",
+            "ai301-r07-s103"
+          ]
+        },
+        {
+          "page": 4,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "已查看五阶段文字页：IF 指令存储器，ID 译码及寄存器读取，EX 运算或地址，MEM 数据存储器，WB 写回；没有将其解释成每条指令均做五项有效操作。",
+          "sourceIds": [
+            "ai301-r07-s104",
+            "ai301-r07-s105",
+            "ai301-r07-s106",
+            "ai301-r07-s107"
+          ]
+        },
+        {
+          "page": 5,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "已查看完整表格，lw=200+100+200+200+100=800；sw=700；R-format=600；beq=500。空白单元格对应不需要的有效操作。四种总和均复算一致。",
+          "sourceIds": [
+            "ai301-r07-s108",
+            "ai301-r07-s109",
+            "ai301-r07-s081",
+            "ai301-r07-s082",
+            "ai301-r07-s083"
+          ]
+        },
+        {
+          "page": 6,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "已查看双时序图：三条 lw 分别加载 100($0)、200($0)、300($0)。上图每条 800 ps；下图取指起点每隔 200 ps。ID 的 Reg 画在后半槽，WB 的 Reg 画在前半槽。完整五级槽口径为单条 1000 ps、三条 1400 ps；实际半槽写入端点不可混作同一统计口径。",
+          "sourceIds": [
+            "ai301-r07-s110",
+            "ai301-r07-s111",
+            "ai301-r07-s112",
+            "ai301-r07-s113",
+            "ai301-r07-s114",
+            "ai301-r07-s115",
+            "ai301-r07-s116",
+            "ai301-r07-s117",
+            "ai301-r07-s124"
+          ]
+        },
+        {
+          "page": 7,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "已查看加速比公式：对象是 time between instructions，分母为阶段数；先写 all stages balanced，再写不平衡时加速比下降；蓝字强调 throughput，末行是 latency does not decrease。没有把“不会下降”改写为所有条件下严格相等。",
+          "sourceIds": [
+            "ai301-r07-s118",
+            "ai301-r07-s119",
+            "ai301-r07-s120",
+            "ai301-r07-s121",
+            "ai301-r07-s122",
+            "ai301-r07-s123",
+            "ai301-r07-s124",
+            "ai301-r07-s125"
+          ]
+        },
+        {
+          "page": 8,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "已查看四项 ISA 特性：32 位定长、少量规则格式、load/store 的 EX 算地址与 MEM 访存、对齐。原图明确写 x86 1- to 17-byte，已根据核实的 Intel 官方 SDM §2.3.11 加入 15 字节上限勘误。",
+          "sourceIds": [
+            "ai301-r07-s126",
+            "ai301-r07-s127",
+            "ai301-r07-s128",
+            "ai301-r07-s129",
+            "ai301-r07-s130",
+            "ai301-r07-s131",
+            "ai301-r07-s132",
+            "ai301-r07-s133",
+            "ai301-r07-s134",
+            "ai301-r07-s135",
+            "ai301-r07-s136",
+            "ai301-r07-s137",
+            "ai301-r07-s138",
+            "ai301-r07-s139"
+          ]
+        },
+        {
+          "page": 9,
+          "visualReviewed": true,
+          "hasAudioNote": true,
+          "observation": "已查看 hazard 总览三个定义，与 s140–156 逐项匹配。s157–158 明确留到下次讨论解法；因此实际连续讲解到 P9。本页控制冒险口述使用 EX 比较，不自动采用 P15 的 ID 早判断。",
+          "sourceIds": [
+            "ai301-r07-s140",
+            "ai301-r07-s141",
+            "ai301-r07-s142",
+            "ai301-r07-s143",
+            "ai301-r07-s144",
+            "ai301-r07-s145",
+            "ai301-r07-s146",
+            "ai301-r07-s147",
+            "ai301-r07-s148",
+            "ai301-r07-s149",
+            "ai301-r07-s150",
+            "ai301-r07-s151",
+            "ai301-r07-s152",
+            "ai301-r07-s153",
+            "ai301-r07-s154",
+            "ai301-r07-s155",
+            "ai301-r07-s156",
+            "ai301-r07-s157",
+            "ai301-r07-s158"
+          ]
+        },
+        {
+          "page": 10,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "已查看结构冒险文字页：single memory 导致 lw/sw 数据访问与取指冲突；stall/bubble；分开指令/数据 memories 或 caches。今天虽在 P9 口头提到资源冲突，但未展开本页解决方法，所以仍 PPT-only。",
+          "sourceIds": []
+        },
+        {
+          "page": 11,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "已查看代码页：add $s0,$t0,$t1 后接 sub $t2,$s0,$t3，两个 $s0 蓝字标依赖；本页没有时序图，也没有给出固定停顿数。不得据此写成必需等待若干拍。PPT-only。",
+          "sourceIds": []
+        },
+        {
+          "page": 12,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "已查看 forwarding 图：蓝线从 add 的 EX 输出进入后继 sub 的 EX 输入，早于 add 的 WB；本页要求额外连接。今天未讲这条旁路，PPT-only。",
+          "sourceIds": []
+        },
+        {
+          "page": 13,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "已查看 load-use 图：lw $s0,20($t1)，随后 sub $t2,$s0,$t3；数据从 lw 的 MEM 结果接到 sub 的 EX。图中的一串 bubble 是同一个空泡随级推进，不是五次独立停顿；本例在五级、给定转发条件下留出一个时槽。PPT-only。",
+          "sourceIds": []
+        },
+        {
+          "page": 14,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "已逐行查看左右重排代码：偏移 0/4/8 分别载入 b/e/f，12/16 存 a/c；左列两处 load 后紧接 add，各标 stall；右列把 lw $t4,8($t0) 移到第二条 lw 后，两个 load-use 间均隔开。结论依赖示例访存对象独立及相应转发支持。PPT-only。",
+          "sourceIds": []
+        },
+        {
+          "page": 15,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "已查看文字明确写 add hardware to do it in ID stage，即把寄存器比较与目标计算提前。本页更改了今天 P9 口头示例的 EX 判定前提。PPT-only。",
+          "sourceIds": []
+        },
+        {
+          "page": 16,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "已查看分支停顿图：add、beq、or；beq 与后继 or 的取指开始相隔 400 ps，而正常相隔 200 ps，所以额外代价是 200 ps 一拍；这对应 P15 的 ID 判断模型。蓝色多个 bubble 仍是一个空泡沿流水线推进。PPT-only。",
+          "sourceIds": []
+        },
+        {
+          "page": 17,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "已查看预测文字页：长流水线更难早知道结果，先预测 not taken 并顺序取指，错误时付恢复代价；only stall if wrong 只在忽略其他冒险、资源冲突和访存等待的分支示意语境成立。PPT-only。",
+          "sourceIds": []
+        },
+        {
+          "page": 18,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "已查看上下预测图：上图正确预测时 beq 与 lw 的取指间隔 200 ps，无该分支额外停顿；下图错误预测后正确路径 or 的取指间隔 400 ps，增加一拍。条件仍是较早 ID 判定，不可推广为所有流水线的分支罚时。PPT-only。",
+          "sourceIds": []
+        },
+        {
+          "page": 19,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "已查看静态/动态两部分：静态按典型行为预测向后跳转、向前不跳转；动态记录真实分支近期行为，预测错时重取并更新。只有启发规则与历史概念，没有展示具体状态机。PPT-only。",
+          "sourceIds": []
+        },
+        {
+          "page": 20,
+          "visualReviewed": true,
+          "hasAudioNote": false,
+          "observation": "已查看总结：吞吐量、并行执行多条、same latency、三类 hazards、ISA 影响复杂度。same latency 是需要限定比较口径的简化措辞，不能推翻 P5–6 不平衡例子完整时槽计时的 800→1000 ps。今天没有讲到本页，PPT-only。",
+          "sourceIds": []
+        }
+      ],
+      "errataAndCautions": [
+        {
+          "pages": [
+            3
+          ],
+          "kind": "计算口径",
+          "detail": "单批四阶段各半小时，四批加速比不是 4。 T_serial=2N 小时；T_pipe=0.5(N+3) 小时；N=4 得 2.286，N=20 得 3.478；只有理想大量任务才趋于阶段数 4。"
+        },
+        {
+          "pages": [
+            5
+          ],
+          "kind": "模型限定",
+          "detail": "表中 sw/R/beq 的 700/600/500 ps 容易被误读成可变单周期时钟。 这些是有效路径延迟；固定单周期按最慢 lw 的 800 ps 定时。"
+        },
+        {
+          "pages": [
+            6,
+            7,
+            20
+          ],
+          "kind": "录音与图示交叉核对",
+          "detail": "s124 说流水前后单条仍 800 ps；P20 简化为 same latency。 P5 有效部件延迟之和为 800 ps；P6 固定 200 ps 时槽，按完整五级时槽计为 1000 ps。P6 把 ID/WB 画成半槽，实际寄存器写入端点与完整槽末不同；不要宣称寄存器值只能到 1000 ps 才出现。核心结论是吞吐增加并不保证单条延迟减少。"
+        },
+        {
+          "pages": [
+            6,
+            7
+          ],
+          "kind": "计算口径",
+          "detail": "800/200=4 容易被误读成图中三条 lw 总时间快 4 倍。 4 为稳态指令间隔比。完整时槽口径三条需 2400 ps 与 1400 ps，批次加速比 12/7≈1.714；一般 N 条为 4N/(N+4)，不是恒为 4。均衡 160 ps 五级时，三条需 1120 ps、加速 15/7≈2.143，稳态才趋于 5。"
+        },
+        {
+          "pages": [
+            7
+          ],
+          "kind": "教学模型限定",
+          "detail": "录音把级数限制为五级与平衡/复杂度联系起来。 这是本课五级实现的教学选择，不能推出所有处理器必须五级，也不能直接以级数判断速度。"
+        },
+        {
+          "pages": [
+            8
+          ],
+          "kind": "课件勘误",
+          "detail": "原图 x86: 1- to 17-byte instructions。 应为 1–15 字节；Intel 官方 SDM Vol.2 §2.3.11 规定最大 15 字节。仅用于定长与变长取指/译码的对比。",
+          "externalSources": [
+            {
+              "label": "Intel 官方指令集手册：§2.3.11 指令长度上限",
+              "url": "https://cdrdv2-public.intel.com/671110/325383-sdm-vol-2abcd.pdf"
+            }
+          ]
+        },
+        {
+          "pages": [
+            8
+          ],
+          "kind": "转写纠正与范围限定",
+          "detail": "s130 立即数字段 ASR 为 lower sixty bits；s135 说其他指令不碰 memory；s138–139 把访存概括为一拍。 本课 I 型立即数字段为低 16 位；lw/sw 限制指数据存储器，所有指令仍取指；对齐访问一拍是给定内存模型，不能当作所有真实系统延迟保证。"
+        },
+        {
+          "pages": [
+            9,
+            15,
+            16,
+            18
+          ],
+          "kind": "跨页假设变化",
+          "detail": "今天 P9 口述在 EX 第三级比较分支；P15 要另加硬件提前到 ID；P16/P18 图与后者一致。 不要混用分支判定级数。P16/P18 的 400 ps 是两次正确取指开始的间隔；相对正常 200 ps，图示额外一拍，不是额外 400 ps。后面页面本次无讲解来源。"
+        },
+        {
+          "pages": [
+            10
+          ],
+          "kind": "资源模型限定",
+          "detail": "single memory 引出结构冲突和分离指令/数据存储器。 冲突需要共同端口/吞吐受限的前提；分离存储器或缓存是本页方案，不能概括为所有统一存储器均无法流水化。本次只保留 PPT。"
+        },
+        {
+          "pages": [
+            12,
+            13
+          ],
+          "kind": "转发时序核对",
+          "detail": "P12 EX 结果可供下一条 EX；P13 load 数据到 MEM 结束才有，图中一串 bubble。 转发只能传递已生成的数据。P13 一拍空泡向各级推进，图上五个云朵并非五拍独立等待；一拍结论依赖所画五级流水线与转发条件。本次无解法讲解，不添加课堂 notes。"
+        },
+        {
+          "pages": [
+            14
+          ],
+          "kind": "重排条件核对",
+          "detail": "左列两次紧邻 load-use，各标 stall；右列提前 lw $t4,8($t0)。 示例假设不同固定偏移对应独立变量，移动不改变数据/内存依赖，并配有相应转发。不能概括成任意 load 都能随意提前；本次 PPT-only。"
+        },
+        {
+          "pages": [
+            17,
+            18,
+            19
+          ],
+          "kind": "预测模型限定",
+          "detail": "only stall if wrong 与 no penalty。 仅就所画分支预测处理、忽略其他冒险时成立；预测正确不保证整条程序无停顿；静态向后取/向前不取是启发规则而非必然行为。本次 PPT-only。"
+        }
+      ],
+      "numericalChecks": [
+        {
+          "case": "laundry_4",
+          "serialHours": 8,
+          "pipelineHours": 3.5,
+          "speedup": 2.2857142857142856
+        },
+        {
+          "case": "laundry_20",
+          "serialHours": 40,
+          "pipelineHours": 11.5,
+          "speedup": 3.4782608695652173
+        },
+        {
+          "case": "lw_3_complete_slot_boundaries",
+          "singleCyclePs": 2400,
+          "pipelinePs": 1400,
+          "speedup": 1.7142857142857142
+        },
+        {
+          "case": "lw_3_balanced_160ps_complete_slot_boundaries",
+          "singleCyclePs": 2400,
+          "pipelinePs": 1120,
+          "speedup": 2.142857142857143
+        }
       ]
     }
   ],
-  "sourcePolicy": "只保留讲解及考核条目所用的教师内容片段；完整DOCX及课堂非教学闲谈不随网站发布。来源按内容匹配，不代表精确翻页时间。只有09月14日文件具备明确课堂日期。",
+  "sourcePolicy": "只保留讲解及考核条目所用的教师内容片段；完整DOCX及非教学闲谈不随网站发布。来源按内容匹配，不代表精确翻页时间；相同图示的重复页明确说明复用来源。09月14日文件具备明确日期；新课堂按用户所说“今天”及本次会话日期记为11月9日，其余未注明日期。",
   "independentChecks": [
     "Lec2 P9/15/26/32/35/39/40/41 的补码、真值表、反馈与时钟边沿核对。",
-    "Lec3 P48/49/50/53/54/56/57/60–65 的栈、递归、编码和寻址核对。"
+    "Lec3 P48/49/50/53/54/56/57/60–65 的栈、递归、编码和寻址核对。",
+    "2026-11-09：Lec5 P18–33逐页与158段新转写核对；两级控制、X、PC+4、并行路径和固定周期口径检查。",
+    "2026-11-09：Lec6全部20页原图核对；P5–8另行核对完整时槽/半槽、有限批次/稳态吞吐与Intel官方指令长度。"
   ],
-  "navigationPolicy": "复用原站严格向后、同主题每份课件一个代表页、不回绕的FocusNavigation。"
+  "navigationPolicy": "复用原站严格向后、同主题每份课件一个代表页、不回绕的FocusNavigation。",
+  "updates": [
+    {
+      "date": "2026-11-09",
+      "recording": "ai301-r07",
+      "addedDeck": "lec6",
+      "addedExplanations": 23,
+      "revisedExistingPages": [
+        {
+          "deck": "lec5",
+          "page": 18
+        }
+      ],
+      "newSelectedTranscriptSegments": 153,
+      "sourceDocxSha256": "d9357335561f5cb5602e3b398e683e65fb051b626d08095b4fd7480a7f9f599d"
+    }
+  ]
 }

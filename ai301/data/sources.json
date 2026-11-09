@@ -26,6 +26,13 @@
       "title": "单周期MIPS数据通路课堂录音（日期未注明）",
       "file": "export_1794131233653.docx",
       "date": null
+    },
+    "ai301-r07": {
+      "title": "11月9日单周期控制与流水线课堂录音",
+      "file": "export_1794235010353.docx",
+      "date": "2026-11-09",
+      "dateBasis": "用户说明为今天课堂，按本次会话日期记录；不由导出文件名推定。",
+      "sourceDocxSha256": "d9357335561f5cb5602e3b398e683e65fb051b626d08095b4fd7480a7f9f599d"
     }
   },
   "sources": {
@@ -5724,6 +5731,1842 @@
       "excerpt": "And then based on the requirements, you can draw out this, choose tablets for the relationship between X, Y, Z and also december all the way up to c seventh, and then you can use to or this to connect some of the outputs and the lines of the decoder S。",
       "excerptKind": "英文课堂自动转写原文；错词未改，正文结合课件校正",
       "paragraphIndex": 747
+    },
+    "ai301-r07-s001": {
+      "recording": "ai301-r07",
+      "start": "00:13",
+      "end": "00:59",
+      "excerpt": "Okay，呃，good afternoon everyone。So，呃，first，let's briefly recap what we have learned，呃，last week。Uh，so，this is the big picture，if you want to design，呃，data pass。For different types of instructions, including low low work, star work, our time preparation, and also branching. At this moment, the jumping is not included, so it is only an almost complete. Uh, so first we need pay some attention to the right.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 2,
+      "paragraphIndices": [
+        2
+      ],
+      "segmentIndex": 0
+    },
+    "ai301-r07-s002": {
+      "recording": "ai301-r07",
+      "start": "01:00",
+      "end": "01:54",
+      "excerpt": "And we enable signal of the register file and also the data memory, so you can see that here we have a write enable signal for the register file, and we also have a pair of read and write enable signals for the data memory, because these operations they are. Not happening uh in every cycle or say for every instruction so they need an explicit control signal uh to allow this kind of operation to take place. But we also notice that here is no re-enable signal for the register file, and also there is no write enable signal for the PC program counter.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 4,
+      "paragraphIndices": [
+        4
+      ],
+      "segmentIndex": 1
+    },
+    "ai301-r07-s003": {
+      "recording": "ai301-r07",
+      "start": "01:55",
+      "end": "02:20",
+      "excerpt": "That is because the writing of PC and. The reading of register file, these kind of operations they are happening in every cycle for all the instructions. We need to update the program counter and also read at least RS from the register file.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 6,
+      "paragraphIndices": [
+        6
+      ],
+      "segmentIndex": 2
+    },
+    "ai301-r07-s004": {
+      "recording": "ai301-r07",
+      "start": "02:20",
+      "end": "02:48",
+      "excerpt": "So because these operations they are always happening, so. Uh，it makes no sense if we uh design an explicit enable control for the writing of PC and reading of register line。And also here we have some, some other control lines that are written in blue color.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 8,
+      "paragraphIndices": [
+        8
+      ],
+      "segmentIndex": 3
+    },
+    "ai301-r07-s005": {
+      "recording": "ai301-r07",
+      "start": "02:49",
+      "end": "03:37",
+      "excerpt": "And also we notice that here we have several manufacturers because very often we want to provide. Data from different sources to a hardware component，and then how to select between uh different data sources，are we need to uh place uh manufacturer in front of the data component to select between the data source。Uh，So，for example，this one，this uh PC source，Uh，it is ac，it is actually designed for branching，so you can see that if we are not going to branch，then choose zero，that is go to the PC PC plus four next。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 10,
+      "paragraphIndices": [
+        10
+      ],
+      "segmentIndex": 4
+    },
+    "ai301-r07-s006": {
+      "recording": "ai301-r07",
+      "start": "03:38",
+      "end": "04:11",
+      "excerpt": "Uh，instruction，Uh，in sequential order，and if we are going to take the branch，Uh，then choose one in this multiplier，and then go to the branch results，Uh，so，so this multiplier is called a PC source。Uh, then let's say another example is. Memory to register this manufacturer, it is selecting which data are you going to write into the register file.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 12,
+      "paragraphIndices": [
+        12
+      ],
+      "segmentIndex": 5
+    },
+    "ai301-r07-s007": {
+      "recording": "ai301-r07",
+      "start": "04:11",
+      "end": "04:47",
+      "excerpt": "So if you are doing an archive instruction, so your data to be written should come out from the ALU. 啊，in that case you should select zero here because it is connected to the calculation result of ARU，and then you simply place this result back to RV。But if you are doing a load work, then that means you are taking a piece of data from the data memory.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 14,
+      "paragraphIndices": [
+        14
+      ],
+      "segmentIndex": 6
+    },
+    "ai301-r07-s008": {
+      "recording": "ai301-r07",
+      "start": "04:47",
+      "end": "05:14",
+      "excerpt": "In that case, you need to choose one for this multiplexer, and then you load this piece of data into. Uh rt in our register file. Uh，so since for all the manufacturers here we have uh two inputs，so that means it is a selection between zero and one，yes or no。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 16,
+      "paragraphIndices": [
+        16
+      ],
+      "segmentIndex": 7
+    },
+    "ai301-r07-s009": {
+      "recording": "ai301-r07",
+      "start": "05:15",
+      "end": "05:59",
+      "excerpt": "Uh，so each manufacturer corresponds to one bit of control，so uh each control line written in blue color here that is one bit of control。And also here we know that for our type instructions the lower six bits or say the least significant six bits they are representing the function field F U N C T。Uh and but for uh the other two types of instruction actually the lower six bits they are meaningless because.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 18,
+      "paragraphIndices": [
+        18
+      ],
+      "segmentIndex": 8
+    },
+    "ai301-r07-s010": {
+      "recording": "ai301-r07",
+      "start": "06:00",
+      "end": "06:24",
+      "excerpt": "For jumping, we know that all the lower26 bits are for address and also for immediate type instruction. All the lower16 bits they are for offset or immediate value. So actually the lowest6 bits they are only meaningful for our type instructions.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 20,
+      "paragraphIndices": [
+        20
+      ],
+      "segmentIndex": 9
+    },
+    "ai301-r07-s011": {
+      "recording": "ai301-r07",
+      "start": "06:24",
+      "end": "06:52",
+      "excerpt": "But no matter what is the instruction type, this six bits will go to this air control unit uh in all scenarios. So sometimes they are meaningful and some other times they are meaningless. But uh no matter what is the the instruction type, this lower six bits. Will always enter the area control unit.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 22,
+      "paragraphIndices": [
+        22
+      ],
+      "segmentIndex": 10
+    },
+    "ai301-r07-s012": {
+      "recording": "ai301-r07",
+      "start": "06:58",
+      "end": "07:15",
+      "excerpt": "出。啊，小。Uh，in the previous lectures about uh AI，we have discussed that uh it can perform different kinds of arithmetic and also logical operations。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 24,
+      "paragraphIndices": [
+        24
+      ],
+      "segmentIndex": 11
+    },
+    "ai301-r07-s013": {
+      "recording": "ai301-r07",
+      "start": "07:15",
+      "end": "07:50",
+      "excerpt": "Uh，arithmetic operations include，for example，addition subtraction，Uh，and logical operations such as uh and or，Uh，but we don't have not。So the not, it is actually implemented using nor. We don't have a specific function called not, and you can see that this specific function is actually determined by a four-bit AI control signal.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 26,
+      "paragraphIndices": [
+        26
+      ],
+      "segmentIndex": 12
+    },
+    "ai301-r07-s014": {
+      "recording": "ai301-r07",
+      "start": "07:51",
+      "end": "08:23",
+      "excerpt": "So depending on the instruction class，the AI will need to perform one of these following functions。So for loading and storing LW and SW, the ALU always perform addition because it is always used to compute the target address and that is coming from adding the offset to the base address. So the function of ALU is always.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 28,
+      "paragraphIndices": [
+        28
+      ],
+      "segmentIndex": 13
+    },
+    "ai301-r07-s015": {
+      "recording": "ai301-r07",
+      "start": "08:24",
+      "end": "08:59",
+      "excerpt": "Uh addition for uh long and store right and then for branching uh the air is always used to perform subtraction right because uh. Uh，I mean to be specific，we have uh two A R use for branching，and uh the one is the one used for subtraction，Uh，it is because we need to compare uh whether two data in R S and R T they are equal，right？Uh，so that is actually.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 30,
+      "paragraphIndices": [
+        30
+      ],
+      "segmentIndex": 14
+    },
+    "ai301-r07-s016": {
+      "recording": "ai301-r07",
+      "start": "09:00",
+      "end": "09:33",
+      "excerpt": "Down by subtraction and check whether the result of subtraction is equal to zero or not. And uh if it is equal to zero we have a specific uh we have an explicit uh zero uh signal if you still remember and if that line is active meaning that we want to take the branch. Uh，and then another LU is for calculating the branching target，and that is performing addition also。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 32,
+      "paragraphIndices": [
+        32
+      ],
+      "segmentIndex": 15
+    },
+    "ai301-r07-s017": {
+      "recording": "ai301-r07",
+      "start": "09:34",
+      "end": "10:01",
+      "excerpt": "Uh，but for our type instruction，the thing is a little bit complex because. The air you need to perform a certain kind of action uh depending on the 关一下门，谢谢。Uh，depending on the value of the six bits，Uh，function field，that is only for archive instruction。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 34,
+      "paragraphIndices": [
+        34
+      ],
+      "segmentIndex": 16
+    },
+    "ai301-r07-s018": {
+      "recording": "ai301-r07",
+      "start": "10:09",
+      "end": "10:33",
+      "excerpt": "Okay，so for this uh AI control unit，uh we have just seen in the big picture，we have uh two parts for the input and one part for the output。Uh，first，let's see uh the output of this AI control unit。Uh, that is the four-bit control signal we have just uh discussed.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 36,
+      "paragraphIndices": [
+        36
+      ],
+      "segmentIndex": 17
+    },
+    "ai301-r07-s019": {
+      "recording": "ai301-r07",
+      "start": "10:34",
+      "end": "11:23",
+      "excerpt": "Uh, so the output of this ALU control signal can be used to directly uh specify the function of the ALU. So if you if you want to do an addition subtraction uh logic operation anything that is directly control. Find this four feet output of this unit，and what about inputs？Of this uh area control unit，or in other words，how can we derive this orbit area control signal？The inputs are actually it is coming from two parts，on the first part we have two bits。Uh，A two bits control field，Uh，and the name is ALUOP。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 38,
+      "paragraphIndices": [
+        38
+      ],
+      "segmentIndex": 18
+    },
+    "ai301-r07-s020": {
+      "recording": "ai301-r07",
+      "start": "11:24",
+      "end": "11:59",
+      "excerpt": "Uh，This ALUOP is actually coming from the opcode，And the opcode，Uh，it is the most significant six bits，Which is common for all types of instruction。So the most significant six bit opcode can give you。The two bits of L U O P and that is the first source of the input of this L U control unit then the second part of input to this L U control unit it is the six bits of.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 40,
+      "paragraphIndices": [
+        40
+      ],
+      "segmentIndex": 19
+    },
+    "ai301-r07-s021": {
+      "recording": "ai301-r07",
+      "start": "12:01",
+      "end": "12:50",
+      "excerpt": "Functional，呃，呃，the least significant six bits，so counting from bit zero up to bit five。一。And because we know that this view actually only exists for our time instruction, and for all the other types of instruction, this beat0 to5 they are actually not representing function. So here this x here means don't care because this six bit function here is only meaningful for our type instructions.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 42,
+      "paragraphIndices": [
+        42
+      ],
+      "segmentIndex": 20
+    },
+    "ai301-r07-s022": {
+      "recording": "ai301-r07",
+      "start": "12:58",
+      "end": "13:24",
+      "excerpt": "啊，so the logic. That we have the main control unit generates the two bit of ALU OP from the six bit of code, and this is used as input to this ALU control unit, and then this ALU control unit generates the actual signals, the four bit signal to control the ALU unit.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 44,
+      "paragraphIndices": [
+        44
+      ],
+      "segmentIndex": 21
+    },
+    "ai301-r07-s023": {
+      "recording": "ai301-r07",
+      "start": "13:25",
+      "end": "14:30",
+      "excerpt": "Uh，So this uh style of a kind of multiple level decoding，this is uh somehow a common implementation technique。And what are possible advantages of this kind of multiple level decoding? So why we do not directly calculate the fourth bit of ALU control from the main control unit, and instead we take this kind of. At least two levels of decoding，so the first level is from apple to air up，and the second level is happening here in this air control unit，from air up and function code to air control signal。啊，think of any possible advantage advantage of this uh multi level encoding.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 46,
+      "paragraphIndices": [
+        46
+      ],
+      "segmentIndex": 22
+    },
+    "ai301-r07-s024": {
+      "recording": "ai301-r07",
+      "start": "14:42",
+      "end": "15:13",
+      "excerpt": "Uh，so first，and using this kind of multiple level of control，we can reduce the size of the main control unit，because we know that uh，if you have uh some kind of uh decoder，multiplexer，uh，any。Kind of these control unit, the size of your hardware and your complexity of your hardware, it is quite related with the numbers of input and output.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 48,
+      "paragraphIndices": [
+        48
+      ],
+      "segmentIndex": 23
+    },
+    "ai301-r07-s025": {
+      "recording": "ai301-r07",
+      "start": "15:15",
+      "end": "16:08",
+      "excerpt": "Uh，so if we take the opcode and function code as input，and take the AI control as output，then you can imagine that because the combinations in between input and output there are too many combinations，so uh that kind of one level decoding will result in uh many control unit that is very very large。And also using this kind of smaller control units can also potentially increase the speed, and the speed is in most of the cases one of the key factors that we hear about when we do the design. Because the speed of the control unit is also critical to the clock cycle time.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 50,
+      "paragraphIndices": [
+        50
+      ],
+      "segmentIndex": 24
+    },
+    "ai301-r07-s026": {
+      "recording": "ai301-r07",
+      "start": "16:09",
+      "end": "16:49",
+      "excerpt": "So that's the reason why we have this multiple level decoding instead of using the main control unit to derive the ALU control bits directly. 一。So this one is the truth table to implement the mapping from the two bits ALUOP field and also the six bits function field into the four bits ALU control.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 52,
+      "paragraphIndices": [
+        52
+      ],
+      "segmentIndex": 25
+    },
+    "ai301-r07-s027": {
+      "recording": "ai301-r07",
+      "start": "16:50",
+      "end": "17:27",
+      "excerpt": "啊，so these columns are for input，and the last one is for outputs。So the function field is used only when area OP is equal to one zero, and in total there are sixty-four possible values produced by this function field because two to the power of six right? But actually we are only interested in a small number of them.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 54,
+      "paragraphIndices": [
+        54
+      ],
+      "segmentIndex": 26
+    },
+    "ai301-r07-s028": {
+      "recording": "ai301-r07",
+      "start": "17:27",
+      "end": "17:59",
+      "excerpt": "So for many of them, we just don't care about here values. So if all the input combinations are included in this kind of truth table, then you can imagine that the full table should be quite large, right? Uh，and first we want to keep this table compact and easy to read，and uh more importantly，actually for most of the case we just don't care about the.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 56,
+      "paragraphIndices": [
+        56
+      ],
+      "segmentIndex": 27
+    },
+    "ai301-r07-s029": {
+      "recording": "ai301-r07",
+      "start": "18:00",
+      "end": "18:44",
+      "excerpt": "VALUES OF THESE INPUTS, SO YOU CAN SEE THAT IN VERY OFTEN IN THIS KIND OF TRUE TABLE, YOU CAN SEE MANY X HERE. UH, THAT MEANS UH FOR ALL THE ENTRIES WITH UH X, UH WE DON'T CARE ABOUT THE VALUES, SO THE VALUES OF THESE X HERE WILL NOT HAVE ANY INFLUENCE. On the output, so for example, as long as the two bits for ALOP is equal to00, and no matter what kind of contents you have in the function field, then the four bits ALU control should be0010.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 58,
+      "paragraphIndices": [
+        58
+      ],
+      "segmentIndex": 28
+    },
+    "ai301-r07-s030": {
+      "recording": "ai301-r07",
+      "start": "18:45",
+      "end": "19:18",
+      "excerpt": "And then, let's say, so as long as your LOP is equal to one zero, and then you have the. F零two F three. Equal to0 one zero one, then no matter what kind of data you have for F four and F five, the the the resulting output for the four bits area control must be0 one one one.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 60,
+      "paragraphIndices": [
+        60
+      ],
+      "segmentIndex": 29
+    },
+    "ai301-r07-s031": {
+      "recording": "ai301-r07",
+      "start": "19:19",
+      "end": "19:47",
+      "excerpt": "Uh, so in this case we can uh shrink the size of this uh choose table for for great extent. So otherwise you need to write out all the possible combinations but uh actually for many of the cases here we just don't care. So we can use an x to uh denote any uh input value that has. No influence on the output.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 62,
+      "paragraphIndices": [
+        62
+      ],
+      "segmentIndex": 30
+    },
+    "ai301-r07-s032": {
+      "recording": "ai301-r07",
+      "start": "20:01",
+      "end": "20:44",
+      "excerpt": "Uh，so uh，we know that for all types of instruction，uh，the opcode always uh is sitting in the most significant six bits，and for the and for the uh rs，this is always we，uh，except for the jumping，and for rt，it is also uh always we，but except for the loading，because the loading it is not taking up any。Data from the register file, instead it is taking the data from the data memory. And for the writing operation, we have two choice.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 64,
+      "paragraphIndices": [
+        64
+      ],
+      "segmentIndex": 31
+    },
+    "ai301-r07-s033": {
+      "recording": "ai301-r07",
+      "start": "20:45",
+      "end": "20:59",
+      "excerpt": "So if it is our time, the writing is happening in RD; and if it is LW, the writing is happening in RT. So two choice that means. One multitask.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 66,
+      "paragraphIndices": [
+        66
+      ],
+      "segmentIndex": 32
+    },
+    "ai301-r07-s034": {
+      "recording": "ai301-r07",
+      "start": "21:00",
+      "end": "21:44",
+      "excerpt": "One beat of control to choose between the two destination of register writing, and for the I type instruction, how to deal with the lower16 bits whether it is for address or immediate value. Uh, so first perform a sign extension, so copy the most significant sign beat to transform it into thirty-two bit, and then add with another value. Uh, so these are the common operations shared by uh different types of instructions.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 68,
+      "paragraphIndices": [
+        68
+      ],
+      "segmentIndex": 33
+    },
+    "ai301-r07-s035": {
+      "recording": "ai301-r07",
+      "start": "21:55",
+      "end": "22:11",
+      "excerpt": "Uh, so uh in this illustration, all the control. Coming out from the main control unit, it is colored in blue. And here it is the ALU control unit.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 70,
+      "paragraphIndices": [
+        70
+      ],
+      "segmentIndex": 34
+    },
+    "ai301-r07-s036": {
+      "recording": "ai301-r07",
+      "start": "22:11",
+      "end": "22:35",
+      "excerpt": "So you can see that we have a line called ALUOP coming out from the main control unit and enter the ALU control unit. So that is corresponding to the two bits ALUOP we have just discussed. So looking at this kind of illustration.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 72,
+      "paragraphIndices": [
+        72
+      ],
+      "segmentIndex": 35
+    },
+    "ai301-r07-s037": {
+      "recording": "ai301-r07",
+      "start": "22:36",
+      "end": "22:54",
+      "excerpt": "Can you take a few minutes to think about how to set all these control bits for these different kinds of instruction? So what about our type? What about loading? And what about branching?",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 74,
+      "paragraphIndices": [
+        74
+      ],
+      "segmentIndex": 36
+    },
+    "ai301-r07-s038": {
+      "recording": "ai301-r07",
+      "start": "22:55",
+      "end": "23:43",
+      "excerpt": "So for each of these possible instructions, how to. Uh Sets. Is a control base. So that all the hardware components should take the correct operation, and also receive the correct data input, and also generate the correct data output. So first，let's consider about our type instruction. If you want to perform an our type instruction，how should we set all these control bits？",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 76,
+      "paragraphIndices": [
+        76
+      ],
+      "segmentIndex": 37
+    },
+    "ai301-r07-s040": {
+      "recording": "ai301-r07",
+      "start": "25:25",
+      "end": "25:50",
+      "excerpt": "Uh, so the first part... uh, we have to consider whether or not we are going to uh do any operation with respect to the register file and the data memory. So if we are discussing for our type instruction here, so of course nothing to do with the memory right? So reading and writing.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 80,
+      "paragraphIndices": [
+        80
+      ],
+      "segmentIndex": 39
+    },
+    "ai301-r07-s041": {
+      "recording": "ai301-r07",
+      "start": "25:51",
+      "end": "26:13",
+      "excerpt": "From the memory is uh is not considered. So the read or write control signal of the memory. 你应该all be disabled equal to zero here，because our type instruction has nothing to do with the memory right？And then what about the right control signal for the register？",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 82,
+      "paragraphIndices": [
+        82
+      ],
+      "segmentIndex": 40
+    },
+    "ai301-r07-s042": {
+      "recording": "ai301-r07",
+      "start": "26:14",
+      "end": "26:31",
+      "excerpt": "Uh，this should be equals one because uh we need to write something into our D right？So uh here we have one for the register right and two zeros。FOR READ AND WRITE TO THE DATA MEMORY.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 84,
+      "paragraphIndices": [
+        84
+      ],
+      "segmentIndex": 41
+    },
+    "ai301-r07-s043": {
+      "recording": "ai301-r07",
+      "start": "26:32",
+      "end": "27:19",
+      "excerpt": "Uh，And then，Uh，this multi factor is for selecting the program counter source，so for our type instruction，Uh，nothing special for the PC，so of course it should just go to the next。Sequentially，呃，Sequentially next instruction，so PC plus four，呃，so choosing，呃，zero for this multiplicator。Then this is to selecting the destination of register right, so because we are writing into RD, so we choose uh beat11 from beat15.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 86,
+      "paragraphIndices": [
+        86
+      ],
+      "segmentIndex": 42
+    },
+    "ai301-r07-s044": {
+      "recording": "ai301-r07",
+      "start": "27:19",
+      "end": "28:09",
+      "excerpt": "This is the field of RD in the instruction. Uh，And also here，the source of the second source，Uh，the second input source of this ALU，Uh，it is actually the second operand of the arithmetic or logical operation，so this should be coming out from the register file，actually RT，so choose zero for this multiplier，Uh，and finally。Uh，This is the manufacturer to design，which they have to be written into the register file。So again，there's nothing to do with the memories。So of course we just take the output uh of the LU to put back to the register file.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 88,
+      "paragraphIndices": [
+        88
+      ],
+      "segmentIndex": 43
+    },
+    "ai301-r07-s045": {
+      "recording": "ai301-r07",
+      "start": "28:11",
+      "end": "28:46",
+      "excerpt": "So, actually, as long as you understand what each instruction is actually doing, you can derive the correct answer for all these control signals. Uh，So following the same logic，Uh，what about uh LW instruction and what about uh BEQ？Uh，So for these two，how to set these control lines？",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 90,
+      "paragraphIndices": [
+        90
+      ],
+      "segmentIndex": 44
+    },
+    "ai301-r07-s046": {
+      "recording": "ai301-r07",
+      "start": "29:53",
+      "end": "30:23",
+      "excerpt": "So for the loading instruction this time，of course，there's something to do with the data memory。And loading is actually taking out a piece of data from the memory, so we have to enable reading from the data memory and disable writing into the data memory. So the two controls should be zero and one respectively, and also for the register right.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 92,
+      "paragraphIndices": [
+        92
+      ],
+      "segmentIndex": 45
+    },
+    "ai301-r07-s047": {
+      "recording": "ai301-r07",
+      "start": "30:24",
+      "end": "31:16",
+      "excerpt": "This one should also be enabled, that is because the data is going to be written into RT, so we must enable the writing operation to the random survival. Uh，so so then for the uh PC source manufacturer again，we just choose the sequentially next instruction PC plus four，and then uh for this uh writing destination，this time uh there's no RD，so the register。To be written in uh is located in beat sixteen to beat uh twenty that is corresponding to rt so uh so for this manufacturer we should choose zero instead of one.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 94,
+      "paragraphIndices": [
+        94
+      ],
+      "segmentIndex": 46
+    },
+    "ai301-r07-s048": {
+      "recording": "ai301-r07",
+      "start": "31:18",
+      "end": "32:05",
+      "excerpt": "And then for the second input into the ALU, this time we should choose one because this is actually calculating the target address in the memory by adding the offset and the base address, right? Uh，So this time we are not taking the second operand from the memory，instead we add the first operand with an immediate value，so choose one for this multiplier，Uh，and. And then for this manufacturer，呃，we also choose one instead of zero，that is because，呃，this time we don't care about the.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 96,
+      "paragraphIndices": [
+        96
+      ],
+      "segmentIndex": 47
+    },
+    "ai301-r07-s049": {
+      "recording": "ai301-r07",
+      "start": "32:08",
+      "end": "32:29",
+      "excerpt": "Uh, uh, no, uh, we care about the output of this ALU, but it is already applied into this address part when we read from the memory. Uh, and what we are going to write into the register file is actually the data taken out from the memory. Should us so so the.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 98,
+      "paragraphIndices": [
+        98
+      ],
+      "segmentIndex": 48
+    },
+    "ai301-r07-s050": {
+      "recording": "ai301-r07",
+      "start": "32:31",
+      "end": "33:05",
+      "excerpt": "So the twice for this manufacturer must be equal to one. 呃，and then finally for branching。Again，for the for this conditional operation，there's nothing to do with the memory，and also nothing to do with the register file，so。Read and write for data memory，and also writing for register file should all be disabled，right？",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 100,
+      "paragraphIndices": [
+        100
+      ],
+      "segmentIndex": 49
+    },
+    "ai301-r07-s051": {
+      "recording": "ai301-r07",
+      "start": "33:07",
+      "end": "33:34",
+      "excerpt": "Uh，and then，but the different thing is happening here。So for this uh multiplexer，if we choose zero，that means uh it is going to the next next instruction sequentially。Uh，but in what kind of conditions can we choose one？In this multiplexer，you can see that uh we have an end gate here。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 102,
+      "paragraphIndices": [
+        102
+      ],
+      "segmentIndex": 50
+    },
+    "ai301-r07-s052": {
+      "recording": "ai301-r07",
+      "start": "33:34",
+      "end": "34:35",
+      "excerpt": "Uh，So the first condition to be satisfied is that，Uh，of course，in the first place，we are doing a branching operation，Uh，so this control line，Uh，must be one，and then the second input into this end gate，it it is exactly the zero line of this ALU。Uh，this air you have the bottom part，so because uh this zero line is actually the subtraction result of the two operate to be compared。Uh，so that means if uh in your EQ uh instruction，if the two offense to be compared，they are actually equal，so after you perform a subtraction，the result is equal to zero，so this zero line of output will be uh activated，so equal to one。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 104,
+      "paragraphIndices": [
+        104
+      ],
+      "segmentIndex": 51
+    },
+    "ai301-r07-s053": {
+      "recording": "ai301-r07",
+      "start": "34:35",
+      "end": "35:36",
+      "excerpt": "Uh，then you get both ones in the two input of this end day，and finally you can choose one for this and choosing one meaning that uh you are choosing the branching target to be the next PC。So this is how we can implement the. Control for branching，so this uh end gate uh receives two inputs，so first at least uh the control，the main control unit should uh notify that we are performing a branching，and secondly we should look at whether the branching condition is satisfied or not，and that is. Indicated by this zero outputs, so only when both are satisfied we can go to the branching target instead of PC plus four.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 106,
+      "paragraphIndices": [
+        106
+      ],
+      "segmentIndex": 52
+    },
+    "ai301-r07-s054": {
+      "recording": "ai301-r07",
+      "start": "35:53",
+      "end": "36:32",
+      "excerpt": "Uh，so uh，in conclusion，this is uh，all the values of the control lines we should。And again, we use an X to denote any item that we don't care. 小。So here for uh star work and also branching, uh we put an x for the register destination and also the. memory to register. 啊，so why we don't care about.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 108,
+      "paragraphIndices": [
+        108
+      ],
+      "segmentIndex": 53
+    },
+    "ai301-r07-s055": {
+      "recording": "ai301-r07",
+      "start": "36:33",
+      "end": "37:07",
+      "excerpt": "Why we don't care about these two control banners? The register destination，it is a manufacturer place here，so choosing in between RT and RD to be written，and the memory to register that is this one，so choosing when。We are going to write a piece of data from the memory or the results from the ALU into the register.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 110,
+      "paragraphIndices": [
+        110
+      ],
+      "segmentIndex": 54
+    },
+    "ai301-r07-s056": {
+      "recording": "ai301-r07",
+      "start": "37:07",
+      "end": "37:34",
+      "excerpt": "So for star work and also EQ, we don't care about the values of these two controls. that is because. Why so actually uh uh the answer uh already lies in this table also.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 112,
+      "paragraphIndices": [
+        112
+      ],
+      "segmentIndex": 55
+    },
+    "ai301-r07-s057": {
+      "recording": "ai301-r07",
+      "start": "37:35",
+      "end": "37:59",
+      "excerpt": "呃，because. 呃。So because the writing operation of register file is disabled in the first place, so you can see that for these two we have zero for register right, so this store.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 114,
+      "paragraphIndices": [
+        114
+      ],
+      "segmentIndex": 56
+    },
+    "ai301-r07-s058": {
+      "recording": "ai301-r07",
+      "start": "38:00",
+      "end": "38:36",
+      "excerpt": "Operation and also branching operation，don't allow any modification to the register file，right？So no matter what you have for this register destination，and no matter which data you choose to write back，they all have no effect because we don't allow any modification to the register file。So make sense. 压力发生。嗯。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 116,
+      "paragraphIndices": [
+        116
+      ],
+      "segmentIndex": 57
+    },
+    "ai301-r07-s059": {
+      "recording": "ai301-r07",
+      "start": "38:50",
+      "end": "39:34",
+      "excerpt": "呃，and finally we are going to add the jumping operation into our big picture，because the last，呃，在last illustration。Uh，we just pretend that uh there's no jumping，uh，so so for the jumping we will need an extra control signal，uh，decoded from the opcode，and also you can imagine that uh there should be some extra control lines，uh，around the program counter。Because the jumping，it is also kind of modifying the next the next instruction to be executed。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 118,
+      "paragraphIndices": [
+        118
+      ],
+      "segmentIndex": 58
+    },
+    "ai301-r07-s060": {
+      "recording": "ai301-r07",
+      "start": "39:35",
+      "end": "40:12",
+      "excerpt": "Uh，And if you still remember，Uh，this is done by contamination of Uh four bits and another twenty eight bits。So this is uh what we are going to do to add uh jumping into the big picture so uh you can see that uh all the other they are. Leader thing as previous, uh, but we add a new control line for jumping, and that is connected to uh this one.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 120,
+      "paragraphIndices": [
+        120
+      ],
+      "segmentIndex": 59
+    },
+    "ai301-r07-s061": {
+      "recording": "ai301-r07",
+      "start": "40:12",
+      "end": "40:28",
+      "excerpt": "So uh why we need to have an end gate here for branching, but uh nothing here for jumping. Because branching is conditional, right? But jumping is unconditional.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 122,
+      "paragraphIndices": [
+        122
+      ],
+      "segmentIndex": 60
+    },
+    "ai301-r07-s062": {
+      "recording": "ai301-r07",
+      "start": "40:29",
+      "end": "40:54",
+      "excerpt": "So that means for the branching operation, although you have one for this branching operation, you still need to check the condition. So we need an end gate that is for checking the branching condition coming out. Here but for jumping because it is unconditional so as long as you have a one.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 124,
+      "paragraphIndices": [
+        124
+      ],
+      "segmentIndex": 61
+    },
+    "ai301-r07-s063": {
+      "recording": "ai301-r07",
+      "start": "40:55",
+      "end": "41:23",
+      "excerpt": "Coming from this bank control，then you just choose one in this all class。And uh uh what is the data source of this one in in this manufacturer uh we can uh check that it is actually uh concatenation of two parts and the the. Lower parts, the lower twenty-eight bits, it is actually.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 126,
+      "paragraphIndices": [
+        126
+      ],
+      "segmentIndex": 62
+    },
+    "ai301-r07-s064": {
+      "recording": "ai301-r07",
+      "start": "41:25",
+      "end": "41:59",
+      "excerpt": "Uh，the lower26 bit of address，and then shifting left for two bits to form the lower part of this uh address，and the upper part of this address，Uh，it is just extracting the. Most significant four bits from the PC plus four. 啊，so after the concatenation in this in this line connected to this.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 128,
+      "paragraphIndices": [
+        128
+      ],
+      "segmentIndex": 63
+    },
+    "ai301-r07-s065": {
+      "recording": "ai301-r07",
+      "start": "42:00",
+      "end": "42:42",
+      "excerpt": "啊，one option in the manufacturer，this one is actually the jumping target，right？And then the0 option of this multiplier is simply the result coming out from the previous multiplier, so it is either the sequential Linux instruction that is PC plus4, or it could be the branching target. So I do not care about what is happening here, so if it is not a jumping. I just take anything coming out from this three years forecast.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 130,
+      "paragraphIndices": [
+        130
+      ],
+      "segmentIndex": 64
+    },
+    "ai301-r07-s066": {
+      "recording": "ai301-r07",
+      "start": "42:49",
+      "end": "43:06",
+      "excerpt": "呃，and again because for呃jumping，呃nothing to do with register，and also nothing to do with the呃data memory，so。Uh，all the controls here are disabled，so equal to zero。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 132,
+      "paragraphIndices": [
+        132
+      ],
+      "segmentIndex": 65
+    },
+    "ai301-r07-s067": {
+      "recording": "ai301-r07",
+      "start": "43:16",
+      "end": "43:53",
+      "excerpt": "一。Uh，so，although this kind of uh single cycle approach，it is uh quite simple because uh，but uh，it is actually not widely applied because it is very slow。Uh，we know that the clock cycle must have the same length for every instruction。So the slowest instruction is the one that determines the longest path, and this is called the instruction critical path.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 134,
+      "paragraphIndices": [
+        134
+      ],
+      "segmentIndex": 66
+    },
+    "ai301-r07-s068": {
+      "recording": "ai301-r07",
+      "start": "43:53",
+      "end": "44:11",
+      "excerpt": "提供。呃，when we try to calculate the cycle time，呃，we assume that. Some of the delays in the circuit can be omitted. For example, we assume that.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 136,
+      "paragraphIndices": [
+        136
+      ],
+      "segmentIndex": 67
+    },
+    "ai301-r07-s069": {
+      "recording": "ai301-r07",
+      "start": "44:11",
+      "end": "44:37",
+      "excerpt": "The execution of uh manufacturers and control units, so bank control unit, uh ALU control unit, and also the operation of sign extension or shifting that by two positions. Uh, for these kind of operations and execution, we assume that they only consume uh. 啊，要拍。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 138,
+      "paragraphIndices": [
+        138
+      ],
+      "segmentIndex": 68
+    },
+    "ai301-r07-s070": {
+      "recording": "ai301-r07",
+      "start": "44:38",
+      "end": "45:20",
+      "excerpt": "Uh, but for these three kinds of uh operation. Your execution time cannot be omitted，so uh the most time-consuming part is for accessing the memory，so uh the matter is for. Instruction and for data memory，as long as you want to do something with the memory，then it takes a lot of time。So let's say it is four nanoseconds for instruction and data memory access。And assume that so any operation.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 140,
+      "paragraphIndices": [
+        140
+      ],
+      "segmentIndex": 69
+    },
+    "ai301-r07-s071": {
+      "recording": "ai301-r07",
+      "start": "45:21",
+      "end": "45:55",
+      "excerpt": "Using ALU uh takes uh two units uh two nanoseconds. And then assume that accessing the register file is relatively faster, so let's say it only takes one unit. 啊，so based on these kind of assumptions，this is what we actually have，so you can see that，呃，the most。THE MOST.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 142,
+      "paragraphIndices": [
+        142
+      ],
+      "segmentIndex": 70
+    },
+    "ai301-r07-s072": {
+      "recording": "ai301-r07",
+      "start": "45:56",
+      "end": "46:31",
+      "excerpt": "Time-consuming instruction is loading. Because it needs to go through each hardware component in the whole circuit, so first reading read from the instruction memory, but that is the same for all instructions, so four units and then. 呃，read from the register register reading，呃，because we need to read呃，RS from the memory。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 144,
+      "paragraphIndices": [
+        144
+      ],
+      "segmentIndex": 71
+    },
+    "ai301-r07-s073": {
+      "recording": "ai301-r07",
+      "start": "46:32",
+      "end": "47:11",
+      "excerpt": "Uh，The thing is that actually for loading we only read uh RS from the memory，but it is not faster than the reading in DEQ store and our time。Uh，So for our time store and DEQ，we know that we are actually reading RS and RT。From the register file right啊。But for loading only we are as from the register file but uh in terms of time consumption the cost is the same.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 146,
+      "paragraphIndices": [
+        146
+      ],
+      "segmentIndex": 72
+    },
+    "ai301-r07-s074": {
+      "recording": "ai301-r07",
+      "start": "47:12",
+      "end": "47:44",
+      "excerpt": "that is because. That is because the reading of the two register in the register file, they can actually happening at the same time, so simultaneously right? So although for archive storing and BQ, they are reading one more register from the file, but it does not take any extra time compared with low work because the two readings they can happen.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 148,
+      "paragraphIndices": [
+        148
+      ],
+      "segmentIndex": 73
+    },
+    "ai301-r07-s075": {
+      "recording": "ai301-r07",
+      "start": "47:45",
+      "end": "48:38",
+      "excerpt": "Together and then for the AI operation the load word also has this part because uh it needs to apply the ALU to calculate the target address inside the. Memory，so this part is also included，and then also it's touch the data memory，it go to the target address to take out the piece of data from the data memory，so this one only，this one also counts。Uh, and finally, uh, that is the only difference of loading and storing is that for loading there is one more operation that is right back to the register, so uh.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 150,
+      "paragraphIndices": [
+        150
+      ],
+      "segmentIndex": 74
+    },
+    "ai301-r07-s076": {
+      "recording": "ai301-r07",
+      "start": "48:39",
+      "end": "49:33",
+      "excerpt": "So an extra one here you can see that for all the possible steps. Uh in the in the in the whole cycle uh the loading need to uh do something for each of the. Uh，stages，so that's the reason why it is the most time-consuming uh instruction，and that is actually uh determining the critical path of this uh single cycle approach。So the critical path is determined by this loading because it is the slowest one among all the instructions。啊，ok，let's have a ten minutes break。对。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 152,
+      "paragraphIndices": [
+        152
+      ],
+      "segmentIndex": 75
+    },
+    "ai301-r07-s081": {
+      "recording": "ai301-r07",
+      "start": "59:50",
+      "end": "01:00:27",
+      "excerpt": "嗯，OK，so，because clock period is determined by longest delay，so，say that critical path。It is the load instruction because for this load instruction, it must go through all the components, all the stages in the whole workflow. So from instruction memory to be registered to AI computation to data memory and finally right back to register. So for all the steps here.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 162,
+      "paragraphIndices": [
+        162
+      ],
+      "segmentIndex": 80
+    },
+    "ai301-r07-s082": {
+      "recording": "ai301-r07",
+      "start": "01:00:27",
+      "end": "01:01:23",
+      "excerpt": "Uh，we must do something for loading instruction，so this makes it the critical path，and it is not uh feasible to vary the period for different instructions，so uh you can see that for the jumping instruction，the the total cost in terms of time is quite short，so only uh four nanoseconds for the instruction memory。ACCESS. But we cannot say that I just design a kind of short cycle for the jump only, and then I want to design a medium cycle time for EQ and R type, and then for loading and storing, I am going to design.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 164,
+      "paragraphIndices": [
+        164
+      ],
+      "segmentIndex": 81
+    },
+    "ai301-r07-s083": {
+      "recording": "ai301-r07",
+      "start": "01:01:24",
+      "end": "01:02:27",
+      "excerpt": "Uh，A longer clock cycle，so uh that's not feasible，and so we cannot have different uh lengths of the clock period for different instructions，although uh the actual cost they take uh is quite different，they need to share the same clock period。Uh, and this is actually uh violating one of our design principles, saying that uh we want to make the common case fast. Uh, because the loading operations it is actually not uh quite common but all the other instructions uh archive branching uh sorry so all the other types of instruction must wait for this longest loading although it is not that common uh it determines the longest path.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 166,
+      "paragraphIndices": [
+        166
+      ],
+      "segmentIndex": 82
+    },
+    "ai301-r07-s084": {
+      "recording": "ai301-r07",
+      "start": "01:02:28",
+      "end": "01:02:59",
+      "excerpt": "SO. Uh，so finally let's have a brief conclusion about the disadvantage and uh advantage of this kind of uh single cycle design。So first，uh，advantage of course，uh，it is simple and easy to understand。Then，uh，what about the drawbacks？Uh，so from what we have just discussed，we can see that uh this kind of single science。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 168,
+      "paragraphIndices": [
+        168
+      ],
+      "segmentIndex": 83
+    },
+    "ai301-r07-s085": {
+      "recording": "ai301-r07",
+      "start": "01:03:00",
+      "end": "01:03:42",
+      "excerpt": "Design actually use the clock cycle quite inefficiently because it must be designed to accommodate the slowest instruction, right? And this is especially problematic if you have more complex instructions such as floating-point multiplications or those kind of things. So if you want to finish those complex instructions within one clock cycle, then as a result you should design a clock cycle that is quite long, and all the other instructions has to wait for the longest one.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 170,
+      "paragraphIndices": [
+        170
+      ],
+      "segmentIndex": 84
+    },
+    "ai301-r07-s086": {
+      "recording": "ai301-r07",
+      "start": "01:03:44",
+      "end": "01:04:16",
+      "excerpt": "And also, it's wasteful of area because some of the functional units they must be duplicated because they cannot be shared during a single cycle. Uh，so some part of the hardware units they must have uh several copies。啊to support. Uh，finishing all this execution within one cycle。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 172,
+      "paragraphIndices": [
+        172
+      ],
+      "segmentIndex": 85
+    },
+    "ai301-r07-s087": {
+      "recording": "ai301-r07",
+      "start": "01:04:51",
+      "end": "01:05:20",
+      "excerpt": "Uh，so in real case，Uh，very often we do not adopt the single cycle，Uh。way of. Uh，execution，Uh，instead we use，Uh，some kind of，Uh，pipelining to accelerate the execution，And，Uh，arrange the timing of different steps inside the instruction，Uh。嗯。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 174,
+      "paragraphIndices": [
+        174
+      ],
+      "segmentIndex": 86
+    },
+    "ai301-r07-s088": {
+      "recording": "ai301-r07",
+      "start": "01:05:22",
+      "end": "01:05:48",
+      "excerpt": "Uh，so first let's have a look at this uh pipeline analogy。So uh，let's say you are now uh trying to do some uh washing for a lot of uh dirty clothes，uh，and you can divide this uh whole workflow into four steps，let's say。And the first step is to place.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 176,
+      "paragraphIndices": [
+        176
+      ],
+      "segmentIndex": 87
+    },
+    "ai301-r07-s089": {
+      "recording": "ai301-r07",
+      "start": "01:05:48",
+      "end": "01:06:06",
+      "excerpt": "One dirty load of clothes inside the washing machine。That's the first step，and the second step，when the washing machine is finished，you take. Take the clothes out of it and put the wet clothes into the dryer.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 178,
+      "paragraphIndices": [
+        178
+      ],
+      "segmentIndex": 88
+    },
+    "ai301-r07-s090": {
+      "recording": "ai301-r07",
+      "start": "01:06:07",
+      "end": "01:06:26",
+      "excerpt": "That is the second step. And for the third step, when the dryer is finished, take out the clothes and then fold them. And the final step so after you fold the clothes.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 180,
+      "paragraphIndices": [
+        180
+      ],
+      "segmentIndex": 89
+    },
+    "ai301-r07-s091": {
+      "recording": "ai301-r07",
+      "start": "01:06:27",
+      "end": "01:06:56",
+      "excerpt": "Uh，you ask another person help you put the clothes into the uh wardrobe。So let's simplify the whole workflow of this washing into these four steps. And this in this illustration, this upper image is actually doing.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 182,
+      "paragraphIndices": [
+        182
+      ],
+      "segmentIndex": 90
+    },
+    "ai301-r07-s092": {
+      "recording": "ai301-r07",
+      "start": "01:06:56",
+      "end": "01:07:36",
+      "excerpt": "All the cycles sequentially, so that means if you have four loads of dirty clothes. 啊，so starting from uh six PM，you first start with the first load of thirty clothes and uh. You do all the four steps I just mentioned, and after the last step is finished, so after you put all the clothes for the first load into the wardrobe, then you start the second load.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 184,
+      "paragraphIndices": [
+        184
+      ],
+      "segmentIndex": 91
+    },
+    "ai301-r07-s093": {
+      "recording": "ai301-r07",
+      "start": "01:07:39",
+      "end": "01:08:07",
+      "excerpt": "Uh，this is actually wasting time，because uh，at next day，uh，at uh，from uh six PM，uh，to。那三个小数点。From starting from six PM this washing machine is occupied.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 186,
+      "paragraphIndices": [
+        186
+      ],
+      "segmentIndex": 92
+    },
+    "ai301-r07-s094": {
+      "recording": "ai301-r07",
+      "start": "01:08:07",
+      "end": "01:08:38",
+      "excerpt": "But what about starting from half after six PM or let's say six point five? So actually at this moment, this washing machine is idle, so no one is using this washing machine. And also for all these blank space here, let's say starting from seven o'clock, the dryer is also idle, but no one is using it.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 188,
+      "paragraphIndices": [
+        188
+      ],
+      "segmentIndex": 93
+    },
+    "ai301-r07-s095": {
+      "recording": "ai301-r07",
+      "start": "01:08:39",
+      "end": "01:09:19",
+      "excerpt": "So if you follow this workflow to finish the washing of all the four loads, then you need to finish it. Up to two AM on the next day. So really a waste of time. And. What we are going to do if we use the principle of pipeline? So as you can see here, for the first load of close it still starts at six PM, and after all the four steps it will finish at eight o'clock.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 190,
+      "paragraphIndices": [
+        190
+      ],
+      "segmentIndex": 94
+    },
+    "ai301-r07-s096": {
+      "recording": "ai301-r07",
+      "start": "01:09:20",
+      "end": "01:10:25",
+      "excerpt": "But we try to start the second load of dirty clothes uh at this uh six point high uh six point five so uh half past six because uh at this moment uh at half past six this washing machine is already idle so we can put the second dirty load into the washing machine. And starting from seven o'clock, this fire is also idle, so we can take out the wet clothes from washing machine and put into the dryer for the second goal. So you can see that following this kind of pipelining principle, we can finish washing this four loads of dirty clothes actually before10 o'clock. So this would help save a lot of time if you compared with this one.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 192,
+      "paragraphIndices": [
+        192
+      ],
+      "segmentIndex": 95
+    },
+    "ai301-r07-s097": {
+      "recording": "ai301-r07",
+      "start": "01:10:31",
+      "end": "01:10:59",
+      "excerpt": "But the thing is that pipeline actually would not decrease the time to complete one load of library. That means no matter you are doing this or this one. Uh，it will take you two hours to finish one load of watching one load of their clothes。So，Uh，using pipeline。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 194,
+      "paragraphIndices": [
+        194
+      ],
+      "segmentIndex": 96
+    },
+    "ai301-r07-s098": {
+      "recording": "ai301-r07",
+      "start": "01:11:00",
+      "end": "01:11:38",
+      "excerpt": "Would not help you to decrease the time for complete one load of laundry, but the advantage is actually it can help you to finish, it can help you to finish a larger number of loads within a certain amount of time. So that is actually discussing the throughput. The throughput means that how many amount of work of work can you finish within a certain amount of time.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 196,
+      "paragraphIndices": [
+        196
+      ],
+      "segmentIndex": 97
+    },
+    "ai301-r07-s099": {
+      "recording": "ai301-r07",
+      "start": "01:11:39",
+      "end": "01:12:19",
+      "excerpt": "Uh, so let's say for this one, uh, in this eight hours starting from six PM to two AM, you can only finish uh four lots of verticals but using uh pipeline inside this uh eight hours you can. Uh, you can finish much more right? So, so when you have uh many loads of laundry to do, uh more loads can be finished per hour if you try to put everything working in parallel.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 198,
+      "paragraphIndices": [
+        198
+      ],
+      "segmentIndex": 98
+    },
+    "ai301-r07-s100": {
+      "recording": "ai301-r07",
+      "start": "01:12:20",
+      "end": "01:13:12",
+      "excerpt": "And uh this improvement in throughput uh of course decrease the total time to complete the whole work and uh also. Uh, here we only show uh four loads of dirty clothes. And you can imagine that if the amount of your work is still is keep increasing, then you can witness the advantage of this kind of pipeline more obviously. So I mean. If you have let's say uh forty or four hundred thirty loads to finish then you can witness the advantage brought by this high ranking uh more obviously.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 200,
+      "paragraphIndices": [
+        200
+      ],
+      "segmentIndex": 99
+    },
+    "ai301-r07-s101": {
+      "recording": "ai301-r07",
+      "start": "01:13:22",
+      "end": "01:13:59",
+      "excerpt": "Uh，so in this case with only uh four loads，the the speed up uh you can calculate as uh two point three uh because uh this this is calculated by eight divided by three point five，so this eight is coming from this uh sequential time for finishing four loads right，and this three point five is coming from the. The time required to finish portals after pipeline so eight divided by three point five around two point three and then.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 202,
+      "paragraphIndices": [
+        202
+      ],
+      "segmentIndex": 100
+    },
+    "ai301-r07-s102": {
+      "recording": "ai301-r07",
+      "start": "01:14:00",
+      "end": "01:14:43",
+      "excerpt": "If you have, let's say, more, a larger number of work to finish, and then for twenty thirty loads of clothes, if you want to do it sequentially, it takes, let's say, forty hours. But using this piping principle, only eleven point five. So uh this time the speed up uh ratio becomes uh something around three point five so you can see that when the amount of your work is increasing you can get a larger speed up about five five minutes.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 204,
+      "paragraphIndices": [
+        204
+      ],
+      "segmentIndex": 101
+    },
+    "ai301-r07-s103": {
+      "recording": "ai301-r07",
+      "start": "01:14:46",
+      "end": "01:15:27",
+      "excerpt": "And under ideal conditions, so if you have infinitely amounts of work to do, so ideally the speed up what by pipeline should be equal. To the number of pipeline stages, so that is if I keep increasing this value from four to twenty to two hundred two thousand and infinitely many, so ideally you can get this speed up value very close to. four uh because uh we have uh four stages here.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 206,
+      "paragraphIndices": [
+        206
+      ],
+      "segmentIndex": 102
+    },
+    "ai301-r07-s104": {
+      "recording": "ai301-r07",
+      "start": "01:15:34",
+      "end": "01:15:59",
+      "excerpt": "And let's go back from the analogy to our low instruction. So previously, I just mentioned that low instruction is consumed the most amount of time because it has to do something in each of the stages. In the execution.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 208,
+      "paragraphIndices": [
+        208
+      ],
+      "segmentIndex": 103
+    },
+    "ai301-r07-s105": {
+      "recording": "ai301-r07",
+      "start": "01:16:01",
+      "end": "01:16:40",
+      "excerpt": "Uh，so let's now uh officially assign some names to those uh stages of loading，uh，let's call the first one to be uh I F，so uh instruction fetching，uh，this means uh take out uh thirty two bit instruction from the memory，that is the first stage，uh，在 this。high line and the second uh I D that is for instruction equally and also uh registering. 啊，so the two are combined into the second stage。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 210,
+      "paragraphIndices": [
+        210
+      ],
+      "segmentIndex": 104
+    },
+    "ai301-r07-s106": {
+      "recording": "ai301-r07",
+      "start": "01:16:40",
+      "end": "01:17:10",
+      "excerpt": "And for the third one, uh EX, that is for uh execution, uh so basically the operation of ALU that is happening in the third stage. AND THE FOURTH STAGE. Uh，is to uh operate with the memory，to uh to read or write。Uh, in the data memory.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 212,
+      "paragraphIndices": [
+        212
+      ],
+      "segmentIndex": 105
+    },
+    "ai301-r07-s107": {
+      "recording": "ai301-r07",
+      "start": "01:17:10",
+      "end": "01:17:56",
+      "excerpt": "So that is the fourth stage, and the last stage is to write uh WB stands for write back, so uh write the result back to the register that could be either the result of ALU or a piece of data from the memory, so. No matter what is the source of this piece of data, in this right back you put the study to bit data into the destination inside the register file, so. 啊，these are the five stages for long instructions。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 214,
+      "paragraphIndices": [
+        214
+      ],
+      "segmentIndex": 106
+    },
+    "ai301-r07-s108": {
+      "recording": "ai301-r07",
+      "start": "01:18:18",
+      "end": "01:19:04",
+      "excerpt": "Uh and uh next next. Uh，do some calculation about uh how the high finding can quantify quantitatively uh improve the performance。So uh uh in this uh following calculation，let's assume that the time for uh register read or write will take you. 一百啊people seconds啊and for all the other stages啊those take you啊two hundred people seconds for each啊and next one we are going to see啊how. How much improvement can we get from the pipeline?",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 216,
+      "paragraphIndices": [
+        216
+      ],
+      "segmentIndex": 107
+    },
+    "ai301-r07-s109": {
+      "recording": "ai301-r07",
+      "start": "01:19:11",
+      "end": "01:19:46",
+      "excerpt": "Uh, so again we are using this uh lower uh instruction to calculate because uh this is the one that consume most of the time. So uh if you add up all these components and sum up to uh eight hundred uh people seconds. And uh for software and our format EQ they are seven hundred six hundred and five hundred respectively and uh let's.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 218,
+      "paragraphIndices": [
+        218
+      ],
+      "segmentIndex": 108
+    },
+    "ai301-r07-s110": {
+      "recording": "ai301-r07",
+      "start": "01:19:47",
+      "end": "01:20:29",
+      "excerpt": "呃，follow this呃，eight hundred people seconds，that is given by呃，sequentially executing three呃，L W instructions，so。Uh，if you perform them in this uh sequential manner，each would take uh eight hundred，so。And in the lower part of this illustration, you can see that we split this800 people second cycle into five stages.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 220,
+      "paragraphIndices": [
+        220
+      ],
+      "segmentIndex": 109
+    },
+    "ai301-r07-s111": {
+      "recording": "ai301-r07",
+      "start": "01:20:30",
+      "end": "01:21:44",
+      "excerpt": "And each stage takes uh two hundred people second uh that is because the time for a pipeline stage is limited by the slowest resource uh so. So for registering or write it only takes a hundred people second but we cannot define the length of this pipeline stage as a hundred. Uh, that is similar to what we have done for waiting for the slowest instruction. And uh, in this case, when you need to determine the time for a stage, you need to wait for the slowest resource. So because uh because you need two hundred for let's say uh instruction memory data memory and uh alu because you need two hundred people setting for these slower hardware components so you can only define the time period for a pipeline stage as two hundred instead of one hundred.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 222,
+      "paragraphIndices": [
+        222
+      ],
+      "segmentIndex": 110
+    },
+    "ai301-r07-s112": {
+      "recording": "ai301-r07",
+      "start": "01:21:53",
+      "end": "01:22:51",
+      "excerpt": "Uh，so as a result，although uh we assume that for regular reading and writing，we can finish it。Uh，just using a hundred people seconds，we still need to define this pipeline stage as two hundred and。Uh，so uh，based on the principle of pipeline，you can see that when the first uh low word instruction is at the second stage，Uh，that is register reading，we simply start the second low word instruction，so start the first stage if。Uh，At the same time，when the first instruction is at the same stage，and we start the third instruction when the first is at the third stage，so uh following this manner。一定。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 224,
+      "paragraphIndices": [
+        224
+      ],
+      "segmentIndex": 111
+    },
+    "ai301-r07-s113": {
+      "recording": "ai301-r07",
+      "start": "01:23:00",
+      "end": "01:23:45",
+      "excerpt": "Uh，so you can see that here is actually uh fourfold speed up，Uh，this four is calculated by uh eight hundred divided by two hundred，Uh，so here is a fourfold speed up on the average time between instructions，because originally we need uh eight hundred，but now we only need uh two hundred。But ideally for this case we use a five stage pipeline right so ideally we should have a five fold speed up that means this number should be one hundred and sixty.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 226,
+      "paragraphIndices": [
+        226
+      ],
+      "segmentIndex": 112
+    },
+    "ai301-r07-s114": {
+      "recording": "ai301-r07",
+      "start": "01:23:46",
+      "end": "01:24:10",
+      "excerpt": "Right，but the actual improvement cannot reach this ideal number. that is because the status are not perfectly balanced so uh if you can. have a five stage pipeline and each of the stage takes the same amount of time let's say you have a eight hundred.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 228,
+      "paragraphIndices": [
+        228
+      ],
+      "segmentIndex": 113
+    },
+    "ai301-r07-s115": {
+      "recording": "ai301-r07",
+      "start": "01:24:11",
+      "end": "01:24:50",
+      "excerpt": "Pipeline and you split it into five stages, each of the stage uh takes160 picoseconds. Then in that kind of ideal case, you can get some kind of fine for speed up, so reduce the time needed for one instruction all the way down to160. But here we can only uh retrieve uh we can only gain this uh fourfold speed up that is because we cannot uh reach the ideal case.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 230,
+      "paragraphIndices": [
+        230
+      ],
+      "segmentIndex": 114
+    },
+    "ai301-r07-s116": {
+      "recording": "ai301-r07",
+      "start": "01:24:51",
+      "end": "01:25:08",
+      "excerpt": "Uh, because. The five stages we are having here, they are not bad. Not balance means that some of the stages they take longer time and some other they take shorter.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 232,
+      "paragraphIndices": [
+        232
+      ],
+      "segmentIndex": 115
+    },
+    "ai301-r07-s117": {
+      "recording": "ai301-r07",
+      "start": "01:25:08",
+      "end": "01:25:27",
+      "excerpt": "So that is called not balance. And in this not balance case we need to wait for the slowest one. So it becomes two hundred not one hundred and sixty. 还是着急的。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 234,
+      "paragraphIndices": [
+        234
+      ],
+      "segmentIndex": 116
+    },
+    "ai301-r07-s118": {
+      "recording": "ai301-r07",
+      "start": "01:25:34",
+      "end": "01:25:59",
+      "excerpt": "So under ideal conditions and also with a large number of instructions, we can have this kind of equation. So. Ideal conditions, uh, meaning that, uh, all the stages you have in this pipeline they are balanced, so they take the same time.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 236,
+      "paragraphIndices": [
+        236
+      ],
+      "segmentIndex": 117
+    },
+    "ai301-r07-s119": {
+      "recording": "ai301-r07",
+      "start": "01:26:01",
+      "end": "01:26:40",
+      "excerpt": "And also with a large number of instructions, meaning that you have infinitely many work to finish. So if you only have four or five or ten instructions, you cannot. Observe an obvious improvement brought by pipeline only when you are looking at a greater scope, so looking at a huge number of instructions and under ideal conditions, you can derive this equation that the time between instructions.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 238,
+      "paragraphIndices": [
+        238
+      ],
+      "segmentIndex": 118
+    },
+    "ai301-r07-s120": {
+      "recording": "ai301-r07",
+      "start": "01:26:41",
+      "end": "01:27:04",
+      "excerpt": "Under pipelining can be calculated using the original time between instructions divided by the number of stages. So in our example just now, it should be. eight hundred. Divided by five，so equal to one hundred and sixty。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 240,
+      "paragraphIndices": [
+        240
+      ],
+      "segmentIndex": 119
+    },
+    "ai301-r07-s121": {
+      "recording": "ai301-r07",
+      "start": "01:27:04",
+      "end": "01:27:40",
+      "excerpt": "Uh，but that is not the case，because uh first it is not balanced，and secondly uh we only have a few instructions to take into account。嗯，so uh，if the design of if the split of the stages is not balanced。Then the time per instruction will exceed the minimum possible and of course the speed up will be less than the number of pipeline stages that is the real case we have seen just now.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 242,
+      "paragraphIndices": [
+        242
+      ],
+      "segmentIndex": 120
+    },
+    "ai301-r07-s122": {
+      "recording": "ai301-r07",
+      "start": "01:27:43",
+      "end": "01:28:39",
+      "excerpt": "Uh，and also，Uh，this is the reason why we limit the number of stages into five，so I F，Uh，I D，Uh，E X，M E，N，and W B，so we limit the number。Of our pipeline stages as five because if you try to have too many pipeline stages, of course first it is very complex and secondly it is harder for you to keep the balance between all these pipeline stages. So if you have more stages larger than five, then it is even harder for you to balance the time consumption of different stages because although we only have five, you cannot balance it.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 244,
+      "paragraphIndices": [
+        244
+      ],
+      "segmentIndex": 121
+    },
+    "ai301-r07-s123": {
+      "recording": "ai301-r07",
+      "start": "01:28:40",
+      "end": "01:29:05",
+      "excerpt": "Some take100 and some take200, and if this number of stages still increase. It would be even harder to keep this balance。啊，so we limit the number of stages into five。啊。And again，Uh，you should know that。的。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 246,
+      "paragraphIndices": [
+        246
+      ],
+      "segmentIndex": 122
+    },
+    "ai301-r07-s124": {
+      "recording": "ai301-r07",
+      "start": "01:29:06",
+      "end": "01:29:59",
+      "excerpt": "The pipelining is actually not decreasing the latency, because when we talk about latency, that is discussing the time for each instruction, and actually the time for each instruction that is still800 before and after pipelining. Uh，when the target of our discussion is a single instruction，the time required to finish that instruction does not change before and after taiwan，Uh，but the thing is that it increase the throughput。Uh because the super comes how many results can you get within a certain time unit so uh this is actually discussing at a larger scope so.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 248,
+      "paragraphIndices": [
+        248
+      ],
+      "segmentIndex": 123
+    },
+    "ai301-r07-s125": {
+      "recording": "ai301-r07",
+      "start": "01:30:00",
+      "end": "01:30:25",
+      "excerpt": "You look at a certain amount of time, let's say twenty-four hours, even longer. So within this certain amount of time, how many units of work can you finish? That is about to... So the principle of high finding is indeed increasing the throughput, not the. If you look at the latency, it is still a hundred.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 250,
+      "paragraphIndices": [
+        250
+      ],
+      "segmentIndex": 124
+    },
+    "ai301-r07-s126": {
+      "recording": "ai301-r07",
+      "start": "01:30:48",
+      "end": "01:31:10",
+      "excerpt": "嗯，呃，so the maps instructions that architecture，呃，actually have some kind of，呃，property that is，呃，specialy designed for。Or piping or say this kind of properties they are good for piping principle. 一定。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 252,
+      "paragraphIndices": [
+        252
+      ],
+      "segmentIndex": 125
+    },
+    "ai301-r07-s127": {
+      "recording": "ai301-r07",
+      "start": "01:31:15",
+      "end": "01:31:43",
+      "excerpt": "The first one is that all the instructions are32 bits. This kind of fixed lengths instruction can make it much easier to fetch the instructions in the first stage and to hold those in the second stage. Uh, you can imagine that if you have uh.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 254,
+      "paragraphIndices": [
+        254
+      ],
+      "segmentIndex": 126
+    },
+    "ai301-r07-s128": {
+      "recording": "ai301-r07",
+      "start": "01:31:43",
+      "end": "01:32:08",
+      "excerpt": "Variable lengths of instructions，so for some of the instructions they are thirty two bits，and for some others uh they are sixty four or even longer，then what you're going to do for fetching and uh encoding。对。So the complexity of the design becomes much higher.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 256,
+      "paragraphIndices": [
+        256
+      ],
+      "segmentIndex": 127
+    },
+    "ai301-r07-s129": {
+      "recording": "ai301-r07",
+      "start": "01:32:09",
+      "end": "01:32:49",
+      "excerpt": "Uh，so that is the first good property。FOR HIGHLY. So much easier fetching and decoding. Uh，and the second thing is that uh we only have three instruction formats，so archive，uh，iPad and J type，Uh，and also regular instruction formats，Uh，that means that say the. Up hold they appear at the most significant six bits and R S they appear.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 258,
+      "paragraphIndices": [
+        258
+      ],
+      "segmentIndex": 128
+    },
+    "ai301-r07-s130": {
+      "recording": "ai301-r07",
+      "start": "01:32:49",
+      "end": "01:33:15",
+      "excerpt": "At the same location in the third stupid and immediate the field for immediate value they. appear in the lower sixty bits啊，so so these kind of呃location and split of the呃instruction fields，they are kind of呃regular。嗯嗯。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 260,
+      "paragraphIndices": [
+        260
+      ],
+      "segmentIndex": 129
+    },
+    "ai301-r07-s131": {
+      "recording": "ai301-r07",
+      "start": "01:33:24",
+      "end": "01:33:34",
+      "excerpt": "Uh，so what are the possible advantages brought by uh this kind of regular moments，so。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 262,
+      "paragraphIndices": [
+        262
+      ],
+      "segmentIndex": 130
+    },
+    "ai301-r07-s132": {
+      "recording": "ai301-r07",
+      "start": "01:34:24",
+      "end": "01:35:07",
+      "excerpt": "Uh，Uh，so what are the possible advantage brought by this kind of regular formatting？Uh，we know that in the second pipeline stage，Uh，that is，Uh，I D，we are actually performing two operations，Uh，at the same time。Uh，the first one is to read the register file，and the second one is to uh decode，so determine what type of instruction was that。So uh so in the I D stage we also uh finish the reading of register.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 264,
+      "paragraphIndices": [
+        264
+      ],
+      "segmentIndex": 131
+    },
+    "ai301-r07-s133": {
+      "recording": "ai301-r07",
+      "start": "01:35:11",
+      "end": "01:35:53",
+      "excerpt": "And if the instruction formats they are not regular or say not semantically then we might need to split the second stage so in that case we cannot finish the reading of register and the decoding of instruction within the same stage. And as a result, we may need to have six pipeline stages. But because for all the instructions, we know that what are the upper six bits for, and what are the locations for the register to be read from.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 266,
+      "paragraphIndices": [
+        266
+      ],
+      "segmentIndex": 132
+    },
+    "ai301-r07-s134": {
+      "recording": "ai301-r07",
+      "start": "01:35:53",
+      "end": "01:36:16",
+      "excerpt": "So. Uh, we can finish uh both operations within the second pipeline stage. 嗯。Uh，and the third property is that。Uh，the memory of friends。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 268,
+      "paragraphIndices": [
+        268
+      ],
+      "segmentIndex": 133
+    },
+    "ai301-r07-s135": {
+      "recording": "ai301-r07",
+      "start": "01:36:28",
+      "end": "01:36:59",
+      "excerpt": "Uh，the third property is that the memory operations they uh only appear in load or store，uh，that means uh for other types of uh instructions other than loading and storing，we are not touching the memory，so for archive，for bq，for jumping，there's nothing to do with the memory。so uh every every operation related.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 270,
+      "paragraphIndices": [
+        270
+      ],
+      "segmentIndex": 134
+    },
+    "ai301-r07-s136": {
+      "recording": "ai301-r07",
+      "start": "01:37:00",
+      "end": "01:37:49",
+      "excerpt": "To the memory is limited to loading and storing，and this kind of restriction enables us to use the execution stage，the execute stage，to calculate the memory address，and then access the memory in the following stage。So if in some kind of design you need to touch the memory in the EX state, then everything would be in a mess. So because for this loading and storing, only the loading and storing operation can touch the memory, and we determine that for these two operations.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 272,
+      "paragraphIndices": [
+        272
+      ],
+      "segmentIndex": 135
+    },
+    "ai301-r07-s137": {
+      "recording": "ai301-r07",
+      "start": "01:37:49",
+      "end": "01:38:12",
+      "excerpt": "Inside the EX stage, we are going to calculate the target address inside the memory, and then in the following stage, the MDM stage. Then we are going to access the memory based on the calculation result in the third stage. 嗯。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 274,
+      "paragraphIndices": [
+        274
+      ],
+      "segmentIndex": 136
+    },
+    "ai301-r07-s138": {
+      "recording": "ai301-r07",
+      "start": "01:38:24",
+      "end": "01:38:59",
+      "excerpt": "Uh，and also uh，it is impossible for a single data transfer uh instruction to take uh two data memory accesses uh，so you only uh that means uh if you load if uh if you have uh lw instruction then you only load a word uh load thirty two bits and uh if you have uh sw instruction then you only uh store a word into the memory and there's no a single. Data transfer instructions to deal.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 276,
+      "paragraphIndices": [
+        276
+      ],
+      "segmentIndex": 137
+    },
+    "ai301-r07-s139": {
+      "recording": "ai301-r07",
+      "start": "01:39:00",
+      "end": "01:39:38",
+      "excerpt": "With uh multiple data every accesses uh that is not allowed uh so as a result the requested data can be transferred between the processor and memory in a single pipeline stage. So，if multiple data memory accesses can be supported within one instruction，then we cannot deal with this transferring between processor and memory within。啊，a single M E M stage。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 278,
+      "paragraphIndices": [
+        278
+      ],
+      "segmentIndex": 138
+    },
+    "ai301-r07-s140": {
+      "recording": "ai301-r07",
+      "start": "01:39:53",
+      "end": "01:40:14",
+      "excerpt": "Okay so uh previously we just uh talk about the good things on high ranking. But of course, the thing cannot go as loosely as we want. So in fact, there could be different kinds of hazards.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 280,
+      "paragraphIndices": [
+        280
+      ],
+      "segmentIndex": 139
+    },
+    "ai301-r07-s141": {
+      "recording": "ai301-r07",
+      "start": "01:40:14",
+      "end": "01:40:59",
+      "excerpt": "Hazards means we have different kinds of situations that prevent us to keep the pipeline working smoothly. Uh, so uh, in other words, in some of the situations, uh, it's impossible for us to start the next instruction, uh. In the next cycle, so because uh ideally when the first instruction is at the second stage, we want to start the second instruction, and when the first instruction arrive the third stage, we want to.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 282,
+      "paragraphIndices": [
+        282
+      ],
+      "segmentIndex": 140
+    },
+    "ai301-r07-s142": {
+      "recording": "ai301-r07",
+      "start": "01:41:00",
+      "end": "01:41:39",
+      "excerpt": "Start the third instruction uh but that is for uh ideal case uh in in real world uh application there are all these kind of uh situations that are prevent us to do this. Uh，the first kind of hazards is called a structure，structure hazards。Uh，that，Uh，the source of this kind of problem is that a required resource is，Uh，busy。That's a problem of instruction memory and data memory.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 284,
+      "paragraphIndices": [
+        284
+      ],
+      "segmentIndex": 141
+    },
+    "ai301-r07-s143": {
+      "recording": "ai301-r07",
+      "start": "01:41:39",
+      "end": "01:42:15",
+      "excerpt": "So, if one of your instruction need to do something with the instruction memory, and another instruction let's say the next instruction you want to put into the pipeline. Uh wants to access the data value or the other way around. So，Uh，if multiple，Uh，instructions that is going to happen at the same time，they want to access the same，Uh，hardware resource。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 286,
+      "paragraphIndices": [
+        286
+      ],
+      "segmentIndex": 142
+    },
+    "ai301-r07-s144": {
+      "recording": "ai301-r07",
+      "start": "01:42:16",
+      "end": "01:42:38",
+      "excerpt": "Uh, then this is uh impossible. So uh, as long as a single hardware resource is busy, it cannot be used by someone else. Of course, so uh, at each moment, uh, one hardware resource can only be used by one instruction.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 288,
+      "paragraphIndices": [
+        288
+      ],
+      "segmentIndex": 143
+    },
+    "ai301-r07-s145": {
+      "recording": "ai301-r07",
+      "start": "01:42:40",
+      "end": "01:43:10",
+      "excerpt": "And the second time is what we call data header. Uh，This means we need to wait for three years instruction to complete its data read or write。Uh，For example，we. we have the we have uh several uh archive instructions so let's say uh.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 290,
+      "paragraphIndices": [
+        290
+      ],
+      "segmentIndex": 144
+    },
+    "ai301-r07-s146": {
+      "recording": "ai301-r07",
+      "start": "01:43:12",
+      "end": "01:43:50",
+      "excerpt": "A plus B plus C plus D plus E，so uh many additions，and we want to uh put all these additions uh one after another，so but the problem is that the second uh addition instruction it may need to use the result coming out from the first addition instruction。To be as input, right? So ideally we want to finish some archive instructions and all the inputs.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 292,
+      "paragraphIndices": [
+        292
+      ],
+      "segmentIndex": 145
+    },
+    "ai301-r07-s147": {
+      "recording": "ai301-r07",
+      "start": "01:43:50",
+      "end": "01:44:29",
+      "excerpt": "Uh, should be independent of the other instructions. That is the ideal case, but if the. Of one of your instruction，it is actually dependent on others。Then if the one that you are dependent on have not finished yet，then you cannot get your input for this instruction。So in that case。The current instruction have to wait until the correct input is already uh in the place.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 294,
+      "paragraphIndices": [
+        294
+      ],
+      "segmentIndex": 146
+    },
+    "ai301-r07-s148": {
+      "recording": "ai301-r07",
+      "start": "01:44:39",
+      "end": "01:45:06",
+      "excerpt": "Uh，and also，Uh，if you want to，Uh，let's say take out something，Uh，from the memory，and then add them up or subtract them。So the inputs of your addition or subtraction operation is coming from LW operation and to be. Specific，it is ready after the M E M or right back。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 296,
+      "paragraphIndices": [
+        296
+      ],
+      "segmentIndex": 147
+    },
+    "ai301-r07-s149": {
+      "recording": "ai301-r07",
+      "start": "01:45:06",
+      "end": "01:45:41",
+      "excerpt": "So，呃，only after you take out those pieces of data from the memory，then you can feed this data into the next instruction to be the inputs。So if you have not, if you have not retrieved this data from the last LW instruction, then there is no input for the current instruction. So in this case, the current also need to wait for the previous, so that all the inputs should.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 298,
+      "paragraphIndices": [
+        298
+      ],
+      "segmentIndex": 148
+    },
+    "ai301-r07-s150": {
+      "recording": "ai301-r07",
+      "start": "01:45:41",
+      "end": "01:46:07",
+      "excerpt": "Be in place，right？And then you can go to the air to do the conversation，and the third type of hazard that is called the control hazard。Uh，that means sometimes we need to decide on control action depends on previous instruction。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 300,
+      "paragraphIndices": [
+        300
+      ],
+      "segmentIndex": 149
+    },
+    "ai301-r07-s151": {
+      "recording": "ai301-r07",
+      "start": "01:46:07",
+      "end": "01:46:35",
+      "excerpt": "Uh, so one example could be the branching. Uh, so, so for the branching operation here is a conditional check right? So uh, uh if you still remember for the PC we have two options: uh first to choose the PC plus four that is sequentially the next one, and the second choice is to go to the branching target so.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 302,
+      "paragraphIndices": [
+        302
+      ],
+      "segmentIndex": 150
+    },
+    "ai301-r07-s152": {
+      "recording": "ai301-r07",
+      "start": "01:46:36",
+      "end": "01:46:59",
+      "excerpt": "Uh，Two choice for branching operation，then if you are in a pipeline。Which choice should you put in as the next instruction? So, should you take the PC plus four or should you take the branch target? So.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 304,
+      "paragraphIndices": [
+        304
+      ],
+      "segmentIndex": 151
+    },
+    "ai301-r07-s153": {
+      "recording": "ai301-r07",
+      "start": "01:47:00",
+      "end": "01:47:37",
+      "excerpt": "Because you can get the result of this conditional check only when you have compared the two objects in RS and RT, so only after you finish the subtraction of RS and RT and know that whether the subtracted result is zero, then at this moment. you can know which uh which. Choice you are going to make in the PC source multitasker, right? So either zero or one.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 306,
+      "paragraphIndices": [
+        306
+      ],
+      "segmentIndex": 152
+    },
+    "ai301-r07-s154": {
+      "recording": "ai301-r07",
+      "start": "01:47:37",
+      "end": "01:47:59",
+      "excerpt": "Only after you calculate the subtracting result of RS and RT, you can know which instruction you are going to fetch in the next cycle. but. But for uh pipelineing，uh uh actually the.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 308,
+      "paragraphIndices": [
+        308
+      ],
+      "segmentIndex": 153
+    },
+    "ai301-r07-s155": {
+      "recording": "ai301-r07",
+      "start": "01:48:00",
+      "end": "01:48:25",
+      "excerpt": "The EX, it is the third stage right? So that means the fetching of the next instruction should happen after the EX stage, or otherwise you may fetch the wrong one. So for example, you just assume that you are going to reach.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 310,
+      "paragraphIndices": [
+        310
+      ],
+      "segmentIndex": 154
+    },
+    "ai301-r07-s156": {
+      "recording": "ai301-r07",
+      "start": "01:48:27",
+      "end": "01:48:58",
+      "excerpt": "Or say you assume that you are not going to branch, so you just fetch the PC plus4 as the next instruction. But after you finish the EX state of this branch operation, you notice that the subtraction result becomes zero, and that means. You your assumption is wrong and uh actual pay is that you need to uh take the branch go to the branch target.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 312,
+      "paragraphIndices": [
+        312
+      ],
+      "segmentIndex": 155
+    },
+    "ai301-r07-s157": {
+      "recording": "ai301-r07",
+      "start": "01:49:02",
+      "end": "01:49:50",
+      "excerpt": "一、三。Okay，so in the next part we are going to discuss what are the possible solutions to deal with this different kinds of headaches，and you may notice that for some type of headaches here，there are possible ways to avoid or say improve。Obviously, but for some types of headaches here, there's no perfect fix, and you need to wait for some time or pay some extra price to deal with the headaches.",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 314,
+      "paragraphIndices": [
+        314
+      ],
+      "segmentIndex": 156
+    },
+    "ai301-r07-s158": {
+      "recording": "ai301-r07",
+      "start": "01:49:51",
+      "end": "01:50:13",
+      "excerpt": "Okay, that is going to be discussed. 啊，你的next。不能。Uh，and also，Uh，请remember to，Uh，submit the first homework on the backward，Uh，online。",
+      "excerptKind": "课堂自动转写原文；保留错词，讲解结合原图校正",
+      "paragraphIndex": 316,
+      "paragraphIndices": [
+        316
+      ],
+      "segmentIndex": 157
     }
   }
 }

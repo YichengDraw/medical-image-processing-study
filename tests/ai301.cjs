@@ -25,12 +25,18 @@ for(const d of data.decks){
     }
   });
 }
-assert.equal(pages,232);assert.equal(notes,135);
+assert.equal(pages,252);assert.equal(notes,158);
 assert.equal(data.coverage.slidesOnlyPages,pages-notes);
 assert.deepEqual(data.assessment,{},'Do not inherit medical assessment percentages');
 assert.equal(data.slides.lec2[1].note,null);assert.ok(data.slides.lec2[2].note);
 assert.equal(data.slides.lec4[7].note,null);assert.ok(data.slides.lec4[26].note);
-assert.ok(data.slides.lec5[17].note);assert.equal(data.slides.lec5[18].note,null);
+assert.ok(data.slides.lec5[17].note);assert.ok(data.slides.lec5[18].note);
+assert.ok(data.slides.lec5[22].note,'Repeated P23 diagram explicitly reuses content-matched classroom sources');
+assert.ok(data.slides.lec5[32].note,'November 9 recording completes the end of Lecture 5');
+assert.equal(data.slides.lec6[0].note,null,'Cover has no standalone classroom explanation');
+for(let p=2;p<=9;p++)assert.ok(data.slides.lec6[p-1].note,'Lec6 recording covers P2–9');
+for(let p=10;p<=20;p++)assert.equal(data.slides.lec6[p-1].note,null,'Hazard solutions were deferred to the next class');
+assert.equal(data.recordings['ai301-r07'].date,'2026-11-09');
 assert.equal(data.examGuide.entries.find(e=>e.id==='isa-quiz-translation').category,'explicit');
 assert.equal(data.examGuide.entries.filter(e=>e.category==='quiz').length,0,'Preparation is not a completed quiz recap');
 for(const includeClass of [false,true]){
@@ -48,8 +54,9 @@ for(const includeClass of [false,true]){
       cases++;
     }
   }
-  assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec5',33,includeClass),null,'Never wrap at end');
+  assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec6',20,includeClass),null,'Never wrap at end');
 }
+assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec5',33,true).deck,'lec6','Classroom-focus navigation continues into the new deck');
 const first=Nav.next(data.decks,data.examGuide.entries,'lec1',1,false);
 assert.equal(first.deck,'lec3');assert.equal(first.page,25);
 const second=Nav.next(data.decks,data.examGuide.entries,'lec3',25,false);
