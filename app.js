@@ -228,7 +228,7 @@ function renderExamHub(){
  const guide=S.data.examGuide,cats=guide.categories,all=guide.entries;
  const term=$("#exam-query").value.trim().toLowerCase();
  const filtered=all.filter(e=>(S.examCategory==='all'||e.category===S.examCategory)&&(!term||(e.title+' '+e.body+' '+(e.status||'')).toLowerCase().includes(term)));
- const cov=courseId==="hum053"?hum053Coverage():null;$("#exam-subtitle").textContent=(guide.summary||all.length+'条 · 明确考核与课堂重点分开标注')+(cov?' · 10份录音：本讲录音支撑 '+cov.same+' 页，跨讲复述 '+cov.cross+' 页，无讲授来源 '+cov.none+' 页（仅显示课件）':' · '+S.data.coverage.recordings+'份录音转写');
+ const cov=courseId==="hum053"?hum053Coverage():null;$("#exam-subtitle").textContent=(guide.summary||all.length+'条 · 明确考核与课堂重点分开标注')+(cov?' · 10份录音：本讲录音支撑 '+cov.same+' 页，跨讲复述 '+cov.cross+' 页，无讲授来源 '+cov.none+' 页（仅显示课件） · 图像文字人工补录 '+(S.data.coverage.visualTextPages??0)+' 页':' · '+S.data.coverage.recordings+'份录音转写');
  $("#exam-filters").innerHTML=[{id:'all',label:'全部'},...cats].map(c=>'<button data-category="'+esc(c.id)+'" class="exam-filter '+(S.examCategory===c.id?'selected':'')+'" aria-pressed="'+(S.examCategory===c.id)+'">'+esc(c.label)+' <span>'+all.filter(e=>c.id==='all'||e.category===c.id).length+'</span></button>').join('');
  $("#exam-filters").querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{S.examCategory=b.dataset.category;renderExamHub()}));
  $("#focus-include-class").checked=S.focusIncludeClass;
