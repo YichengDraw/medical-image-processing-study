@@ -15,6 +15,10 @@ SITE = ROOT.parent
 EXPECTED_PAGES = {'lec1': 43, 'lec2': 44, 'lec3': 36, 'lec4': 30,
                   'lec5': 34, 'lec6': 49, 'lec7': 37, 'lec8': 50,
                   'lec9': 58, 'lec10': 57}
+PRIMARY_RECORDING = {'lec1': 'rec20', 'lec2': 'rec19', 'lec3': 'rec18',
+                     'lec4': 'rec17', 'lec5': 'rec16', 'lec6': 'rec15',
+                     'lec7': 'rec14', 'lec8': 'rec13', 'lec9': 'rec12',
+                     'lec10': 'rec11'}
 EMAIL = re.compile(r'[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}', re.I)
 
 
@@ -38,7 +42,7 @@ def build():
         'examGuide': copy.deepcopy(guide),
         'coverage': copy.deepcopy(review['coverage']),
         'studyPolicy': '最新通知为闭卷、孔子—孟子—庄子、占总评50%。明确考核、课堂重点、比较与自拟练习分别标注；练习不是已知试题。导论作为背景阅读。',
-        'transcriptPolicy': '逐页核对课件画面与课堂转写。出处按内容对应，不代表精确翻页时间；重复课件可注明复用已讲过的同一内容。自动转写可能有错词。未找到对应录音的页面仅展示课件。',
+        'transcriptPolicy': '逐页核对课件画面与课堂转写。本讲录音优先；若仅有其他讲次对同一内容的复述，明确标为跨讲复述，不冒充本讲当时录音。出处按内容对应，不代表精确翻页时间；自动转写可能有错词。完全没有对应讲授来源的页面仅展示课件。',
     }
     assert [d['id'] for d in data['decks']] == list(EXPECTED_PAGES), 'Lecture order must follow the actual lecture number'
     assert data['assessment'] == {'exam': 50}, 'Use the current in-class exam notice, not the historical final-exam allocation'
@@ -55,6 +59,7 @@ def build():
         assert source.get('start'), f'Missing source location: {sid}'
         assert not EMAIL.search(source['excerpt']), f'Contact details in source excerpt: {sid}'
     seen_notes, total, explained = set(), 0, 0
+    same_lecture_audio, cross_lecture_only = 0, 0
     for deck in data['decks']:
         did = deck['id']
         expected_pages = EXPECTED_PAGES[did]
@@ -86,8 +91,21 @@ def build():
             assert '待核对' not in page['title'], f'Unresolved image caption: {did}/{number}'
             assert not EMAIL.search(page.get('sourceText', '') + page.get('searchText', ''))
             page['visualReviewed'] = True
-            page['audioSupported'] = number in notes
             page['note'] = copy.deepcopy(notes.get(number))
+            if page['note'] is not None:
+                note = page['note']
+                primary = PRIMARY_RECORDING[did]
+                same = any(str(source_id).startswith(primary + '-') for source_id in note.get('sourceIds', []))
+                note['sameLectureAudio'] = same
+                note['sourceScope'] = ('本讲录音为主；其他讲次仅作补充' if same and any(
+                    not str(source_id).startswith(primary + '-') for source_id in note.get('sourceIds', [])
+                ) else ('本讲录音' if same else '跨讲复述：来源是老师在其他讲次对相同内容的讲解，不代表本讲当时录音'))
+                if same:
+                    same_lecture_audio += 1
+                else:
+                    cross_lecture_only += 1
+            page['audioSupported'] = page['note'] is not None
+            page['sameLectureAudio'] = bool(page['note'] and page['note'].get('sameLectureAudio'))
             page['examIds'] = [e['id'] for e in guide['entries'] if {'deck': did, 'page': number} in e.get('anchors', [])]
             if page['note'] is not None:
                 note = page['note']
@@ -117,6 +135,8 @@ def build():
             assert type(anchor['page']) is int and 1 <= anchor['page'] <= EXPECTED_PAGES[anchor['deck']]
     expected = dict(visualPages=total, explainedPages=explained,
                     slidesOnlyPages=total-explained,
+                    sameLectureAudioPages=same_lecture_audio,
+                    crossLectureOnlyPages=cross_lecture_only,
                     recordings=len(data['recordings']), examEntries=len(guide['entries']))
     for field, value in expected.items():
         assert data['coverage'].get(field) == value, f'Coverage mismatch: {field}: {data["coverage"].get(field)} != {value}'
