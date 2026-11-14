@@ -1,0 +1,208 @@
+{
+  "revision": "2026-11-14",
+  "policy": "原件指上传课件与录音转写。网站发布逐页课件预览及必要教师选段，不发布完整课堂转写；索引移除个人联系方式。PDF在副本中统一可用字体，课件原文字、位置与字号不变。",
+  "slides": [
+    {
+      "deck": "lec1",
+      "originalFile": "中国哲学导论-第一讲.pptx",
+      "sourceFile": "01-pptx",
+      "pages": 43,
+      "sourceSha256": "f84397c0958c4e5cbc30e112613296a18fad6041d1acfb22ffabf02990f5d19b",
+      "sourceBytes": 5533155,
+      "pdfPath": "hum053/assets/pdfs/lec1.pdf",
+      "pdfSha256": "9911388373ed98fc651affea4ccee0ece7de1d7ec6a1d7d9964b284fbca5966b",
+      "pdfBytes": 5382550,
+      "conversion": "临时副本统一为Noto Sans CJK SC，原件不变；非字体XML逐项核验。"
+    },
+    {
+      "deck": "lec2",
+      "originalFile": "中国哲学导论-第二讲.pptx",
+      "sourceFile": "02-pptx",
+      "pages": 44,
+      "sourceSha256": "fb1f4c10d2bcc194c9fce0db07bee71427eb0922c27716f866004b250205132f",
+      "sourceBytes": 58585652,
+      "pdfPath": "hum053/assets/pdfs/lec2.pdf",
+      "pdfSha256": "bb71abd4fadc76465e2efea1fc4e673f847e34febcd6835a1ae5692c07f7fddb",
+      "pdfBytes": 4960057,
+      "conversion": "临时副本统一为Noto Sans CJK SC，原件不变；非字体XML逐项核验。"
+    },
+    {
+      "deck": "lec3",
+      "originalFile": "中国哲学导论-第三讲.pptx",
+      "sourceFile": "03-pptx",
+      "pages": 36,
+      "sourceSha256": "25670a04bd316adb4e0e60afff8611c2e51bc9692d9ad662a94f97d6300e83fb",
+      "sourceBytes": 59673262,
+      "pdfPath": "hum053/assets/pdfs/lec3.pdf",
+      "pdfSha256": "3d58093fd14ac68b024023aeba0aaea909df5840c748b3cf688ffccbb871e6f9",
+      "pdfBytes": 3754882,
+      "conversion": "临时副本统一为Noto Sans CJK SC，原件不变；非字体XML逐项核验。"
+    },
+    {
+      "deck": "lec4",
+      "originalFile": "中国哲学导论-第四讲.pptx",
+      "sourceFile": "04-pptx",
+      "pages": 30,
+      "sourceSha256": "b5013102f94271edd8cd69a15420dc162fce61296b410c56f258baf7cc7d4b11",
+      "sourceBytes": 28878023,
+      "pdfPath": "hum053/assets/pdfs/lec4.pdf",
+      "pdfSha256": "f3f71dfc6abba425afc38eb1981058e3ba757cb2d5aca6c633281d634c855983",
+      "pdfBytes": 2307793,
+      "conversion": "临时副本统一为Noto Sans CJK SC，原件不变；非字体XML逐项核验。"
+    },
+    {
+      "deck": "lec5",
+      "originalFile": "中国哲学导论-第五讲.pptx",
+      "sourceFile": "05-pptx",
+      "pages": 34,
+      "sourceSha256": "302de59e65be9f38dccf54fe6297bcd1a925f75f58cdbd196ff49ad73f122ef7",
+      "sourceBytes": 3212971,
+      "pdfPath": "hum053/assets/pdfs/lec5.pdf",
+      "pdfSha256": "82f156a4c24747b874a2df15138ed0299fcdae542cd6c19c2b04a5b48ae7c4e6",
+      "pdfBytes": 1133144,
+      "conversion": "临时副本统一为Noto Sans CJK SC，原件不变；非字体XML逐项核验。"
+    },
+    {
+      "deck": "lec6",
+      "originalFile": "中国哲学导论-第6讲.pptx",
+      "sourceFile": "07-6-.pptx",
+      "pages": 49,
+      "sourceSha256": "789dda5930224bb5b354520586ddd711132ea6ab9082ff0736371fcd8bfe2236",
+      "sourceBytes": 13880541,
+      "pdfPath": "hum053/assets/pdfs/lec6.pdf",
+      "pdfSha256": "16a973cc2c7209180531bbf445d91116c010ecedc2f8ada51d5aa46be06e86a2",
+      "pdfBytes": 4560406,
+      "conversion": "临时副本统一为Noto Sans CJK SC，原件不变；非字体XML逐项核验。"
+    },
+    {
+      "deck": "lec7",
+      "originalFile": "中国哲学导论-第7讲.pptx",
+      "sourceFile": "06-7-.pptx",
+      "pages": 37,
+      "sourceSha256": "c12769e5720d1d04f7505c78977bc3705604da560b2a0ec50452c71aa68c8074",
+      "sourceBytes": 6531402,
+      "pdfPath": "hum053/assets/pdfs/lec7.pdf",
+      "pdfSha256": "cc683086d90d86477faf8ccc6ebe3d66f9dfbf997c2d216c038b46cd5567907f",
+      "pdfBytes": 2316787,
+      "conversion": "临时副本统一为Noto Sans CJK SC，原件不变；非字体XML逐项核验。"
+    },
+    {
+      "deck": "lec8",
+      "originalFile": "中国哲学导论-第8讲.pptx",
+      "sourceFile": "10-8-.pptx",
+      "pages": 50,
+      "sourceSha256": "902a68a1a980d54a99c384d5cf92246c7442a305991dcf5440232802d8dc0b62",
+      "sourceBytes": 8779319,
+      "pdfPath": "hum053/assets/pdfs/lec8.pdf",
+      "pdfSha256": "e4ef966f0827743a1c55121d0c3b571d7d59f5740ae8c1ab7894d5343d6bc2c1",
+      "pdfBytes": 2991996,
+      "conversion": "临时副本统一为Noto Sans CJK SC，原件不变；非字体XML逐项核验。"
+    },
+    {
+      "deck": "lec9",
+      "originalFile": "中国哲学导论-第9讲.pptx",
+      "sourceFile": "09-9-.pptx",
+      "pages": 58,
+      "sourceSha256": "58539628a57b1811607ea3ba996feac03a43142309db79b1c850f1ecea52623d",
+      "sourceBytes": 7134283,
+      "pdfPath": "hum053/assets/pdfs/lec9.pdf",
+      "pdfSha256": "4f70ed8cca01348093f553b97444e9bcea951aab25fbf9f632d30e70eae3389b",
+      "pdfBytes": 2470886,
+      "conversion": "临时副本统一为Noto Sans CJK SC，原件不变；非字体XML逐项核验。"
+    },
+    {
+      "deck": "lec10",
+      "originalFile": "中国哲学导论-第10讲.pptx",
+      "sourceFile": "08-10-.pptx",
+      "pages": 57,
+      "sourceSha256": "3d3a18953e5146711ddffb8cc8472a204468ddd1482cfecaa86bd4d25e9e1ed8",
+      "sourceBytes": 18193904,
+      "pdfPath": "hum053/assets/pdfs/lec10.pdf",
+      "pdfSha256": "09fb7de80b9add97668f04e4c129c166747330685969e6f0e8c4737ae2eb2cc4",
+      "pdfBytes": 4572067,
+      "conversion": "临时副本统一为Noto Sans CJK SC，原件不变；非字体XML逐项核验。"
+    }
+  ],
+  "recordings": [
+    {
+      "id": "rec11",
+      "originalFile": "export_1794621894753.docx",
+      "sourceFile": "11-export_1794621894753.docx",
+      "sourceSha256": "3981725b897af2921eae82d0eb277de7313a21e2ed5da27c03ecac1041a8b574",
+      "sourceBytes": 49418,
+      "publicRawTranscript": false
+    },
+    {
+      "id": "rec12",
+      "originalFile": "export_1794621931719.docx",
+      "sourceFile": "12-export_1794621931719.docx",
+      "sourceSha256": "e2b4380b8e988601584b8a689a0757a9e7365d9e05d9762e4162653eeed28ecb",
+      "sourceBytes": 32207,
+      "publicRawTranscript": false
+    },
+    {
+      "id": "rec13",
+      "originalFile": "export_1794621957575.docx",
+      "sourceFile": "13-export_1794621957575.docx",
+      "sourceSha256": "dce677aae8bf4b4a0349b600076a34ce1c5abba3b417e39c486cdb48dd4712aa",
+      "sourceBytes": 47046,
+      "publicRawTranscript": false
+    },
+    {
+      "id": "rec14",
+      "originalFile": "export_1794621971265.docx",
+      "sourceFile": "14-export_1794621971265.docx",
+      "sourceSha256": "924d42efba0a01eaebc6610b81dad474a2111af97b117be245f5e8f644305463",
+      "sourceBytes": 44050,
+      "publicRawTranscript": false
+    },
+    {
+      "id": "rec15",
+      "originalFile": "export_1794621982995.docx",
+      "sourceFile": "15-export_1794621982995.docx",
+      "sourceSha256": "8d324bdc48ea0a7689c0c518dd4dd1e922a0bb1c885556ff717bfa824c9a22f5",
+      "sourceBytes": 42797,
+      "publicRawTranscript": false
+    },
+    {
+      "id": "rec16",
+      "originalFile": "export_1794622082452.docx",
+      "sourceFile": "16-export_1794622082452.docx",
+      "sourceSha256": "268f39eb229213c2cfa5483d4983906acad8477090b89b8095d819c546836eb8",
+      "sourceBytes": 26600,
+      "publicRawTranscript": false
+    },
+    {
+      "id": "rec17",
+      "originalFile": "export_1794622107327.docx",
+      "sourceFile": "17-export_1794622107327.docx",
+      "sourceSha256": "b8e091e9ad9e66ca3081e3eb9dacd31d5e2f99db71950928ab3fe75eb84e1c01",
+      "sourceBytes": 16042,
+      "publicRawTranscript": false
+    },
+    {
+      "id": "rec18",
+      "originalFile": "export_1794622123998.docx",
+      "sourceFile": "18-export_1794622123998.docx",
+      "sourceSha256": "bce8355684000e6853c3fc9c420c85f599af9b924ed3f08866ba9f1d60f0a2ba",
+      "sourceBytes": 46960,
+      "publicRawTranscript": false
+    },
+    {
+      "id": "rec19",
+      "originalFile": "09月16日_16_21_录音.docx",
+      "sourceFile": "19-09-16-_16_21_-.docx",
+      "sourceSha256": "b6162f58dd8c512f6d0b1e4dfe97ccf40b9f497ff810e9067c26565b9e391fcf",
+      "sourceBytes": 16721,
+      "publicRawTranscript": false
+    },
+    {
+      "id": "rec20",
+      "originalFile": "09月09日_16_20_录音.docx",
+      "sourceFile": "20-09-09-_16_20_-.docx",
+      "sourceSha256": "f4e8497fad8c98c747f364ca7edbeb7fda41c98c502ae551f78ede8133810f3f",
+      "sourceBytes": 46675,
+      "publicRawTranscript": false
+    }
+  ]
+}

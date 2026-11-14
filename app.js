@@ -2,11 +2,14 @@
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
-const courseId=new URLSearchParams(location.search).get("course")==="ai301"?"ai301":"bmeb316";
-const course={
+const courses={
  bmeb316:{code:"BMEB316",name:"医学图像处理",data:"data/content.json",footer:"Medical Image Processing / Yiming Li",search:"搜索 Nyquist、卷积、位深、相位…",examSearch:"零频、补零、不考、Quiz、展示时间…"},
- ai301:{code:"AI301",name:"计算机体系结构",data:"ai301/data/content.json",footer:"AI301 / Computer System Architecture",search:"搜索 MIPS、补码、寄存器、数据通路…",examSearch:"指令、性能、Quiz、实验、考核范围…"}
-}[courseId];
+ ai301:{code:"AI301",name:"计算机体系结构",data:"ai301/data/content.json",footer:"AI301 / Computer System Architecture",search:"搜索 MIPS、补码、寄存器、数据通路…",examSearch:"指令、性能、Quiz、实验、考核范围…"},
+ hum053:{code:"HUM053",name:"中国哲学导论",data:"hum053/data/content.json",footer:"HUM053 / 中国哲学导论",search:"搜索 孔子、仁礼、孟子、性善、庄子、齐物…",examSearch:"考试形式、孔子、孟子、庄子、复习练习…"}
+};
+const requestedCourse=new URLSearchParams(location.search).get("course");
+const courseId=Object.hasOwn(courses,requestedCourse)?requestedCourse:"bmeb316";
+const course=courses[courseId];
 const stateKey=courseId+"-state";
 const S={data:null,deck:null,page:1,cache:new Map(),pending:new Map(),task:null,seq:0,fit:"page",panel:true,star:new Set(),matches:[],sel:0,collapsed:false,libraryCollapsed:false,theme:"light",focusIncludeClass:true,examCategory:"all",modalReturnFocus:null};
 let saved={};try{saved=JSON.parse(localStorage.getItem(stateKey)||"{}")||{}}catch{}
@@ -32,16 +35,16 @@ function courseInit(){
  $("#exam-query").placeholder=course.examSearch;
  $("#search-footer").textContent="可搜索 "+S.data.decks.length+" 份课件的原文及伴读笔记 · Enter 跳转 · Esc 关闭";
  document.querySelector('meta[name="description"]').setAttribute("content",course.code+" "+course.name+"：原始课件与课堂讲解逐页对照，考核重点注明来源。");
- const labels={exam:"Final Exam",projects:"Projects",presentation:"Presentation",quiz:"Quiz",attendance:"Attendance"};
+ const labels={exam:"Final Exam",projects:"Projects",presentation:"Presentation",quiz:"Quiz",attendance:"Attendance",...(S.data.assessmentLabels||{})};
  const assessment=S.data.assessment||{},values=Object.entries(labels).filter(([id])=>typeof assessment[id]==="number"&&Number.isFinite(assessment[id]));
  const grid=$("#assessment-grid");grid.classList.toggle("hidden",!values.length);
- grid.innerHTML=values.map(([id,label])=>'<div><b>'+esc(assessment[id])+'%</b><span>'+label+'</span></div>').join('');
+ grid.innerHTML=values.map(([id,label])=>'<div><b>'+esc(assessment[id])+'%</b><span>'+esc(label)+'</span></div>').join('');
 }
 function switchCourse(id){
- if(!["bmeb316","ai301"].includes(id)||id===courseId)return;
+ if(!Object.hasOwn(courses,id)||id===courseId)return;
  if(S.deck)save();
  const url=new URL(location.href);
- if(id==="ai301")url.searchParams.set("course",id);else url.searchParams.delete("course");
+ if(id!=="bmeb316")url.searchParams.set("course",id);else url.searchParams.delete("course");
  url.hash="";location.assign(url.href);
 }
 function navInit(){
@@ -205,7 +208,7 @@ function renderExamHub(){
  const guide=S.data.examGuide,cats=guide.categories,all=guide.entries;
  const term=$("#exam-query").value.trim().toLowerCase();
  const filtered=all.filter(e=>(S.examCategory==='all'||e.category===S.examCategory)&&(!term||(e.title+' '+e.body+' '+(e.status||'')).toLowerCase().includes(term)));
- $("#exam-subtitle").textContent=all.length+'条 · 明确考核与课堂重点分开标注 · '+S.data.coverage.recordings+'份录音转写';
+ $("#exam-subtitle").textContent=guide.summary||all.length+'条 · 明确考核与课堂重点分开标注 · '+S.data.coverage.recordings+'份录音转写';
  $("#exam-filters").innerHTML=[{id:'all',label:'全部'},...cats].map(c=>'<button data-category="'+esc(c.id)+'" class="exam-filter '+(S.examCategory===c.id?'selected':'')+'" aria-pressed="'+(S.examCategory===c.id)+'">'+esc(c.label)+' <span>'+all.filter(e=>c.id==='all'||e.category===c.id).length+'</span></button>').join('');
  $("#exam-filters").querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{S.examCategory=b.dataset.category;renderExamHub()}));
  $("#focus-include-class").checked=S.focusIncludeClass;
@@ -318,7 +321,7 @@ function bind(){
 }
 (async function init(){
  try{
-  const response=await fetch(course.data+"?v=ai301-20261109");if(!response.ok)throw Error("课程索引请求失败："+response.status);
+  const response=await fetch(course.data+"?v=hum053-20261114");if(!response.ok)throw Error("课程索引请求失败："+response.status);
   S.data=await response.json();if(S.data.schemaVersion!==2)throw Error("课程数据版本未更新，请刷新页面");$("#fit-mode").textContent=S.fit==="page"?"适应页面":"适应宽度";
   if(window.pdfjsLib)pdfjsLib.GlobalWorkerOptions.workerSrc="assets/vendor/pdf.worker.min.js";
   courseInit();navInit();bind();updateLibraryToggle();updateTheme();const [id,p]=route();navigate(id,p,false);routeWrite(id,S.page,true);

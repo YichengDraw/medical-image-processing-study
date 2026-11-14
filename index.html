@@ -11,16 +11,17 @@
   <script>
     // Apply a saved dark theme before the stylesheet paints.
     try {
-      const stateKey = new URLSearchParams(location.search).get("course") === "ai301" ? "ai301-state" : "bmeb316-state";
+      const requestedCourse = new URLSearchParams(location.search).get("course");
+      const stateKey = (["ai301", "hum053"].includes(requestedCourse) ? requestedCourse : "bmeb316") + "-state";
       if (JSON.parse(localStorage.getItem(stateKey) || "{}").theme === "dark") {
         document.documentElement.setAttribute("data-theme", "dark");
       }
     } catch (_) {}
   </script>
-  <link rel="stylesheet" href="styles.css?v=courses-v1">
+  <link rel="stylesheet" href="styles.css?v=hum053-20261114">
   <script defer src="assets/vendor/pdf.min.js"></script>
   <script defer src="focus-navigation.js?v=visual-v2"></script>
-  <script defer src="app.js?v=ai301-20261109"></script>
+  <script defer src="app.js?v=hum053-20261114"></script>
 </head>
 <body>
   <div id="app">
@@ -49,7 +50,7 @@
       <header class="topbar">
         <div class="top-left">
           <button id="menu-trigger" class="icon-btn library-trigger" aria-label="收起左侧目录" aria-expanded="true" title="收起/展开左侧目录（]）">☰</button>
-          <select id="course-select" class="course-select" aria-label="切换课程" title="切换课程，保留各课程的阅读进度与收藏"><option value="bmeb316">医学图像处理</option><option value="ai301">计算机体系结构</option></select>
+          <select id="course-select" class="course-select" aria-label="切换课程" title="切换课程，保留各课程的阅读进度与收藏"><option value="bmeb316">医学图像处理</option><option value="ai301">计算机体系结构</option><option value="hum053">中国哲学导论</option></select>
           <div class="breadcrumbs"><span class="crumb-sep">/</span><span id="crumb-lecture" class="crumb-current">Lecture 1</span></div>
         </div>
         <div class="top-right">
