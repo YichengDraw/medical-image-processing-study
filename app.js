@@ -11,11 +11,12 @@ const requestedCourse=new URLSearchParams(location.search).get("course");
 const courseId=Object.hasOwn(courses,requestedCourse)?requestedCourse:"bmeb316";
 const primaryRecording={hum053:{lec1:"rec20",lec2:"rec19",lec3:"rec18",lec4:"rec17",lec5:"rec16",lec6:"rec15",lec7:"rec14",lec8:"rec13",lec9:"rec12",lec10:"rec11"}};
 function sameLectureAudio(d,p){
+ if(courseId!=="hum053")return Boolean(p?.note?.sourceIds?.length);
  const primary=primaryRecording[courseId]?.[d?.id];
  return Boolean(primary&&p?.note?.sourceIds?.some(id=>String(id).startsWith(primary+"-")));
 }
 function noteSourceScope(d,p){
- if(!p?.note?.sourceIds?.length)return "";
+ if(courseId!=="hum053"||!p?.note?.sourceIds?.length)return "";
  const primary=primaryRecording[courseId]?.[d?.id],same=sameLectureAudio(d,p);
  const hasOther=p.note.sourceIds.some(id=>!String(id).startsWith(primary+"-"));
  return same?(hasOther?"本讲录音为主；其他讲次仅作补充":"本讲录音"):"跨讲复述：来源是老师在其他讲次对相同内容的讲解，不代表本讲当时录音";
