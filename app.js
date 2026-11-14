@@ -9,6 +9,24 @@ const courses={
 };
 const requestedCourse=new URLSearchParams(location.search).get("course");
 const courseId=Object.hasOwn(courses,requestedCourse)?requestedCourse:"bmeb316";
+const primaryRecording={hum053:{lec1:"rec20",lec2:"rec19",lec3:"rec18",lec4:"rec17",lec5:"rec16",lec6:"rec15",lec7:"rec14",lec8:"rec13",lec9:"rec12",lec10:"rec11"}};
+function sameLectureAudio(d,p){
+ const primary=primaryRecording[courseId]?.[d?.id];
+ return Boolean(primary&&p?.note?.sourceIds?.some(id=>String(id).startsWith(primary+"-")));
+}
+function noteSourceScope(d,p){
+ if(!p?.note?.sourceIds?.length)return "";
+ const primary=primaryRecording[courseId]?.[d?.id],same=sameLectureAudio(d,p);
+ const hasOther=p.note.sourceIds.some(id=>!String(id).startsWith(primary+"-"));
+ return same?(hasOther?"本讲录音为主；其他讲次仅作补充":"本讲录音"):"跨讲复述：来源是老师在其他讲次对相同内容的讲解，不代表本讲当时录音";
+}
+function hum053Coverage(){
+ let same=0,cross=0,none=0;
+ for(const d of S.data.decks)for(const p of S.data.slides[d.id]){
+  if(!p.note)none++;else if(sameLectureAudio(d,p))same++;else cross++;
+ }
+ return {same,cross,none};
+}
 const course=courses[courseId];
 const stateKey=courseId+"-state";
 const S={data:null,deck:null,page:1,cache:new Map(),pending:new Map(),task:null,seq:0,fit:"page",panel:true,star:new Set(),matches:[],sel:0,collapsed:false,libraryCollapsed:false,theme:"light",focusIncludeClass:true,examCategory:"all",modalReturnFocus:null};
@@ -85,7 +103,7 @@ function headUpdate(){
  $("#pdf-link").href=d.path;$("#pdf-link").download=d.id+".pdf";
  const star=S.star.has(key(d.id,S.page));$("#star-btn").textContent=star?"★":"☆";$("#star-btn").classList.toggle("starred",star);
  const hasAudio=pageHasAudio(d,p);
- $("#note-status").textContent=!hasAudio?"本页未提供对应录音":p.note?.sourceIds?.length?"逐页核对 · 含课堂线索":"逐页核对 · 课件图示解读";
+ $("#note-status").textContent=!hasAudio?"本页未提供对应录音":sameLectureAudio(d,p)?"逐页核对 · 本讲录音":"逐页核对 · 跨讲复述";
  $("#toggle-panel").style.display=hasAudio?"":"none";$("#toggle-panel").textContent=S.panel?"隐藏讲解":"显示讲解";
  updateFocusButton();
  document.title=p.title+" · "+d.group+" | "+course.code;
@@ -106,9 +124,10 @@ function notes(){
  if(!pageHasAudio(d,p)||!S.panel){panel.classList.add("hidden");grid.classList.add("no-companion");return}
  panel.classList.remove("hidden");grid.classList.remove("no-companion");
  const n=p.note;
- $("#source-badge").textContent=n?.sourceIds?.length?"课件 + 课堂讲授":"原始课件逐页解读";
+ $("#source-badge").textContent=n?.sourceIds?.length?(sameLectureAudio(d,p)?"课件 + 本讲录音":"课件 + 跨讲复述"):"原始课件逐页解读";
  $("#source-badge").classList.toggle("verified",Boolean(n?.sourceIds?.length));
  let html='<article class="page-explanation"><div class="explanation-page">'+esc(d.group)+' · 第 '+S.page+' 页</div><h2>'+esc(p.title)+'</h2>';
+ const scope=noteSourceScope(d,p);if(scope)html+='<div class="explanation-page">来源性质：'+esc(scope)+'</div>';
  if(n){html+=n.paragraphs.map(t=>'<p>'+esc(t)+'</p>').join('');html+=sourceMarkup(n.sourceIds,n.externalSources||[])}
  else html+='<p>本页尚无可核对的逐页注释，请以左侧原始课件为准。</p>';
  html+='</article>';
@@ -208,7 +227,7 @@ function renderExamHub(){
  const guide=S.data.examGuide,cats=guide.categories,all=guide.entries;
  const term=$("#exam-query").value.trim().toLowerCase();
  const filtered=all.filter(e=>(S.examCategory==='all'||e.category===S.examCategory)&&(!term||(e.title+' '+e.body+' '+(e.status||'')).toLowerCase().includes(term)));
- $("#exam-subtitle").textContent=guide.summary||all.length+'条 · 明确考核与课堂重点分开标注 · '+S.data.coverage.recordings+'份录音转写';
+ const cov=courseId==="hum053"?hum053Coverage():null;$("#exam-subtitle").textContent=(guide.summary||all.length+'条 · 明确考核与课堂重点分开标注')+(cov?' · 10份录音：本讲录音支撑 '+cov.same+' 页，跨讲复述 '+cov.cross+' 页，无讲授来源 '+cov.none+' 页（仅显示课件）':' · '+S.data.coverage.recordings+'份录音转写');
  $("#exam-filters").innerHTML=[{id:'all',label:'全部'},...cats].map(c=>'<button data-category="'+esc(c.id)+'" class="exam-filter '+(S.examCategory===c.id?'selected':'')+'" aria-pressed="'+(S.examCategory===c.id)+'">'+esc(c.label)+' <span>'+all.filter(e=>c.id==='all'||e.category===c.id).length+'</span></button>').join('');
  $("#exam-filters").querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{S.examCategory=b.dataset.category;renderExamHub()}));
  $("#focus-include-class").checked=S.focusIncludeClass;
