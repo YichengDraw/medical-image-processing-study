@@ -1,12 +1,14 @@
 {
   "revision": "hum053-20261114-1",
-  "method": "10份上传PPTX共438页逐页视觉核对（含图、图表和原文）；与全部10份课堂DOCX转写作内容对应。课间与课后私人交流不作课堂来源。逐页讲解独立编写，明确区分已讲内容、译注分歧与自拟例子。",
+  "method": "10份上传PPTX共438页逐页视觉核对（含图、图表和原文）；与全部10份课堂DOCX转写作内容对应。课间与课后私人交流不作课堂来源。逐页讲解独立编写，明确区分已讲内容、译注分歧与自拟例子。 讲解来源另区分本讲录音与跨讲复述；跨讲复述不冒充本讲录音。",
   "coverage": {
     "visualPages": 438,
     "explainedPages": 369,
     "slidesOnlyPages": 69,
     "recordings": 10,
-    "examEntries": 48
+    "examEntries": 48,
+    "sameLectureAudioPages": 311,
+    "crossLectureOnlyPages": 58
   },
   "decks": [
     {
