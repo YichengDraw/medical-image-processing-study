@@ -1008,9 +1008,701 @@
         "rec0911@07:01"
       ],
       "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-vs-enhancement",
+      "category": "class",
+      "title": "复原不是单纯让图像更好看：先判断退化来源",
+      "body": "老师把图像增强与复原区分为按需求调整外观，以及估计并逆转退化过程。结合第6–7页的g=h*f+η，要先判断是随机噪声、脉冲噪声、周期干扰还是模糊，再选处理方法。例：运动模糊不能仅因图像不清楚就套一个低通，它还需要估计退化函数。此项是课堂主线，不是明确的必考承诺。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 6
+        },
+        {
+          "deck": "lec5",
+          "page": 7
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recFreq@01:41:33",
+        "recFreq@01:45:25",
+        "recRestColor@47:29"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-harmonic-q",
+      "category": "class",
+      "title": "谐波与反谐波：盐/椒噪声与Q符号要配对",
+      "body": "第19页谐波均值对很小的像素敏感，所以可抑制盐噪声却不适合椒噪声。第20–22页反谐波Q>0抑制椒噪声，Q<0抑制盐噪声，不能用同一个Q同时消除两种；老师用Q=±1.5的电路板结果说明选反会使结果变差。Q=0退为算术均值，Q=−1退为谐波均值。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 19
+        },
+        {
+          "deck": "lec5",
+          "page": 20
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@04:42",
+        "recRestColor@06:04",
+        "recRestColor@07:18"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-median-repeat",
+      "category": "class",
+      "title": "中值不是做得越多越好：看被抹掉的小结构",
+      "body": "第25页用排序解释脉冲为何落在数组两端；第26页显示3×3中值反复应用的结果。老师明确提醒反复滤波并不会免费提高质量，点状结构和细节会逐渐丢失。例：椒盐点减少了，但原电路板中央的小暗点也消失，不能仅凭噪点更少判断更好。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 25
+        },
+        {
+          "deck": "lec5",
+          "page": 26
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@08:36",
+        "recRestColor@09:55"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-extrema",
+      "category": "class",
+      "title": "最大/最小值滤波也会改变真实的亮暗结构",
+      "body": "最大值可抑制孤立黑色椒噪声，但同时缩小真实暗区域；最小值可抑制白色盐噪声，但也会抑制真实亮点。第27页比较电路板结构，老师专门指出此代价，并说这种简单选择较少用。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 27
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@11:16",
+        "recRestColor@11:41"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-trimmed",
+      "category": "class",
+      "title": "混合噪声：先去两端极值，再计算均值",
+      "body": "第28页α-trimmed mean先剔除d/2个最大值与d/2个最小值，再平均剩余mn−d项；老师将它用于随机噪声混有少量极值的情况。第29页图注写d=5，与对称删除d/2的离散定义未完全对齐，记录为课件疑点，不擅自改成另一个d值。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 28
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@12:27",
+        "recRestColor@13:28",
+        "recRestColor@14:39"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-adaptive-local",
+      "category": "class",
+      "title": "局部自适应降噪：噪声方差与局部方差的三个分支",
+      "body": "第31页f̂=g−(ση²/σL²)(g−mL)：无噪声则保留g；局部方差远大于噪声方差时输出接近g以保护边缘；两者相等时退成局部均值mL。老师以这些条件解释第32页7×7自适应结果为何比固定平均保留更多细节。不要把“方差较大”说成必定完全不修改像素。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 31
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@16:20",
+        "recRestColor@17:03",
+        "recRestColor@18:00",
+        "recRestColor@19:05"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-adaptive-median",
+      "category": "class",
+      "title": "自适应中值：先判断中值，再判断中心像素",
+      "body": "第33–34页Level A检查zmin<zmedian<zmax；否则扩大窗口。Level B才检查zmin<zxy<zmax：成立保留中心值，否则替换为中值。按本课PPT，超过Smax返回zxy；不要无提示改成其他教材实现。老师讲解目标是只替换疑似脉冲点，避免所有像素都被中值化。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 33
+        },
+        {
+          "deck": "lec5",
+          "page": 34
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@20:00",
+        "recRestColor@20:48",
+        "recRestColor@21:13"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-filter-checkpoint",
+      "category": "class",
+      "title": "课堂Checkpoint：三种噪声场景怎样选滤波器",
+      "body": "第36页三问的课堂讨论依次对应：孤立明暗脉冲用中值，高密度可考虑自适应中值；随机噪声紧邻细边缘时考虑局部自适应降噪；随机噪声混有极值时考虑α-trimmed mean。每种选择都要说明假设和可能丢失的细节。它是课堂练习，不是已考Quiz或老师承诺的原题。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 36
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@24:18",
+        "recRestColor@25:04",
+        "recRestColor@26:08"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-band-notch",
+      "category": "class",
+      "title": "周期干扰：带阻删整圈，陷波只针对峰；保持共轭对称",
+      "body": "第44页明确比较两个局部干扰峰。老师更倾向只抑制成对小邻域，而非删除整段频带，以保留无关图像信息；实值图像的频谱具有共轭对称关系，滤波掩膜也应尊重这种关系，确保逆变换的实值结构。例：只出现一对孤立峰，不要默认把整个同半径圆环清零。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 44
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@28:22",
+        "recRestColor@29:33"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-optimum-notch",
+      "category": "class",
+      "title": "最优陷波：估计噪声后只减去适当权重的一部分",
+      "body": "第45–51页的星状频谱含真实信号与干扰的重叠，老师说不能一概全部抹掉。用f̂=g−wη并最小化局部方差，在局部窗口权重近似常数的前提下得到w。重点是为什么需要权重、局部近似是什么，而不是把所有亮峰都当纯噪声。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 45
+        },
+        {
+          "deck": "lec5",
+          "page": 47
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@30:47",
+        "recRestColor@32:13",
+        "recRestColor@33:23",
+        "recRestColor@34:00",
+        "recRestColor@35:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-estimate-psf",
+      "category": "class",
+      "title": "估计退化函数的三条路：观察、实验、建模",
+      "body": "第53–56页分别是：从已知局部结构估计清晰子图并求频谱比值；同一设备对已知点输入测响应；根据物理过程建立数学模型。老师说仅靠观测需要先验，局部得到的H能推广到整图依赖位置不变假设。不能把凭空猜一张清晰图当作已知GT。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 53
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@38:53",
+        "recRestColor@40:00",
+        "recRestColor@40:57",
+        "recRestColor@41:43",
+        "recRestColor@42:26",
+        "recRestColor@43:27"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-motion-model",
+      "category": "class",
+      "title": "运动模糊：曝光期间不同位置的图像累积",
+      "body": "第57–59页把曝光T内的位移图像积分，再用平移对应相位变化得到H。老师以恒速运动为例，给定运动参数和曝光时间即可合成模糊图。P57“velocity”措辞与x0(t)、y0(t)在图像函数里的位置偏移用法，以及P58的T书写，均有需核对之处，讲解保留说明，未静默改写公式。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 57
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@44:19",
+        "recRestColor@45:35",
+        "recRestColor@46:50",
+        "recRestColor@47:29"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-inverse-filter",
+      "category": "class",
+      "title": "逆滤波的失败项是N/H：H小会放大噪声",
+      "body": "第60页直接除H后得到F̂=F+N/H。老师反复强调，即便噪声本身不大，只要H在某些频率很小，残余也会被放大。第61页D0=40、70、85说明限频过小损失细节，过大又带入不稳定高频；不是D0越大越好。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 60
+        },
+        {
+          "deck": "lec5",
+          "page": 61
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@49:00",
+        "recRestColor@50:00",
+        "recRestColor@01:00:55",
+        "recRestColor@01:02:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-wiener-k",
+      "category": "class",
+      "title": "Wiener的K是噪信功率比近似；最平滑不等于最好",
+      "body": "第62页目标是最小均方误差，分母包括噪声/原图功率谱比。该比值难估时，第63页用K近似，老师说实践中会手动调整。第64页要求固定图像、PSF、噪声实现与显示尺度比较：K小抑制弱，K大更平滑但可能丢细节；老师明确否定“最平滑必然最好”。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 62
+        },
+        {
+          "deck": "lec5",
+          "page": 64
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@01:02:00",
+        "recRestColor@01:04:00",
+        "recRestColor@01:05:27",
+        "recRestColor@01:06:25"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-cls",
+      "category": "class",
+      "title": "约束最小二乘：数据拟合与平滑由γ权衡",
+      "body": "第68–72页把数据项||g−Hf||²与拉普拉斯平滑项γ||Pf||²放在一起；P控制变化惩罚，γ控制权重。老师对比Wiener依赖功率统计、CLS显式约束平滑，并要求通过边缘与细节检查过平滑。比较的是复原结果重新退化后能否解释观测，不是要求清晰图本身等于模糊图。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 68
+        },
+        {
+          "deck": "lec5",
+          "page": 72
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@01:08:00",
+        "recRestColor@01:09:31",
+        "recRestColor@01:14:00",
+        "recRestColor@01:15:07"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-cls-gamma",
+      "category": "class",
+      "title": "自动调γ：将重新退化后的残差控制在噪声容差内",
+      "body": "第73页先给γ，算f̂和r=g−Hf̂，再把||r||²与||η||²±a比较；不足则增大γ，超出则减小γ，反复求解。老师在第75页说明噪声参数选错会影响复原。P74的归一化及噪声均值项符号有不一致，未据此生成可照抄的数值实现。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 73
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@01:16:00",
+        "recRestColor@01:17:31",
+        "recRestColor@01:18:27"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "color-exam-hsi",
+      "category": "explicit",
+      "title": "明确常考：亮度、色调、饱和度各表示什么",
+      "body": "老师在01:34:25明确说这些颜色描述量的含义“考试的时候经常考”。按第15页：Brightness描述无彩色的强弱感，Hue是感受到的主导颜色，Saturation描述相对纯度/混入白光的程度；Hue与Saturation合称Chromaticity。例：红色与粉红可有相同主色调而饱和度不同。这里是明确的考核提示，不等于指定某道固定题目。",
+      "anchors": [
+        {
+          "deck": "lec6",
+          "page": 15
+        },
+        {
+          "deck": "lec6",
+          "page": 29
+        }
+      ],
+      "status": "教师明确的考核提示",
+      "sourceIds": [
+        "recRestColor@01:34:25",
+        "recRestColor@01:34:50",
+        "recRestColor@01:35:44"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "color-energy-perception",
+      "category": "class",
+      "title": "物理能量、人眼响应和主观明暗不能混为一谈",
+      "body": "第8页并列Radiance、Luminance、Brightness。老师用能量很高但不易看见的红外说明，物理强度与视觉感受不同；Brightness是主观明暗。课件对前两项采用了概括性术语与单位表述，讲解保留其课堂区分，不将它当成完整计量学定义。",
+      "anchors": [
+        {
+          "deck": "lec6",
+          "page": 8
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@01:26:00",
+        "recRestColor@01:27:35"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "color-fixed-rgb",
+      "category": "class",
+      "title": "老师强调：固定三原色不能覆盖全部可见颜色",
+      "body": "第12页把“固定RGB线性组合产生全部可见颜色”标成Wrong；第17页用三角形无法覆盖完整色度区域说明限制。老师强调三原色的波长一旦变化，就已不是同一组固定原色。结合图理解色域范围，不把24位编码数量当作覆盖全部色域的证据。",
+      "anchors": [
+        {
+          "deck": "lec6",
+          "page": 12
+        },
+        {
+          "deck": "lec6",
+          "page": 17
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@01:30:29",
+        "recRestColor@01:32:00",
+        "recRestColor@01:37:49"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "color-additive-subtractive",
+      "category": "class",
+      "title": "光与颜料：RGB加色和CMY减色的结果不同",
+      "body": "第13–14页上下两套混合图需分开：理想光的RGB相加为白，颜料CMY通过吸收/反射混合趋向黑。第27页归一化模型中(C,M,Y)=(1−R,1−G,1−B)；老师补充打印机另有黑色通道K。不能把红绿光相加的结果直接照搬到两种颜料。",
+      "anchors": [
+        {
+          "deck": "lec6",
+          "page": 13
+        },
+        {
+          "deck": "lec6",
+          "page": 27
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@01:32:00",
+        "recRestColor@01:33:00",
+        "recRestColor@01:43:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "color-rgb-depth",
+      "category": "class",
+      "title": "RGB是三个分量；24位不是每通道24位",
+      "body": "第24页以立方体表示RGB，黑为(0,0,0)，白为(1,1,1)，灰度沿对角线。第25页每通道8bit，共24bit，编码组合为256³=16,777,216。老师将它与单通道8bit的256个强度值对比；颜色代码数量与实际可显示的色域是两个问题。",
+      "anchors": [
+        {
+          "deck": "lec6",
+          "page": 24
+        },
+        {
+          "deck": "lec6",
+          "page": 25
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@01:42:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "color-hsi-geometry",
+      "category": "class",
+      "title": "HSI读图：角度、归一化纯度、黑白轴的位置",
+      "body": "第30–34页把RGB黑白对角线立起来，再看垂直截面：H是参考方向上的角度，I是黑白轴上的强度位置，S表示相对纯度。第33页特别写明S是归一化量，不是任意欧氏半径。录音一处近/远与饱和度的措辞含混，已在页注与P31、P33图文对照说明。",
+      "anchors": [
+        {
+          "deck": "lec6",
+          "page": 30
+        },
+        {
+          "deck": "lec6",
+          "page": 33
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@01:45:00",
+        "recRestColor@01:46:41",
+        "recRestColor@01:48:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "color-zero-saturation",
+      "category": "class",
+      "title": "S=0时Hue不区分彩色，但I仍控制灰度",
+      "body": "第41–42页中心区域的S为0，重建成白或灰。老师特意提醒此时Hue不起颜色作用；不要误读成I也失效。例：(0.2,0.2,0.2)与(0.8,0.8,0.8)都无彩色，但亮度不同。转换和修改HSI的基本过程见第40页。",
+      "anchors": [
+        {
+          "deck": "lec6",
+          "page": 41
+        },
+        {
+          "deck": "lec6",
+          "page": 42
+        }
+      ],
+      "status": null,
+      "sourceIds": [
+        "recRestColor@01:49:19",
+        "recRestColor@01:50:24"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-ct-excluded",
+      "category": "scope",
+      "title": "明确不讲、不考：CT投影重建（Lec5 P77–110）",
+      "body": "老师在01:20:38明确说后面的image reconstruction/CT反投影重建留作课后阅读，“不讲，而且也不会考试”。对应本版PDF第77–110页，含Radon变换、Fourier-slice theorem、filtered back-projection。原PDF仍完整保留，此段仅显示PPT及范围提示，不伪造逐页课堂讲解；第111页是前面图像复原部分的总结，不包含在此排除段。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 77
+        },
+        {
+          "deck": "lec5",
+          "page": 87
+        },
+        {
+          "deck": "lec5",
+          "page": 96
+        },
+        {
+          "deck": "lec5",
+          "page": 101
+        }
+      ],
+      "status": "教师明确：不讲、不考",
+      "sourceIds": [
+        "recRestColor@01:20:38"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "color-later-not-yet",
+      "category": "scope",
+      "title": "尚未讲，不等于不考：Lec6 P43–83留待后续",
+      "body": "本次录音讲到第42页HSI/RGB示例，01:50:24明确说下一次讲伪彩色与彩色图像处理。故第43–83页目前只提供PPT，不为未讲内容补上教师重点。这是录音覆盖边界，绝不能与CT那段明确“不考”的说明混淆。",
+      "anchors": [
+        {
+          "deck": "lec6",
+          "page": 43
+        }
+      ],
+      "status": "本次未讲；后续再补录音",
+      "sourceIds": [
+        "recRestColor@01:50:24"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "color-cie-background",
+      "category": "scope",
+      "title": "CIE背景“了解一下”，不是整章都不考",
+      "body": "01:38:59讲到色度图边界与等能点时，老师说“只是一些了解”。这是一段背景介绍的强调程度；第12页固定RGB覆盖范围另被强调，第15页描述量还被明确提为常考，因此不能把这句话扩大为CIE或彩色模型整章不考。",
+      "anchors": [
+        {
+          "deck": "lec6",
+          "page": 19
+        }
+      ],
+      "status": "背景了解，未明确排除考试",
+      "sourceIds": [
+        "recRestColor@01:38:59"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "color-formula-brief",
+      "category": "scope",
+      "title": "RGB↔HSI转换公式快速带过，未明确说不考",
+      "body": "01:48:00老师说两种表示可互换，对数学公式“不仔细”展开。本版第35–38页仍保留逐页公式解读与示例，注明课堂只概括而没有逐式推导。页面中有公式并不自动意味着需要背诵；同样“快速带过”也不等于教师明确承诺不考。",
+      "anchors": [
+        {
+          "deck": "lec6",
+          "page": 35
+        }
+      ],
+      "status": "未详细推导，未承诺不考",
+      "sourceIds": [
+        "recRestColor@01:48:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-print-ambiguities",
+      "category": "scope",
+      "title": "本讲需核对的公式标注：不静默替换原课件",
+      "body": "本版P9–10概率公式、P29的d=5与d/2删除规则、P57–58运动参数、P74归一化/均值项、P76中间α取值的文字与端点之间均有未完全一致之处。原PDF不改，页注明确指出；P33–34超过Smax返回zxy则是本课原算法，按课件保留，不自动改成别处版本。这些是材料核对提示，不是新考点。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 9
+        },
+        {
+          "deck": "lec5",
+          "page": 29
+        },
+        {
+          "deck": "lec5",
+          "page": 58
+        },
+        {
+          "deck": "lec5",
+          "page": 74
+        },
+        {
+          "deck": "lec5",
+          "page": 76
+        }
+      ],
+      "status": "课件疑点，未声称老师勘误",
+      "sourceIds": [
+        "recFreq@01:48:37",
+        "recRestColor@13:28",
+        "recRestColor@45:35",
+        "recRestColor@01:17:31",
+        "recRestColor@01:19:21"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "latest-lab-deadline",
+      "category": "arrangement",
+      "title": "最新口头安排：相关Lab截止延至12月4日",
+      "body": "录音02:20:56开始谈Lab7与频域滤波，随后提到27号那周不上课，将deadline延至12月4日。这里按相邻语境记录，具体适用作业与最终截止时间仍应以Lab发布页/助教公告确认；不自行推算其他作业日期，也不把课件封面日期当录音日期。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 1
+        }
+      ],
+      "status": "口头安排；适用作业以正式公告确认",
+      "sourceIds": [
+        "recRestColor@02:20:56",
+        "recRestColor@02:21:21"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "latest-lab-scope",
+      "category": "arrangement",
+      "title": "上机任务到复原和彩色；不等于后面理论章节不考",
+      "body": "02:21:21提到后面的两项上机任务是图像复原和彩色，图像分割、形态学、图像压缩没有对应上机内容。02:22:45又说彩色后仍有三个理论部分。因此“没有上机课”仅是实践覆盖说明，不是将这三章从理论课或期末范围删除。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 111
+        },
+        {
+          "deck": "lec6",
+          "page": 1
+        }
+      ],
+      "status": "区分Lab范围与理论/考试范围",
+      "sourceIds": [
+        "recRestColor@02:21:21",
+        "recRestColor@02:22:45"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "latest-project-registration",
+      "category": "arrangement",
+      "title": "Final Project题目要登记去重，后填冲突者换题",
+      "body": "老师说会建立在线文档确认汇报题目，尽量不要选成一样；若与先登记同学冲突，后填者需换题。鼓励提早选题和准备，不能到期末才开始。本录音没有给出可直接打开的登记表链接，不虚构表格地址或最终截止日。",
+      "anchors": [
+        {
+          "deck": "lec1",
+          "page": 10
+        },
+        {
+          "deck": "lec6",
+          "page": 1
+        }
+      ],
+      "status": "登记表与时间待课程正式通知",
+      "sourceIds": [
+        "recRestColor@02:21:21",
+        "recRestColor@02:22:45"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "latest-remaining-quiz",
+      "category": "arrangement",
+      "title": "还有两次Quiz；本次未给出新的准确日期",
+      "body": "02:22:45提醒后续任务密集，还有两次Quiz，可能需要腾一次课用于汇报。本次没有清晰给出新的Quiz日期；早期第13/16周只是口头计划，不能把两次表述拼成已确认课表。复习仍以概念及各次正式通知为准。",
+      "anchors": [
+        {
+          "deck": "lec6",
+          "page": 1
+        }
+      ],
+      "status": "余下次数提醒，日期未确认",
+      "sourceIds": [
+        "recRestColor@02:22:45"
+      ],
+      "sourceType": "录音+课件"
     }
   ],
-  "note": "仅整理已提供课件与6份课堂转写。录音自动转写可能出错；重点≠必考，暂定安排≠最新正式公告。复盘只整理概念，不公布完整试卷。",
+  "note": "集中整理已提供的课件与课堂转写；明确考核、课堂重点、非考/未讲范围与口头安排分开标注。时间戳为原录音相对时间，自动转写可能有错词；日期与作业要求以课程正式公告为准。",
   "navigationDefault": "include-class",
   "navigationNote": "下个考点按课件顺序、严格从当前页之后查找，不回绕。默认包含课堂重点（不等于必考）；可以取消下方选项，只导航明确考核/Quiz复盘。相同知识点在同一份课件只取一个代表页。"
 }

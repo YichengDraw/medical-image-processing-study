@@ -96,7 +96,7 @@ function headUpdate(){
  $("#slide-section").textContent=d.group.toUpperCase();
  $("#lecture-subname").textContent=d.label;
  $("#slide-title").textContent=p.title||"原始幻灯片";
- $("#slide-summary").textContent=d.cn+"  ·  原始幻灯片 P"+S.page;
+ $("#slide-summary").textContent=d.cn+"  ·  原始幻灯片 P"+S.page+(p.coverageLabel?" · "+p.coverageLabel:"");
  $("#lecture-progress-label").textContent=S.page+" / "+d.pages;
  $("#lecture-progress-bar").style.width=(100*S.page/d.pages).toFixed(2)+"%";
  $("#page-input").value=S.page;$("#page-input").max=d.pages;
@@ -105,6 +105,7 @@ function headUpdate(){
  const star=S.star.has(key(d.id,S.page));$("#star-btn").textContent=star?"★":"☆";$("#star-btn").classList.toggle("starred",star);
  const hasAudio=pageHasAudio(d,p);
  $("#note-status").textContent=!hasAudio?"本页未提供对应录音":sameLectureAudio(d,p)?"逐页核对 · 本讲录音":"逐页核对 · 跨讲复述";
+ if(courseId==="bmeb316"&&!hasAudio&&p.coverageLabel)$("#note-status").textContent=p.coverageReason==="explicitly_excluded"?"CT选读 · 教师明确不考":"本次未讲 · 下次继续";
  $("#toggle-panel").style.display=hasAudio?"":"none";$("#toggle-panel").textContent=S.panel?"隐藏讲解":"显示讲解";
  updateFocusButton();
  document.title=p.title+" · "+d.group+" | "+course.code;
@@ -341,7 +342,7 @@ function bind(){
 }
 (async function init(){
  try{
-  const response=await fetch(course.data+"?v=hum053-20261114");if(!response.ok)throw Error("课程索引请求失败："+response.status);
+  const response=await fetch(course.data+"?v=bmeb316-20261115");if(!response.ok)throw Error("课程索引请求失败："+response.status);
   S.data=await response.json();if(S.data.schemaVersion!==2)throw Error("课程数据版本未更新，请刷新页面");$("#fit-mode").textContent=S.fit==="page"?"适应页面":"适应宽度";
   if(window.pdfjsLib)pdfjsLib.GlobalWorkerOptions.workerSrc="assets/vendor/pdf.worker.min.js";
   courseInit();navInit();bind();updateLibraryToggle();updateTheme();const [id,p]=route();navigate(id,p,false);routeWrite(id,S.page,true);

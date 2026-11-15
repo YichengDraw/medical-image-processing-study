@@ -1,0 +1,517 @@
+[
+  {
+    "page": 1,
+    "paragraphs": [
+      "本讲从单通道图像转到Color Image Processing（彩色图像处理）。老师开头给出的重点有两层：先认识不同彩色模型，再理解处理彩色图像时哪些地方与单通道不同；本次录音主要讲到RGB、CMY与HSI的表示和转换。",
+      "例如想调亮一张彩色图，不能只想到一个灰度数：在RGB中有三个分量，在HSI中则可关注单独的Intensity分量。后半的伪彩色、平滑、锐化等课件仍完整保留，但本次录音在第42页相关内容后结束，未讲页不补造老师说明。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:20:38",
+      "recRestColor@01:22:13"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 2,
+    "paragraphs": [
+      "这页两段引文把颜色看作需要练习、约束和表达的对象，作用是引出“彩色比单纯亮暗变化有更多维度”。本页没有模型公式，也不是要记画家说过的每个词。",
+      "老师借引文说明颜色变化多、信息也多，接下来应关注如何用可计算的模型描述它。例如同样较亮的区域可以呈红、绿或蓝，单一灰度不能完整区分这些外观；这正是下一页介绍彩色作为descriptor的动机。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:22:13"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 3,
+    "paragraphs": [
+      "两条motivation分别讲任务价值和感知价值：颜色有助于识别、提取物体；课件还用可分辨的色彩组合多于灰度层次来解释为什么彩色显示能帮助观察。这里的数字是本课用来作对比的表述，不是本页给出的一套视觉实验测量结果。",
+      "老师随后用同一片草地中的兔子举例，说明灰度外观相近的目标可以借颜色更容易分开。学习重点是“颜色提供了另一类区分信息”，不是说每个任务只用颜色就足以完成分割。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:22:13",
+      "recRestColor@01:23:18"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 4,
+    "paragraphs": [
+      "这一页只有灰度草地图，要先观察再翻页：左下偏中的小动物与周围草的明暗、纹理接近，轮廓不容易立即跳出来。它不是一张要做去噪参数估计的测试图，而是颜色信息被拿掉后的识别示例。",
+      "老师在课堂上先问大家看到了什么，再展示下一张彩色版本。因此可以直接在这张图里寻找目标边界，然后翻到第5页比较同一位置；不要把“灰度版难认”理解成分辨率更低或像素缺失。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:23:40"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 5,
+    "paragraphs": [
+      "与上一页是同一场景：草地变成绿色，左下偏中的兔子呈灰褐色，目标与背景的差别更明显。新增的是颜色对比，不是换了目标位置或重新拍了一张更清晰的图。",
+      "老师正用这组对照说明color是有用描述量。这个例子要记住的是：即使亮暗和纹理不足以迅速区分目标，颜色仍可能提供额外线索；同时也不应由一组图片推出彩色一定解决所有识别问题。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:23:40"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 6,
+    "paragraphs": [
+      "图中白光从左侧进入棱镜，右侧展开成不同颜色，红与紫分别位于可见谱的两端，外围还标出infrared与ultraviolet。它表达的是白光中包含不同波长成分，而非物体原本只携带一种固定“颜色数字”。",
+      "老师用棱镜分光引出颜色来源。把它与下一页反射图连起来看：先有含多个成分的照明光，物体再选择性吸收或反射，最后进入眼睛。页上的历史年份属于课件背景，录音未把它列为考核重点。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:24:27"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 7,
+    "paragraphs": [
+      "沿箭头看：白光照向绿色物体，其余部分被吸收，向眼睛反射的绿光使物体呈绿色。左侧把主要反射波长举为500–570 nm，用一个具体波段解释“看到的颜色”来自何种光进入观察者。",
+      "老师强调不是只说“物体天然就是这个RGB值”，而是考虑照明、吸收和反射过程。就本页的绿色例子而言，进入眼睛的是反射后的那部分光；不要把图里的绿色箭头误认成观察者发向物体的照明。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:24:27"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 8,
+    "paragraphs": [
+      "本页按课堂口径区分Radiance、Luminance、Brightness：前者强调光源能量，第二个强调观察者能够感受到的量，第三个是主观明暗判断。蓝色提示“high radiance but low luminance”说明发出能量多不等于眼里显得亮。",
+      "老师给的直接例子是红外：能量可能很高，但眼睛对它不敏感，所以不能凭看起来暗就判断能量低。此处沿用课件的英文术语与教学区分；页内单位是原课件的简化表述，录音没有进一步校准严格单位定义，不在讲解中擅自另换一套术语。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:26:00",
+      "recRestColor@01:27:35"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 9,
+    "paragraphs": [
+      "下方电磁谱先给从射线到无线电的总体范围，再把可见部分放大成彩色条；上方文字将本课讨论的可见光约定在400–700 nm左右。另一条说明颜色感知依赖视锥细胞（cones）。",
+      "老师把这页接回前面人眼章节：谈彩色图像不是只谈显示器文件，也涉及人眼对哪些波长有响应。用图里的位置作例子，红外在可见红光外侧，不因为能量增加就自动成为眼睛可见的红色。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:28:24"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 10,
+    "paragraphs": [
+      "黄色句子是关键：短、中、长波长视锥的光谱敏感度彼此重叠，不是三个完全不相交的波长箱子。下方又将它们与CIE所列的红700 nm、绿546.1 nm、蓝435.8 nm标准作区别。",
+      "老师说生理响应与标准原色的定义并不完全重合。比如某个波长可能同时激发两类响应，不能把“有三种细胞”直接等同于“每类只接收某一个精确RGB波长”。下一页的曲线会让这个重叠更直观。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:28:24"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 11,
+    "paragraphs": [
+      "横轴为波长，纵轴为相对吸收；三条曲线峰值分别标在445、535、575 nm。看绿、红两条，峰很近且大范围重叠；蓝曲线与其余曲线的相对位置又不同。标题旁英文特别要求注意G与R曲线接近。",
+      "老师用三类不同敏感度的共同响应说明颜色感知，而不是靠单个细胞独立报一个颜色名字。直接读图例子：约550 nm处并非只有绿色曲线非零，红色曲线也明显有响应。这里的波长标注是本页示意，别和上一页的标准原色波长混记。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:29:54"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 12,
+    "paragraphs": [
+      "第一条以Wrong开头，否定“固定的三种原色可以线性组合出所有可见颜色”这一笼统说法。后面补充：若不断移动原色波长，已经不再是同一组固定primaries。老师对此说“非常重要、一定要注意”。",
+      "这页要联系第17页的色域三角形理解：三个固定端点组合的范围不覆盖整个色区。不要把本页的“不是basis”单独扩展成任意三维向量的线性代数结论；这里的论证对象是课堂讨论的固定原色与可见颜色范围。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:30:29",
+      "recRestColor@01:32:00"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 13,
+    "paragraphs": [
+      "本页的重要区分是light与pigments。发光的三原色用R、G、B；颜料通过吸收一种光、反射其余部分来呈色，课件用cyan、magenta、yellow（CMY）描述这种减色思路，并写合适混合得到黑色。",
+      "老师用“直接发光”与“吸收后反射”解释为何不能把两组混色规则混在一起。例：显示器叠加更多光趋向白，纸面叠加吸收性的颜料则不是同一个过程。这里介绍CMY，独立黑色K的用途在第27页再补充。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:32:00",
+      "recRestColor@01:33:00"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 14,
+    "paragraphs": [
+      "右上图是光的加色：R+G为黄，G+B为青，R+B为品红，三者重叠中心为白；右下图是颜料减色示意，CMY重叠中心为黑。左侧“mixing three primaries produces white”应对应上图，不可直接套到下图。",
+      "老师还用互补色说明：青光包含绿与蓝，再加红光可得到白。读这页的直接例子就是red+cyan，不要看到同样颜色名称就忽略当前讨论的是光还是颜料；那会把中心白与中心黑的结果记反。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:33:00"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 15,
+    "paragraphs": [
+      "老师在这一页对应段明确说“考试的时候经常考”，问的是Hue、Saturation等量分别表示什么。Brightness描述不带颜色的明暗强弱；Hue（色调）描述主导颜色；Saturation（饱和度）描述相对纯度或混入白光的程度。下方将Hue与Saturation合称Chromaticity（色度）。",
+      "沿本页定义举一个直接例子：红与绿主要区别在色调；红与偏白的粉红可体现饱和度差别；整体亮或暗则是明暗维度。不要把“白光混入越多”写成“饱和度越高”。后面HSI用Intensity作可计算的强度分量，与这里的主观Brightness表述要区分。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:34:25",
+      "recRestColor@01:34:50",
+      "recRestColor@01:35:44"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 16,
+    "paragraphs": [
+      "右侧是CIE色度图，内部标出Green、Red等示例点；左边按本课的示例写Green为62% green、25% red、13% blue，Red为32%、67%、1%。先注意每组总和为100%，因此只有两个独立比例，另一个由总和约束决定。",
+      "老师讲解时用“第三项等于1减去另外两项”的办法读图。转写把第一组blue写成了33，和本页13以及总和不符；这里显式按课件13记录。课件未在这一页提供设备RGB与色度坐标的完整转换式，不能把示意比例当作任意显示器的直接输入代码。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:36:34"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 17,
+    "paragraphs": [
+      "右图外轮廓是整个色区，三角形是三个固定原色张成的范围，中间不规则闭合线代表图示打印设备的gamut。观察三角形外仍有区域，就能看到为什么固定三原色不能覆盖全部颜色。",
+      "老师把这个图与第12页的错误命题对应起来，并比较打印与显示的色域限制。例：要求再现的颜色若落在这组三原色三角形外，仅调整三者比例不能将其移入可再现集合。这里讲的是本图中的范围关系，不是对所有设备给出统一色域大小排行。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:37:49"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 18,
+    "paragraphs": [
+      "同一张色域图在这页用来回答打印范围为何不规则：课件说打印涉及additive与subtractive混合，比显示颜色更难控制。重点由上一页“范围覆盖多少”转成“为什么打印边界不简单”。",
+      "老师将它作为了解性内容带过。可直接对照图中的直边三角形与弯曲闭合边界：两者不应被当成同一套设备或同一种混色过程；此页没有要求推导这条不规则曲线，也没有给出其计算模型。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:38:59"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 19,
+    "paragraphs": [
+      "左侧先说明色度图边界对应充分饱和的颜色，再引入point of equal energy（PEE），用三部分均等的中心白点来作参照。右图中等能点位于内部，因此“中央区域”和“外边界”承载不同含义。",
+      "老师对这一段说“只是一些了解”。后面的用途不是背一个孤立坐标，而是由白点向边界连线，比较同一色调从混白到较纯的变化。比如沿某条白点到红区的线观察，色调方向相近，混白程度发生变化。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:38:59"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 20,
+    "paragraphs": [
+      "两条几何规则要分开：连接任意两种颜色的线段，表示它们加色混合可得到的颜色；从PEE连到边界某点，则沿这一方向得到该光谱颜色的不同混白程度。它们都在讲色度图里的位置，不是物体图像里的空间边缘。",
+      "老师用“两点决定一条线”帮助理解。例：固定白点与一个红色边界点，只改变混合比例，得到的是两端之间的颜色系列，不是绕着色区跑到任意绿色。这能把饱和度变化与色调变化区分开。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:38:59"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 21,
+    "paragraphs": [
+      "这一页把上一页两点的线段推广为三点的三角形：三个给定颜色作顶点，它们混合得到的颜色落在三角形所包围的区域。关键词是given，意味着先固定这三个端点，不能在混色过程中偷换原色。",
+      "老师随后转向颜色模型。把本页和第17页连起来记最直接：三点能确定一个混色区域，但这个三角形并不因此等于整个可见色区；“能生成区域内很多颜色”和“覆盖所有颜色”是不同命题。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:40:40"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 22,
+    "paragraphs": [
+      "本页把三类模型与用途配对：RGB用于显示器、视频相机；CMY/CMYK用于彩色打印；HSI更接近人描述颜色的方式。color model、color space、color system在此作为标准化指定颜色的框架介绍。",
+      "老师说看见一个颜色时，人通常先说色调、饱和程度和亮暗，而不是报R、G、B各多少。例：屏幕输出要回到RGB分量，而“把图调亮但尽量不动色调”的描述更自然落在HSI框架；同一颜色可以用不同模型表示。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:40:40"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 23,
+    "paragraphs": [
+      "RGB把每个颜色表示成红、绿、蓝三个主分量，放进Cartesian（笛卡尔）坐标系。这里的三个坐标轴是颜色分量轴，不是照片中的x、y和深度；一幅图的每个像素都各自有一组RGB。",
+      "老师称这部分可以快速过。最直接的例子是归一化纯红(1,0,0)：红轴有量，绿、蓝为0。下一页的立方体就是把三个分量各自取有限范围后，对所有可能组合做几何展示。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:42:00"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 24,
+    "paragraphs": [
+      "在立方体上逐个定位：原点是Black(0,0,0)，最远角是White(1,1,1)，三个单轴角是红、绿、蓝，双轴同时为1的角是黄、青、品红。由黑到白的体对角线上R=G=B，标为Gray scale。",
+      "老师用三根轴说明颜色分量。例：(0,1,1)落在青色角，因为绿蓝有、红没有；(0.5,0.5,0.5)在灰度对角线上，不是饱和的彩色。记住这条对角线，后面把立方体立起来定义Intensity就容易理解。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:42:00"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 25,
+    "paragraphs": [
+      "一张RGB图由三幅分量图组成，显示时组合成彩色。课件的24-bit指每像素总共24位：三个通道各8位，因此可编码的组合数是(2⁸)³=2²⁴=16,777,216，不是24个灰度等级。",
+      "老师直接拿8-bit灰度只有256种强度作比较。例如(255,0,0)只是这许多RGB代码中的一种。这里统计的是数字编码组合数，不是在推翻第12页固定三原色有色域限制的说明；代码数量多与覆盖所有可见颜色不是一件事。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:42:00"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 26,
+    "paragraphs": [
+      "上半图把Red、Green、Blue三幅灰度分量送进Color monitor，右边得到一个彩色平面。Red图整体均匀，Green左右渐变、Blue上下渐变，说明每个分量图的明暗代表该通道数值，并不表示屏幕最后直接显示为灰色。",
+      "下排三幅分别标R=0、G=0、B=0，是颜色立方体原先看不见的三个面。老师对这组分量示意快速带过；可以用R=0的面作例子，只剩绿蓝组合，因此里面不会出现需要正红分量的纯红角。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:42:00"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 27,
+    "paragraphs": [
+      "中间向量式写得很直接：在RGB已归一化到0–1时，C=1−R，M=1−G，Y=1−B。它把加色三分量对应到CMY的互补表示，而不是把三个名称任意重新排序。",
+      "按式子举例，RGB=(1,0,0)对应CMY=(0,1,1)。老师还补充打印机常有独立黑色K，使黑色不必完全依靠几种彩墨精确混出。原页标题提CMYK，但此页展示的公式只到CMY，没有给K分离算法，讲解不另加未讲步骤。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:43:00"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 28,
+    "paragraphs": [
+      "四条文字的结论浓缩在最后一句：RGB适合color generation，HSI适合color description。RGB与硬件分量表达相容，但人直觉上更容易说“什么颜色、纯不纯、亮不亮”。",
+      "老师以人的描述习惯解释为什么需要两种模型。例：说“这块红色有点发白，再亮一点”比直接指定R、G、B的三组改动更自然；这并不说明RGB失效，而是不同表示让不同操作更方便。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:43:00",
+      "recRestColor@01:44:00"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 29,
+    "paragraphs": [
+      "本页重新定义HSI三个字母：Hue描述主导纯色，Saturation描述颜色被白光稀释多少，Intensity用来表示与灰度图类似的无彩色强度。它特意把主观Brightness与这里可用的Intensity区分，避免把“感觉”直接当可计算变量。",
+      "例如保持色调为红，可以分别改变纯度与强度，得到不同的红色外观。老师先前明确说经常考这些量的含义；这页是定义复习，与第15页属于同一个考核主题，不重复制造一个新的“必考点”。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:34:25",
+      "recRestColor@01:44:00"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 30,
+    "paragraphs": [
+      "右图不是一个新立方体，而是把第24页RGB立方体旋转，让Black顶点在下、White顶点在上，二者的对角线成为竖直参照轴。红绿蓝以及青品红黄仍在原来的立方体顶点关系中。",
+      "老师用“立起来”帮助理解强度：从三分量都0的黑点，沿R=G=B的轴向三分量都1的白点走，明暗随之变化。这个几何旋转只是重新看同一组颜色，不是把图像本身旋转90度或改变像素位置。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:45:00"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 31,
+    "paragraphs": [
+      "先读上半句：过某颜色点作垂直Intensity轴的平面，用它在轴上的位置描述强度。再读下半句：相对于这条黑白轴，离轴更远的颜色更远离灰色、饱和程度更高。两者讨论的是不同方向。",
+      "老师转写在“近/远”的一处出现自相矛盾；这里按本页明确的increases as a function of distance并结合第33页的规范化说明解释。例：同一强度截面上，中心是无彩色，往纯色方向移动增加彩色成分，不能把沿轴变亮误当作饱和度增大。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:45:00"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 32,
+    "paragraphs": [
+      "右图灰色三角面由Cyan、Black、White三点定义。课件借这一面说明：黑白只改变无彩色部分，不提供新的色调，所以在示意的cyan方向上混合黑或白，仍围绕同一青色色调变化。",
+      "老师把它称作一个色调的面。比如青色向白点靠近会变浅、饱和度下降，而不是转成红色。严格在黑白轴上的点没有可区分的彩色色调，这一点老师在本次结束时用S=0再次提醒；因此不要把端点黑白也当作有明确cyan色调。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:45:00"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 33,
+    "paragraphs": [
+      "右下六边形中，H是从参考方向量起的角度，S沿离开中心的方向表示饱和程度；左侧特别写S是normalized quantity，不是可无限增加的普通欧氏半径。Intensity则沿前面黑白轴的位置表示，不在这张二维截面里另画成颜色角度。",
+      "老师用角度、远近和高度三个直观量帮助记忆。例：围着中心转动改变色调，朝中心收回趋于灰色，上下换强度平面改变明暗。记住示意半径后，还需保留本页“规范化”的限定，不能将图上量出来的毫米数直接当S值。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:46:41"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 34,
+    "paragraphs": [
+      "上下两组分别用三角形、圆形截面展示HSI：右侧纵向轴从Black到White，左侧抽出I=0.5和I=0.75两个截面。截面中心趋向白/灰，向外走颜色更纯，绕中心走则变换色调。",
+      "老师在这页重复“高度看I、角度看H、离中心远近理解S”。例：在I=0.5那张截面上沿同一射线移动，与从I=0.5换到I=0.75是两种操作；不要只因两张切片尺寸不同，就认定图片分辨率发生了变化。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:48:00"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 35,
+    "paragraphs": [
+      "这页提供RGB→HSI的计算关系。I=(R+G+B)/3是三分量平均；S=1−3min(R,G,B)/(R+G+B)体现相对纯度；H先通过反余弦得到θ，再用B≤G或B>G选择θ还是360°−θ，区分色轮的两侧。",
+      "按本页式子举例，RGB=(1,0,0)给I=1/3、S=1、H=0°；若三个非零分量相等，S=0，色调计算会遇到无明确方向的情况。老师说这些坐标转换公式不仔细展开，但没有单独说“不考”；公式解释属于课件辅助阅读，不假装录音逐项推导过。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:48:00"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 36,
+    "paragraphs": [
+      "HSI→RGB分三个扇区，这页只对应0°≤H<120°的RG sector。先求B=I(1−S)，再用含cos H与cos(60°−H)的式子求R，最后用G=3I−(R+B)补出第三分量，以维持三分量平均为I。",
+      "按本页代入H=0°、S=1、I=1/3：B=0，R=(1/3)(1+1/0.5)=1，G=0，回到纯红。这个算例只是在演示课件公式；老师对应段落是概括可互换，并未逐行讲这个扇区，不能为它添加“明确要求背诵”的标签。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:48:00"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 37,
+    "paragraphs": [
+      "这一页转到120°≤H<240°的GB sector。第一步H←H−120°是把角度移到本扇区的局部范围；此时先求R=I(1−S)，再求G，最后由B=3I−(R+G)补齐。与上页相比，主导计算的通道轮换了。",
+      "按本页算H原值120°、S=1、I=1/3，减120°后局部角为0°，于是R=0、G=1、B=0。一定先按原H选扇区，再作角度平移，不能不分扇区就把任意色调用上一页公式。录音对此仍是快速带过。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:48:00"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 38,
+    "paragraphs": [
+      "第三个BR sector覆盖240°≤H<360°，先令H←H−240°；G=I(1−S)，B使用余弦比例式，R再由3I−(G+B)得到。三页是同一转换的三段，不能将三套结果分别当成三张不同颜色图。",
+      "按式子代入原H=240°、S=1、I=1/3，可得G=0、B=1、R=0，即纯蓝。与第36页纯红、第37页纯绿一起检查，能确认扇区和通道没有抄错。老师没有详细展开这些数学步骤，讲解保留这个范围限定。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:48:00"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 39,
+    "paragraphs": [
+      "上面是RGB颜色立方体示意，下面从左到右是它转换后的H、S、I分量图。三张下图都用灰度显示数值，不能把H图的亮处直接叫“颜色更亮”：H灰度编码的是角度，S编码纯度，只有I对应强度。",
+      "老师说同一颜色图可转为三个HSI分量。直接观察例子是上图某个纯色面，在H图里可能呈稳定灰值，在I图里则由它的分量强度决定；三张看起来不同，不代表其中两张丢失了图片，而是表示的量不同。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:48:42"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 40,
+    "paragraphs": [
+      "跟着三块框图走：输入RGB image先转HSI，在中间的Manipulations环节调整需要的分量，再转回RGB供显示。转换本身只是换表示，真正的图像操作发生在中间，不是说每做一次转换就自动增强。",
+      "老师给出调强度的理由：RGB里通常需要同时协调三个通道，在HSI里可只处理I。例如希望调亮而保留H、S的描述，先在HSI中改I再转换回来；这一页没有引入后半课程的具体直方图或滤波算法。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:48:42",
+      "recRestColor@01:49:19"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 41,
+    "paragraphs": [
+      "四图按左上原RGB、右上Hue、左下Saturation、右下Intensity读。原图三原色重叠的中心为白色；在S图里这个中心为黑，表示S=0，不是说原图中心真的黑。I图中心反而最亮，体现强度与饱和度是不同变量。",
+      "老师特别提醒S=0时Hue不起区分颜色的作用。按第35页式子，白色(1,1,1)的S=0、I=1；它没有确定的红绿蓝色调，所以H图在该处的显示值不能解释成某一种有意义的色相。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:49:19"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  },
+  {
+    "page": 42,
+    "paragraphs": [
+      "这页左上H、右上S、左下I再组合成右下RGB。对比上一页，右下的三大圆颜色关系改变，中心现在呈灰；S图中心仍为0，说明那里不会因调整Hue而变成某个鲜艳颜色。",
+      "老师用这组图收束到一个容易误解的点：S=0时不能由H判定颜色，但I仍决定灰度亮暗，并非“不管I是多少都同一灰色”。例如R=G=B=0.2和0.8都无彩色，亮暗不同。本次录音到这里结束，并明确把伪彩色及后续处理留给下一次，因此第43–83页当前只展示PPT。"
+    ],
+    "sourceIds": [
+      "recRestColor@01:49:19",
+      "recRestColor@01:50:24"
+    ],
+    "visualReviewed": true,
+    "audioSupported": true
+  }
+]
