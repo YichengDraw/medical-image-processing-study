@@ -16,7 +16,7 @@ function environment(query){
  const document={querySelector(selector){
   if(!nodes.has(selector)){
    const classes=new Set();
-   nodes.set(selector,{textContent:'',innerHTML:'',style:{},value:'',classList:{
+   nodes.set(selector,{textContent:'',innerHTML:'',style:{},value:'',scrollTop:0,scrollLeft:0,classList:{
     add(c){classes.add(c)},remove(c){classes.delete(c)},contains(c){return classes.has(c)},
     toggle(c,force){if(force??!classes.has(c))classes.add(c);else classes.delete(c)}
    },setAttribute(name,value){this[name]=value},querySelectorAll(){return []}});
@@ -124,4 +124,77 @@ for(const [query,expected] of [['?course=hum053','dark'],['?course=ai301',null],
  vm.runInNewContext(themeScript,{URLSearchParams,location:{search:query},localStorage:{getItem:k=>new Map([['bmeb316-state',medicalState],['ai301-state',architectureState],['hum053-state',philosophyState]]).get(k)},document:{documentElement:{setAttribute(k,v){if(k==='data-theme')actual=v}}}});
  assert.equal(actual,expected,'Initial theme matches the selected course before app loading');
 }
-console.log('PASS: three-course routing, isolated progress/bookmarks/themes, mixed recording coverage, legacy course compatibility, philosophy exam labels and practice boundaries.');
+// The shared hub must preserve evidence and filtering across all three courses.
+const hubFixture={
+ decks:[{id:'lec6',pages:8},{id:'lec6p2',pages:6}],
+ sources:{question:{recording:'rec',start:'12:34',end:'12:50',excerpt:'为什么 <rs> 是地址基值？请同学回答。'}},
+ recordings:{rec:{title:'课堂说明',file:'class.docx'}},
+ examGuide:{
+  categories:[{id:'explicit',label:'明确考核'},{id:'teacher',label:'老师强调 / 课堂提问'},{id:'quiz',label:'Quiz 复盘'},{id:'class',label:'一般整理 / 课件练习'},{id:'practice',label:'自拟练习'}],
+  entries:[
+   {id:'teacher-question',category:'teacher',title:'知识提问',body:'根据数据流分析。',anchors:[{deck:'lec6',page:3},{deck:'lec6',page:5},{deck:'lec6',page:3},{deck:'lec6p2',page:2}],sourceIds:['question'],teacherEvidence:[{kind:'question',sourceId:'question',quote:'为什么 <rs> 是地址基值？'}]},
+   {id:'general',category:'class',title:'一般整理项目',body:'普通课堂讲述。',anchors:[{deck:'lec6',page:4}],sourceIds:[]},
+   {id:'exam',category:'explicit',title:'明确考试要求',body:'老师明确说明。',anchors:[{deck:'lec6',page:7}],sourceIds:[]},
+   {id:'practice',category:'practice',title:'自拟练习项目',body:'只作复习练习。',anchors:[{deck:'lec6',page:2}],sourceIds:[]}
+  ],note:'按来源区分类别。'
+ }
+};
+for(const query of ['', '?course=ai301', '?course=hum053']){
+ const hub=environment(query);hub.ctx.fixture=hubFixture;
+ hub.run('S.data=fixture;S.deck=fixture.decks[0];S.page=1;renderExamHub()');
+ const markup=()=>hub.nodes.get('#exam-list').innerHTML;
+ assert.match(markup(),/teacher-evidence/);
+ assert.match(markup(),/12:34–12:50/,'The visible quote carries its source time');
+ assert.match(hub.run('teacherEvidenceMarkup(fixture.examGuide.entries[0])'),/课堂说明 · 12:34–12:50/,'The visible quote identifies its recording, not just a timestamp');
+ assert.match(markup(),/为什么 &lt;rs&gt; 是地址基值？/,'Evidence is rendered as text');
+ assert.doesNotMatch(markup(),/<rs>/);
+ assert.match(markup(),/<details class="inline-sources">/,'Full source excerpts remain collapsed');
+ assert.equal(hub.nodes.get('#exam-subtitle').textContent,'','No repeated metadata banner without a course summary');
+ assert.doesNotMatch(hub.nodes.get('#exam-filters').innerHTML,/data-category="quiz"/,'An empty unselected quiz category does not occupy the strip');
+ assert.ok(hub.ctx.fixture.examGuide.categories.some(c=>c.id==='quiz'),'Hiding an empty filter leaves the category data intact');
+ hub.run('S.examCategory="teacher";renderExamHub()');
+ assert.match(markup(),/知识提问/);
+ assert.doesNotMatch(markup(),/一般整理项目|自拟练习项目|明确考试要求/,'Teacher evidence is a distinct category');
+ hub.run('S.examCategory="all"');
+ hub.nodes.get('#exam-query').value='地址基值';
+ hub.run('$("#exam-content").scrollTop=300');
+ hub.nodes.get('#exam-filters').scrollLeft=180;
+ hub.run('renderExamHub(true)');
+ assert.match(markup(),/知识提问/,'Searching an evidence-only phrase finds its entry');
+ assert.doesNotMatch(markup(),/一般整理项目|自拟练习项目|明确考试要求/);
+ assert.equal(hub.nodes.get('#exam-content').scrollTop,0,'New filters/search results begin at the top');
+ assert.equal(hub.nodes.get('#exam-filters').scrollLeft,180,'Searching does not reset a narrow category strip');
+ assert.equal(hub.run('teacherEvidenceMarkup({category:"teacher",teacherEvidence:[{kind:"question",sourceId:"missing",quote:"unverified"}]})'),'','Missing sources do not produce teacher quotations');
+ assert.match(hub.run('teacherEvidenceMarkup({category:"explicit",teacherEvidence:fixture.examGuide.entries[0].teacherEvidence})'),/teacher-evidence/,'An explicit exam-preparation entry can retain its classroom question evidence');
+ assert.equal(hub.run('teacherEvidenceMarkup({category:"class",teacherEvidence:fixture.examGuide.entries[0].teacherEvidence})'),'','Ordinary entries are not silently promoted');
+ assert.equal(hub.run('shortDeck("lec6")'),'L6');
+ assert.equal(hub.run('shortDeck("lec6p2")'),'L6·2');
+ assert.equal(hub.run('nextFocus().page'),3,'Teacher questions are included with classroom material');
+ hub.run('S.focusIncludeClass=false');
+ assert.equal(hub.run('nextFocus().page'),7,'Exam-only mode excludes teacher emphasis and general review');
+ hub.run('S.focusIncludeClass=true;S.page=3');
+ assert.equal(hub.run('nextFocus().page'),4,'Repeated teacher anchors do not re-enter later in the same deck');
+ hub.run('S.page=7');
+ assert.equal(hub.run('nextFocus().deck'),'lec6p2','A later part remains a separate navigation destination');
+ assert.match(hub.run('focusType(nextFocus())'),/老师强调.*非必考/);
+ hub.nodes.get('#exam-list').innerHTML='<details open>已经展开的出处</details>';
+ hub.nodes.get('#exam-content').scrollTop=250;
+ hub.run('setFocusScope(false)');
+ assert.equal(hub.nodes.get('#exam-list').innerHTML,'<details open>已经展开的出处</details>','Navigation preferences do not rebuild reading content or close its sources');
+ assert.equal(hub.nodes.get('#exam-content').scrollTop,250);
+ assert.equal(hub.nodes.get('#focus-include-class').checked,false);
+ assert.equal(hub.nodes.get('#next-focus').disabled,true,'The navigation button is still updated when its scope changes');
+ hub.run('setFocusScope(true)');
+ hub.run('S.deck=fixture.decks[1];S.page=2');
+ assert.equal(hub.run('nextFocus()'),null,'At the last representative, navigation never wraps');
+}
+const boundary=environment('?course=ai301');
+boundary.ctx.fixture=JSON.parse(fs.readFileSync(path.join(__dirname,'../ai301/data/content.json'),'utf8'));
+boundary.run('S.data=fixture;S.deck=deck("lec6p2");S.page=6;notes()');
+assert.equal(boundary.nodes.get('#companion-panel').classList.contains('hidden'),false,'Pipelined datapath P6 shows the recorded explanation');
+boundary.run('S.page=7;notes()');
+assert.equal(boundary.nodes.get('#companion-panel').classList.contains('hidden'),true,'Turning to P7 closes the companion');
+assert.equal(boundary.nodes.get('#study-grid').classList.contains('no-companion'),true,'P7 gives the PDF the full reading width');
+boundary.run('S.page=6;notes()');
+assert.equal(boundary.nodes.get('#companion-panel').classList.contains('hidden'),false,'Returning to P6 restores its explanation');
+console.log('PASS: three-course routing/state/coverage, distinct teacher evidence, quote search, escaped excerpts, filtering and strictly forward cross-part navigation.');

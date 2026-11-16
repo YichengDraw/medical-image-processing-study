@@ -2,7 +2,11 @@
   "categories": [
     {
       "id": "explicit",
-      "label": "明确考核"
+      "label": "明确考核要求"
+    },
+    {
+      "id": "teacher",
+      "label": "老师强调与提问"
     },
     {
       "id": "quiz",
@@ -10,7 +14,7 @@
     },
     {
       "id": "class",
-      "label": "课堂重点"
+      "label": "一般整理与练习"
     },
     {
       "id": "scope",
@@ -24,7 +28,7 @@
   "entries": [
     {
       "id": "assessment",
-      "category": "explicit",
+      "category": "arrangement",
       "title": "成绩结构：考试、Quiz 与项目各占多少",
       "body": "课件 Assessment 页列出：Attendance 5%，Quiz 10%，Projects 30%，Final Exam 40%，Final Presentation 15%。这只是成绩构成，不代表每一种题型的分值。来源是 Lecture 1 PDF 第9页；不要把项目30%与展示15%合并后误认为只交一份代码即可。",
       "anchors": [
@@ -57,7 +61,7 @@
     },
     {
       "id": "exam-no-code",
-      "category": "explicit",
+      "category": "scope",
       "title": "考试不考写代码，但 Lab 仍需理解实现",
       "body": "老师说考试不考代码，主要考基本概念。不能据此推成“不用做 Lab”：实践项目与考试是不同的考核部分。例：不要求手写 fft2，不等于不需要知道零频、相位和补零。",
       "anchors": [
@@ -74,7 +78,7 @@
     },
     {
       "id": "quiz-format",
-      "category": "explicit",
+      "category": "arrangement",
       "title": "Quiz 形式与期末的关系",
       "body": "9月11日口头说明 Quiz 大约三次、以选择题考基本概念；后续 Quiz 复盘又说期末可能使用相同题目。应重看错题背后的概念，不把“可能复用”当成题目必然重复或完整题库承诺。转写中的总题数不够清楚，本网站不据此给出确定数量。",
       "anchors": [
@@ -92,7 +96,7 @@
     },
     {
       "id": "quiz-integrity",
-      "category": "explicit",
+      "category": "arrangement",
       "title": "Quiz 复盘时不要拍照；这里只整理知识点",
       "body": "老师在展示 Quiz 解析时明确禁止拍照，并称会按作弊看待。这里因此只归纳解释过的概念、错误原因与学习例子，不整理完整试卷、选项或供转发的题库。",
       "anchors": [
@@ -127,25 +131,49 @@
     {
       "id": "exam-phase",
       "category": "explicit",
-      "title": "明确要懂：幅值、相位及功率不是一回事",
-      "body": "老师在频域总结中明确指出应理解幅值与相位的含义，不考逐项公式推导。F=|F|e^(jφ)：|F|给出不同频率的强弱，φ对重建的位置/结构关系很重要，功率是|F|²。例：3+4j的幅值5、功率25；不要把幅值图直接当相位图。",
+      "title": "明确考核要求：幅值与相位的含义",
+      "body": "老师在频域总结中明确要求知道相位、幅值各表示什么，并说不考逐项公式推导。这是考试语境中的概念掌握要求，不承诺某道原题必出。F=|F|e^(jφ)：|F|给出频率分量的强弱，φ参与决定重建的位置与结构关系。例：同一目标整体平移时，幅值可以不变，相位随之改变；不能把幅值图当作相位图解释。",
       "anchors": [
         {
           "deck": "lec4p1",
           "page": 61
         }
       ],
-      "status": null,
+      "status": "考试语境中的明确概念掌握要求；不承诺原题",
       "sourceIds": [
         "recFreq@21:22",
         "recFreq@13:33"
       ],
-      "sourceType": "录音+课件"
+      "sourceType": "录音+课件",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recFreq@21:22",
+          "quote": "但是我们需要知道，就比如说相位它表示什么意思，幅值它表示什么意思"
+        }
+      ]
+    },
+    {
+      "id": "c-magnitude-power-distinction",
+      "category": "class",
+      "title": "一般整理：幅值与功率谱的数值区别",
+      "body": "功率谱取复数幅值的平方。例：F=3+4j 时，幅值为5，功率为25。这个数值区别用于辅助理解频谱；没有据此认定老师单独强调功率计算或承诺该计算必考。",
+      "anchors": [
+        {
+          "deck": "lec4p1",
+          "page": 64
+        }
+      ],
+      "sourceIds": [
+        "recFreq@11:35"
+      ],
+      "sourceType": "课堂内容整理",
+      "status": "一般内容整理；无该子题的独立强调或考试承诺"
     },
     {
       "id": "exam-padding",
       "category": "explicit",
-      "title": "明确要懂：为什么补零，补到多大",
+      "title": "明确考核要求：为什么补零、补到多大",
       "body": "DFT 频域相乘对应循环卷积。要用它计算长度A、B序列的线性卷积，应至少补到A+B−1；二维按两个方向分别满足大小之和减一。老师特别说需要掌握这一概念。课件常用2M×2N是一个实现选择，不是所有核的唯一精确最小值。",
       "anchors": [
         {
@@ -157,12 +185,19 @@
           "page": 12
         }
       ],
-      "status": null,
+      "status": "考试语境中的明确概念掌握要求；不承诺原题",
       "sourceIds": [
         "recFreq@20:22",
         "recFreq@21:22"
       ],
-      "sourceType": "录音+课件"
+      "sourceType": "录音+课件",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recFreq@21:22",
+          "quote": "然后我们这里面啊卷积的话，就比如说我们要要补零，要补到多大的一个一个长度"
+        }
+      ]
     },
     {
       "id": "q-eye",
@@ -342,7 +377,7 @@
     },
     {
       "id": "c-information",
-      "category": "class",
+      "category": "teacher",
       "title": "更多像素、更平滑，不自动等于更准确",
       "body": "老师把这个问题作为采样章主线：插值增加输出网格点，不增加原采集的独立细节；采集端光子预算固定时，更多像素还可能降低单像素信号。要一起看真实分辨率、噪声和任务。",
       "anchors": [
@@ -351,25 +386,32 @@
           "page": 6
         }
       ],
-      "status": null,
+      "status": "教师明确强调；不是必考承诺",
       "sourceIds": [
         "recSampling@03:04",
         "recSampling@09:27"
       ],
-      "sourceType": "录音+课件"
+      "sourceType": "录音+课件",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recSampling@03:04",
+          "quote": "然后这里面就是一个核心的一个问题，或者说你们可以一直放在脑袋里面"
+        }
+      ]
     },
     {
       "id": "c-nyquist",
       "category": "class",
       "title": "采样条件与混叠：最高频率至少要被区分",
-      "body": "理解f_s>2f_max及其带限、均匀采样、理想重建前提。砖墙变假条纹说明欠采样会把高频伪装成低频。降低采样率之前先抑制超出新Nyquist上限的分量；事后插值不能可靠消除已发生的混叠。",
+      "body": "采样条件f_s>2f_max依赖带限、均匀采样与理想重建前提。砖墙变假条纹说明欠采样会把高频伪装成低频。降低采样率前抑制超出新Nyquist上限的分量；事后插值不能可靠消除已发生的混叠。此处整理完整方法关系；老师点名要求理解的带限/截止概念另列。",
       "anchors": [
         {
           "deck": "lec2p2",
           "page": 12
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recSampling@15:24",
         "recSampling@17:53",
@@ -378,26 +420,69 @@
       "sourceType": "录音+课件"
     },
     {
-      "id": "c-storage",
-      "category": "class",
-      "title": "位深、假轮廓与存储量",
-      "body": "b bit有2^b个代码；低位深会出现带状假轮廓。未压缩单通道M×N×b bit，512×512×8 bit=256KiB，不计文件头与压缩。空间分辨率与灰度量化精度要分别比较。",
+      "id": "c-bandlimit-cutoff-emphasis",
+      "category": "teacher",
+      "title": "老师要求理解：带限信号与截止频率",
+      "body": "老师在介绍采样条件时，明确点名需要理解 band-limited signal 和 cutoff frequency。带限表示超过某个最高频率后频谱为零；这个上限参与决定需要多密的采样。例：理想信号只含不超过100 Hz的分量，100 Hz就是其频率上限，采样定理再据此要求足够高的采样率。这里的教师强调限定为这两个概念，不把所有后续抗混叠步骤一起标为明确重点。",
       "anchors": [
         {
           "deck": "lec2p2",
-          "page": 17
-        },
+          "page": 10
+        }
+      ],
+      "sourceIds": [
+        "recSampling@15:24"
+      ],
+      "sourceType": "课堂原文中的明确强调或提问",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recSampling@15:24",
+          "quote": "当然这里面我们主要呃要理解就是什么样是一个一个呃 band limit signal 然后什么是它的一个 cut off 的 frequency。"
+        }
+      ],
+      "status": "教师明确强调；不是必考承诺"
+    },
+    {
+      "id": "c-storage",
+      "category": "class",
+      "title": "一般整理：位深与未压缩图像存储量",
+      "body": "b bit有2^b个代码。未压缩单通道图像占M×N×b bit；例如512×512×8 bit=256KiB，不计文件头和压缩。空间分辨率、量化位深和文件容量是相关但不同的量。",
+      "anchors": [
         {
           "deck": "lec2p2",
           "page": 18
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
-        "recSampling@27:19",
         "recSampling@30:30"
       ],
       "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-false-contour-emphasis",
+      "category": "teacher",
+      "title": "老师强调：低位深造成的假轮廓",
+      "body": "老师请课堂辨认逐渐降低位深后出现的条带，并多次强调这种假轮廓需要分清。原本连续变化的强度在量化后可能变成一层一层的边界，它不是原物体中新出现的结构。例：平滑渐变只剩很少的灰度级时，会看见分层条带。存储量计算另列为一般整理。",
+      "anchors": [
+        {
+          "deck": "lec2p2",
+          "page": 17
+        }
+      ],
+      "sourceIds": [
+        "recSampling@27:19"
+      ],
+      "sourceType": "课堂原文中的明确强调或提问",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recSampling@27:19",
+          "quote": "对，就是这个，boss counter，这个就是非常重要"
+        }
+      ],
+      "status": "教师明确强调；不是必考承诺"
     },
     {
       "id": "c-bilinear",
@@ -410,7 +495,7 @@
           "page": 25
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recSampling@42:51",
         "recSampling@46:00"
@@ -419,7 +504,7 @@
     },
     {
       "id": "c-m-adjacency",
-      "category": "class",
+      "category": "teacher",
       "title": "m邻接：共享4邻域是否含前景决定对角连接",
       "body": "两像素若本就4邻接，满足m邻接；若仅对角相邻，则要求它们共享的4邻域中没有V内像素。检查的是取值属于前景集合V的像素，不是共享位置是否在几何上存在。",
       "anchors": [
@@ -428,30 +513,60 @@
           "page": 36
         }
       ],
-      "status": null,
+      "status": "教师明确强调；不是必考承诺",
       "sourceIds": [
         "recSampling@01:07:10"
       ],
-      "sourceType": "录音+课件"
+      "sourceType": "录音+课件",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recSampling@01:07:10",
+          "quote": "那最关键是一个就是对角线，就是diagonal的一个一个一个 neighbors"
+        }
+      ]
     },
     {
       "id": "c-distance",
       "category": "class",
-      "title": "同一对像素，三种距离和物理距离可不同",
-      "body": "欧氏用直线长度，D4用坐标差绝对值之和，D8用两者最大值。若像素间距各向异性，要先乘各方向spacing再计算物理长度；不是任何图中都能把像素数直接当毫米。",
+      "title": "一般整理：欧氏、D4与D8三种像素距离",
+      "body": "欧氏距离用直线长度，D4用两个坐标差绝对值之和，D8取其中最大值。例：坐标差为3、4时，三种像素距离分别是5、7、4。物理尺度的区别另有教师明确提醒条目。",
       "anchors": [
         {
           "deck": "lec2p2",
           "page": 48
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recSampling@01:23:03",
-        "recSampling@01:24:31",
-        "recSampling@01:26:00"
+        "recSampling@01:24:31"
       ],
       "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-physical-distance-emphasis",
+      "category": "teacher",
+      "title": "老师要求分清：像素距离与物理距离",
+      "body": "老师明确提醒像素间的距离不自动等于物理长度，尤其要注意两个方向采样间距不同的情况。应先把各方向坐标差乘以对应spacing，再算物理距离。例：相差3列、4行，若间距分别0.2与0.4毫米，物理位移分量是0.6与1.6毫米，不能把像素欧氏距离5直接写成5毫米。",
+      "anchors": [
+        {
+          "deck": "lec2p2",
+          "page": 49
+        }
+      ],
+      "sourceIds": [
+        "recSampling@01:26:00"
+      ],
+      "sourceType": "课堂原文中的明确强调或提问",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recSampling@01:26:00",
+          "quote": "但是像素之间的距离好多时候就是并不是它物理的一个距离，这个好多时候就是要需要搞呃需要弄清楚"
+        }
+      ],
+      "status": "教师明确强调；不是必考承诺"
     },
     {
       "id": "c-signed",
@@ -464,7 +579,7 @@
           "page": 58
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recSampling@01:38:17"
       ],
@@ -481,13 +596,37 @@
           "page": 20
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recSpatial@11:00",
         "recSpatial@12:10",
         "recSpatial@16:00"
       ],
       "sourceType": "录音+课件"
+    },
+    {
+      "id": "c-boundary-identification-question",
+      "category": "teacher",
+      "title": "课堂提问：从边缘效果辨认replicate填充",
+      "body": "老师展示边界效果时问“这个是什么操作”，并确认是replicate。识别依据是外侧复制边界像素，效果不同于补黑或把对侧接过来的wrap around。例：边缘像素为200，replicate在外面延续200；补0则在窗内引入暗值。这里对应辨认操作的问题，不把全部输出尺寸推导一起标为教师重点。",
+      "anchors": [
+        {
+          "deck": "lec3p2",
+          "page": 20
+        }
+      ],
+      "sourceIds": [
+        "recSpatial@16:00"
+      ],
+      "sourceType": "课堂原文中的明确强调或提问",
+      "teacherEvidence": [
+        {
+          "kind": "question",
+          "sourceId": "recSpatial@16:00",
+          "quote": "这个是什么操作？实现实现两种，一个是 wrap around一个是 replicate。 replicate 对，这个就是一个 replicate"
+        }
+      ],
+      "status": "教师明确提问；不是必考承诺"
     },
     {
       "id": "c-convolution",
@@ -500,7 +639,7 @@
           "page": 21
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recSpatial@18:32",
         "recSpatial@21:58"
@@ -510,8 +649,8 @@
     {
       "id": "c-mean-median",
       "category": "class",
-      "title": "均值、中值要结合噪声与结构选",
-      "body": "均值降低独立随机波动但会模糊；中值对脉冲噪声较稳健，但会吞掉细线或小目标。老师展示了边缘、细结构和不同窗口形状；“中值总更好”不是课堂图示支持的结论。",
+      "title": "一般整理：均值与中值按噪声和结构选择",
+      "body": "均值用邻域平均降低随机波动，中值用排序后的中间值处理离群像素。课堂展示两者效果及不同窗口形状；选择取决于噪声模型与希望保留的结构，不能概括为“中值总更好”。小点、细线与角点的损失另列为老师明确提醒。",
       "anchors": [
         {
           "deck": "lec3p2",
@@ -522,7 +661,7 @@
           "page": 44
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recSpatial@45:11",
         "recSpatial@52:15",
@@ -531,8 +670,32 @@
       "sourceType": "录音+课件"
     },
     {
+      "id": "c-median-small-structure-warning",
+      "category": "teacher",
+      "title": "老师提醒：中值可能抹掉小点、细线与角点",
+      "body": "老师明确提醒中值在某些情况下有问题，随后用图说明小点、细线和角点可能被背景吞掉。例：3×3窗口中只有一个亮点，排序后的中值仍可能是背景；更换窗口形状能保留某些方向的结构，但不保证所有结构都留下。均值和中值的一般比较另列。",
+      "anchors": [
+        {
+          "deck": "lec3p2",
+          "page": 44
+        }
+      ],
+      "sourceIds": [
+        "recSpatial@52:15"
+      ],
+      "sourceType": "课堂原文中的明确强调或提问",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recSpatial@52:15",
+          "quote": "然后我们这里面有一些要注意，就是 media 在有些情况下，它也是会有有一些问题"
+        }
+      ],
+      "status": "教师明确强调；不是必考承诺"
+    },
+    {
       "id": "c-derivatives",
-      "category": "class",
+      "category": "teacher",
       "title": "一阶、二阶导数：看响应形状和噪声代价",
       "body": "一阶导数对斜坡有响应，二阶对斜率变化响应明显；二阶在阶跃附近常出现正负双响应。高阶变化也会放大噪声。应结合离散示例逐格算，而非把所有亮线都视为真实边界。",
       "anchors": [
@@ -541,12 +704,24 @@
           "page": 56
         }
       ],
-      "status": null,
+      "status": "教师明确强调；不是必考承诺",
       "sourceIds": [
         "recSpatial@57:53",
         "recSpatial@01:02:00"
       ],
-      "sourceType": "录音+课件"
+      "sourceType": "录音+课件",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recSpatial@01:02:00",
+          "quote": "这个是是相当于就是呃一阶一阶导数跟跟二阶导数它的一个一个呃区别，就是我们去去去算的话，就是但是这个课比较重要就是。"
+        },
+        {
+          "kind": "emphasis",
+          "sourceId": "recSpatial@01:02:00",
+          "quote": "这个我们应该要啊要记住"
+        }
+      ]
     },
     {
       "id": "c-laplacian",
@@ -559,7 +734,7 @@
           "page": 67
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recSpatial@01:08:00",
         "recSpatial@01:09:28"
@@ -577,7 +752,7 @@
           "page": 73
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recSpatial@01:11:40",
         "recSpatial@01:13:49"
@@ -595,7 +770,7 @@
           "page": 85
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recFourier@18:29",
         "recFourier@19:34"
@@ -613,7 +788,7 @@
           "page": 73
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recFreq@25:01"
       ],
@@ -630,7 +805,7 @@
           "page": 33
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recFreq@26:35"
       ],
@@ -647,7 +822,7 @@
           "page": 64
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recFreq@11:35",
         "recFreq@12:27",
@@ -666,7 +841,7 @@
           "page": 25
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recFreq@01:12:30"
       ],
@@ -683,7 +858,7 @@
           "page": 29
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recFreq@01:10:09",
         "recFreq@01:11:29"
@@ -701,7 +876,7 @@
           "page": 33
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recFreq@01:13:41",
         "recFreq@01:15:00"
@@ -719,7 +894,7 @@
           "page": 51
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recFreq@01:31:00",
         "recFreq@01:33:30"
@@ -737,7 +912,7 @@
           "page": 56
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recFreq@01:37:00",
         "recFreq@01:37:48"
@@ -1013,7 +1188,7 @@
       "id": "rest-vs-enhancement",
       "category": "class",
       "title": "复原不是单纯让图像更好看：先判断退化来源",
-      "body": "老师把图像增强与复原区分为按需求调整外观，以及估计并逆转退化过程。结合第6–7页的g=h*f+η，要先判断是随机噪声、脉冲噪声、周期干扰还是模糊，再选处理方法。例：运动模糊不能仅因图像不清楚就套一个低通，它还需要估计退化函数。此项是课堂主线，不是明确的必考承诺。",
+      "body": "老师把图像增强与复原区分为按需求调整外观，以及估计并逆转退化过程。结合第6–7页的g=h*f+η，要先判断是随机噪声、脉冲噪声、周期干扰还是模糊，再选处理方法。例：运动模糊不能仅因图像不清楚就套一个低通，它还需要估计退化函数。此项是概念整理，没有单独的重点或必考承诺。",
       "anchors": [
         {
           "deck": "lec5",
@@ -1024,7 +1199,7 @@
           "page": 7
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recFreq@01:41:33",
         "recFreq@01:45:25",
@@ -1047,7 +1222,7 @@
           "page": 20
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recRestColor@04:42",
         "recRestColor@06:04",
@@ -1070,7 +1245,7 @@
           "page": 26
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recRestColor@08:36",
         "recRestColor@09:55"
@@ -1088,7 +1263,7 @@
           "page": 27
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recRestColor@11:16",
         "recRestColor@11:41"
@@ -1106,7 +1281,7 @@
           "page": 28
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recRestColor@12:27",
         "recRestColor@13:28",
@@ -1125,7 +1300,7 @@
           "page": 31
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recRestColor@16:20",
         "recRestColor@17:03",
@@ -1149,7 +1324,7 @@
           "page": 34
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recRestColor@20:00",
         "recRestColor@20:48",
@@ -1159,8 +1334,8 @@
     },
     {
       "id": "rest-filter-checkpoint",
-      "category": "class",
-      "title": "课堂Checkpoint：三种噪声场景怎样选滤波器",
+      "category": "teacher",
+      "title": "课堂提问：三种噪声场景怎样选滤波器",
       "body": "第36页三问的课堂讨论依次对应：孤立明暗脉冲用中值，高密度可考虑自适应中值；随机噪声紧邻细边缘时考虑局部自适应降噪；随机噪声混有极值时考虑α-trimmed mean。每种选择都要说明假设和可能丢失的细节。它是课堂练习，不是已考Quiz或老师承诺的原题。",
       "anchors": [
         {
@@ -1168,13 +1343,25 @@
           "page": 36
         }
       ],
-      "status": null,
+      "status": "教师明确提问；不是必考承诺",
       "sourceIds": [
         "recRestColor@24:18",
         "recRestColor@25:04",
         "recRestColor@26:08"
       ],
-      "sourceType": "录音+课件"
+      "sourceType": "录音+课件",
+      "teacherEvidence": [
+        {
+          "kind": "question",
+          "sourceId": "recRestColor@24:18",
+          "quote": "就烧排骨一般来说用什么什么方法来来对刚才讲的。中值，中值，对，就是 medium"
+        },
+        {
+          "kind": "question",
+          "sourceId": "recRestColor@25:04",
+          "quote": "然后如果说有一个 mixture of random noise 还有 occasional有一个 extreme extreme 的一个一个 values 这个应该应该是什么呢？"
+        }
+      ]
     },
     {
       "id": "rest-band-notch",
@@ -1187,7 +1374,7 @@
           "page": 44
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recRestColor@28:22",
         "recRestColor@29:33"
@@ -1198,7 +1385,7 @@
       "id": "rest-optimum-notch",
       "category": "class",
       "title": "最优陷波：估计噪声后只减去适当权重的一部分",
-      "body": "第45–51页的星状频谱含真实信号与干扰的重叠，老师说不能一概全部抹掉。用f̂=g−wη并最小化局部方差，在局部窗口权重近似常数的前提下得到w。重点是为什么需要权重、局部近似是什么，而不是把所有亮峰都当纯噪声。",
+      "body": "第45–51页的星状频谱含真实信号与干扰的重叠，老师说不能一概全部抹掉。用f̂=g−wη并最小化局部方差，在局部窗口权重近似常数的前提下得到w。复习可先说明为什么需要权重、局部近似是什么，而不是把所有亮峰都当纯噪声。",
       "anchors": [
         {
           "deck": "lec5",
@@ -1209,7 +1396,7 @@
           "page": 47
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recRestColor@30:47",
         "recRestColor@32:13",
@@ -1230,7 +1417,7 @@
           "page": 53
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recRestColor@38:53",
         "recRestColor@40:00",
@@ -1240,6 +1427,30 @@
         "recRestColor@43:27"
       ],
       "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-psf-importance",
+      "category": "teacher",
+      "title": "老师强调：复原需要知道退化函数H",
+      "body": "老师在引入复原模型时明确强调，需要知道退化函数H，才有条件从退化观测估计原图。例：同一张模糊图若分别假设为离焦和运动模糊，采用的H不同，复原结果也会不同。观察、实验、建模这三种具体估计路线另列为一般整理。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 53
+        }
+      ],
+      "sourceIds": [
+        "recRestColor@38:53"
+      ],
+      "sourceType": "课堂原文中的明确强调或提问",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recRestColor@38:53",
+          "quote": "我们非常重要的话，我们就是我们需要去知道这里面的一个一个呃 hxy 就是我们的 degradation 的一个方程"
+        }
+      ],
+      "status": "教师明确强调；不是必考承诺"
     },
     {
       "id": "rest-motion-model",
@@ -1252,7 +1463,7 @@
           "page": 57
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recRestColor@44:19",
         "recRestColor@45:35",
@@ -1265,7 +1476,7 @@
       "id": "rest-inverse-filter",
       "category": "class",
       "title": "逆滤波的失败项是N/H：H小会放大噪声",
-      "body": "第60页直接除H后得到F̂=F+N/H。老师反复强调，即便噪声本身不大，只要H在某些频率很小，残余也会被放大。第61页D0=40、70、85说明限频过小损失细节，过大又带入不稳定高频；不是D0越大越好。",
+      "body": "第60页直接除H后得到F̂=F+N/H。录音跨课间重复解释，即便噪声本身不大，只要H在某些频率很小，残余也会被放大。第61页D0=40、70、85说明限频过小损失细节，过大又带入不稳定高频；不是D0越大越好。",
       "anchors": [
         {
           "deck": "lec5",
@@ -1276,7 +1487,7 @@
           "page": 61
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recRestColor@49:00",
         "recRestColor@50:00",
@@ -1300,7 +1511,7 @@
           "page": 64
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recRestColor@01:02:00",
         "recRestColor@01:04:00",
@@ -1324,7 +1535,7 @@
           "page": 72
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recRestColor@01:08:00",
         "recRestColor@01:09:31",
@@ -1337,20 +1548,44 @@
       "id": "rest-cls-gamma",
       "category": "class",
       "title": "自动调γ：将重新退化后的残差控制在噪声容差内",
-      "body": "第73页先给γ，算f̂和r=g−Hf̂，再把||r||²与||η||²±a比较；不足则增大γ，超出则减小γ，反复求解。老师在第75页说明噪声参数选错会影响复原。P74的归一化及噪声均值项符号有不一致，未据此生成可照抄的数值实现。",
+      "body": "第73页先给γ，算f̂和r=g−Hf̂，再把||r||²与||η||²±a比较；不足则增大γ，超出则减小γ，反复求解。P74的归一化及噪声均值项符号有不一致，未据此生成可照抄的数值实现。第75页参数选择的重要性另列为教师强调。",
       "anchors": [
         {
           "deck": "lec5",
           "page": 73
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recRestColor@01:16:00",
         "recRestColor@01:17:31",
         "recRestColor@01:18:27"
       ],
       "sourceType": "录音+课件"
+    },
+    {
+      "id": "rest-noise-parameter-emphasis",
+      "category": "teacher",
+      "title": "老师强调：γ选择要与噪声参数对应",
+      "body": "老师在结果对照页明确说γ的选择重要，并比较正确与错误噪声参数的复原。例：把错误的噪声水平代入选择过程，可能得到更模糊的结果；不能仅看是否变平滑。自动调整γ的迭代步骤另列为一般整理。",
+      "anchors": [
+        {
+          "deck": "lec5",
+          "page": 75
+        }
+      ],
+      "sourceIds": [
+        "recRestColor@01:18:27"
+      ],
+      "sourceType": "课堂原文中的明确强调或提问",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recRestColor@01:18:27",
+          "quote": "对，然后我们就是因为这里面伽马的一个选择啊，其实也非常重要"
+        }
+      ],
+      "status": "教师明确强调；不是必考承诺"
     },
     {
       "id": "color-exam-hsi",
@@ -1378,15 +1613,15 @@
     {
       "id": "color-energy-perception",
       "category": "class",
-      "title": "物理能量、人眼响应和主观明暗不能混为一谈",
-      "body": "第8页并列Radiance、Luminance、Brightness。老师用能量很高但不易看见的红外说明，物理强度与视觉感受不同；Brightness是主观明暗。课件对前两项采用了概括性术语与单位表述，讲解保留其课堂区分，不将它当成完整计量学定义。",
+      "title": "一般整理：Brightness表示主观明暗",
+      "body": "课件第8页将Brightness描述为主观明暗感，与物理能量及探测响应的描述区分。例：同一目标的明暗感觉会受观察条件影响，不能只凭一个物理能量数值直接替代。Radiance与Luminance的明确注意事项另列；课件概括性术语不作为完整计量学定义。",
       "anchors": [
         {
           "deck": "lec6",
           "page": 8
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recRestColor@01:26:00",
         "recRestColor@01:27:35"
@@ -1394,8 +1629,32 @@
       "sourceType": "录音+课件"
     },
     {
+      "id": "color-radiance-luminance-warning",
+      "category": "teacher",
+      "title": "老师提醒：能量高不等于视觉上亮",
+      "body": "老师要求注意Radiance与Luminance的区别：感受到的亮度取决于观察者或探测器对波长的响应。例：红外辐射能量可以很高，人眼仍可能觉得不亮。这个提醒不等于给出了课件术语的完整计量学定义；Brightness作为主观明暗的介绍另列。",
+      "anchors": [
+        {
+          "deck": "lec6",
+          "page": 8
+        }
+      ],
+      "sourceIds": [
+        "recRestColor@01:27:35"
+      ],
+      "sourceType": "课堂原文中的明确强调或提问",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recRestColor@01:27:35",
+          "quote": "要注意的一个一个一个地方，就是一个是你，这个是跟你探测器探测的波长有关系"
+        }
+      ],
+      "status": "教师明确强调；不是必考承诺"
+    },
+    {
       "id": "color-fixed-rgb",
-      "category": "class",
+      "category": "teacher",
       "title": "老师强调：固定三原色不能覆盖全部可见颜色",
       "body": "第12页把“固定RGB线性组合产生全部可见颜色”标成Wrong；第17页用三角形无法覆盖完整色度区域说明限制。老师强调三原色的波长一旦变化，就已不是同一组固定原色。结合图理解色域范围，不把24位编码数量当作覆盖全部色域的证据。",
       "anchors": [
@@ -1408,13 +1667,25 @@
           "page": 17
         }
       ],
-      "status": null,
+      "status": "教师明确强调；不是必考承诺",
       "sourceIds": [
         "recRestColor@01:30:29",
         "recRestColor@01:32:00",
         "recRestColor@01:37:49"
       ],
-      "sourceType": "录音+课件"
+      "sourceType": "录音+课件",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recRestColor@01:30:29",
+          "quote": "但这里面有个非常重要的点就是"
+        },
+        {
+          "kind": "emphasis",
+          "sourceId": "recRestColor@01:30:29",
+          "quote": "这一点反正是要一定要要注意"
+        }
+      ]
     },
     {
       "id": "color-additive-subtractive",
@@ -1431,7 +1702,7 @@
           "page": 27
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recRestColor@01:32:00",
         "recRestColor@01:33:00",
@@ -1454,7 +1725,7 @@
           "page": 25
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recRestColor@01:42:00"
       ],
@@ -1475,7 +1746,7 @@
           "page": 33
         }
       ],
-      "status": null,
+      "status": "一般内容整理；不表示老师明确重点或必考",
       "sourceIds": [
         "recRestColor@01:45:00",
         "recRestColor@01:46:41",
@@ -1485,7 +1756,7 @@
     },
     {
       "id": "color-zero-saturation",
-      "category": "class",
+      "category": "teacher",
       "title": "S=0时Hue不区分彩色，但I仍控制灰度",
       "body": "第41–42页中心区域的S为0，重建成白或灰。老师特意提醒此时Hue不起颜色作用；不要误读成I也失效。例：(0.2,0.2,0.2)与(0.8,0.8,0.8)都无彩色，但亮度不同。转换和修改HSI的基本过程见第40页。",
       "anchors": [
@@ -1498,12 +1769,19 @@
           "page": 42
         }
       ],
-      "status": null,
+      "status": "教师明确强调；不是必考承诺",
       "sourceIds": [
         "recRestColor@01:49:19",
         "recRestColor@01:50:24"
       ],
-      "sourceType": "录音+课件"
+      "sourceType": "录音+课件",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recRestColor@01:49:19",
+          "quote": "然后稍微提醒一下，就是如果说这个 saturation 是0的话"
+        }
+      ]
     },
     {
       "id": "rest-ct-excluded",
@@ -1702,7 +1980,7 @@
       "sourceType": "录音+课件"
     }
   ],
-  "note": "集中整理已提供的课件与课堂转写；明确考核、课堂重点、非考/未讲范围与口头安排分开标注。时间戳为原录音相对时间，自动转写可能有错词；日期与作业要求以课程正式公告为准。",
-  "navigationDefault": "include-class",
-  "navigationNote": "下个考点按课件顺序、严格从当前页之后查找，不回绕。默认包含课堂重点（不等于必考）；可以取消下方选项，只导航明确考核/Quiz复盘。相同知识点在同一份课件只取一个代表页。"
+  "note": "按课堂原文核验分类：明确考核包括教师明确的考核要求、范围或常考声明，Quiz只保留真实复盘；老师强调与提问逐条附原文证据。一般整理、课件练习、范围和安排独立，不因内容重要、标题像考点或教师自问自答就升级。时间戳来自自动转写，安排以正式公告为准。",
+  "navigationDefault": "exam-and-teacher",
+  "navigationNote": "下个考点按课件顺序从当前页之后查找，不回绕。默认导航明确考核要求、真实Quiz复盘和有原文证据的老师强调/提问；一般整理与课件练习可另行选择。"
 }

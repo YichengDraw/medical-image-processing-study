@@ -6,7 +6,7 @@
     "explainedPages": 369,
     "slidesOnlyPages": 69,
     "recordings": 10,
-    "examEntries": 48,
+    "examEntries": 52,
     "sameLectureAudioPages": 311,
     "crossLectureOnlyPages": 58,
     "visualTextPages": 11
@@ -1063,5 +1063,11 @@
     "lec9": [
       41
     ]
+  },
+  "examEvidenceReview": {
+    "date": "2026-11-16",
+    "entries": 52,
+    "teacherEntries": 10,
+    "policy": "逐条核对来源，明确考核要求、老师强调/课堂提问、一般整理/练习分开；教师证据短引文可逐字核对。"
   }
 }

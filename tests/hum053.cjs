@@ -18,9 +18,9 @@ assert.deepEqual(data.decks.map(d=>d.id),expectedPages.map((_,i)=>'lec'+(i+1)),'
 assert.deepEqual(data.assessment,{exam:50});
 assert.equal(data.assessmentLabels.exam,'随堂考试');
 assert.equal(Object.keys(data.recordings).length,10);
-assert.equal(data.examGuide.entries.length,48);
-assert.equal(new Set(data.examGuide.entries.map(e=>e.id)).size,48);
-assert.deepEqual(new Set(data.examGuide.categories.map(c=>c.id)),new Set(['explicit','scope','class','comparison','practice','strategy']));
+assert.equal(data.examGuide.entries.length,52);
+assert.equal(new Set(data.examGuide.entries.map(e=>e.id)).size,52);
+assert.deepEqual(new Set(data.examGuide.categories.map(c=>c.id)),new Set(['explicit','scope','teacher','class','arrangement','comparison','practice','strategy']));
 
 for(const [index,deck] of data.decks.entries()){
   const proof=review.decks.find(d=>d.id===deck.id);
@@ -58,7 +58,10 @@ for(const [index,deck] of data.decks.entries()){
   assert.deepEqual(explained,proof.explainedPages);
 }
 assert.equal(pages,438);assert.equal(notes,369);
-assert.deepEqual(data.coverage,{visualPages:438,explainedPages:369,slidesOnlyPages:69,recordings:10,examEntries:48});
+for(const [field,value] of Object.entries({visualPages:438,explainedPages:369,slidesOnlyPages:69,recordings:10,examEntries:52})){
+  assert.equal(data.coverage[field],value,'Reviewed coverage: '+field);
+}
+assert.equal(data.coverage.sameLectureAudioPages+data.coverage.crossLectureOnlyPages,notes,'Lecture-local and cross-lecture coverage account for every explanation');
 for(let p=13;p<=44;p++)assert.equal(data.slides.lec2[p-1].note,null,'The second introduction recording does not cover the rest of that deck');
 for(let p=9;p<=12;p++)assert.ok(data.slides.lec2[p-1].note.sourceIds.every(s=>data.sources[s].recording==='rec20'),'Repeated introduction slides identify their earlier, content-matched recording');
 for(let p=34;p<=45;p++)assert.equal(data.slides.lec9[p-1].note,null,'Unmatched Zhuangzi pages remain PPT-only');
@@ -69,7 +72,7 @@ const order=new Map(data.decks.map((d,i)=>[d.id,i]));
 const ordinal=p=>order.get(p.deck)*1000+p.page;
 const key=p=>p.deck+':'+p.page;
 for(const includeClass of [false,true]){
-  const allowed=new Set(includeClass?['explicit','class']:['explicit']);
+  const allowed=new Set(includeClass?['explicit','teacher','class']:['explicit']);
   // Construct the contract independently of Nav.build: one earliest anchor per topic/deck.
   const expected=new Map();
   for(const entry of data.examGuide.entries){
@@ -110,4 +113,4 @@ for(const includeClass of [false,true]){
   assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec10',57,includeClass),null,'The last course page never wraps');
   console.log(`${includeClass?'Including classroom priorities':'Confirmed exam only'}: ${points.length} unique HUM053 destinations`);
 }
-console.log(`PASS: HUM053 ${pages} reviewed pages, ${notes} unique explanations, ${pages-notes} PPT-only pages, 10 recordings, 48 entries and ${cases} navigation cases.`);
+console.log(`PASS: HUM053 ${pages} reviewed pages, ${notes} unique explanations, ${pages-notes} PPT-only pages, 10 recordings, 52 entries and ${cases} navigation cases.`);

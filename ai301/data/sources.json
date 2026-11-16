@@ -33,6 +33,14 @@
       "date": "2026-11-09",
       "dateBasis": "用户说明为今天课堂，按本次会话日期记录；不由导出文件名推定。",
       "sourceDocxSha256": "d9357335561f5cb5602e3b398e683e65fb051b626d08095b4fd7480a7f9f599d"
+    },
+    "ai301-r08": {
+      "title": "11月16日流水线冒险与数据通路课堂录音",
+      "file": "export_1794819641068.docx",
+      "date": "2026-11-16",
+      "dateBasis": "依据用户所说“今天”的课堂录音及本次会话的北京时间日期；导出时间只作文件线索，不单独推定授课日期。",
+      "sourceDocxSha256": "17cb8d576ca9a838c1ab7ceee5196b4045dc96b6d7ba8999a8921981d80122ef",
+      "scope": "Lec6 P9–20；Lec6 Part2 P1–6，正式讲授止于01:43:36。课间及课后无关片段排除。"
     }
   },
   "sources": {
@@ -7567,6 +7575,1982 @@
         316
       ],
       "segmentIndex": 157
+    },
+    "ai301-r08-s001": {
+      "recording": "ai301-r08",
+      "start": "01:04",
+      "end": "01:21",
+      "excerpt": "嗯，嗯， hazards， the first one is called uh doctor， that is about uh the conference of river， and the second hazards called uh air hazards， uh， so that is.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 1,
+      "paragraphIndices": [
+        2
+      ],
+      "segmentIndex": 1,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s002": {
+      "recording": "ai301-r08",
+      "start": "01:22",
+      "end": "01:59",
+      "excerpt": "Uh，one of your instruction is dependent on the data used by uh previous instruction，so we may have to wait or think of some uh more advanced techniques uh to kind of prevent this data hazard。And the third type is called uh control hazard，for example something happen uh if you have a branch on equal。So because you have a different choice of your future path so you need to decide.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 3,
+      "paragraphIndices": [
+        4
+      ],
+      "segmentIndex": 2,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s003": {
+      "recording": "ai301-r08",
+      "start": "02:00",
+      "end": "02:22",
+      "excerpt": "Uh, which has to take at the moment, and your decision might be correct and also might not be correct. And if your decision is not correct, uh, we are going to do... Is there any uh technique to increase the accuracy? Of your prediction, I said.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 5,
+      "paragraphIndices": [
+        6
+      ],
+      "segmentIndex": 3,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s004": {
+      "recording": "ai301-r08",
+      "start": "02:23",
+      "end": "03:29",
+      "excerpt": "So，uh，first，let's uh start with this uh structure hazard。Uh，So by definition，it means the conflict for use of one uh resource。Uh，And in other words，Uh，the hardware cannot support the combination of instructions that we want to execute in the same clock cycle。Uh，So if you still remember when we introduced the pipeline，we have an example of doing laundry。So we say that we have four stages uh the first stage is uh washing uh washing clothes uh using a washer second stage uh drying those clothes using a dryer and the third stage are folding and the last stage uh put up the clothes into the wardrobe right and uh in that analogy uh what would be the case if we use a machine that supports.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 7,
+      "paragraphIndices": [
+        8
+      ],
+      "segmentIndex": 4,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s005": {
+      "recording": "ai301-r08",
+      "start": "03:29",
+      "end": "04:09",
+      "excerpt": "Two functions as a whole，so uh because you know that some of the washer they support the function of dryer also，so if you are using a machine that supporting both washing and uh drying functionality，then you cannot separate the washing stage and the drying stage because the two stages they are。Using the same piece of hardware, right? So that is what we call the conflict for the use for resource.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 9,
+      "paragraphIndices": [
+        10
+      ],
+      "segmentIndex": 5,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s006": {
+      "recording": "ai301-r08",
+      "start": "04:27",
+      "end": "04:51",
+      "excerpt": "So and if you go back to the instruction case, so suppose that we have a hardware with only a single memory。 a single memory， meaning that the instruction memory and the data memory, they are not separated. so they are a whole memory of a single hardware.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 11,
+      "paragraphIndices": [
+        12
+      ],
+      "segmentIndex": 6,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s007": {
+      "recording": "ai301-r08",
+      "start": "04:52",
+      "end": "05:27",
+      "excerpt": "Uh so let's say uh we have one uh we have a first instruction that is doing load work or store work so some kind of memory access. So let's say it is arriving at the fourth stage, and the end so memory access then this low word or star word instruction it requires to read or write the data memory right? But inside this same clock cycle we have another.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 13,
+      "paragraphIndices": [
+        14
+      ],
+      "segmentIndex": 7,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s008": {
+      "recording": "ai301-r08",
+      "start": "05:27",
+      "end": "06:11",
+      "excerpt": "Instruction which is at the first stage I F，and that instruction it is requiring for accessing the instruction memory。So uh in that case，uh if we only have a single memory not separating the data part and instruction part。Then we cannot perform these two operations simultaneously. So, uh, if you, uh, if you prefer to finish the store store work. Or low word呃first then for the instruction fetch instruction呃it must wait so wait for some time and it's called呃stalling.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 15,
+      "paragraphIndices": [
+        16
+      ],
+      "segmentIndex": 8,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s009": {
+      "recording": "ai301-r08",
+      "start": "06:16",
+      "end": "07:12",
+      "excerpt": "So uh in this case with only a single memory no separation of data and instruction part uh then uh we may have a structure hazard so to prevent this kind of thing uh we always are trying to separate the data memory and the instruction memory so that if you have a low word store word instruction it is at the fourth stage. And it is going to play with the data memory, and then one of the later instructions at the first IF stage, and it's going to touch the instruction memory, and. The two would not be comforting because the two parts of family they are separated so not a single hardware。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 17,
+      "paragraphIndices": [
+        18
+      ],
+      "segmentIndex": 9,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s010": {
+      "recording": "ai301-r08",
+      "start": "07:19",
+      "end": "07:46",
+      "excerpt": "And another example is to, for example, duplicate the ALU in the branching operation. If you still remember, if you want to perform calculation of the target address and also calculation of the branching condition, do the two operations simultaneously. 啊，that the same as to duplicate啊，area。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 19,
+      "paragraphIndices": [
+        20
+      ],
+      "segmentIndex": 10,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s011": {
+      "recording": "ai301-r08",
+      "start": "07:47",
+      "end": "08:12",
+      "excerpt": "啊，so the so the idea is that if you want to speed up，if you want fast access time，then you need to pay extra price。The extra price is for. Hardware and also for more complicated and advanced control so that is the price you need to pay if you want to have uh fast access. 嗯。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 21,
+      "paragraphIndices": [
+        22
+      ],
+      "segmentIndex": 11,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s012": {
+      "recording": "ai301-r08",
+      "start": "08:21",
+      "end": "08:58",
+      "excerpt": "Uh，And the second type of hazard，the data hazard，Uh，this is occurring when a planned instruction cannot execute in a proper clock cycle because data needed to execute this instruction is not available yet. Uh，And this is usually coming from the dependence of data，so the dependence of one instruction on an earlier one that is still in the pipeline，so the bad thing of this data handler is that.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 23,
+      "paragraphIndices": [
+        24
+      ],
+      "segmentIndex": 12,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s013": {
+      "recording": "ai301-r08",
+      "start": "08:58",
+      "end": "09:51",
+      "excerpt": "The later instruction must wait for one of the previous instruction to finish until the piece of required data is available. Uh，So，for example，Uh，these are two instructions，Uh，they are in sequential，So this is the first one，this is the second one，nothing in between，And you can see that this。This uh S zero，it is the destination uh destination register of the first addition uh instruction right？So uh you are uh putting the sum of T zero and T one into S zero，um however。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 25,
+      "paragraphIndices": [
+        26
+      ],
+      "segmentIndex": 13,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s014": {
+      "recording": "ai301-r08",
+      "start": "09:51",
+      "end": "10:40",
+      "excerpt": "This as symbol, it is also the input, it is also the input to the second subtraction instruction. So so in this case your subtraction instruction it is dependent on the previous instruction because they need to make use of the same piece of data inside register as zero right so. 啊。Then uh it is very possible that the second instructions has to wait for some time, or you need to do something else to kind of reduce the effect of this data hazard.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 27,
+      "paragraphIndices": [
+        28
+      ],
+      "segmentIndex": 14,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s015": {
+      "recording": "ai301-r08",
+      "start": "10:40",
+      "end": "11:11",
+      "excerpt": "But if you do nothing, then this subtraction must wait for this addition to finish, or uh more specifically speaking, this need to wait the data in register as zero to be available, to be the correct piece of. 对吧。So we may need to insert a pipeline stall, it is also called pipeline bubble.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 29,
+      "paragraphIndices": [
+        30
+      ],
+      "segmentIndex": 15,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s016": {
+      "recording": "ai301-r08",
+      "start": "11:12",
+      "end": "11:50",
+      "excerpt": "Basically, it just means you need to wait, so you cannot directly put the subsequent instruction right after the first one. So without proper intervention, this kind of data hazard you can imagine that it could severely stop the pipeline and waste a lot of time. And although the compiler could have the chance to remove some of these hazards, for most of the time it cannot perfectly remove all of these data hazard.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 31,
+      "paragraphIndices": [
+        32
+      ],
+      "segmentIndex": 16,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s017": {
+      "recording": "ai301-r08",
+      "start": "11:51",
+      "end": "12:24",
+      "excerpt": "啊，that is because this kind of data dependencies they are occurring very very often and related. You need to wait is very long to expect the compiler to fix the problem, so you may not be aware of the occurrence of this kind of data hazard. But actually, if you go back to some of the programs to write in the labs, you may notice that this is happening very often.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 33,
+      "paragraphIndices": [
+        34
+      ],
+      "segmentIndex": 17,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s018": {
+      "recording": "ai301-r08",
+      "start": "12:25",
+      "end": "12:40",
+      "excerpt": "In a subsequent instruction, you are using the data produced by the previous one. That is happening very often when you write the program. 嗯嗯。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 35,
+      "paragraphIndices": [
+        36
+      ],
+      "segmentIndex": 18,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s019": {
+      "recording": "ai301-r08",
+      "start": "12:47",
+      "end": "13:21",
+      "excerpt": "Uh，so I just mentioned that if there's no intervention，then we need to wait for a long time and waste a lot of time。Uh，then what do I mean by intervention？That means. We need to do some extra operations to kind of reduce the bad effect of this kind of data hazard, and this trick or say this operation is called forwarding or bypassing. So the idea is that.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 37,
+      "paragraphIndices": [
+        38
+      ],
+      "segmentIndex": 19,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s020": {
+      "recording": "ai301-r08",
+      "start": "13:22",
+      "end": "13:49",
+      "excerpt": "Uh，we want to use the results as soon as it is computed，so we don't need to wait for the instruction to complete uh before trying to resolve the data header。As soon as the ALU creates the sum of the addition，we can supply that result as an input。FOR THE SECOND INSTRUCTION SUBTRACTION.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 39,
+      "paragraphIndices": [
+        40
+      ],
+      "segmentIndex": 20,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s021": {
+      "recording": "ai301-r08",
+      "start": "13:51",
+      "end": "14:15",
+      "excerpt": "And uh this operation of adding a piece of extra hardware and several lines to retrieve this. Data item earlier that is what we call forwarding and by present. So you can see that this is our first addition.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 41,
+      "paragraphIndices": [
+        42
+      ],
+      "segmentIndex": 21,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s022": {
+      "recording": "ai301-r08",
+      "start": "14:16",
+      "end": "14:36",
+      "excerpt": "Between T0 and T1, put the result into S0. So we know that this is the arithmetic work, and it's actually happening inside this EX stage. So ALU computation happening in this third stage EX.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 43,
+      "paragraphIndices": [
+        44
+      ],
+      "segmentIndex": 22,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s023": {
+      "recording": "ai301-r08",
+      "start": "14:37",
+      "end": "14:59",
+      "excerpt": "啊，so that means at the end of this E X stage，actually I already have the addition results in hand，right？So I already have the result produced by the A L U。But the problem is that if there's no forwarding then following.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 45,
+      "paragraphIndices": [
+        46
+      ],
+      "segmentIndex": 23,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s024": {
+      "recording": "ai301-r08",
+      "start": "15:00",
+      "end": "15:59",
+      "excerpt": "Original workflow of this instruction execution, we need to go through the memory stage and then at the WB write back stage, this result value is going to be written into the register file at S0, and then the second instruction take out that piece of data from the register file. So this is the original kind of workflow, and now what we hope to do is that we don't want to wait for this piece of data to be stored into the register, we don't want to spend this time for waiting. So uh we want to take that piece of uh ALU calculation result after the EX stage of the first instruction and then.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 47,
+      "paragraphIndices": [
+        48
+      ],
+      "segmentIndex": 24,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s025": {
+      "recording": "ai301-r08",
+      "start": "16:00",
+      "end": "16:21",
+      "excerpt": "Directly provided to the second instruction. So because the second instruction is actually makes use of S0 also at the EX stage, right? Because it is required as the input of ALU.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 49,
+      "paragraphIndices": [
+        50
+      ],
+      "segmentIndex": 25,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s026": {
+      "recording": "ai301-r08",
+      "start": "16:22",
+      "end": "16:50",
+      "excerpt": "So as long as I can provide the correct version of S0 before the operation of ALU. So as long as I can provide the correct piece of data as the A R U inputs. Then it would be fine so there's no need to wait for this piece of data to be written into the register file and then the second instruction.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 51,
+      "paragraphIndices": [
+        52
+      ],
+      "segmentIndex": 26,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s027": {
+      "recording": "ai301-r08",
+      "start": "16:51",
+      "end": "17:52",
+      "excerpt": "Take out as you from the register file so this kind of forwarding can help us to save a lot of time of course. But as you can imagine, this requires extra connection inside the data path, and also you need to have more advanced, more complex control logic and control lines. Because if you see from this diagram, it is kind of easy, so I just draw a line here, but. This line in the actual hardware, it is not that trivial, it is not that convenient to implement, so we need extra connections and also more advanced control that will be discussed later on. 嗯嗯。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 53,
+      "paragraphIndices": [
+        54
+      ],
+      "segmentIndex": 27,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s028": {
+      "recording": "ai301-r08",
+      "start": "18:01",
+      "end": "18:18",
+      "excerpt": "Uh, but the problem is that although we have this, uh. Although we have this trick on forwarding, it cannot solve all the data hazard. 一定。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 55,
+      "paragraphIndices": [
+        56
+      ],
+      "segmentIndex": 28,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s029": {
+      "recording": "ai301-r08",
+      "start": "18:19",
+      "end": "18:31",
+      "excerpt": "Uh, uh, we can have a look at this example. So what if now I have a first instruction to be a lower? Previously that's a.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 57,
+      "paragraphIndices": [
+        58
+      ],
+      "segmentIndex": 29,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s030": {
+      "recording": "ai301-r08",
+      "start": "18:32",
+      "end": "19:09",
+      "excerpt": "Addition，yes，and what if I have the first instruction being long word？That means I need to take a piece of data from the memory and put into S0，right？Then the correct piece of data would be available only after the memory access, right? So because you need to go. 去一个特定的地址，inside this memory，and take out one word from this memory location。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 59,
+      "paragraphIndices": [
+        60
+      ],
+      "segmentIndex": 30,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s031": {
+      "recording": "ai301-r08",
+      "start": "19:09",
+      "end": "19:42",
+      "excerpt": "Uh，the only thing is that uh we don't need to wait for the right back，but we need to wait for the memory access here。So this is the earliest point that we can get the piece of data。But if you try to put the second subtraction instruction here, then you may notice that the data is required at the EX stage here.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 61,
+      "paragraphIndices": [
+        62
+      ],
+      "segmentIndex": 31,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s032": {
+      "recording": "ai301-r08",
+      "start": "19:43",
+      "end": "20:10",
+      "excerpt": "So uh the data the correct data in S zero must be provided as one of the input of the A L U so you must have that data at this point so corresponding to this red color. dash吗。That is the case if you try to insert the subtraction right after this loading.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 63,
+      "paragraphIndices": [
+        64
+      ],
+      "segmentIndex": 32,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s033": {
+      "recording": "ai301-r08",
+      "start": "20:11",
+      "end": "21:00",
+      "excerpt": "So the data is available at this point, but you require that data at this point. This is what we call an invalid path. So the forwarding paths are set to be valid only if the destination stage is later in time than the source stage. So this is invalid because the destination is here and the source is here, so you have a source which is later than the destination, so you are going in the direction. Uh，going in the backward direction，so of course this is invalid。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 65,
+      "paragraphIndices": [
+        66
+      ],
+      "segmentIndex": 33,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s034": {
+      "recording": "ai301-r08",
+      "start": "21:02",
+      "end": "21:59",
+      "excerpt": "Uh，so in other words，there cannot be forwarding pass from the output of M E M in the first instruction into the input of E X of the second，because as you can see here，this dash line in red color is going backward in time，so it is invalid。Uh，So you may notice that uh the data would be available only after this and end stage，so it is already too late for the input into the yes stage，so even we have forwarding，we need to stop for one cycle。Uh，and uh，to implement this store，we just uh insert this subtraction。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 67,
+      "paragraphIndices": [
+        68
+      ],
+      "segmentIndex": 34,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s035": {
+      "recording": "ai301-r08",
+      "start": "22:00",
+      "end": "22:23",
+      "excerpt": "into the next possible position and leave a sequence of bubbles here, uh, that means, uh, we cannot perform, uh, anything inside, uh, this. 啊这是。这是呃，这是呃，cycle in between呃，rolling and subtraction。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 69,
+      "paragraphIndices": [
+        70
+      ],
+      "segmentIndex": 35,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s036": {
+      "recording": "ai301-r08",
+      "start": "22:30",
+      "end": "22:59",
+      "excerpt": "意义。Uh，so if in this kind of uh multiple cycle diagram，and you notice that year is uh dependence line that is going backward in terms of time，then you may notice that this problem cannot be solved uh using forwarding，and you must add some uh bubbles。to solve.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 71,
+      "paragraphIndices": [
+        72
+      ],
+      "segmentIndex": 36,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s037": {
+      "recording": "ai301-r08",
+      "start": "23:01",
+      "end": "23:36",
+      "excerpt": "And this kind of situation, it is known as a low use data hazard, and it is a special case of data hazard in which the data being loaded by a low instruction has not been available. Before it is needed by another instruction, so the key problem here is actually that for this addition you can have the data available after EX, but for this low use uh. formats.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 73,
+      "paragraphIndices": [
+        74
+      ],
+      "segmentIndex": 37,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s038": {
+      "recording": "ai301-r08",
+      "start": "23:37",
+      "end": "24:05",
+      "excerpt": "Uh, you need to wait until the any end stage is finished. So you need to wait for uh more time inside the execution uh life cycle of the first instruction, and only at this point you can get the correct data in hand. So this is the key reason. Why the time is not enough for the second, and we have to wait. 意义。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 75,
+      "paragraphIndices": [
+        76
+      ],
+      "segmentIndex": 38,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s039": {
+      "recording": "ai301-r08",
+      "start": "24:21",
+      "end": "24:59",
+      "excerpt": "And another trick to kind of avoid or reduce possible pipeline stops is to try to reordering the code to avoid the low use they have it, so try to avoid the use of low result in the. NEXT INSTRUCTION, RIGHT AFTER THE LOADING. So，for example，we want to finish this part，the a equals to b plus e equals to b plus f，and on the left hand side，this is.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 77,
+      "paragraphIndices": [
+        78
+      ],
+      "segmentIndex": 39,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s040": {
+      "recording": "ai301-r08",
+      "start": "25:00",
+      "end": "25:50",
+      "excerpt": "The regional version of assembly code you write, so you can see that the first addition here and the second addition here, both addition instructions they are having a hazard because of the respective dependence on the this value inside T two or the value inside T four. So the problem is actually because this addition it is located right after this L W. So it is the next instruction of lower right after lower, so yes they have dependence on the immediately preceding.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 79,
+      "paragraphIndices": [
+        80
+      ],
+      "segmentIndex": 40,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s041": {
+      "recording": "ai301-r08",
+      "start": "25:51",
+      "end": "26:19",
+      "excerpt": "REGISTER HERE. And what we can do in this case is to reorder. 啊，those instructions we have here，also for example，we try to perform all the loading。First, so loading something into T one and then T two and then T four.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 81,
+      "paragraphIndices": [
+        82
+      ],
+      "segmentIndex": 41,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s042": {
+      "recording": "ai301-r08",
+      "start": "26:19",
+      "end": "26:59",
+      "excerpt": "So the first you perform all the loading in the first place, and then this line of addition is placed here, and this line of addition is placed here. So after this reordering, you can observe that we have one instruction in between of the dependence here. So let's say this addition and this LW, they are corresponding to they have dependence on register T two right? AND WE INSERT.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 83,
+      "paragraphIndices": [
+        84
+      ],
+      "segmentIndex": 42,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s043": {
+      "recording": "ai301-r08",
+      "start": "26:59",
+      "end": "27:19",
+      "excerpt": "啊拿。Other instruction in between, so now this addition is not right after this loading. I mean the corresponding loading, so because you have something in between, so you can think of it as filling up the bubbles.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 85,
+      "paragraphIndices": [
+        86
+      ],
+      "segmentIndex": 43,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s044": {
+      "recording": "ai301-r08",
+      "start": "27:19",
+      "end": "27:55",
+      "excerpt": "In your pipeline here, if you look at this figure, we have this bubbles here, meaning that we do nothing right? And after we ordering, you put another alphabet into this space, so filling up the bubble, so no wasting of time. The trick is that we require at least one instruction in between loading a piece of data and reading the same piece of data from the register file.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 87,
+      "paragraphIndices": [
+        88
+      ],
+      "segmentIndex": 44,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s045": {
+      "recording": "ai301-r08",
+      "start": "27:55",
+      "end": "28:17",
+      "excerpt": "So at least one instruction in between, if there is. Zero instruction in between，so that is the two they are one right after another，then you need to stop。So if you have at least one instruction in between，then there can be no solid。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 89,
+      "paragraphIndices": [
+        90
+      ],
+      "segmentIndex": 45,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s046": {
+      "recording": "ai301-r08",
+      "start": "28:20",
+      "end": "28:57",
+      "excerpt": "第一。Uh，And in a big picture，the sequence of uh a family post and after reordering can complete the same task using two fewer cycles，so uh if you. If you write something like this, then you need to stop for twice, right? So after the other way, you can save two cycle, the time of two cycles. compare with our region.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 91,
+      "paragraphIndices": [
+        92
+      ],
+      "segmentIndex": 46,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s047": {
+      "recording": "ai301-r08",
+      "start": "29:08",
+      "end": "29:39",
+      "excerpt": "And the third time, the control hazard, this is coming from the need to make a decision based on the result of one instruction while others are executing. So this is happening for, for example, branch instructions, beq. Because we know that if you want to perform something like if else, if else, then this kind of structure is always.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 93,
+      "paragraphIndices": [
+        94
+      ],
+      "segmentIndex": 47,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s048": {
+      "recording": "ai301-r08",
+      "start": "29:39",
+      "end": "30:06",
+      "excerpt": "Perform using branching，so if some kind of condition is satisfied，then I'm going to take the branch，and if that condition is not satisfied，then I'm not going to take the branch。So this branching instruction，it is actually determining the flow。Of your program so which instruction are you going to execute next.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 95,
+      "paragraphIndices": [
+        96
+      ],
+      "segmentIndex": 48,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s049": {
+      "recording": "ai301-r08",
+      "start": "30:12",
+      "end": "30:43",
+      "excerpt": "And if you have control hazard. Then the correct instruction cannot execute in the proper clock cycle because the instruction that was fetched is not the one that is needed. So in other words, the flow of the instruction address do not follow the expectation of your pipeline. so.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 97,
+      "paragraphIndices": [
+        98
+      ],
+      "segmentIndex": 49,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s050": {
+      "recording": "ai301-r08",
+      "start": "30:44",
+      "end": "31:13",
+      "excerpt": "啊，或者刚才或者呃B E Q，你有two choices。第一个choice是take the branch，第二个choice是not to take the branch，and呃，let's say first you。Assume that you are going to take the branch, but later on you notice that your prediction is wrong, but you have already fetch.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 99,
+      "paragraphIndices": [
+        100
+      ],
+      "segmentIndex": 50,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s051": {
+      "recording": "ai301-r08",
+      "start": "31:14",
+      "end": "31:39",
+      "excerpt": "Uh，fetch the instruction based on your prediction，and after the fetching，you notice that your prediction is incorrect。That is very possible，uh，because you have two choices and you can only perform one of them，so the pipeline cannot always fetch the correct instruction。一。一定。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 101,
+      "paragraphIndices": [
+        102
+      ],
+      "segmentIndex": 51,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s052": {
+      "recording": "ai301-r08",
+      "start": "31:55",
+      "end": "32:42",
+      "excerpt": "Uh，and that is because uh inside the. Execution logic of BEQ，it is only compare，it is only after the EX stage，so we can compare the contents of the two registers in hand，and then you can know the condition of this branching。And we can do something to try to add more hardware, add more control and pay more price in this perspective to finish this comparison of register inside the ID stage.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 103,
+      "paragraphIndices": [
+        104
+      ],
+      "segmentIndex": 52,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s053": {
+      "recording": "ai301-r08",
+      "start": "32:42",
+      "end": "33:14",
+      "excerpt": "But even if we try to finish the comparison of registered inside I D state, it is not enough. 呃，because we must呃，be fetching the instruction。Right after the branching on the very next clock cycle, but at this moment the pipeline cannot tell which one should be the next instruction, so that is the problem.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 105,
+      "paragraphIndices": [
+        106
+      ],
+      "segmentIndex": 53,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s054": {
+      "recording": "ai301-r08",
+      "start": "33:17",
+      "end": "33:46",
+      "excerpt": "一定。Uh，so for example，Uh，you have a first addition instruction，and the second it is a B Q。So originally we know that after this EX stage, we can know the whether or not we are going to take the branch or not after the EX stage.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 107,
+      "paragraphIndices": [
+        108
+      ],
+      "segmentIndex": 54,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s055": {
+      "recording": "ai301-r08",
+      "start": "33:46",
+      "end": "34:07",
+      "excerpt": "And I mentioned that if you hope to pay more price, add more hardware and control. Then we can try to compute this result in advance at the ID stage. So at the second stage, it is possible to.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 109,
+      "paragraphIndices": [
+        110
+      ],
+      "segmentIndex": 55,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s056": {
+      "recording": "ai301-r08",
+      "start": "34:07",
+      "end": "34:43",
+      "excerpt": "Know the branching target so at the I D stage we can know whether or not to take the branch but it is already late right because at this moment. It is already the fetching stage of the next instruction, so. If you cannot tell where you are going to fetch, then it is very likely that you may fetch the wrong instruction here.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 111,
+      "paragraphIndices": [
+        112
+      ],
+      "segmentIndex": 56,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s057": {
+      "recording": "ai301-r08",
+      "start": "34:44",
+      "end": "35:09",
+      "excerpt": "嗯。so uh conservative approach is to wait until the branch outcome determine before fetching the next instruction so the logic is that if i am not sure. Which place I am going to go to? Then I just wait until the branching tell me the result.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 113,
+      "paragraphIndices": [
+        114
+      ],
+      "segmentIndex": 57,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s058": {
+      "recording": "ai301-r08",
+      "start": "35:10",
+      "end": "35:32",
+      "excerpt": "So this is a kind of conservative approach, waiting until the AI finish its execution on the branching condition and target. And this is uh, this can possibly be finished at the second stage of the BEQ. 一定。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 115,
+      "paragraphIndices": [
+        116
+      ],
+      "segmentIndex": 58,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s059": {
+      "recording": "ai301-r08",
+      "start": "35:34",
+      "end": "35:59",
+      "excerpt": "So assume that we can put in enough extra hardware so that we can perform this register comparison and also the target address calculation during the ID stage, the second stage of the BEQ. And even with this piece of extra hardware, the pipeline must be stopped for one cycle. because.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 117,
+      "paragraphIndices": [
+        118
+      ],
+      "segmentIndex": 59,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s060": {
+      "recording": "ai301-r08",
+      "start": "36:00",
+      "end": "36:35",
+      "excerpt": "After this ID stage of BQ, I know the result. However, the fetching of the next instruction is also happening in the same cycle, right? So that is impossible because I have not known the result yet. So I can only start the fetching of the next instruction. After I receive the fresh result, uh, from the ID stage here.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 119,
+      "paragraphIndices": [
+        120
+      ],
+      "segmentIndex": 60,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s061": {
+      "recording": "ai301-r08",
+      "start": "36:43",
+      "end": "37:13",
+      "excerpt": "However, if we cannot resolve the branch in the ID stage, that means if we cannot compute both the branching condition and also the branching target, finish the two operations within the ID stage. If we are not able to do this then there should be an even larger slowdown right because you may need to wait after the e x stage that is possible.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 121,
+      "paragraphIndices": [
+        122
+      ],
+      "segmentIndex": 61,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s062": {
+      "recording": "ai301-r08",
+      "start": "37:14",
+      "end": "38:20",
+      "excerpt": "So the cost of this conservative approach is too high for most computers to afford, so uh this motivates a different solution to the control hazard that is not going to keep a conservative perspective. Uh，this approach it is called conservative because uh there's no prediction，and there's no danger of take the wrong way，and uh everything is quite safe because you just wait here until the correct result uh is available。So conservative in the. In the sense that there is no danger, but the disadvantage is that this approach is too slow, and so most of most of the computers they cannot afford this long latency of waiting.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 123,
+      "paragraphIndices": [
+        124
+      ],
+      "segmentIndex": 62,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s063": {
+      "recording": "ai301-r08",
+      "start": "38:34",
+      "end": "38:53",
+      "excerpt": "and so what can we do other than waiting? is that we try to be not that conservative and try to be for example aggressive? so you can try to predict, you can try to predict what is going to be happening, and you try to.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 125,
+      "paragraphIndices": [
+        126
+      ],
+      "segmentIndex": 63,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s064": {
+      "recording": "ai301-r08",
+      "start": "38:53",
+      "end": "39:32",
+      "excerpt": "Uh, rely on your prediction to fetch the next instruction, and hopefully, hopefully your prediction can be accurate. But if your prediction is not accurate, then you need to pay extra price. So the motivation of having this branch prediction, just like what I just mentioned, if you have longer pipeline and cannot randomly determine the branch outcome earlier in the ID stage, then the penalty is too heavy.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 127,
+      "paragraphIndices": [
+        128
+      ],
+      "segmentIndex": 64,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s065": {
+      "recording": "ai301-r08",
+      "start": "39:32",
+      "end": "40:11",
+      "excerpt": "We cannot afford the heavy penalty of conservative approach, and we try to. Uh, do some prediction of the outcome. So for example, I just guess that this branch is going to be taken, and if my guessing is correct, then. Everything is fine, and if my guessing is incorrect, then I need to stop and refresh the correct piece of instruction. 一定。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 129,
+      "paragraphIndices": [
+        130
+      ],
+      "segmentIndex": 65,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s066": {
+      "recording": "ai301-r08",
+      "start": "40:21",
+      "end": "40:39",
+      "excerpt": "For example, we can predict that the branches they are always not taken. So this is my prediction. So the branch is not taken. So that means I'm going to fetch.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 131,
+      "paragraphIndices": [
+        132
+      ],
+      "segmentIndex": 66,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s067": {
+      "recording": "ai301-r08",
+      "start": "40:39",
+      "end": "41:07",
+      "excerpt": "The next piece of instruction right after the current instruction in the instruction memory, and suppose that fortunately the prediction is correct, then we can just directly fetch the next instruction without any delay, right? And in this case. The pipeline it can proceed at full speed, so that means no falling, no waiting.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 133,
+      "paragraphIndices": [
+        134
+      ],
+      "segmentIndex": 67,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s068": {
+      "recording": "ai301-r08",
+      "start": "41:08",
+      "end": "41:52",
+      "excerpt": "However, if it turns out that the branch should be taken, so that means I have to go to another address, so I need to update the program counter into the branch target, so using. Uh，P C relative addressing，so compute the target address，and uh let the program counter to point to that target branching address，so if it turns out that the branch should be taken。Then that means my prediction, my previous prediction, it is incorrect.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 135,
+      "paragraphIndices": [
+        136
+      ],
+      "segmentIndex": 68,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s069": {
+      "recording": "ai301-r08",
+      "start": "41:53",
+      "end": "42:23",
+      "excerpt": "And in this case, the pipeline must be stopped. So that is the price of the. predictions you you may you may or may not be correct，and if fortunately you are correct，then there's no price and no delay，so everything works fine，and if unfortunately your prediction is incorrect. 呃，难以预计pay的price。嗯嗯。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 137,
+      "paragraphIndices": [
+        138
+      ],
+      "segmentIndex": 69,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s084": {
+      "recording": "ai301-r08",
+      "start": "53:17",
+      "end": "53:59",
+      "excerpt": "okay so let's assume that we have uh this sequence of code. so uh first you have an addition and then you have a branch uh B Q and the next instruction after this B Q is a load work and then uh. We have some other instructions in between and later on, uh, in another place we have this uh instruction or so, uh, if we are going to take this French, that means we are going to go in this or instruction.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 167,
+      "paragraphIndices": [
+        168
+      ],
+      "segmentIndex": 84,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s085": {
+      "recording": "ai301-r08",
+      "start": "54:00",
+      "end": "54:20",
+      "excerpt": "And if we are not going to take this branch, then we just go to the next instruction after this EQ at PC plus four. So that is the. That is the situation of this example, so.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 169,
+      "paragraphIndices": [
+        170
+      ],
+      "segmentIndex": 85,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s086": {
+      "recording": "ai301-r08",
+      "start": "54:22",
+      "end": "54:46",
+      "excerpt": "Uh, let's say our prediction is that the branch they are not going to be taken, so that means we predict that the next instruction to be fetched should be the one at PC plus four. So this uh LW instruction should be the next instruction to fetch. AND.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 171,
+      "paragraphIndices": [
+        172
+      ],
+      "segmentIndex": 86,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s087": {
+      "recording": "ai301-r08",
+      "start": "54:46",
+      "end": "55:32",
+      "excerpt": "So after this second instruction of EQ is entering the second stage ID, we start the fetching of the next. Instruction呃，our based on our prediction呃，and here suppose that呃，if the case is that呃，our prediction is correct。then there's no penalty so you can just execute following this pipeline so no penalty and no need to wait if our prediction is correct.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 173,
+      "paragraphIndices": [
+        174
+      ],
+      "segmentIndex": 87,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s088": {
+      "recording": "ai301-r08",
+      "start": "55:33",
+      "end": "56:10",
+      "excerpt": "Uh，However，if our prediction is incorrect，so actually this beq it is taken，so that means the correct instruction after this beq should be that or instruction，right？So in that case, and our prediction of fetching LW. That is wrong, so we need to fetch this or instruction that is the branch target.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 175,
+      "paragraphIndices": [
+        176
+      ],
+      "segmentIndex": 88,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s089": {
+      "recording": "ai301-r08",
+      "start": "56:11",
+      "end": "56:47",
+      "excerpt": "And in this case, we need to pay the penalty, so add a sequence of bubbles in between and fetch the correct piece of instruction. Here so we need to wait. 一定。And this is based on the assumption that the calculation of branching condition and target address can be finished during the ID stage of BQ.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 177,
+      "paragraphIndices": [
+        178
+      ],
+      "segmentIndex": 89,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s090": {
+      "recording": "ai301-r08",
+      "start": "56:47",
+      "end": "57:08",
+      "excerpt": "So this is the BQ, this is the first stage IF, this is the second stage ID. So we assume that with some extra hardware and also control lines. 不。We can, we are able to calculate the branch condition and target address within this second stage ID.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 179,
+      "paragraphIndices": [
+        180
+      ],
+      "segmentIndex": 90,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s091": {
+      "recording": "ai301-r08",
+      "start": "57:09",
+      "end": "57:45",
+      "excerpt": "So that means at this time, staying600 at this moment, I already know what is the branching condition and what is the branching target, right? So then I can fetch the correct instruction here. But although we can finish the calculation of branching target and condition earlier in this ID stage, we still need to insert this bubbles.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 181,
+      "paragraphIndices": [
+        182
+      ],
+      "segmentIndex": 91,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s092": {
+      "recording": "ai301-r08",
+      "start": "57:45",
+      "end": "58:47",
+      "excerpt": "That is because the take the branch or not take the branch, the answer to this question. It is affecting the very first. Stage of the next instruction in pipeline，so because in this at the beginning of this I stage，at least you need to know which one to fetch，so you need to know the correct PC before fetching the. 啊，next instruction。So even if we can finish the all the calculation of branching at this ID stage, also need to insert this bubbles, and then the correct over instruction is inserted starting from the moment of600.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 183,
+      "paragraphIndices": [
+        184
+      ],
+      "segmentIndex": 92,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s093": {
+      "recording": "ai301-r08",
+      "start": "58:53",
+      "end": "59:30",
+      "excerpt": "Uh，and also we have some kind of more realistic branch prediction，so previously we just. Predict that the branch is taken, or say predict that the branch is not taken. Then your accuracy may not be quite satisfactory, right? And if we want to increase the accuracy of our prediction, first we may try to have some static branch prediction based on typical branch behavior.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 185,
+      "paragraphIndices": [
+        186
+      ],
+      "segmentIndex": 93,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s094": {
+      "recording": "ai301-r08",
+      "start": "59:30",
+      "end": "01:00:01",
+      "excerpt": "Uh, what do I mean by typical? So for example, uh, very often in our program we may need to write some loops, and for example this one, uh, we assume that the original value of register T zero is one and the original value of register S zero is none. Let's say, uh, and. And this is the rule.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 187,
+      "paragraphIndices": [
+        188
+      ],
+      "segmentIndex": 94,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s095": {
+      "recording": "ai301-r08",
+      "start": "01:00:07",
+      "end": "01:00:47",
+      "excerpt": "Uh, so you just perform some additional subtraction shifting uh logical operation, so all kinds of things inside the loop, and then uh lastly you increment the value in T zero by one, and then you compare that value with the value inside S zero to see if they are equal. And we know that in this kind of looping behavior, for most of the time we are going to go back to the top of the loop, right? So.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 189,
+      "paragraphIndices": [
+        190
+      ],
+      "segmentIndex": 95,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s096": {
+      "recording": "ai301-r08",
+      "start": "01:00:48",
+      "end": "01:01:32",
+      "excerpt": "Because when T zero is equal to one, two, three, four, five, six, all the way until nine, we are going to go back to the top of this loop and repeat. Repeat all the same operations until the value of T zero becomes equal to the value of S zero. So uh at the bottom of loops we often have uh this branches that jump back to the top of the loop and uh based on our common sense uh this kind of branches they are very likely to be taken right.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 191,
+      "paragraphIndices": [
+        192
+      ],
+      "segmentIndex": 96,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s097": {
+      "recording": "ai301-r08",
+      "start": "01:01:32",
+      "end": "01:01:59",
+      "excerpt": "So we try to predict taken for this backward branches that uh jump to an earlier address. So uh the logic is that as long as you observe that some of the branching target it is. 呃，it is it is actually jumping backward，so。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 193,
+      "paragraphIndices": [
+        194
+      ],
+      "segmentIndex": 97,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s098": {
+      "recording": "ai301-r08",
+      "start": "01:02:00",
+      "end": "01:02:24",
+      "excerpt": "If you jump from here to here, that this is a backward jumping, and then you predict that this kind of backward branches are going to be taken, and then you predict that any forward branches are not going to be taken. That is possible. One possible way of doing prediction.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 195,
+      "paragraphIndices": [
+        196
+      ],
+      "segmentIndex": 98,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s099": {
+      "recording": "ai301-r08",
+      "start": "01:02:26",
+      "end": "01:02:59",
+      "excerpt": "Uh，However，the problem，the problem of this static branch prediction is that，as you can tell from the name static，so it is actually relying on uh stereotypical behavior，right？So something like common sense，so uh stereotypical uh behavior，so you based on some of your experience。And you guess that all the backward branches should be taken and all the forward branches should not be taken.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 197,
+      "paragraphIndices": [
+        198
+      ],
+      "segmentIndex": 99,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s100": {
+      "recording": "ai301-r08",
+      "start": "01:03:00",
+      "end": "01:03:27",
+      "excerpt": "On your common sense, uh, and this, this is actually not uh accounting for the uniqueness of a specific branch in short supply. So for uh some of the programmers, they may uh hope to write some uh backward branches that is usually not taken and some forward branches that is usually taken that is possible. So.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 199,
+      "paragraphIndices": [
+        200
+      ],
+      "segmentIndex": 100,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s101": {
+      "recording": "ai301-r08",
+      "start": "01:03:28",
+      "end": "01:03:59",
+      "excerpt": "Static branch again，it is not considering the uniqueness for a specific branch instruction，so it is not flexible enough。And if we want to perform some kind of more flexible prediction of the branch target，we can do dynamic prediction。啊，so this one makes the gas depending on the behavior of this specific branch。And.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 201,
+      "paragraphIndices": [
+        202
+      ],
+      "segmentIndex": 101,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s102": {
+      "recording": "ai301-r08",
+      "start": "01:04:00",
+      "end": "01:04:28",
+      "excerpt": "And they change prediction for a branch over time, so it is much more practical but also much more complicated. So for example, you try to record the recent history of this branch. so uh perhaps。Uh, you may try to record, uh.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 203,
+      "paragraphIndices": [
+        204
+      ],
+      "segmentIndex": 102,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s103": {
+      "recording": "ai301-r08",
+      "start": "01:04:29",
+      "end": "01:04:56",
+      "excerpt": "Let's say the history for one time, so I check whether this branch is taken or not taken for the last time. It is execute then I just try to follow the thing I do in the last time. So that is you only record the history for once, right? And maybe you can also history record a longer history.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 205,
+      "paragraphIndices": [
+        206
+      ],
+      "segmentIndex": 103,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s104": {
+      "recording": "ai301-r08",
+      "start": "01:04:56",
+      "end": "01:05:33",
+      "excerpt": "So you record what is the behavior. Of this specific line of branching for five times, and that's it. Are you compute some simple statistic? So over the past five execution of this branching, uh, for four times it is taken, and for once it is not taken, then uh perhaps I'm going to follow the majority. And I'm going to copy what is execute for four times.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 207,
+      "paragraphIndices": [
+        208
+      ],
+      "segmentIndex": 104,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s105": {
+      "recording": "ai301-r08",
+      "start": "01:05:48",
+      "end": "01:06:26",
+      "excerpt": "啊，所以最simple case of this dynamic branch prediction is simply look at whether the last time this branch was taken or not，and you。Just copy and paste your last behavior on this specific branch. And if your prediction is wrong, of course you need to do the stall and refreshing, and also you need to record this failure, record this wrong prediction into the history.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 209,
+      "paragraphIndices": [
+        210
+      ],
+      "segmentIndex": 105,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s106": {
+      "recording": "ai301-r08",
+      "start": "01:06:29",
+      "end": "01:06:58",
+      "excerpt": "So because now it is uh taken uh taking into account the uniqueness of each line of branching because you are recording the history of each branching instruction so of course it is uh much more flexible but you can imagine that. Uh，it is not quite uh easy to implement this dynamic branch condition，right？嗯嗯。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 211,
+      "paragraphIndices": [
+        212
+      ],
+      "segmentIndex": 106,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s107": {
+      "recording": "ai301-r08",
+      "start": "01:07:02",
+      "end": "01:07:36",
+      "excerpt": "So a very brief summary of the big picture of pipeline。Uh，first you should know that. Whether pipelining can affect the latency and throughput, so for latency the answer is no, uh not affecting the latency of one instruction but improving the throughput of many instructions because you're putting things from sequential into parallel, so.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 213,
+      "paragraphIndices": [
+        214
+      ],
+      "segmentIndex": 107,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s108": {
+      "recording": "ai301-r08",
+      "start": "01:07:36",
+      "end": "01:08:27",
+      "excerpt": "A larger amount of workload can be finished within a certain amount of time, so that is increasing the super. However, very often we cannot guarantee that all the things they just go smoothly inside your pipeline because you may have structure hazard. Data hazards and also control hazards，and what are the situations that we may encounter these types of hazards，and what are the proper solutions to reduce or kind of eliminate this different kinds of hazards？嗯。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 215,
+      "paragraphIndices": [
+        216
+      ],
+      "segmentIndex": 108,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s109": {
+      "recording": "ai301-r08",
+      "start": "01:08:57",
+      "end": "01:09:43",
+      "excerpt": "啊，so啊，you may notice that。Uh，this figure is kind of familiar because it is just uh uh data path for single cycle control，but the difference is that uh now we separate this data path into five pieces。And because during a single clock cycle, if we implement pipelining, we have at most five instructions happening here, right? So we put this dash lines to separate this single cycle data test into five different portions.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 217,
+      "paragraphIndices": [
+        218
+      ],
+      "segmentIndex": 109,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s110": {
+      "recording": "ai301-r08",
+      "start": "01:09:46",
+      "end": "01:10:18",
+      "excerpt": "啊。Uh，starting from this page，I just uploaded to our blackboard，Uh，is called，Uh，lecture six part two，so if you cannot find this page。In the size last week, you can download the one I just uploaded before before2 PM today. So this is the first page of the second part. 意义。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 219,
+      "paragraphIndices": [
+        220
+      ],
+      "segmentIndex": 110,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s111": {
+      "recording": "ai301-r08",
+      "start": "01:10:24",
+      "end": "01:10:41",
+      "excerpt": "滴滴滴滴。Uh, so generally speaking, the flow is from flowing from left hand side to the right hand side. Uh, but we have two exceptions.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 221,
+      "paragraphIndices": [
+        222
+      ],
+      "segmentIndex": 111,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s112": {
+      "recording": "ai301-r08",
+      "start": "01:10:42",
+      "end": "01:10:59",
+      "excerpt": "one is happening here，and the second one is happening here。So the data flowing from the right hand side to the left hand side, they are not affecting the current instruction. If you have single cycle data pass.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 223,
+      "paragraphIndices": [
+        224
+      ],
+      "segmentIndex": 112,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s113": {
+      "recording": "ai301-r08",
+      "start": "01:11:01",
+      "end": "01:11:47",
+      "excerpt": "But uh these reverse data movements will have some bad effects on later instructions if you are using uh pipeline. Uh，So，so，basically speaking，if you have a line，this blue line going against the flow，against the flow，meaning that from right hand side to the left hand side，then you may have some hazard。Uh，For example，this first line，Uh，it is connecting the result of this，Uh，alu to a multi cluster for the PC。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 225,
+      "paragraphIndices": [
+        226
+      ],
+      "segmentIndex": 113,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s114": {
+      "recording": "ai301-r08",
+      "start": "01:11:47",
+      "end": "01:12:28",
+      "excerpt": "Okay，so this one is to compute the branch target，right？Uh，compute the branch target。using uh PC related. Addressing，and then this target address of branching is needed into this manufacturer to be chosen。Uh, in between PC plus four and the branch target, so this selection uh there might be some danger of control hazard uh as we have just uh mentioned so.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 227,
+      "paragraphIndices": [
+        228
+      ],
+      "segmentIndex": 114,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s115": {
+      "recording": "ai301-r08",
+      "start": "01:12:29",
+      "end": "01:12:59",
+      "excerpt": "So because you need to choose which one should be the next instruction to fetch, but you can only obtain the answer to this question after the execution of ALU. So this line is going from the output of ALU and. Back to the input of PC so uh we say that this.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 229,
+      "paragraphIndices": [
+        230
+      ],
+      "segmentIndex": 115,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s116": {
+      "recording": "ai301-r08",
+      "start": "01:13:00",
+      "end": "01:13:23",
+      "excerpt": "This is going against the flow because it is going from right hand side back to the left hand side, and there is possible danger for control header. Then what about this one? This is a line of data going from the multiplicator here back to the right data.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 231,
+      "paragraphIndices": [
+        232
+      ],
+      "segmentIndex": 116,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s117": {
+      "recording": "ai301-r08",
+      "start": "01:13:24",
+      "end": "01:13:50",
+      "excerpt": "啊，手机学习。Placing the piece of data taken from the memory or the piece of calculation results output from the ALU, either one of the two is going to be written back into the register file. And the same thing is that this is this blue line and this initiated.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 233,
+      "paragraphIndices": [
+        234
+      ],
+      "segmentIndex": 117,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s118": {
+      "recording": "ai301-r08",
+      "start": "01:13:50",
+      "end": "01:14:34",
+      "excerpt": "At this point and ended at this point so again going against the flow from the right hand side to left hand side and. This kind of line going against the flow, it has no effect if you are running the same inside a single cycle. But now you are running inside a pipeline, so this line it is going from WB stage right backstage back to the ID stage, right? So from the right hand side to the left hand side, also some kind of danger of falling into data hazard.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 235,
+      "paragraphIndices": [
+        236
+      ],
+      "segmentIndex": 118,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s119": {
+      "recording": "ai301-r08",
+      "start": "01:14:35",
+      "end": "01:15:04",
+      "excerpt": "So for example, the input of your second instruction subtraction depends on the output of your first instruction addition. So just like one of the example we have seen. Just now，so the register destination of your first instruction is equal to the operate one of operates of your second instruction。嗯嗯。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 237,
+      "paragraphIndices": [
+        238
+      ],
+      "segmentIndex": 119,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s120": {
+      "recording": "ai301-r08",
+      "start": "01:15:22",
+      "end": "01:15:52",
+      "excerpt": "And we need to add this pipeline register between the stages to hold the data produced in the previous cycle. If you still remember, we need some kind of state elements. State elements meaning that those elements they are able to store data, so they have some short term memory, for example flip flops or say registers.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 239,
+      "paragraphIndices": [
+        240
+      ],
+      "segmentIndex": 120,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s121": {
+      "recording": "ai301-r08",
+      "start": "01:15:53",
+      "end": "01:16:38",
+      "excerpt": "Those state elements they are capable of storing data, so storing. The current state of the data uh but those uh A L use so manufacturers decoders are those hardware components they are not. State elements, they are referred as combinational logic, right? So for ALU, it does not support any memorizing function, so you cannot store anything inside the ALU as long as you provide it with some kind of input.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 241,
+      "paragraphIndices": [
+        242
+      ],
+      "segmentIndex": 121,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s122": {
+      "recording": "ai301-r08",
+      "start": "01:16:38",
+      "end": "01:17:10",
+      "excerpt": "Then after the input going through the combinational logic and well, if you and output, that is the what the same done by combinational logic. And we also know that in this synchronous system, we need this kind of state elements because. At each of the clock house, we are going to perform an update of all the state elements.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 243,
+      "paragraphIndices": [
+        244
+      ],
+      "segmentIndex": 122,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s123": {
+      "recording": "ai301-r08",
+      "start": "01:17:10",
+      "end": "01:17:34",
+      "excerpt": "So, for example, at the rising edge of the CLK signal, we are going to. For example，update the data in the registers，update the data in the state out。So this is how we implement synchronization，right？So that is about state elements and combinational logic。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 245,
+      "paragraphIndices": [
+        246
+      ],
+      "segmentIndex": 123,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s124": {
+      "recording": "ai301-r08",
+      "start": "01:17:34",
+      "end": "01:18:14",
+      "excerpt": "So if we want to convert this data path for a single cycle data path into a pipeline data path。So separating the figure into five portions that is not enough the real thing we need to do is to add this kind of state elements in between. Because previously all these they are finished inside one cycle for the single cycle data pass, but for this one. THIS IS ACTUALLY.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 247,
+      "paragraphIndices": [
+        248
+      ],
+      "segmentIndex": 124,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s125": {
+      "recording": "ai301-r08",
+      "start": "01:18:18",
+      "end": "01:18:53",
+      "excerpt": "啊，this is actually uh so so so the thing is actually not done within a single cycle。one one cycle is corresponding to one stage，and in total we have five stages，right？so we need to add this pipeline register in between the five stages。Uh to hold the data produce in the previous cycle right so that uh portions of a single data pass can be shared during uh instructor execution.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 249,
+      "paragraphIndices": [
+        250
+      ],
+      "segmentIndex": 125,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s126": {
+      "recording": "ai301-r08",
+      "start": "01:18:55",
+      "end": "01:19:44",
+      "excerpt": "呃，for example，for a specific instruction。Uh，This part of instruction memory，it is only useful at the first stage，I add so instruction fetching，Uh，that means it can be used by other instructions，other later on instructions，Uh，during the other four stages of the first instruction。So to keep the value of this instruction for its subsequent four stages, uh, then we need to prepare a space to put these32-bit value right from the instruction memory inside the register.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 251,
+      "paragraphIndices": [
+        252
+      ],
+      "segmentIndex": 126,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s127": {
+      "recording": "ai301-r08",
+      "start": "01:19:45",
+      "end": "01:20:40",
+      "excerpt": "So then that's the reason why we have this I F I D register. This is called I F I D pipeline register because the naming. comes from its location，so it is located in between uh this i f stage and i d stage，so this i f i d pipeline register，it is actually holding the thirty two bit instruction，the thirty two bit data of the current instruction。And then later on, you are going to decode, for example, what is RSRTRD function field. So our code, all those information decoded from this32-bit right from the instruction memory.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 253,
+      "paragraphIndices": [
+        254
+      ],
+      "segmentIndex": 127,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s128": {
+      "recording": "ai301-r08",
+      "start": "01:20:45",
+      "end": "01:21:10",
+      "excerpt": "And the idea is the same for all the data, so we must place register state element between every two stages. so uh if you go if we go back to our long. You have a washing machine, a dryer, and folding, and then putting up into the wardrobe.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 255,
+      "paragraphIndices": [
+        256
+      ],
+      "segmentIndex": 128,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s129": {
+      "recording": "ai301-r08",
+      "start": "01:21:10",
+      "end": "01:21:44",
+      "excerpt": "So all these stages, and then in between the washer and the dryer, you may need to place a basket. So you may need to place a basket to hold all the clothes you taken out from the washer. And then you are going to place into the dryer for the next stage. So this is playing the same role as this pipeline registers here. 也可以。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 257,
+      "paragraphIndices": [
+        258
+      ],
+      "segmentIndex": 129,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s130": {
+      "recording": "ai301-r08",
+      "start": "01:21:51",
+      "end": "01:22:27",
+      "excerpt": "Uh so all the instructions they are advancing during clock cycle uh from one pipeline register to the. So, uh, when one step is finished, the result will be prepared at the front. So, uh, and then at the next positive pulse of the CLK signal, then the result will go into the pipeline register and also flow into the next step.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 259,
+      "paragraphIndices": [
+        260
+      ],
+      "segmentIndex": 130,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s131": {
+      "recording": "ai301-r08",
+      "start": "01:22:27",
+      "end": "01:22:54",
+      "excerpt": "For example, this ALU, we know that it is not a state element, it is some kind of combinational logic, right? So no memory, no memorizing functionality supported. And then after this ALU finished its calculation, the result, the72-bit result, and also this B will flag.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 261,
+      "paragraphIndices": [
+        262
+      ],
+      "segmentIndex": 131,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s132": {
+      "recording": "ai301-r08",
+      "start": "01:22:54",
+      "end": "01:23:59",
+      "excerpt": "Will be prepared at the front。啊也。And then when the next positive pulse of the CLP signal is coming, this result at the front will be written inside this EXNEM pipeline register, and also inside the same cycle flow into the next stage, that is the NEM stage. So this is how we implement segmentation using state elements。So if you don't have this registers to play the role of safe elements in between the status then how can we implement synchronization so each of this combination logic so other than alus we may have a decoder.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 263,
+      "paragraphIndices": [
+        264
+      ],
+      "segmentIndex": 132,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s133": {
+      "recording": "ai301-r08",
+      "start": "01:24:00",
+      "end": "01:25:12",
+      "excerpt": "Manufacturers，so uh sign extension，uh and and also for example this uh uh reading ports，so uh those combinational logic，they need to prepare the data at the front before the next。Positive pulse of CRP signal is going to arrive, and as soon as the next positive pulse is arriving, all these results prepared at the front are going to enter the state element and also enter the next stage, the next portion of combinational logic. Uh，And as I have just mentioned，the naming，the naming of these uh pipeline registers，Uh，they are based on their location，so I am ID for this one，Uh，IDEX for this one，Uh。嗯，E X M E N，so，呃，the naming is based on。Which two stages it is in between.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 265,
+      "paragraphIndices": [
+        266
+      ],
+      "segmentIndex": 133,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s134": {
+      "recording": "ai301-r08",
+      "start": "01:25:12",
+      "end": "01:25:43",
+      "excerpt": "So if it is in between the encoding and execution stages, then it is called IDE. So make sense. 意义。Uh，but one problem is that。We have five stages here, so if you are going to put one pipeline register in between each peer, we should have five, right?",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 267,
+      "paragraphIndices": [
+        268
+      ],
+      "segmentIndex": 134,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s135": {
+      "recording": "ai301-r08",
+      "start": "01:25:44",
+      "end": "01:26:08",
+      "excerpt": "啊，对，why there is no register after the WB stage？We only have I I D I D X X M E M and M E M W E so why. There is no register after the right backstage and fashion stage。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 269,
+      "paragraphIndices": [
+        270
+      ],
+      "segmentIndex": 135,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s136": {
+      "recording": "ai301-r08",
+      "start": "01:26:32",
+      "end": "01:27:09",
+      "excerpt": "嗯。Uh，because for instructions that update the register file，if you have a separate pipeline register after the WB state，it is kind of redundant to the state that is updated。呃，for example，a low word instruction，it places the result into register。As zero，and then any later instruction requiring that piece of data，they simply be as zero。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 271,
+      "paragraphIndices": [
+        272
+      ],
+      "segmentIndex": 136,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s137": {
+      "recording": "ai301-r08",
+      "start": "01:27:09",
+      "end": "01:27:47",
+      "excerpt": "Uh，So，so please speaking，this strengthens the file is the same element corresponding to the WB stage，so there's no need to place another set of state elements after WB stage。Because any update of the state. Any updates of the states uh uh is going to happen inside the register file。啊，so we don't need a redundant set of say elements。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 273,
+      "paragraphIndices": [
+        274
+      ],
+      "segmentIndex": 137,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s138": {
+      "recording": "ai301-r08",
+      "start": "01:27:49",
+      "end": "01:28:18",
+      "excerpt": "Uh，and also the numbers here that is about the size of the。pipeline registers。So the registers must be wide enough to store all the data corresponding to the lines that going through them. What do I mean by the lines going through the pipeline register?",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 275,
+      "paragraphIndices": [
+        276
+      ],
+      "segmentIndex": 138,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s139": {
+      "recording": "ai301-r08",
+      "start": "01:28:18",
+      "end": "01:28:49",
+      "excerpt": "For example, 啊，this one。啊，这是。I have I D Python register the size is sixty four bit uh so that mean uh it need to hold two pieces of thirty two bit data and the first data is the is the thirty two bit instruction read from the memory it takes thirty two bit right.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 277,
+      "paragraphIndices": [
+        278
+      ],
+      "segmentIndex": 139,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s140": {
+      "recording": "ai301-r08",
+      "start": "01:28:49",
+      "end": "01:29:16",
+      "excerpt": "And the second piece of data in this register is the PC plus four. The PC plus four is also. occupy a location in this I S I D pipe register and later on we all see the reason why we need to place this P C plus four here.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 279,
+      "paragraphIndices": [
+        280
+      ],
+      "segmentIndex": 140,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s141": {
+      "recording": "ai301-r08",
+      "start": "01:29:17",
+      "end": "01:30:15",
+      "excerpt": "So you can see that for this pipeline register there around two lines going through uh this one is302 bit and this one is also302 bit so in total sixty4 uh then what about the2 one eight so four pieces of data. And the first one is the same, that is the PC plus tour also existing inside IPX, and the second one, it is the first data read from the register file, so RX. And this one is the second piece of data read from the register file, the RT, right? Although sometimes it may not be useful.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 281,
+      "paragraphIndices": [
+        282
+      ],
+      "segmentIndex": 141,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s142": {
+      "recording": "ai301-r08",
+      "start": "01:30:15",
+      "end": "01:30:37",
+      "excerpt": "And then the last piece of32-bit data, it is the sign extended version of the immediate value. In the instruction so for uh. I format instruction we have uh sixteen bits uh immediate.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 283,
+      "paragraphIndices": [
+        284
+      ],
+      "segmentIndex": 142,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s143": {
+      "recording": "ai301-r08",
+      "start": "01:30:37",
+      "end": "01:31:01",
+      "excerpt": "And then sign extended into thirty two bit. Uh，and all these four lines going through the I D E X high fine register，each corresponds to thirty bit，so uh summing them up，Uh，the result is hundred and. Thank you.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 285,
+      "paragraphIndices": [
+        286
+      ],
+      "segmentIndex": 143,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s144": {
+      "recording": "ai301-r08",
+      "start": "01:31:05",
+      "end": "01:31:53",
+      "excerpt": "And then for this, E X and E M. Uh，it is thirty two times three plus one，Uh，the one bit，it is the zero output of the AR，Uh，and the first thirty two bit，it is the. It is the next. 啊，it it is the target，it is the branch target，right？So the result of this ALU and this ALU is for calculating the branch target，and this line it is connected to the PC source multiprocessing。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 287,
+      "paragraphIndices": [
+        288
+      ],
+      "segmentIndex": 144,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s145": {
+      "recording": "ai301-r08",
+      "start": "01:31:55",
+      "end": "01:32:30",
+      "excerpt": "Uh，and also the serviceable result output by ALU，that is the second one，Uh。And also the third piece of32-bit data is the data, the RT, the data stored in RT register, because it is possible that the piece of data is going to be written into the memory using store word. So in total,32 times.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 289,
+      "paragraphIndices": [
+        290
+      ],
+      "segmentIndex": 145,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s146": {
+      "recording": "ai301-r08",
+      "start": "01:32:31",
+      "end": "01:32:57",
+      "excerpt": "three uh past one. yeah. And for the last one, also two search to this data. The first one is a work right from the data memory, so using for example instruction load work.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 291,
+      "paragraphIndices": [
+        292
+      ],
+      "segmentIndex": 146,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s147": {
+      "recording": "ai301-r08",
+      "start": "01:32:58",
+      "end": "01:33:22",
+      "excerpt": "Uh，and also the second part，it is the ALU result，also thirty two bit，and add up to sixty four。So，idea is that。The registers must be wide enough to store all the data corresponding to the lines that going through them, so you can just read how many lines.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 293,
+      "paragraphIndices": [
+        294
+      ],
+      "segmentIndex": 147,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s148": {
+      "recording": "ai301-r08",
+      "start": "01:33:23",
+      "end": "01:34:00",
+      "excerpt": "It's going through this blue block blue box uh and then uh so other than this fuel signal each of this line going through the pipeline register corresponds to our search to the. So for most of the time it should be the uh multiple of thirty two uh except for this zero output here so uh at one to ninety six. 从。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 295,
+      "paragraphIndices": [
+        296
+      ],
+      "segmentIndex": 148,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s149": {
+      "recording": "ai301-r08",
+      "start": "01:34:14",
+      "end": "01:34:38",
+      "excerpt": "Uh，this one is what we call uh multiple clock cycle diagram。So uh，在这种 diagram 我们 pretend that each instruction has its own data path，and then to place this data path into a common time axis。to show their relationship.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 297,
+      "paragraphIndices": [
+        298
+      ],
+      "segmentIndex": 149,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s150": {
+      "recording": "ai301-r08",
+      "start": "01:34:40",
+      "end": "01:35:02",
+      "excerpt": "Uh，so these uh five stages are corresponding to the first instruction，the second and the third。So uh we pretend that each instruction has its own data path，but you should know that actually all the five instructions they are sharing。One data pass.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 299,
+      "paragraphIndices": [
+        300
+      ],
+      "segmentIndex": 150,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s151": {
+      "recording": "ai301-r08",
+      "start": "01:35:04",
+      "end": "01:35:35",
+      "excerpt": "So actually the all the instructions inside the pipeline, they are sharing this data pass. But in this drawing, you pretend that each have their own set of data pass. Then what about the meaning of this shaded area? The shaded area meaning that whether it is reading or writing operation in this hardware component, so.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 301,
+      "paragraphIndices": [
+        302
+      ],
+      "segmentIndex": 151,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s152": {
+      "recording": "ai301-r08",
+      "start": "01:35:35",
+      "end": "01:36:01",
+      "excerpt": "啊，for example，for this啊。For this I M, or or we can also call it I F, so oh oh, I'm sorry, this is this is drawing of the hardware, so I M, it is for instruction memory, and DM is for data memory, so uh. That's the abbreviation.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 303,
+      "paragraphIndices": [
+        304
+      ],
+      "segmentIndex": 152,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s153": {
+      "recording": "ai301-r08",
+      "start": "01:36:02",
+      "end": "01:36:29",
+      "excerpt": "As you can see here, the shaded area inside I am, it is all on the right hand side because we are reading from the instruction memory. 不。So the shaded area on the right hand side, meaning that this is a reading, and the same thing for register file at the ID stage.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 305,
+      "paragraphIndices": [
+        306
+      ],
+      "segmentIndex": 153,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s154": {
+      "recording": "ai301-r08",
+      "start": "01:36:30",
+      "end": "01:36:49",
+      "excerpt": "We are reading from the register file, so the shaded area also in the. RIGHT PARTS. 啊啊啊，感觉是。Then this final stage, this right back stage.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 307,
+      "paragraphIndices": [
+        308
+      ],
+      "segmentIndex": 154,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s155": {
+      "recording": "ai301-r08",
+      "start": "01:36:49",
+      "end": "01:37:14",
+      "excerpt": "You can see that the shaded area in this register file is on the left hand side. On the left hand side means that this is writing. So that's the difference you can tell. Whether this is a reading or writing behavior based on the shaded area in this hardware component.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 309,
+      "paragraphIndices": [
+        310
+      ],
+      "segmentIndex": 155,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s156": {
+      "recording": "ai301-r08",
+      "start": "01:37:19",
+      "end": "01:37:43",
+      "excerpt": "Uh，So in order to facilitate uh better understanding of our pipeline operations，we usually uh make use of two kinds of uh figures。The uh the first kind is called multiple clock cycle pipeline diagrams，that is。Something similar to this one.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 311,
+      "paragraphIndices": [
+        312
+      ],
+      "segmentIndex": 156,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s157": {
+      "recording": "ai301-r08",
+      "start": "01:37:44",
+      "end": "01:38:13",
+      "excerpt": "And another type is called single clock cycle pipeline diagram, and this is what we are going to see next. So the multiple outside diagrams there. Used to provide an overview of pipelining situations and show the cycle by cycle flow of instructions through the data path.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 313,
+      "paragraphIndices": [
+        314
+      ],
+      "segmentIndex": 157,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s158": {
+      "recording": "ai301-r08",
+      "start": "01:38:14",
+      "end": "01:38:41",
+      "excerpt": "嗯嗯。and the functionality of singles clock cycle diagram diagram uh is slightly uh different. so uh single clock cycle diagram they are used to show the usage of data pass by each instruction in the pipeline at a specific clock cycle so.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 315,
+      "paragraphIndices": [
+        316
+      ],
+      "segmentIndex": 158,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s159": {
+      "recording": "ai301-r08",
+      "start": "01:38:41",
+      "end": "01:39:33",
+      "excerpt": "Uh，within this single clock cycle，how many instructions is now inside the pipeline，and which instruction is in the I stage，which one in ID，Uh，EXN，EN，and uh，Will be so which specific instruction is located in which portion of the pipeline and also the resource use so. So is the register file accessed by which instruction, and whether the data memory is read or written? So the usage of different.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 317,
+      "paragraphIndices": [
+        318
+      ],
+      "segmentIndex": 159,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s160": {
+      "recording": "ai301-r08",
+      "start": "01:39:34",
+      "end": "01:40:04",
+      "excerpt": "Uh hardware resource components also illustrated in single clock cycle pipeline diagrams。So you can imagine that these single pop cycle diagrams they actually contain much more information compared with local cycle version because it is. Kind of more detail illustration。",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 319,
+      "paragraphIndices": [
+        320
+      ],
+      "segmentIndex": 160,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s161": {
+      "recording": "ai301-r08",
+      "start": "01:40:06",
+      "end": "01:40:31",
+      "excerpt": "Uh，so this one is uh multi clock cycle，then uh as you can see，this is cc and clock cycle，so uh we have。We are depicting the same happened inside seven clock cycles here. and uh this one.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 321,
+      "paragraphIndices": [
+        322
+      ],
+      "segmentIndex": 161,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s162": {
+      "recording": "ai301-r08",
+      "start": "01:40:33",
+      "end": "01:41:02",
+      "excerpt": "Uh，it's called single clock cycle，Uh，pipeline diagram。so you can imagine this one as. As a screenshot，呃，taken at a specific moment。Uh so I need for example you can uh for example draw a line draw a line.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 323,
+      "paragraphIndices": [
+        324
+      ],
+      "segmentIndex": 162,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s163": {
+      "recording": "ai301-r08",
+      "start": "01:41:03",
+      "end": "01:41:28",
+      "excerpt": "Here，a vertical line here。And then the and then the single cycle diagram is actually taking a slice from the multiple cycle diagram. So this is illustrating the same happening in one cycle or say at a moment.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 325,
+      "paragraphIndices": [
+        326
+      ],
+      "segmentIndex": 163,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s164": {
+      "recording": "ai301-r08",
+      "start": "01:41:40",
+      "end": "01:42:23",
+      "excerpt": "And the next few slices they are about the single cycle diagram for loading and storing, but of course I cannot finish in thirty seconds, so. Uh anyway so uh you can see that uh in one single cycle pipeline阿拉伯Uh we try to uh highlight. The part of resource currently used by this instruction, because now we are discussing this loading instruction.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 327,
+      "paragraphIndices": [
+        328
+      ],
+      "segmentIndex": 164,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s165": {
+      "recording": "ai301-r08",
+      "start": "01:42:24",
+      "end": "01:42:59",
+      "excerpt": "So as the instruction fetch what it is going to do first. Take the search two big instruction from the instruction memory so the shaded area is on the right hand side that means reading from the I M and then puts the. Put the instruction into the I S I D pipeline register so because it is writing into this register so the color area is at the left hand side and also this.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 329,
+      "paragraphIndices": [
+        330
+      ],
+      "segmentIndex": 165,
+      "segmentIndexBase": 1
+    },
+    "ai301-r08-s166": {
+      "recording": "ai301-r08",
+      "start": "01:43:00",
+      "end": "01:43:36",
+      "excerpt": "Either it is applied to compute PC plus four and the PC plus four data thirty two bit also written into this I I D pipeline register so this one in total sixty four bits and two words of the data stored into here and. Color left hand side means writing, color right hand side means reading. Okay, so I will continue from this part.",
+      "excerptKind": "课堂自动转写原文；保留错词，正文结合原图校正",
+      "headerParagraph": 331,
+      "paragraphIndices": [
+        332
+      ],
+      "segmentIndex": 166,
+      "segmentIndexBase": 1
     }
   }
 }

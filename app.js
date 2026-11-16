@@ -21,16 +21,9 @@ function noteSourceScope(d,p){
  const hasOther=p.note.sourceIds.some(id=>!String(id).startsWith(primary+"-"));
  return same?(hasOther?"本讲录音为主；其他讲次仅作补充":"本讲录音"):"跨讲复述：来源是老师在其他讲次对相同内容的讲解，不代表本讲当时录音";
 }
-function hum053Coverage(){
- let same=0,cross=0,none=0;
- for(const d of S.data.decks)for(const p of S.data.slides[d.id]){
-  if(!p.note)none++;else if(sameLectureAudio(d,p))same++;else cross++;
- }
- return {same,cross,none};
-}
 const course=courses[courseId];
 const stateKey=courseId+"-state";
-const S={data:null,deck:null,page:1,cache:new Map(),pending:new Map(),task:null,seq:0,fit:"page",panel:true,star:new Set(),matches:[],sel:0,collapsed:false,libraryCollapsed:false,theme:"light",focusIncludeClass:true,examCategory:"all",modalReturnFocus:null};
+const S={data:null,deck:null,page:1,cache:new Map(),pending:new Map(),task:null,seq:0,fit:"page",panel:true,star:new Set(),matches:[],sel:0,collapsed:false,libraryCollapsed:false,theme:"light",focusIncludeClass:true,examCategory:"all",modalReturnFocus:null,modalBackground:null};
 let saved={};try{saved=JSON.parse(localStorage.getItem(stateKey)||"{}")||{}}catch{}
 if(Array.isArray(saved.bookmarks))S.star=new Set(saved.bookmarks);
 if(saved.panel!==undefined)S.panel=!!saved.panel;
@@ -218,27 +211,47 @@ function shortDeck(d){return d.startsWith('lab')?'Lab '+d.slice(3):d.replace('le
 function nextFocus(){
  return FocusNavigation.next(S.data.decks,S.data.examGuide.entries,S.deck.id,S.page,S.focusIncludeClass);
 }
-function focusType(p){return p.categories.includes('explicit')?'明确考核':p.categories.includes('quiz')?'Quiz复盘':'课堂重点（非必考）'}
+function focusType(p){return p.categories.includes('explicit')?'明确考核':p.categories.includes('quiz')?'Quiz复盘':p.categories.includes('teacher')?'老师强调 / 课堂提问（非必考）':'一般整理 / 课件练习（非必考）'}
 function updateFocusButton(){
  const n=nextFocus(),b=$("#next-focus");b.disabled=!n;
  b.textContent=n?'下个考点 · '+(n.deck===S.deck.id?'':shortDeck(n.deck)+' ')+'P'+n.page+' →':'无后续考点';
- b.title=n?focusType(n)+'：'+n.titles.join('；')+' · 严格从当前页向后，不回绕':'当前导航范围内没有更后面的考点。可打开考核中心查看全部，或包含课堂重点。';
+ b.title=n?focusType(n)+'：'+n.titles.join('；')+' · 严格从当前页向后，不回绕':'当前导航范围内没有更后面的考点。可打开考核中心查看全部，或在导航设置中包含课堂内容。';
 }
 function jumpExam(){const n=nextFocus();if(n)navigate(n.deck,n.page);else updateFocusButton()}
-function renderExamHub(){
- const guide=S.data.examGuide,cats=guide.categories,all=guide.entries;
- const term=$("#exam-query").value.trim().toLowerCase();
- const filtered=all.filter(e=>(S.examCategory==='all'||e.category===S.examCategory)&&(!term||(e.title+' '+e.body+' '+(e.status||'')).toLowerCase().includes(term)));
- const cov=courseId==="hum053"?hum053Coverage():null;$("#exam-subtitle").textContent=(guide.summary||all.length+'条 · 明确考核与课堂重点分开标注')+(cov?' · 10份录音：本讲录音支撑 '+cov.same+' 页，跨讲复述 '+cov.cross+' 页，无讲授来源 '+cov.none+' 页（仅显示课件） · 图像文字人工补录 '+(S.data.coverage.visualTextPages??0)+' 页':' · '+S.data.coverage.recordings+'份录音转写');
- $("#exam-filters").innerHTML=[{id:'all',label:'全部'},...cats].map(c=>'<button data-category="'+esc(c.id)+'" class="exam-filter '+(S.examCategory===c.id?'selected':'')+'" aria-pressed="'+(S.examCategory===c.id)+'">'+esc(c.label)+' <span>'+all.filter(e=>c.id==='all'||e.category===c.id).length+'</span></button>').join('');
- $("#exam-filters").querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{S.examCategory=b.dataset.category;renderExamHub()}));
+function updateFocusPosition(){
  $("#focus-include-class").checked=S.focusIncludeClass;
  const n=nextFocus();
  $("#focus-position").textContent='当前位置：'+shortDeck(S.deck.id)+' P'+S.page+'。'+(n?'下一个：'+shortDeck(n.deck)+' P'+n.page+' · '+focusType(n)+'。':'当前范围内无更后面的考点，不会绕回开头。')+' 同一主题在同一份课件只导航一个代表页。';
+}
+function setFocusScope(includeClass){S.focusIncludeClass=Boolean(includeClass);save();updateFocusButton();updateFocusPosition()}
+function teacherEvidenceMarkup(e){
+ if(!['teacher','explicit'].includes(e.category))return '';
+ const labels={emphasis:'老师强调',question:'课堂提问'};
+ const evidence=(e.teacherEvidence||[]).find(x=>labels[x.kind]&&typeof x.quote==='string'&&x.quote.trim()&&S.data.sources?.[x.sourceId]);
+ if(!evidence)return '';
+ const source=S.data.sources[evidence.sourceId];
+ const time=(source.start||'')+(source.end?'–'+source.end:'');
+ const recording=S.data.recordings?.[source.recording];
+ const location=(recording?.title||source.recording||'')+(time?' · '+time:'');
+ return '<blockquote class="teacher-evidence"><div class="teacher-evidence-heading"><span>'+labels[evidence.kind]+'</span><span>'+esc(location)+'</span></div><p>'+esc(evidence.quote)+'</p></blockquote>';
+}
+function renderExamHub(resetScroll=false){
+ const guide=S.data.examGuide,cats=guide.categories,all=guide.entries;
+ const term=$("#exam-query").value.trim().toLowerCase();
+ const filtered=all.filter(e=>(S.examCategory==='all'||e.category===S.examCategory)&&(!term||(e.title+' '+e.body+' '+(e.status||'')+' '+(e.teacherEvidence||[]).map(x=>x.quote||'').join(' ')).toLowerCase().includes(term)));
+ $("#exam-subtitle").textContent=guide.summary||'';
+ $("#exam-subtitle").classList.toggle('hidden',!guide.summary);
+ const filterScroll=$("#exam-filters").scrollLeft;
+ const visibleCats=cats.filter(c=>c.id!=='quiz'||S.examCategory===c.id||all.some(e=>e.category===c.id));
+ $("#exam-filters").innerHTML=[{id:'all',label:'全部'},...visibleCats].map(c=>'<button data-category="'+esc(c.id)+'" class="exam-filter '+(S.examCategory===c.id?'selected':'')+'" aria-pressed="'+(S.examCategory===c.id)+'">'+esc(c.label)+' <span>'+all.filter(e=>c.id==='all'||e.category===c.id).length+'</span></button>').join('');
+ $("#exam-filters").scrollLeft=filterScroll;
+ $("#exam-filters").querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{S.examCategory=b.dataset.category;renderExamHub(true);$("#exam-filters .selected")?.focus({preventScroll:true})}));
+ updateFocusPosition();
  const label=id=>cats.find(x=>x.id===id)?.label||id;
- $("#exam-list").innerHTML=filtered.length?filtered.map(e=>'<article class="exam-item"><div class="exam-item-heading"><span class="exam-category category-'+esc(e.category)+'">'+esc(label(e.category))+'</span><h3>'+esc(e.title)+'</h3></div>'+(e.status?'<span class="exam-status">'+esc(e.status)+'</span>':'')+'<p>'+esc(e.body)+'</p><div class="exam-anchors">'+e.anchors.map(a=>'<button class="exam-anchor" data-deck="'+esc(a.deck)+'" data-page="'+a.page+'">'+shortDeck(a.deck)+' · P'+a.page+' ↗</button>').join('')+'</div>'+sourceMarkup(e.sourceIds)+'</article>').join(''):'<p class="exam-empty">当前分类没有匹配项。试试“全部”或其他关键词。</p>';
+ $("#exam-list").innerHTML=filtered.length?filtered.map(e=>'<article class="exam-item"><div class="exam-item-heading"><span class="exam-category category-'+esc(e.category)+'">'+esc(label(e.category))+'</span><h3>'+esc(e.title)+'</h3></div>'+(e.status?'<span class="exam-status">'+esc(e.status)+'</span>':'')+teacherEvidenceMarkup(e)+'<p>'+esc(e.body)+'</p><div class="exam-anchors">'+(e.anchors||[]).map(a=>'<button class="exam-anchor" data-deck="'+esc(a.deck)+'" data-page="'+a.page+'">'+shortDeck(a.deck)+' · P'+a.page+' ↗</button>').join('')+'</div>'+sourceMarkup([...new Set([...(e.sourceIds||[]),...(e.teacherEvidence||[]).map(x=>x.sourceId)])])+'</article>').join(''):'<p class="exam-empty">当前分类没有匹配项。试试“全部”或其他关键词。</p>';
  $("#exam-list").querySelectorAll('.exam-anchor').forEach(b=>b.addEventListener('click',()=>{closeModal('#exam-modal');navigate(b.dataset.deck,Number(b.dataset.page))}));
- $("#exam-source-policy").textContent=guide.note;
+ $("#exam-source-policy").textContent=guide.note||'';
+ if(resetScroll)$("#exam-content").scrollTop=0;
 }
 function openExamHub(){renderExamHub();openModal('#exam-modal');$("#exam-query").focus()}
 function copyNote(){
@@ -247,8 +260,35 @@ function copyNote(){
  const text=[S.deck.group+' '+S.deck.label+' · P'+S.page,p.title,...n.paragraphs,sourceLines.length?'课堂出处：'+sourceLines.join('；'):'来源：本页原始课件'].join('\n\n');
  navigator.clipboard.writeText(text).then(()=>{$('#copy-note').textContent='已复制 ✓';setTimeout(()=>$('#copy-note').textContent='复制讲解',1400)}).catch(()=>alert('浏览器未获得剪贴板权限，请手动复制。'));
 }
-function openModal(selector){S.modalReturnFocus=document.activeElement;closeLibrary();$(selector).classList.remove('hidden')}
-function closeModal(selector){const el=$(selector);if(el.classList.contains('hidden'))return;el.classList.add('hidden');if(S.modalReturnFocus?.isConnected)S.modalReturnFocus.focus({preventScroll:true})}
+function modalFocusables(modal){
+ return [...modal.querySelectorAll('a[href],button,input,select,textarea,summary,[tabindex]')].filter(el=>el.tabIndex>=0&&!el.disabled&&!el.closest('[inert]')&&el.getClientRects().length);
+}
+function openModal(selector){
+ const modal=$(selector);if(!modal.classList.contains('hidden'))return;
+ if(!S.modalBackground){
+  S.modalReturnFocus=document.activeElement;
+  S.modalBackground=new Map([...document.querySelectorAll('#app > :not(.modal-overlay)')].map(el=>[el,el.inert]));
+  S.modalBackground.forEach((_,el)=>{el.inert=true});
+ }
+ document.querySelectorAll('.modal-overlay').forEach(el=>{if(el!==modal)el.classList.add('hidden')});
+ closeLibrary();modal.classList.remove('hidden');
+ (modalFocusables(modal)[0]||modal).focus({preventScroll:true});
+}
+function closeModal(selector){
+ const modal=$(selector);if(modal.classList.contains('hidden'))return;
+ modal.classList.add('hidden');
+ S.modalBackground?.forEach((inert,el)=>{el.inert=inert});S.modalBackground=null;
+ const target=S.modalReturnFocus;S.modalReturnFocus=null;
+ if(target?.isConnected&&target.getClientRects().length)target.focus({preventScroll:true});
+ else $("#menu-trigger").focus({preventScroll:true});
+}
+function trapModalTab(event,modal){
+ const targets=modalFocusables(modal),first=targets[0],last=targets.at(-1),active=document.activeElement;
+ if(!first){event.preventDefault();modal.focus();return}
+ if(!targets.includes(active)||(event.shiftKey&&active===first)||(!event.shiftKey&&active===last)){
+  event.preventDefault();(event.shiftKey?last:first).focus();
+ }
+}
 function search(q){
  const str=q.trim().toLowerCase(),found=[];if(!str)return found;
  for(const d of S.data.decks){
@@ -288,7 +328,8 @@ function keydown(e){
  const input=/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName||"");
  const searchOpen=!$("#search-modal").classList.contains("hidden");
  const examOpen=!$("#exam-modal").classList.contains("hidden");
- if(e.key==="Escape"){closeModal("#search-modal");closeModal("#exam-modal");closeLibrary();return}
+ if(e.key==="Escape"){if(searchOpen||examOpen)e.preventDefault();closeModal("#search-modal");closeModal("#exam-modal");closeLibrary();return}
+ if((searchOpen||examOpen)&&e.key==="Tab"){trapModalTab(e,$(searchOpen?'#search-modal':'#exam-modal'));return}
  if(searchOpen){
   if(e.key==="Enter"){e.preventDefault();goResult(S.sel)}
   if(e.key==="ArrowDown"){e.preventDefault();S.sel=clamp(S.sel+1,0,S.matches.length-1);focusResult()}
@@ -324,16 +365,15 @@ function bind(){
  $("#search-close").addEventListener("click",()=>closeModal("#search-modal"));
  $("#exam-guide").addEventListener("click",openExamHub);
  $("#exam-top-trigger").addEventListener("click",openExamHub);
- $("#exam-query").addEventListener("input",renderExamHub);
- $("#focus-include-class").addEventListener("change",e=>{S.focusIncludeClass=e.target.checked;save();updateFocusButton();renderExamHub()});
+ $("#exam-query").addEventListener("input",()=>renderExamHub(true));
+ $("#focus-include-class").addEventListener("change",e=>setFocusScope(e.target.checked));
  $("#exam-close").addEventListener("click",()=>closeModal("#exam-modal"));
- $("#exam-dismiss").addEventListener("click",()=>closeModal("#exam-modal"));
  $("#menu-trigger").addEventListener("click",toggleLibrary);
  $("#library-collapse").addEventListener("click",toggleLibrary);
  $("#theme-toggle").addEventListener("click",toggleTheme);
  $("#library-close").addEventListener("click",closeLibrary);
  $("#scrim").addEventListener("click",closeLibrary);
- document.querySelectorAll(".modal-overlay").forEach(m=>m.addEventListener("mousedown",e=>{if(e.target===m)m.classList.add("hidden")}));
+ document.querySelectorAll(".modal-overlay").forEach(m=>m.addEventListener("mousedown",e=>{if(e.target===m){e.preventDefault();closeModal('#'+m.id)}}));
  document.addEventListener("keydown",keydown);
  window.addEventListener("resize",updateLibraryToggle);
  window.addEventListener("popstate",()=>{const [id,p]=route();navigate(id,p,false)});
@@ -342,7 +382,7 @@ function bind(){
 }
 (async function init(){
  try{
-  const response=await fetch(course.data+"?v=bmeb316-20261115");if(!response.ok)throw Error("课程索引请求失败："+response.status);
+  const response=await fetch(course.data+"?v=20261116");if(!response.ok)throw Error("课程索引请求失败："+response.status);
   S.data=await response.json();if(S.data.schemaVersion!==2)throw Error("课程数据版本未更新，请刷新页面");$("#fit-mode").textContent=S.fit==="page"?"适应页面":"适应宽度";
   if(window.pdfjsLib)pdfjsLib.GlobalWorkerOptions.workerSrc="assets/vendor/pdf.worker.min.js";
   courseInit();navInit();bind();updateLibraryToggle();updateTheme();const [id,p]=route();navigate(id,p,false);routeWrite(id,S.page,true);

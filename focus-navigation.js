@@ -6,7 +6,7 @@
 })(typeof globalThis!=='undefined'?globalThis:this,function(){
   'use strict';
   function build(decks,entries,includeClass=true){
-    const allowed=new Set(includeClass?['explicit','quiz','class']:['explicit','quiz']);
+    const allowed=new Set(includeClass?['explicit','quiz','teacher','class']:['explicit','quiz']);
     const order=new Map(decks.map((d,i)=>[d.id,i]));
     const counts=new Map(decks.map(d=>[d.id,d.pages]));
     const positions=new Map();

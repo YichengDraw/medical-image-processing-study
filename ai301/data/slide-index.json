@@ -103,6 +103,19 @@
       "firstSlide": "流水线：第 6 讲",
       "audio": true,
       "audioSources": []
+    },
+    {
+      "id": "lec6p2",
+      "group": "Lecture 6 · Part 2",
+      "label": "Pipelined Datapath",
+      "cn": "流水寄存器、逐周期数据通路与控制",
+      "file": "Lecture6_part2.pdf",
+      "color": "#348d9f",
+      "pages": 21,
+      "path": "ai301/assets/pdfs/lec6p2.pdf",
+      "firstSlide": "五级数据通路：两条反向信息流与冒险",
+      "audio": true,
+      "audioSources": []
     }
   ],
   "slides": {
@@ -1380,6 +1393,143 @@
         "page": 20,
         "title": "流水线总结：吞吐、冒险与 ISA",
         "searchText": "流水线总结：吞吐、冒险与 ISA\n多条指令重叠 提高 throughput；structure data control hazards；ISA 影响复杂度；same latency 需明确比较口径；本次 PPT-only。\n20\nPipeline Big-Picture Summary\n• Pipelining improves performance by increasing  \ninstruction throughput\n• Executes multiple instructions in parallel\n• Each instruction has the same latency\n• Subject to hazards\n• Structure, data, control\n• Instruction set design affects complexity of  \npipeline implementation\n"
+      }
+    ],
+    "lec6p2": [
+      {
+        "page": 1,
+        "title": "五级数据通路：两条反向信息流与冒险",
+        "searchText": "五级数据通路：两条反向信息流与冒险\nMIPS Pipelined Datapath\n21\nWB\n•\nData hazard\nMEM\n•\nControl hazard\n\nIF ID EX MEM WB PC+4 branch target ALU register file control hazard data hazard"
+      },
+      {
+        "page": 2,
+        "title": "流水寄存器：保存阶段结果与同步推进",
+        "searchText": "流水寄存器：保存阶段结果与同步推进\n[64]\n22\n[128]\n[97]\n[64]\nPipeline Registers\n• Need registers between stages\n• To hold information produced in previous cycle\n\nIF/ID ID/EX EX/MEM MEM/WB 64 128 97 64 state element flip-flop clock edge"
+      },
+      {
+        "page": 3,
+        "title": "流水寄存器位宽：64、128、97、64 从哪里来",
+        "searchText": "流水寄存器位宽：64、128、97、64 从哪里来\n[64]\n23\n[128]\n[97]\n[64]\nPipeline Registers\n• Need registers between stages\n• To hold information produced in previous cycle\n\nIF/ID 32+32 ID/EX 4*32 EX/MEM 3*32+1 MEM/WB 2*32 Zero"
+      },
+      {
+        "page": 4,
+        "title": "指令时间线：横看一条指令，竖看一个周期",
+        "searchText": "指令时间线：横看一条指令，竖看一个周期\nTimeline of Instruction Execution\n24\n\nCC1 CC2 CC3 CC4 CC5 CC6 CC7 lw $1,100($0) lw $2,200($0) lw $3,300($0) IM Reg ALU DM"
+      },
+      {
+        "page": 5,
+        "title": "两种流水线图：全过程与单个周期截面",
+        "searchText": "两种流水线图：全过程与单个周期截面\n25\nPipeline Operation\n• Cycle-by-cycle flow of instructions through the  \npipelined datapath\n• “Single-clock-cycle” pipeline diagram\n• Shows pipeline usage in a single cycle\n• Highlight resources used\n• We’ll look at “single-clock-cycle” diagrams for\nload & store\n\n"
+      },
+      {
+        "page": 6,
+        "title": "lw 的 IF：取指并保存指令与 PC+4",
+        "searchText": "lw 的 IF：取指并保存指令与 PC+4\nIF for Load\n26\n\nPC instruction memory IF/ID instruction PC+4 64 bits"
+      },
+      {
+        "page": 7,
+        "title": "lw 的 ID：译码、读寄存器与符号扩展",
+        "searchText": "lw 的 ID：译码、读寄存器与符号扩展\nID for Load\n27\n\nIF/ID ID/EX register file read data sign-extend",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+      },
+      {
+        "page": 8,
+        "title": "lw 的 EX：计算有效地址",
+        "searchText": "lw 的 EX：计算有效地址\nEX for Load\n28\n\nID/EX EX/MEM ALUSrc ALU address calculation",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+      },
+      {
+        "page": 9,
+        "title": "lw 的 MEM：读取数据存储器",
+        "searchText": "lw 的 MEM：读取数据存储器\nMEM for Load\n29\n\nEX/MEM MEM/WB data memory read data",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+      },
+      {
+        "page": 10,
+        "title": "lw 的 WB 错误示例：目的寄存器号错位",
+        "searchText": "lw 的 WB 错误示例：目的寄存器号错位\nWB for Load (with bug)\n30\nIncorrect \ndestination register\n\nMEM/WB write register write data incorrect destination register",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+      },
+      {
+        "page": 11,
+        "title": "修正 lw 数据通路：目的寄存器号随指令传递",
+        "searchText": "修正 lw 数据通路：目的寄存器号随指令传递\nCorrected Datapath for Load\n31\n\ndestination register number pipeline registers IF/ID ID/EX EX/MEM MEM/WB",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+      },
+      {
+        "page": 12,
+        "title": "sw 的 EX：计算地址并传递待写数据",
+        "searchText": "sw 的 EX：计算地址并传递待写数据\nEX for Store\n32\n\nID/EX EX/MEM address calculation write data",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+      },
+      {
+        "page": 13,
+        "title": "sw 的 MEM：把寄存器数据写入存储器",
+        "searchText": "sw 的 MEM：把寄存器数据写入存储器\nMEM for Store\n33\n\nEX/MEM data memory write data sw",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+      },
+      {
+        "page": 14,
+        "title": "sw 的 WB：无需写回寄存器",
+        "searchText": "sw 的 WB：无需写回寄存器\nWB for Store\n34\n\n",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+      },
+      {
+        "page": 15,
+        "title": "多周期流水线图：各指令占用的硬件资源",
+        "searchText": "多周期流水线图：各指令占用的硬件资源\nMulti-Cycle Pipeline Diagram\n• Resources usage is shown\n35\n\nlw $10,20($1) sub $11,$2,$3 add $12,$3,$4 lw $13,24($1) add $14,$5,$6 CC1 CC9",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+      },
+      {
+        "page": 16,
+        "title": "多周期流水线图：传统阶段表",
+        "searchText": "多周期流水线图：传统阶段表\nMulti-Cycle Pipeline Diagram\n• Traditional diagram\n36\n\nlw $10,20($1) sub $11,$2,$3 add $12,$3,$4 lw $13,24($1) add $14,$5,$6 CC1 CC9",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+      },
+      {
+        "page": 17,
+        "title": "单周期流水线图：同一时刻的五条指令",
+        "searchText": "单周期流水线图：同一时刻的五条指令\nSingle-Cycle Pipeline Diagram\n• State of the pipeline at a specific cycle\n37\n\nCC5 add $14,$5,$6 IF lw $13,24($1) ID add $12,$3,$4 EX sub $11,$2,$3 MEM lw $10,20($1) WB",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+      },
+      {
+        "page": 18,
+        "title": "流水数据通路中的控制信号",
+        "searchText": "流水数据通路中的控制信号\nPipelined Datapath  \nwith Control Signals\n38\n\nRegWrite ALUSrc RegDst ALUOp Branch PCSrc MemRead MemWrite MemtoReg",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+      },
+      {
+        "page": 19,
+        "title": "控制信号表：按 EX、MEM、WB 分组",
+        "searchText": "控制信号表：按 EX、MEM、WB 分组\nControl Signals\n39\n\nRegDst RegWrite ALUSrc PCSrc MemRead MemWrite MemtoReg ALUOp1 ALUOp0 R-format lw sw beq",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+      },
+      {
+        "page": 20,
+        "title": "控制信号随指令跨级传递",
+        "searchText": "控制信号随指令跨级传递\nPipeline Control\n• Control signals derived from instruction\n• As in single-cycle implementation\n40\n\nControl ID/EX EX/MEM MEM/WB EX M WB",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+      },
+      {
+        "page": 21,
+        "title": "完整流水数据通路与控制",
+        "searchText": "完整流水数据通路与控制\nPipeline Datapath with Control\n41\n\nRegWrite ALUSrc RegDst ALUOp Branch PCSrc MemRead MemWrite MemtoReg pipeline control",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
       }
     ]
   },

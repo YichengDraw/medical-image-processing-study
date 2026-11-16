@@ -10,6 +10,7 @@ from pathlib import Path
 import copy
 import hashlib
 import json
+from exam_evidence import validate_teacher_evidence
 
 ROOT = Path(__file__).resolve().parent
 
@@ -29,7 +30,7 @@ def build():
         'slides': {}, 'assessment': index['assessment'],
         'sources': provenance['sources'], 'recordings': provenance['recordings'],
         'examGuide': guide, 'coverage': review['coverage'],
-        'studyPolicy': '考核中心区分明确考核、Quiz复盘、课堂重点、非考/未讲范围与口头安排。',
+        'studyPolicy': '考核中心区分明确考核、Quiz复盘、老师强调/课堂提问、一般整理/课件练习、非考/未讲范围与口头安排。明确考核含教师明确的考试准备、范围与常考说明，不承诺原题必考；老师强调与提问保留可核对原话。',
         'transcriptPolicy': '逐页对照原始PDF图示与课堂转写编写。出处按内容对应，不代表精确翻页时间；自动转写可能有错词。无对应录音的页面仅显示PPT，明确不考和本次尚未讲分开标注。',
     }
     proofs = {d['id']: d for d in review['decks']}
@@ -87,6 +88,7 @@ def build():
     assert len({e['id'] for e in guide['entries']}) == len(guide['entries']), 'Duplicate hub entry'
     for e in guide['entries']:
         assert e['category'] in categories
+        validate_teacher_evidence(e, data['sources'])
         assert all(k in data['sources'] for k in e['sourceIds'])
         assert e['sourceIds'] or e.get('sourceType', '').startswith('课件'), 'Unattributed hub entry: ' + e['id']
         for a in e['anchors']:

@@ -9,9 +9,12 @@ from pathlib import Path
 import copy
 import hashlib
 import json
+import sys
 
 ROOT = Path(__file__).resolve().parent
 SITE = ROOT.parent
+sys.path.insert(0, str(SITE))
+from exam_evidence import validate_teacher_evidence
 
 
 def load(name):
@@ -34,7 +37,7 @@ def build():
         'recordings': provenance['recordings'],
         'examGuide': guide,
         'coverage': review['coverage'],
-        'studyPolicy': '考核中心区分明确考核、Quiz复盘、课堂重点、范围与选读、课程安排。课堂练习与重点不等于必考。',
+        'studyPolicy': '考核中心区分明确考核、Quiz复盘、老师强调/课堂提问、一般整理/课件练习、范围与选读、课程安排。明确考核含教师明确的考试准备、范围与常考说明，不承诺原题必考；老师强调、课堂提问及一般练习均不等于必考。',
         'transcriptPolicy': '逐页对照原始PDF图示与课堂转写编写。页码按PDF实际顺序计算，可能与课件页脚编号不同。出处按内容对应，不代表精确翻页时间；转写可能有错词。未提供对应录音的页面仅展示PPT。',
     }
     proof = {d['id']: d for d in review['decks']}
@@ -91,6 +94,7 @@ def build():
     assert len({e['id'] for e in guide['entries']}) == len(guide['entries']), 'Duplicate exam hub ID'
     for entry in guide['entries']:
         assert entry['category'] in categories
+        validate_teacher_evidence(entry, data['sources'])
         assert entry['anchors'] or entry['category'] == 'arrangement', f'No slide reference: {entry["id"]}'
         assert all(sid in data['sources'] for sid in entry.get('sourceIds', [])), f'Unknown hub source: {entry["id"]}'
         assert entry.get('sourceIds') or entry.get('sourceType', '').startswith('课件'), f'Unsourced hub entry: {entry["id"]}'

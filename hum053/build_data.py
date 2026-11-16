@@ -9,9 +9,12 @@ import copy
 import hashlib
 import json
 import re
+import sys
 
 ROOT = Path(__file__).resolve().parent
 SITE = ROOT.parent
+sys.path.insert(0, str(SITE))
+from exam_evidence import validate_teacher_evidence
 EXPECTED_PAGES = {'lec1': 43, 'lec2': 44, 'lec3': 36, 'lec4': 30,
                   'lec5': 34, 'lec6': 49, 'lec7': 37, 'lec8': 50,
                   'lec9': 58, 'lec10': 57}
@@ -41,7 +44,7 @@ def build():
         'recordings': copy.deepcopy(provenance['recordings']),
         'examGuide': copy.deepcopy(guide),
         'coverage': copy.deepcopy(review['coverage']),
-        'studyPolicy': '最新通知为闭卷、孔子—孟子—庄子、占总评50%。明确考核、课堂重点、比较与自拟练习分别标注；练习不是已知试题。导论作为背景阅读。',
+        'studyPolicy': '最新通知为闭卷、孔子—孟子—庄子、占总评50%。明确考核、老师强调/课堂提问、一般整理/课件练习、比较与自拟练习分别标注。明确考核包括已说明的考试准备与范围，不承诺原题必考；强调与提问保留原话，练习不是已知试题。导论作为背景阅读。',
         'transcriptPolicy': '逐页核对课件画面与课堂转写。本讲录音优先；若仅有其他讲次对同一内容的复述，明确标为跨讲复述，不冒充本讲当时录音。出处按内容对应，不代表精确翻页时间；自动转写可能有错词。完全没有对应讲授来源的页面仅展示课件。',
     }
     assert [d['id'] for d in data['decks']] == list(EXPECTED_PAGES), 'Lecture order must follow the actual lecture number'
@@ -126,6 +129,7 @@ def build():
     for entry in guide['entries']:
         eid = entry['id']
         assert entry.get('category') in categories, f'Unknown category: {eid}'
+        validate_teacher_evidence(entry, data['sources'])
         assert entry.get('title', '').strip() and entry.get('body', '').strip()
         assert all(s in data['sources'] for s in entry.get('sourceIds', [])), f'Unknown hub source: {eid}'
         assert entry.get('sourceIds') or entry.get('sourceType', '').strip(), f'Unattributed hub entry: {eid}'

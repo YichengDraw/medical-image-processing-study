@@ -9,7 +9,7 @@ const data=JSON.parse(fs.readFileSync(path.join(root,'data/content.json'),'utf8'
 assert.equal(data.revision,'2026-11-15-restoration-color');
 assert.equal(data.schemaVersion,2);
 assert.equal(data.decks.length,9);
-assert.deepEqual(data.coverage,{visualPages:710,explainedPages:514,slidesOnlyPages:196,recordings:7,examEntries:87});
+assert.deepEqual(data.coverage,{visualPages:710,explainedPages:514,slidesOnlyPages:196,recordings:7,examEntries:96});
 assert.equal(data.slides.lec5.length,111);
 assert.equal(data.slides.lec6.length,83);
 const hash=file=>crypto.createHash('sha256').update(fs.readFileSync(path.join(root,file))).digest('hex');
@@ -54,4 +54,4 @@ for(const d of data.decks)for(const p of data.slides[d.id])if(p.note){
  const s=JSON.stringify(p.note.paragraphs);assert.ok(!signature.has(s),'Repeated range summary');signature.add(s);
 }
 assert.equal(signature.size,514);
-console.log('PASS: latest 194 pages; 119 unique sourced notes; untouched PDFs; CT vs untaught scope; 87-entry hub; transcript privacy.');
+console.log('PASS: latest 194 pages; 119 unique sourced notes; untouched PDFs; CT vs untaught scope; 96-entry hub; transcript privacy.');

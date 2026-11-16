@@ -18,10 +18,11 @@
       }
     } catch (_) {}
   </script>
-  <link rel="stylesheet" href="styles.css?v=hum053-20261114">
+  <link rel="stylesheet" href="styles.css?v=20261116">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Noto+Sans+SC:wght@400;500;600;700;800&amp;display=swap" media="print" onload="this.media='all'">
   <script defer src="assets/vendor/pdf.min.js"></script>
-  <script defer src="focus-navigation.js?v=visual-v2"></script>
-  <script defer src="app.js?v=bmeb316-20261115"></script>
+  <script defer src="focus-navigation.js?v=20261116"></script>
+  <script defer src="app.js?v=20261116"></script>
 </head>
 <body>
   <div id="app">
@@ -111,19 +112,33 @@
     </div>
 
     <div id="scrim" class="scrim hidden"></div>
-    <div id="search-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="全课程搜索">
+    <div id="search-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="全课程搜索" tabindex="-1">
       <div class="search-modal"><div class="modal-head"><span>⌕</span><input id="search-box" type="search" autocomplete="off" spellcheck="false" placeholder="搜索 Nyquist、卷积、位深、相位…"><button id="search-close" class="icon-btn" aria-label="关闭搜索">ESC</button></div><div id="search-results" class="search-results"></div><div id="search-footer" class="modal-footer">可搜索课件原文及伴读笔记 · Enter 跳转 · Esc 关闭</div></div>
     </div>
-    <div id="exam-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="exam-title">
+    <div id="exam-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="exam-title" tabindex="-1">
       <div class="exam-modal exam-hub">
-        <div class="exam-top"><div><span class="eyebrow blue">COURSE ASSESSMENT &amp; REVIEW</span><h2 id="exam-title">考核中心</h2><p id="exam-subtitle" class="exam-subtitle"></p></div><button id="exam-close" class="icon-btn" aria-label="关闭考核中心">✕</button></div>
-        <div id="assessment-grid" class="assessment-grid hidden"></div>
-        <div class="exam-search"><label for="exam-query">搜索全部考核信息</label><input id="exam-query" type="search" placeholder="零频、补零、不考、Quiz、展示时间…" autocomplete="off"></div>
-        <div id="exam-filters" class="exam-filters" aria-label="考核信息分类"></div>
-        <label class="focus-scope"><input id="focus-include-class" type="checkbox" checked>“下个考点”也包含课堂重点（不等于必考）</label>
-        <p id="focus-position" class="focus-position"></p>
-        <div id="exam-list" class="exam-list" aria-live="polite"></div>
-        <div class="exam-hub-footer"><span id="exam-source-policy"></span><button id="exam-dismiss" class="outline-action">返回课件</button></div>
+        <div class="exam-toolbar">
+          <div class="exam-top">
+            <h2 id="exam-title">考核中心</h2>
+            <div class="exam-search"><label class="sr-only" for="exam-query">搜索考核中心</label><input id="exam-query" type="search" placeholder="零频、补零、不考、Quiz、展示时间…" autocomplete="off"></div>
+            <button id="exam-close" class="icon-btn" aria-label="关闭考核中心" title="关闭（Esc）">✕</button>
+          </div>
+          <div id="exam-filters" class="exam-filters" aria-label="考核信息分类"></div>
+        </div>
+        <div id="exam-content" class="exam-content" tabindex="0" aria-label="考核条目与说明">
+          <details class="exam-options">
+            <summary>导航设置</summary>
+            <label class="focus-scope"><input id="focus-include-class" type="checkbox" checked>“下个考点”也包含老师强调、课堂提问及一般整理（非必考）</label>
+            <p id="focus-position" class="focus-position"></p>
+          </details>
+          <div id="exam-list" class="exam-list" aria-live="polite"></div>
+          <details class="exam-info">
+            <summary>说明与来源</summary>
+            <p id="exam-subtitle" class="exam-subtitle"></p>
+            <div id="assessment-grid" class="assessment-grid hidden"></div>
+            <p id="exam-source-policy" class="exam-source-policy"></p>
+          </details>
+        </div>
       </div>
     </div>
   </div>
