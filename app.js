@@ -98,7 +98,7 @@ function headUpdate(){
  const star=S.star.has(key(d.id,S.page));$("#star-btn").textContent=star?"★":"☆";$("#star-btn").classList.toggle("starred",star);
  const hasAudio=pageHasAudio(d,p);
  $("#note-status").textContent=!hasAudio?"本页未提供对应录音":sameLectureAudio(d,p)?"逐页核对 · 本讲录音":"逐页核对 · 跨讲复述";
- if(courseId==="bmeb316"&&!hasAudio&&p.coverageLabel)$("#note-status").textContent=p.coverageReason==="explicitly_excluded"?"CT选读 · 教师明确不考":"本次未讲 · 下次继续";
+ if(courseId==="bmeb316"&&!hasAudio&&p.coverageLabel)$("#note-status").textContent=p.coverageReason==="explicitly_excluded"?"CT选读 · 教师明确不考":p.coverageReason==="not_yet_taught"?"本次未讲 · 下次继续":"本页无对应录音 · 仅课件";
  $("#toggle-panel").style.display=hasAudio?"":"none";$("#toggle-panel").textContent=S.panel?"隐藏讲解":"显示讲解";
  updateFocusButton();
  document.title=p.title+" · "+d.group+" | "+course.code;
@@ -382,7 +382,7 @@ function bind(){
 }
 (async function init(){
  try{
-  const response=await fetch(course.data+"?v=20261116");if(!response.ok)throw Error("课程索引请求失败："+response.status);
+  const response=await fetch(course.data+"?v=20261120");if(!response.ok)throw Error("课程索引请求失败："+response.status);
   S.data=await response.json();if(S.data.schemaVersion!==2)throw Error("课程数据版本未更新，请刷新页面");$("#fit-mode").textContent=S.fit==="page"?"适应页面":"适应宽度";
   if(window.pdfjsLib)pdfjsLib.GlobalWorkerOptions.workerSrc="assets/vendor/pdf.worker.min.js";
   courseInit();navInit();bind();updateLibraryToggle();updateTheme();const [id,p]=route();navigate(id,p,false);routeWrite(id,S.page,true);

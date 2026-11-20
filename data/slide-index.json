@@ -137,7 +137,23 @@
       "audioSources": [
         "图像复原与彩色模型课堂录音（最新提供）"
       ],
-      "recordingCoverage": "本次录音覆盖P1–42；P43–83留待后续课堂"
+      "recordingCoverage": "P1–42来自上一份录音；P43–83由11月20日录音补充"
+    },
+    {
+      "id": "lec8",
+      "group": "Lecture 8",
+      "label": "Morphological Image Processing",
+      "cn": "形态学图像处理",
+      "file": "Lecture 8 Morphological Image Processing_v8.pdf",
+      "audio": true,
+      "color": "#4aa69b",
+      "pages": 142,
+      "path": "assets/pdfs/lec8.pdf",
+      "firstSlide": "Assessment",
+      "audioSources": [
+        "11月20日彩色处理与形态学课堂录音"
+      ],
+      "recordingCoverage": "P1–76有对应课堂内容；P77–142仅课件，重建应用与灰度形态学留待后续"
     }
   ],
   "slides": {
@@ -3676,410 +3692,1247 @@
       {
         "page": 43,
         "title": "Pseudo Color Image Processing",
-        "searchText": "Pseudo Color Image Processing\n  Pseudo Color Image Processing\n\nPseudocolor (also called false color)\n  image processing consists of\n  assigning colors to grey values\n  based on a specific criterion.\nThe principle use of pseudocolor\n  image processing is for human\n  visualization.\n– Humans can discern between thousands of color\nshades and intensities, compared to only about two\ndozen or so shades of grey.\n\n\n\n\n\n                                                                                                       43",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Pseudo Color Image Processing\n  Pseudo Color Image Processing\n\nPseudocolor (also called false color)\n  image processing consists of\n  assigning colors to grey values\n  based on a specific criterion.\nThe principle use of pseudocolor\n  image processing is for human\n  visualization.\n– Humans can discern between thousands of color\nshades and intensities, compared to only about two\ndozen or so shades of grey.\n\n\n\n\n\n                                                                                                       43"
       },
       {
         "page": 44,
         "title": "Pseudo Color Image Processing",
-        "searchText": "Pseudo Color Image Processing\n  Pseudo Color Image Processing\n\nIntensity slicing and color coding is one of the\n  simplest kinds of pseudocolor image processing.\nFirst we consider an image as a 3D function\n  mapping spatial coordinates to intensities (that we\n  can consider heights).\nNow consider placing planes at certain levels\n   parallel to the coordinate plane.\nIf a value is on one side of such a plane it is rendered\n  in one color, and a different color if on the other\n   side.\n\n\n\n\n\n                                                                                                       44",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Pseudo Color Image Processing\n  Pseudo Color Image Processing\n\nIntensity slicing and color coding is one of the\n  simplest kinds of pseudocolor image processing.\nFirst we consider an image as a 3D function\n  mapping spatial coordinates to intensities (that we\n  can consider heights).\nNow consider placing planes at certain levels\n   parallel to the coordinate plane.\nIf a value is on one side of such a plane it is rendered\n  in one color, and a different color if on the other\n   side.\n\n\n\n\n\n                                                                                                       44"
       },
       {
         "page": 45,
         "title": "Pseudo Color Image Processing",
-        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nIntensity Slicing\n\n\n\n\n\n                                                                                                  45",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nIntensity Slicing\n\n\n\n\n\n                                                                                                  45"
       },
       {
         "page": 46,
         "title": "Pseudo Color Image Processing",
-        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nIntensity Slicing\n\n\n\n\n\n                                                                                                  46",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nIntensity Slicing\n\n\n\n\n\n                                                                                                  46"
       },
       {
         "page": 47,
         "title": "Pseudo Color Image Processing",
-        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nIntensity Slicing\n\n\n\n\n\n                                                                                                  47",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nIntensity Slicing\n\n\n\n\n\n                                                                                                  47"
       },
       {
         "page": 48,
         "title": "Pseudo Color Image Processing",
-        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nIntensity Slicing\n\n\n\n\n\n                                                                                                  48",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nIntensity Slicing\n\n\n\n\n\n                                                                                                  48"
       },
       {
         "page": 49,
         "title": "Pseudo Color Image Processing",
-        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nGray Level to Color Transformations\n\n\n\n\n\n        •  Three independent transformations of the intensity.\n        •  The results are fed into the R, G, B channels.\n        •  The resulting composite image highlights certain image parts.\n\n                                                                                                  49",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nGray Level to Color Transformations\n\n\n\n\n\n        •  Three independent transformations of the intensity.\n        •  The results are fed into the R, G, B channels.\n        •  The resulting composite image highlights certain image parts.\n\n                                                                                                  49"
       },
       {
         "page": 50,
         "title": "Pseudo Color Image Processing",
-        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nGray Level to Color Transformations\n\n\n\n\n\n        •  X-ray images from airport scanning system.\n        •  The image on the right contains plastic explosives.\n\n\n\n                                                                                                  50",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nGray Level to Color Transformations\n\n\n\n\n\n        •  X-ray images from airport scanning system.\n        •  The image on the right contains plastic explosives.\n\n\n\n                                                                                                  50"
       },
       {
         "page": 51,
         "title": "Pseudo Color Image Processing",
-        "searchText": "Pseudo Color Image Processing\n  Pseudo Color Image Processing\n\n  Gray Level to Color Transformations\n\nSinusoidal transformation\n  functions.\nChanging the phase or the\n  frequency of the\n  transformation functions can\n  emphasize ranges in the gray\n   scale.\n ➢ A small change in the phase between\n      the transformations assigns a strong\n      color to the pixels with intensities in the\n       valleys.\n\n\n                                                                                                      51",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Pseudo Color Image Processing\n  Pseudo Color Image Processing\n\n  Gray Level to Color Transformations\n\nSinusoidal transformation\n  functions.\nChanging the phase or the\n  frequency of the\n  transformation functions can\n  emphasize ranges in the gray\n   scale.\n ➢ A small change in the phase between\n      the transformations assigns a strong\n      color to the pixels with intensities in the\n       valleys.\n\n\n                                                                                                      51"
       },
       {
         "page": 52,
         "title": "Pseudo Color Image Processing",
-        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nGray Level to Color Transformations\n\n\n\n\n\n      •  Background and explosives are coded with approximately\n       the same color although they differ.\n      •  This is due to the periodicity of the sine waves.\n\n\n                                                                                                  52",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nGray Level to Color Transformations\n\n\n\n\n\n      •  Background and explosives are coded with approximately\n       the same color although they differ.\n      •  This is due to the periodicity of the sine waves.\n\n\n                                                                                                  52"
       },
       {
         "page": 53,
         "title": "Pseudo Color Image Processing",
-        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nGray Level to Color Transformations\n\n\n\n\n\n        •  Explosives and bag content are mapped by similar\n         transformations and were assigned to the same color.\n        •  The observer may “see” through the explosives and not\n        mistake them for the background.\n                                                                                                  53",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nGray Level to Color Transformations\n\n\n\n\n\n        •  Explosives and bag content are mapped by similar\n         transformations and were assigned to the same color.\n        •  The observer may “see” through the explosives and not\n        mistake them for the background.\n                                                                                                  53"
       },
       {
         "page": 54,
         "title": "Pseudo Color Image Processing",
-        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nGray Level to Color Transformations\n\n\n\n\n\n                                                                                                  54",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nGray Level to Color Transformations\n\n\n\n\n\n                                                                                                  54"
       },
       {
         "page": 55,
         "title": "Pseudo Color Image Processing",
-        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nGray Level to Color Transformations\n\n\n\n\n\n                                                                                                  55",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Pseudo Color Image Processing\n Pseudo Color Image Processing\n\nGray Level to Color Transformations\n\n\n\n\n\n                                                                                                  55"
       },
       {
         "page": 56,
         "title": "Basic of Full Color Image Processing",
-        "searchText": "Basic of Full Color Image Processing\n Basic of Full Color Image Processing\n\n\nLet c represent an arbitrary vector in RGB color space\n                           c R     R \n                                                     c = c  = G                         G                                  \n                           c     B                            B      \nFor an image of size M*N,\n\n\n                          c R ( x , y )     R ( x , y ) \n                                                          c ( x , y ) = c  ( x , y ) = G ( x , y )                         G                                            \n                          c  ( x , y )     B ( x , y )                           B                 \n\n\n\n                                                                                                  56",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Basic of Full Color Image Processing\n Basic of Full Color Image Processing\n\n\nLet c represent an arbitrary vector in RGB color space\n                           c R     R \n                                                     c = c  = G                         G                                  \n                           c     B                            B      \nFor an image of size M*N,\n\n\n                          c R ( x , y )     R ( x , y ) \n                                                          c ( x , y ) = c  ( x , y ) = G ( x , y )                         G                                            \n                          c  ( x , y )     B ( x , y )                           B                 \n\n\n\n                                                                                                  56"
       },
       {
         "page": 57,
         "title": "Basic of Full Color Image Processing",
-        "searchText": "Basic of Full Color Image Processing\nBasic of Full Color Image Processing\n\n\n\n\n\n                                                                                               57",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Basic of Full Color Image Processing\nBasic of Full Color Image Processing\n\n\n\n\n\n                                                                                               57"
       },
       {
         "page": 58,
         "title": "Basic of Full Color Image Processing",
-        "searchText": "Basic of Full Color Image Processing\n    Basic of Full Color Image Processing\n\n  ColorTransformation\n\n    Processing the components of a color image\n    within the context of a single color model.\n             g ( x , y ) = T  f ( x , y )\n           s          = T                  r                               , r                                   ,  , r                                              ,      i = 2,1,..., n                             i                                        i (                         1                             2                                     n )\n\n\nColor components of g              Color components of f\n\n                  Color mapping functions\n\n\n\n\n\n                                                                                                          58",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Basic of Full Color Image Processing\n    Basic of Full Color Image Processing\n\n  ColorTransformation\n\n    Processing the components of a color image\n    within the context of a single color model.\n             g ( x , y ) = T  f ( x , y )\n           s          = T                  r                               , r                                   ,  , r                                              ,      i = 2,1,..., n                             i                                        i (                         1                             2                                     n )\n\n\nColor components of g              Color components of f\n\n                  Color mapping functions\n\n\n\n\n\n                                                                                                          58"
       },
       {
         "page": 59,
         "title": "Full Color Image Processing",
-        "searchText": "Full Color Image Processing\n  Full Color Image Processing\nColorTransformation\n\n\n\n\n\n                              ▪Some difficulty in interpreting the                   RGB\n                                   HUE:\n                                          ▪Discontinuity where 0 and 360º\n                                       meet.\n                               ▪Hue is undefined for a saturation                     HSI\n                                    0\n\n                                                                                                    59",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Full Color Image Processing\n  Full Color Image Processing\nColorTransformation\n\n\n\n\n\n                              ▪Some difficulty in interpreting the                   RGB\n                                   HUE:\n                                          ▪Discontinuity where 0 and 360º\n                                       meet.\n                               ▪Hue is undefined for a saturation                     HSI\n                                    0\n\n                                                                                                    59"
       },
       {
         "page": 60,
         "title": "Full Color Image Processing",
-        "searchText": "Full Color Image Processing\n    Full Color Image Processing\n  ColorTransformation：ModifytheIntensity\n\n\n\n\n\n                         si = kri      i = 3,2,1                           s1 = r1g ( x , y ) = kf ( x , y )\n                                                                      s 2 = r2                                            si = kri + 1( − k )     i = 3,2,1\n                                                                      s 3 = kr3\n                                                                                                           60",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Full Color Image Processing\n    Full Color Image Processing\n  ColorTransformation：ModifytheIntensity\n\n\n\n\n\n                         si = kri      i = 3,2,1                           s1 = r1g ( x , y ) = kf ( x , y )\n                                                                      s 2 = r2                                            si = kri + 1( − k )     i = 3,2,1\n                                                                      s 3 = kr3\n                                                                                                           60"
       },
       {
         "page": 61,
         "title": "Full Color Image Processing",
-        "searchText": "Full Color Image Processing\n   Full Color Image Processing\n\nColor complements. For\n  enhancement of dark regions.\nOpposite hues in the color\n   circle.\nStraightforward in RGB space.\nNo equivalent transformation in\n  HSI space.\n ➢The saturation (S) component of the\n    complement image cannot be\n    computed from the S component of\n    the original image (left as an\n     exercise).\n\n\n                                                                                                       61",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Full Color Image Processing\n   Full Color Image Processing\n\nColor complements. For\n  enhancement of dark regions.\nOpposite hues in the color\n   circle.\nStraightforward in RGB space.\nNo equivalent transformation in\n  HSI space.\n ➢The saturation (S) component of the\n    complement image cannot be\n    computed from the S component of\n    the original image (left as an\n     exercise).\n\n\n                                                                                                       61"
       },
       {
         "page": 62,
         "title": "Color Complement",
-        "searchText": "Color Complement\nColor Complement\n\n\n\n\n\n                                                                                               62",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Color Complement\nColor Complement\n\n\n\n\n\n                                                                                               62"
       },
       {
         "page": 63,
         "title": "Color Slicing",
-        "searchText": "Color Slicing\n Color Slicing\n\n\nMotivation: Highlighting a specific range of colors in\nan image\n\nBasic Idea:\n▪Display the color of interest so that they stand out\nfrom background\n▪Use the region defined by the colors as a mask for\nfurther processing\n\n                         W                5.0    if  r − a                                                                  j          j          s         =                                                                         ,     i = 2,1,..., n                           i                                                                     2   any 1 j  n\n                r    otherwise                         i\n\n\n\n                                                                                                  63",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Color Slicing\n Color Slicing\n\n\nMotivation: Highlighting a specific range of colors in\nan image\n\nBasic Idea:\n▪Display the color of interest so that they stand out\nfrom background\n▪Use the region defined by the colors as a mask for\nfurther processing\n\n                         W                5.0    if  r − a                                                                  j          j          s         =                                                                         ,     i = 2,1,..., n                           i                                                                     2   any 1 j  n\n                r    otherwise                         i\n\n\n\n                                                                                                  63"
       },
       {
         "page": 64,
         "title": "Color Slicing",
-        "searchText": "Color Slicing\n Color Slicing\n\n\n1. Colors of interest are enclosed by cube(or hypercube\nfor n>3)\n                     W           5.0    if  r − a                                                     j          j     s     =                                                                 ,     i = 2,1,..., n                        2              i                                                                                                     any 1 j  n\n           r    otherwise                 i\n\n2. Colors of interest are enclosed by Sphere\n                    n             2      2          5.0    if     ( r − a )  R                                                          j          j         0            s =                                               ,     i = 2,1,..., n              i                            j =1\n           r    otherwise                i\n\n\n\n\n\n                                                                                                   64",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Color Slicing\n Color Slicing\n\n\n1. Colors of interest are enclosed by cube(or hypercube\nfor n>3)\n                     W           5.0    if  r − a                                                     j          j     s     =                                                                 ,     i = 2,1,..., n                        2              i                                                                                                     any 1 j  n\n           r    otherwise                 i\n\n2. Colors of interest are enclosed by Sphere\n                    n             2      2          5.0    if     ( r − a )  R                                                          j          j         0            s =                                               ,     i = 2,1,..., n              i                            j =1\n           r    otherwise                i\n\n\n\n\n\n                                                                                                   64"
       },
       {
         "page": 65,
         "title": "Color Slicing",
-        "searchText": "Color Slicing\n  Color Slicing\n\n\n\n\n\nCube                                                     Sphere\n\n\n\n\n\n                                                                                                       65",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Color Slicing\n  Color Slicing\n\n\n\n\n\nCube                                                     Sphere\n\n\n\n\n\n                                                                                                       65"
       },
       {
         "page": 66,
         "title": "Tone Corrections",
-        "searchText": "Tone Corrections\n Tone Corrections\n\n\nThetonalrangeofanimage,alsocalleditskey-type,\nreferstoitsgeneraldistributionofcolorintensities.\n\n\n▪High-keyimages:Mostoftheinformationis\nconcentratedathighintensities.\n▪Low-keyimages:Mostoftheinformationis\nconcentratedatlowintensities.\n\n\n\n\n\n                                                                                                   66",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Tone Corrections\n Tone Corrections\n\n\nThetonalrangeofanimage,alsocalleditskey-type,\nreferstoitsgeneraldistributionofcolorintensities.\n\n\n▪High-keyimages:Mostoftheinformationis\nconcentratedathighintensities.\n▪Low-keyimages:Mostoftheinformationis\nconcentratedatlowintensities.\n\n\n\n\n\n                                                                                                   66"
       },
       {
         "page": 67,
         "title": "Tone Corrections",
-        "searchText": "Tone Corrections\nTone Corrections\n\n\n   Middle-key Image\n\n\n\n\n\n                                                                                               67",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Tone Corrections\nTone Corrections\n\n\n   Middle-key Image\n\n\n\n\n\n                                                                                               67"
       },
       {
         "page": 68,
         "title": "Tone Corrections",
-        "searchText": "Tone Corrections\nTone Corrections\n\n\n   High-key Image\n\n\n\n\n\n                                                                                               68",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Tone Corrections\nTone Corrections\n\n\n   High-key Image\n\n\n\n\n\n                                                                                               68"
       },
       {
         "page": 69,
         "title": "Tone Corrections",
-        "searchText": "Tone Corrections\nTone Corrections\n\n\n  Low-key Image\n\n\n\n\n\n                                                                                               69",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Tone Corrections\nTone Corrections\n\n\n  Low-key Image\n\n\n\n\n\n                                                                                               69"
       },
       {
         "page": 70,
         "title": "Color Corrections",
-        "searchText": "Color Corrections\nColor Corrections\n\n\nThe proportion of any color can be increased by decreasing the\namount of the opposite (or complementary) color in the image or by\nraising the proportion of the two immediately adjacent colors or\ndecreasing the percentage of the two colors adjacent to the\ncomplement.\n\n\n                                  Magenta \n\n\n                                    Removing Red                                                       Adding Green\n                                      and Blue\n\n\n\n\n\n                                                                                                 70",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Color Corrections\nColor Corrections\n\n\nThe proportion of any color can be increased by decreasing the\namount of the opposite (or complementary) color in the image or by\nraising the proportion of the two immediately adjacent colors or\ndecreasing the percentage of the two colors adjacent to the\ncomplement.\n\n\n                                  Magenta \n\n\n                                    Removing Red                                                       Adding Green\n                                      and Blue\n\n\n\n\n\n                                                                                                 70"
       },
       {
         "page": 71,
         "title": "Color Corrections",
-        "searchText": "Color Corrections\nColor Corrections\n\n\n\n\n\n                                                                                               71",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Color Corrections\nColor Corrections\n\n\n\n\n\n                                                                                               71"
       },
       {
         "page": 72,
         "title": "Histogram Processing",
-        "searchText": "Histogram Processing\n   Histogram Processing\n\n\n\n\n\nHistogram\nEqualizing the                                                    Saturation\nIntensity                                                   Adjustment\n\n\n\n\n\n                                                                                                         72",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Histogram Processing\n   Histogram Processing\n\n\n\n\n\nHistogram\nEqualizing the                                                    Saturation\nIntensity                                                   Adjustment\n\n\n\n\n\n                                                                                                         72"
       },
       {
         "page": 73,
         "title": "Color Image Smoothing",
-        "searchText": "Color Image Smoothing\n Color Image Smoothing\n\n\nAveraging:\n                 1\n          c ( x , y ) =        c ( x , y )                     K  ( x , y )S                                                          xy\n                                                       1\n                          R ( x , y )                        K  ( x , y )S                                      xy      \n                      1              \n          c ( x , y ) =     G ( x , y )                                            K  ( x , y )S                                                            xy                                     \n                      1              \n                   B ( x , y )                                            K  ( x , y )S                                                            xy                                     \n\n\n\n                                                                                                 73",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Color Image Smoothing\n Color Image Smoothing\n\n\nAveraging:\n                 1\n          c ( x , y ) =        c ( x , y )                     K  ( x , y )S                                                          xy\n                                                       1\n                          R ( x , y )                        K  ( x , y )S                                      xy      \n                      1              \n          c ( x , y ) =     G ( x , y )                                            K  ( x , y )S                                                            xy                                     \n                      1              \n                   B ( x , y )                                            K  ( x , y )S                                                            xy                                     \n\n\n\n                                                                                                 73"
       },
       {
         "page": 74,
         "title": "Color Image Smoothing",
-        "searchText": "Color Image Smoothing\nColor Image Smoothing\n\n\n\n\n\n                                         Red\n\n\n\n\nGreen                                          Blue\n\n\n\n\n\n                                                                                               74",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Color Image Smoothing\nColor Image Smoothing\n\n\n\n\n\n                                         Red\n\n\n\n\nGreen                                          Blue\n\n\n\n\n\n                                                                                               74"
       },
       {
         "page": 75,
         "title": "Color Image Smoothing",
-        "searchText": "Color Image Smoothing\nColor Image Smoothing\n\n\n\n       Hue                   Saturation                Intensity\n\n\n\n\n\n• HSI decouples intensity from color. Suitable for\nprocessing only the intensity component of an image.\n                                                                                                 75",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Color Image Smoothing\nColor Image Smoothing\n\n\n\n       Hue                   Saturation                Intensity\n\n\n\n\n\n• HSI decouples intensity from color. Suitable for\nprocessing only the intensity component of an image.\n                                                                                                 75"
       },
       {
         "page": 76,
         "title": "Color Image Smoothing",
-        "searchText": "Color Image Smoothing\nColor Image Smoothing\n\n\nAveraging R,G and B      Averaging Intensity           Difference\n\n\n\n\n\n                                                                                                76",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
-        "coverageSourceIds": [
-          "recRestColor@01:50:24"
-        ],
-        "coverageReason": "not_yet_taught"
+        "searchText": "Color Image Smoothing\nColor Image Smoothing\n\n\nAveraging R,G and B      Averaging Intensity           Difference\n\n\n\n\n\n                                                                                                76"
       },
       {
         "page": 77,
         "title": "Color Image Sharpening",
-        "searchText": "Color Image Sharpening\n Color Image Sharpening\n\n\nThe Laplacian of Vector c :\n\n                        2 R ( x , y ) \n             2              2             c ( x , y )  =  G ( x , y )                                 \n                                 2                                              B ( x , y )                                 \n\n\n\n\n\n                                                                                                 77",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
+        "searchText": "Color Image Sharpening\n Color Image Sharpening\n\n\nThe Laplacian of Vector c :\n\n                        2 R ( x , y ) \n             2              2             c ( x , y )  =  G ( x , y )                                 \n                                 2                                              B ( x , y )                                 \n\n\n\n\n\n                                                                                                 77"
+      },
+      {
+        "page": 78,
+        "title": "Color Image Sharpening",
+        "searchText": "Color Image Sharpening\nColor Image Sharpening\n\n\nSharpening R,G and B    Sharpening Intensity          Difference\n\n\n\n\n\n                                                                                                78"
+      },
+      {
+        "page": 79,
+        "title": "Noise in Color Images",
+        "searchText": "Noise in Color Images\n  Noise in Color Images\n\nThe noise models discussed for grayscale images are\n  also applicable to color images.\nHowever, in many applications, a color channel may\n  be more or less affected than the other channels.\nFor instance, using a red color filter in a CCD camera\n  may affect the red component of the image (CCD\n  sensors are noisier at low levels of illumination).\nWe will take a brief look of how noise carries over\n  when converting from one color model to another.\n\n\n\n\n\n                                                                                                       79"
+      },
+      {
+        "page": 80,
+        "title": "Noise in Color Images",
+        "searchText": "Noise in Color Images\nNoise in Color Images\n\n\n\n\n\nNoise is less noticeable than it is in a grayscale image.\n\n                                                                                               80"
+      },
+      {
+        "page": 81,
+        "title": "Noise in Color Images",
+        "searchText": "Noise in Color Images\n Noise in Color Images\n\n\n\n\n\n•  The hue and saturation components are significantly degraded. This is\n  due to the nonlinearity of the cos and min operations used in the\n   transformation.\n•  The intensity component is smoother due to averaging of the three\n   noisy RGB components.                                                               81"
+      },
+      {
+        "page": 82,
+        "title": "Noise in Color Images",
+        "searchText": "Noise in Color Images\nNoise in Color Images\n\n\n                                       • When only one channel\n                                        is affected by noise,\n                              conversion to HSI\n                             spreads the noise to all\n                          HSI components\n                             images.\n                                       • This is due to the\n                                transformation that\n                         makes use of all RGB\n                           components to compute\n                           each HSI component.\n\n\n\n\n\n                                                                                               82"
+      },
+      {
+        "page": 83,
+        "title": "彩色图像处理",
+        "searchText": "彩色图像处理\n    彩色图像处理\n\n彩色基础：亮度，色调，饱和度\n彩色模型\n➢RGB模型\n➢CMY和CMYK彩色模型\n➢HSI彩色模型\n假彩色图像处理\n彩色变换：补色，彩色分层，色调和彩色校正，彩色\n 图像的直方图处理\n彩色图像平滑和锐化\n\n\n\n\n\n                                                                                                       83"
+      }
+    ],
+    "lec8": [
+      {
+        "page": 1,
+        "title": "Assessment",
+        "searchText": "Assessment\n  Assessment\n\nAttendance: 5%\nQuiz: 10%\nProjects : 30% (lab1-lab9)\nFinal Exam: 40%\nFinal Presentation: 15%\n\n\n\n\n\n                                                                                                        1"
+      },
+      {
+        "page": 2,
+        "title": "Final Project Outline",
+        "searchText": "Final Project Outline\n  Final Project Outline\n\nIntroduction\nDescription of the functionality of the software\nDiscussion of the image processing techniques\n  involved\nTechnical implementation details\nSummary\n\n\n\n\n\n                                                                                                        2"
+      },
+      {
+        "page": 3,
+        "title": "Final Presentation · 课程日历",
+        "searchText": "Final Presentation · 课程日历\n"
+      },
+      {
+        "page": 4,
+        "title": "Final Project · 选题参考",
+        "searchText": "Final Project · 选题参考\n"
+      },
+      {
+        "page": 5,
+        "title": "Final Project · 口罩检测示例",
+        "searchText": "Final Project · 口罩检测示例\n5"
+      },
+      {
+        "page": 6,
+        "title": "Final Project · 多滤镜图像处理",
+        "searchText": "Final Project · 多滤镜图像处理\n6"
+      },
+      {
+        "page": 7,
+        "title": "Final Project · GUI与进度显示",
+        "searchText": "Final Project · GUI与进度显示\n GUI\n\n\n                   Because the\n                      processing process is\n                      very slow, I made a\n                      Wait bar.\n\n                              • Three filters are used\n                            to process an image\n                              • They need to be\n                         displayed twice.\n\n                    There are six wait bars\n                           in total.\n\n                                  10\n\n2026/11/20"
+      },
+      {
+        "page": 8,
+        "title": "Final Project · 全景图像拼接",
+        "searchText": "Final Project · 全景图像拼接\n   Introduction\n\n\nPanoramic image Mosaic flowchart\n\n                                                 Image capture\n\n\n\n                                                                               Block matching  Feature point\n                                                                                      matching\n\n                                                Image\n                                                                         Image                                                        preprocessing\n                                                                              matching\n\n\n\n                                                                              Output Mosaic\n                                                Image stitch\n                                                                           image\n\n\n\n\n                            2026/11/20\n\n                                                                                                                               8"
+      },
+      {
+        "page": 9,
+        "title": "Final Project · 色觉模拟",
+        "searchText": "Final Project · 色觉模拟\n Functionality of the software ——\n SimulationThe GUI can be used to help us learn about the world that people with color blindness see.\n\n\n\n\n\n                                                                                                         9"
+      },
+      {
+        "page": 10,
+        "title": "Morphological Image Processing",
+        "searchText": "Morphological Image Processing\nMorphological Image Processing\n\n\n          Yiming Li (李依明)\n        liym2019@sustech.edu.cn\n\n\n\n\n\n                       2026/11/20"
+      },
+      {
+        "page": 11,
+        "title": "Shape Problems in Binary Images",
+        "searchText": "Shape Problems in Binary Images\n   Shape Problems in Binary Images\n\n\nRemove isolated foreground specks.\n\n\nReconnect broken strokes without merging nearby objects.\n\n\n\nFill unwanted holes while preserving meaningful structure.\n\n\n\nWhich local shape should the structuring element test?\n\n\n\n\n\n                                                                                                       11"
+      },
+      {
+        "page": 12,
+        "title": "Preliminaries",
+        "searchText": "Preliminaries\nPreliminaries\n\n         Basic set operations\n\n\n\n\n\n                                                                                                 12"
+      },
+      {
+        "page": 13,
+        "title": "Preliminaries",
+        "searchText": "Preliminaries\nPreliminaries\n\n         Basic set operations\n\n\n\n\n\n                                                                                                 13"
+      },
+      {
+        "page": 14,
+        "title": "Preliminaries",
+        "searchText": "Preliminaries\nPreliminaries\n\n         Basic set operations\n\n\n\n\n\n                                                                                                 14"
+      },
+      {
+        "page": 15,
+        "title": "Preliminaries",
+        "searchText": "Preliminaries\n   Preliminaries\n\nSet reflection and translation\n  are employed to structuring\n  elements (SE).\nSE are small sets or subimages\n  used to examine the image\n  under study for properties of\n   interest.\n                                               Note: gray color represents a\nThe origin must be specified.                                               value of one and white color a\n                                              zero value.Zeros are appended to SE to\n  give them a rectangular form.\n\n\n\n\n                                                                                                        15"
+      },
+      {
+        "page": 16,
+        "title": "Preliminaries",
+        "searchText": "Preliminaries\n   Preliminaries\n\nThe origin of the SE B visits every pixel in an image A.\n   It performs an operation (generally nonlinear) between\n   its elements and the pixels under it.\nIt is then decided if the pixel will belong to the resulting\n   set or not based on the results of the operation.\nZero padding is necessary (like in convolution) to\n  ensure that all of the elements of A are processed.\n\n\n\n\n\n                                                                                                        16"
+      },
+      {
+        "page": 17,
+        "title": "Morphological Operations",
+        "searchText": "Morphological Operations\n  Morphological Operations\n\nSome basic operations\n  – Erosion.\n  – Dilation.\n  – Opening.\n  – Closing.\nApplications\n  – Morphological filtering.\n  – The hit-or-miss transformation.\n\n\n\n\n\n                                                                                                       17"
+      },
+      {
+        "page": 18,
+        "title": "Erosion",
+        "searchText": "Erosion\n  Erosion\n\nThe erosion of a set A by a SE B is defined as\n\n\n\nThe result is the set of all points z such that B\ntranslated by z is contained in A. Equivalently:\n\n\n\n\n\n                                                                                                       18"
+      },
+      {
+        "page": 19,
+        "title": "Erosion",
+        "searchText": "Erosion\nErosion\n\n\n\n\n\n       Erosion is a shrinking operation\n\n\n\n\n\n                                                                                               19"
+      },
+      {
+        "page": 20,
+        "title": "Erosion",
+        "searchText": "Erosion\nErosion\n\n\n\n\n\n                                                                                               20"
+      },
+      {
+        "page": 21,
+        "title": "Erosion",
+        "searchText": "Erosion\nErosion\n\n\n\n\n\n                                                                                               21"
+      },
+      {
+        "page": 22,
+        "title": "Erosion",
+        "searchText": "Erosion\nErosion\n\n\n     Erosion by a square SE of varying size\n\n\n\n\n\n                                                                                               22"
+      },
+      {
+        "page": 23,
+        "title": "Erosion",
+        "searchText": "Erosion\n   Erosion\n\nErosion can split apart joined objects\n\n\n\n\n\n Erosion can strip away extrusions\n\n\n\n\n\n      Watch out: Erosion shrinks objects\n\n                                                                                                        23"
+      },
+      {
+        "page": 24,
+        "title": "Dilation",
+        "searchText": "Dilation\n   Dilation\n\nThe dilation of a set A by a SE B is defined as\n\n\n\nThe result is the set of all points z such that the\nreflected B translated overlap with A at least one\nelement.\n\n\n Equivalently:\n\n\n\n\n\n                                                                                                        24"
+      },
+      {
+        "page": 25,
+        "title": "Dilation",
+        "searchText": "Dilation\nDilation\n\n\n\n\n\n            Dilation is a thickening operation\n\n                                                                                               25"
+      },
+      {
+        "page": 26,
+        "title": "Dilation",
+        "searchText": "Dilation\nDilation\n\n\n\n\n\n            Dilation is a thickening operation\n\n                                                                                               26"
+      },
+      {
+        "page": 27,
+        "title": "Dilation",
+        "searchText": "Dilation\nDilation\n\n\n\n\n\nDilation bridges gaps. Contrary to low pass filtering it\nproduces a binary image.\n                                                                                               27"
+      },
+      {
+        "page": 28,
+        "title": "Dilation",
+        "searchText": "Dilation\n Dilation\n\nDilation can repair breaks\n\n\n\nDilation can repair intrusions\n\n\n\n\n Watch out: Dilation enlarges objects\n\n\n\n\n\n                                                                                                    28"
+      },
+      {
+        "page": 29,
+        "title": "Compound Operations",
+        "searchText": "Compound Operations\n  Compound Operations\n\nMore interesting morphological operations can\n  be performed by combining erosions and\n  dilations in order to reduce shrinking or\n  thickening.\nThe most widely used of these compound\n  operations are:\n ➢Opening\n ➢Closing\n\n\n\n\n\n                                                                                                       29"
+      },
+      {
+        "page": 30,
+        "title": "Opening",
+        "searchText": "Opening\n  Opening\n\nThe opening of set A by structuring element B\n   is defined as\n\n\n\n\nwhich is an erosion of A by B followed by a\ndilation of the result by B.\n\n\n\n\n\n                                                                                                       30"
+      },
+      {
+        "page": 31,
+        "title": "Opening",
+        "searchText": "Opening\n  Opening\n\nGeometric interpretation: The boundary of the\n  opening is defined by points of the SE that\n  reach the farthest into the boundary of A as B\n   is “rolled” inside of this boundary.\n\n\n\n\n\n                                                                                                       31"
+      },
+      {
+        "page": 32,
+        "title": "Closing",
+        "searchText": "Closing\n  Closing\n\nThe closing of set A by structuring element B\n   is defined as\n\n\n\nwhich is a dilation of A by B followed by an\nerosion of the result by B\n\n\n\n\n\n                                                                                                       32"
+      },
+      {
+        "page": 33,
+        "title": "Closing",
+        "searchText": "Closing\n  Closing\n\nIt has a similar geometric interpretation except\n  that B is rolled on the outside of the boundary:\n\n\n\n\n\n                                                                                                       33"
+      },
+      {
+        "page": 34,
+        "title": "Opening and Closing",
+        "searchText": "Opening and Closing\nOpening and Closing\n\n\n\n\n\n                                    Erosion: elements where the disk can\n                                    not fit are eliminated.\n\n\n                                 Opening: outward corners are\n                                   rounded.\n\n\n                                       Dilation: inward intrusions are\n                                  reduced in depth.\n\n\n                                    Closing: inward corners are rounded.\n\n\n\n\n\n                                                                                               34"
+      },
+      {
+        "page": 35,
+        "title": "Properties of Opening and Closing",
+        "searchText": "Properties of Opening and Closing\n  Properties of Opening and Closing\n\n\n\n\n\nThe last properties, in each case, indicate that\nmultiple openings or closings have no effect after\nthe first application of the operator\n\n\n\n                                                                                                    35"
+      },
+      {
+        "page": 36,
+        "title": "Morphological Filtering Example",
+        "searchText": "Morphological Filtering Example\n   Morphological Filtering Example\n\n\n                         The image contains noise:\n                                  •Light elements on dark\n                            background.\n                             •Dark elements on the light\n                          components of the fingerprint.\n\n\n\nObjective: Eliminate noise while distorting the image\nas little as possible.\nWe will apply an opening followed by closing.\n\n\n\n\n\n                                                                                                         36"
+      },
+      {
+        "page": 37,
+        "title": "Morphological Filtering Example",
+        "searchText": "Morphological Filtering Example\n  Morphological Filtering Example\n\n\n\n\n\nBackground noise completely removed (noise\ncomponents smaller than the SE).\nThe size of the dark noise elements in the\nfingerprint structure increased (inner dark\nstructures).\n\n                                                                                                     37"
+      },
+      {
+        "page": 38,
+        "title": "Morphological Filtering Example",
+        "searchText": "Morphological Filtering Example\n   Morphological Filtering Example\n\n\n\n\n\nThe dilation reduced the size of the inner noise or\neliminated it completely.\nHowever, new gaps were created by the opening\nbetween the fingerprint ridges.\n\n\n\n                                                                                                        38"
+      },
+      {
+        "page": 39,
+        "title": "Morphological Filtering Example",
+        "searchText": "Morphological Filtering Example\n  Morphological Filtering Example\n\n\n\n\n\nThe dilation reduces the new gaps between the ridges\nbut it also thickens the ridges.\n\n\n\n\n\n                                                                                                    39"
+      },
+      {
+        "page": 40,
+        "title": "Morphological Filtering Example",
+        "searchText": "Morphological Filtering Example\n  Morphological Filtering Example\n\n\n\n\n\nThe final erosion (resulting to a closing of the opened\nimage) makes the ridges thinner.\n\n\n\n\n\n                                                                                                    40"
+      },
+      {
+        "page": 41,
+        "title": "Morphological Filtering Example",
+        "searchText": "Morphological Filtering Example\n Morphological Filtering Example\n\n\n\n\n\nThe final result is clean of noise but some ridges were\nnot fully repaired.\nWe should impose conditions for maintaining the\nconnectivity (we will see a more advanced algorithm).\n\n\n\n                                                                                                  41"
+      },
+      {
+        "page": 42,
+        "title": "The Hit-or-Miss Transformation",
+        "searchText": "The Hit-or-Miss Transformation\nThe Hit-or-Miss Transformation\n\n\n\n\n\n                                                                                               42"
+      },
+      {
+        "page": 43,
+        "title": "The Hit-or-Miss Transformation",
+        "searchText": "The Hit-or-Miss Transformation\n  The Hit-or-Miss Transformation\n\n\nThere are many possible locations for the shape we\nsearch  (the  SE!).   If we are  looking  for  disjoint\n(disconnected) shapes   it  is natural  to assume a\nbackground for it. Therefore, we seek to match B1 in\nA and  simultaneously we  seek  to  match  the\nbackground of B2 in Aᶜ.\n\n Mathematically, the hit-or-miss transformation is:\n\n\n𝑰⊛𝑩𝟏,𝟐= {𝒛| (𝑩𝟏)𝒛⊆𝑨和(𝑩𝟐)𝒛⊆𝑨𝒄} = (𝑨⊖𝑩𝟏) ∩(𝑨𝒄⊖𝑩𝟐)\n\n\n                                                                                                        43"
+      },
+      {
+        "page": 44,
+        "title": "The Hit-or-Miss Transformation",
+        "searchText": "The Hit-or-Miss Transformation\nThe Hit-or-Miss Transformation\n\n\n\n\n\n                                                                                               44"
+      },
+      {
+        "page": 45,
+        "title": "The Hit-or-Miss Transformation",
+        "searchText": "The Hit-or-Miss Transformation\nThe Hit-or-Miss Transformation\n\n\n\n\n\n                                                                                               45"
+      },
+      {
+        "page": 46,
+        "title": "Morphological Algorithms",
+        "searchText": "Morphological Algorithms\n  Morphological Algorithms\n\nUsing these morphological operations, we may\n  extract image components for shape representation:\n  • Shape boundaries.\n  • Region filling.\n  • Connected components\n  • Convex hull.\n  • Shape thinning and thickening.\n  • Skeletons.\nWe may also accomplish a morphological image\nreconstruction.\n\n\n\n                                                                                                       46"
+      },
+      {
+        "page": 47,
+        "title": "Boundary Extraction",
+        "searchText": "Boundary Extraction\n  Boundary Extraction\n\nThe boundary of a set A, denoted by β(A),\n may be obtained by:\n\n\n\n\n\n                                                                                                       47"
+      },
+      {
+        "page": 48,
+        "title": "Boundary Extraction",
+        "searchText": "Boundary Extraction\n  Boundary Extraction\n\nThe boundary is one pixel thick due to the 3x3\n  SE. Other SE would result in thicker\n  boundaries.\n\n\n\n\n\n                                                                                                       48"
+      },
+      {
+        "page": 49,
+        "title": "Region Filling",
+        "searchText": "Region Filling\n  Region Filling\n\nGiven a pixel inside a boundary, region filling\n  attempts to fill the area surrounded by that\n  boundary with 1s.\n\n\n\n\n\n                                                                                                       49"
+      },
+      {
+        "page": 50,
+        "title": "Region Filling",
+        "searchText": "Region Filling\n  Region Filling\n\nForm a set X0 with zeros everywhere except at\n  the seed point of the region. Then,\n\n\n\nWhere B is a 3x3 cross-shaped SE. The\nalgorithm terminates when Xk =Xk-1 . The set\nunion of Xk and A contains all the filled holes\nand their boundaries.\n\n\n\n\n\n                                                                                                       50"
+      },
+      {
+        "page": 51,
+        "title": "Region Filling",
+        "searchText": "Region Filling\n  Region Filling\n\nThis is the first example where the\n  morphological operation (dilation) is\n  conditioned.\nThe intersection of the result with Ac limits the\n  result inside the region of interest.\n\n\n\n\n\n                                                                                                       51"
+      },
+      {
+        "page": 52,
+        "title": "Region Filling",
+        "searchText": "Region Filling\nRegion Filling\n\n\n\n\n\n                                                                                               52"
+      },
+      {
+        "page": 53,
+        "title": "Region Filling",
+        "searchText": "Region Filling\nRegion Filling\n\n\n\n\n\n   An image composed of white circles with black inner\n    spots using hole filling\n\n\n\n                                                                                               53"
+      },
+      {
+        "page": 54,
+        "title": "Extraction of connected components",
+        "searchText": "Extraction of connected components\n   Extraction of connected components\n\nGiven a pixel on a connected component, find the rest\n  of the pixels of that component.\nThe algorithm may be applied to many connected\n  components provided we know a pixel on each one of\n  them.\nDisadvantage:\n   • we have to provide a pixel on the connected\ncomponent.\nThere are more sophisticated algorithms that detect\n  the number of components without manual\n   interaction. The purpose here is to demonstrate the\n   flexibility of mathematical morphology.                                                                                                       54"
+      },
+      {
+        "page": 55,
+        "title": "Extraction of connected components",
+        "searchText": "Extraction of connected components\nExtraction of connected components\n\n\n\n\n\n                                                                                               55"
+      },
+      {
+        "page": 56,
+        "title": "Extraction of connected components",
+        "searchText": "Extraction of connected components\n  Extraction of connected components\n\nNote the similarity with region filling. The only\ndifference is the use of A instead of Ac .\nThis is not surprising as we search for\nforeground objects.\n\n\n\n\n\n                                                                                                    56"
+      },
+      {
+        "page": 57,
+        "title": "Extraction of connected components",
+        "searchText": "Extraction of connected components\nExtraction of connected components\n\n\n\n\n\n                                                                                               57"
+      },
+      {
+        "page": 58,
+        "title": "Convex Hull",
+        "searchText": "Convex Hull\n  Convex Hull\n\nA set A is convex if the straight line segment joining\n  any two points in A lies entirely within A.\nThe convex hull H of an arbitrary set S is the smallest\n  convex set containing S.\nThe difference H-S is called convex deficiency.\nThe convex hull and the convex deficiency are useful\n  quantities to characterize shapes.\nWe present here a morphological algorithm to obtain\n  the convex hull C(A) of a shape A.\n\n\n\n\n\n                                                                                                       58"
+      },
+      {
+        "page": 59,
+        "title": "Convex Hull",
+        "searchText": "Convex Hull\nConvex Hull\n\n\n\n\n\n                                                                                               59"
+      },
+      {
+        "page": 60,
+        "title": "Convex Hull",
+        "searchText": "Convex Hull\n   Convex Hull\n\n\n\n\nThe hit-or-miss transform tries to find (“hit”) these\nstructures in the image.\nThe SE has points with “don’t care” condition. For all\nthe SE, a match is found in the image when these\nconditions hold:\nthe central pixel in the 3x3 region in the image is 0.\nthe three shaded pixels under the mask are 1s.\nThe remaining pixels do not matter.\n\n                                                                                                          60"
+      },
+      {
+        "page": 61,
+        "title": "Convex Hull",
+        "searchText": "Convex Hull\nConvex Hull\n\n\n\n\n\n                                 -Problem.\n                            The result is convex\n                                  but greater than the\n                                     true convex hull.\n\n\n\n\n\n                                                                                               61"
+      },
+      {
+        "page": 62,
+        "title": "Convex Hull",
+        "searchText": "Convex Hull\n   Convex Hull\n\nSolution: limit the growth so that it does not extend past the\nhorizontal and vertical limits of the original set of points.\n\n\n\n\n\n More complex boundaries have been imposed to images\n with finer details in their structure (e.g. the maximum of the\n horizontal vertical and diagonal dimensions could be used).\n\n\n                                                                                                          62"
+      },
+      {
+        "page": 63,
+        "title": "Thinning",
+        "searchText": "Thinning\n   Thinning\n\nThe thinning of a set A, by a SE B may be defined in\nterms of the hit-or-miss transform:\n\n\n\n No background match is required and the hit-or-\n miss part is reduced to simple erosion.\n\n A more advanced expression is based on a\n sequence of SE {B}={B1,B2,B3,...,Bn},\n where each Bi is a rotated version of Bi-1.\n\n\n\n\n\n                                                                                                          63"
+      },
+      {
+        "page": 64,
+        "title": "Thinning",
+        "searchText": "Thinning\n   Thinning\n\nThe thinning by a sequence of SE is defined by:\n\n\n\n\n\n                                                                                                          64"
+      },
+      {
+        "page": 65,
+        "title": "Thinning",
+        "searchText": "Thinning\nThinning\n\n\n\n\n\n                                                                                               65"
+      },
+      {
+        "page": 66,
+        "title": "Thickening",
+        "searchText": "Thickening\n   Thickening\n\nThickening is a morphological dual of thinning:\n\n\n\nThe SE have the same form as the ones used\nfor thinning with the 1s and 0s interchanged.\n\nIt may also be defined by a sequence of\noperations:\n\n\n\n\n\n                                                                                                          66"
+      },
+      {
+        "page": 67,
+        "title": "Thickening",
+        "searchText": "Thickening\n  Thickening\n\nIn practice, a separate algorithm is seldom used\n  for thickening.\nThe usual process is to thin the background of\n  the set in question and then take the\n  complement of the result.\nThe advantage is that the thinned background\n  forms a boundary for the thickening process.\n  Direct implementation of thickening has no\n  stopping criterion.\nA disadvantage is that there may be isolated\n  points needing post-processing.\n\n\n\n                                                                                                       67"
+      },
+      {
+        "page": 68,
+        "title": "Skeletons",
+        "searchText": "Skeletons\n  Skeletons\n\nThe notion of a skeleton S(A) of a\n   set A, intuitively, has the\n   following properties:\n•   If z is a point belonging to S(A)\n  and (D)z is the largest disk\n   centered at z and contained in\n   A: one cannot find a larger\n   disk (not necessarily centered\n   at z) containing (D)z and\n   included in A.\n\n         is then called maximum•  (D)z\n   disk.\n•  The maximum disk touches\n   the boundary of A at two or\n  more different points.\n\n\n                                                                                                       68"
+      },
+      {
+        "page": 69,
+        "title": "Skeletons",
+        "searchText": "Skeletons\nSkeletons\n\n\n\n\n\n                                                                                               69"
+      },
+      {
+        "page": 70,
+        "title": "Skeletons",
+        "searchText": "Skeletons\nSkeletons\n\n\n\n\n\n                                                                                               70"
+      },
+      {
+        "page": 71,
+        "title": "Skeletons",
+        "searchText": "Skeletons\nSkeletons\n\n\n                        The skeleton is\n                                  •thicker than essential.\n                              •disconnected.\n\n                        The morphological\n                               formulation does not\n                            guarantee connectivity.\n\n                        More assumptions are\n                         needed to obtain a\n                            maximally thin and\n                           connected skeleton.\n\n\n\n                                                                                               71"
+      },
+      {
+        "page": 72,
+        "title": "Morphological Reconstruction",
+        "searchText": "Morphological Reconstruction\n  Morphological Reconstruction\n\nThe geodesic dilation of size 1 of a marker\n  image F by a SE B, with respect to a mask\n  image G is defined by:\n\n\n\n  Similarly, the geodesic dilation of size n is defined by:\n\n\n\n\nThe intersection operator at each step guarantees that the\ngrowth (dilation) of marker F is limited by the mask G.\n\n\n\n                                                                                                       72"
+      },
+      {
+        "page": 73,
+        "title": "Morphological Reconstruction",
+        "searchText": "Morphological Reconstruction\nMorphological Reconstruction\n\n\n\n\n\n                                                                                               73"
+      },
+      {
+        "page": 74,
+        "title": "Morphological Reconstruction",
+        "searchText": "Morphological Reconstruction\nMorphological Reconstruction\n\n\n\n\n\n                                                                                               74"
+      },
+      {
+        "page": 75,
+        "title": "Morphological Reconstruction",
+        "searchText": "Morphological Reconstruction\nMorphological Reconstruction\n\n\n\n\n\n                                                                                               75"
+      },
+      {
+        "page": 76,
+        "title": "Morphological Reconstruction",
+        "searchText": "Morphological Reconstruction\n  Morphological Reconstruction\n\nThe geodesic dilation and erosion are\n  duals with respect to set complementation.\nThey always converge after a finite\n number of steps:\n–Geodesic dilation: propagation of the\nmarker is constrained by the mask image.\n–Geodesic erosion: shrinking of the marker\nis constrained by the mask.\n\n\n\n\n\n                                                                                                       76"
+      },
+      {
+        "page": 77,
+        "title": "Morphological Reconstruction",
+        "searchText": "Morphological Reconstruction\nMorphological Reconstruction\n\n\n\n\n\n                                                                                               77",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
         "coverageSourceIds": [
-          "recRestColor@01:50:24"
+          "recColorMorph@01:47:23"
         ],
         "coverageReason": "not_yet_taught"
       },
       {
         "page": 78,
-        "title": "Color Image Sharpening",
-        "searchText": "Color Image Sharpening\nColor Image Sharpening\n\n\nSharpening R,G and B    Sharpening Intensity          Difference\n\n\n\n\n\n                                                                                                78",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
+        "title": "Morphological Reconstruction",
+        "searchText": "Morphological Reconstruction\nMorphological Reconstruction\n\n\n\n\n\n                                                                                               78",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
         "coverageSourceIds": [
-          "recRestColor@01:50:24"
+          "recColorMorph@01:47:23"
         ],
         "coverageReason": "not_yet_taught"
       },
       {
         "page": 79,
-        "title": "Noise in Color Images",
-        "searchText": "Noise in Color Images\n  Noise in Color Images\n\nThe noise models discussed for grayscale images are\n  also applicable to color images.\nHowever, in many applications, a color channel may\n  be more or less affected than the other channels.\nFor instance, using a red color filter in a CCD camera\n  may affect the red component of the image (CCD\n  sensors are noisier at low levels of illumination).\nWe will take a brief look of how noise carries over\n  when converting from one color model to another.\n\n\n\n\n\n                                                                                                       79",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
+        "title": "Morphological Reconstruction",
+        "searchText": "Morphological Reconstruction\nMorphological Reconstruction\n\n\n\n\n\n                                                                                               79",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
         "coverageSourceIds": [
-          "recRestColor@01:50:24"
+          "recColorMorph@01:47:23"
         ],
         "coverageReason": "not_yet_taught"
       },
       {
         "page": 80,
-        "title": "Noise in Color Images",
-        "searchText": "Noise in Color Images\nNoise in Color Images\n\n\n\n\n\nNoise is less noticeable than it is in a grayscale image.\n\n                                                                                               80",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
+        "title": "Applications: Opening by Reconstruction",
+        "searchText": "Applications: Opening by Reconstruction\n   Applications: Opening by\n   Reconstruction\nIn morphological opening, erosion removes\n  small objects and dilation attempts to restore the\n  shape of the objects that remain without the\n  small objects.\nThis is not accurate as it depends on the\n  similarity between the shapes to be removed\n  and the SE.\nOpening by reconstruction restores exactly\n  the shapes of the objects that remain after\n  erosion.\n\n\n\n\n\n                                                                                                       80",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
         "coverageSourceIds": [
-          "recRestColor@01:50:24"
+          "recColorMorph@01:47:23"
         ],
         "coverageReason": "not_yet_taught"
       },
       {
         "page": 81,
-        "title": "Noise in Color Images",
-        "searchText": "Noise in Color Images\n Noise in Color Images\n\n\n\n\n\n•  The hue and saturation components are significantly degraded. This is\n  due to the nonlinearity of the cos and min operations used in the\n   transformation.\n•  The intensity component is smoother due to averaging of the three\n   noisy RGB components.                                                               81",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
+        "title": "Applications: Opening by Reconstruction",
+        "searchText": "Applications: Opening by Reconstruction\nApplications: Opening by\nReconstruction\n\n\n\n\n\n                                                                                               81",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
         "coverageSourceIds": [
-          "recRestColor@01:50:24"
+          "recColorMorph@01:47:23"
         ],
         "coverageReason": "not_yet_taught"
       },
       {
         "page": 82,
-        "title": "Noise in Color Images",
-        "searchText": "Noise in Color Images\nNoise in Color Images\n\n\n                                       • When only one channel\n                                        is affected by noise,\n                              conversion to HSI\n                             spreads the noise to all\n                          HSI components\n                             images.\n                                       • This is due to the\n                                transformation that\n                         makes use of all RGB\n                           components to compute\n                           each HSI component.\n\n\n\n\n\n                                                                                               82",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
+        "title": "例9.8 · 提取文字中的垂直长条",
+        "searchText": "例9.8 · 提取文字中的垂直长条\n  例9.8\n\n\n\n\n\n思考题：如何找到上述图像中的垂直长条？\np, t, b, k, T, f, h, d…\n利用腐蚀，可以找到相应的长条。\n\n\n\n\n\n                                                                                                       82",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
         "coverageSourceIds": [
-          "recRestColor@01:50:24"
+          "recColorMorph@01:47:23"
         ],
         "coverageReason": "not_yet_taught"
       },
       {
         "page": 83,
-        "title": "彩色图像处理",
-        "searchText": "彩色图像处理\n    彩色图像处理\n\n彩色基础：亮度，色调，饱和度\n彩色模型\n➢RGB模型\n➢CMY和CMYK彩色模型\n➢HSI彩色模型\n假彩色图像处理\n彩色变换：补色，彩色分层，色调和彩色校正，彩色\n 图像的直方图处理\n彩色图像平滑和锐化\n\n\n\n\n\n                                                                                                       83",
-        "coverageLabel": "本次录音未讲 · 留待下一课（不是不考）",
+        "title": "Applications: Opening by Reconstruction",
+        "searchText": "Applications: Opening by Reconstruction\n  Applications: Opening by\n  Reconstruction\nWe are interested in extracting characters with long\n   vertical strokes (~50 pixels high).\n\n\n\n\n\n                                                                                                       83",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
         "coverageSourceIds": [
-          "recRestColor@01:50:24"
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 84,
+        "title": "例9.8 · 腐蚀与重建代码",
+        "searchText": "例9.8 · 腐蚀与重建代码\n  例9.8\n\n%利用腐蚀找到图像中有长条的字符\nf=imread('Fig0922(a)(book-text).tif');\nfe=imerode(f,ones(51,1));\nfigure,imshow(fe);\nfo=imopen(f,ones(51,1));\nfigure,imshow(fo);\nfobr=imreconstruct(fe,f);\nfigure,imshow(fobr);\n\n\n\n\n\n                                                                                                       84",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 85,
+        "title": "Applications: Region Filling",
+        "searchText": "Applications: Region Filling\nApplications: Region filling\n\n\n\n\n\n                                                                                                 85",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 86,
+        "title": "Applications: Region Filling",
+        "searchText": "Applications: Region Filling\nApplications: Region filling\n\n\n\n\n\n                                                                                                 86",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 87,
+        "title": "Applications: Region Filling",
+        "searchText": "Applications: Region Filling\n  Applications: Region filling\n\n\n\n\n\nThe dilation of the marker F starts from the border and grows\ninward.\nThe complement is used as an AND mask: it protects all\nforeground pixels (including the wall) from changing during\nthe iterations.\nThe last operation provides only the hole points.\n\n                                                                                                        87",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 88,
+        "title": "Applications: Region Filling",
+        "searchText": "Applications: Region Filling\nApplications: Region filling\n\n\n\n\n\nMarker image (1s almost                                           Result of hole filling\neverywhere on the border\napart of some points on the\nright border)\n                                                                                                 88",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 89,
+        "title": "Applications: Border Clearing",
+        "searchText": "Applications: Border Clearing\n  Applications: Border Clearing\n\nThe extraction of objects from an image is\n  a fundamental task in automated image\n  analysis. An algorithm for removing\n  objects that touch (are connected) to the\n  image border is useful because\n  •only complete objects remain for further\n  processing.\n   •it is a signal that partial objects remain in\n  the field of view.\n\n\n\n\n\n                                                                                                       89",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 90,
+        "title": "Applications: Border Clearing",
+        "searchText": "Applications: Border Clearing\nApplications: Border Clearing\n\n\n\n\n\n                                                                                               90",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 91,
+        "title": "Applications: Border Clearing",
+        "searchText": "Applications: Border Clearing\nApplications: Border Clearing\n\n\n\n\n\n                                                                                               91",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 92,
+        "title": "Gray-Scale Morphology",
+        "searchText": "Gray-Scale Morphology\n Gray-Scale Morphology\n\n\n\n\n\nSpatial reflection: ෠b(x,y) = b(−x,−y).\n                                                                                                  92",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 93,
+        "title": "Gray-Scale Erosion (flat SE)",
+        "searchText": "Gray-Scale Erosion (flat SE)\n  Gray-Scale Erosion (flat SE)\n\nThe erosion of image f by a SE b at any\n  location (x,y) is defined as the minimum\n  value of the image in the region coincident\n  with b when the origin of b is at (x,y):\n\n\n\nIn practice, we place the center of the SE at every\npixel and select the minimum value of the image\nunder the window of the SE.\n\n\n\n\n\n                                                                                                       93",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 94,
+        "title": "Gray-Scale Erosion (flat SE)",
+        "searchText": "Gray-Scale Erosion (flat SE)\n  Gray-Scale Erosion (flat SE)\n\nThe dilation of image f by a SE b at any\n  location (x,y) is defined as the maximum\n  value of the image in the window outlined\n  by b:\n\n\n\n\nThe SE is reflected as in the binary case.\n\n\n\n\n\n                                                                                                       94",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 95,
+        "title": "Gray-Scale Erosion and Dilation",
+        "searchText": "Gray-Scale Erosion and Dilation\nGray-Scale Erosion and Dilation\n\n\n\n\n\n                                                                                               95",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 96,
+        "title": "移轴效果",
+        "searchText": "移轴效果\n 移轴效果\n\n\n\n\n\nse=strel('square',3)\ngd=imdilate(f,se);\ngn=f;\ngn(1:150,:)=gd(1:150,:);\ngn(300:end,:)=gd(300:end,:);\nfigure\nimshow(gn)\n\n\n\n                                                                                                       96",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 97,
+        "title": "移轴效果",
+        "searchText": "移轴效果\n移轴效果\n\n\n\n\n\n                                                                                               97",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 98,
+        "title": "Gray-Scale Morphology (nonflat SE)",
+        "searchText": "Gray-Scale Morphology (nonflat SE)\nGray-Scale Morphology (nonflat SE)\n\n\n\n\n\n                                                                                               98",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 99,
+        "title": "Gray-Scale Opening and Closing",
+        "searchText": "Gray-Scale Opening and Closing\nGray-Scale Opening and Closing\n\n\n\n\n\n                                                                                               99",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 100,
+        "title": "Gray-Scale Opening and Closing",
+        "searchText": "Gray-Scale Opening and Closing\n  Gray-Scale Opening and Closing\n\n\n\n\n\nGeometric interpretation of opening:\nIt is the highest value reached by any part of the SE as it\n  pushes up against the under-surface of the image (up to\n  the point it fits completely).\nIt removes small bright details.\nNotice the similarity with binary opening (smooths\n  outward corners from the inside).\n\n\n                                                                                                      100",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 101,
+        "title": "Gray-Scale Opening and Closing",
+        "searchText": "Gray-Scale Opening and Closing\n  Gray-Scale Opening and Closing\n\n\n\n\n\nGeometric interpretation of closing:\nIt is the lowest value reached by any part of the SE as it\n  pushes down against the upper side of the image\n   intensity curve.\nIt highlights small dark regions of the image.\nNotice the similarity with binary closing (smooths inward\n  corners from the outside).\n\n\n                                                                                                      101",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 102,
+        "title": "Gray-Scale Opening and Closing",
+        "searchText": "Gray-Scale Opening and Closing\nGray-Scale Opening and Closing\n\n\n\n\n\n                                                                                              102",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 103,
+        "title": "Gray-Scale Opening and Closing",
+        "searchText": "Gray-Scale Opening and Closing\nGray-Scale Opening and Closing\n\n\n\n\n\n                                                                                              103",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 104,
+        "title": "Gray-Scale Opening and Closing",
+        "searchText": "Gray-Scale Opening and Closing\nGray-Scale Opening and Closing\n\n\n\n\n\n                                                                                              104",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 105,
+        "title": "Gray-Scale Opening and Closing · MATLAB",
+        "searchText": "Gray-Scale Opening and Closing · MATLAB\n    Gray-Scale Opening and Closing\n\nf=imread('Fig0925(a)(dowels).tif');\nse=strel('disk',5);\nfo=imopen(f,se);\nfoc=imclose(fo,se);\nfigure,imshow(f,[]);title ('Original')\nfigure,imshow(fo,[]);title ('Open')\nfigure,imshow(foc,[]);title ('Open&Close')\n\n\n\n\n\n  开操作：亮区域被调低\n  闭操作：暗纹被平滑掉\n\n\n\n\n\n                                                                                                          105",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 106,
+        "title": "Gray-Scale Opening and Closing · 油画效果",
+        "searchText": "Gray-Scale Opening and Closing · 油画效果\nGray-Scale Opening and Closing\n\n\n\n\n\n                                                       Open\n\n\n\n\n\n  是否有油画的感觉？                                                                                              106",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 107,
+        "title": "Repeat Open and Close",
+        "searchText": "Repeat Open and Close\n  Repeat Open and Close\n\nfasf=f;\nfor k=2:5\n   se=strel('disk',k);\n  fasf=imclose(imopen(fasf,se),se);\nend\nfigure,imshow(fasf,[]);title ('Repeat\n  Open&Close')\n\n\n\n\n\n                                                                                                      107",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 108,
+        "title": "Repeat Open and Close",
+        "searchText": "Repeat Open and Close\nRepeat Open and Close\n\n\n\n\n\n                                                         Repeat Open&Close\n\n\n\n\n\n                                                                                              108",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 109,
+        "title": "Gray-Scale Morphological Algorithms",
+        "searchText": "Gray-Scale Morphological Algorithms\n   Gray-Scale Morphological Algorithms\n\n•Morphological smoothing\n•Morphological gradient\n•Top-hat transformation\n•Bottom-hat transformation\n•Granulometry\n•Textural segmentation\n\n\n\n\n\n                                                                                                      109",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 110,
+        "title": "Morphological Smoothing",
+        "searchText": "Morphological Smoothing\n  Morphological Smoothing\n\nOpening suppresses light details smaller than the SE\n  and closing suppresses (makes lighter) dark details\n  smaller than the SE.\nThey are used in combination as morphological filters to\n   eliminate undesired structures.\n\n\n\n\n\n                                                                                                      110",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 111,
+        "title": "Morphological Smoothing",
+        "searchText": "Morphological Smoothing\nMorphological Smoothing\n\n\n\n\n\n                                                                                              111",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 112,
+        "title": "Morphological Gradient",
+        "searchText": "Morphological Gradient\nMorphological Gradient\n\n\n\n\n\n                                                                                              112",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 113,
+        "title": "Morphological Gradient",
+        "searchText": "Morphological Gradient\nMorphological Gradient\n\n\n\n\n\n                                                                                              113",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 114,
+        "title": "Top-hat and Bottom-hat Transformations",
+        "searchText": "Top-hat and Bottom-hat Transformations\n   Top-hat and Bottom-hat Transformations\n\nOpening suppresses light details smaller\n  than the SE.\nClosing suppresses dark details smaller\n  than the SE.\nChoosing an appropriate SE eliminates\n  image details where the SE does not fit.\nSubtracting the outputs of opening or\n  closing from the original image provides\n  the removed components.\n\n\n\n\n\n                                                                                                      114",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 115,
+        "title": "Top-hat and Bottom-hat Transformations",
+        "searchText": "Top-hat and Bottom-hat Transformations\nTop-hat and Bottom-hat Transformations\n\n\n\n\n\n                                                                                              115",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 116,
+        "title": "Top-hat and Bottom-hat Transformations",
+        "searchText": "Top-hat and Bottom-hat Transformations\nTop-hat and Bottom-hat Transformations\n\n\n\n\n\n                                                                                              116",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 117,
+        "title": "Granulometry",
+        "searchText": "Granulometry\n  Granulometry\n\nDetermination of the size distribution of particles\n  in an image. Particles are seldom separated.\nThe method described here measures their\n  distribution indirectly.\nIt applies openings with SE of increasing size.\nEach opening suppresses bright features where\n  the SE does not fit.\nFor each opening, the sum of pixel values is\n  computed and a histogram of the size of the SE\n  vs the remaining pixel intensities is drawn.\n\n\n\n\n\n                                                                                                      117",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 118,
+        "title": "Granulometry",
+        "searchText": "Granulometry\nGranulometry\n\n\n\n\n\n                                                                                              118",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 119,
+        "title": "Granulometry",
+        "searchText": "Granulometry\n  Granulometry\n\nHistogram of the differences of the total image\n  intensities between successive openings as a\n  function of the radius of the SE.\nThere are two peaks indicating two dominant\n  particle sizes (of radii 19 and 27 ).\n\n\n\n\n\n                                                                                                      119",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 120,
+        "title": "Textural segmentation",
+        "searchText": "Textural segmentation\n  Textural segmentation\n\nThe objective is to find\n  a boundary between the\n  large and the small\n  blobs (texture\n  segmentation).The\n  objects of interest are\n  darker than the\n  background. A closing\n  with a SE larger than\n  the blobs would\n  eliminate them.\n\n\n\n\n\n                                                                                                      120",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 121,
+        "title": "Textural segmentation",
+        "searchText": "Textural segmentation\n  Textural segmentation\n\nClosing with a SE of radius 30.\nThe small blobs disappeared as they have a\n  radius of approximately 25 pixels.\n\n\n\n\n\n                                                                                                      121",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 122,
+        "title": "Textural segmentation",
+        "searchText": "Textural segmentation\n  Textural segmentation\n\nThe background is lighter than the large blobs.\nIf we open the image with a SE larger than the\n  distance between the large blobs, then the blobs\n  would disappear and the background would be\n  dominant.\n\n\n\n\n\n                                                                                                      122",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 123,
+        "title": "Textural segmentation",
+        "searchText": "Textural segmentation\n  Textural segmentation\n\nOpening with a SE of radius 60.\nThe lighter background was suppressed to the\n  level of the blobs.\n\n\n\n\n\n                                                                                                      123",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 124,
+        "title": "Textural segmentation",
+        "searchText": "Textural segmentation\n  Textural segmentation\n\nA morphological gradient with a 3x3 SE\n  gives the boundary between the two regions\n  which is superimposed on the initial image.\n\n\n\n\n\n                                                                                                      124",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 125,
+        "title": "Textural segmentation",
+        "searchText": "Textural segmentation\nTextural segmentation\n\n\n\n\n\n                                                                                              125",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 126,
+        "title": "Gray-Scale Morphological Reconstruction",
+        "searchText": "Gray-Scale Morphological Reconstruction\nGray-Scale Morphological Reconstruction\n\n\n\n\n\n                                                                                              126",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 127,
+        "title": "Gray-Scale Morphological Reconstruction",
+        "searchText": "Gray-Scale Morphological Reconstruction\n   Gray-Scale Morphological Reconstruction\n\n\nThe geodesic dilation of size n of a marker image f by a\n  SE b, with respect to a mask image is defined by:\n\n\n\n\n\n                                                                                                      127",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 128,
+        "title": "Gray-Scale Morphological Reconstruction",
+        "searchText": "Gray-Scale Morphological Reconstruction\nGray-Scale Morphological Reconstruction\n\n\n\n\n\n                                                                                              128",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 129,
+        "title": "Gray-Scale Morphological Reconstruction",
+        "searchText": "Gray-Scale Morphological Reconstruction\nGray-Scale Morphological Reconstruction\n\n\n\n\n\n                                                                                              129",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 130,
+        "title": "Gray-Scale Morphological Reconstruction",
+        "searchText": "Gray-Scale Morphological Reconstruction\n   Gray-Scale Morphological Reconstruction\n\nThe morphological reconstruction by dilation\n  of gray scale image g from a marker image f is\n  defined as the geodesic dilation of f with respect\n  to g, iterated until stability is achieved:\n\n\n\n\n\n                                                                                                      130",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 131,
+        "title": "Gray-Scale Morphological Reconstruction",
+        "searchText": "Gray-Scale Morphological Reconstruction\n   Gray-Scale Morphological Reconstruction\n\nThe morphological reconstruction by erosion of\n  gray scale image g from a marker image f is defined\n  as the geodesic erosion of f with respect to g, iterated\n   until stability is achieved:\n\n\n\n                              E\n\n\n\n\n\n                                                                                                      131",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 132,
+        "title": "Gray-Scale Morphological Reconstruction",
+        "searchText": "Gray-Scale Morphological Reconstruction\n   Gray-Scale Morphological Reconstruction\n\nThe opening by reconstruction of size n of an\n  image f is defined as the reconstruction by\n  dilation of f from the erosion of size n of f:\n\n\n\n\nThe image f is used as the mask and the n\n  erosions of f by b are used as the initial marker\n  image.\nRecall that the objective is to preserve the shape\n  of the image components that remain after\n  erosion.                                                                                 132",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 133,
+        "title": "Gray-Scale Morphological Reconstruction",
+        "searchText": "Gray-Scale Morphological Reconstruction\n   Gray-Scale Morphological\n   Reconstruction\n\n\n• The image has a size of\n  1134x1360.\n• The target is to leave\n  only the text on a flat\n  background of constant\n  intensity\n• In other words, we want\n  to remove the reflect\n  effect of the keys.\n\n\n\n\n\n                                                                                                       133",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 134,
+        "title": "Gray-Scale Morphological Reconstruction",
+        "searchText": "Gray-Scale Morphological Reconstruction\n  Gray-Scale Morphological\n  Reconstruction\nAt first we suppress the\n  horizontal reflections on\n  the top of the keys.\nThe reflections are wider\n  than any single\n  character.\nAn opening by\n  reconstruction using a\n  long horizontal line SE\n  (1x71) in the erosion\n  operation provides the\n  keys and their reflections.\n\n                                                                                                      134",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 135,
+        "title": "Gray-Scale Morphological Reconstruction",
+        "searchText": "Gray-Scale Morphological Reconstruction\n  Gray-Scale Morphological\n  Reconstruction\nA standard opening would not be sufficient\n  as the background would not have been as\n  uniform ( e.g. look at the regions between\n  the keys horizontally).\n\n\n\n\n\n                                                                                                      135",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 136,
+        "title": "Gray-Scale Morphological Reconstruction",
+        "searchText": "Gray-Scale Morphological Reconstruction\n  Gray-Scale Morphological\n  Reconstruction\nThen, subtracting this result from the\n  original image (top-hat by reconstruction)\n  eliminates the reflections.\n\n\n\n\n\n                                                                                                      136",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 137,
+        "title": "Gray-Scale Morphological Reconstruction",
+        "searchText": "Gray-Scale Morphological Reconstruction\n  Gray-Scale Morphological\n  Reconstruction\nA standard top-hat transformation would not be\n  sufficient as the background is not as uniform as\n  in the top-hat by reconstruction operation.\n\n\n\n\n\n                                                                                                      137",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 138,
+        "title": "Gray-Scale Morphological Reconstruction",
+        "searchText": "Gray-Scale Morphological Reconstruction\n   Gray-Scale Morphological\n   Reconstruction\nWe now try to suppress the\n   vertical reflections on the sides\n   of the keys.\nAn opening by reconstruction\n  using a vertical line SE (1x11) in\n  the erosion operation eliminates\n  the keys and their reflections\n   (after subtracting the result from\n  the previous image).\nNotice however that vertically\n  oriented characters are\n  eliminated (The “I” in the ”SIN”\n  key)\n\n\n                                                                                                       138",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 139,
+        "title": "Gray-Scale Morphological Reconstruction",
+        "searchText": "Gray-Scale Morphological Reconstruction\n   Gray-Scale Morphological\n   Reconstruction\nHow can we restore the suppressed character?\nA dilation is not sufficient as the area of the\n  suppressed character is now occupied by the\n  expansion of its neighbors.\n\n\n\n\n\n                                                                                                       139",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 140,
+        "title": "Gray-Scale Morphological Reconstruction",
+        "searchText": "Gray-Scale Morphological Reconstruction\n   Gray-Scale Morphological\n   Reconstruction\nWe form an image by taking the point-wise\n  minimum between the top-hat by reconstruction\n  image and the dilated image:\n\n\n\n\n\n                                                                                                       140",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 141,
+        "title": "Gray-Scale Morphological Reconstruction",
+        "searchText": "Gray-Scale Morphological Reconstruction\n   Gray-Scale Morphological\n   Reconstruction\nUsing the last image\n  as a marker and the\n  dilated image as a\n  mask we perform a\n  gray-scale\n  reconstruction by\n   dilation, and we\n  obtain the desired\n  result.\n\n\n\n\n\n                                                                                                       141",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
+        ],
+        "coverageReason": "not_yet_taught"
+      },
+      {
+        "page": 142,
+        "title": "形态学图像处理",
+        "searchText": "形态学图像处理\n    形态学图像处理\n\n腐蚀和膨胀\n开运算与闭运算\n击中-击不中变换\n一些基本的形态学算法\n形态学重建\n灰度级形态学\n\n\n\n\n\n                                                                                                      142",
+        "coverageLabel": "本次录音止于P76 · 本页仅课件（不是不考）",
+        "coverageSourceIds": [
+          "recColorMorph@01:47:23"
         ],
         "coverageReason": "not_yet_taught"
       }

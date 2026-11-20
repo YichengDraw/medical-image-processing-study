@@ -23,9 +23,11 @@ for(const scope of [false,true]){
 assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec4p2',25,true).page,29);
 assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec4p2',26,true).page,29);
 assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec4p2',61,true).deck,'lec5');
-assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec4p2',61,true).page,6);
-assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec4p2',12,false).deck,'lec6');
-assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec4p2',12,false).page,15);
-assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec6',15,false),null);
-assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec6',83,true),null);
+assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec4p2',61,true).page,1,'New Quiz scope links to restoration');
+assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec4p2',12,false).deck,'lec5');
+assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec4p2',12,false).page,1);
+assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec6',15,false).deck,'lec8');
+assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec6',83,true).deck,'lec8');
+assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec8',18,false),null,'Draw-result topic has only one representative');
+assert.equal(Nav.next(data.decks,data.examGuide.entries,'lec8',142,true),null);
 console.log('PASS:',count,'page/scope cases; duplicate, relative-order and end-of-course boundaries.');

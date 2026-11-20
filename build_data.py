@@ -77,7 +77,7 @@ def build():
                 assert n.get('audioSupported', True) is True
                 assert all(sid in data['sources'] for sid in n['sourceIds'])
                 assert n.get('paragraphs') and all(isinstance(t, str) and t.strip() for t in n['paragraphs'])
-                if did in ('lec5', 'lec6'):
+                if did in ('lec5', 'lec6', 'lec8'):
                     assert n['sourceIds'], 'New explanation lacks classroom provenance'
                 text = tuple(n['paragraphs'])
                 assert text not in unique, 'Repeated generic note: ' + did + '/' + str(i)

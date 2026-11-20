@@ -25,9 +25,15 @@
       "file": "export_1793954254928.docx"
     },
     "recRestColor": {
-      "title": "图像复原与彩色模型课堂录音（最新提供）",
+      "title": "图像复原与彩色模型课堂录音",
       "file": "export_1794734449538.docx",
       "scope": "图像复原续讲；彩色模型至HSI/RGB示例；末尾含Lab及Final Project口头安排。无原始音频，依据自动转写。"
+    },
+    "recColorMorph": {
+      "title": "11月20日彩色处理与形态学课堂录音",
+      "file": "export_1795162202275.docx",
+      "scope": "00:02–31:45续讲彩色图像处理；32:09–39:14期末项目与Quiz安排/项目示例；39:14–01:48:09形态学至测地膨胀/腐蚀。日期依据33:28教师“今天是20号”及同段十二月后续安排，与11月20日课件一致。无原始音频，依据自动转写。",
+      "date": "2026-11-20"
     }
   },
   "sources": {
@@ -3607,6 +3613,664 @@
       "start": "50:00",
       "end": "50:54",
       "excerpt": "说在高频的时候，这个这个 noise 就是会会有会有个enhance，就是一般来说就是我们不直接做做这样的一个滤滤波，直接就是就做一个删除，我们会去限定一个频率的范围，就是 to avoid the side effect of enhanced noise，we can apply this transformation to free free frequency component within a radius of zero，就是 from the center of the movie，就是我们需要去限定，就是某个，就是低频的一个，只在某个，就是低频的一个一个一个区间，就是做一个处理。如果说是高频的话，它就很有可能就是会把这个，就是因为 h本身会比较小，会把，就是一些噪声啊，就是做做一个就是放大。对， anyway 这个 in practical一个是就 feed is more popular get used 这个后面也会讲。哎，我们先先先下课。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@00:02": {
+      "recording": "recColorMorph",
+      "start": "00:02",
+      "end": "01:07",
+      "excerpt": "然后我们再用一个hello world去接嘛，就是我每个是呃原理上来说就是非常简单，就是我们把把我们一个图片，它那个主前景变成一个三维的一个一个映射的一个一个函数，然后我们就是在在不同的一个一个灰度文字对应用一种彩色哦来表示。可能通通过这个就看得更呃更明显，就是呃你可以看到，就是这里面是一个一个呃灰度的一个一个一个图片，就是灰度图片它在不同的一个一个位置，哎，它会不同的位置。它直接给它映射到不同的一个一个呃颜色，这个当然这个呃就是映射的一个一个方式，可以根据我们自己的一个一个呃定义来做。那 zero 上来说，就是它把呃就是每一个不同的一个灰度，给它用一种，就是不同的一个一个呃颜色。哦，来表示。那同样的话，就比如说呃左边这个就是一个一个我们常规的一个一个，就是比如说单色的一个一个哦。啊，就是一个一个，就是一个一黑白的一个一个图片嘛，就当然它这有一点颜色，但是就是一个一个gre scale 的一个 image。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:02:21": {
+      "recording": "recColorMorph",
+      "start": "01:02:21",
+      "end": "01:03:15",
+      "excerpt": "然后对应的就是呃另外一个就是 dilation 就是一个膨胀，啊，这边你可以看看这个功能，就 dilation 的，direction set a by the M B is divide as 就是同样的话，就是这里面 b 它它是这里面 b hat 它是做了一个镜像，一般来说我们结构文都是一个一个对对称，就是说基本上呃镜像还是它本身嘛，啊，同样的话，我们这个就是这个结构文，我们去移动移动这个结构文。它跟 a 它的一个交集呃需要，就是不得为空集，所以说它只需要有一部分，它要保留在这个呃就是 a 这里面，就是 the result is the set of all points. The such that the reflected b translate overlap with a at least one element 就是说我们就去移动这样子的一个结构的话，它跟 a之间有一个一个重合，有个重合。这个是一个我们等价一个公式，我就不展开了。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:06:00": {
+      "recording": "recColorMorph",
+      "start": "01:06:00",
+      "end": "01:06:50",
+      "excerpt": "Cosy 的一个操作，就是开操作跟跟这个呃 b 操作。那这里面的opening的话，就是the opening of set a by set element b is define as，就是就是这个开操作的话，就是它先腐蚀，就是a，比如说by b，然后这个呃the result is呃data by b again，就是这里面是一个呃就先腐蚀，再呃再膨胀。然后这里面的一个一个呃就是 opening 就是它的一个几何学的一个一个一个呃定义，就是因为有时候你要先先腐蚀再判断，它相当于就比如说它的一个 geometric 的一个 interpretation 就是 the boundary of the opening is defined by points of the structural element let's reach the uh forests into the boundary of a and as b is load inside of the.",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:08:19": {
+      "recording": "recColorMorph",
+      "start": "01:08:19",
+      "end": "01:09:25",
+      "excerpt": "然后它这里面是呃跟跟刚才的那个呃 opening 就是有点点就是反过来，就是 yes similar geo-呃 geometric interpretation is that let b is not on the outside of the boundary 就是刚才我们的 opening 就开操作是在内部，就是在内部去移动这样子的一个一个一个结构元。然后 closing 的话是在外部，就是在在这个外部去移动它的一个一个一个一个呃结构元，你可以看到就是在外部的话，它如果说有一个内内凹的这样子的一个一个区域，就比如说。哦，这里面，你就在那样去，他就到不了，到不了的话，他在这里面就会哦被平滑，就是被被平滑，就是他是在外部，就是外部去。去去去去绕哦，绕的这个这个就是我们这个原来的一个一个一个图像，然后有一些内凹的那个那个就是地方，啊，会比较平，这个是一个 closing。那整体上来说，就是我们去比较，就是呃就是这个呃 closing 的结果跟跟跟这个原始的一个一个图片的一个结果，就它整体的一个一个形状，基本上没有变大，没有半啊，没有呃，就是没没有变大或者缩小。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:11:19": {
+      "recording": "recColorMorph",
+      "start": "01:11:19",
+      "end": "01:11:43",
+      "excerpt": "A 被，这个是也是一些非常重要的一个一个性能，就是 a 被 b 就是给给 open 完之后，它是属于 a 的一个子集，就是说它这里面的话，opening 的一个一个操作，就是它肯定只是 a 的一个子集，就整体上来说它是变小，就是整体来来说它是一个变小，就是 a 就是被 b 就是 opening 的话，就是它。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:11:43": {
+      "recording": "recColorMorph",
+      "start": "01:11:43",
+      "end": "01:12:59",
+      "excerpt": "它是 a 的一个一个呃子集，而另外一个，如果说 c 是 d 的一个一个子集的话，它就 opening 完之之后，就是 c opening 就是 b 它还是 d opening b 的一个子集，这个是是一个，它的一个，而另外一个，第三个部分就已。对吧，比较意思就是我们一旦就是一个一个呃 a 做 opening 完之后再做 opening 就是他就没有任何的一个变化，所以说他一次就收敛了，一次就收敛了，就是你比如说一个 a open 的 b 再 open b 再 open b 就是做做 n 次跟做一次，它的一个效果是是呃是等价的，是一样的，这个是一个它的一个一个特性，不像比如说做做 rotation 或者说做 dilation rotation 的话，你。每做一次它就越来越腐蚀越来越少越来越小但是这个opening的话你做一次啊它就就就呃收敛了。然后 closing 的话，同样的话就是呃跟跟这个 open你就做对比的话，就是 closing a 就是 closing b 就是 a 是是后面最后的一个一个这个呃呃 b 操作它的一个一个一个子集，所以说这个 b 操作整体上来说是让这个呃图像啊变大，然后这里面同样的话就是呃如果 c 是属于呃 d 的话，就是 c 跟 b 的一个。Opening他仍然是呃，就是第一个 be opening。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:13:00": {
+      "recording": "recColorMorph",
+      "start": "01:13:00",
+      "end": "01:14:31",
+      "excerpt": "一个一个子集，然后open的话也是同样一个套路，就是呃就是closing的话也是同样一个套路，就是呃你做做做一次，跟做两次，做三次，就是做做closing，它是一样的一个一个一个呃结果，就是the last properties呃in each case indicate that multiple openings or closing have no effect after the first application of the or operator。然后就是你这里面就是有个例子来来来，就是来来展示我们怎么样去去用用这样一个形态学的操作，来来来做一个我们实际的一个处理。就比如说这张图片啊，就是它是一个应该是一个指纹的一个图片，然后我们想要的是我们这里面可以看到这里面有个白的，就是这个背景里面有好多这个白的一个一个小点。然后我们的指纹上有好多就是黑的小洞，黑的小洞，我们想要的话就是想要去除这些呃这些白的这些小点，跟着里面黑的洞给它填充，就是 the image contains noise。它是一个 light element 就是 on the dark background 然后 dark element 就是 on the light components of the fingerprint 就是我们要怎么去去去掉，就是呃这两个部分。然后呢目标是 eliminate noise while 就是 distorting the image as little as possible 就是我们尽可能的去减少改变这个它的一个一个啊形状的一个一个啊变化，然后我们这里面是 will apply an opening follow by the closing就是我们先先采取一个啊。开操作，然后再去取一个 b 的一个一个操作。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:14:31": {
+      "recording": "recColorMorph",
+      "start": "01:14:31",
+      "end": "01:15:46",
+      "excerpt": "第一个就是因为我们，如果说想要去去掉这样子的一个白的一个一个一个就是这个背景的话，我们一般来说就肯定选 option，就是选选腐蚀，我们选一个，就是刚刚 element，就稍微比比这个就是大一点点，稍微比这个大一点点，然后我们就做一个腐蚀的话，就可以把这个白色的一个一个点给它去掉。当然我们前面讲就emotion的话它的一个副作用的话就是会让我们的一个一个结构就是变变呃选品就是呃。搜索，然后我们的话，下一步的话就是我们去做做一个膨胀的一个操作，就做一个膨胀的一个操作的话，就是就是就膨胀之后就恢恢恢复出来它原来的一个一个一个一个形状。但是我们在这边可以看到，就是我们恢复完之后，我们好多白色的点，h 是被去掉。但是我们这里面黑色的，就是你可以看到这个指纹了，它好多是一个。断断断裂的，所以说这它黑色的点就是被被被膨胀，就是 the dilation reduce the size of the inner noise or eliminated completely however 就是 new caps new gaps were created by the opening between the fingerprint 的一个 ridges 就是我们这里面，原来里面这个指纹里面黑色的一个一个小孔嘛，它会被被它就是放大。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:15:47": {
+      "recording": "recColorMorph",
+      "start": "01:15:47",
+      "end": "01:16:59",
+      "excerpt": "然后我们就是反过来的话，就是我们要去呃bridge bridge这样子的一个一个这个概念的话，我们就是用用delation，就是用用delation的话，就是呃我们这个opening操作就是就做一个delation。然后就是呃再再做一个 emotion 就是保持它的一个一个形状的话，就是我们了，就是这样的话，就是我们基本上就大部分可以把把我们刚才前面想要的一个一个结果就得到，就是 the final emotion 就是 makes the呃 ridges呃 thinner 就是这个是是一个，就是通过这个 opening 跟跟在在closing 的这样子的一个呃操作完之后，就是我们可以把打开的比较亮的跟。啊，就是小的 feature，还有这个里面的一个呃，就是小的一个黑的一个小小洞，就是给给它补掉。所以 the final result is is clean of the noise，but some regions were not fully repair，就是我们这里面其实还是有一些，就是呃，就是这这里面的一个一个一个呃，就是。还是有一些呃就是gap啊就是他们并没有完全的一个一个呃修复当然我们后面会讲就是我们可以再加一些condition就再加一些一些一些条件怎么样让让这样子的一个一个一个gap给给他就是。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:17:00": {
+      "recording": "recColorMorph",
+      "start": "01:17:00",
+      "end": "01:17:59",
+      "excerpt": "呃，补回来的， anyway 就是在在目前来说，我们采采用这个 opening 就是呃 the final is clean of the noise but some呃 regions 我们可以呃明白， which in impose conditions for maintaining the connectivity 就是这个我们后面会讲，就是我们再再加一些那个呃条件，就是我们比如说我们去再加一个马，呃，就是 mask 再加一个模板，就让它在某个特定的范围内，就是做做呃做膨胀。这个是我们呃后面会讲的，然后呃另外一个就是这里面 hit or miss 的一个一个呃 transformation 这个是呃击中或者就是击不中的一个一个呃哎，可能，不看。啊对这个是机动跟机不动的一个操作就是啊there are maybe就是我们就是去判断就是我们这个这个图片里面我们想要去找到就是我们这个呃特定的一个一个一个一个一个结构。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:18:00": {
+      "recording": "recColorMorph",
+      "start": "01:18:00",
+      "end": "01:18:47",
+      "excerpt": "然后符合的一个一个一个像素，我们给它就是呃要提取出来，然后我们这里面的话就是其实是只有两个，就是呃 if we are looking for uh this the join or disconnection is natural to assume that the background of it uh therefore we see to match b uh b one in a and similarly we see to match the. 啊，这光是 b two e，a 控制面。就是，anyway 这里面的话可能就是通过下面这个图可能更清楚。就我们要去找到，就是比如说我们想要这个图里面，就是去找到一个，就是这个图里面满足，就是满足这样子的一个 b 这样的一个结果，就击中或者击不中，就是我们要去满足这样子的一个一个。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:18:47": {
+      "recording": "recColorMorph",
+      "start": "01:18:47",
+      "end": "01:19:44",
+      "excerpt": "呃，结构的一个图，但是我们如果说我们直接用这个 b 这个图我们去做一个做一个 illusion 的话，就是呃我们没办法，因为我们会找到一个比他这个点呃更大的一个一个图，一般来说我们。我们会在这外面，就是再加一个这样子的一个 background，就是再加一个一个 background，这这这就是这里面的一个呃 b一跟 b二，就是我们要确保，就是说如果说就是呃击中的话，击中的话就是我们要确保它的一个 background会在 a里面，然后它 background会在，就是 a 的这个就是 a 的 c里面，就是 a 的就它的一个一个补集里面，就是相当于就是。我们需要确保，就是我们如果说击中的话，击中的话我们要确保分两部分，就 b一跟 b二。 b一的话要在这个 a里面，然后 b二的话就是在外面，我们加加一个一个背景。它要在就是 a a c 就是 a 的一个一个一个补给里面。就像就是。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:19:45": {
+      "recording": "recColorMorph",
+      "start": "01:19:45",
+      "end": "01:20:43",
+      "excerpt": "就比如就是就像这张图我们要去找在这个图片里面我们去找到一个hit这样第一个structure element的我们要确保就比如说里面的里面这个我们要在这个呃就是这个A的里面然后外面这一圈白。设计圈我们要在这个哦，它的一个一个一个补集里面。然后我们如果说去做这个呃 hit or miss 的一个 transformation 的话，其实最后我们找到就文件就是这个点，就文件就是这个点，就如如果说你在心里面的话，就是好多时候就是他的一个这个背景就没办法 match，没法背景，这个就是hit or miss 的一个一个一个 transformation，就是我们要去找到一个完全跟这个冰匹配的，就是这样子的一个一个一个一个特征的话，就是。我们一般往往就是会在这外面，就是再加一个，就是呃再加一个一个这样子的一个一个一个一个呃边界。或者说这里面也可以，就是说我们去移动这个呃这个 b 啊，那它是属于这个 a。就属于，因为不属于这个这个 i 的这这呃这个里面。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:20:43": {
+      "recording": "recColorMorph",
+      "start": "01:20:43",
+      "end": "01:21:19",
+      "excerpt": "那我们这里面前提是要在这里面加个边界，我们才能呃完全正，就是呃就是完全就给他，就是找到一个一个完全 match 的一个一个 point。哦对这后面当然就有一些例子就是有一些例子就是我们这里面的话去找这个。呃，b 啊，就它的一个呃就是hit or miss 的一个一个点，就比如说我们这里面的话，它这里面有个空的，然后外面是是有，就是有有有这四个呃四个元素嘛，其实就 hit or miss 的话，其实它就就就就这两个点，就就呃这两个像修饰，啊，满足的。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:21:20": {
+      "recording": "recColorMorph",
+      "start": "01:21:20",
+      "end": "01:22:29",
+      "excerpt": "OK，的话，如果说我们设计个结构是是是这样子的话，就是我们去找 hit or miss，就在这个图片里面去找这个 hit or miss 的话，就是其实可能就是在这个点，就就这个像素是是满足，就就就这个像素我们去去移动这个 b 才能让它完全满足，就这边有有呃有有背景，然后这个是其他的一个一个一个前景，就就就这个像素是满足的。然后另外一个就是这里面有打叉呀，就是我们这个前面没讲，就是这里面有打叉，打叉的话点就是我们就是不care，它是一个它是一个一个呃0还是一，是包管还是白管，就是我们这里面的话就不管，都满足，就是它它无论是0还是一。就啊都满足，那如果说我们要去找到这样的 hit or miss 的话，哎，你会发现就是它可能只有这条线，就就在这里面，因为就是这条，这个有两个是是有的，然后这三个是没有的话，它只有就是呃把这个 such element 放在这里这里这里这里，就是这里，就就这这几个，就是你你做这个呃 hit or miss 的一个一个 transformation 的话，就是。你先找到就是呃这个这这样的条条竖线。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:23:18": {
+      "recording": "recColorMorph",
+      "start": "01:23:18",
+      "end": "01:24:29",
+      "excerpt": "就比如说我们这里面的一个一个边界的一个一个一个提取，边界一个提取的 boundary of the set a，you know by by就是这个贝塔 a，它是它的定义就是 a 减去就是 a 腐蚀 b 就是你现在 a 被 b 腐蚀，腐蚀完之后，然后你去取它的一个差集，去取它的差集。这个就我们就可以通过这样一个简单操作，我们就可以取取出它的一个一个一个边界。你可以，就比如说我们这里面可以看到这个 a 被这个 b 腐蚀完之后，哎，它就就剩下是中心的一个部分，然后我们这个 a 减去 b 的话，哎，我们就可以就是去提取出这个 a 的这个边界的一个一个一个一个呃效果。这个就是。呃，这个就是比我们之前的那个啊。当我们之前像像我们就就就呃设计滤波器的时候，我们也有去去呃提取一些边界啊，我们有一些啊高通的滤波器啊去去提取出它的边界，或者说我们就做差分的一个方法。但是它这里面好处就是我们可以控制控制这个结构论的大小，哎，我们可以让这个边界它是一个像素、两个像素、三个像素，就是我们可以。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:24:29": {
+      "recording": "recColorMorph",
+      "start": "01:24:29",
+      "end": "01:25:51",
+      "excerpt": "去控制这个边界的一个大小，这个就是就是跟跟原来就不太一样，就不太一样，就是我们就先先那一个一个图像，我们先去腐蚀，先去腐蚀我们原有的图片，然后做个差集的话，就是我们就可以，就是去去，一下就可以提取出，比如说这个图像，它的一个一个边界。啊另外一个就是一个啊region的一个一个frame就是一个一个一个洞就是一个一个一个一个洞的一个一个一个啊就是给它填充起来就是哦。这里面比如说我们这里面圆里面有有好多这个黑的一个洞，我们想要把这个这些小洞给它给它，就是给它给它填充满。然后这里面，even a pixel inside a boundary，就 region fillings attempts to fill the areas surrounded by that boundary with ones，就是我们用用一，就把把这里面的一个小的一个一个洞。要填进去啊。脑子里面它的有一个点，就是它要先定义好，就先定义好，就每个每个这个就是这个洞啊，我们要给给一个 seed一个种子啊，就是种子，先先先要提取一个一个一个种子，就是 for set x zero with zero as error at seed of the point of region 就是我们这里面 x zero 就是就是就起始就起始的那个那个就是那个图片。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:25:51": {
+      "recording": "recColorMorph",
+      "start": "01:25:51",
+      "end": "01:26:51",
+      "excerpt": "然后对新式图片它要有一些细的就其他地方它都是零其他地方都是零但是在在在这些种子的地方它是一然后。这里面种子啊，就选在，就是这里面我们想要填充的这，就是填充的这个孔的这个区域，就填充这个这个孔的这个这个区域。然后我们只要去做就是去做这个膨胀膨胀，然后跟着 ac 就是 a 的一个一个补集做一个交集，就是跟跟 aa 的一个一个一个补集做个交集，就是。确保确保我们最后的一个就是这个膨胀的一个结果就落到 a 的这个补集里面，就是 well 这里面的话就是 b 是，比如说就3×3的一个一个 cross shape 的一个一个 search element 然后呢，every time turn terminate when 就是我们可以做 n 次嘛，就是就就做 n 次 xk与 or do xk 啊简易，就 the set union of uh xk and a contains all the fieldholes and the boundaries.",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:26:51": {
+      "recording": "recColorMorph",
+      "start": "01:26:51",
+      "end": "01:28:19",
+      "excerpt": "就我们通过这样子的一个一个操作我们把它就是膨胀的一个结果给它局限在局局限在那个A的这个就是它的一个补集零。这是我们第一次用到这样子的一个一个条件，就是我们让这个膨胀的结果，就是给它限制在 a 的，就是 complementary里面，这个我们后面会讲的一个一个形态学的重建，就是它就是需要去设定一个一个一个，就是这样子的一个一个一个 mask 就是我们需需要有个一个条件来来限制它的一个边界。就是 this is the first example where the mathematical operation is condition 就是我们啊现在去操作，我们有有有加了一个一个一个一个条件，一个条件的话就需要它让它在 ac 的一个一个补集里面。然后 the 啊 in section of the result with ac limits the result inside the region of interest 这个就是一个呃同种的一个一个一个呃填充。那我们这当当然我们这里面可以给给一个呃就是举一个例子，就比如说我们这里面的话就是 a。就我们原来这就是这个A这个图片然后我们要去补补它这这边空洞的这个部分空洞部分的话然后这个是A C A C是它的一个一个补集然后这个A. 第一个，第一步我们要要去取一个种子，就是一个 seed 啊，这个 seed 要正好落在，就是落在这里面，落在就是就是我们想要补的这个洞里面，这个这个当然就是需要手工的去去选，我们后面有些方法就是可以通过自动的话去去选择这个 seed。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:28:20": {
+      "recording": "recColorMorph",
+      "start": "01:28:20",
+      "end": "01:29:39",
+      "excerpt": "那这个， anyway 我们第一步第一步在这个在这个例子里面，我们就是先先选，手动选一个。一个一个种子，就这个种子落在这里，然后我们去去膨胀，就是膨胀，x e 嘛，就膨胀完之后，然后跟这个 ac 就取一个交集，就取一个交集的话，就你会发现就是我们做一次膨胀，再取交集，两次膨胀，三次就是你做八次完之后，那基本上就是会把这里面这个，就是这中间这个洞给它就是。哦填满给他填满最后就得到这个然后我们最后就是取取他跟他的并集就跟A的并集的话。我们就可以把它这个这个中间这个这个洞给它啊填满，现在就是我们，就是先先在这里面选个啊像素，然后不断的去膨胀，不断的去膨胀，那膨胀的结果要你要跟这个 AC 做个交集，那确保它落在就是啊这里面。对，然后这里面就是同样的话，就是同样一个例子，就是他在这这每个后里面，就是选了一个一个细的，就是每个选一个细的，然后做做这样子一个操作的话，就可以把整个，就是整个洞给它就是呃填充满。另外一个就是可以呃提取一些，就是联通的一个分量，就是 give a pixel on connected components。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:29:39": {
+      "recording": "recColorMorph",
+      "start": "01:29:39",
+      "end": "01:31:27",
+      "excerpt": "You find a rest of pixels of like component library 就是这个跟其实跟刚才有点像，就是我们先先找到一个一个一个呃就是一个一个 component里面的一个点，一个一个像素，然后我们要找找找到全部的一个一个连接的一个连通的一个分量，然后 library 分 maybe apply to many connected component provider。We know a pixel on each one of them. Now this is nothing we have to apply, provide a pixel on a connect component. 啊，那 most basically algorithms that detect a number of without manual interaction 就是 but anyway 就是这个 the purpose here is to demonstrate the precision of mathematical morphology 就是我们这里面就是举了一个例子，同样的话就是我们在在在啊就是在在我们的一个一个一个联动分量上，我们需要提供一个算术，就是提提供一个一个一个一个一个种子。然后这是，其实你看前面有点像，就是 for set x zero with zeros everywhere except at the seed point of the connect component 那就是这一样的话，也是对这个，用这个 b 啊，就就就它做做个膨胀，但是我们是跟 a 跟 a 取取交集，跟 a 取交集，就是前面是跟 a c 取交集，但这个是跟 a 取交集，就是同样的话，我们其实把 a 就就肯定选，就是确保我们膨胀后的一个结果都在。落在这个A里面，啊，我们的B是呃three by three squares，呃shape structure，呃average terminate when是X K等于X K呃minus one，X K contains all the connect呃connected component，这个就是，anyway，这个是反正比较好理解，跟刚才就是有一点点不一样，就是not the similarity就是with region affinity，only difference is the use of A instead of A C，就是less，呃，not surprising，we search for our foreground的一个一个objects。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:31:27": {
+      "recording": "recColorMorph",
+      "start": "01:31:27",
+      "end": "01:32:15",
+      "excerpt": "就是我们我们这里面就是取取联通分量的话，我们是取它的一个前景，不像我们啊前面那个呃就是呃 vision 的 fitting 的话，就是把把它的一个背景给它，就是填充。那个去去前景的话，就是我们同样的话，我们在这联通分量，我们选一个选一个像素，选个像素的话，然后我们啊膨胀完之后跟它取取交集的话，就是我们最后的话就把这整个联通分量给它，就是取到。对然后在后面哎你是个是个例子就是我们去去去看就。就是去检测一个一个啊这个鸡排里面一些骨头啊骨头的一个一个啊分量是是多少它可以就是给出好好几个就是不同的不同的一个一个一个分量。嗯。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:33:46": {
+      "recording": "recColorMorph",
+      "start": "01:33:46",
+      "end": "01:34:59",
+      "excerpt": "啊，我们present here a political with an auto then commerce or C of a shape A，这里面他他给了一个一个例子，怎么样去去寻找一个一个形状。其实里面因为这里面这个比较复杂，我可能就是啊，也。大概稍微讲一下，就是，但是也要，反正就是你感兴趣的话，你们可以去去，后面可以慢慢去啊去看。那这里面的话主要是用了好几个这个 structure element，bi，就我们后面可以看到，就是他用了好几个这样的 structure element，然后我们去找他的一个 hit or miss，就是我们去去，在在在在我们这个就是去这个结构里面，我们去找他的 hit or miss。然后跟我们原来这个 a 跟我们这个 a 就做个并集，就做个并集，这个就是然后我们可以这里面做做 n 次，就是做做做，做 n 次，然后最后最后就是会把这所有的这个 ei 啊，就是取了一个并集，这个就是我们所有的一个一个可 response。它这里面有个就是。我说这比较重要就是他这边取得这样的一个start element就是他在这四个方向上这四个方向其实他是通过这。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:35:00": {
+      "recording": "recColorMorph",
+      "start": "01:35:00",
+      "end": "01:36:50",
+      "excerpt": "四个，B1 B2 B3 B4你可以看到就是，他通过这个四四个这样子的一个一个结构元，不断的去去把把，就是把这个因为这个 X0就是 a 嘛，不断的去去把把这个图像慢慢变大，从四个不同的方向，从四个不同的方向，就是把它变大，就是这里面讲的 hit on this transform。Tries to find heat these structures in the image 然后 the training man has a point with don't care condition 就是 for all the training man a match is found in the image when these conditions hold 然后 the central pixel in the three by three region 就是啊 image is zero 就是中间的是是个0，然后 three shifted pixels under the mask are once remaining pixels do not matter 这个是它的一个。啊结构员的一个一个一个一个啊形状。那我们可以看一下，就是说他做的一些一些呃操作，就比如说我们这里面，他先从一开始就是。就是他他用这里面的一个比如说我们去取值 xx 零嘛，就是 a 嘛，这个我们去寻找这个形状，它的一个凸壳。好，那我们就是对这个 b 我们去做 hit or miss 的一个一个一个变化，hit or miss 的一个一个变化，我们大概就做五次，做五次的话，它大概可能收敛，就是到这个。对，2这个结构员，我们做 hit or miss 的这样子的一个一个一个操作，那做两次，大概就就收敛。同样，对第三、对第四，我们呃就是做做这样的HEAR MISS的一个一个一个一个操作。然后我们把这几个就是给它取一个，就是并级，就给它取取一个并级，给它取个并级的话，就是呃，那最终就是得到这个。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:36:50": {
+      "recording": "recColorMorph",
+      "start": "01:36:50",
+      "end": "01:37:37",
+      "excerpt": "但理论上就是说呃，这个它肯定是个一个一个凸壳，但它并不是最小的凸壳，为什么呢？因为就是它这里面的话就是。你如果想最小凸格，它肯定就是哦，你在这边画一个就是长方形嘛，在在这个图画个长方形，它其实就是比如说呃最最左边、最右边、最上面、最下边，它肯定是一个一个一个凸格。同样的话，我们也也去限制，就是这最后得到的图片，就是呃它的最呃最左、最上边、最下边、最左边、最右边，就是给他举了一个一个限制。就是通过这个，就是取一个限制的话，他就得到这样子的一个，就是 limited the growth so that it does not expand past the horizontal and vertical limits of the original set of the points.",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:37:37": {
+      "recording": "recColorMorph",
+      "start": "01:37:37",
+      "end": "01:38:45",
+      "excerpt": "然后 more complex memory uh have been imposed to image is refine the details in the uh structure anyway 反正这个就大概大概了解一下，我们就是因为这里面有些非常 detail 的一些一些东西，童话 thinking也是也是呃这样子，就是呃就是我们对对一个一个图片做一个 thinking the thinking of set a uh structure m and b。Maybe defined 就是 in the terms of 同样的话，它还是一个 hit or miss 的一个一个一个transform 就是它是啊 hit or miss一个一个 transform 然后取它的一个差值，取它的一个差值，就 no background matrix required and the hit or miss is reduced to a simple 的一个一个 erosion 如果说它是一个就是没，就是这个 b 啊，它没有没有没有 background 的话，其实这个它本身就变成了一个一个一个一个一个 erosion。好，more advanced expression expression is based on the sequence of就是这个structure element呃，对，B一、B二、B三，那有好几个不同的这个结构文。Right each uh B is a rotating version of B uh minus one.",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:38:47": {
+      "recording": "recColorMorph",
+      "start": "01:38:47",
+      "end": "01:39:34",
+      "excerpt": "然后就是呃定义 by sequence of such element is defined by 就是它是对它的一个呃就是不不断的去取它的一个呃就是取一步。对不同的一个结构源去去算它的一个呃心理的一个一个操作。呃，the process is to think a by one plus by b one and then get the result with one plus b two and so on 就是我们可以对不同的一个呃就用不同的一个一个结结构源对一个结构你不不能取取它的一个一个一个细化的一个一个结果。啊，the entire process repeated uh re repeated until no further change occur each individual thing is performed by. 就是那就是这样子一个操作就是这个这个一个定义的这个process.",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:39:34": {
+      "recording": "recColorMorph",
+      "start": "01:39:34",
+      "end": "01:41:25",
+      "excerpt": "还有这个有个图片，嗯，可能就。因为这边有很多 detail 就是一样的话，就是比如说我们这里面对，B1 B1 B2，它这里面就是一个一个旋转，就是 B1 B2 B3 B4然后 B5跟 B1它就是一个一个旋转的一个一个形式，你可以看到就是他选的这几个element 就是。然后他他要去，你看你看，就是他，比如说 a，就先先就用 b 做做细化，然后就是啊，a一啊，就得到细化结果，因为 b二就做了细化，b三、b 四、b五。然后 b 六，然后就是他就不同的结构，就是连着在在做这个细化的一个结果。啊，你发现就7跟8，7跟8他就一样，就是你7跟8都是一样。然后就是你再做一二三四，一样，就是一直一直一直一直重复，就是。不断的用用这个结构来对它做做一个，因为像一个腐蚀的一个一个操作，然后你最后就是得到一个一个，就是这样的一个结果，就是啊，the final results come to i'm connected to have one pixel thick structure就是大概是是一个呃这样的操作。然后呃thinking也是metaphorical呃就thinking就是这个anyway这个我就不展开因为这个非常detail非常非常detail然后呃。Skeleton 就是这个呃骨架的话，就是它是呃就是 the notion of a skeleton as a of a set a including has a foreign properties now if z is a point belonging to sa and dz is the largest disk centered at z and containing a so one cannot find a larger disk containing in dz and included in in a.",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:41:25": {
+      "recording": "recColorMorph",
+      "start": "01:41:25",
+      "end": "01:42:53",
+      "excerpt": "我们这里面的话，就是我们去去选一个一个 disk，选一个一个一个 disk，让它就是至少就是就是接触到，就是这里面的 maximum distance，the bottom of a two or more就是 different 的一个 point，就是我们去去选这个最大的这样子的一个一个一个形状，就是这个一个一个一个圆，然后让它在边界上会碰到这个这个边界，然后我们这里面的一个。中心点就是就是他的一个股价就是这个就是他定义他的这样子的一个一个一个呃股价的一个一个一个方法。就是比如说这里面它是跟三个点接触的话，它大概是是这样子。那如如果说跟两个点接触的话，它可以往这边再再走，就是往这边再走，这个就是就可以进行出它的一个一个股价。然后它这里面也是通过一个，就是好几次，就是腐蚀啊，就是对对这个，做个用个结构人对他做就是 k 次的腐蚀，然后。因为腐蚀腐蚀就越来越小嘛，他然后他把最后一次，就是再腐蚀一次完之后他就没了，再腐蚀完就没了，他把那个做成一个一个啊，1.3做做个细的，然后你再再给他就是啊，比比如说就做 opening 的一个一个一个操作给他，就是再还原回来，就是 case last iterative step before a rose to an empty 的一个一个 set 这里面它本来有定义的这个这个东西。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:42:54": {
+      "recording": "recColorMorph",
+      "start": "01:42:54",
+      "end": "01:43:51",
+      "excerpt": "Anyway这个大概就了解一下我因为这里面其实有有一些图片就是他对对这个啊。一啊，就做零次、一次、二次，然后你你就就就对他就是在在存在的一个一个结果，就是最后他提取出这样一个一个一个一个 skeleton，就是。这个了解一下。对，然后是，其实前面后面的话我会讲一个，就是形态学的一个一个重建，这个其实是蛮重要的，就是说我们其实在在后面怎么样去去。哦，正确或者说更好的去去用这样子的一个呃形态学的一个一个算法的时候，就是这里面一个呃第一个，我们介绍的是一个 geodesic dilation 就是 of size one of a marker image f uh such an mb with respect to a mask image g is defined by 就是我们这里面 geodesic dilation 就是一个。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:43:51": {
+      "recording": "recColorMorph",
+      "start": "01:43:51",
+      "end": "01:44:50",
+      "excerpt": "翻译反正特别彻底的一个膨胀彻底膨胀这里面它是一个膨胀的一个操作就是这里面一表示是它。做一次，我二就是两次，就两次膨胀。然后我们这里面的话就是一个 marker image，marker image 就是你可以认为就是它的一个一个原始的一个图像，原始的一个图像。然后它有个 mask mask g，mask g 就是一个模板 g，然后我们去做一个脚带这个 dilation 的话，就是我们要对这个马啊，马可，就是我们原始的图斑，我们做一个膨胀。然后跟我们这个啊 g 这个交集，就我们可以确保，这样做我们可以确保就是这里面的一个啊膨胀啊，f 被 b 膨胀完之后它一定会落到 g里面，就是这个是非常重要，就是一个一个啊 mask 我们可以去定义的这个啊 mask image 然后，这样我们这里面可以做 n 次，就是就做 n 次的话就是你 n 次的话，像就是你你对 nn 减一。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:44:50": {
+      "recording": "recColorMorph",
+      "start": "01:44:50",
+      "end": "01:45:59",
+      "excerpt": "N 减一的那个就是再做一个啊彻底的一个一个一个一个膨胀，然后 the operator at each step guarantees that the growth of marker. F is limited by the mask g 这个就是我们心态区重建最重要的一个一个一个，就是我们去定义的一个一个mask，你定义了一个 mask g 然后这个我们确保最后膨胀的一个结果会会在这个就是这个 mask里面。就同样的话，就是我们就做个比较，就比如说我们这里面。刚开始，比如这个 f 就是 mark里面，你可以认为它是一个种子，或者是一个及及时的点。然后我们就是对对这个 mask 做一个膨胀，就做一个膨胀。但是我们要就是对这个 mark 做个膨胀，但是我们要跟这个 mask 取个交集，取个交集，就是我们确保确保我们最后 dilation 的一个结果。确保需要就是 direction 的一个结果，它就是落在落在这个啊 mask里面，就落在 mask里面，它不会超出这个这个 mask 就是 the result will not contain element not belonging to a mask g 因为这个是它的一个一个非常重要的一个一个一个操作。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:46:00": {
+      "recording": "recColorMorph",
+      "start": "01:46:00",
+      "end": "01:47:21",
+      "excerpt": "啊，同样的话就是呃 dilation 我们有一个一个 erosion 就是 the geodesic erosion of size one of a marker 同样的话会一个 marker image f与 b with respect to a mask 这个也同样会有一个 mask g但是 define s 就是 f 去腐蚀，用 b 去腐蚀完之后，它要跟 g 取个并集。就它跟跟这个 g 取个并集，就是啊同样的话，就是这个，你也可以做 n 次 n 次这样子的一个操作，就是，但是它这里面的一个定义就是 the unit operator guarantees like the geodesic a notion of mark f remains greater than or equal to the mask g 就是它这里面就确保，就是我们补修补修补修完之后。我们的一个啊就是 g 啊，这个 mask 不会被被被被腐蚀掉，就是我们要确保最后的结果一定包含了这个 mask 就是一定对，呃，包含这个这个呃。Mask 这个是它的一个非常重要的一个一个特点，就是呃传统的话就是我们比如说这原来的这个这个图片，然后我们去定义这个 mask 然后我们对它进行腐蚀，腐蚀完之后我们最终的结果，最终结果要跟这个 mask 进取个并集，取个并集，这个就是确保了 result of the at least contain the mask 进。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:47:23": {
+      "recording": "recColorMorph",
+      "start": "01:47:23",
+      "end": "01:48:09",
+      "excerpt": "对，然后呢，呃，jadesk dilation的 erosion 啊，就是 respect to set of representation，它是它是一个 who，然后 they always 啊 converge after a finite number of steps，就是它都会有一个就是收敛，然后 jadesk dilation propagation of the marker is constrained by a mask image，然后它的 erosion 的话就 shrinking of the。Marker is constrained by the mask一个是膨胀，但是要被那个 mask 给限制，一个是收缩，但是也是，就是确保它不会小于这个 mask 这个是呃我们呃。其实这这里这里面的一个条件的设置啊就是呃可以有很多的一个应用这个我们啊下个月再讲。先先下课。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@02:21": {
+      "recording": "recColorMorph",
+      "start": "02:21",
+      "end": "02:58",
+      "excerpt": "然后同样的话，这个像这个天气预报图，就是这个就是更明显的，就是说如果说我们只是用常规的一个一个黑白的一个一个一个图片来描述这个降雨的一个一个含量的话，就是基本上你很难，比如说很难看清楚哪边有降雨，哪边没有降雨。但是如果说你把它转转化为这个微彩色的一个图片的话，就是你从这。这里面的一个一个图片里，你就很容易就看到一些比较比较亮的一些呃亮点，就是它这个呃降雨量，就是我们呃可以更清楚的去去感知到，就是我们整个的一个呃强度的一个呃变化。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@02:59": {
+      "recording": "recColorMorph",
+      "start": "02:59",
+      "end": "03:59",
+      "excerpt": "呃另外一个就是。哦，微彩色的一个一个，就是怎么样从灰度到我们这个颜色的一个呃，就是这个变化关系啊，其实这个是可以任意的一个定义。就比如说我们这里面就是同样一个函数，就是 f x y，f x y 它就是它的一个一个 intensity。然后我们可以定义分别在这个 rgb三个呃 channel里面，我们可以就是呃分别给它定一个一个不同的一个一个呃函数，就是，然后我们再把这三个，这把这三个通道给它，就是，哦。啊，累加起来变成一个呃彩色的一个一个呃图片。啊，这里面举了一个例子，就是相当于是呃在过安检的时候，在过安检的时候，就是我们看那个 x 光，就是 x 光机啊，它拍拍拍摄拍摄出来的一个一个一个图片。那图片可能有个黑色的，比如这个黑色的明显就是可能 x 光吸收比较强的一个一个一个区域，有可能 possibly 就是一个一个。哦爆炸物这个那我们可以通过就是说同样的话就是呃这张图片同样的话就是呃这两张。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@04:55": {
+      "recording": "recColorMorph",
+      "start": "04:55",
+      "end": "05:59",
+      "excerpt": "彩色的一个呃图片那这里面就举了一个例子就比如说我们。啊，选了这样子的一个三个、三个不同通道的这样子的一个、一个啊映射关系。三个不同通道这样一个映射关系，所以我们可以看到，就比如说这个黑色的啊爆炸物，原来原来我们是一个黑色，就是跟跟跟呃，就是看就是这个黑色的跟跟这个背景不太一样，但是我们去调去调这三个就是不同的一个呃，就是。去去调这三个不同的一个一个一个映射的一个函数的话，诶，你会发现这个黑色的一个一个爆炸物会跟这个背景就一样。可能我们也可以就是去稍微去改变，去改变某一个呃映射函数它它的一个一个一个相位，你就稍微改变一下，诶，它这这里面的一个就是合成的合成的这样一个伪彩色的一个一个呃图片的话，就是它这里面的一个一个一个爆炸物，就是它的一个颜色，它颜色跟跟跟这行李里面的一个一个颜色就是一样，好像我们就是可以。啊可以啊就看看透过去这样子的一个一个信息就是我们可以。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@06:00": {
+      "recording": "recColorMorph",
+      "start": "06:00",
+      "end": "07:21",
+      "excerpt": "通过这样子的一个呃，就是映射映射的一个一个变化，可以把某一就是某一个原来就是原来它呃，就是比如说原来它的一个灰度并不是相邻的一个一个位置，它你现在可以呃通过这样子的一个一个一个呃相位的一个一个改变，你可以让让原来不呃不同的灰度，哎，让它长得就是有点像，这个就是相当于你可以去控制。控制这样子的一个一个一个映映射函数可以让让我们的一个一个灰度图片就是根据我们的一个一个需要来来来来来设定。然后当然就是这个R gb 的一个一个一个一个图像，你也可以通过就是呃不同的一个通道，就是不同通道来合成。就比如说这里面的话，也是一个应该是一个遥感的一个一个一个图片，它也分为，就比如说这个呃，就是A B C d就是A B CD 加A B C可能就传统的一个R，呃，就是一个呃传统的一个一个一个 r gb 的一个通道，然后我们再加。加上一个一个红外的一个一个一个一个通道，就是不同的一个通道。然后我们用这三种有三种不同的一个图像去合成，就是去合成最后得到的一个图像，就是相当于你可以用用用不同不同的一个一个光谱的一个通道去合成最后的一个一个彩色的一个一个图像。这个也是一个一个，就是用不同的一个一个呃通道。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@13:15": {
+      "recording": "recColorMorph",
+      "start": "13:15",
+      "end": "14:10",
+      "excerpt": "呃，另外一个就是我们彩色啊，就是其实它也有，就是跟跟呃跟我们灰度里面就是一个一个取反，它这里面彩色其实也有它的一个呃有第一个补色，就是一个一个 color 的一个一个呃 compliment 就是它是，它这里面在 rgb 这个这个呃模型里面，就是它其实对应的是一个 opposite hue in the color circle 就是在这个。哦，这个彩色环里面，就它对应的是一个，它的一个一个补色，补色其实就是对应的是是，哦，这里面的一个一个哦，就是对，这叫啥，就是一个一个呃那个画一条线嘛，就是它对面的这这个这个颜色就是它的一个一个呃补色，就是这里面的话就是。是我们通过这个彩色环，就是一下就可以看到，就是每种颜色它的一个补色是是什么样，就是对应的一个一个一个这个彩色环。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@14:11": {
+      "recording": "recColorMorph",
+      "start": "14:11",
+      "end": "15:32",
+      "excerpt": "当然在补色，我们如果在 rgb 这个模型里面，我们就可以有些就可以看得非常明显，就比如说那个 red 对应的就是一个一个 sign，就是它有一个或者 magenta 对应的就是一个一个 green，就是它的一个一个补色，哪一种是是是补色？但是就是说呃在 hsi里面，就是它这里面的话，你不能，就是就比如说我们这里面的一个呃 situation 的一个一个 component 哎，你说在 situation component 它的一个补色的一个 situation 是是多少？这个就没办法就是直接计算出来，直接计算出来它的一个一个补色的一个一个一个 situation 啊，是多少？但是我们在这个 rgb里面，就是我们可以比较清晰的就是因为它这边有有对应一一对应的一个一个呃关系，就是呃这个 red 跟跟 sam blue 呃跟这个呃 yes。Green跟跟这个啊 magenta 就是它有一个对应的一个一个补色的一个啊关系。呃，然后同样的话就是我们如果说去取补色，就是这张图片，就是 rgb 这个图片，我们去取补色的话，它就是这样反过来，就是这个就是它的一个一个一个映射的一个一个函数，就是就是你可以看到就是它这个 rgb三个三个呃通道，这三个通道它的一个映射关系。就是一减去，就是这个呃 rgb 每个通道它之间的一个一个一个分量，就是。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@16:29": {
+      "recording": "recColorMorph",
+      "start": "16:29",
+      "end": "17:24",
+      "excerpt": "然后呃同样的话，在彩色里面，就是我们也会用到一些，就是彩色的一个分层分层，就是 color slicing，就是我们之前在在灰度图里面，我们也去就是想要去 highlight 某一个灰度的一个范围，想去 highlight 某个灰度范围，我们会把是某个灰度的一个范围，它的一个一个呃强度给它，就是呃给它拉伸，或者说给它给它呃就是。啊就是给他给他一个assign一个就是呃一样的一个一个一个汇率同样话在这个。就是在彩色图像里面，我们也可以做一个 color 的一个一个 slicing 它的 motivation 就是 highlight space range of colors 呃，image 就是我们就感兴趣的一个一个图片，我们就是可可以把它就是给他就是 highlight 出来，然后他这里面其实定义相对来说就是呃比较简单，就是 display display the color of interest so that they they stand out from the background。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@17:24": {
+      "recording": "recColorMorph",
+      "start": "17:24",
+      "end": "18:31",
+      "excerpt": "啊，用什么region define by the colors as a mask for further的一个processing。啊，它这里面是在这个彩色的这个哦模型里面，就是在在这个，你可以看到这个 RI 减去啊 AJ，这个就是我们 AJ 就是我们的一个一个就是呃彩色的一个一个灰度空间的一个范围。我们如果说就是在这一个范围里面，我们就给它设成就是呃就是在在这个范围的呃，就是这个大于二分之w，在这个范围之外的，我们就给它设成0.5，0.5的话一般就是一个灰度，就是每每个地方都是一个一个一个灰色的一个图像。然后其他。就是在这个啊，你离这个中心是啊，aj，就是里面的话，它就保持不变，就保持不变。那这里面的话就是呃，像这个是一个一个cube，像是一个是一个呃，就是我们因为用用的是一个一个绝对数嘛，绝对数的话，它是一个一个就是一个一个呃正方形的一个一个一个一个距离，然后我们也可以通过距离来来算它的一个一个。球形的一个一个一个一个距离，这个就是一个一些一些呃慢慢的一些一些一些呃 condition。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@18:31": {
+      "recording": "recColorMorph",
+      "start": "18:31",
+      "end": "19:13",
+      "excerpt": "同样的话就是我们可以就是呃对比一下，就是我们比如说用用这个 cube 或者这个 sphere，可能会有一些些不区呃区别，就是我们把比如说我们这里面想要的是一个红色的一个一个一个，我们想保留这个红色，highlight 这个红色的呃这样子一个像素，然后其他的颜色，就是其他的颜色，离离这个呃比较远，其他颜色我们都把它变成0.5，然后0.5的话就是一个一个。哦灰色所以说我们呃经过这样的一个处理完之后哎我们可以去。highlight就这张图片里面它红色的一个一个点它大概是是在哪哪样的一个一个一个一个呃范围就是这里面的话就是还有就是cube跟一个sphere可能有一些呃细微的一些一些呃差别。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@19:15": {
+      "recording": "recColorMorph",
+      "start": "19:15",
+      "end": "20:28",
+      "excerpt": "然后我们对对彩色图像，我们这里面有一个就是tone的一个一个 correction，就是一个就是一个，就是色调的一个一个矫正吧。就但这里面tone跟跟hue是不太一样，就是这里面的一个tone range，其实它表示的是一个它的一个强度的范围，就是the tone range of an image are also called is key type，就是key type，就是反正书里面翻译是一个主特性。就 refers to its general distribution of color 的一个 intensity 就是我们一个彩色图片里面，就是它的一个主要的一个一个颜色信息，它是在高亮的地方还是比较暗的一个一个一个地方，就比如说我们这里面 hiking image 就是 most of the information is concentrated at high intensities。啊，low key image 就是 most of the information is concentrated at low intensity 就是我们这里面取决于，就是说我们的一个信息，它主要是在亮的亮的区域，还是一个一个暗的一个一个一个区域。然后这里面有一些就是做了一个一个一个一些变化，就是同样的话，彩色图像里面就是他做的一些一些变化，就比如说我们这里面这个 middle key 就是可能就是大大概就是我们的一个一个亮度范围在在比较。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@20:29": {
+      "recording": "recColorMorph",
+      "start": "20:29",
+      "end": "21:15",
+      "excerpt": "哦，中间的一个一个一个范围的话，就是它这里面就 rgb 可以看，就是 rgb 它三个用的是同样的一个，就是哦同样的一个一个一个映射的一个函数，就 rgb 它采用同样的一个一个一个函数，这样子来来保证，就是说我们经过这个变化完之后，它的整个色彩不会发生一个一个一个呃改变。然后如果说对对这个呃high image的话就是他也可以做做一个就是一个一个一个呃映射函数啊昨天的话R R G B啊也是选。同样的一个映射函数，就是可以去，原来是比较亮的，就是主要是在比较亮区域，再把它就是更更分散在整个整个呃强度的一个空间，然后这个 low key image 的话，同样的话就是你也可以做一个这样的一个一个一个映射的一个一个函数。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@21:17": {
+      "recording": "recColorMorph",
+      "start": "21:17",
+      "end": "22:29",
+      "excerpt": "然后就是在彩色图像里面，我们有一些就是做一些彩色的一个就是平衡，或者说一些一些颜色的一个平衡，就是 the proportion of any color can be increased 就是我们如果说想去增加某一种颜色，就是或者去减少某一种颜色，就是我们可以通过，就是这个彩色环里面可以通过去控制，可以去控制它的一个补色。或者说就是旁边的一个一个一个啊颜色可以可以啊可以得到，就比如说里面的 proportion of any color can be increased by decreasing the amount of opposite 就是我们可以想要增加某种啊颜色，你可以去减少它的一个补色，就是它的一。一个一个一个补色的一个成分，in the image，or by raising the two proportion of the two immediately adjacent color，就是或者说就是可以在这，比如说我们想要增加 magenta 的话，就是我们可以去就可以入个这个 red，我们就可以呃增呃增高，or decreasing the percentage of two colors adjacent to the呃就是 compliment，或者说我们去去它的一个补色两边，就是我们可以去 decreasing the percentage of the，就是。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@22:29": {
+      "recording": "recColorMorph",
+      "start": "22:29",
+      "end": "23:48",
+      "excerpt": "呃，就是 the two colors adjustment to to 呃呃 compliment 就是这个就是我们通过呃补色，还有它的一个相邻的一个呃两种颜色，它的一个呃就是呃控制它的一个成分，其实可以影响就是它的一个本身，就比如说我们这里面的一个 magenta 我们想要它的一个一个呃 magenta 就是呃下降的话，就说一个我们可以去增加呃 green 的一个成分，它的 magenta 就会被被抑制。或者说我们就是把blue跟red就是给他就是呃减少。给他减少一点，特别是这样，比如说在RGB这样子的一个模型里面，我们就是可以去去看，就是啊啊就是RGB，反正就是这三个不同的一个通道之间去去调，可以去控制，就是这里面的一个一个啊成分。咳。对，这里面呃这个就是一个一个例子，就是一个原始的一个一个图片，然后它通过对，就不同的一个呃颜色通道啊，它就是做了一些呃映射关系，就比如说比如说把把它啊变红，或者说你可以看，就是就 magenta 它比如是增加或者减少，就是或者黄色增加减少，就是它会对应的话，就有一个，就某一个，这里面对应的是某一个颜色通道，就对应的某个颜色通道，就是它它做了单一的一个改变完之后，啊。它整张图片会有一定的一个一个呃变化。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@23:50": {
+      "recording": "recColorMorph",
+      "start": "23:50",
+      "end": "24:59",
+      "excerpt": "呃另外一个就是呃就材质图像我们当然也可以做一个直方图的一个一个呃处理就比如说一个直方图的一个一个呃均衡化这个也。跟跟我们之前的那个呃，就是直方度均匀化，就是整个公式是一样的。但是我们这里面就是一般来说做直方度均匀化的话，就是我们不会对 rgb，就是三个通道，就是做做分别做直方度均匀化，因为这样的话就是就 rgb三个不同通道，它做分别做直方度均匀化的话，它会改变它一个彩色的一个模型。所以说这里面的话，就是我们去做直方度均匀化的话，我们就是其实就是对这个 i，就是对对这个。就是这个hsi这里面这个intensity，我们做一个直方图的一个一个均衡化。就比如说我们这里原来的是是一个就是它直方图的一个一个一个一个分布，然后我们做一个直方图均衡化，对它的一个intensity做一个直方图的一个一个均衡化，它是得到这样子的一个结果。那我们可以比较，就是原来的图跟跟跟跟直方图均衡化的一个一个一个图，就是。啊它的一个整个的一个一个呃色调还有饱和度它并没有太大的一个改变但是它的一个一个亮度啊它对比度。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@25:00": {
+      "recording": "recColorMorph",
+      "start": "25:00",
+      "end": "25:27",
+      "excerpt": "一个一个范围就是更清晰，就是这个是是啊，hi，hsi 这个模型的话，就比比较有用的，就是啊在这个地方，就是它可以就是只调我们的一个一个 intensity，但是可以保持我们的一个一个一个色调不变。啊，当然我们也可以去稍微去改一下它的一个一个一个 situation，就比如说这里面的话，它可以稍稍微去压缩一点我们这个 situation 的一个一个就是范围，就是像像这样。像这个里面。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@25:29": {
+      "recording": "recColorMorph",
+      "start": "25:29",
+      "end": "26:44",
+      "excerpt": "然后就是在彩色图像里面，当然我们也可以做一些就是 smoothing 就是做做一些平滑的一个一个处理，平滑的一个处理，这一样的话，就这里面也是平滑处理，我们就比如这里面 c 啊，就是在不同通道里面，我们就取它的一个一个 average 就取它的一个一个一个 average 的一个一个效果，就比如说我们这里面的一个。啊，彩色图片它这里面的一个一个啊 RGB三个不同的一个一个通道，然后我们呃。对应的话就是这个是呃 q 就是 hsi 它的一个一个呃就是，就刚才这个 lina 这个这个呃这个图片嘛，就是它这个呃 hsi 就是这个 hsi 它 discovers intensity from color 就 suitable呃 for processing only the intensity components of the an image。然后我们可以去对比一下，就是说这里面的一个你可以去 average 就是 rgb 这三个通道，或者说我们就是 average 这个这个 intensity 在这里面的话就是其实在这里，因为有一些就 average 它并不一定是完全的一个一个等价，你可以看到对对比一下，就 average 就是 rgb 跟 average 这个 intensity 它有一个一个difference 这个有有，有有一个 difference 就是。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@26:44": {
+      "recording": "recColorMorph",
+      "start": "26:44",
+      "end": "27:40",
+      "excerpt": "呃，这个有时候好多时候就是，如果说呃做平滑的话，就是有时候呃你可能要要小心，一般来说就是在这个啊 SHI 就是最最在这个，你自己做做个平滑操操作的话，它不会改变它的一个一个颜色的一个一个范围，但是是取决。就是说我们取 average 就是它的一个就是领域的一个大小，一般来说领域越大，领域越大的话，就是它最后受受到的影响就会越大，这个就是一个一个就是就是在在在取这个 smoothing 的时候，就是要注意的一个地方。啊，同样的话就是我，咱这里也可以做一个呃 sharpening 就比如说取这个二阶的一个一个一个导数，取取呃拉布拉斯的一个一个算子，那也也可以就是我们对对 rgb 就是呃做，或者说就在啊 hsi里面做，就这里面也会有有一些不一样，这个跟跟前面的一个呃15点其实是呃一样的一个呃道理。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@27:40": {
+      "recording": "recColorMorph",
+      "start": "27:40",
+      "end": "28:36",
+      "excerpt": "然后另外一个就是在彩色图像里面，它的一个 noise 就是它的一个噪声，因为它在有时候是在不同的一个通道里面，就是它的噪声有时候会扩散，就是 the noise models discuss for grace rescue images are also applicable to color images however. Many applications a color channel may be more or less effective than the other channels 就比如说有些在彩色的一个这样模型里面，有些通道可能就比如说红色通道或者绿色通道、黄色通道，就是它这几个是呃通道，它对 noise 的一个敏感程度是不一样的。就 for instance using a red color filter 呃 in a ccd camera 呃 may affect a red component of the image 就是一般来说，信息哦，sensor are noiser at low levels of it。你们一起然后take a brief look of how noise carries over when committing from one color to the.",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@28:37": {
+      "recording": "recColorMorph",
+      "start": "28:37",
+      "end": "29:46",
+      "excerpt": "就比如说我们这里面的一个呃，就是呃，这个这个图像啊，就是说它是你对比的话，就是这个 RGB 这个黑白的一个一个一个就是呃三个不同独立的一个一个一个通道，然后跟我们合成的就是合成的一个一个彩色的一个一个一个图像。从这个图里面你可以可能可以感受到，就是说这个在在这个。呃，就是在这个黑白图像里面，就是它的noise，就是可能比比这个呃就是彩色的一个一个图像，就是呃更敏感。但是如果说我们把它就是换换算成就是H S I，你发现就是这边就特别明显，就是我们的一个noise，在我们这个呃就是。就是这里面，h 跟 s里面，就是它的一个一个一个噪声，就是对对这里面的一个一个啊这两个分量就是啊特别明显，就是 the human situation component are significantly degraded 就是它这里面的话，就是噪声有可能在在不同的一个通道里面，它会有不同的一个一个响应，就是 this is due to the non linearity of the cosine and mean operations used in the transformation.",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@29:46": {
+      "recording": "recColorMorph",
+      "start": "29:46",
+      "end": "30:59",
+      "excerpt": "然后这里面的 intensity component smoother due to averaging of the three noisy rgb的一个 component 就是我们可以发现就是如果说 rgb三个呃通道，它有它的一个噪声，就是它有它的一。噪声，但是我们在转化成H S I里面，就是这里面H跟S就是它的一个一个噪声会有一个放大的一个一个一个效果。但是我们在这个 intensity里面，因为它是个 average 的一个效果，就看起来好像噪声就是哦，没有那么大。然后就是呃，when only one channel is affected by noise conversion to exercise spread noise to all exercise component images 就是我们如果是即使是只有一个，只有一个一一个通道，比如 r 或者 g 或者 d 就是一个通道里面啊，被 noise污染的话，就是它会。会扩散到，就比如 ss，hsi里面这三个不同的一个一个通道，就类似就是 transformation the the makes use of all rgb component to compute each s i 的一个一个 component 就是说这个就是在在在呃彩色圈处理里面，就是我们如果说转换不同的一个一个颜色模型的话，它有可能就是只是在某一个通道里面的一个一个噪声，它会就是spread spread到不同的一个一个呃通道里面。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@31:02": {
+      "recording": "recColorMorph",
+      "start": "31:02",
+      "end": "31:45",
+      "excerpt": "对，这个大概就是彩色图像，就相对来说就是做一些一些比较概念性的一个一个一个东西，没没没有，就是太复杂，就是这个彩色模型，我们主要是还是认识到它的一个，就比如说一些基本的一些一些概念，就是亮度、色调，还有它的一个一个饱和度，然后不同的一个彩色的一个模型，然后我们后面有讲就是一些微彩色它图像，就是怎么去去做一些变化，然后。啊，彩色变化的话，就是我们做，讲一些补色啊，然后 color slicing 啊，tone 啊，或者 color 啊 correction，然后我们一些置换图的一个处理，然后后面的话就是在做平滑跟锐化的时候，就是要要注意到的一些一些点评。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@32:09": {
+      "recording": "recColorMorph",
+      "start": "32:09",
+      "end": "33:28",
+      "excerpt": "对，然后那个下面的话我们会直接就是看到就是这个形态学的一个图像处理，就是我们会讲那个形态学的一个图像处理，还有图像分割，然后我们会把图像压缩，就是放在最后节课，因为我们就是后面的一个一个一个project，往年来说就是好多人就是做做project的话，会你会用到一些就是形态学的一个图像处理，还有图像分割。然后就像压缩可能偏理论一点，就是呃用的稍微比较少。然后我这里面可能再稍微强调一下，就是呃我们就是我们后面的一些安排，是我们后面，我们之前讲，就是说我们的一个整个的一个呃课程啊，它的一个一个大概分数的一个设置是是是这样子。就是这个当然取决于你们最后考试的一个成绩啊，就是 the final final exam 跟跟这个 project。可能会有一些 balance，会会会有一些 balance，但是 final presentationation， final final presentation就是有个百分十五%，就百分之十五的一个一个一个呃分数。然后这个 quiz我们有呃会有三次。然后呃，然后这个 final final project，所以说我就是现在就大家一定要去想，就是该，呃，就是大概就是 final呃 project就是去去呃去找一个开源的一个一个一个代码。然后你可能就是你到时候每个人要都汇报，可能每个五分钟左右，五分钟。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@33:28": {
+      "recording": "recColorMorph",
+      "start": "33:28",
+      "end": "34:48",
+      "excerpt": "你要介绍，比如这里面的一个一个 introduction，就是你这个项目在在做什么，然后它的一个实现的功能，它用哪些，就是图像处理的一个就是技术，然后你是怎么实现，就大概就是这样子的一个一个形式。然后我看了这个效率啊，就是因为我们今天是20号，20号，然后27号，我们应该下个礼拜我们试试，没有上课。然后我是想我们大概从。十四周开始我们做做那个呃就是做呃final project的一个汇报然后我们大概。是，就是第十四周的一个呃，就是十一号我们会拿，就是两我们会在那个上机课的时候做做做那个汇报。就是大概就是呃十一十八，然后我们第第十六周可能那个理论课我们到时候取决看看做多少，我们理论课的话可以做呃一段时间呃来做汇报，然后我们还有一个quiz，还有一个quiz的话我们可能会会。啊，也会放在这边。但如果说我们做不完的话，我们可以就是七六周的话，反正有一个理论课，一个那个三级课，我们肯定就是能做完。所以说我们到时候我们是啊，就第十一周，第十一周就是十二、十二月十一号，你现在大概还有啊三个礼拜，三个礼拜这样时间，就是我们需要做一个课程的汇报。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@34:48": {
+      "recording": "recColorMorph",
+      "start": "34:48",
+      "end": "35:15",
+      "excerpt": "然后到时候我让宗教就是写一个那个就是做个online的一个一个呃表格然后大家先把那个题目写上去就是你要做的一个一个呃题目先写写上去然后你要确保就是你。做的东西跟别人家不会是重叠，就是这个。用完的话，好多人就是找找一些同样的一个一个 open source 的一个一个一个 project 的话，然后会跟其他人会重叠。这个到时候我们要要避免这种情况，你们一定要看，就其他人选的题目是什么，跟跟你这个有什么区别。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@35:16": {
+      "recording": "recColorMorph",
+      "start": "35:16",
+      "end": "35:59",
+      "excerpt": "然后大概就先到先得，就如果谁先填的话，先想好做什么东西的话，就是先到先得，就是先先先先填填上去，如果你想好了，就是可以。呃，先填上去。然后就是顺序的话，我估计我们就按照那个就是呃，就是汇报顺序的话，就就按照那个那个名单。一般来说就是从高年级到低年级，就是高年级的先，低年级的可能比较厚，我们就按照学号的顺序来来做。如果说有些人想要提前的话，你可以跟助教说一下，就可以可以把它排在想，不然的话我们就按默认的顺序，就是从从高年级到到到低年级的一个一个一个呃排序。可以吧，哎，大家这个有什么问题吗？就我们大概十一号十。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@36:00": {
+      "recording": "recColorMorph",
+      "start": "36:00",
+      "end": "37:08",
+      "excerpt": "一号三级课，呃，然后十八号的三级课，然后十六号的一个就理论课，你们可能也，啊，就是这两个，估计两百分钟可能做不完，就是会有一些时间会放到这个十六号，然后然后我们还有两个 quiz 还有两个 quiz 的话，就是我们大概四号四号有个 quiz 然后十六号会有个 quiz 然后我们还有两个 quiz 就是我们的。4号的这个 quiz 的话，就是大概就是我们从，就是从之前之前我们应该是是一个空间域的滤波，是后面半半截部分，然后再加频率的滤波，图像复原，彩彩色图像处理，这个大概是是这个4号 quiz 的一个内容。然后二十五号的话现在就是说最后几就是一个呃形态学图像处理图像分割然后图像压缩就这三部分我们会在呃就是最后一个礼拜最后一个礼拜就是呃会有个quiz就我们大大概最后后面是是这样安排。那有问题吗？Ok，没有问题。那大家后面的话就是，就大概是是这样安排。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@38:00": {
+      "recording": "recColorMorph",
+      "start": "38:00",
+      "end": "38:33",
+      "excerpt": "有些就是，反正好，我看这个其实很多人喜欢做，就是做一个啊，就是一个一个全景图的一个拼接，就相当于不同角度，不同角度的话，就是你你拍不同的一个一个一个角度的一个图片，然后再给它拼接成一个一个一个全景图。这这里面有很多不同算法，因为我每年都会听到。这样子的一个报告，然后怎么样去去找那个 anchor 的一个 point，反正每年都都有都有哦不一样的一个一个一个一个做法，这个应该领域里面有很多很多，呃，就是。用了不同的方法来来做这个整个的一个图像的一个一个呃拼接，那有一些。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@42:27": {
+      "recording": "recColorMorph",
+      "start": "42:27",
+      "end": "43:42",
+      "excerpt": "我们集合里面我们有有有两个基本的操作，一个就是一个 reflection，就是它做了一个镜像的一个变化，就镜像的变化，就比如说从从这个 b 到这个 b hat，就是这里面它有个一个镜像的变化。那另外一个就是平移，我们去去平移这样子的一个一个。啊，就是这个这个呃这个集合，就是我们可以去去平移的话，相当于就是这个 b 加 z，z 的话就是这里面那个平移的一个一个位置，就是这里面是是我们后面就是我们需要去去把。把这个我们的一个一个就是这样一个一个呃结构委员structure element给它平移在在我们图像里面去去做平移然后我们去判断就它属于哎这个图像或者说啊不属于这个图像。然后我们这里面第一个第一个要介绍的是一个，就是这个啊 structure element 就是这个结构元，就是啊 set reflection and translation are employed to呃 structure 的一个 element 就是我们对对一个啊它的一个一个，它的它的一个一个镜像，还或者说它的一个一个平移，我们是就是对这样子的一个一个呃结构元做平移，就是 such element are small sets or or some images 就是 used to examine the image under study of uh or properties of interest.",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@43:43": {
+      "recording": "recColorMorph",
+      "start": "43:43",
+      "end": "44:59",
+      "excerpt": "我们这里面的一个呃结构员啊就是他就是用用来去去呃跟我们的一个图呃感兴趣图像进行比较进行比较的话就是我们把一个感兴趣的一个feature给它提取出来这个的话就是呃跟跟我们之前讲的那个。kernel 就是我们就是卷积核啊，就是有点点不一样，就是有点点不一样，就是卷积核，我们一般来说就是做一个跟我们图像做个卷积，我们可以做个平滑的处理，我们也可以做一个锐化的一个处理。就比如说我们拉普拉斯的一个一个一个一个算子。但是我们这里面那个结构圆，它可以定义不同的一个形状，然后这个形状是可以根据我们的一个一个，就是我们感兴趣的一个一个一个结果，就这这个待后面会说，就是我们可以然后可以去去跟我们原始图像进行比较。然后我们可以保留就是保留一些呃特呃特殊的一个一个一个一个呃结构。然后这里面的一个一个就是这个 start element 就是它有一个一个 orange 就是它的一个一个呃就是中心啊，就需要需要来来定义，就是这个这个地方，它不一不一定不一定是在这个整个图像的一个中心，但是我们要定一个就是这个呃 orange 然后呃 zeros are appended to start element。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@45:00": {
+      "recording": "recColorMorph",
+      "start": "45:00",
+      "end": "46:21",
+      "excerpt": "And to given rectangular form 那有时候我们的话就是比如说这里面的一个结构元，我们会会在这附近给它，就是补个0，就是让它变成一个一个就是 rectangular 的一个一个长方形的一个 form 然后这里面 gray color representing one and white color 就是 zero 这个跟跟前面就不太一样，就是我们这里面的话，这个结构元这个这里面的话，这这啊。灰度的话就是一嘛然后这个白色就是呃就是零。然后就是呃这里面，the origin of the such element b 就 versus every pixel in an image a 就 if perform an operation between this element and and the pixels under it so it's then decided if the pixel will belong to the result result set or not based on the result of the operation 就我们这里面的话，就是我们要把，需要把这里面的一个结构元，它的一个中心点。中心点给它放在我们的这里面的一个图像里面就是每个。配置，每个配置我们都要放在图像里面，然后取决于就是我们定义的一些一些操作，我们需要决定，就是说当前这个像素是不是属于我们后面的一个就是这个是这个操作之后的一个一个一个results里面，就是我们要要要判断每个每个参数是不是符合。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@46:21": {
+      "recording": "recColorMorph",
+      "start": "46:21",
+      "end": "46:48",
+      "excerpt": "然后就pad is necessary to ensure that all of element就是A R propose. 这个就是一个呃，就是一个一个呃形态学处理，就是它的一个一个基本的一个一个东西。就是我们需要一个结构源，然后结构源的话，我们需要跟原始的图像进行比较，进行比较，然后我们这里面呃比较的有一些呃准则来来确定，就是当前的这个像素是不是属于我们呃结果的一个一个一部分。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@58:12": {
+      "recording": "recColorMorph",
+      "start": "58:12",
+      "end": "59:05",
+      "excerpt": "对，就是我们刚才那个定义的这个呃 erosion 就是这个呃腐蚀啊，就腐蚀它的一个定义，就是我们去移动这样子的一个一个刷，呃，刷刷里面的这个 b 就是，然后要确保就是这个刷刷里面的 b 就是全部都是被被呃就是被 a 给给包含，就是然后我们这里面所有的移动那个 z 啊，实际上就实际上就是它的一个呃所有的点，就是这个 z 就构成了我们整个呃就是呃。组织的一个结果就是，the results set of all points z such that b translate by z is contained in a 然后这里面当然有一个就是等价，如果是取反的话，相当于就是说你就那个 b，b 跟 a，a c 就是 a 的一个补集，它是交集是是空集，因为这个比较绕，但是如果说我们直接。通过这个的话，就是比较清楚，就是我们后面可能从图里面来看更清楚。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@59:05": {
+      "recording": "recColorMorph",
+      "start": "59:05",
+      "end": "01:00:23",
+      "excerpt": "就同样的话，就是我们这张图片，就是 a a 的话，就是我们被这个 b50，然后我们就把这个，就是给它放在这里面，a 上的这里面每个点每个点，然后你会发现，如果说我们把这个就假设说把这个中心放在这个点。这里面这个 b 啊，就没有被 a 完全的包含，就是有一部分是在这个外面，所以说它这个点就不满足不满足，它只有就比如说它就放在这里，哎，这里的话，它才满足，就是满足刚才就是 b 完全被 a 所包含，就是他最后剩下的剩下优选的一个一个结果。就是中间的，就是就是你可以看这个图，它就就是存在中间的这些点。这个是它的一个一个呃 erosion 的一个结果，所以 erosion 它是一个呃 shrinking 的一个一个一个呃 operation 这个我们今天考试的时候也会这么考，就是我们会拿一个图。哪一个图的话，就是让你们来画，就是一张图它的呃它经过辅助完之后是什么样子，或者它经过膨胀完之后，它应该是是呃是什么样子。然后同样的话就是 erosion 我们的话就是对呃不同的一个结构源，同样的话就是这个 a 呀，对不同结构的 b 就是这个结构是是一个比较小的这样的一个呃斑型的，还有这个结构是一个比较长条的，然。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:07": {
+      "recording": "recColorMorph",
+      "start": "01:07",
+      "end": "02:20",
+      "excerpt": "那后我们把我们的这个呃，gre scale image给它印象到这个彩色里面，你就可以看到就是原来，哎我们比如说很难看清楚的，就比如说这里面很难看清楚一些灰度的一个一个差别，我们在这个微彩色里面，就是我们可以非常清楚的，就是区别出来，就是不同的一个一个呃强度的一个变化，这个也是微彩色非常非常重要的一个呃用途，就是我们。轮眼对我们的一个一个，就是灰度的一个感知能力，它只有就几十种，就几十种。但是我们对颜色的一个辨别能力，它有有上上千种，就是这个通过这样子的一个映射变化，可以让我们更好的感知它的一个灰度的一个变化。同样的话，就是就比如说我们这里面是做了一个一个应该是一个焊接的一个一个就是一个一个。这个缺陷嘛就缺陷的话同样的话就是他把这里面的一个比如这里面。亮度非常亮，非常亮，但是又又呃又又靠近过曝的那些点，他直接把这个255就是变成呃就是一种颜色，然后其他的变成另外一种颜色，就是这个就是一眼就看出来我们就是这里面的一个一个呃过曝的一个点，就是或者说他这个有有有更性的点，是是在呃哪个位置？",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@04:00": {
+      "recording": "recColorMorph",
+      "start": "04:00",
+      "end": "04:55",
+      "excerpt": "我们可以把它就是用用这样子的一个一个 sign 的一个一个这样子的一个一个映射的一个一个条件，我们会对 rgb三个，就三个通道，我们三个通道我们可以稍微用不太一样的一个一个映射的一个函数，然后我们这个地方可以去移动，就是可以去移动这样子的一个 sign 的一个相位，可以前后移动。一般来说就是。如果说在在这个，比如说在在这个 value 这个位置，就是它有一个一个明明显的一个一个就是它这个这个强度啊，就强度跟跟跟这个一个明显的一个变化，一个明显的变化来来说，就是这这个地方它的一个颜色变化会非常明显。我们可以通过去去移动，就是可以可以去移动这样子的一个 rgb 这三个就是这个 transformation 的一个一个 function 的话，我们可以去控制，就是说我们黑白的一个图片，它生成不一样的一个。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@07:21": {
+      "recording": "recColorMorph",
+      "start": "07:21",
+      "end": "08:22",
+      "excerpt": "另外一个就是那估计是一些可见光的一个一个一个一个波段，像这这里面的话应该是一个。呃。这里面应该是一个一个非可见光的一个一个波段，就它也是通过啊不同通道它的一个数据的一个一个采集，然后它去合成，比如说这里面的一个呃，这是应该是一个木星的一个卫星啊，就是它上面的一个一个呃这个形状。那这个就完全跟跟我们可见光就是不相关的，就是它可能表征的是一些某些一个一个化学的一个一个一个呃反应，它可以呃根据我们的一个意愿去去合成这样子的一个一个呃微彩色的一个一个图片。所以说这里面就是呃微彩色啊，就跟前面讲，就是说它不只是就。就是说可以把把我们的一个一个对对，就是对对强度的一个信息，把它转化为一个颜色，但是它也可以把不同的一个通道的一个信息，给它合成一个，就是有些表示是至少是一个对人眼来说是一个 meaningful 的一个一个一个图片。这也是根据一个实际的一个一个呃需要。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@08:23": {
+      "recording": "recColorMorph",
+      "start": "08:23",
+      "end": "09:25",
+      "excerpt": "然后我们后面呃会讲一下，就是一些基本的一个彩色的一个一个呃图像处理，就是我们都知道，就是我们的一个彩色的一个图像来说，如果说在呃 rgb 的一个一个呃模型里面，就是我们有三个不同的一个通道，就是说它有一个呃 rgb 就三个不同的一个一个呃通道，就是我们不像这个灰度图啊，就是灰度图的话，我们只要，哎，只要。对对一个通道就是只要对它的一个一个灰度一个通道做处理但是我们在这个彩色的一个图像模型里面我们需要对三个通道就是就需要对这三个通道哦。分别的就是进行呃进行一个呃处理，就比如说我们这里面的，像传统的，就传统的一个一个，我们前面讲的一个呃就是呃呃就是前面讲，比如说实域里面，呃，就是就就是呃图像域里面，就图像域里面我们就做一些映射，就一些像素的一个映射，我们直接 t 哎，我们直接 t 直接作用在这样子的一个一个灰度的一个一个 fxy 上面。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@09:25": {
+      "recording": "recColorMorph",
+      "start": "09:25",
+      "end": "09:56",
+      "excerpt": "但是我们现在就是彩色的一个图像，我们会发现这个 ti，这个 i 就是表示我们的有多少种不同的一个通道，比如说 rgb 的话，这个 i 就是3，然后它会对应不同的 r1 r2就是一直到 ri，就是这几个不同的一个通道，我们需要去设计一个映射函数，就是来来表示，最后最后最后最后得到这个这个图片，就是相当于就是我们对对这几个不同通道它的一个一个映射的一个一个就是结果，就是说是我们这里面的话就是。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@09:57": {
+      "recording": "recColorMorph",
+      "start": "09:57",
+      "end": "11:06",
+      "excerpt": "哦，去去做哦，图像的一个就是彩色图像的一个处理的时候，就我们一般来说我们要要要要对哦定义不同的一个通道，它的一个映射的一个一个函数是是怎么。呃，那这里面就举了一个呃例子，就是比如说我们这里面是一个呃传统的一个一个彩色的一个一个呃图像。那我们也可以把这个彩色图像啊，就是给它分解到不同的一个分量。就比如说我们这下面的话就是呃C M Y K就是这样子的一个图像，然后或者说是一个R G B就R Gb这样的图像，我们也可以呃把它就是呃分解到就是呃H S I就是 H S I这样子的一个一个图像。我们前面讲，就是说啊 HSI 这样子的一个一个啊图像啊，因为这里面的，特别是这里面的秀，就是这里面的一个一个色调，它对应的是一个一个啊角度，它对应的是一个一个一个角度。那一般来说，如果说你在0跟360度之间的话，就是它会有一个不连续，就不像这里面的一个 RGB 整张图片看起来就比较连续，但是这个秀啊，就是它就。就是因为它是一个一个，有时候是0跟360度之间，它就会有一些不连续的一个一个作用。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@11:06": {
+      "recording": "recColorMorph",
+      "start": "11:06",
+      "end": "12:18",
+      "excerpt": "而另外一个就是这个 saturation，就这里面的一个一个饱和度，就饱和度我们之前讲的，就是说它是一个一个，就是在在 hsi 模型里面，就是它的一个一个，就是它的那个离中心轴的一个距离啊，就是它那个半径。但如果说，是我们这个饱和度是0，就饱和度是0的话，我们就没办法定义这里面的一个一个。哦，hue 就是色调，你就不知道是是多少度，就是这个是是，哦，就是 hsi 就是哦跟跟跟前面的这个 rgb会这样不一样的一个地方，后面的 intensity 就是表示它的一个一个呃光强的一个，就是强度的一个一个呃信息。那很简单如果说就是说呃我们想要想要假假如就彩色图像里面我们想要对这张图片哎我们想要改变它的一个亮度就是改变它的一个一个一个亮度的话就传统的话就是改改变去去改变亮度的话我。我们只要做一个强度的一个变化的一个一个函数，但是你可以看到，就是在这个彩色图像模型里面，我们需要做三次，做三次这个 rgb，就是做三三个这个 rgb，这个就是你要分别做，就是分别做它的一个一个一个一个映射的一个一个函数。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@12:18": {
+      "recording": "recColorMorph",
+      "start": "12:18",
+      "end": "13:13",
+      "excerpt": "那如果说，就是我们在 hsi 这个模型里面，hsi 这个模型里面。它就相对比较简单，你可以看到就是它 h 我们如果说只改变只改变我们的一个一个一个亮度的话，就是它里面这个 hue 跟 saturation 就是它那个色调跟饱和度，它就是不变，就是就是这里面就是就是一个一个一个一一，就是这，反正就是保存呢不变。我们只要去去 modify 我们只要去 modify 这个 i 这样子的一个一个一个分量就就可以。这个就是说我们在在，如果说去只是去改变我们一个一张图像的一个一个亮度的时候，就是在 HSI 模型里面就显然就更。简单因为我们只要去去呃改变就是这里面的一个一个 intensity 这个 channel 然后我们这个 H 跟 S 就是它就保持不变就原来是什么样子就就是什么样子我们就可以对对我们的一个整张图片啊做一个呃处理。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@15:32": {
+      "recording": "recColorMorph",
+      "start": "15:32",
+      "end": "16:27",
+      "excerpt": "所以就非常清晰，就是非常非常清晰，就是哦补色的话，就是在 rgb 这个通道里面，就是非常非常清晰它是怎么定义，但是你看看，就是一张图片它的补色，你去定义，就是在 hsi 这个模型里面。我们可以看到，就是这个 h 它也是一个哦，因为它是个 q 是一个一个一个角度，它就是哦，它并不是，它是这样子，然后再。在这样子就是因为他是一个一个一个角度的一个一个。一个映射关系，并不像就是这个RGB这个通道里，直接就是一个一减去这个R，或者一减去G，一减去B，就一下就就完了。然后这里面补色在H3这个模型里面，你就发现它的一个一个映射的一个函数就是不太一样，特别是比如说这个S，它就没有任何的一个一个一个变化。然后这个I，I是一减去I，但是这个H就是它的跟跟跟跟跟我们传统想的那个取反是啊，有点点就是不太一样，不太一样。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:00:24": {
+      "recording": "recColorMorph",
+      "start": "01:00:24",
+      "end": "01:01:26",
+      "excerpt": "然后我们可以去做做 erosion 的话，就是它最后的一个结果，它就是变小了变小了。然后你可以看到，就是如果说是一个长条的，这样非常长条的这样子的一个一个线，然后做 erosion 的话，它最后只剩下中间中间这条线，就只剩下中间这条线，就是它一定我们要去移动我们的一个一个，就是这个结构元，让它完全被包含在这个 b里面。然后这个lotion的话它就是有有好多操作就比如说我们啊这里面的一个一个呃电路图电路图的话我们可以根据我们选不同的这个啊。结构源的一个一个大小，然后我们可以就是 erosion，就 erosion 的话，就是比如说我们的结构源选11×11、15×15、45×15，就我们可以把一些比比较小的一个 feature 就给它去掉，给它去掉，直接就是给它去掉。这个在我们的原来的做做做频域啊，或者说做做做图像域里面的一个一个处理，我们这个就没办法做到这一点，就是我们就是用低通啊，或者说什么，我们没办法把这个结构源就是。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:01:26": {
+      "recording": "recColorMorph",
+      "start": "01:01:26",
+      "end": "01:02:20",
+      "excerpt": "这个细小的一个feature给它啊去掉，但是我们在在形态学处理里面，我们就可以直接定义，直接定义这样子的一个一个结构元的一个一个大小，然后我们可以根据我们的一个需要，就是我们去去把一些比较小的一些些feature就是给它通过，就是这样子一个一个柔选的一个操作，就是给给它直接给给它去掉，这个就是跟跟跟我们之前讲的就是那个呃就是去设计一个滤波器啊，然后去去去滤波啊，就是。因为这个没办法就是这个根本并不是直接一个滤波器的一个范畴就是说它它是跟它的一个结构的一个大小是是有呃是有关系。然后这个 illusion，它可以就比如说我们这两个物体，可能将将好挨在一起，就挨在一起的话，它通过 illusion 的话可以把把这两个物体给它分开。然后像这个凸起的这个部分，哎，我通过 illusion 就是可以把这个凸起的这样子一部分给它就是去掉，就是这个是是illusion 的一个一个操作。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:03:15": {
+      "recording": "recColorMorph",
+      "start": "01:03:15",
+      "end": "01:04:16",
+      "excerpt": "我可能通通过图来来看，就是更更清晰一点，就是同样的话，就是我们这里面的一个一个原始的这个图，然后我们有一个，sh sharp element b 就是一个是一个是这个就是小这个方形，一个是这个长条的这样子的一个一个一个矩形。然后我们去做做这样子的一个一个 dilation dilation 的话就是我们，你可以看到，就是说，当然中间的部分它都保留了。然后我们这是结构源啊，就是这个 origin 可以看到这个外面边缘一点点，它只要保证有 b 跟 a有 overlap，就是它这里面的参数都都都算进去。就是你可以看到，就是这个 a 被 b 这个做做膨胀完之后，它整体的一个一个一个。不像就。会变大，比原来就是更大。同样的话就是呃这个被这个金，就是做做一个呃膨胀操作完之后，就是它的整个图片会比原来的这个这个就是这个虚线的图片要大，这个就是一个膨胀的一个一个一个呃操作。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:04:16": {
+      "recording": "recColorMorph",
+      "start": "01:04:16",
+      "end": "01:04:38",
+      "excerpt": "那在这个 direction 的话，它有个就是它可以呃 bridge 呃 gaps。就是它可以，比如说我们这里面的一个一个 gap，它可以可以通过 dilation 的一个操作给它，就是连接起来。然后不像我们的一个一个，就比如说做做低通的一个滤波的话，就我们如果说去 bring gap，就就滤波的话，就整张图片会变变得模糊。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:04:39": {
+      "recording": "recColorMorph",
+      "start": "01:04:39",
+      "end": "01:05:15",
+      "excerpt": "那这里面的话，直接做做 dilation 的话，这些直接膨胀的话，会把这些一些，就比如说一些不连续的一个地方，就给它做做一个连接。然后呃 deletion 的话就是呃它有几个几个作用，就比如说它给呃 repair 呃 breaks，就是这这里面的一个一个一个断裂点，它可以 repair，然后呃 deletion 可以 repair。在呃 inclusions 就是我们这里面，比如说一个内凹的一些一些一些 feature，就是它它可以把它就是填充，给他给他呃给他填充，但是就是 dilation 它会就是让我们的一个一个一个呃物体呃变大。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:05:16": {
+      "recording": "recColorMorph",
+      "start": "01:05:16",
+      "end": "01:05:59",
+      "excerpt": "然后我们接下来的一个讲的一个操作，就是一个一个啊 compound 的一个一个 operation，就是我们知道就是啊 erosion 它可以把我们的一个一个啊物体变小， dilation 就可以把我们的一个一个物体变大。当然我们就是好多时候我们并不想让它，就是呃我们的物体就是通过 erosion 和 dilation 就是变大或者变小。这样的话就是我们可以做一个 compound 的一个一个 operation，就是一个组合的一个操作，就是。More interesting morphological operations can be performed by combining erosions and dilations in order to reduce shrinking or thickening 就是我们可以做做，就是先膨胀再腐蚀，或者说先腐蚀再膨胀的话，就是这里面就是我们做的一个一个opening跟跟。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:06:50": {
+      "recording": "recColorMorph",
+      "start": "01:06:50",
+      "end": "01:08:18",
+      "excerpt": "boundary有可能就是比较老，但是它整体的一个感觉就是说我们把我们的一个 start element，就比如说我们这里面 AA 被这个 b。做了一个opening的一个操作，做了opening操作。那最后结果是什么呢？我们就把这个searchelement的b放在这个a的内部，放在a的一个一个内部，然后看b能抵达到最远的一个距离是什么。就比如说我们这里面啊，像这这三个corner嘛，这三个corner因为它这个searchelement有一定的一个大小，你会发现它这个这几个corner它到不了，它到不了，它就会在在这几个corner就就就消失掉，就是。它是定义了一个 b 能在 a 的内部能达到最大的一个一个范围是是多少？这里面的话，它的定义你可以看，就是它是取了一个并集，取一个并集的话，然后这个 b 啊，就是它在那个平移，平移的话，它平移到所有平移的话属于就是 a 的一个子集的话，它把所有这些东西都都给它并起来。那就取了这个这样子 opening 走，就 opening 的话就从内部，就是内部，哦哦，内部去去移动我们这个结构源，然后看它能达到的最远的一个一个一个距离，这个是。是从呃就是几何上来说更更容易理解，然后 closing closing 就是反过来它是先呃就先膨胀再腐蚀，就是它是一个呃 which is dilation of呃 a by b follow by an erosion of the呃 result by b.",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:09:25": {
+      "recording": "recColorMorph",
+      "start": "01:09:25",
+      "end": "01:09:59",
+      "excerpt": "它只是在这些弯角的这个地方，就比如说这个呃 closing 呃，是在这个内凹的这个这个地方，就是给它呃给它平滑，然后 opening 的话就是像这，往从里面往外走嘛，就是这些往外凸的这样子的一个一个区域会被它就是抑制掉。然后我们这里面就是呃专门给了一个例子就是说呃比较一下就是这里面的几个不同的一个操作它的一个结果然后的话我们就是选了这样子的一个啊原始图像A然后我们就比如说我们就做illusion的话就是Aillusion.",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:10:00": {
+      "recording": "recColorMorph",
+      "start": "01:10:00",
+      "end": "01:11:18",
+      "excerpt": "一的话，像比如说这这里面这个比较细的、比较细的部分就给它腐蚀掉，就给它腐蚀掉，就是它就变成呃这样子。然后如果说我们去做这个呃就是opening，就是在腐蚀完之后再膨胀，腐蚀完再膨胀的话，就是你可以看到，就是从内部从内部往外去推的话，这样就是它这个这几个corner往外突的corner都会被呃被平滑掉，被被平滑掉。然后像这个地方它到不了，就是这个地方到到不了，它就就是都没有。那它整体的一个形状，就整体的一个大小，跟跟跟原始的一个大小是是比较一致的。同样的话，就是 dilation 就是这个 inward instructions are reduced in depth 就是这个内凹的，就是这样子的一个一个instruction 就是它它好多就是就是就被抑制掉了。然后我们这里面的一个一个，也可以做做 closing，就是我们这个 dilation 完之后再。再就rotation，就短，然后之后哦，再就rotation的话，就是你可以看到，就比如说在这里面，在在这个。球它是到不了这里面，就这个地方它就是被被啊被平滑掉，就是被被平滑掉，也就是这整个就是 opening 跟跟这个呃就是 closing 就是它的一个一个作用，然后它这个有一些就是性质，就是呃我们会发现就 opening 的话就是。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:22:31": {
+      "recording": "recColorMorph",
+      "start": "01:22:31",
+      "end": "01:23:18",
+      "excerpt": "对，然后这个是一些基本的一些一些呃形态学的一个一个一个呃操作，然后我们当然就是后面有些应用，就是一个一个呃，就是 this morphology operations，呃，we may select image component for for shape 的一个一个 representation 这里面有有一些就是应用，就是比如说包括一个去提取出它的一个边界，就是去提取一个一个图像的一个边界。然后怎么样去做一个region的一个filling，然后去找到一个联通的一个分量。然后这里面有些complex，然后或者shape cleaning and figuring，就是把它变细变粗，然后去提取，就是它的一个骨架的一个结构，我们这里面都都可以通过我们形态学的一个处理来操作，我们后面可能就是一个一个来来讲，就是。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@01:32:17": {
+      "recording": "recColorMorph",
+      "start": "01:32:17",
+      "end": "01:33:46",
+      "excerpt": "对，然后就是呃另外一个就是去去找他的一个一个呃 convex hole 就是 convex hole 就是去找一个结构，它的一个凸壳，就是它的一个凸壳，就是啊这里面有对 convex 它有个定义，就是呃 set a is convex if the straight line segment joins any two point in a lies entirely within a. 就如果说一个一个一个结构，它是一个一个凸形的话，就是你在这里面的话，a里面任意两个点，任意两个点相连，就是你取一条直线的话，就是它都落在这个 a里面，就是它完全包包在 a里面。这个是它的一个一个凸壳的一个一个定义。然后 the maximum whole a. Of an arbitrary set s is the smallest convex that containing s 就是我们去找一个啊，比如说 s 就它的一个一个一个呃 convex hole 就是它的一个一个took 的话，就是它是去找它的一个最小的这样子的一个一个一个形状，能包含这个 s 然后应该确保这个是一个一个一个一个呃 convex 的一个一个形状。我们这里面有个它定义的话呢，difference 就 difference 就是这个 h 跟 s之间的一个一个啊差值，它是啊叫做一个 convex 的一个 efficiency 就是它的一个缺陷就是跟跟跟跟 communism 我觉得差了多少，然后 communism 和 communism 啊 deficiencies are useful uh quantities to characterize the changes.",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@37:09": {
+      "recording": "recColorMorph",
+      "start": "37:09",
+      "end": "37:59",
+      "excerpt": "Anyway，就是其实对，这个我可能再稍微稍微展示一下，就是之前学生他做的一些一些一些一些project，其实你去网上去搜啊，特别是image processing的一个project，其实非常多，可以可以可以非常多。就是，反正就就举一些例子，就是原来的有些同学，就是就比如说就做一些。哦，原来是在疫情的时候，哎，他做一些口罩的一些一些，就是筛查，他去应该是去分割他这个这个人的一个一个，有没有戴口罩，就是有还是没戴口罩，他就做一个自动的一个一个图像的一个一个识别。那有些人就是做了一些美颜的一个一个一个一个图像，反正也是做了一个一个 app 的一个这样子的一个一个 gui 这个就相对来说就比较简单。那。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@38:37": {
+      "recording": "recColorMorph",
+      "start": "38:37",
+      "end": "39:14",
+      "excerpt": "在这个应该是一个比较。就是它它就是一个彩色，看出就是看色盲，就是相当于就是呃就是色盲他看到的一个一个一个世界是是什么样的，反正就是他就是，就比如说这个这个呃 fruit 这个图片，然后不同的一个一个色盲他看到的一个一个一个呃图片是什么样的，反正就是很简单，但是就是感觉。呃，就是比较有意思，或者说你可以直接呃感受到就是不同的一个一个色盲，他能看到的一个一个呃就是世界是呃是什么样子。对， anyway，反正我就是在稍微稍微强调一下这个。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@39:14": {
+      "recording": "recColorMorph",
+      "start": "39:14",
+      "end": "40:32",
+      "excerpt": "然后呃就我们呃今天要要讲的是一个一个呃就是 logical 的一个 image processing 就是一个形态学的一个呃图像处理，就是呃形态学图像处理就是呃它这里面呃就是它的一个一个用处啊，就是说它是基于我们的一个一个形态形态学的一个一个呃就是我们会会定义一个 structure m 就是一个一个结构元，然后这个 structure m 的你可以有不同的一个形状，可以有不同的一个一个形状。然后我们可以跟我们的一个原始图片进行比较，进行比较，我们可以去提取某些特定的一个一个形状，或者说去填充某些特定的一个孔洞，就比如说我们这里面有它可以 remove 啊 isolate foreground 的一个一个呃 steps 就是我们。就你可以去去，比如说去去去除一些散立的一个一个一个一个 pattern 就散立的一个 pattern 这个如果说去去除一些散立的一个 pattern 的话，我们如当然我们可以像像之前的，我们在在频域或者空间域里面就处理，我们做平滑，做平滑的话，但是做平滑的话，就是你们也知道，做平滑的话，它还会有一个 blurry 的一个一个一个 effect 是我们。很难就通过频率或者说通通过空间域的一个一个干处理里面，就可以完全就是把一些一些微小的一个细节给它就去掉了。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@40:33": {
+      "recording": "recColorMorph",
+      "start": "40:33",
+      "end": "41:35",
+      "excerpt": "我们这里面就形态学处理它的一个好处就是它可以根据我们定义的一个一个这个形状的一个大小，给我们去提取出它不同的一个一个特征。比如说它可以 reconnect 就是这个 broken 的一个 strokes without merging nearby 的一个 objects 这个跟跟频率的一个处理就非常不一样，就是它可以通过就是这个形态学的一个一个一个处理，但是其实一般来说就是一些一些。就是集合集合的一个处理，就是我们可以就是根据它特定的一个形状，就是我们去，比如说形状大于多少，小于多少，我们就可以把它排除掉。然后它可以 fill an unwanted holes while preserving a meaningful 的一个一个 structure，就是比如说一些细小的一个孔洞，哎，它我们可以去去做一个填充，做个填充。这个就是取决于，就是说我们不同的一个一个一个就是需求，就是我们对对这个不同需求，我们可以选择不同的一个一个 such element 来来实现我们的一个目的。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@41:36": {
+      "recording": "recColorMorph",
+      "start": "41:36",
+      "end": "42:27",
+      "excerpt": "好，这里面有一些就是呃就是 basic 的一个一个呃就是知识点吧，就是我们我们知道我们集合啊，就是就比如说我们呃高中里面学的集合，就是就不同的一个一个一个图像，它的一个一个集合，比如说并集啊、交集啊、差集啊、补集啊，这个应该比较简单的一个理解，但在图像处理里面，就是我们也有一些并集、交集。级，或者说就是这里面我们的话，就比如说我们这里面并集，哎，它取取这里面的一个最大值，就是取取，不，aa 跟 b 它它并集，它是取就是 a 跟 b里面比较大的一个数值，然后就是这个交集的话，a交 b 就是它取这个 a跟 b里面，就是这个。比较小的一个一个一个数字，然后这里面的一个就是集合的一个操作。",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@46:49": {
+      "recording": "recColorMorph",
+      "start": "46:49",
+      "end": "47:24",
+      "excerpt": "然后我们呃刚开前面会讲几个呃就是四个呃基本的一个一个形态学处理的一个操作就是我们这里面的一个 erosion dilation open. 跟跟 closing 就是我们的腐蚀膨胀，然后这个是啊开操作，还有 b 操作，然后我们这里面会有一些啊 application 就是呃基于基于这样子的一个一个一个形态学的一个一个处理，我们会有一些啊这样一个操作。然后这里面第一个第一个就是一个 erosion 就是腐蚀腐蚀这 erosion of set a啊，说是啊 b is defined as.",
+      "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
+    },
+    "recColorMorph@47:24": {
+      "recording": "recColorMorph",
+      "start": "47:24",
+      "end": "48:11",
+      "excerpt": "你就可以看，就是我们这里面 b 这个 z 啊，我们去移动这个 structure element 然后这个去移动化，你无论怎么移动，就是它这个要属于 a 就是 a 的一部分，这个就是说我们去移动这个 b 要属于这个 a 的一部分。 a resolve the set of all points z such that b translate by z is contained in a 这个是是一个一个 erosion 的一个一个一个一个，我们先先先下个。他这边成功的是启动的。哎。我只能希望你快去。啊，风险。他的国家是一个人。",
       "excerptKind": "对应教师段落的自动转写；未取得原始音频核验"
     }
   }

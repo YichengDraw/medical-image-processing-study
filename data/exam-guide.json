@@ -30,16 +30,22 @@
       "id": "assessment",
       "category": "arrangement",
       "title": "成绩结构：考试、Quiz 与项目各占多少",
-      "body": "课件 Assessment 页列出：Attendance 5%，Quiz 10%，Projects 30%，Final Exam 40%，Final Presentation 15%。这只是成绩构成，不代表每一种题型的分值。来源是 Lecture 1 PDF 第9页；不要把项目30%与展示15%合并后误认为只交一份代码即可。",
+      "body": "课件列出Attendance 5%、Quiz 10%、Projects 30%（Lab1–Lab9）、Final Exam 40%、Final Presentation 15%。11月20日老师再次明确Final Presentation占15%，并提到期末考试与项目比例可能视成绩作平衡，但没有给出新比例；网站保留课件原比例。项目30%与展示15%是两个评分项。",
       "anchors": [
         {
           "deck": "lec1",
           "page": 9
+        },
+        {
+          "deck": "lec8",
+          "page": 1
         }
       ],
-      "status": null,
-      "sourceIds": [],
-      "sourceType": "课件原文"
+      "status": "课件比例；未发布调整后的新比例",
+      "sourceIds": [
+        "recColorMorph@32:09"
+      ],
+      "sourceType": "录音+课件"
     },
     {
       "id": "exam-concepts",
@@ -1019,32 +1025,45 @@
       "id": "project-outline",
       "category": "arrangement",
       "title": "Final project 应展示哪些内容",
-      "body": "Lecture 1第10页列出Introduction、软件功能、涉及的图像处理技术、实现细节和Summary。最终展示应让人看懂任务、方法、效果与局限，不只是播放一个GUI。评分细则以教师正式发布为准。",
+      "body": "Lec8第2页再次列出五项：Introduction、软件功能、用到的图像处理技术、技术实现细节和Summary。11月20日33:28老师要求说明项目在做什么、实现什么功能、用了什么技术、如何实现。例：全景拼接应说明怎样找匹配点、对齐和合成，并展示结果，而不只播放GUI。",
       "anchors": [
         {
           "deck": "lec1",
           "page": 10
+        },
+        {
+          "deck": "lec8",
+          "page": 2
         }
       ],
-      "status": null,
-      "sourceIds": [],
-      "sourceType": "课件原文"
+      "status": "11月20日再次说明",
+      "sourceIds": [
+        "recColorMorph@33:28",
+        "recColorMorph@38:00"
+      ],
+      "sourceType": "录音+课件"
     },
     {
       "id": "project-open-source",
       "category": "arrangement",
       "title": "可以从开源项目修改，但要理解并说明自己的改动",
-      "body": "早期及后续录音都允许从开源代码起步，不要求完全从零写。需读懂功能和图像处理过程，并做适当修改。引用原项目、区分原作者工作与自己新增部分，不能把直接复制当原创。",
+      "body": "早期及后续录音都允许从开源代码起步，不要求完全从零写；11月20日再次建议现在就寻找开源项目。需读懂功能和图像处理过程，说明自己的修改，并避免和已登记同学重复选题。原项目与自己的新增部分应清楚区分。",
       "anchors": [
         {
           "deck": "lec1",
           "page": 10
+        },
+        {
+          "deck": "lec8",
+          "page": 2
         }
       ],
       "status": null,
       "sourceIds": [
         "rec0911@42:32",
-        "recFreq@05:24"
+        "recFreq@05:24",
+        "recColorMorph@32:09",
+        "recColorMorph@34:48"
       ],
       "sourceType": "录音+课件"
     },
@@ -1088,15 +1107,15 @@
     {
       "id": "remaining-quizzes",
       "category": "arrangement",
-      "title": "后两次Quiz：暂计划第13、16周",
-      "body": "频域滤波课开头说还有两次Quiz，可能安排在第13周和第16周。这是当时的口头计划，不是已核实的最终日程；应以助教/Blackboard后续通知为准。",
+      "title": "历史计划：后两次Quiz曾暂定第13、16周",
+      "body": "频域滤波课开头曾暂定后两次Quiz在第13、16周。11月20日已经补充下一次与最后一周Quiz的内容范围，见“明确考核要求”；这条仅保留早期计划来源，不作为当前最终课表。",
       "anchors": [
         {
           "deck": "lec4p2",
           "page": 1
         }
       ],
-      "status": "暂定安排",
+      "status": "历史口头计划；已有后续范围说明",
       "sourceIds": [
         "recFreq@04:18"
       ],
@@ -1122,17 +1141,20 @@
     {
       "id": "presentation-time",
       "category": "arrangement",
-      "title": "每人约5分钟；展示周次仍有弹性",
-      "body": "较后的录音说final presentation每人约5分钟，估计安排第14、15周，必要时第16周Quiz后补充。早期开场说法较宽泛，优先注意后续正式通知，不能把早期6–7分钟估计当作最终规则。",
+      "title": "Final Presentation：每人约5分钟，12月11日、18日开始展示",
+      "body": "11月20日老师再次说每人约5分钟，计划从12月11日、18日的上机课安排汇报；若未完成，最后一周再用理论或上机时间补充。默认按名单/学号由高年级到低年级，想提前可联系助教。转写将最后一周的周次与日期混说，因此这里只保留明确说出的11日、18日及补充安排。",
       "anchors": [
         {
-          "deck": "lec1",
-          "page": 10
+          "deck": "lec8",
+          "page": 2
         }
       ],
-      "status": "暂定安排",
+      "status": "11月20日口头安排，具体名单由助教发布",
       "sourceIds": [
-        "recFreq@05:24"
+        "recColorMorph@32:09",
+        "recColorMorph@33:28",
+        "recColorMorph@35:16",
+        "recColorMorph@36:00"
       ],
       "sourceType": "录音+课件"
     },
@@ -1815,17 +1837,19 @@
     {
       "id": "color-later-not-yet",
       "category": "scope",
-      "title": "尚未讲，不等于不考：Lec6 P43–83留待后续",
-      "body": "本次录音讲到第42页HSI/RGB示例，01:50:24明确说下一次讲伪彩色与彩色图像处理。故第43–83页目前只提供PPT，不为未讲内容补上教师重点。这是录音覆盖边界，绝不能与CT那段明确“不考”的说明混淆。",
+      "title": "覆盖已更新：Lec6 P43–83已由11月20日录音补齐",
+      "body": "前次录音将伪彩色及后续处理留待下一课。11月20日00:02–31:45已讲完Lec6后半的伪彩色、彩色变换、直方图处理、平滑/锐化和噪声，第43–83页现有逐页讲解。旧的“尚未讲”只描述前次录音，不再代表当前覆盖。",
       "anchors": [
         {
           "deck": "lec6",
           "page": 43
         }
       ],
-      "status": "本次未讲；后续再补录音",
+      "status": "已补充后续课堂来源",
       "sourceIds": [
-        "recRestColor@01:50:24"
+        "recRestColor@01:50:24",
+        "recColorMorph@00:02",
+        "recColorMorph@31:02"
       ],
       "sourceType": "录音+课件"
     },
@@ -1903,15 +1927,15 @@
     {
       "id": "latest-lab-deadline",
       "category": "arrangement",
-      "title": "最新口头安排：相关Lab截止延至12月4日",
-      "body": "录音02:20:56开始谈Lab7与频域滤波，随后提到27号那周不上课，将deadline延至12月4日。这里按相邻语境记录，具体适用作业与最终截止时间仍应以Lab发布页/助教公告确认；不自行推算其他作业日期，也不把课件封面日期当录音日期。",
+      "title": "前次口头安排：相关Lab截止延至12月4日",
+      "body": "前次“图像复原与彩色模型”录音02:20:56开始谈Lab7与频域滤波，随后提到27号那周不上课，将deadline延至12月4日。11月20日录音没有另改这个Lab截止；具体适用作业按Lab发布页/助教公告。",
       "anchors": [
         {
           "deck": "lec5",
           "page": 1
         }
       ],
-      "status": "口头安排；适用作业以正式公告确认",
+      "status": "前次口头通知；11月20日未另改",
       "sourceIds": [
         "recRestColor@02:20:56",
         "recRestColor@02:21:21"
@@ -1922,7 +1946,7 @@
       "id": "latest-lab-scope",
       "category": "arrangement",
       "title": "上机任务到复原和彩色；不等于后面理论章节不考",
-      "body": "02:21:21提到后面的两项上机任务是图像复原和彩色，图像分割、形态学、图像压缩没有对应上机内容。02:22:45又说彩色后仍有三个理论部分。因此“没有上机课”仅是实践覆盖说明，不是将这三章从理论课或期末范围删除。",
+      "body": "前次录音02:21:21提到后面两项上机任务是图像复原和彩色，图像分割、形态学、图像压缩没有对应上机内容。11月20日36:00又将后三章列入最后一次Quiz范围，因此“没有上机”不能解释为“理论课或考试排除”。",
       "anchors": [
         {
           "deck": "lec5",
@@ -1931,56 +1955,664 @@
         {
           "deck": "lec6",
           "page": 1
+        },
+        {
+          "deck": "lec8",
+          "page": 1
         }
       ],
       "status": "区分Lab范围与理论/考试范围",
       "sourceIds": [
         "recRestColor@02:21:21",
-        "recRestColor@02:22:45"
+        "recRestColor@02:22:45",
+        "recColorMorph@36:00"
       ],
       "sourceType": "录音+课件"
     },
     {
       "id": "latest-project-registration",
       "category": "arrangement",
-      "title": "Final Project题目要登记去重，后填冲突者换题",
-      "body": "老师说会建立在线文档确认汇报题目，尽量不要选成一样；若与先登记同学冲突，后填者需换题。鼓励提早选题和准备，不能到期末才开始。本录音没有给出可直接打开的登记表链接，不虚构表格地址或最终截止日。",
+      "title": "Final Project选题登记：先填先得，先查是否重复",
+      "body": "11月20日34:48–35:59再次说明由助教建立在线登记表，先填先得。选题前先看其他同学已填的内容，避免选同一个开源项目；若主题相近，要能说明区别。录音未提供登记表地址，打开课程群/正式公告中的表格填写。",
       "anchors": [
         {
-          "deck": "lec1",
-          "page": 10
-        },
-        {
-          "deck": "lec6",
-          "page": 1
+          "deck": "lec8",
+          "page": 2
         }
       ],
-      "status": "登记表与时间待课程正式通知",
+      "status": "11月20日再次说明；登记表由助教发布",
       "sourceIds": [
-        "recRestColor@02:21:21",
-        "recRestColor@02:22:45"
+        "recColorMorph@34:48",
+        "recColorMorph@35:16"
       ],
       "sourceType": "录音+课件"
     },
     {
       "id": "latest-remaining-quiz",
       "category": "arrangement",
-      "title": "还有两次Quiz；本次未给出新的准确日期",
-      "body": "02:22:45提醒后续任务密集，还有两次Quiz，可能需要腾一次课用于汇报。本次没有清晰给出新的Quiz日期；早期第13/16周只是口头计划，不能把两次表述拼成已确认课表。复习仍以概念及各次正式通知为准。",
+      "title": "11月20日Quiz安排：4号与最后一周各一次",
+      "body": "36:00老师说下一次Quiz在4号，最后一次在最后一周；末次日期前面说“16号”，随后又说“25号”，因此不把16号当成已确认日程。结合当堂已经明确讨论十二月的安排，4号指12月4日；末次最终日期看助教通知。两次内容范围分别见“明确考核要求”。",
       "anchors": [
+        {
+          "deck": "lec8",
+          "page": 1
+        }
+      ],
+      "status": "11月20日口头安排；末次日期存在混说",
+      "sourceIds": [
+        "recColorMorph@33:28",
+        "recColorMorph@36:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "quiz-dec4-scope",
+      "category": "explicit",
+      "title": "下一次Quiz范围：空间滤波后半至彩色图像",
+      "body": "11月20日36:00老师明确列出4号Quiz范围：空间域滤波后半部分、频率域滤波、图像复原、彩色图像处理。空间滤波“后半部分”的精确起始页没有在这段录音中给出，不能凭网页锚点推断分界；下列锚点用于快速进入对应章节。",
+      "anchors": [
+        {
+          "deck": "lec3p2",
+          "page": 1
+        },
+        {
+          "deck": "lec4p1",
+          "page": 1
+        },
+        {
+          "deck": "lec5",
+          "page": 1
+        },
         {
           "deck": "lec6",
           "page": 1
         }
       ],
-      "status": "余下次数提醒，日期未确认",
+      "status": "教师明确的Quiz范围；不是题目预测",
       "sourceIds": [
-        "recRestColor@02:22:45"
+        "recColorMorph@36:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "quiz-final-week-scope",
+      "category": "explicit",
+      "title": "最后一次Quiz范围：形态学、图像分割、图像压缩",
+      "body": "11月20日36:00老师把最后一周Quiz的内容列为形态学图像处理、图像分割和图像压缩。后两章课件尚未纳入本次更新，不能因为网站当前只有形态学就把范围缩成一章；末次日期的口头混说另见“项目与安排”。",
+      "anchors": [
+        {
+          "deck": "lec8",
+          "page": 10
+        }
+      ],
+      "status": "教师明确的Quiz范围；末次日期另行确认",
+      "sourceIds": [
+        "recColorMorph@36:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "morph-draw-exam",
+      "category": "explicit",
+      "title": "明确考试形式：给图后画出腐蚀、膨胀的结果",
+      "body": "老师在59:05–01:00:23明确说考试会拿一个图，让大家画腐蚀或膨胀后的样子。练习时先标清结构元及其原点：腐蚀保留结构元能完全放进前景的位置；膨胀按相应定义检查相交/覆盖。例如中心原点的3×3方形作用于孤立5×5实心方块，腐蚀留下3×3，膨胀变为7×7（图像边界不截断时）。",
+      "anchors": [
+        {
+          "deck": "lec8",
+          "page": 18
+        },
+        {
+          "deck": "lec8",
+          "page": 19
+        },
+        {
+          "deck": "lec8",
+          "page": 24
+        },
+        {
+          "deck": "lec8",
+          "page": 25
+        }
+      ],
+      "status": "教师明确说明会考画图；例子为辅助练习",
+      "sourceIds": [
+        "recColorMorph@59:05",
+        "recColorMorph@58:12",
+        "recColorMorph@01:02:21"
+      ],
+      "sourceType": "录音+课件",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recColorMorph@59:05",
+          "quote": "就是我们会拿一个图。哪一个图的话，就是让你们来画"
+        }
+      ]
+    },
+    {
+      "id": "color-smoothing-window-warning",
+      "category": "teacher",
+      "title": "老师提醒：平滑窗口越大，对彩色结构的影响越大",
+      "body": "在比较RGB分别平均与HSI只平均I后，老师明确提醒要小心邻域大小：窗口越大，受影响的区域越广。例：红绿边界附近用大窗口平均RGB，更多像素会混合；只处理I保留原H、S的做法则会有不同结果。不能把“只平滑亮度”和“分别平滑RGB”当成等价操作。",
+      "anchors": [
+        {
+          "deck": "lec6",
+          "page": 76
+        }
+      ],
+      "status": "教师明确提醒；不是必考承诺",
+      "sourceIds": [
+        "recColorMorph@25:29",
+        "recColorMorph@26:44"
+      ],
+      "sourceType": "录音+课件",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recColorMorph@26:44",
+          "quote": "一般来说领域越大，领域越大的话，就是它最后受受到的影响就会越大，这个就是一个一个就是就是在在在取这个 smoothing 的时候，就是要注意的一个地方"
+        }
+      ]
+    },
+    {
+      "id": "morph-opening-closing-properties",
+      "category": "teacher",
+      "title": "老师强调：开闭运算的包含关系、单调性与幂等性",
+      "body": "老师在01:11:19把这些性质称为“非常重要”：开运算A∘B⊆A，闭运算A⊆A•B；同一结构元下，输入的包含关系会保留。固定结构元重复做开运算或重复做闭运算，第二次以后结果不变，这叫幂等性（idempotence）。例：对同一张二值图连续做两次相同3×3开运算，结果应与一次一致；这不等于腐蚀或膨胀重复做也不变。",
+      "anchors": [
+        {
+          "deck": "lec8",
+          "page": 35
+        }
+      ],
+      "status": "教师明确强调；不是必考承诺",
+      "sourceIds": [
+        "recColorMorph@01:11:19",
+        "recColorMorph@01:11:43",
+        "recColorMorph@01:13:00"
+      ],
+      "sourceType": "录音+课件",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recColorMorph@01:11:19",
+          "quote": "这个是也是一些非常重要的一个一个性能"
+        }
+      ]
+    },
+    {
+      "id": "morph-convex-direction-templates",
+      "category": "teacher",
+      "title": "老师强调的具体点：凸包示例用四个方向的结构元",
+      "body": "老师对凸包算法只作概览，但在01:33:46具体指出四个方向的结构元重要。按Lec8 P59–60读图：分别用方向模板找到可生长的位置，再与现有集合取并；各方向迭代到稳定后合并。这个强调仅对应模板的方向作用，不能扩成整套复杂推导都被要求掌握。",
+      "anchors": [
+        {
+          "deck": "lec8",
+          "page": 59
+        },
+        {
+          "deck": "lec8",
+          "page": 60
+        }
+      ],
+      "status": "教师明确强调一个局部机制；整段仍为概览",
+      "sourceIds": [
+        "recColorMorph@01:33:46",
+        "recColorMorph@01:35:00"
+      ],
+      "sourceType": "录音+课件",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recColorMorph@01:33:46",
+          "quote": "我说这比较重要就是他这边取得这样的一个start element就是他在这四个方向上"
+        }
+      ]
+    },
+    {
+      "id": "morph-reconstruction-mask",
+      "category": "teacher",
+      "title": "老师强调：形态学重建由mask限制每一步生长或收缩",
+      "body": "01:42:54老师明确说形态学重建重要，随后强调mask约束。测地膨胀每步先膨胀、再与G取交集，结果不能长到G外；测地腐蚀每步先腐蚀、再与G取并集，结果仍必须包含G。例：在字母的一条笔画上放一个marker，按字形mask做重建，生长沿mask内可达的部分传播，不会随意填进背景。",
+      "anchors": [
+        {
+          "deck": "lec8",
+          "page": 72
+        },
+        {
+          "deck": "lec8",
+          "page": 73
+        },
+        {
+          "deck": "lec8",
+          "page": 74
+        },
+        {
+          "deck": "lec8",
+          "page": 76
+        }
+      ],
+      "status": "教师明确强调；应用留后续课堂",
+      "sourceIds": [
+        "recColorMorph@01:42:54",
+        "recColorMorph@01:43:51",
+        "recColorMorph@01:44:50",
+        "recColorMorph@01:46:00",
+        "recColorMorph@01:47:23"
+      ],
+      "sourceType": "录音+课件",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "recColorMorph@01:42:54",
+          "quote": "形态学的一个一个重建，这个其实是蛮重要的"
+        },
+        {
+          "kind": "emphasis",
+          "sourceId": "recColorMorph@01:44:50",
+          "quote": "这个就是我们心态区重建最重要的一个一个一个，就是我们去定义的一个一个mask"
+        }
+      ]
+    },
+    {
+      "id": "color-pseudocolor-mapping",
+      "category": "class",
+      "title": "伪彩色：颜色取决于映射，不是物体的真实颜色",
+      "body": "Lec6 P43–55把灰度映射成RGB，方便观察不同强度。强度切片给不同灰度区间配色；三个连续映射则分别产生R、G、B。例：降雨图用颜色区分雨量；安检图用正弦映射突出某段灰度，但周期映射也可能把不同灰度染成相近颜色。配色能突出信息，也可能造成混淆，不能把颜色直接当物体身份。",
+      "anchors": [
+        {
+          "deck": "lec6",
+          "page": 43
+        },
+        {
+          "deck": "lec6",
+          "page": 49
+        },
+        {
+          "deck": "lec6",
+          "page": 52
+        }
+      ],
+      "status": "一般内容整理",
+      "sourceIds": [
+        "recColorMorph@00:02",
+        "recColorMorph@02:21",
+        "recColorMorph@02:59",
+        "recColorMorph@04:55",
+        "recColorMorph@06:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "color-complement-and-slicing",
+      "category": "class",
+      "title": "补色与彩色分层：整体取反和选择颜色范围是两件事",
+      "body": "归一化RGB的补色为(1−R,1−G,1−B)，例如红(1,0,0)变青(0,1,1)。彩色分层（color slicing）则保留目标颜色邻域，其他颜色换成灰色；立方体规则逐通道检查与目标色的差，球形规则检查三维颜色距离。课件P64的半径/宽度应按公式判断，不用颜色名字代替阈值。",
+      "anchors": [
+        {
+          "deck": "lec6",
+          "page": 61
+        },
+        {
+          "deck": "lec6",
+          "page": 64
+        }
+      ],
+      "status": "一般内容整理",
+      "sourceIds": [
+        "recColorMorph@13:15",
+        "recColorMorph@14:11",
+        "recColorMorph@16:29",
+        "recColorMorph@17:24",
+        "recColorMorph@18:31"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "color-tone-correction",
+      "category": "class",
+      "title": "Tone说的是强度分布；Hue才是色相",
+      "body": "老师在19:15明确区分tone与hue。高调（high-key）、低调（low-key）、中调（middle-key）描述强度主要落在哪一段；tone correction调整这段分布，color correction则改变颜色比例。例：一幅偏暗的人像可调亮中间强度；若整图偏品红，则要调整颜色平衡，这不是同一个问题。",
+      "anchors": [
+        {
+          "deck": "lec6",
+          "page": 66
+        },
+        {
+          "deck": "lec6",
+          "page": 70
+        }
+      ],
+      "status": "一般内容整理",
+      "sourceIds": [
+        "recColorMorph@19:15",
+        "recColorMorph@20:29",
+        "recColorMorph@21:17",
+        "recColorMorph@22:29"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "color-histogram-intensity",
+      "category": "class",
+      "title": "彩色均衡化：先考虑处理I，避免三个通道各自改色",
+      "body": "老师在23:50讲到彩色直方图均衡化时，采用先转HSI、处理I的路线；H、S描述保留，必要时另调S。例：暗部细节通过I的均衡化显现，同时保留原色调描述。RGB三通道独立均衡化会改变相互比例，不能认为与处理I相同；转换回RGB还要注意可显示范围。",
+      "anchors": [
+        {
+          "deck": "lec6",
+          "page": 72
+        }
+      ],
+      "status": "一般内容整理",
+      "sourceIds": [
+        "recColorMorph@23:50",
+        "recColorMorph@25:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "color-noise-propagation",
+      "category": "class",
+      "title": "一个RGB通道有噪声，转换后也可能污染多个HSI分量",
+      "body": "Lec6 P79–82说明各通道噪声可不同，而HSI分量由RGB共同计算。例：只给R加噪声，再转HSI，H、S、I都可能受影响；不能只在转换后的“一个对应通道”找噪声。I包含三通道平均，H、S的非线性计算又会改变噪声表现，视觉上彩色合成较不显噪不代表噪声已被消除。",
+      "anchors": [
+        {
+          "deck": "lec6",
+          "page": 79
+        },
+        {
+          "deck": "lec6",
+          "page": 81
+        },
+        {
+          "deck": "lec6",
+          "page": 82
+        }
+      ],
+      "status": "一般内容整理",
+      "sourceIds": [
+        "recColorMorph@27:40",
+        "recColorMorph@28:37",
+        "recColorMorph@29:46"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "morph-se-origin",
+      "category": "class",
+      "title": "结构元要同时确定形状、大小和原点",
+      "body": "结构元（structuring element, SE）是用来检验局部形状的探针，原点决定结果标在哪个像素。例：竖直线结构元更容易筛出竖直结构；同一模板若把原点从中心移到端点，结果位置也会改变。课件中的补零用于矩形存储，不能把所有补的零都解释成hit-or-miss要求的背景。",
+      "anchors": [
+        {
+          "deck": "lec8",
+          "page": 14
+        },
+        {
+          "deck": "lec8",
+          "page": 15
+        },
+        {
+          "deck": "lec8",
+          "page": 16
+        }
+      ],
+      "status": "一般内容整理",
+      "sourceIds": [
+        "recColorMorph@42:27",
+        "recColorMorph@43:43",
+        "recColorMorph@45:00",
+        "recColorMorph@46:21"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "morph-open-close-order",
+      "category": "class",
+      "title": "开先腐蚀再膨胀；闭先膨胀再腐蚀",
+      "body": "开运算A∘B=(A⊖B)⊕B，常去掉小突起、细连接或小前景点；闭运算A•B=(A⊕B)⊖B，常填补小凹口、间隙或小背景洞。例：指纹图先开去掉白色小噪点，再闭修补黑色小缺口；结果仍可能出现断裂，不能保证既去噪又完全保住连通性。",
+      "anchors": [
+        {
+          "deck": "lec8",
+          "page": 30
+        },
+        {
+          "deck": "lec8",
+          "page": 32
+        },
+        {
+          "deck": "lec8",
+          "page": 36
+        },
+        {
+          "deck": "lec8",
+          "page": 41
+        }
+      ],
+      "status": "一般内容整理",
+      "sourceIds": [
+        "recColorMorph@01:06:00",
+        "recColorMorph@01:08:19",
+        "recColorMorph@01:13:00",
+        "recColorMorph@01:14:31",
+        "recColorMorph@01:15:47",
+        "recColorMorph@01:17:00"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "morph-hit-miss",
+      "category": "class",
+      "title": "Hit-or-miss同时匹配前景与背景",
+      "body": "只用前景模板腐蚀，大物体内部也可能满足“放得下”；若要找到指定图案，还要检查周围应为空的背景。Hit-or-miss把前景模板在A上的匹配，与背景模板在A的补集上的匹配取交。例：找孤立小方块时，既要求中心方块为1，也要求指定外圈为0，才能排除大方块里的一小块。",
+      "anchors": [
+        {
+          "deck": "lec8",
+          "page": 42
+        },
+        {
+          "deck": "lec8",
+          "page": 43
+        },
+        {
+          "deck": "lec8",
+          "page": 44
+        },
+        {
+          "deck": "lec8",
+          "page": 45
+        }
+      ],
+      "status": "一般内容整理",
+      "sourceIds": [
+        "recColorMorph@01:17:00",
+        "recColorMorph@01:18:00",
+        "recColorMorph@01:18:47",
+        "recColorMorph@01:19:45",
+        "recColorMorph@01:20:43",
+        "recColorMorph@01:21:20"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "morph-boundary",
+      "category": "class",
+      "title": "边界提取：原图减去腐蚀后的内部",
+      "body": "课件P47用β(A)=A−(A⊖B)提取内边界。例：5×5实心方块用中心3×3方形腐蚀，留下3×3内部；两者作集合差就得到一圈边界。边界厚度随结构元变化，不能把“边界永远是一像素”当作定义。",
+      "anchors": [
+        {
+          "deck": "lec8",
+          "page": 47
+        },
+        {
+          "deck": "lec8",
+          "page": 48
+        }
+      ],
+      "status": "一般内容整理",
+      "sourceIds": [
+        "recColorMorph@01:23:18",
+        "recColorMorph@01:24:29"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "morph-filling-components",
+      "category": "class",
+      "title": "孔洞填充与连通分量：生长方法相同，允许范围相反",
+      "body": "孔洞填充从洞内种子出发，反复Xk=(Xk−1⊕B)∩Ac，稳定后与原A取并；连通分量从前景种子出发，反复与A取交。例：在圆环的黑洞内放种子填洞，在白环上放种子提取整条白环。单一种子只覆盖自己可达的那一块，不会自动找到所有独立孔洞或物体。",
+      "anchors": [
+        {
+          "deck": "lec8",
+          "page": 50
+        },
+        {
+          "deck": "lec8",
+          "page": 51
+        },
+        {
+          "deck": "lec8",
+          "page": 54
+        },
+        {
+          "deck": "lec8",
+          "page": 55
+        },
+        {
+          "deck": "lec8",
+          "page": 56
+        }
+      ],
+      "status": "一般内容整理",
+      "sourceIds": [
+        "recColorMorph@01:24:29",
+        "recColorMorph@01:25:51",
+        "recColorMorph@01:26:51",
+        "recColorMorph@01:28:20",
+        "recColorMorph@01:29:39",
+        "recColorMorph@01:31:27"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "morph-thinning-skeleton",
+      "category": "class",
+      "title": "细化与骨架：都压缩形状，但不能直接当同一个算法",
+      "body": "细化（thinning）按方向模板逐步删边界像素；骨架（skeleton）可由最大内切圆的圆心直观理解，也可按课件的腐蚀层与开运算构造。例：细化示例最后得到连通的细线，P71的形态学骨架却仍有较粗、断开的部分；“任何骨架算法都会得到连通的一像素线”不成立。",
+      "anchors": [
+        {
+          "deck": "lec8",
+          "page": 63
+        },
+        {
+          "deck": "lec8",
+          "page": 65
+        },
+        {
+          "deck": "lec8",
+          "page": 68
+        },
+        {
+          "deck": "lec8",
+          "page": 71
+        }
+      ],
+      "status": "一般内容整理；算法细节课堂只概览",
+      "sourceIds": [
+        "recColorMorph@01:37:37",
+        "recColorMorph@01:38:47",
+        "recColorMorph@01:39:34",
+        "recColorMorph@01:41:25",
+        "recColorMorph@01:42:54"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "morph-details-overview",
+      "category": "scope",
+      "title": "凸包、细化/粗化、骨架：细节以了解为主，未明确说不考",
+      "body": "01:33:46老师说凸包算法较复杂，只大概讲；01:37:37对细节说了解一下；01:39:34对粗化不展开；01:42:54再次说骨架了解一下，随后转入明确强调的形态学重建。这些是讲授深度说明，没有把Lec8 P58–71排除出考试。",
+      "anchors": [
+        {
+          "deck": "lec8",
+          "page": 58
+        },
+        {
+          "deck": "lec8",
+          "page": 63
+        },
+        {
+          "deck": "lec8",
+          "page": 66
+        },
+        {
+          "deck": "lec8",
+          "page": 68
+        }
+      ],
+      "status": "略讲/了解，不等于不考",
+      "sourceIds": [
+        "recColorMorph@01:33:46",
+        "recColorMorph@01:37:37",
+        "recColorMorph@01:39:34",
+        "recColorMorph@01:42:54"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "morph-not-yet-reconstruction-apps",
+      "category": "scope",
+      "title": "本次讲到Lec8 P76；P77–142尚无对应课堂讲解",
+      "body": "11月20日录音在01:47:23–01:48:09讲完测地膨胀/腐蚀的对偶与有限步收敛，并把应用留待后续。Lec8 P77–142保留完整课件，当前只显示PPT；这只是录音覆盖边界，不是老师说这些内容不考。",
+      "anchors": [
+        {
+          "deck": "lec8",
+          "page": 76
+        },
+        {
+          "deck": "lec8",
+          "page": 77
+        }
+      ],
+      "status": "本次未讲；后续录音再补",
+      "sourceIds": [
+        "recColorMorph@01:47:23"
+      ],
+      "sourceType": "录音+课件"
+    },
+    {
+      "id": "morph-slide-clarifications",
+      "category": "scope",
+      "title": "课件公式与图示核对：膨胀、凸包、细化与骨架",
+      "body": "Lec8 P24下方把交集写成⊆A不能作为膨胀的等价定义，应按上方“与A至少有一个交点”读；P62限制外包范围可抑制过度生长，但不保证等于真正最小凸包；P63“无需背景匹配”不能推广到P65有0/1/不关心条件的方向模板；P70从第k层骨架恢复应保留k次膨胀。原PDF不改，这些是对照图式后的说明，并非教师已发布的勘误。",
+      "anchors": [
+        {
+          "deck": "lec8",
+          "page": 24
+        },
+        {
+          "deck": "lec8",
+          "page": 62
+        },
+        {
+          "deck": "lec8",
+          "page": 63
+        },
+        {
+          "deck": "lec8",
+          "page": 70
+        }
+      ],
+      "status": "材料核对说明，不是新增考点",
+      "sourceIds": [
+        "recColorMorph@01:02:21",
+        "recColorMorph@01:36:50",
+        "recColorMorph@01:37:37",
+        "recColorMorph@01:41:25"
       ],
       "sourceType": "录音+课件"
     }
   ],
-  "note": "按课堂原文核验分类：明确考核包括教师明确的考核要求、范围或常考声明，Quiz只保留真实复盘；老师强调与提问逐条附原文证据。一般整理、课件练习、范围和安排独立，不因内容重要、标题像考点或教师自问自答就升级。时间戳来自自动转写，安排以正式公告为准。",
+  "note": "按课堂原文核验分类：明确考核包括教师明确的考核要求、范围或常考声明，Quiz复盘只保留真实复盘；老师强调与提问逐条附原文证据。一般整理、课件练习、范围和安排独立。已补11月20日彩色处理与形态学录音，旧的未讲范围和安排已按后续证据更新。时间戳来自自动转写；口头日程中的混说单独标明。",
   "navigationDefault": "exam-and-teacher",
   "navigationNote": "下个考点按课件顺序从当前页之后查找，不回绕。默认导航明确考核要求、真实Quiz复盘和有原文证据的老师强调/提问；一般整理与课件练习可另行选择。"
 }
