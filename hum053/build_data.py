@@ -44,8 +44,8 @@ def build():
         'recordings': copy.deepcopy(provenance['recordings']),
         'examGuide': copy.deepcopy(guide),
         'coverage': copy.deepcopy(review['coverage']),
-        'studyPolicy': '最新通知为闭卷、孔子—孟子—庄子、占总评50%。明确考核、老师强调/课堂提问、一般整理/课件练习、比较与自拟练习分别标注。明确考核包括已说明的考试准备与范围，不承诺原题必考；强调与提问保留原话，练习不是已知试题。导论作为背景阅读。',
-        'transcriptPolicy': '逐页核对课件画面与课堂转写。本讲录音优先；若仅有其他讲次对同一内容的复述，明确标为跨讲复述，不冒充本讲当时录音。出处按内容对应，不代表精确翻页时间；自动转写可能有错词。完全没有对应讲授来源的页面仅展示课件。',
+        'studyPolicy': '最新通知为闭卷、孔子—孟子—庄子、占总评50%。考试要求、老师强调与提问、一般整理、比较与自拟练习分别标注。考试要求记录已说明的准备内容与范围，强调和提问附原话，自拟练习用于复习。导论作为背景阅读。',
+        'transcriptPolicy': '逐页结合课件画面和课堂转写，优先采用本讲录音；其他讲次对相同内容的讲解标为跨讲复述。时间戳用于定位对应讲授片段，正文结合课件校正转写错词。有对应讲授的页面配中文讲解，其余页展示课件。',
     }
     assert [d['id'] for d in data['decks']] == list(EXPECTED_PAGES), 'Lecture order must follow the actual lecture number'
     assert data['assessment'] == {'exam': 50}, 'Use the current in-class exam notice, not the historical final-exam allocation'
@@ -102,7 +102,7 @@ def build():
                 note['sameLectureAudio'] = same
                 note['sourceScope'] = ('本讲录音为主；其他讲次仅作补充' if same and any(
                     not str(source_id).startswith(primary + '-') for source_id in note.get('sourceIds', [])
-                ) else ('本讲录音' if same else '跨讲复述：来源是老师在其他讲次对相同内容的讲解，不代表本讲当时录音'))
+                ) else ('本讲录音' if same else '跨讲复述：采用老师在其他讲次对相同内容的讲解'))
                 if same:
                     same_lecture_audio += 1
                 else:

@@ -37,8 +37,8 @@ def build():
         'recordings': provenance['recordings'],
         'examGuide': guide,
         'coverage': review['coverage'],
-        'studyPolicy': '考核中心区分明确考核、Quiz复盘、老师强调/课堂提问、一般整理/课件练习、范围与选读、课程安排。明确考核含教师明确的考试准备、范围与常考说明，不承诺原题必考；老师强调、课堂提问及一般练习均不等于必考。',
-        'transcriptPolicy': '逐页对照原始PDF图示与课堂转写编写。页码按PDF实际顺序计算，可能与课件页脚编号不同。出处按内容对应，不代表精确翻页时间；转写可能有错词。未提供对应录音的页面仅展示PPT。',
+        'studyPolicy': '考核中心按考试要求、Quiz复盘、老师强调与提问、一般练习、授课范围和课程安排分类。考试要求记录老师说明的准备内容与范围，强调和提问附原话及时间戳。',
+        'transcriptPolicy': '逐页结合PDF图示和对应课堂片段编写，时间戳用于定位录音；正文结合课件校正转写错词。页码采用PDF实际页序，课件页脚编号另行注明。已讲页配中文讲解，其余页保留课件供预习。',
     }
     proof = {d['id']: d for d in review['decks']}
     seen_text = set()

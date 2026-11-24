@@ -19,7 +19,7 @@ function noteSourceScope(d,p){
  if(courseId!=="hum053"||!p?.note?.sourceIds?.length)return "";
  const primary=primaryRecording[courseId]?.[d?.id],same=sameLectureAudio(d,p);
  const hasOther=p.note.sourceIds.some(id=>!String(id).startsWith(primary+"-"));
- return same?(hasOther?"本讲录音为主；其他讲次仅作补充":"本讲录音"):"跨讲复述：来源是老师在其他讲次对相同内容的讲解，不代表本讲当时录音";
+ return same?(hasOther?"本讲录音为主；其他讲次仅作补充":"本讲录音"):"跨讲复述：采用老师在其他讲次对相同内容的讲解";
 }
 const course=courses[courseId];
 const stateKey=courseId+"-state";
@@ -112,7 +112,7 @@ function sourceMarkup(ids,external=[]){
  }).join('');
  const links=external.filter(x=>/^https:\/\//.test(x.url)).map(x=>'<p><a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">'+esc(x.label)+' ↗</a></p>').join('');
  if(!rows&&!links)return '';
- return '<details class="inline-sources"><summary>出处与核对线索'+(ids?.length?' · '+ids.length+'段课堂转写':'')+'</summary><div class="source-caption">按内容对应，不代表精确翻页时间；自动转写可能有错词。省略处用…标记。</div>'+rows+links+'</details>';
+ return '<details class="inline-sources"><summary>出处与核对线索'+(ids?.length?' · '+ids.length+'段课堂转写':'')+'</summary><div class="source-caption">按本页内容关联课堂片段，时间戳用于定位录音。下方保留自动转写原文，省略处用…标记。</div>'+rows+links+'</details>';
 }
 function notes(){
  const grid=$("#study-grid"),panel=$("#companion-panel"),d=S.deck,p=slide();
@@ -211,7 +211,7 @@ function shortDeck(d){return d.startsWith('lab')?'Lab '+d.slice(3):d.replace('le
 function nextFocus(){
  return FocusNavigation.next(S.data.decks,S.data.examGuide.entries,S.deck.id,S.page,S.focusIncludeClass);
 }
-function focusType(p){return p.categories.includes('explicit')?'明确考核':p.categories.includes('quiz')?'Quiz复盘':p.categories.includes('teacher')?'老师强调 / 课堂提问（非必考）':'一般整理 / 课件练习（非必考）'}
+function focusType(p){return p.categories.includes('explicit')?'明确考核':p.categories.includes('quiz')?'Quiz复盘':p.categories.includes('teacher')?'老师强调 / 课堂提问':'一般整理 / 课件练习'}
 function updateFocusButton(){
  const n=nextFocus(),b=$("#next-focus");b.disabled=!n;
  b.textContent=n?'下个考点 · '+(n.deck===S.deck.id?'':shortDeck(n.deck)+' ')+'P'+n.page+' →':'无后续考点';
@@ -382,7 +382,7 @@ function bind(){
 }
 (async function init(){
  try{
-  const response=await fetch(course.data+"?v=20261120");if(!response.ok)throw Error("课程索引请求失败："+response.status);
+  const response=await fetch(course.data+"?v=20261123");if(!response.ok)throw Error("课程索引请求失败："+response.status);
   S.data=await response.json();if(S.data.schemaVersion!==2)throw Error("课程数据版本未更新，请刷新页面");$("#fit-mode").textContent=S.fit==="page"?"适应页面":"适应宽度";
   if(window.pdfjsLib)pdfjsLib.GlobalWorkerOptions.workerSrc="assets/vendor/pdf.worker.min.js";
   courseInit();navInit();bind();updateLibraryToggle();updateTheme();const [id,p]=route();navigate(id,p,false);routeWrite(id,S.page,true);

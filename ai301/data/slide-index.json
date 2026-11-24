@@ -116,6 +116,19 @@
       "firstSlide": "五级数据通路：两条反向信息流与冒险",
       "audio": true,
       "audioSources": []
+    },
+    {
+      "id": "lec6p3",
+      "group": "Lecture 6 · Part 3",
+      "label": "Forwarding & Hazards",
+      "cn": "数据转发、load-use 停顿、分支与异常",
+      "file": "Lecture6 Part3.pdf",
+      "color": "#217e96",
+      "pages": 27,
+      "path": "ai301/assets/pdfs/lec6p3.pdf",
+      "firstSlide": "数据冒险：谁产生新值，谁要用它",
+      "audio": true,
+      "audioSources": []
     }
   ],
   "slides": {
@@ -1430,106 +1443,253 @@
         "page": 7,
         "title": "lw 的 ID：译码、读寄存器与符号扩展",
         "searchText": "lw 的 ID：译码、读寄存器与符号扩展\nID for Load\n27\n\nIF/ID ID/EX register file read data sign-extend",
-        "coverageReason": "not_yet_taught",
-        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+        "coverageReason": "no_matching_recording",
+        "coverageLabel": "对应录音待补 · 仅课件"
       },
       {
         "page": 8,
         "title": "lw 的 EX：计算有效地址",
         "searchText": "lw 的 EX：计算有效地址\nEX for Load\n28\n\nID/EX EX/MEM ALUSrc ALU address calculation",
-        "coverageReason": "not_yet_taught",
-        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+        "coverageReason": "no_matching_recording",
+        "coverageLabel": "对应录音待补 · 仅课件"
       },
       {
         "page": 9,
         "title": "lw 的 MEM：读取数据存储器",
         "searchText": "lw 的 MEM：读取数据存储器\nMEM for Load\n29\n\nEX/MEM MEM/WB data memory read data",
-        "coverageReason": "not_yet_taught",
-        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+        "coverageReason": "no_matching_recording",
+        "coverageLabel": "对应录音待补 · 仅课件"
       },
       {
         "page": 10,
         "title": "lw 的 WB 错误示例：目的寄存器号错位",
-        "searchText": "lw 的 WB 错误示例：目的寄存器号错位\nWB for Load (with bug)\n30\nIncorrect \ndestination register\n\nMEM/WB write register write data incorrect destination register",
-        "coverageReason": "not_yet_taught",
-        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+        "searchText": "lw 的 WB 错误示例：目的寄存器号错位\nWB for Load (with bug)\n30\nIncorrect \ndestination register\n\nMEM/WB write register write data incorrect destination register"
       },
       {
         "page": 11,
         "title": "修正 lw 数据通路：目的寄存器号随指令传递",
-        "searchText": "修正 lw 数据通路：目的寄存器号随指令传递\nCorrected Datapath for Load\n31\n\ndestination register number pipeline registers IF/ID ID/EX EX/MEM MEM/WB",
-        "coverageReason": "not_yet_taught",
-        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+        "searchText": "修正 lw 数据通路：目的寄存器号随指令传递\nCorrected Datapath for Load\n31\n\ndestination register number pipeline registers IF/ID ID/EX EX/MEM MEM/WB"
       },
       {
         "page": 12,
         "title": "sw 的 EX：计算地址并传递待写数据",
-        "searchText": "sw 的 EX：计算地址并传递待写数据\nEX for Store\n32\n\nID/EX EX/MEM address calculation write data",
-        "coverageReason": "not_yet_taught",
-        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+        "searchText": "sw 的 EX：计算地址并传递待写数据\nEX for Store\n32\n\nID/EX EX/MEM address calculation write data"
       },
       {
         "page": 13,
         "title": "sw 的 MEM：把寄存器数据写入存储器",
-        "searchText": "sw 的 MEM：把寄存器数据写入存储器\nMEM for Store\n33\n\nEX/MEM data memory write data sw",
-        "coverageReason": "not_yet_taught",
-        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+        "searchText": "sw 的 MEM：把寄存器数据写入存储器\nMEM for Store\n33\n\nEX/MEM data memory write data sw"
       },
       {
         "page": 14,
         "title": "sw 的 WB：无需写回寄存器",
-        "searchText": "sw 的 WB：无需写回寄存器\nWB for Store\n34\n\n",
-        "coverageReason": "not_yet_taught",
-        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+        "searchText": "sw 的 WB：无需写回寄存器\nWB for Store\n34\n\n"
       },
       {
         "page": 15,
         "title": "多周期流水线图：各指令占用的硬件资源",
-        "searchText": "多周期流水线图：各指令占用的硬件资源\nMulti-Cycle Pipeline Diagram\n• Resources usage is shown\n35\n\nlw $10,20($1) sub $11,$2,$3 add $12,$3,$4 lw $13,24($1) add $14,$5,$6 CC1 CC9",
-        "coverageReason": "not_yet_taught",
-        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+        "searchText": "多周期流水线图：各指令占用的硬件资源\nMulti-Cycle Pipeline Diagram\n• Resources usage is shown\n35\n\nlw $10,20($1) sub $11,$2,$3 add $12,$3,$4 lw $13,24($1) add $14,$5,$6 CC1 CC9"
       },
       {
         "page": 16,
         "title": "多周期流水线图：传统阶段表",
-        "searchText": "多周期流水线图：传统阶段表\nMulti-Cycle Pipeline Diagram\n• Traditional diagram\n36\n\nlw $10,20($1) sub $11,$2,$3 add $12,$3,$4 lw $13,24($1) add $14,$5,$6 CC1 CC9",
-        "coverageReason": "not_yet_taught",
-        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+        "searchText": "多周期流水线图：传统阶段表\nMulti-Cycle Pipeline Diagram\n• Traditional diagram\n36\n\nlw $10,20($1) sub $11,$2,$3 add $12,$3,$4 lw $13,24($1) add $14,$5,$6 CC1 CC9"
       },
       {
         "page": 17,
         "title": "单周期流水线图：同一时刻的五条指令",
-        "searchText": "单周期流水线图：同一时刻的五条指令\nSingle-Cycle Pipeline Diagram\n• State of the pipeline at a specific cycle\n37\n\nCC5 add $14,$5,$6 IF lw $13,24($1) ID add $12,$3,$4 EX sub $11,$2,$3 MEM lw $10,20($1) WB",
-        "coverageReason": "not_yet_taught",
-        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+        "searchText": "单周期流水线图：同一时刻的五条指令\nSingle-Cycle Pipeline Diagram\n• State of the pipeline at a specific cycle\n37\n\nCC5 add $14,$5,$6 IF lw $13,24($1) ID add $12,$3,$4 EX sub $11,$2,$3 MEM lw $10,20($1) WB"
       },
       {
         "page": 18,
         "title": "流水数据通路中的控制信号",
-        "searchText": "流水数据通路中的控制信号\nPipelined Datapath  \nwith Control Signals\n38\n\nRegWrite ALUSrc RegDst ALUOp Branch PCSrc MemRead MemWrite MemtoReg",
-        "coverageReason": "not_yet_taught",
-        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+        "searchText": "流水数据通路中的控制信号\nPipelined Datapath  \nwith Control Signals\n38\n\nRegWrite ALUSrc RegDst ALUOp Branch PCSrc MemRead MemWrite MemtoReg"
       },
       {
         "page": 19,
         "title": "控制信号表：按 EX、MEM、WB 分组",
-        "searchText": "控制信号表：按 EX、MEM、WB 分组\nControl Signals\n39\n\nRegDst RegWrite ALUSrc PCSrc MemRead MemWrite MemtoReg ALUOp1 ALUOp0 R-format lw sw beq",
-        "coverageReason": "not_yet_taught",
-        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+        "searchText": "控制信号表：按 EX、MEM、WB 分组\nControl Signals\n39\n\nRegDst RegWrite ALUSrc PCSrc MemRead MemWrite MemtoReg ALUOp1 ALUOp0 R-format lw sw beq"
       },
       {
         "page": 20,
         "title": "控制信号随指令跨级传递",
-        "searchText": "控制信号随指令跨级传递\nPipeline Control\n• Control signals derived from instruction\n• As in single-cycle implementation\n40\n\nControl ID/EX EX/MEM MEM/WB EX M WB",
-        "coverageReason": "not_yet_taught",
-        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+        "searchText": "控制信号随指令跨级传递\nPipeline Control\n• Control signals derived from instruction\n• As in single-cycle implementation\n40\n\nControl ID/EX EX/MEM MEM/WB EX M WB"
       },
       {
         "page": 21,
         "title": "完整流水数据通路与控制",
-        "searchText": "完整流水数据通路与控制\nPipeline Datapath with Control\n41\n\nRegWrite ALUSrc RegDst ALUOp Branch PCSrc MemRead MemWrite MemtoReg pipeline control",
+        "searchText": "完整流水数据通路与控制\nPipeline Datapath with Control\n41\n\nRegWrite ALUSrc RegDst ALUOp Branch PCSrc MemRead MemWrite MemtoReg pipeline control"
+      }
+    ],
+    "lec6p3": [
+      {
+        "page": 1,
+        "title": "数据依赖：后面四条指令都要使用新的 $2",
+        "searchText": "数据依赖：后面四条指令都要使用新的 $2\nData Hazards in ALU Instructions\n\n• Consider this sequence:\nsub      $2, $1,$3     # Register $2 written by sub\nand      $12,$2,$5     # 1st operand($2) depends on sub\nor       $13,$6,$2     # 2nd operand($2) depends on sub\nadd      $14,$2,$2     # 1st($2) & 2nd($2) depend on sub\nsw       $15,100($2)   # Base ($2) depends on sub\n\n• We can resolve hazards with forwarding\n      • How do we detect when to forward?\n\n\n\n\n                                                           42\n"
+      },
+      {
+        "page": 2,
+        "title": "读图找冒险：读取和写回的时间差",
+        "searchText": "读图找冒险：读取和写回的时间差\nDependencies and Forwarding\n\n\n\n\n                              43\nCC1 CC2 CC3 CC4 CC5 CC6 CC7 CC8 CC9 IM Reg ALU DM $2 10 -20 dependency"
+      },
+      {
+        "page": 3,
+        "title": "转发检测：两路结果与两个源寄存器比较",
+        "searchText": "转发检测：两路结果与两个源寄存器比较\nDetecting the Need to Forward\n• Pass register numbers along pipeline\n  • e.g., ID/EX.RegisterRs = register number for Rs\n    sitting in ID/EX pipeline register\n• ALU operand register numbers in EX stage are\n  given by\n  • ID/EX.RegisterRs, ID/EX.RegisterRt\n• Data hazards when                            Forward from\n  • 1a. EX/MEM.RegisterRd = ID/EX.RegisterRs   EX/MEM pipeline\n                                               registers\n  • 1b. EX/MEM.RegisterRd = ID/EX.RegisterRt\n  • 2a. MEM/WB.RegisterRd = ID/EX.RegisterRs   Forward from\n  • 2b. MEM/WB.RegisterRd = ID/EX.RegisterRt   MEM/WB pipeline\n                                               registers\n\n                                                         44\n"
+      },
+      {
+        "page": 4,
+        "title": "转发前提：RegWrite 与 $zero 检查",
+        "searchText": "转发前提：RegWrite 与 $zero 检查\nDetecting the Need to Forward\n• But only if forwarding instruction will write to a\n  register!\n   • EX/MEM.RegWrite\n   • MEM/WB.RegWrite\n• And only if Rd for that instruction is not $zero\n   • EX/MEM.RegisterRd ≠ 0\n   • MEM/WB.RegisterRd ≠ 0\n\n\n\n\n                                                       45\n"
+      },
+      {
+        "page": 5,
+        "title": "转发时序：从 EX/MEM、MEM/WB 直接取值",
+        "searchText": "转发时序：从 EX/MEM、MEM/WB 直接取值\nDependencies and Forwarding\n\n\n\n\n                              46\nCC1 CC2 CC3 CC4 CC5 CC6 CC7 CC8 CC9 EX/MEM MEM/WB $2 -20 and or add sw"
+      },
+      {
+        "page": 6,
+        "title": "转发电路：ALU 输入 MUX 与 Forwarding unit",
+        "searchText": "转发电路：ALU 输入 MUX 与 Forwarding unit\nForwarding Paths\n\n\n\n\n                   47\nID/EX EX/MEM MEM/WB Registers MUX ALU Data memory ForwardA ForwardB RegisterRs RegisterRt RegisterRd Forwarding unit"
+      },
+      {
+        "page": 7,
+        "title": "ForwardA/B：00、10、01 分别选择哪里",
+        "searchText": "ForwardA/B：00、10、01 分别选择哪里\nForwarding Control\n\n\n\n\n                     48\nForwardA ForwardB 00 ID/EX 10 EX/MEM 01 MEM/WB"
+      },
+      {
+        "page": 8,
+        "title": "EX 与 MEM 冒险的四条基本判断式",
+        "searchText": "EX 与 MEM 冒险的四条基本判断式\nForwarding Conditions\n• EX hazard\n  •    if (EX/MEM.RegWrite and (EX/MEM.RegisterRd ≠ 0)\n       and (EX/MEM.RegisterRd = ID/EX.RegisterRs))\n    ForwardA = 10\n  • if (EX/MEM.RegWrite and (EX/MEM.RegisterRd ≠ 0)\n       and (EX/MEM.RegisterRd = ID/EX.RegisterRt))\n    ForwardB = 10\n• MEM hazard\n  • if (MEM/WB.RegWrite and (MEM/WB.RegisterRd ≠ 0)\n       and (MEM/WB.RegisterRd = ID/EX.RegisterRs))\n    ForwardA = 01\n  • if (MEM/WB.RegWrite and (MEM/WB.RegisterRd ≠ 0)\n        and (MEM/WB.RegisterRd = ID/EX.RegisterRt))\n    ForwardB = 01\n                                                         49\n"
+      },
+      {
+        "page": 9,
+        "title": "双重数据冒险：选择最近一次写入的结果",
+        "searchText": "双重数据冒险：选择最近一次写入的结果\nDouble Data Hazard\n• Consider the sequence:\n  add $1,$1,$2\n  add $1,$1,$3\n  add $1,$1,$4\n• Both hazards occur\n  • Want to use the most recent\n• Revise MEM hazard condition\n  • Only forward if EX hazard condition is not true\n\n\n\n\n                                                      50\n"
+      },
+      {
+        "page": 10,
+        "title": "修正转发条件：EX/MEM 优先于 MEM/WB",
+        "searchText": "修正转发条件：EX/MEM 优先于 MEM/WB\nRevised Forwarding Conditions\n• MEM hazard\n  • if (MEM/WB.RegWrite and (MEM/WB.RegisterRd ≠ 0)\n       and not (EX/MEM.RegWrite and (EX/MEM.RegisterRd ≠ 0)\n               and (EX/MEM.RegisterRd = ID/EX.RegisterRs))\n       and (MEM/WB.RegisterRd = ID/EX.RegisterRs))\n    ForwardA = 01\n  • if (MEM/WB.RegWrite and (MEM/WB.RegisterRd ≠ 0)\n       and not (EX/MEM.RegWrite and (EX/MEM.RegisterRd ≠ 0)\n               and (EX/MEM.RegisterRd = ID/EX.RegisterRt))\n       and (MEM/WB.RegisterRd = ID/EX.RegisterRt))\n    ForwardB = 01\n\n\n\n\n                                                              51\n"
+      },
+      {
+        "page": 11,
+        "title": "带转发单元的完整流水数据通路",
+        "searchText": "带转发单元的完整流水数据通路\nDatapath with Forwarding\n\n\n\n\n                           52\nIF/ID ID/EX EX/MEM MEM/WB PC Control Registers ALU Data memory Forwarding unit WB M EX",
         "coverageReason": "not_yet_taught",
-        "coverageLabel": "11月16日录音未覆盖 · 仅课件"
+        "coverageLabel": "后续预习 · 仅课件"
+      },
+      {
+        "page": 12,
+        "title": "Load-use：载入数据需要多等一拍",
+        "searchText": "Load-use：载入数据需要多等一拍\nLoad-Use Data Hazard\n\n\n                  Need to stall\n                  for one cycle\n\n\n\n\n                                  53\nlw $2,20($1) and $4,$2,$5 or $8,$2,$6 add $9,$4,$2 slt $1,$6,$7 CC4 MEM EX need stall",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "后续预习 · 仅课件"
+      },
+      {
+        "page": 13,
+        "title": "在 ID 阶段检测 load-use 依赖",
+        "searchText": "在 ID 阶段检测 load-use 依赖\nLoad-Use Hazard Detection\n• Hazard detection: operates during the ID stage\n• ALU operand register numbers in ID stage are\n  given by\n   • IF/ID.RegisterRs\n   • IF/ID.RegisterRt\n• Load-use hazard when\n   • ID/EX.MemRead and\n       ((ID/EX.RegisterRt = IF/ID.RegisterRs) or\n       (ID/EX.RegisterRt = IF/ID.RegisterRt))\n• If detected, stall and insert bubble\n\n\n                                                   54\n",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "后续预习 · 仅课件"
+      },
+      {
+        "page": 14,
+        "title": "Stall：保持 PC、IF/ID 并插入 bubble",
+        "searchText": "Stall：保持 PC、IF/ID 并插入 bubble\nHow to Stall the Pipeline\n• Force control values in ID/EX register to 0\n   • EX, MEM and WB do nop (no-operation)\n• Prevent update of PC and IF/ID register\n   • Using instruction is decoded again\n   • Following instruction is fetched again\n• 1-cycle stall allows MEM to read data for lw\n   • Can subsequently forward to EX stage\n\n\n\n\n                                                 55\n",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "后续预习 · 仅课件"
+      },
+      {
+        "page": 15,
+        "title": "停顿时序：等待的指令与向后传播的泡泡",
+        "searchText": "停顿时序：等待的指令与向后传播的泡泡\nStall/Bubble in the Pipeline\n\n\n\n\n                               56\nlw and becomes nop bubble CC4 CC5 EX MEM WB forwarding",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "后续预习 · 仅课件"
+      },
+      {
+        "page": 16,
+        "title": "完整冒险检测电路：停顿与转发配合",
+        "searchText": "完整冒险检测电路：停顿与转发配合\nDatapath with Hazard Detection\n\n\n\n\n                             57\nHazard detection unit ID/EX.MemRead PCWrite IF/IDWrite MUX zero Forwarding unit",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "后续预习 · 仅课件"
+      },
+      {
+        "page": 17,
+        "title": "用指令调度减少停顿",
+        "searchText": "用指令调度减少停顿\nStalls and Performance\n• Stalls reduce performance\n  • But are required to get correct results\n• Compiler can arrange code to avoid hazards\n  and stalls\n  • Requires knowledge of the pipeline structure\n\n\n\n\n                                                   58\n",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "后续预习 · 仅课件"
+      },
+      {
+        "page": 18,
+        "title": "MEM 才确定分支：清掉三条错误路径指令",
+        "searchText": "MEM 才确定分支：清掉三条错误路径指令\nBranch Hazards\n• If branch outcome determined in MEM\n\n\n\n\n                                        Discard / Flush\n\n\n\n\n                PC\n\n                                                 59\n40 beq $1,$3,28 44 and 48 or 52 add 72 lw Discard Flush PC CC1 CC9",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "后续预习 · 仅课件"
+      },
+      {
+        "page": 19,
+        "title": "控制冒险：等待、提前判断、延迟槽与预测",
+        "searchText": "控制冒险：等待、提前判断、延迟槽与预测\nControl Hazards\n• When the flow of instruction is not sequential (PC = PC + 4);\n  incurred by change of flow instructions\n    • Unconditional branches (j, jal, jr)\n    • Conditional branches (beq, bne)\n    • Exceptions\n• Possible approaches\n    • Stall (impacts CPI)\n    • Move decision point as early in the pipeline as possible, thereby\n      reducing the number of stall cycles\n    • Delay decision (requires compiler support)\n    • Predict and hope for the best!\n\n\n\n\n                                                                          60\n",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "后续预习 · 仅课件"
+      },
+      {
+        "page": 20,
+        "title": "提前到 ID 判断分支与计算目标",
+        "searchText": "提前到 ID 判断分支与计算目标\nReducing Branch Delay\n• Move hardware to determine outcome during\n  ID stage to reduce cost of the taken branch\n  • Target address adder\n  • Register comparator\n• Example: branch taken\n   36: sub $10, $4, $8\n   40: beq $1, $3, 7\n   44: and $12, $2, $5\n   48: or $13, $2, $6\n   52: add $14, $4, $2\n   56: slt $15, $6, $7\n   ...\n   72: lw $4, 50($7)\n\n                                                61\n",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "后续预习 · 仅课件"
+      },
+      {
+        "page": 21,
+        "title": "分支跳转 Clock 3：比较寄存器并算出目标 72",
+        "searchText": "分支跳转 Clock 3：比较寄存器并算出目标 72\nExample: Branch Taken\n\n\n\n\n                        62\nClock3 and IF beq ID sub EX IF.Flush 44 28 72 comparator target adder",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "后续预习 · 仅课件"
+      },
+      {
+        "page": 22,
+        "title": "分支跳转 Clock 4：从目标取指并清空错误指令",
+        "searchText": "分支跳转 Clock 4：从目标取指并清空错误指令\nExample: Branch Taken\n\n\n\n\n                        63\nClock4 lw IF Bubble nop ID beq EX sub MEM PC72 PC76",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "后续预习 · 仅课件"
+      },
+      {
+        "page": 23,
+        "title": "动态分支预测与历史表",
+        "searchText": "动态分支预测与历史表\nDynamic Branch Prediction\n• In deeper and superscalar pipelines, branch\n  penalty is more significant\n• Use dynamic prediction\n  • Branch prediction buffer (branch history table)\n  • Indexed by recent branch instruction addresses\n  • Stores outcome (taken/not taken)\n  • To execute a branch\n     • Check table, expect the same outcome\n     • Start fetching in the predicted direction\n     • If wrong, flush pipeline and flip prediction\n\n\n\n                                                      64\n",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "后续预习 · 仅课件"
+      },
+      {
+        "page": 24,
+        "title": "1-bit 预测器：循环进入和退出的两次错误",
+        "searchText": "1-bit 预测器：循环进入和退出的两次错误\n1-Bit Predictor: Shortcoming\n• A 1-bit predictor will be incorrect twice when not taken\n   • Assume predict_bit = 0 to start (indicating branch not taken)\n     and loop control is at the bottom of the loop code\n   1. First time through the loop, the predictor mispredicts the\n       branch since the branch is taken back to the top of the loop;\n       invert prediction bit (predict_bit = 1)\n   2. As long as branch is taken (looping), prediction is correct\n   3. Exiting the loop, the predictor again mispredicts the branch\n       since this time the branch is not taken falling out of the loop;\n       invert prediction bit (predict_bit = 0)\n• For 10 times through the loop we have a 80%\n  prediction accuracy for a branch that is taken 90% of\n  the time\n\n                                                                     65\n",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "后续预习 · 仅课件"
+      },
+      {
+        "page": 25,
+        "title": "2-bit 预测器：方向、信心与四状态转移",
+        "searchText": "2-bit 预测器：方向、信心与四状态转移\n2-Bit Predictor\n• A 2-bit scheme can give 90% accuracy\n• A prediction must be wrong twice before the prediction\n  bit is changed\n\n\n\n\n                                                           66\nTaken Not taken Predict taken Predict not taken strong weak saturating counter 00 01 10 11",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "后续预习 · 仅课件"
+      },
+      {
+        "page": 26,
+        "title": "异常与中断：内部执行事件和外部通知",
+        "searchText": "异常与中断：内部执行事件和外部通知\nExceptions and Interrupts\n• Unexpected events --- change in control flow\n   • Different ISAs use the terms differently\n• Exception from within the CPU\n   • e.g., undefined opcode, overflow, …\n• Interrupt from external\n   • e.g., I/O devices\n• Dealing without sacrificing\n  performance is hard\n\n\n\n                                                 67\n",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "后续预习 · 仅课件"
+      },
+      {
+        "page": 27,
+        "title": "MIPS 异常处理：CP0、EPC 与 Cause",
+        "searchText": "MIPS 异常处理：CP0、EPC 与 Cause\nHandling Exceptions\n• In MIPS, exceptions managed by a System\n  Control Coprocessor (CP0)\n• Save PC of offending instruction\n  • In MIPS: Exception Program Counter (EPC)\n• Transfer control to OS\n• Save indication of the problem\n  • In MIPS: Cause register\n\n\n\n\n                                               68\n",
+        "coverageReason": "not_yet_taught",
+        "coverageLabel": "后续预习 · 仅课件"
       }
     ]
   },

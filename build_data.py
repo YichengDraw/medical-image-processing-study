@@ -30,8 +30,8 @@ def build():
         'slides': {}, 'assessment': index['assessment'],
         'sources': provenance['sources'], 'recordings': provenance['recordings'],
         'examGuide': guide, 'coverage': review['coverage'],
-        'studyPolicy': '考核中心区分明确考核、Quiz复盘、老师强调/课堂提问、一般整理/课件练习、非考/未讲范围与口头安排。明确考核含教师明确的考试准备、范围与常考说明，不承诺原题必考；老师强调与提问保留可核对原话。',
-        'transcriptPolicy': '逐页对照原始PDF图示与课堂转写编写。出处按内容对应，不代表精确翻页时间；自动转写可能有错词。无对应录音的页面仅显示PPT，明确不考和本次尚未讲分开标注。',
+        'studyPolicy': '考核中心按考试要求、Quiz复盘、老师强调与提问、一般练习、授课范围和课程安排分类。考试要求记录老师说明的准备内容与范围，强调和提问附原话及时间戳。',
+        'transcriptPolicy': '逐页结合PDF图示和对应课堂片段编写，时间戳用于定位录音；正文结合课件校正转写错词。课件页分别标注已讲、待讲和老师明确列为选读的内容。',
     }
     proofs = {d['id']: d for d in review['decks']}
     assert len(proofs) == len(review['decks'])

@@ -53,7 +53,7 @@
           "page": 17
         }
       ],
-      "status": "课件练习；无对应录音，非考核承诺",
+      "status": "课件练习",
       "sourceIds": [],
       "sourceType": "课件题目与给定答案"
     },
@@ -92,7 +92,7 @@
           "page": 13
         }
       ],
-      "status": "课件练习；无对应录音，非考核承诺",
+      "status": "课件练习",
       "sourceIds": [],
       "sourceType": "课件题目与给定答案"
     },
@@ -100,7 +100,7 @@
       "id": "lab1-parallel-overhead",
       "category": "class",
       "title": "课件练习：并行开销、加速比与效率",
-      "body": "Lab 1 Q7假设单处理器原程序100秒，并行到p个处理器后每个需100/p秒计算及额外4秒开销。因此T(p)=100/p+4，加速比=100/T(p)，效率=加速比/p。例如p=4时T=29秒，加速比约3.45，效率约0.862。处理器越多不代表效率越高；这是该题的假设模型。",
+      "body": "Lab 1 Q7假设单处理器原程序100秒，并行到p个处理器后每个需100/p秒计算及额外4秒开销。因此T(p)=100/p+4，加速比=100/T(p)，效率=加速比/p。例如p=4时T=29秒，加速比约3.45，效率约0.862。在这个模型里，处理器越多，固定开销所占比例越高，效率便逐渐下降。",
       "anchors": [
         {
           "deck": "lec1",
@@ -115,7 +115,7 @@
           "page": 19
         }
       ],
-      "status": "课件练习；无对应录音，非考核承诺",
+      "status": "课件练习",
       "sourceIds": [],
       "sourceType": "课件题目与给定答案"
     },
@@ -134,7 +134,7 @@
           "page": 7
         }
       ],
-      "status": "课件练习；无对应录音，非考核承诺",
+      "status": "课件练习",
       "sourceIds": [],
       "sourceType": "课件题目与给定答案"
     },
@@ -157,7 +157,7 @@
           "page": 2
         }
       ],
-      "status": "一般内容整理；不表示老师明确重点或必考",
+      "status": "课堂内容整理",
       "sourceIds": [
         "rec0914@10:29",
         "rec0914@11:17",
@@ -196,7 +196,7 @@
           "quote": "What we have to pay attention that the system is not symmetric"
         }
       ],
-      "status": "教师明确提问；非必考承诺"
+      "status": "课堂提问"
     },
     {
       "id": "logic-gates-truth-table",
@@ -229,7 +229,7 @@
           "page": 5
         }
       ],
-      "status": "一般内容整理；不表示老师明确重点或必考",
+      "status": "课堂内容整理",
       "sourceIds": [
         "rec0914@22:29",
         "rec0914@23:02",
@@ -264,7 +264,7 @@
           "quote": "let me invite one of you to draw a true stable for a three input exclusive normal"
         }
       ],
-      "status": "教师明确提问；非必考承诺"
+      "status": "课堂提问"
     },
     {
       "id": "logic-nand-universal",
@@ -285,7 +285,7 @@
           "page": 5
         }
       ],
-      "status": "教师明确提问；非必考承诺",
+      "status": "课堂提问",
       "sourceIds": [
         "rec0914@29:47",
         "rec0914@30:17",
@@ -318,7 +318,7 @@
           "page": 17
         }
       ],
-      "status": "仅说明设计步骤；非免考声明",
+      "status": "课堂说明设计步骤",
       "sourceIds": [
         "rec0914@29:47",
         "rec0914@30:17",
@@ -349,7 +349,7 @@
           "page": 9
         }
       ],
-      "status": "一般内容整理；不表示老师明确重点或必考",
+      "status": "课堂内容整理",
       "sourceIds": [
         "rec0914@35:14",
         "rec0914@35:41",
@@ -374,7 +374,7 @@
           "page": 22
         }
       ],
-      "status": "一般内容整理；不表示老师明确重点或必考",
+      "status": "课堂内容整理",
       "sourceIds": [
         "rec0914@37:46",
         "rec0914@38:06",
@@ -407,7 +407,7 @@
           "quote": "we have to keep keep in mind the limitation of the sand in and fan out."
         }
       ],
-      "status": "教师明确强调；非必考承诺"
+      "status": "老师明确强调"
     },
     {
       "id": "logic-decoder-adder",
@@ -432,7 +432,7 @@
           "page": 26
         }
       ],
-      "status": "一般内容整理；不表示老师明确重点或必考",
+      "status": "课堂内容整理",
       "sourceIds": [
         "rec0914@41:53",
         "rec0914@43:03",
@@ -465,7 +465,7 @@
           "page": 6
         }
       ],
-      "status": "一般内容整理；不表示老师明确重点或必考",
+      "status": "课堂内容整理",
       "sourceIds": [
         "rec0914@01:00:36",
         "rec0914@01:32:48",
@@ -504,7 +504,7 @@
           "page": 7
         }
       ],
-      "status": "一般内容整理；不表示老师明确重点或必考",
+      "status": "课堂内容整理",
       "sourceIds": [
         "rec0914@01:02:22",
         "rec0914@01:02:44",
@@ -547,7 +547,7 @@
           "page": 37
         }
       ],
-      "status": "一般内容整理；不表示老师明确重点或必考",
+      "status": "课堂内容整理",
       "sourceIds": [
         "rec0914@01:08:44",
         "rec0914@01:09:27",
@@ -603,7 +603,7 @@
           "page": 12
         }
       ],
-      "status": "教师明确提问；非必考承诺",
+      "status": "课堂提问",
       "sourceIds": [
         "rec0914@01:20:31",
         "rec0914@01:21:00",
@@ -636,7 +636,7 @@
       "id": "isa-first-quiz-arrangement",
       "category": "arrangement",
       "title": "历史课堂通知：下一周第一次 Quiz",
-      "body": "这份未标课堂日期的录音开头及末尾提到“下周的这节课”进行第一次quiz，末尾提醒带笔，可能需要书写。转写中具体开考分钟不清楚，不能据此安排当前日程；应以课程后续正式通知为准。录音未在这些片段中给出完整考试范围或最终评分比例。",
+      "body": "这份日期未注明的历史录音提到“下周的这节课”进行第一次quiz，末尾提醒带笔，可能需要书写。具体开考分钟转写含糊；当前日程、考试范围与评分方式查看后续正式通知。",
       "anchors": [
         {
           "deck": "lec3",
@@ -659,7 +659,7 @@
       "id": "isa-current-coverage",
       "category": "scope",
       "title": "本阶段着重前三类指令",
-      "body": "讲指令类别时，老师说大部分时间将处理load/store、计算、jump/branch前三类。它说明课堂讲解重心，不代表浮点、存储管理或特殊指令被明确排除出所有后续考核。",
+      "body": "老师介绍指令类别时，把load/store、计算、jump/branch作为课堂主要内容。复习时先沿这三类建立框架，再按后续授课与考核通知补充其他类别。",
       "anchors": [
         {
           "deck": "lec3",
@@ -702,7 +702,7 @@
           "page": 48
         }
       ],
-      "status": "一般内容整理；不表示老师明确重点或必考",
+      "status": "课堂内容整理",
       "sourceIds": [
         "rec03@43:17",
         "rec04@00:23",
@@ -751,7 +751,7 @@
           "quote": "I would please ask you what is the difference between color safe and calling safe"
         }
       ],
-      "status": "教师明确提问；非必考承诺"
+      "status": "课堂提问"
     },
     {
       "id": "isa-array-byte-offset",
@@ -768,7 +768,7 @@
           "page": 18
         }
       ],
-      "status": "教师明确提问；非必考承诺",
+      "status": "课堂提问",
       "sourceIds": [
         "rec02-s116",
         "rec02-s119",
@@ -808,7 +808,7 @@
           "page": 36
         }
       ],
-      "status": "一般内容整理；不表示老师明确重点或必考",
+      "status": "课堂内容整理",
       "sourceIds": [
         "rec03-s017",
         "rec03-s018",
@@ -843,7 +843,7 @@
           "page": 30
         }
       ],
-      "status": "明确Quiz准备要求；不承诺原题必考",
+      "status": "老师明确提出的Quiz准备要求",
       "sourceIds": [
         "rec02-s160",
         "rec02-s167",
@@ -911,7 +911,7 @@
           "page": 39
         }
       ],
-      "status": "教师明确提问；非必考承诺",
+      "status": "课堂提问",
       "sourceIds": [
         "rec03-s030",
         "rec03-s032",
@@ -949,7 +949,7 @@
           "page": 51
         }
       ],
-      "status": "一般内容整理；不表示老师明确重点或必考",
+      "status": "课堂内容整理",
       "sourceIds": [
         "rec04@06:03",
         "rec04@06:40",
@@ -989,7 +989,7 @@
           "quote": "Why why we have a four here?"
         }
       ],
-      "status": "教师明确提问；非必考承诺"
+      "status": "课堂提问"
     },
     {
       "id": "isa-factorial-recursion",
@@ -1010,7 +1010,7 @@
           "page": 54
         }
       ],
-      "status": "教师明确提问；非必考承诺",
+      "status": "课堂提问",
       "sourceIds": [
         "rec04@17:06",
         "rec04@17:52",
@@ -1053,7 +1053,7 @@
           "page": 56
         }
       ],
-      "status": "一般内容整理；不表示老师明确重点或必考",
+      "status": "课堂内容整理",
       "sourceIds": [
         "rec04@29:22",
         "rec04@29:50",
@@ -1086,7 +1086,7 @@
           "page": 58
         }
       ],
-      "status": "一般内容整理；不表示老师明确重点或必考",
+      "status": "课堂内容整理",
       "sourceIds": [
         "rec04@40:23",
         "rec04@41:00",
@@ -1110,7 +1110,7 @@
           "page": 59
         }
       ],
-      "status": "一般内容整理；不表示老师明确重点或必考",
+      "status": "课堂内容整理",
       "sourceIds": [
         "rec04@46:56",
         "rec04@47:39",
@@ -1140,7 +1140,7 @@
           "page": 65
         }
       ],
-      "status": "一般内容整理；不表示老师明确重点或必考",
+      "status": "课堂内容整理",
       "sourceIds": [
         "rec04@01:00:55",
         "rec04@01:02:05",
@@ -1193,13 +1193,13 @@
           "quote": "so why we are going to have two zeros here."
         }
       ],
-      "status": "教师明确提问；非必考承诺"
+      "status": "课堂提问"
     },
     {
       "id": "isa-jump-address",
       "category": "class",
       "title": "一般整理：超范围条件分支的代码改写",
-      "body": "条件分支目标超过16位字偏移的可达范围时，可用反条件近分支跳过一条j，再由j转往远处。改写仍须满足j本身的伪直接寻址范围，不能据此任意跨越256MiB区域。j拼接与分支相加的明确比较要求另列。",
+      "body": "条件分支目标超过16位字偏移的范围时，可以先用反条件近分支跳过一条j，再由j转往目标。这个目标仍需落在j可达的256 MiB区域内。j的地址拼接与分支的地址相加要求另列比较。",
       "anchors": [
         {
           "deck": "lec3",
@@ -1218,7 +1218,7 @@
           "page": 65
         }
       ],
-      "status": "一般内容整理；不表示老师明确重点或必考",
+      "status": "课堂内容整理",
       "sourceIds": [
         "rec04@01:15:41",
         "rec04@01:16:00",
@@ -1261,7 +1261,7 @@
           "quote": "So you should be able to tell the difference here。Here is an addition the the plus sign this is an addition and for pseudo direct addressing it is not added with the pc"
         }
       ],
-      "status": "教师明确强调；非必考承诺"
+      "status": "老师明确强调"
     },
     {
       "id": "alu-slt-feedback",
@@ -1278,7 +1278,7 @@
           "page": 6
         }
       ],
-      "status": "教师明确提问；非必考承诺",
+      "status": "课堂提问",
       "sourceIds": [
         "rec04@01:39:43",
         "rec04@01:43:25",
@@ -1313,7 +1313,7 @@
           "page": 30
         }
       ],
-      "status": "教师明确强调；非必考承诺",
+      "status": "老师明确强调",
       "sourceIds": [
         "rec05@23:15",
         "rec05@28:01",
@@ -1360,7 +1360,7 @@
       "id": "datapath-write-direction",
       "category": "teacher",
       "title": "课堂提问：从数据流填写控制信号与不关心项",
-      "body": "老师先围绕 sw、lw、R 型指令提问谁需要写入，又在本次 22:36–22:54 要求根据 R 型、lw、beq 的行为填写控制位。R 型把 ALU 结果写入 rd：RegWrite=1、RegDst=1、ALUSrc=0、MemtoReg=0；lw 把内存数据写入 rt：RegWrite=1、RegDst=0、ALUSrc=1、MemRead=1、MemtoReg=1；sw 写数据存储器而不写寄存器：MemWrite=1、RegWrite=0；beq 不写寄存器或数据存储器，用减法产生 Zero，并由 Branch AND Zero 决定是否取分支目标。Zero=1 本身不代表必须跳转，例如普通算术结果为零时 Branch=0，仍走 PC+4。35:53–38:36 的追问解释了 sw/beq 的 RegDst、MemtoReg 为何可记 X：RegWrite=0 时，它们选择的写回地址与数据不会写入寄存器。例：sw $t0,8($s0) 写入的是 $t0 的值，ALU 算出的 $s0+8 只是内存地址。",
+      "body": "老师先围绕sw、lw、R型指令提问谁需要写入，又在本次22:36–22:54要求根据R型、lw、beq的行为填写控制位。R型把ALU结果写入rd：RegWrite=1、RegDst=1、ALUSrc=0、MemtoReg=0；lw把内存数据写入rt：RegWrite=1、RegDst=0、ALUSrc=1、MemRead=1、MemtoReg=1；sw写数据存储器：MemWrite=1、RegWrite=0；beq用减法产生Zero，再由Branch AND Zero决定是否跳转。必须同时满足Branch=1和Zero=1才选分支目标；普通算术结果为零时Branch=0，仍走PC+4。35:53–38:36的追问解释了sw/beq的RegDst、MemtoReg为何可记X：RegWrite=0，寄存器写入口关闭，所选地址与数据都不会写入。例如sw $t0,8($s0)存的是$t0的值，ALU算出的$s0+8则是内存地址。",
       "anchors": [
         {
           "deck": "lec5",
@@ -1395,7 +1395,7 @@
           "page": 28
         }
       ],
-      "status": "教师明确提问；非必考承诺",
+      "status": "课堂提问",
       "sourceIds": [
         "rec06@16:53",
         "rec06@20:13",
@@ -1460,7 +1460,7 @@
           "page": 15
         }
       ],
-      "status": "教师明确提问；非必考承诺",
+      "status": "课堂提问",
       "sourceIds": [
         "rec06@48:36",
         "rec06@59:52",
@@ -1528,7 +1528,7 @@
           "page": 21
         }
       ],
-      "status": "课件交叉核对；已有相关讲解，未见口头纠错",
+      "status": "结合课堂讲解核对课件",
       "sourceIds": [
         "ai301-r07-s013",
         "ai301-r07-s014",
@@ -1552,7 +1552,7 @@
       "title": "第一份作业：历史发布与截止通知、11月9日提交提醒",
       "body": "05 录音结尾说第一份作业预计在“本周”通过 Blackboard 发布；06 录音开头又提到某个周日的截止时点，并提醒不要等到最后一分钟提交，以防网站异常。这两份录音没有可确认的授课日期，转写也未给出完整日历日期，不能把“本周”或“周日”换算成当前有效截止日期。2026-11-09 新增转写末尾 01:49:51–01:50:13 再次提醒在线提交第一份作业，本段没有给出截止日期或时刻；平台词被自动转写为 backward，不能只据这一误转写确认平台名称。课程原作业公告仍是具体安排的核对依据，不从“今天”倒推出周日、午夜或当日截止。",
       "anchors": [],
-      "status": "11月9日仅提交提醒；未给新截止时间，旧相对日期不可换算",
+      "status": "11月9日提交提醒；截止时间请查正式通知",
       "sourceIds": [
         "rec05@01:06:39",
         "rec06@00:00",
@@ -1575,7 +1575,7 @@
           "page": 21
         }
       ],
-      "status": "教师明确提问；非必考承诺",
+      "status": "课堂提问",
       "sourceIds": [
         "ai301-r07-s019",
         "ai301-r07-s020",
@@ -1681,7 +1681,7 @@
       "id": "pipeline-latency-throughput-emphasis",
       "category": "teacher",
       "title": "老师要求分清：流水线收益来自吞吐量",
-      "body": "11月9日与11月16日的课堂总结都明确要求分清单条延迟和吞吐量。并行重叠让同样时间内完成更多指令，直接收益是吞吐量；不能据此认为一条指令走完所有步骤也更快。口述“延迟不变”需结合模型：本课先前例子单周期 800 ps，流水线按五个完整的 200 ps 时槽计算是 1000 ps。应分清比较口径，再判断收益来自哪里。",
+      "body": "11月9日与11月16日的课堂总结都要求分清单条延迟与吞吐量。流水线把多条指令重叠起来，让同样时间内完成更多指令；单条延迟要另算。本课例子单周期为800 ps，流水线按五个完整200 ps时槽计为1000 ps。比较性能时先写清时槽与完成时刻，再看吞吐量提高了多少。",
       "anchors": [
         {
           "deck": "lec6",
@@ -1717,7 +1717,7 @@
           "quote": "Uh，but the thing is that it increase the throughput。"
         }
       ],
-      "status": "教师明确强调；非必考承诺"
+      "status": "老师明确强调"
     },
     {
       "id": "pipeline-regular-isa-design",
@@ -1774,13 +1774,13 @@
           "quote": "what are the possible advantage brought by this kind of regular formatting？"
         }
       ],
-      "status": "教师明确提问；非必考承诺"
+      "status": "课堂提问"
     },
     {
       "id": "pipeline-three-hazards",
       "category": "class",
       "title": "三类冒险：资源冲突、数据未就绪、分支未确定",
-      "body": "11月9日课堂先解释三类冒险的原因。结构冒险是重叠执行时所需硬件资源冲突，例如在只有一个可用访问端口、取指与数据访问共用存储器的假设下，IF 与 lw/sw 的 MEM 争用端口。数据冒险是后继指令需要的值尚未产生，例如紧邻的 add 使用上一条计算结果，或 lw 后立即使用刚加载的值。控制冒险是下一条应取的地址尚不确定，例如 beq 需要比较结果才能选择 PC+4 或分支目标。在该次介绍模型中比较位于 EX；11月16日已续讲前推比较、转发、停顿、预测等方法，相关做法在后续条目单列，不能据此概括为所有依赖都必须等到 WB。11月9日01:49:02后所说“解决办法留待后续”的边界已随新录音更新。",
+      "body": "11月9日课堂先解释三类冒险：结构冒险是硬件资源冲突，例如IF取指与lw/sw的MEM访存在单端口存储器上争用；数据冒险是后继指令需要的新值尚未到达，例如紧接着使用add或lw的结果；控制冒险是分支条件尚未确定，前端需要选择PC+4还是分支目标。随后课程继续讨论提前分支比较、转发、停顿与预测，各种处理方法在相应条目展开。",
       "anchors": [
         {
           "deck": "lec6",
@@ -1809,22 +1809,26 @@
     {
       "id": "pipeline-current-recording-coverage",
       "category": "scope",
-      "title": "录音覆盖：Lec6 已续讲，Part 2 讲到 IF for Load",
-      "status": "材料覆盖说明；不是考试范围",
-      "sourceType": "两次课堂录音的授课边界",
-      "body": "11月9日录音停在Lec6三类冒险的引入；11月16日录音继续完成Lec6 P9–20，并进入Part 2 P1–6。01:43:00–01:43:36讲完load取指、PC+4与IF/ID后说下次继续。Part 2 P7–21尚无本次继续讲授，保持纯课件；后面的课后闲聊不计入来源。未讲不等于不考，以上不能用来推定考试只到这里。",
+      "title": "课堂进度：11月23日讲到 Part3 P10 的修正转发条件",
+      "status": "按录音内容定位课堂进度",
+      "sourceType": "三次流水线课堂录音",
+      "body": "11月9日讲到流水线三类冒险；11月16日完成 Lec6 后半并进入 Part2 P1–6；11月23日接续 Part2 P10–21 的写回修正、sw、流水线图和控制，再讲 Part3 P1–10 的数据冒险与转发。Part2 P7–9 的对应录音待补，保留原课件；Part3 P11–27 作为后续预习。当天末尾宣布 Quiz 3 范围截至此次已讲内容，可在明确考核要求中查看原话。",
       "anchors": [
         {
-          "deck": "lec6",
-          "page": 20
+          "deck": "lec6p2",
+          "page": 10
         },
         {
           "deck": "lec6p2",
-          "page": 6
+          "page": 21
         },
         {
-          "deck": "lec6p2",
-          "page": 7
+          "deck": "lec6p3",
+          "page": 10
+        },
+        {
+          "deck": "lec6p3",
+          "page": 11
         }
       ],
       "sourceIds": [
@@ -1833,7 +1837,12 @@
         "ai301-r08-s110",
         "ai301-r08-s164",
         "ai301-r08-s165",
-        "ai301-r08-s166"
+        "ai301-r08-s166",
+        "ai301-r09-s004",
+        "ai301-r09-s065",
+        "ai301-r09-s156",
+        "ai301-r09-s157",
+        "ai301-r09-s158"
       ]
     },
     {
@@ -1841,7 +1850,7 @@
       "category": "class",
       "title": "结构冒险：同一拍争用同一硬件",
       "body": "本例中 IF 取指与一条较早 lw/sw 的 MEM 访存，争用只能服务一次访问的共享存储端口，只能让其中一项等待。把指令和数据的访问资源分开可避免这处冲突。老师用洗烘一体机类比：同一个滚筒无法同时为两批衣服分别洗和烘。这里依赖单端口/访问吞吐受限的假设，不是说所有统一内存都无法支持流水线。",
-      "status": "课堂讲解整理；未见明确考核承诺",
+      "status": "课堂讲解整理",
       "sourceType": "课堂录音与原始课件",
       "anchors": [
         {
@@ -1864,8 +1873,8 @@
       "id": "pipeline-forwarding-availability",
       "category": "class",
       "title": "数据转发：结果产生后就交给消费者",
-      "body": "add $s0,$t0,$t1 后面紧接 sub $t2,$s0,$t3，后者需要前者的新结果。普通 ALU 运算在 EX 结束后已经生成结果，可经旁路交给后继指令的 EX 输入，无须先等 WB 写回，再从寄存器堆取出。转发需要额外连接和选择控制；数据依赖存在，不代表必然停到写回完成。",
-      "status": "课堂讲解整理；未见明确考核承诺",
+      "body": "add $s0,$t0,$t1后紧接sub $t2,$s0,$t3，后者需要前者的新结果。ALU在EX末算出结果后，可经旁路直接送到后继指令的EX输入，提前满足依赖。实现时增加对应连线与选择控制；是否还需停顿，要比较结果可用时刻和实际使用时刻。",
+      "status": "课堂讲解整理",
       "sourceType": "课堂录音与原始课件",
       "anchors": [
         {
@@ -1901,7 +1910,7 @@
       "category": "teacher",
       "title": "老师强调：load-use 卡在结果产生得太晚",
       "body": "老师把关键原因明确归结为产生数据与使用数据的时点：ALU 运算在 EX 结束后已有结果，而 lw 必须等 MEM 访问完成。紧随其后的消费者原本在更早的 EX 时刻就需要该值，旁路不能把未来结果送回过去。因此课件这条 lw→sub 在具备相应转发的五级模型中仍要停一拍。",
-      "status": "老师明确强调或课堂提问；不等于必考",
+      "status": "老师强调或课堂提问",
       "sourceType": "课堂录音与原始课件",
       "anchors": [
         {
@@ -1935,7 +1944,7 @@
       "category": "class",
       "title": "课件例题：用独立指令填掉 load-use 空泡",
       "body": "原顺序有两处 lw 后紧接依赖它的 add，各需等待一拍。课件把读取 f 的 lw $t4,8($t0) 提前，放在另外两条 load 之后，让消费者与对应 load 隔开；两处空泡因此都被有用工作替代，比原顺序少两拍。只有移动的指令彼此独立、访存不破坏原有依赖，并且具备图示旁路时，这个重排才保持语义和效果。",
-      "status": "课堂讲解整理；未见明确考核承诺",
+      "status": "课堂讲解整理",
       "sourceType": "课堂录音与原始课件",
       "anchors": [
         {
@@ -1959,7 +1968,7 @@
       "category": "class",
       "title": "分支等待：提前到 ID 判断能减少损失",
       "body": "beq 需要比较寄存器并计算目标地址，前端却必须尽早决定下一次取指位置。课件提出增加硬件，把比较和目标计算提前到 ID。随后保守等待图中的 beq 与正确后继指令取指起点相隔 400 ps，正常间隔是 200 ps，因此额外代价为 200 ps、一拍。不能把这张图概括为所有分支都固定停一拍；晚一级判断或操作数尚未就绪都会改变时序。",
-      "status": "课堂讲解整理；未见明确考核承诺",
+      "status": "课堂讲解整理",
       "sourceType": "课堂录音与原始课件",
       "anchors": [
         {
@@ -1995,7 +2004,7 @@
       "category": "class",
       "title": "分支预测：先取指，错误时作废并改道",
       "body": "课件先假设分支不跳转，沿顺序地址取指。预测正确时，本例不产生分支额外停顿；预测错误时，要作废错误路径的指令，改 PC，再取正确目标，不能让错误指令产生有效写回。P18 的一拍代价仍基于提前在 ID 判定的图示模型。“预测正确无需停顿”只说这次分支，不排除数据、结构或存储器造成的等待。",
-      "status": "课堂讲解整理；未见明确考核承诺",
+      "status": "课堂讲解整理",
       "sourceType": "课堂录音与原始课件",
       "anchors": [
         {
@@ -2031,7 +2040,7 @@
       "category": "class",
       "title": "静态与动态预测：程序经验和实际历史",
       "body": "静态预测利用典型程序结构，例如循环通常向后跳、向前跳常对应条件分支；这是经验规则，不是必然结论。动态预测记录特定分支此前的实际行为，再据此预测和更新。老师以最近几次跳转记录举例说明利用历史，没有在这次录音中规定必须用“五次多数表决”，也没有讲出某个具体饱和计数器实现。",
-      "status": "课堂讲解整理；未见明确考核承诺",
+      "status": "课堂讲解整理",
       "sourceType": "课堂录音与原始课件",
       "anchors": [
         {
@@ -2060,8 +2069,8 @@
       "id": "pipeline-datapath-return-paths",
       "category": "class",
       "title": "两条返回路径：PC 选择与寄存器写回",
-      "body": "数据通路整体从左向右推进，但分支结果要返回前端选择 PC，WB 结果也要返回寄存器堆。它们分别提示控制依赖和数据依赖：后面的结果可能晚于前面的使用时刻。例：add 写出的 $s0 若被后继 sub 使用，就需要检查产生、转发和消费时间；图上的空间回流不等于真的可以在时间上倒流。",
-      "status": "课堂讲解整理；未见明确考核承诺",
+      "body": "数据通路整体从左向右推进，分支结果要送回前端选择PC，WB结果也要送回寄存器堆。图中这些返回线提示跨阶段依赖。例如add写$s0、后继sub读$s0，就要检查新值何时产生、怎样转发、何时被使用；空间连线与时序安排要一起看。",
+      "status": "课堂讲解整理",
       "sourceType": "课堂录音与原始课件",
       "anchors": [
         {
@@ -2088,7 +2097,7 @@
       "category": "class",
       "title": "流水寄存器：保存什么，就需要多少位",
       "body": "级间寄存器在时钟边沿保存前一阶段的结果，让各条指令在不同阶段同时前进。按当前简图逐线相加：IF/ID=指令32+PC+4的32=64；ID/EX=PC+4、两个寄存器值、扩展立即数共128；EX/MEM=三个32位值加Zero的1位=97；MEM/WB=内存数据32+ALU结果32=64。后面加入目的寄存器号和控制位时，要增加相应宽度，这些不是所有完整实现的固定尺寸。",
-      "status": "课堂讲解整理；未见明确考核承诺",
+      "status": "课堂讲解整理",
       "sourceType": "课堂录音与原始课件",
       "anchors": [
         {
@@ -2133,7 +2142,7 @@
       "category": "teacher",
       "title": "课堂提问：为什么 WB 后没有额外流水寄存器？",
       "body": "老师提出这个问题后，回答对于 lw、add 等更新寄存器堆的指令，寄存器堆本身已经是保存最终结果的状态元件，再放一组仅重复保存结果的寄存器会冗余。五个阶段之间本来只有四个内部相邻边界；不能把提问中的引导说法写成“五级在数学上必须有五组级间寄存器”。转写没有可确认的学生答案。",
-      "status": "老师明确强调或课堂提问；不等于必考",
+      "status": "老师强调或课堂提问",
       "sourceType": "课堂录音与原始课件",
       "anchors": [
         {
@@ -2160,7 +2169,7 @@
       "category": "teacher",
       "title": "老师提醒：图画了多行，硬件仍是同一套",
       "body": "多周期图为了追踪每条指令，在多行重复画出硬件符号；老师明确提醒实际指令共享同一套数据通路。例：CC3 时三个 lw 分别处于 EX、ID、IF，是同时使用同一套通路中的不同资源，并不是复制了三套完整 CPU。图的纵向是指令顺序，横向是时间，不能把画法误读成物理硬件数量。",
-      "status": "老师明确强调或课堂提问；不等于必考",
+      "status": "老师强调或课堂提问",
       "sourceType": "课堂录音与原始课件",
       "anchors": [
         {
@@ -2189,8 +2198,8 @@
       "id": "pipeline-diagrams",
       "category": "class",
       "title": "两种流水线图：全过程与单拍截面",
-      "body": "多周期图看整段时间的先后关系；单周期流水线图是某一拍的截面，显示各指令占用哪些资源，不等于单周期 CPU。例：三条 lw 的 CC5 中，第一条在 WB、第二条在 MEM、第三条在 EX；把这一列放回同一套硬件图，就能追踪这一拍的并行资源使用。",
-      "status": "课堂讲解整理；未见明确考核承诺",
+      "body": "多周期图追踪一段时间内各条指令的推进；单周期流水线图截取其中一拍，显示该拍的资源使用。例如三条lw的CC5中，第一条在WB，第二条在MEM，第三条在EX；把这一列放回同一套硬件图，就得到这一拍的流水线截面。",
+      "status": "课堂讲解整理",
       "sourceType": "课堂录音与原始课件",
       "anchors": [
         {
@@ -2214,7 +2223,7 @@
       "category": "class",
       "title": "lw 的 IF：保存指令与 PC+4",
       "body": "沿蓝色路径读图：指令存储器读出32位指令，同时算PC+4，再把两份32位信息写入IF/ID，总计64位。此时取的是lw指令本身，尚未读取lw最终要加载的数据；后者在MEM阶段完成。当前图例右侧阴影表示读，左侧表示写，下一拍该指令从保存的副本继续译码。",
-      "status": "课堂讲解整理；未见明确考核承诺",
+      "status": "课堂讲解整理",
       "sourceType": "课堂录音与原始课件",
       "anchors": [
         {
@@ -2227,10 +2236,337 @@
         "ai301-r08-s165",
         "ai301-r08-s166"
       ]
+    },
+    {
+      "id": "quiz3-nov23-scope",
+      "category": "explicit",
+      "title": "Quiz 3：下周测验，复习到本次讲完的转发条件",
+      "body": "老师在 11 月 23 日下课前通知，下周进行 Quiz 3，范围截至本次已讲内容。此次新增部分包括 Part2 的写回修正、sw、流水线图和控制信号，以及 Part3 的数据冒险与转发，截止 Part3 P10（课件页码 51）的修正转发条件。",
+      "anchors": [
+        {
+          "deck": "lec6p2",
+          "page": 11
+        },
+        {
+          "deck": "lec6p2",
+          "page": 20
+        },
+        {
+          "deck": "lec6p3",
+          "page": 1
+        },
+        {
+          "deck": "lec6p3",
+          "page": 10
+        }
+      ],
+      "sourceIds": [
+        "ai301-r09-s157",
+        "ai301-r09-s158"
+      ],
+      "sourceType": "课堂原文中的明确考核安排",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "ai301-r09-s157",
+          "quote": "and will have a third，呃，please next week，呃，the range is。Up to what we have covered today"
+        },
+        {
+          "kind": "emphasis",
+          "sourceId": "ai301-r09-s158",
+          "quote": "So the range is only up to what I have talked about up to now."
+        }
+      ],
+      "status": "老师明确通知 · 11月23日"
+    },
+    {
+      "id": "pipeline-carry-writeback-destination",
+      "category": "teacher",
+      "title": "老师强调：写回目标要和指令一起传下去",
+      "body": "lw 到 WB 时还要知道写哪个寄存器，因此把 5 位目的编号逐级保存到 MEM/WB。lw 选择 rt，R-type 选择 rd。老师反复强调：后面要用的信息都随指令传递。例如 lw $5,12($1) 一路带着编号 5，最后把读出的值写入 $5。",
+      "anchors": [
+        {
+          "deck": "lec6p2",
+          "page": 10
+        },
+        {
+          "deck": "lec6p2",
+          "page": 11
+        }
+      ],
+      "sourceIds": [
+        "ai301-r09-s004",
+        "ai301-r09-s005",
+        "ai301-r09-s006",
+        "ai301-r09-s008",
+        "ai301-r09-s009"
+      ],
+      "sourceType": "课堂原文中的明确强调或提问",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "ai301-r09-s006",
+          "quote": "The principle is that any information which is potentially needed in a later stage, it must be passed all the way down."
+        }
+      ],
+      "status": "老师反复强调"
+    },
+    {
+      "id": "pipeline-control-stage-question",
+      "category": "teacher",
+      "title": "课堂提问：控制信号分别在哪个阶段使用",
+      "body": "老师让大家把控制信号按五阶段分组。EX 使用 RegDst、ALUOp、ALUSrc；MEM 使用 Branch、MemRead、MemWrite；WB 使用 MemtoReg、RegWrite。归类看实际使用时刻，例如 RegWrite 虽然画在左侧寄存器堆旁，控制的是 WB 写回。",
+      "anchors": [
+        {
+          "deck": "lec6p2",
+          "page": 18
+        },
+        {
+          "deck": "lec6p2",
+          "page": 19
+        }
+      ],
+      "sourceIds": [
+        "ai301-r09-s031",
+        "ai301-r09-s034",
+        "ai301-r09-s036",
+        "ai301-r09-s037",
+        "ai301-r09-s038",
+        "ai301-r09-s039",
+        "ai301-r09-s040",
+        "ai301-r09-s044",
+        "ai301-r09-s045",
+        "ai301-r09-s046"
+      ],
+      "sourceType": "课堂原文中的明确强调或提问",
+      "teacherEvidence": [
+        {
+          "kind": "question",
+          "sourceId": "ai301-r09-s031",
+          "quote": "How can we divide all the control lines for single cycle data pass into five groups?"
+        },
+        {
+          "kind": "emphasis",
+          "sourceId": "ai301-r09-s046",
+          "quote": "This register right, it is also a control line belonging to the last stage."
+        }
+      ],
+      "status": "老师明确提问"
+    },
+    {
+      "id": "pipeline-control-nine-five-two",
+      "category": "class",
+      "title": "课堂整理：控制位按 9→5→2 逐级传递",
+      "body": "ID 生成 9 位控制信息。EX 用掉 4 位，剩 5 位进入 EX/MEM；MEM 用掉 3 位，剩 WB 的 2 位进入 MEM/WB。例如 lw 的 MemRead 到 MEM 才控制读内存，RegWrite 到 WB 才控制写寄存器。",
+      "anchors": [
+        {
+          "deck": "lec6p2",
+          "page": 20
+        },
+        {
+          "deck": "lec6p2",
+          "page": 21
+        }
+      ],
+      "sourceIds": [
+        "ai301-r09-s051",
+        "ai301-r09-s055",
+        "ai301-r09-s058",
+        "ai301-r09-s059",
+        "ai301-r09-s060",
+        "ai301-r09-s061",
+        "ai301-r09-s062",
+        "ai301-r09-s063",
+        "ai301-r09-s065"
+      ],
+      "sourceType": "录音与课件整理",
+      "teacherEvidence": [],
+      "status": "录音与课件整理"
+    },
+    {
+      "id": "forwarding-same-cycle-read-write",
+      "category": "teacher",
+      "title": "课堂提问：同一拍读写同一个寄存器，会读到什么",
+      "body": "本课的寄存器堆先在前半拍写入，再在后半拍读取。因此同拍读取能拿到更新值。例子中 sub 在 CC5 写入 $2=−20，add 也在 CC5 的 ID 读取 $2，于是读到 −20。",
+      "anchors": [
+        {
+          "deck": "lec6p3",
+          "page": 2
+        },
+        {
+          "deck": "lec6p3",
+          "page": 5
+        }
+      ],
+      "sourceIds": [
+        "ai301-r09-s083",
+        "ai301-r09-s084",
+        "ai301-r09-s085",
+        "ai301-r09-s086",
+        "ai301-r09-s087",
+        "ai301-r09-s088"
+      ],
+      "sourceType": "课堂原文中的明确强调或提问",
+      "teacherEvidence": [
+        {
+          "kind": "question",
+          "sourceId": "ai301-r09-s083",
+          "quote": "So what happens when a register is read and written in the same clock cycle?"
+        }
+      ],
+      "status": "老师明确提问"
+    },
+    {
+      "id": "forwarding-ready-needed-times",
+      "category": "teacher",
+      "title": "课堂提问：结果最早何时可用，下一条何时需要",
+      "body": "老师连续问两个时间点：sub 的结果最早何时产生，and 真正使用它是在何时。sub 在 CC3 的 EX 结束时算出结果，and 在 CC4 的 EX 使用，因此可以从 EX/MEM 直接转发到 ALU 输入。做题先对齐“产生”和“使用”的时刻。",
+      "anchors": [
+        {
+          "deck": "lec6p3",
+          "page": 2
+        },
+        {
+          "deck": "lec6p3",
+          "page": 5
+        }
+      ],
+      "sourceIds": [
+        "ai301-r09-s093",
+        "ai301-r09-s094",
+        "ai301-r09-s095",
+        "ai301-r09-s096",
+        "ai301-r09-s097"
+      ],
+      "sourceType": "课堂原文中的明确强调或提问",
+      "teacherEvidence": [
+        {
+          "kind": "question",
+          "sourceId": "ai301-r09-s093",
+          "quote": "when is the earliest moment that this result value is available？"
+        },
+        {
+          "kind": "question",
+          "sourceId": "ai301-r09-s094",
+          "quote": "for the second instruction, and when is the data actually needed?"
+        }
+      ],
+      "status": "老师连续追问"
+    },
+    {
+      "id": "forwarding-type-ab-question",
+      "category": "teacher",
+      "title": "老师强调：分清冒险类型和 ForwardA/B",
+      "body": "问 EX/type1 或 MEM/type2，先判断转发值来自 EX/MEM 还是 MEM/WB；本节连续推进的例子中分别对应相邻、隔一条指令。问 ForwardA/B，再看当前指令用 rs 还是 rt。例如 sub 写 $2，紧接的 and 把 $2 放在 rs，得到 ForwardA=10。",
+      "anchors": [
+        {
+          "deck": "lec6p3",
+          "page": 3
+        },
+        {
+          "deck": "lec6p3",
+          "page": 7
+        },
+        {
+          "deck": "lec6p3",
+          "page": 8
+        }
+      ],
+      "sourceIds": [
+        "ai301-r09-s107",
+        "ai301-r09-s108",
+        "ai301-r09-s109",
+        "ai301-r09-s144",
+        "ai301-r09-s146",
+        "ai301-r09-s147",
+        "ai301-r09-s148",
+        "ai301-r09-s149",
+        "ai301-r09-s150",
+        "ai301-r09-s151"
+      ],
+      "sourceType": "课堂原文中的明确强调或提问",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "ai301-r09-s149",
+          "quote": "So anything corresponding to A, it is about RS, and anything corresponding to B, it is about RT. So you should be able to. tell the difference so."
+        }
+      ],
+      "status": "老师强调要会区分"
+    },
+    {
+      "id": "forwarding-regwrite-zero-check",
+      "category": "teacher",
+      "title": "老师强调：先查 RegWrite 和目标编号，再比较依赖",
+      "body": "转发判断先确认生产者 RegWrite=1、目的寄存器编号≠0，再比较它是否等于当前 rs 或 rt。这样选出的才是有效的新值。例如 add $0,$1,$2 的结果丢弃，下一条读取 $0 时仍得到固定值 0。",
+      "anchors": [
+        {
+          "deck": "lec6p3",
+          "page": 4
+        },
+        {
+          "deck": "lec6p3",
+          "page": 8
+        }
+      ],
+      "sourceIds": [
+        "ai301-r09-s110",
+        "ai301-r09-s111",
+        "ai301-r09-s112",
+        "ai301-r09-s113",
+        "ai301-r09-s145",
+        "ai301-r09-s146"
+      ],
+      "sourceType": "课堂原文中的明确强调或提问",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "ai301-r09-s146",
+          "quote": "So for each of this checking condition, first you need to check for register white equal to one and register RD not equal to zero."
+        }
+      ],
+      "status": "老师重复强调"
+    },
+    {
+      "id": "forwarding-latest-value-priority",
+      "category": "teacher",
+      "title": "老师强调：两种转发同时命中时，取最新值",
+      "body": "EX/MEM 比 MEM/WB 保存着更近一条指令的结果；同一输入同时匹配时，选 EX 转发。连续三条 add 都更新 $1，第三条要用第二条的新结果。MEM 条件因此增加“该输入的 EX 匹配未命中”，A、B 两路分别判断。",
+      "anchors": [
+        {
+          "deck": "lec6p3",
+          "page": 9
+        },
+        {
+          "deck": "lec6p3",
+          "page": 10
+        }
+      ],
+      "sourceIds": [
+        "ai301-r09-s152",
+        "ai301-r09-s153",
+        "ai301-r09-s154",
+        "ai301-r09-s155",
+        "ai301-r09-s156"
+      ],
+      "sourceType": "课堂原文中的明确强调或提问",
+      "teacherEvidence": [
+        {
+          "kind": "emphasis",
+          "sourceId": "ai301-r09-s153",
+          "quote": "we always prefer to use the most recent data or say the most currently updated version of the data."
+        },
+        {
+          "kind": "emphasis",
+          "sourceId": "ai301-r09-s156",
+          "quote": "we perform type two forwarding only when the condition for type two are true and the condition for type one are false。"
+        }
+      ],
+      "status": "老师反复强调"
     }
   ],
-  "note": "原话与时间用于核对老师明确强调或课堂提问；一般整理、课件练习不据此升级。明确考核要求也不等于承诺原题必考。11月16日录音续讲Lec6后半，并覆盖Part2 P1–6；未讲页仅展示课件，课间及课后闲聊不公开。",
+  "note": "考试要求、老师强调与提问、一般整理分别标注；原话附录音时间，方便回查。11月23日续讲 Part2 P10–21 和 Part3 P1–10，Quiz 3 的范围通知见明确考核要求。",
   "navigationDefault": "exam-and-teacher",
   "navigationNote": "下个考点严格取当前页之后的代表页，不回绕。默认含明确考核要求、真实Quiz复盘和有证据的老师强调/提问；一般整理与课件练习另行选择。",
-  "summary": "66条 · 明确考核要求、老师强调/课堂提问与一般整理分开 · 8份课堂转写"
+  "summary": "75条 · 考试安排、老师强调与提问、一般整理 · 9份课堂转写"
 }

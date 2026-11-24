@@ -176,7 +176,7 @@ for(const query of ['', '?course=ai301', '?course=hum053']){
  assert.equal(hub.run('nextFocus().page'),4,'Repeated teacher anchors do not re-enter later in the same deck');
  hub.run('S.page=7');
  assert.equal(hub.run('nextFocus().deck'),'lec6p2','A later part remains a separate navigation destination');
- assert.match(hub.run('focusType(nextFocus())'),/老师强调.*非必考/);
+ assert.equal(hub.run('focusType(nextFocus())'),'老师强调 / 课堂提问');
  hub.nodes.get('#exam-list').innerHTML='<details open>已经展开的出处</details>';
  hub.nodes.get('#exam-content').scrollTop=250;
  hub.run('setFocusScope(false)');
@@ -197,4 +197,10 @@ assert.equal(boundary.nodes.get('#companion-panel').classList.contains('hidden')
 assert.equal(boundary.nodes.get('#study-grid').classList.contains('no-companion'),true,'P7 gives the PDF the full reading width');
 boundary.run('S.page=6;notes()');
 assert.equal(boundary.nodes.get('#companion-panel').classList.contains('hidden'),false,'Returning to P6 restores its explanation');
+boundary.run('S.page=10;notes()');
+assert.equal(boundary.nodes.get('#companion-panel').classList.contains('hidden'),false,'The November 23 writeback explanation begins at P10');
+boundary.run('S.deck=deck("lec6p3");S.page=10;notes()');
+assert.equal(boundary.nodes.get('#companion-panel').classList.contains('hidden'),false,'The recorded lesson includes revised forwarding conditions');
+boundary.run('S.page=11;notes()');
+assert.equal(boundary.nodes.get('#companion-panel').classList.contains('hidden'),true,'The preview page following the recorded lesson has the full-width PDF');
 console.log('PASS: three-course routing/state/coverage, distinct teacher evidence, quote search, escaped excerpts, filtering and strictly forward cross-part navigation.');

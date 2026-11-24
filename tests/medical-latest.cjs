@@ -6,7 +6,7 @@ const crypto=require('node:crypto');
 const Nav=require('../focus-navigation.js');
 const root=path.join(__dirname,'..');
 const data=JSON.parse(fs.readFileSync(path.join(root,'data/content.json'),'utf8'));
-assert.equal(data.revision,'2026-11-20-color-morphology');
+assert.equal(data.revision,'2026-11-23-plain-language');
 assert.equal(data.schemaVersion,2);
 assert.equal(data.decks.length,10);
 assert.deepEqual(data.coverage,{visualPages:852,explainedPages:631,slidesOnlyPages:221,recordings:8,examEntries:117});
