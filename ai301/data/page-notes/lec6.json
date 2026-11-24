@@ -12,7 +12,11 @@
       "ai301-r07-s087"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页把单周期设计的优点和代价放在一起：一条指令在一个时钟周期内完成，控制和执行顺序容易理解；但周期必须容纳最慢的指令。"
+    }
   },
   {
     "page": 3,
@@ -41,7 +45,11 @@
       "ai301-r07-s103"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "每一批仍要经过四个半小时阶段，单批延迟仍为 2 小时；流水线改善的是吞吐量，装满以后每半小时就能完成一批，而不是每两小时才完成一批。"
+    }
   },
   {
     "page": 4,
@@ -57,7 +65,11 @@
       "ai301-r07-s107"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "EX 负责 ALU 运算或地址计算，MEM 访问数据存储器，WB 把结果写回寄存器。"
+    }
   },
   {
     "page": 5,
@@ -74,7 +86,11 @@
       "ai301-r07-s083"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 2,
+      "text": "为保证最长的 lw 能完成，单周期实现统一使用至少 800 ps 的周期；因此有效路径只需 600 ps 的 add 仍占用一个 800 ps 周期。"
+    }
   },
   {
     "page": 6,
@@ -96,7 +112,11 @@
       "ai301-r07-s124"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 2,
+      "text": "若有 N 条独立 lw，仍按完整时槽、无停顿计，总时间为 200(N+4) ps，加速比为 4N/(N+4)，只有 N 足够大时才接近 4。"
+    }
   },
   {
     "page": 7,
@@ -116,7 +136,11 @@
       "ai301-r07-s125"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 2,
+      "text": "流水线的直接收益来自重叠执行带来的吞吐量。"
+    }
   },
   {
     "page": 8,
@@ -149,7 +173,11 @@
         "label": "Intel 官方指令集手册：§2.3.11 指令长度上限",
         "url": "https://cdrdv2-public.intel.com/671110/325383-sdm-vol-2abcd.pdf"
       }
-    ]
+    ],
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本课的 32 位 MIPS 指令格式让流水线各阶段容易安排：每条指令固定占 4 字节，取指不必先判断这一条到底有多长，顺序地址也统一按 PC+4 前进。"
+    }
   },
   {
     "page": 9,
@@ -183,7 +211,11 @@
       "ai301-r08-s003"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "三者分别问“资源够不够”“数据来不来得及”“该取哪条指令”，判断条件不同，不能把所有停顿都叫数据冒险。"
+    }
   },
   {
     "page": 10,
@@ -202,7 +234,11 @@
       "ai301-r08-s011"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "结构冒险的关键是同一时刻的资源需求超过硬件能提供的服务。"
+    }
   },
   {
     "page": 11,
@@ -219,7 +255,11 @@
       "ai301-r08-s018"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这叫数据依赖；只有当消费者需要值的时刻早于值可得到的时刻，才会形成需要处理的数据冒险。"
+    }
   },
   {
     "page": 12,
@@ -238,7 +278,11 @@
       "ai301-r08-s027"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "旁路的思路是结果算出来就使用，不必先绕到寄存器堆写回、再读出来。"
+    }
   },
   {
     "page": 13,
@@ -259,7 +303,11 @@
       "ai301-r08-s038"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "若sub紧跟lw，原本应在600ps开始EX，却要使用800ps左右才从内存得到的值；旁路不能把未来的数据送回过去，所以仍需等待一拍。"
+    }
   },
   {
     "page": 14,
@@ -278,7 +326,11 @@
       "ai301-r08-s046"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右边把lw $t4,8($t0)提前到第三行，插在lw $t2,4($t0)与使用$t2的add之间；后面的add使用$t4时，也已经与这条lw隔开。"
+    }
   },
   {
     "page": 15,
@@ -296,7 +348,11 @@
       "ai301-r08-s053"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "例如beq比较相等就去目标L，否则去PC+4；在比较结果还没出来时，下一条IF却已经需要一个PC，不能同时把两个选择都当作确定答案。"
+    }
   },
   {
     "page": 16,
@@ -316,7 +372,11 @@
       "ai301-r08-s062"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图中假设额外硬件已把这两项工作提前到ID，因此beq的ID结束后即可启动目标or；代价是在本来可以取下一条的位置留下一个空槽。"
+    }
   },
   {
     "page": 17,
@@ -334,7 +394,11 @@
       "ai301-r08-s069"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页采用最简单的“预测不跳转”：先按PC+4取顺序下一条；若后面验证确实不跳转，就不必为这次分支空等；若实际需要跳转，就改用目标地址并重新取指。"
+    }
   },
   {
     "page": 18,
@@ -354,7 +418,11 @@
       "ai301-r08-s092"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上图预测正确，lw按正常间隔启动；下图实际应跳到or，先取的lw属于错误路径，需要丢弃，再从已确定的分支目标重新取or。"
+    }
   },
   {
     "page": 19,
@@ -378,7 +446,11 @@
       "ai301-r08-s106"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师给的最简单例子是记住上次结果：上次taken，就预测这次也taken；若这次实际not taken，需要恢复正确路径，并把新结果记入历史，影响下一次判断。"
+    }
   },
   {
     "page": 20,
@@ -391,6 +463,10 @@
       "ai301-r08-s108"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师在总结时要求先分清吞吐量与单条延迟：流水线把不同指令的不同阶段重叠，让单位时间能完成更多指令，而不是把一条指令的全部工作都压缩到一个短周期。"
+    }
   }
 ]

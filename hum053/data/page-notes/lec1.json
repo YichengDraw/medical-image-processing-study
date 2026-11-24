@@ -12,7 +12,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "中国哲学导论课程大纲"
+    "title": "中国哲学导论课程大纲",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "旧大纲列出考勤10%、课堂表现50%、期末40%；当前复习以你提供的最新通知为准，即本次随堂考试闭卷，孔子、孟子、庄子占总评50%。"
+    }
   },
   {
     "page": 3,
@@ -27,7 +31,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "法国哲学会考题-2026年"
+    "title": "法国哲学会考题-2026年",
+    "keySentence": {
+      "paragraph": 1,
+      "text": "回答不能停在“能”或“不能”，需要先说明你讨论的是哪一种掌控。"
+    }
   },
   {
     "page": 4,
@@ -42,7 +50,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "法国哲学会考题- 2025年"
+    "title": "法国哲学会考题- 2025年",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "“未来取决于技术吗”与“未来应该交给技术决定吗”不是同一个问题；“受到限制”也需要进一步区分是否就意味着不自由。"
+    }
   },
   {
     "page": 5,
@@ -57,7 +69,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "法国哲学会考题- 2024年"
+    "title": "法国哲学会考题- 2024年",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂提醒，先要问关键概念在题目里是什么意思，再讨论关系，不能直接用一个口号结束问题。"
+    }
   },
   {
     "page": 6,
@@ -72,7 +88,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "法国哲学会考题-2023年"
+    "title": "法国哲学会考题-2023年",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师特别用比较经验提醒：一个人的满足感不只取决于自己拥有多少，也常受他人的处境与自己的欲望影响。"
+    }
   },
   {
     "page": 7,
@@ -87,7 +107,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "法国哲学会考题-2022年"
+    "title": "法国哲学会考题-2022年",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂的关键追问是：正义是否等于现行制度认可的合法性，自由是否等于完全不服从任何人。"
+    }
   },
   {
     "page": 8,
@@ -102,7 +126,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "何谓哲学？"
+    "title": "何谓哲学？",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂从philo与sophia的组合说明“爱智慧”的意思，再说明“哲学”如何成为一个学问的名称。"
+    }
   },
   {
     "page": 9,
@@ -116,7 +144,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "Philosophia：从希哲学到哲学"
+    "title": "Philosophia：从希哲学到哲学",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课件把“希哲学”“哲学”“欧洲儒学”等说法放在一起，是让我们看到：翻译也在用已有的儒学、性理、天道人道等概念理解一个新传统。"
+    }
   },
   {
     "page": 10,
@@ -129,7 +161,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "蔡元培：知之为知之，不知为不知"
+    "title": "蔡元培：知之为知之，不知为不知",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "结合前页和课堂讲授，应注意“道学”“儒学”“哲学”等名称之间的历史关系；老师特别提醒，这里的道学不能直接理解成道家学说。"
+    }
   },
   {
     "page": 11,
@@ -144,7 +180,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "古希腊的sophia概念：哲学作为生活方式"
+    "title": "古希腊的sophia概念：哲学作为生活方式",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂强调，有智慧的人不只拥有某种专业知识，还体现为能够把生活过好。"
+    }
   },
   {
     "page": 12,
@@ -159,7 +199,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "哲学作为生活方式"
+    "title": "哲学作为生活方式",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂用孔子、苏格拉底等人物说明，哲学可以体现为一个人如何实践和反省生活，未必首先表现为写下一个封闭的理论体系。"
+    }
   },
   {
     "page": 13,
@@ -175,7 +219,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "爱智慧者与专家：赫拉克利特"
+    "title": "爱智慧者与专家：赫拉克利特",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂强调，哲学的追问有一种整体方向：不同领域的问题如何共同指向我们所处的世界。"
+    }
   },
   {
     "page": 14,
@@ -190,7 +238,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "哲学始于惊奇"
+    "title": "哲学始于惊奇",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "《泰阿泰德》这段对话把哲学的开端放在惊奇中。"
+    }
   },
   {
     "page": 15,
@@ -205,7 +257,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "哲学始于惊奇万物如其所是"
+    "title": "哲学始于惊奇万物如其所是",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "哲学把“它一直如此”变成“为什么它如此”的问题。"
+    }
   },
   {
     "page": 16,
@@ -219,7 +275,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "黑格尔：希腊精神的“惊奇”"
+    "title": "黑格尔：希腊精神的“惊奇”",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "在课堂的解释里，这表示面对日常自然时也保留问题意识，而不是只有看到异常现象才思考。"
+    }
   },
   {
     "page": 17,
@@ -234,7 +294,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "什么东西令人感到惊奇？"
+    "title": "什么东西令人感到惊奇？",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "看到一个现象只是起点，进一步发现已有解释不足，才会形成更深入的追问。"
+    }
   },
   {
     "page": 18,
@@ -248,7 +312,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "哲学始于惊奇"
+    "title": "哲学始于惊奇",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "它把哲学活动概括成一种过程：先发现自己不能解释，再产生求知欲，最后停下来仔细观察与思考。"
+    }
   },
   {
     "page": 19,
@@ -261,7 +329,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "哲学：整全的知识？"
+    "title": "哲学：整全的知识？",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂据此说明，哲学不满足于把局部事实并列在一起，还会追问它们之间的关联和共同前提。"
+    }
   },
   {
     "page": 20,
@@ -277,7 +349,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "亚里士多德：第一哲学与其他科学"
+    "title": "亚里士多德：第一哲学与其他科学",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "物理学可以研究运动中的事物，数学可以研究数量与形状；第一哲学则追问存在本身及其根本原因。"
+    }
   },
   {
     "page": 21,
@@ -292,7 +368,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "亚里士多德：哲学的本性"
+    "title": "亚里士多德：哲学的本性",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页列出的智慧特征包括整全、理解困难问题、把握原因，以及为明白本身而求知。"
+    }
   },
   {
     "page": 22,
@@ -307,7 +387,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "哲学作为原因与本原的知识"
+    "title": "哲学作为原因与本原的知识",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂的关注点是，从“知道某次发生了什么”进一步走向“理解为什么会这样”。"
+    }
   },
   {
     "page": 23,
@@ -322,7 +406,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "柏拉图-亚里士多德传统中的哲学概念"
+    "title": "柏拉图-亚里士多德传统中的哲学概念",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "柏拉图、亚里士多德传统中的哲学，既涉及一种生活选择，也尝试用更稳定的原理理解不断变化的事物。"
+    }
   },
   {
     "page": 24,
@@ -337,7 +425,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "“哲学”一词的由来"
+    "title": "“哲学”一词的由来",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "“哲学”在这里被解释为爱智慧，而不是宣称自己已经完全占有智慧。"
+    }
   },
   {
     "page": 25,
@@ -352,7 +444,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "哲学家：生活的旁观者？"
+    "title": "哲学家：生活的旁观者？",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "毕达哥拉斯把人生比作赛会：有人为赚钱而来，有人为荣誉而来，也有人为观看和理解而来。"
+    }
   },
   {
     "page": 26,
@@ -366,7 +462,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "“观看人生比赛的人”？"
+    "title": "“观看人生比赛的人”？",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂认为，“观看人生比赛的人”把理解事物本身作为目的，因此与完全受外在奖励驱使的生活形成对照。"
+    }
   },
   {
     "page": 27,
@@ -382,7 +482,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "自由人与奴隶？"
+    "title": "自由人与奴隶？",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂借此区分操作上的熟练与对生活目的的理解。"
+    }
   },
   {
     "page": 29,
@@ -396,7 +500,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "哲学家的无知"
+    "title": "哲学家的无知",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这里描绘哲学家对城邦事务的“无知”，与前页形成连续对比：他可能不知道某个机构在哪里，却把注意力放在更一般的问题上。"
+    }
   },
   {
     "page": 30,
@@ -411,7 +519,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "存在的整全本性"
+    "title": "存在的整全本性",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课件把哲学家的思想描绘成超出眼前事务、追问存在整体。"
+    }
   },
   {
     "page": 31,
@@ -426,7 +538,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "泰勒斯作为哲学家的范例"
+    "title": "泰勒斯作为哲学家的范例",
+    "keySentence": {
+      "paragraph": 1,
+      "text": "重要的不是嘲笑或崇拜他，而是看清一种追求整体知识的生活会付出怎样的代价。"
+    }
   },
   {
     "page": 32,
@@ -442,7 +558,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "西塞罗的哲学史"
+    "title": "西塞罗的哲学史",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "西塞罗说苏格拉底把哲学带入城邦与家庭，转向生活、习俗及善恶问题。"
+    }
   },
   {
     "page": 33,
@@ -457,7 +577,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "苏格拉底：没有自然研究的天赋"
+    "title": "苏格拉底：没有自然研究的天赋",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂突出一个区别：解释所需的条件，不一定已经解释了他真正要问的原因。"
+    }
   },
   {
     "page": 34,
@@ -472,7 +596,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "自然研究的失败与危险"
+    "title": "自然研究的失败与危险",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页用观看日食的比喻表达对研究方法的反省：直接盯着现象，不一定就能回答关于存在和原因的问题，因此需要寻找合适的解释方式。"
+    }
   },
   {
     "page": 35,
@@ -487,7 +615,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "苏格拉底的次航"
+    "title": "苏格拉底的次航",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "“第二次航行”指转向在道理或论说中探索真实。"
+    }
   },
   {
     "page": 36,
@@ -503,7 +635,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "对苏格拉底的指控（《苏格拉底的申辩》）"
+    "title": "对苏格拉底的指控（《苏格拉底的申辩》）",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "正式罪名涉及败坏青年及不信城邦所信之神；另一些说法则把苏格拉底描述成研究天地、善于辩说的人。"
+    }
   },
   {
     "page": 37,
@@ -517,7 +653,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "苏格拉底是否有智慧？"
+    "title": "苏格拉底是否有智慧？",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂由此引出“无知之知”：认识自己所知的限度。"
+    }
   },
   {
     "page": 38,
@@ -532,7 +672,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "苏格拉底是否有智慧？"
+    "title": "苏格拉底是否有智慧？",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂所强调的核心，是承认自己不知道，并追问那些自以为知道的人是否真的能给出理由。"
+    }
   },
   {
     "page": 39,
@@ -548,7 +692,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "拒绝选择流放或逃跑的苏格拉底"
+    "title": "拒绝选择流放或逃跑的苏格拉底",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课件把“未经省察的生活不值得过”放在这一情境中：他关心的不只是继续活着，而是怎样活才值得。"
+    }
   },
   {
     "page": 40,
@@ -562,7 +710,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "对城邦的省察"
+    "title": "对城邦的省察",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "苏格拉底批评人们只聚焦财富与名声，却忽略智慧、真理以及灵魂的改善。"
+    }
   },
   {
     "page": 41,
@@ -576,7 +728,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "省察人生的职责"
+    "title": "省察人生的职责",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页把怕死也纳入省察：如果并不知道死亡究竟意味着什么，却断言它必然最坏，就可能把不知道误当成知道。"
+    }
   },
   {
     "page": 42,
@@ -590,6 +746,10 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "苏格拉底与雅典城邦：谁是正义的？"
+    "title": "苏格拉底与雅典城邦：谁是正义的？",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这一页并置城邦指控苏格拉底“不义”与《斐多》对他“最正义”的评价，展示同一事件中的标准冲突。"
+    }
   }
 ]

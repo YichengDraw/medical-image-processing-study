@@ -12,7 +12,11 @@
       "rec12-p17"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师把核心问题概括为：庄子在追问自然生活和真实生存的可能性。"
+    }
   },
   {
     "page": 3,
@@ -28,7 +32,11 @@
       "rec12-p43"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师把它与儒家正名作对照：儒家常以角色规范判断“像不像”，庄子则进一步质疑这种固定的是非尺度。"
+    }
   },
   {
     "page": 4,
@@ -44,7 +52,11 @@
       "rec12-p41"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "第一种说“现实没有达到应有标准”，例如老师应当认真教书；第二种继续问，既定标准本身是否也会限制人的存在。"
+    }
   },
   {
     "page": 5,
@@ -58,7 +70,11 @@
       "rec12-p49"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "他把“心无为”理解为随感而应，把“与化为体”理解为不执守固定形态。"
+    }
   },
   {
     "page": 6,
@@ -71,7 +87,11 @@
       "rec12-p49"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "译文前半将“无为”与“应时”连在一起：不先用固定观念强加于事物，才可能顺着变化回应。"
+    }
   },
   {
     "page": 7,
@@ -87,7 +107,11 @@
       "rec12-p55"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "作答时可比较同一词的不同结构：儒家通过礼维持并成全亲情，这里却从减轻关系牵累来理解相处。"
+    }
   },
   {
     "page": 8,
@@ -104,7 +128,11 @@
       "rec12-p65"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师特别指出，这两个选项并不对称：一边是死后被供奉，一边是活着拖尾，提问方式本身就在引导听者选择“生”。"
+    }
   },
   {
     "page": 9,
@@ -120,7 +148,11 @@
       "rec12-p65"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "故事把死后被尊奉与活着的自由并置，显示庄子不愿让生命被权位和名声支配。"
+    }
   },
   {
     "page": 10,
@@ -136,7 +168,11 @@
       "rec12-p77"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "庄子拒绝的不是某一种职业，而是让生命成为他人尊奉与名声的工具。"
+    }
   },
   {
     "page": 11,
@@ -152,7 +188,11 @@
       "rec12-p87"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "《左传》把不朽归于立德、立功、立言：德行、事业和言说的价值可以长久留存。"
+    }
   },
   {
     "page": 12,
@@ -167,7 +207,11 @@
       "rec12-p93"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "“虽欲为孤犊，其可得乎”指出装饰与优待无法补偿生命被处置。"
+    }
   },
   {
     "page": 13,
@@ -182,7 +226,11 @@
       "rec12-p93"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "华丽装饰和精心供养最终服务于祭祀的安排，牛的去向仍由他人决定；这个反差正是故事的重点。"
+    }
   },
   {
     "page": 14,
@@ -198,7 +246,11 @@
       "rec12-p103"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右侧原文和左侧插图围绕一个错认：惠子把自己的相位当作人人想抢的宝物；庄子借鹓鶵不食腐鼠，说明对方珍贵之物未必是自己的追求。"
+    }
   },
   {
     "page": 15,
@@ -213,7 +265,11 @@
       "rec12-p103"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "双方争论的不是谁更有能力争相位，而是相位是否值得成为生活的中心。"
+    }
   },
   {
     "page": 16,
@@ -228,7 +284,11 @@
       "rec12-p103"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "因此答题可写“故事中的惠子代表把相位视为珍贵的立场”，而不必据此判断历史上的惠施就是贪恋权位之人。"
+    }
   },
   {
     "page": 17,
@@ -243,7 +303,11 @@
       "rec12-p109"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "随后他回溯无气、有气、有形、有生、复归死亡，把死亡放进与四时相似的变化过程。"
+    }
   },
   {
     "page": 18,
@@ -258,7 +322,11 @@
       "rec12-p109"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "真正分歧是情感应由什么最终解释：维系特定的人际关系，还是把关系放回更大的生命流转。"
+    }
   },
   {
     "page": 19,
@@ -273,7 +341,11 @@
       "rec12-p119"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页译文最容易被简化成“看开生死”，但老师强调回溯的层次：儒家反本往往回到人的亲子起点，庄子继续追问人在成为人以前的变化，因而不把“人”当作不可再追问的边界。"
+    }
   },
   {
     "page": 20,
@@ -290,7 +362,11 @@
       "rec12-p119"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "下面庄子却继续退到无生、无形、无气，质疑为何只以人这一阶段为根本。"
+    }
   },
   {
     "page": 21,
@@ -304,7 +380,11 @@
       "rec12-p127"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "“夺彼与此，何其偏也”追问人为偏爱的根据：若同属万物流转，为什么一种转换被当作侮辱，另一种就被认为体面？"
+    }
   },
   {
     "page": 22,
@@ -319,7 +399,11 @@
       "rec12-p131"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师借此显示庄子的视角：无论人如何安排葬礼，身体都将进入变化；执着某一种方式，可能仍把“我的身体”当作不可放下的独立实体。"
+    }
   },
   {
     "page": 23,
@@ -334,7 +418,11 @@
       "rec12-p133"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师认为庄子把问题推进到“你是否真正理解变化”：不只是寻找更恰当的仪式，而是质疑仪式背后固定的人身与关系边界。"
+    }
   },
   {
     "page": 24,
@@ -349,7 +437,11 @@
       "rec12-p135"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "这里要比较的是理由的层次：以亲情为终点，还是继续追问亲情所依附的生命形态。"
+    }
   },
   {
     "page": 25,
@@ -363,7 +455,11 @@
       "rec12-p137"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师此时要你换一个理解单位：从“同一个东西还在不在”转向“它如何持续转化”。"
+    }
   },
   {
     "page": 26,
@@ -377,7 +473,11 @@
       "rec12-p137"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "环形箭头连接无气、有气、有形、有生、有死，表示课堂对“命”的解释重心是流转。"
+    }
   },
   {
     "page": 27,
@@ -393,7 +493,11 @@
       "rec12-p145"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂把它接在通乎命之后：来与去都有其时，理解变化后，不再被执着某一形态的哀乐完全牵引。"
+    }
   },
   {
     "page": 28,
@@ -408,7 +512,11 @@
       "rec12-p145"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "按课件读法，命名容易抓住有限的薪，却难抓住传递中的火；它可与形态有限、变化不止联系，但不要误写成老师已经逐字定论。"
+    }
   },
   {
     "page": 29,
@@ -422,7 +530,11 @@
       "rec12-p137"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "结合前段录音，图意是：当我们认定一个稳定的物，就从它自身看生死；当我们追溯形与气，则把它理解为变化中的阶段。"
+    }
   },
   {
     "page": 30,
@@ -438,7 +550,11 @@
       "rec11-p17"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "对应第十讲开头的回顾，老师将它与“绘事后素”对照：孔子之礼被解释为修文复质，庄子却担心已有自身纹理的生命，再被外加形式涂画。"
+    }
   },
   {
     "page": 31,
@@ -453,7 +569,11 @@
       "rec11-p17"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "译文的重点是“民离实学伪”：外在的文饰可能使人离开真实需要，转而学习如何显得合乎规范。"
+    }
   },
   {
     "page": 32,
@@ -470,7 +590,11 @@
       "rec11-p15"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如面对空洞的仪式，儒家可以要求恢复真实敬意；庄子则会继续问为何生命一定要通过这套仪式表达。"
+    }
   },
   {
     "page": 33,
@@ -484,7 +608,11 @@
       "rec11-p15"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "前者在本课的读法中说明礼文可以成全、显明质；后者则说明人为加饰可能遮蔽已有的自然纹理。"
+    }
   },
   {
     "page": 46,
@@ -499,7 +627,11 @@
       "rec11-p31"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师指出，儒家常把两者贯通，庄子文本在这里却切开这种贯通。"
+    }
   },
   {
     "page": 47,
@@ -515,7 +647,11 @@
       "rec11-p35"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "“美则美矣，而未大也”并非否认照顾弱者的具体价值，而是在文本中指出人间关怀仍未等同于天地自行运行的尺度。"
+    }
   },
   {
     "page": 48,
@@ -530,7 +666,11 @@
       "rec11-p33"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师把它与上一页并置，说明儒庄都可借无言的天地说理，分歧并不在是否重视天，而在天与人的规范如何联系。"
+    }
   },
   {
     "page": 49,
@@ -547,7 +687,11 @@
       "rec11-p41"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "“天命之谓性”能在儒家系统中连接这些层次；庄子却追问固定之性与物的划分。"
+    }
   },
   {
     "page": 50,
@@ -564,7 +708,11 @@
       "rec11-p43"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "结合对应录音的总体解释，它要质疑的是：为何天道最终一定要经由人所规定的仁义来表达？"
+    }
   },
   {
     "page": 51,
@@ -580,7 +728,11 @@
       "rec11-p43"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "译文的冲突不是简单赞成或反对善意，而是仁义是否已足以表达人的本性，以及人的本性是否就是道的终点。"
+    }
   },
   {
     "page": 52,
@@ -597,7 +749,11 @@
       "rec11-p49"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师进一步把分歧落在“性”与“物”：说某物是什么，通常同时为它确定性质与边界；庄子的方向是追问这些规定。"
+    }
   },
   {
     "page": 53,
@@ -613,7 +769,11 @@
       "rec11-p51"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这里的德不是“多完成几项社会道德任务”，而是与道及生命的自然展开相关。"
+    }
   },
   {
     "page": 54,
@@ -629,7 +789,11 @@
       "rec11-p63"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "原文依次推进：世人重书，书载语言，语言指向意义，而意义所随的根本却未必能靠语言尽传。"
+    }
   },
   {
     "page": 55,
@@ -645,7 +809,11 @@
       "rec11-p63"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "译文末尾的“知者不言，言者不知”要放在前面的论证中读：问题是把可说、可见、可命名的部分误当成全部。"
+    }
   },
   {
     "page": 56,
@@ -662,7 +830,11 @@
       "rec11-p73"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "核心是反思把道当成可完整储存、转交的知识，不是要求把经典一概丢掉。"
+    }
   },
   {
     "page": 57,
@@ -678,7 +850,11 @@
       "rec11-p73"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "轮扁能够做出来，却不能把这种把握等量搬到他人身上，这就是手、心与言的张力。"
+    }
   },
   {
     "page": 58,
@@ -693,6 +869,10 @@
       "rec11-p77"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师接受它有启发，但明确觉得若把道理解成长期练习后积累的一般技能，仍没有走出“学”的模式。"
+    }
   }
 ]

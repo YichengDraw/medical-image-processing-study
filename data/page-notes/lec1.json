@@ -8,7 +8,11 @@
     "sourceIds": [
       "rec0911@01:51"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师在开场把课程定位为图像处理的基础概念与方法：采样、空间/频率域处理、分割和压缩等。"
+    }
   },
   {
     "page": 2,
@@ -17,7 +21,11 @@
       "例如网站把某段录音标为‘暂定安排’，但Blackboard已有更新，就应以最新正式通知为准，不能把课程介绍页的旧信息当成最终日程。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "它不是一个需要推导或记忆的技术知识点；遇到作业要求或考核口径不清楚时，用这些正式渠道核实。"
+    }
   },
   {
     "page": 3,
@@ -28,7 +36,11 @@
     "sourceIds": [
       "rec0911@02:18"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "更有用的关联是：理解一个医学图像处理算法，往往还需要知道图像究竟由什么物理过程形成。"
+    }
   },
   {
     "page": 4,
@@ -37,7 +49,11 @@
       "例如为了分开两个距离很近的荧光标记，仅仅把低分辨率照片放大并不足够，还要改进成像与重建。这里是课程应用背景；课件并没有要求在本课完整复现实验室的超分辨算法。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这一页展示先进显微成像实验室的研究目标和团队介绍，核心关键词是分辨率、超分辨成像、光学设计与算法协作。"
+    }
   },
   {
     "page": 5,
@@ -48,7 +64,11 @@
     "sourceIds": [
       "rec0911@02:18"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页把研究方法拆成三块：Optics负责光学和成像能力，Programming负责计算与控制，Biological Imaging负责样本与标记。"
+    }
   },
   {
     "page": 6,
@@ -59,7 +79,11 @@
     "sourceIds": [
       "rec0911@03:14"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "课程项目可以先运行开源图像处理工具，弄懂算法和各个处理步骤，再按自己的目标修改。"
+    }
   },
   {
     "page": 7,
@@ -70,7 +94,11 @@
     "sourceIds": [
       "rec0911@04:17"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页的两套显微硬件模型和小光路图强调成像前端：光源、透镜、反射镜、样品与探测端共同决定原始数据的质量。"
+    }
   },
   {
     "page": 8,
@@ -81,7 +109,11 @@
     "sourceIds": [
       "rec0911@06:42"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师随后明确说课程考核重在基本概念、基本方法和‘为什么这么做’。"
+    }
   },
   {
     "page": 9,
@@ -93,7 +125,11 @@
       "rec0911@40:52",
       "rec0911@01:00:14"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页给出明确的成绩比例：出勤5%、Quiz 10%、Projects 30%、期末考试40%、最终展示15%，总计100%。"
+    }
   },
   {
     "page": 10,
@@ -105,7 +141,11 @@
       "rec0911@42:32",
       "recFreq@05:24"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页是最终项目汇报的结构：介绍问题→软件功能→所用图像处理技术→实现细节→总结。"
+    }
   },
   {
     "page": 11,
@@ -114,7 +154,11 @@
       "例如车牌先定位、纠偏、分割字符，再识别字符内容；纸上手写字也需要先从背景中分离。做课程项目时可把精力放在这些能解释清楚的图像处理环节，不必把‘最终识别正确率’当成唯一内容。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图中把印刷文字与手写文字分成两类输入，下方却汇入同一条路线：图像处理与分割，再进入文字识别算法。"
+    }
   },
   {
     "page": 12,
@@ -123,7 +167,11 @@
       "例如把绿色背景的整体色调改成旧地图的棕黄色，同时保留原来的圆环图案。下一页会显示处理结果；看这一页时先认清源图、参考图和操作入口，后面学习直方图匹配时再回来看内部原理。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "它不是简单将右图叠到左图上，而是借参考图的强度/颜色分布设计映射。"
+    }
   },
   {
     "page": 13,
@@ -132,7 +180,11 @@
       "对比前后两页，可把项目功能说清楚：输入源图和参考图，执行强度/颜色分布映射，再保存结果。例如想让两张照片具有类似色调，直方图匹配可以帮助统一颜色分布；两张照片各自的物体和纹理仍由原图决定。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "对比前后两页，可把项目功能说清楚：输入源图和参考图，执行强度/颜色分布映射，再保存结果。"
+    }
   },
   {
     "page": 14,
@@ -141,7 +193,11 @@
       "汇报时具体比较：噪声减小了多少，细条纹是否保留，字母轮廓是否模糊。要进一步解释结果怎样产生，还需要查看所用算法、控件和参数；截图先用来观察输出效果。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "汇报时具体比较：噪声减小了多少，细条纹是否保留，字母轮廓是否模糊。"
+    }
   },
   {
     "page": 15,
@@ -152,7 +208,11 @@
     "sourceIds": [
       "recFreq@02:55"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "日期安排后来可能有调整，因此不能只按照这张介绍课截图决定是否上课或何时交作业。"
+    }
   },
   {
     "page": 16,
@@ -163,7 +223,11 @@
     "sourceIds": [
       "rec0911@01:08:49"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上面的理论教材对应采样、灰度变换、滤波和分割等概念；MATLAB读物更偏实现与实验。"
+    }
   },
   {
     "page": 17,
@@ -174,7 +238,11 @@
     "sourceIds": [
       "rec0911@01:00:14"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图像之所以适合在这里操作，是因为一张灰度图本来就能表示成二维数组；数据处理、可视化、算法开发和GUI可以在同一环境完成。"
+    }
   },
   {
     "page": 18,
@@ -183,7 +251,11 @@
       "例如执行 I=imread('x.png') 之前，x.png在磁盘目录；执行后I出现在工作空间，后续滤波作用于I。读不到文件优先检查路径，不要把工作空间里没有变量误判为图像不存在。本页是操作界面说明，没有新的成像公式。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这张界面图标出三个最常用位置：左侧当前目录是文件来源，中间命令窗口执行命令，右上工作空间显示已经创建的变量。"
+    }
   },
   {
     "page": 19,
@@ -192,7 +264,11 @@
       "最直接的例子是 I=imread('x.png')，得到可计算的像素数组I。这里是公开课件中的练习，不是网站补造的正式Quiz题库；要把它与老师所说‘考试不要求写代码’区分开。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页课堂练习问‘读取图像的MATLAB命令’，四项里正确的是D：imread。"
+    }
   },
   {
     "page": 20,
@@ -203,7 +279,11 @@
     "sourceIds": [
       "rec0918@01:55"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这道课堂练习问改变图像尺寸的命令，正确的是B：imresize。"
+    }
   },
   {
     "page": 21,
@@ -214,7 +294,11 @@
     "sourceIds": [
       "rec0911@01:00:14"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页问MATLAB函数定义开头的关键字，正确的是A：function。"
+    }
   },
   {
     "page": 22,
@@ -223,7 +307,11 @@
       "例如 A=[1,2;3,4]，A.*A=[1,4;9,16]，而A*A=[7,10;15,22]。两者即使输入尺寸都合法也会得到完全不同的结果。第二讲的Array versus Matrix Operations会再次出现这个区别。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页的关键是 * 与 .* 的差异：A*B表示矩阵乘法，因此题目选B；A.*B才是同一位置逐元素相乘。"
+    }
   },
   {
     "page": 23,
@@ -232,7 +320,11 @@
       "例如细胞计数既可用交互式分割软件，也可写‘读图→阈值→连通域’脚本；真正需要理解的是分割条件、参数和误差，而不是只会在一个软件里点按钮。本页没有比较这些软件的当前版本或性能排名。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如细胞计数既可用交互式分割软件，也可写‘读图→阈值→连通域’脚本；真正需要理解的是分割条件、参数和误差，而不是只会在一个软件里点按钮。"
+    }
   },
   {
     "page": 24,
@@ -241,7 +333,11 @@
       "例如一段文字很难逐点描述鱼群的分布，一幅图却能立即显示大致形态。要进一步测量鱼的位置和数量，还需要明确的方法；接下来裙子颜色的例子会提醒你，人眼感知受情境和解释影响。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "‘百闻不如一见’是对视觉信息直观性的引入：一张图可以同时呈现大量位置、形状、颜色与结构关系。"
+    }
   },
   {
     "page": 25,
@@ -250,7 +346,11 @@
       "课件写‘约75%’，但这一页没有提供实验来源或统计定义，不宜把它当作严格、普适的人类感知比例来推导其他结论。例如用图看出细胞轮廓很直观，但计数和尺寸测量仍应采用明确的算法与标尺。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图中的两条通路分别代表视觉与其他感知，把图片、图表、动画和声音等信息送入感知、理解与存储。"
+    }
   },
   {
     "page": 26,
@@ -259,7 +359,11 @@
       "例如你可能把偏蓝亮部理解为白色衣料受到蓝光照射，也可能直接看作蓝色衣料。读图时分清客观像素、物体反射和主观颜色判断；评价增强效果则要结合成像条件与具体任务。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "它提出的问题不是‘像素RGB值是否同时等于两组数’，而是观察者怎样解释光照、曝光与材质，从同一张图得到不同颜色印象。"
+    }
   },
   {
     "page": 27,
@@ -268,7 +372,11 @@
       "从学习角度，重点仍是同一图像能产生不同的主观解释。就像两位观察者对同一张低对比度医学图的可见细节判断可能不同，所以定量任务不能只依赖肉眼印象；应使用目标相关指标和一致的显示条件。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "从学习角度，重点仍是同一图像能产生不同的主观解释。"
+    }
   },
   {
     "page": 28,
@@ -277,7 +385,11 @@
       "可以把它看成“物体反射×照明，再经过相机与显示”的直观例子。数字调色改变显示的颜色；判断真实照明还需要场景和采集信息。本页重点是理解这些环节怎样共同影响所见颜色。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "可以把它看成“物体反射×照明，再经过相机与显示”的直观例子。"
+    }
   },
   {
     "page": 29,
@@ -286,7 +398,11 @@
       "复习可用一句任务说明贯穿：‘拿到一张图→知道它记录什么→选择合适处理→分析结果→用什么硬件软件完成’。例如细胞图先去噪，再分割、计数，而不是一开始就把所有算法名称记成并列清单。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "复习可用一句任务说明贯穿：‘拿到一张图→知道它记录什么→选择合适处理→分析结果→用什么硬件软件完成’。"
+    }
   },
   {
     "page": 30,
@@ -295,7 +411,11 @@
       "例如照片中边缘可能被噪声和光照模糊；工程图里的黑线则可能直接代表设计几何边界。选择分割或识别方法前先看图像类型，不能把自然图像的全部假设直接套到线稿上。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "选择分割或识别方法前先看图像类型，不能把自然图像的全部假设直接套到线稿上。"
+    }
   },
   {
     "page": 31,
@@ -304,7 +424,11 @@
       "例如增加灯光亮度会改变像素，而物体本身可以保持原样。这里的“optical image”说明图像来自光学成像；它还要经过空间采样与强度量化，才能变成数字数组。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页用一张舞台场景说明光学图像：场景发出或反射的光经过成像系统，在探测面上形成强度分布。"
+    }
   },
   {
     "page": 32,
@@ -315,7 +439,11 @@
     "sourceIds": [
       "rec0918@01:11:44"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "这是医学图像的关键类比：CT、MRI、超声虽然都能显示成灰度图，每个像素对应的物理含义却不同。"
+    }
   },
   {
     "page": 33,
@@ -324,7 +452,11 @@
       "例如一个灰度像素存128，而彩色像素可以存(200,50,10)。这里“三维函数”的第三维是颜色通道；医学体数据的第三维z则表示空间深度。RGB记录一个位置的三种颜色分量，体数据记录不同深度处的图像。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "定义 f(x,y) 把一张灰度图表示成二维位置到强度的映射，x、y是位置，f是该处灰度。"
+    }
   },
   {
     "page": 34,
@@ -333,7 +465,11 @@
       "例如中心亮、边缘暗的平面图，可以画成中间高、外围低的强度曲面。页下的数学函数展示了连续描述图像的思路。本页先理解“把位置映射为强度”，后面再区分连续函数与离散像素。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "曲面的两个水平轴对应位置或自变量，竖直轴对应数值；这只是把二维函数可视化，不是物体真实表面必然长成山峰。"
+    }
   },
   {
     "page": 35,
@@ -344,7 +480,11 @@
     "sourceIds": [
       "rec0911@04:17"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师强调硬件与软件结合，正是因为信号质量既受采集控制，也受后处理算法决定。"
+    }
   },
   {
     "page": 36,
@@ -355,7 +495,11 @@
     "sourceIds": [
       "rec0918@00:14"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师9月18日开头反复要求分开考虑空间采样与灰度离散化：前者决定在哪里测，后者决定每个读数如何表示。"
+    }
   },
   {
     "page": 37,
@@ -366,7 +510,11 @@
     "sourceIds": [
       "rec0918@09:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "坐标决定‘这个数在什么位置’，数值决定该位置的灰度，二者缺一不可。"
+    }
   },
   {
     "page": 38,
@@ -375,7 +523,11 @@
       "矩阵的行列索引是整数，输入图像的强度编码也通常有限；但后续处理可以产生浮点或负数，因此课件将幅值写成自然数只适用于这里介绍的数字编码情形。例子：两个像素做差100−150=−50，结果仍是有效的计算数据。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页用矩阵I表示离散图像，每个元素iₘ,ₙ对应一个像素，右下曲面把像素值画成高度。"
+    }
   },
   {
     "page": 39,
@@ -384,7 +536,11 @@
       "例如扫描纸质照片后，可以逐像素增强和通过网络传输；把照片装进信封寄出则是传递实物。图中的AVI是视频容器，静态图像也有自己的文件格式；它们的共同点是把内容编码为数字，方便计算、存储和传输。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "核心是离散编码让复制、传输、搜索与计算处理更方便。"
+    }
   },
   {
     "page": 40,
@@ -396,7 +552,11 @@
       "rec0918@09:43",
       "rec0918@01:11:44"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如X光投影把沿路径的衰减叠在一起，CT试图重建局部断层；染色图颜色还与染料和显微光学有关。"
+    }
   },
   {
     "page": 41,
@@ -405,7 +565,11 @@
       "例如将血管从周围组织分割出来并着色后，走向更容易观察。这里的红色是渲染时选的显示颜色。读图时依次看原始采集、血管分割和颜色渲染；确定成像协议或作诊断，还需要采集参数和相应医学资料。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "它们说明医学影像处理不仅是改一幅二维图的亮度，还包括从数据中分出特定结构，再叠加或重建可视化。"
+    }
   },
   {
     "page": 42,
@@ -414,7 +578,11 @@
       "例如提高骨骼层透明度，可以露出内部或后方已有的血管结构。这一步调整的是显示方式。复习时把三层关系分清：采集得到数据，分割和重建得到结构，最后选择颜色、透明度和视角来渲染。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "复习时把三层关系分清：采集得到数据，分割和重建得到结构，最后选择颜色、透明度和视角来渲染。"
+    }
   },
   {
     "page": 43,
@@ -425,7 +593,11 @@
     "sourceIds": [
       "rec0918@09:43"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "MRI显示较大尺度的内部结构，病理切片展示显微组织纹理，眼底与内窥镜则展示可通过光学路径观察的表面或腔道。"
+    }
   },
   {
     "page": 44,
@@ -436,7 +608,11 @@
     "sourceIds": [
       "rec0918@09:58"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左图的黄红区域是颜色映射后的高信号，不是身体真的呈现那些颜色；右图的明暗与声波回波有关。"
+    }
   },
   {
     "page": 45,
@@ -447,7 +623,11 @@
     "sourceIds": [
       "rec0918@18:19"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师提到科学图像去噪不能只追求平滑，还要保留本来藏在噪声中的细节，否则会损害后续科学测量。"
+    }
   },
   {
     "page": 46,
@@ -458,7 +638,11 @@
     "sourceIds": [
       "rec0918@11:43"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这是图像处理的基础形式：输入图像，输出另一张更符合任务需求的图像，而不是直接输出分类标签。"
+    }
   },
   {
     "page": 47,
@@ -470,7 +654,11 @@
       "rec0918@12:13",
       "rec0918@13:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "从下到上看三层：低层Image Processing输出图像；中层Image Analysis输出属性，例如面积、边界或纹理；高层Computer Vision输出对物体或场景的语义理解。"
+    }
   },
   {
     "page": 48,
@@ -481,7 +669,11 @@
     "sourceIds": [
       "rec0918@14:40"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "前两种翻转改变像素的空间位置：左右或上下镜像；反相则保持位置不变，把亮暗关系反过来。"
+    }
   },
   {
     "page": 49,
@@ -493,7 +685,11 @@
       "rec0918@16:47",
       "rec0918@18:19"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师在16:47–18:19反复强调去噪与细节保留的权衡。"
+    }
   },
   {
     "page": 50,
@@ -504,7 +700,11 @@
     "sourceIds": [
       "rec0918@19:31"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "算法调整已有像素的灰度差异或边缘响应，让原图记录的地形更容易观察，输出仍是图像。"
+    }
   },
   {
     "page": 51,
@@ -516,7 +716,11 @@
       "rec0918@20:42",
       "rec0918@21:48"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "分割输出的是区域或边界，再据此计算面积、跨切片估计体积，所以课件将它放在中层image→data。"
+    }
   },
   {
     "page": 52,
@@ -525,7 +729,11 @@
       "例如视频中逐帧检测人脸，再关联相邻帧中的框，是跟踪问题；对单张图增强对比度则属于低层处理。红框标出“脸在哪里”，识别身份还需要进一步判断“这是谁”。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "红框标出“脸在哪里”，识别身份还需要进一步判断“这是谁”。"
+    }
   },
   {
     "page": 53,
@@ -536,7 +744,11 @@
     "sourceIds": [
       "rec0918@22:59"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例子可以换成细胞：先增强图像，再提取轮廓和形状，最后分类细胞类型。"
+    }
   },
   {
     "page": 54,
@@ -545,7 +757,11 @@
       "例如报业需要快速跨洋发送图片，航天需要修正传回的图像，CT需要从投影计算断层。读这几页时可分别问：数据从哪里来、原始数据缺什么、计算究竟解决了哪一步。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "读这几页时可分别问：数据从哪里来、原始数据缺什么、计算究竟解决了哪一步。"
+    }
   },
   {
     "page": 55,
@@ -557,7 +773,11 @@
       "rec0918@24:43",
       "rec0918@26:05"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师24:43–26:05强调报业追求时效，数字编码让图片可以远程传输，省去实物邮寄。"
+    }
   },
   {
     "page": 56,
@@ -568,7 +788,11 @@
     "sourceIds": [
       "rec0918@28:16"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如成像系统使直线发生畸变，利用已知标记位置估计变换，再重采样图像。"
+    }
   },
   {
     "page": 57,
@@ -579,7 +803,11 @@
     "sourceIds": [
       "rec0918@31:26"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "普通投影与CT重建的区别是：后者需要综合多个方向的测量，用数学运算推回内部结构。"
+    }
   },
   {
     "page": 58,
@@ -590,7 +818,11 @@
     "sourceIds": [
       "rec0918@31:49"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "学习重点是CT的价值来自间接测量到内部结构的计算重建，而不仅是一个更强的照相机。"
+    }
   },
   {
     "page": 59,
@@ -601,7 +833,11 @@
     "sourceIds": [
       "rec0918@01:11:44"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如超声回波强度、MRI信号和热图温度信息即使都用灰度/颜色显示，其数值意义仍不同。"
+    }
   },
   {
     "page": 60,
@@ -612,7 +848,11 @@
     "sourceIds": [
       "rec0918@32:48"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师32:48–34:17用这个关系说明成像和处理相互关联：先理解图像怎样形成，再按任务选择处理方法。"
+    }
   },
   {
     "page": 61,
@@ -623,7 +863,11 @@
     "sourceIds": [
       "rec0918@35:14"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页把研究分成三层：医学成像系统研究物理机理与设备；医学图像处理/分析研究增强、特征、分割与识别；医学应用研究把结果用于临床或基础科学。"
+    }
   },
   {
     "page": 62,
@@ -634,7 +878,11 @@
     "sourceIds": [
       "rec0918@37:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例子：设备算法岗位可能关心重建速度和图像质量，临床相关岗位还要关心使用条件和解释可靠性。"
+    }
   },
   {
     "page": 63,
@@ -646,7 +894,11 @@
       "rec0918@39:43",
       "rec0918@40:04"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "按三步读：向组织引入能量→观察衰减、散射或反射等相互作用→把记录转换成有意义的图像。"
+    }
   },
   {
     "page": 64,
@@ -657,7 +909,11 @@
     "sourceIds": [
       "rec0918@41:47"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上方横轴是波长，下方对应频率和单光子能量：越往右，波长越短、频率越高，E=hν=hc/λ越大。"
+    }
   },
   {
     "page": 65,
@@ -668,7 +924,11 @@
     "sourceIds": [
       "rec0918@44:26"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "曲线展示不同波段衰减不同；右边强调两种极端都不理想：完全衰减收不到信号，完全无衰减又难以反映组织差异。"
+    }
   },
   {
     "page": 66,
@@ -679,7 +939,11 @@
     "sourceIds": [
       "rec0918@48:23"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左侧首先问要什么信息：解剖结构还是功能、定性还是定量；然后列出分辨率、敏感范围、速度、成本和侵入性等权衡。"
+    }
   },
   {
     "page": 67,
@@ -690,7 +954,11 @@
     "sourceIds": [
       "rec0918@01:00:24"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页所谓‘Classical’指较直接地显示辐射与组织相互作用，例子包括投影X光、常规超声和γ照相机。"
+    }
   },
   {
     "page": 68,
@@ -701,7 +969,11 @@
     "sourceIds": [
       "rec0918@01:01:09"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "‘Computed’成像从间接观测出发，经数学方法和计算机形成图像，列表包括X-ray CT、PET、SPECT、MRI和三维超声等。"
+    }
   },
   {
     "page": 69,
@@ -712,7 +984,11 @@
     "sourceIds": [
       "rec0918@01:02:28"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "投影放射摄影利用不同组织对X射线衰减不同，在接收平面上得到叠加投影。"
+    }
   },
   {
     "page": 70,
@@ -723,7 +999,11 @@
     "sourceIds": [
       "rec0918@01:03:02"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "回波到达时间给出深度线索，回波幅值用于亮度编码；页中‘depth map’是简化表述，常见超声图并不只是每个方向一个深度值。"
+    }
   },
   {
     "page": 71,
@@ -734,7 +1014,11 @@
     "sourceIds": [
       "rec0918@01:04:30"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师01:04:30解释记录示踪物在人体中的分布可以提供功能/代谢相关信息，并提到需要专门探测设备。"
+    }
   },
   {
     "page": 72,
@@ -746,7 +1030,11 @@
       "rec0918@01:06:44",
       "rec0918@01:07:02"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右下两个2×2矩阵给出一个很直观的重建问题：A=[1,0;0,1]，B=[0,1;1,0]，它们行和、列和都相同，仅凭水平与垂直投影分不开。"
+    }
   },
   {
     "page": 73,
@@ -757,7 +1045,11 @@
     "sourceIds": [
       "rec0918@01:07:54"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "MRI这页的过程是：在强磁场中，使用射频激励，记录经过空间编码的响应，再形成图像。"
+    }
   },
   {
     "page": 74,
@@ -768,7 +1060,11 @@
     "sourceIds": [
       "rec0918@01:09:22"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页列出多维、多参数、多模态、解剖与功能结合、宏观与微观结合、自动化，以及PACS图像归档通信系统。"
+    }
   },
   {
     "page": 75,
@@ -780,7 +1076,11 @@
       "rec0918@01:11:44",
       "rec0918@01:13:48"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左侧参数尤其值得看：X光/CT关联衰减，超声关联反射散射和运动，MRI列T1/T2/质子密度。"
+    }
   },
   {
     "page": 76,
@@ -791,7 +1091,11 @@
     "sourceIds": [
       "rec0918@01:14:58"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "箭头关系说明应用需求会改变处理任务：航天关心传回图像，医学关心结构，网络又要求有效编码与通信。"
+    }
   },
   {
     "page": 77,
@@ -800,7 +1104,11 @@
       "例如X射线工业检测和X射线医学检查可能共享某些处理工具，但任务目标不同；同一医学图像也能先做低层增强，再做中层测量。读应用页时把‘模态、任务、算法’三个维度分开。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "读应用页时把‘模态、任务、算法’三个维度分开。"
+    }
   },
   {
     "page": 78,
@@ -811,7 +1119,11 @@
     "sourceIds": [
       "rec0918@01:16:21"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "高能射线的用途不只在医院，工业内部结构检查也会用到相关成像。"
+    }
   },
   {
     "page": 79,
@@ -822,7 +1134,11 @@
     "sourceIds": [
       "rec0918@01:17:09"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "学习重点是‘选择物理对比机制使目标显现’，不是根据这两张示例图自行诊断植物疾病。"
+    }
   },
   {
     "page": 80,
@@ -833,7 +1149,11 @@
     "sourceIds": [
       "rec0918@01:17:09"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "它们共享‘从可见的空间结构中提取特征’，但可用特征不同：指纹关心纹路，车牌关心字符，工业图可能关心缺陷或数量。"
+    }
   },
   {
     "page": 81,
@@ -842,7 +1162,11 @@
       "例如某块区域在可见光中不突出，在近红外或热红外中可能更容易分开。不同红外波段反映的物理机制也不完全一样，不能把每一幅红外图都直接叫温度图；具体解释要看传感器、波段和处理。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左侧同一区域的多光谱遥感图在不同波段显示出不同纹理和亮暗；右上红外场景和右下全球夜景示意继续说明，换波段会换对比来源。"
+    }
   },
   {
     "page": 82,
@@ -851,7 +1175,11 @@
       "例如光学图被云遮住时，某些雷达观测仍能提供结构信息。但不要把示例推广成‘任何天气、任何微波频段都完全不受影响’。对课程而言，重点仍是信号波段影响可获取的信息和后续处理方式。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这一页再次展示山地雷达图，顶部圈出微波，左侧文字强调该示例在云层和某些大气条件下仍保留地形细节，相较可见光有不同的环境适应性。"
+    }
   },
   {
     "page": 83,
@@ -862,7 +1190,11 @@
     "sourceIds": [
       "rec0918@01:18:38"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如同样观察脊柱，X光的亮暗反映透射衰减，MRI的亮暗则取决于相应序列和组织对比。"
+    }
   },
   {
     "page": 84,
@@ -873,7 +1205,11 @@
     "sourceIds": [
       "rec0918@01:19:02"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "可以先带着一个任务阅读：从带噪细胞图得到可靠计数，需要采集、增强或复原、分割、形态处理和测量。"
+    }
   },
   {
     "page": 85,
@@ -884,7 +1220,11 @@
     "sourceIds": [
       "rec0918@01:19:21"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如细胞计数可以采集→去噪→阈值分割→形态清理→连通域计数；也可能在分割后再做形态学。"
+    }
   },
   {
     "page": 86,
@@ -895,7 +1235,11 @@
     "sourceIds": [
       "rec0918@01:20:14"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师01:20:14把增强描述为主观目标驱动，复习时应能说明‘希望哪部分更容易看’。"
+    }
   },
   {
     "page": 87,
@@ -907,7 +1251,11 @@
       "rec0918@01:21:11",
       "rec0918@01:21:59"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "与上一页增强相比，复原需要提出图像怎样被模糊、噪声或系统效应改变的模型。"
+    }
   },
   {
     "page": 88,
@@ -918,7 +1266,11 @@
     "sourceIds": [
       "rec0918@01:22:23"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "黄色框移到Colour Image Processing，两幅同形状图从单一色调变成多色分区，展示伪彩色可以帮助区分强度或区域。"
+    }
   },
   {
     "page": 89,
@@ -929,7 +1281,11 @@
     "sourceIds": [
       "rec0918@01:22:59"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例子：无损压缩解码后应恢复原像素；有损压缩允许一定误差换更小数据量。"
+    }
   },
   {
     "page": 90,
@@ -940,7 +1296,11 @@
     "sourceIds": [
       "rec0918@01:23:58"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "形态学利用结构元素的形状与大小处理区域结构，关心的是几何形态，不只是对每个像素做同一种亮度变换。"
+    }
   },
   {
     "page": 91,
@@ -951,7 +1311,11 @@
     "sourceIds": [
       "rec0918@01:24:17"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "分割不是把图变得更清晰，而是决定哪些像素属于目标、哪些属于背景。"
+    }
   },
   {
     "page": 92,
@@ -963,7 +1327,11 @@
       "rec0918@01:24:35",
       "rec0918@01:25:45"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "表示解决‘用什么形式保存对象’，描述解决‘用什么数值刻画对象特征’。"
+    }
   },
   {
     "page": 93,
@@ -975,7 +1343,11 @@
       "rec0918@01:25:27",
       "rec0918@01:25:45"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "它把识别解释为‘先用特征描述对象，再依据特征作判断’，不是直接把一张图变为另一张图。"
+    }
   },
   {
     "page": 94,
@@ -986,7 +1358,11 @@
     "sourceIds": [
       "rec0918@01:22:59"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如一张高分辨率显微图要在网络上传输，可以选择无损编码保留像素，也可在允许误差时采用有损压缩。"
+    }
   },
   {
     "page": 95,
@@ -995,7 +1371,11 @@
       "例如一个在线显微分析系统即使算法很快，如果数据读盘和网络传输太慢，整体仍可能跟不上采集速度。读后两页时把算法步骤与硬件/软件系统模块区分开。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "与上一段算法流程相比，这里转向输入、存储、通信、计算和输出如何配合。"
+    }
   },
   {
     "page": 96,
@@ -1006,7 +1386,11 @@
     "sourceIds": [
       "rec0918@01:27:03"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "中央图把处理与分析放在核心：左边接收输入，右边产生输出，上下分别与通信、存储双向交换。"
+    }
   },
   {
     "page": 97,
@@ -1017,7 +1401,11 @@
     "sourceIds": [
       "rec0918@01:28:49"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这张框图更接近工程实现：底部传感器与专用图像硬件相连，中央计算机连接显示器、大容量存储、软件、硬拷贝和网络。"
+    }
   },
   {
     "page": 98,
@@ -1028,6 +1416,10 @@
     "sourceIds": [
       "rec0911@06:42"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "用细胞计数自测：图像怎么采集、像素代表什么、去噪和增强属于哪层、分割输出什么、计数依赖哪些区域定义。"
+    }
   }
 ]

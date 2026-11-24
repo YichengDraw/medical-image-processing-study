@@ -12,7 +12,11 @@
       "rec16-p27"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "学之总纲、为政、德行和礼之间的往返，提示《学而》所说的学不止一种知识活动。"
+    }
   },
   {
     "page": 3,
@@ -27,7 +31,11 @@
       "rec16-p29"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "既要知道所学是什么，也要检查自己是否做出来；后面关于礼的讨论正要说明这种成就如何可能。"
+    }
   },
   {
     "page": 4,
@@ -44,7 +52,11 @@
       "rec16-p99"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "学习、同门相会和不被理解时仍不愠，共同呈现一种逐渐形成的生活状态。"
+    }
   },
   {
     "page": 5,
@@ -61,7 +73,11 @@
       "rec16-p83"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "顺着“有潜能—有待成就—通过学习实现”这条线，就能把本页的学与后面孟子的人性问题连起来。"
+    }
   },
   {
     "page": 6,
@@ -77,7 +93,11 @@
       "rec16-p121"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "十五志学到从心所欲不逾矩，说明理想是使行动与合宜的规范逐渐贯通。"
+    }
   },
   {
     "page": 7,
@@ -93,7 +113,11 @@
       "rec15-p11"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "“子以四教：文、行、忠、信”将经典学习与德行实践联系起来。"
+    }
   },
   {
     "page": 8,
@@ -109,7 +133,11 @@
       "rec16-p135"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "“本”指从这些真实关系开始学习和实践仁，再把关怀扩展到更广的人际关系。"
+    }
   },
   {
     "page": 9,
@@ -123,7 +151,11 @@
       "rec16-p135"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师特别借它说明，人伦不是只给弱的一方下命令；一种关系包含相互指向的责任，破坏任一方都会损伤这段关系。"
+    }
   },
   {
     "page": 10,
@@ -138,7 +170,11 @@
       "rec16-p141"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师用这段说明，仁的道路不能脱离人的共同生活：问题正发生在人与人的关系里，解决也须进入这些关系。"
+    }
   },
   {
     "page": 11,
@@ -154,7 +190,11 @@
       "rec16-p151"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师据此突出一种关系视角：理解一个人，不能只把他当作先完成、再偶尔与别人发生联系的孤立单位；家庭和共同生活参与塑造其道德身份。"
+    }
   },
   {
     "page": 12,
@@ -170,7 +210,11 @@
       "rec16-p151"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "与老师关于仁的关系视角相接，这页显示修身并非只整理内心感受，还涉及怎样在不同关系中承担相应责任。"
+    }
   },
   {
     "page": 18,
@@ -185,7 +229,11 @@
       "rec15-p11"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师把文行忠信归入同一学习框架：理解经典与做出合宜行动相互关联，礼是其中的重要连接，不是等知识学完后才附加的一层礼貌。"
+    }
   },
   {
     "page": 19,
@@ -201,7 +249,11 @@
       "rec15-p11"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师强调，文学在这里不是现代意义上单独的审美学科；经典所教的情感、判断和行动，最终仍与礼的生活秩序相连。"
+    }
   },
   {
     "page": 20,
@@ -217,7 +269,11 @@
       "rec14-p25"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "关键不在动作越繁越好，而在行为怎样承载态度；这也解释了为什么下一组《乡党》材料会细写孔子的日常举止。"
+    }
   },
   {
     "page": 21,
@@ -232,7 +288,11 @@
       "rec15-p13"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如与乡人相处时的谦逊，和在正式场合审慎发言，表现的是对关系与情境的辨识。"
+    }
   },
   {
     "page": 22,
@@ -247,7 +307,11 @@
       "rec15-p41"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂对《乡党》的概括，是人的礼仪姿态贯穿具体生活：身体如何出现、怎样吃穿，并不是与德行完全无关的纯私人技巧。"
+    }
   },
   {
     "page": 23,
@@ -262,7 +326,11 @@
       "rec15-p13"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师把《乡党》放在礼的生活方式中读，使我们看到礼不只是一套能够口头说明的原则，也通过习惯和姿态形成。"
+    }
   },
   {
     "page": 24,
@@ -278,7 +346,11 @@
       "rec15-p215"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "结合老师对礼的说明，礼所维护的不只是昂贵祭品或正确动作，而是借这些形式持续表达的敬意与人伦关系。"
+    }
   },
   {
     "page": 25,
@@ -293,7 +365,11 @@
       "rec15-p21"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师强调，复礼不是只有外在制度逼人服从；人自身愿意承担、克服不合宜的欲望，才构成这里的道德行动。"
+    }
   },
   {
     "page": 26,
@@ -307,7 +383,11 @@
       "rec15-p23"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师据此强调，成人指道德人格得到成全，不能等同于年龄增长或技能数量增加。"
+    }
   },
   {
     "page": 27,
@@ -323,7 +403,11 @@
       "rec15-p241"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "与老师的讲解相接，仁的情感与礼的形式需要互相成就：只有形式可能空洞，只有未经成就的情感也可能失当。"
+    }
   },
   {
     "page": 28,
@@ -337,7 +421,11 @@
       "rec16-p133"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师后来比较儒庄时，把儒家的婚礼与丧礼分别概括为安顿人生起点和终点的重大安排，说明礼关注人的完整生命过程。"
+    }
   },
   {
     "page": 29,
@@ -352,7 +440,11 @@
       "rec16-p135"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这是一种由具体人伦关系向社会秩序推展的论证：共同生活不能只有情感发生，还需要稳定的分际与责任形式。"
+    }
   },
   {
     "page": 30,
@@ -367,7 +459,11 @@
       "rec15-p37"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如一幅画先有底子再上色，和先布众色最后以白色成文，是两种不同的制作想象；它们会带出不同的德与礼关系。"
+    }
   },
   {
     "page": 31,
@@ -383,7 +479,11 @@
       "rec15-p35"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "最直接的例子是，若素是白纸，礼像后来加上的色彩；若素是最后收束画面的白色工序，礼的地位就变了。"
+    }
   },
   {
     "page": 32,
@@ -398,7 +498,11 @@
       "rec15-p31"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "对应到人，忠信等美质是学礼的基础，礼在这一比喻中近于后来加上的文饰。"
+    }
   },
   {
     "page": 33,
@@ -414,7 +518,11 @@
       "rec15-p45"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师借此说明，礼参与德行的形成，使已有的情感与倾向获得合宜的表达。"
+    }
   },
   {
     "page": 34,
@@ -430,6 +538,10 @@
       "rec15-p49"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "若礼使直率获得恰当的表达，文便不是可以随意剥掉的包装。"
+    }
   }
 ]

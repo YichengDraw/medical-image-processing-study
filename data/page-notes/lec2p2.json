@@ -8,7 +8,11 @@
     "sourceIds": [
       "recSampling@01:24"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "讲授主线分两半：先说明连续场景怎样变成数字像素，再说明像素怎样通过邻接、连通与运算组成可分析的对象。"
+    }
   },
   {
     "page": 2,
@@ -19,7 +23,11 @@
     "sourceIds": [
       "recSampling@00:07"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "下面 f(x,y)=i(x,y)r(x,y) 是反射式光学成像的简化模型：i 是照明强度，r 是反射比例，记录的强度同时受二者影响。"
+    }
   },
   {
     "page": 3,
@@ -31,7 +39,11 @@
       "recSampling@02:03",
       "recSampling@03:04"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "三项目标对应三个不同问题：sampling 解释像素间距、真实分辨率和混叠；quantization 根据位深计算灰度级与存储；interpolation 根据数据类型选择重采样。"
+    }
   },
   {
     "page": 4,
@@ -43,7 +55,11 @@
       "recSampling@00:26",
       "recFourier@03:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左下连续灰度物体覆盖在网格上，右下变成一格一值的像素图，说明两个离散化过程：采样决定在哪些空间位置读取信号；量化把每次读到的连续强度映射到有限编码。"
+    }
   },
   {
     "page": 5,
@@ -54,7 +70,11 @@
     "sourceIds": [
       "recSampling@04:31"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如方格间距为 a，横向邻居距离 a、对角为 √2a；六角排布的六个近邻均可为 a。"
+    }
   },
   {
     "page": 6,
@@ -67,7 +87,11 @@
       "recSampling@07:29",
       "recSampling@09:27"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "矩阵大小是行列数，FOV 是物理视野；沿同一轴，用 FOV 除以像素数得像素间距。"
+    }
   },
   {
     "page": 7,
@@ -78,7 +102,11 @@
     "sourceIds": [
       "recSampling@10:28"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "比如 8×8 图只有 64 个空间采样值，后期把它放大也主要是在复制或插值这些值，不能保证找回花瓣的小纹理。"
+    }
   },
   {
     "page": 8,
@@ -90,7 +118,11 @@
       "recSampling@11:51",
       "recSampling@12:28"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "原物体的重复砖纹与采样网格相互作用，欠采样会让高频纹理显得像较低频的新图案。"
+    }
   },
   {
     "page": 9,
@@ -101,7 +133,11 @@
     "sourceIds": [
       "recSampling@13:18"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这个示意把“高频被看成低频”直观画出来：低频图样不是原墙新长出来的，而是采样不足造成的歧义。"
+    }
   },
   {
     "page": 10,
@@ -113,7 +149,11 @@
       "recSampling@14:29",
       "recSampling@15:24"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "橙框中的定理先有前提：信号带限，超过截止频率 k₀ 不再含有分量；在均匀采样、理想重建条件下，采样间距要足够小，采样频率要超过 2k₀。"
+    }
   },
   {
     "page": 11,
@@ -125,7 +165,11 @@
       "recSampling@16:43",
       "recSampling@17:53"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "位置域问“哪里亮、哪里暗”，频域问“用了什么频率的变化、强度和相位是多少”。"
+    }
   },
   {
     "page": 12,
@@ -137,7 +181,11 @@
       "recSampling@17:53",
       "recSampling@19:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页给出应掌握的简洁形式：f_s>2f_max，等价于 Δx<1/(2f_max)，其中 f_s=1/Δx。"
+    }
   },
   {
     "page": 13,
@@ -150,7 +198,11 @@
       "recSampling@21:40",
       "recSampling@09:27"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "分辨率需求由目标和用途决定，不由好不好看单独决定。"
+    }
   },
   {
     "page": 14,
@@ -163,7 +215,11 @@
       "recSampling@24:35",
       "recSampling@25:35"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "位深 b 表示每个像素编码用多少 bit，灰度等级 L=2ᵇ：1 bit 有 2 级，8 bit 有 256 级，12 bit 有 4096 级。"
+    }
   },
   {
     "page": 15,
@@ -174,7 +230,11 @@
     "sourceIds": [
       "recSampling@24:35"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "采样决定矩阵网格，量化决定每个格子的可用数值。"
+    }
   },
   {
     "page": 16,
@@ -185,7 +245,11 @@
     "sourceIds": [
       "recSampling@26:33"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这是最简单的二值图：0 表示黑、1 表示白；右侧 p 列、q 行的数组与左图像素一一对应。"
+    }
   },
   {
     "page": 17,
@@ -196,7 +260,11 @@
     "sourceIds": [
       "recSampling@27:19"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "八幅颅骨图保持空间网格，减少灰度等级：8、7、6、5 bit 的层次较丰富；到 4、3、2、1 bit，大面积缓变区域被压成几档，出现一圈圈不真实的界线，即 false contour。"
+    }
   },
   {
     "page": 18,
@@ -209,7 +277,11 @@
       "recSampling@30:30",
       "recSampling@31:54"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "先由 256 个灰度级求 k=log₂256=8 bit/pixel，再算 512×512×8=2,097,152 bit；除以 8 得 262,144 byte，再除以 1024 得 256 KiB。"
+    }
   },
   {
     "page": 19,
@@ -220,7 +292,11 @@
     "sourceIds": [
       "recSampling@34:38"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "非均匀采样改变空间点的密度：变化剧烈的区域更密，平滑区域更疏；非均匀量化改变强度编码的间隔：重要或常出现的灰度范围分得更细，不常出现的范围分得更粗。"
+    }
   },
   {
     "page": 20,
@@ -231,7 +307,11 @@
     "sourceIds": [
       "recSampling@35:18"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页给出实验比较原则：测试采样影响时固定 bit depth，只减少空间网格；测试量化影响时固定网格，只减少灰度等级。"
+    }
   },
   {
     "page": 21,
@@ -243,7 +323,11 @@
       "recSampling@36:34",
       "recSampling@37:32"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "最近邻的圆边有阶梯和块状，线性把相邻灰度连接起来，三次用更宽邻域拟合，通常显得更平滑。"
+    }
   },
   {
     "page": 22,
@@ -256,7 +340,11 @@
       "recSampling@39:07",
       "recFourier@05:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上采样建立更密网格并插值，不会自动增加已采集细节；下采样则应先低通，再降低采样率，否则高频可能混叠。"
+    }
   },
   {
     "page": 23,
@@ -268,7 +356,11 @@
       "recSampling@36:34",
       "recSampling@40:24"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左下的红色阶梯说明最近邻插值：新位置直接采用最近整数像素的值，在跨过最近点的分界时突然跳到另一值。"
+    }
   },
   {
     "page": 24,
@@ -279,7 +371,11 @@
     "sourceIds": [
       "recSampling@41:34"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "公式可写成 g̃(x)=(1−t)g(k)+t g(k+1)，即用两端值作距离权重平均。"
+    }
   },
   {
     "page": 25,
@@ -290,7 +386,11 @@
     "sourceIds": [
       "recSampling@42:51"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "双线性将一维线性插值扩展到二维：由包围新位置的四个像素估计灰度，先沿一轴插两次，再沿另一轴插一次。"
+    }
   },
   {
     "page": 26,
@@ -301,7 +401,11 @@
     "sourceIds": [
       "recSampling@42:51"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "先在相同 x 上分别求 R₁=f(x,y₁)、R₂=f(x,y₂)，再用 y 的比例在 R₁、R₂ 之间插值，得到绿色点 P。"
+    }
   },
   {
     "page": 27,
@@ -312,7 +416,11 @@
     "sourceIds": [
       "recSampling@44:32"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页用三次多项式 g̃(x)=at³+bt²+ct+d，t=x−floor(x)，拟合附近四个采样点。"
+    }
   },
   {
     "page": 28,
@@ -323,7 +431,11 @@
     "sourceIds": [
       "recSampling@46:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "一维三次插值使用4点，二维用16点，推广到三维用64点，这是邻域随维数增加的结果。"
+    }
   },
   {
     "page": 29,
@@ -334,7 +446,11 @@
     "sourceIds": [
       "recSampling@47:23"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "三个自检的答案可以连成一句：更多输出像素不必然增加真实细节；减少位深会产生条带与假轮廓；普通线性插值可能把类别标签混成非类别数值。"
+    }
   },
   {
     "page": 30,
@@ -345,7 +461,11 @@
     "sourceIds": [
       "recSampling@59:08"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "单看像素值为 1 还不够，必须先定义连接方式。"
+    }
   },
   {
     "page": 31,
@@ -357,7 +477,11 @@
       "recSampling@01:00:29",
       "recSampling@01:01:24"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "采用 4 连通时只能上下左右走，两块之间没有这样的通路，因此有 2 个连通分量；采用 8 连通允许斜走，它们就合成 1 个。"
+    }
   },
   {
     "page": 32,
@@ -369,7 +493,11 @@
       "recSampling@01:01:24",
       "recSampling@01:02:41"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本部分的目标是能执行三个判断：给定值集合与邻接规则判断连接；计算欧氏、4 距离、8 距离并换算物理单位；根据任务选择平均、减法、除法或掩膜。"
+    }
   },
   {
     "page": 33,
@@ -380,7 +508,11 @@
     "sourceIds": [
       "recSampling@01:03:46"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页是像素关系的目录：邻域回答“空间上挨着谁”，邻接还要考虑允许的像素值，连通关心是否能沿合法路径到达；距离用于量化远近；区域和边界则把像素集合组织成对象。"
+    }
   },
   {
     "page": 34,
@@ -391,7 +523,11 @@
     "sourceIds": [
       "recSampling@01:03:46"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "中心黄色 p 不计入自己的邻域；十字四格是上下左右，斜角四格是 diagonal，二者的并集才是八邻域，因此 N₈(p)=N₄(p)∪N_D(p)。"
+    }
   },
   {
     "page": 35,
@@ -403,7 +539,11 @@
       "recSampling@01:04:53",
       "recSampling@01:05:29"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师特别强调像素值相似/属于同一允许集合与空间位置是两个条件。"
+    }
   },
   {
     "page": 36,
@@ -415,7 +555,11 @@
       "recSampling@01:06:23",
       "recSampling@01:07:10"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "m-adjacency（混合邻接）先保留所有满足 V 条件的四邻接；对于对角邻居，还要检查它们共有的四邻域 N₄(p)∩N₄(q)，其中不能有值属于 V 的像素。"
+    }
   },
   {
     "page": 37,
@@ -427,7 +571,11 @@
       "recSampling@01:08:00",
       "recSampling@01:09:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师用这两种情况区分“能否直接走这一步”和“能否沿路径到达”，所以左图仍应按一个连通对象判断。"
+    }
   },
   {
     "page": 38,
@@ -438,7 +586,11 @@
     "sourceIds": [
       "recSampling@01:11:17"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右图用 m 邻接删去 p→q₁ 的直接斜线，只保留满足共有四邻域无前景条件的 p→q₂。"
+    }
   },
   {
     "page": 39,
@@ -450,7 +602,11 @@
       "recSampling@01:12:00",
       "recSampling@01:12:41"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "通路写作 p₀,p₁,…,pₙ，每相邻两个位置都要满足指定邻接规则；有 n+1 个位置，却只有 n 次移动，因此长度为 n。"
+    }
   },
   {
     "page": 40,
@@ -462,7 +618,11 @@
       "recSampling@01:13:17",
       "recSampling@01:14:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "连通分量是前景集合中彼此可沿合法路径到达的极大像素组。"
+    }
   },
   {
     "page": 41,
@@ -474,7 +634,11 @@
       "recSampling@01:15:47",
       "recFourier@08:02"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "V={1}，4 连通答案为 2，8 连通答案为 1；造成差别的是第2行第2列与第3行第3列这对对角前景点。"
+    }
   },
   {
     "page": 42,
@@ -485,7 +649,11 @@
     "sourceIds": [
       "recSampling@01:15:47"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "报告对象数量时，除了写“count=2”，还要写掩膜怎样生成、使用哪种 connectivity。"
+    }
   },
   {
     "page": 43,
@@ -496,7 +664,11 @@
     "sourceIds": [
       "recSampling@01:17:50"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "区域 R 可以理解为满足既定连通规则的一组像素；两个区域若并集仍连通，就称邻接区域。"
+    }
   },
   {
     "page": 44,
@@ -507,7 +679,11 @@
     "sourceIds": [
       "recSampling@01:19:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "内边界是属于前景、但邻接背景的像素；外边界则位于相邻的背景一侧。"
+    }
   },
   {
     "page": 45,
@@ -518,7 +694,11 @@
     "sourceIds": [
       "recSampling@01:20:24"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "对很薄的前景线条，几乎每个前景像素都与背景邻接，因此内边界可等于区域本身，且不一定组成闭合通路。"
+    }
   },
   {
     "page": 46,
@@ -531,7 +711,11 @@
       "recSampling@01:22:27",
       "recSampling@01:23:03"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "D₄=|Δx|+|Δy|，D₈=max(|Δx|,|Δy|)，欧氏则是 √(Δx²+Δy²)。"
+    }
   },
   {
     "page": 47,
@@ -542,7 +726,11 @@
     "sourceIds": [
       "recSampling@01:24:31"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "三张数字阵列都以中心 0 为起点，但等距离轮廓不同：欧氏近似圆，D₄ 是菱形，D₈ 是轴对齐正方形。"
+    }
   },
   {
     "page": 48,
@@ -554,7 +742,11 @@
       "recSampling@01:23:03",
       "recSampling@01:24:31"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页给定 p=(1,1)、q=(4,5)，两轴差分别为 3 和 4，所以 D_e=√(9+16)=5，D₄=3+4=7，D₈=max(3,4)=4。"
+    }
   },
   {
     "page": 49,
@@ -566,7 +758,11 @@
       "recSampling@01:26:00",
       "recSampling@01:27:14"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "因此横向位移 3×0.2=0.6 μm，竖向 4×0.4=1.6 μm，物理欧氏距离为 √(0.6²+1.6²)≈1.71 μm。"
+    }
   },
   {
     "page": 50,
@@ -577,7 +773,11 @@
     "sourceIds": [
       "recSampling@01:28:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图像虽存成二维矩阵，运算时仍要先分清：当前是逐元素处理，还是执行线性代数中的矩阵运算。"
+    }
   },
   {
     "page": 51,
@@ -588,7 +788,11 @@
     "sourceIds": [
       "recSampling@01:28:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上方 array operation 只让相同坐标的 a_ij 与 b_ij 相乘；下方 matrix operation 则每个输出由一行与一列的内积组成。"
+    }
   },
   {
     "page": 52,
@@ -600,7 +804,11 @@
       "recSampling@01:29:39",
       "recSampling@01:30:46"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "线性判据是 H(af+bg)=aH(f)+bH(g)。"
+    }
   },
   {
     "page": 53,
@@ -611,7 +819,11 @@
     "sourceIds": [
       "recSampling@01:31:36"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "因此需要图像尺寸及坐标对应关系一致；两张尺寸相同但没有配准的图，仍可能在物理上不是同一位置。"
+    }
   },
   {
     "page": 54,
@@ -624,7 +836,11 @@
       "recSampling@01:34:00",
       "recFourier@06:37"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "若场景稳定且已对齐、噪声零均值、等方差且跨帧不相关，平均仍以 f 为期望，方差降为 σ²/k，标准差降为 σ/√k。"
+    }
   },
   {
     "page": 55,
@@ -637,7 +853,11 @@
       "recSampling@01:35:43",
       "recSampling@01:36:08"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师回答关键前提是物体不动或先做好配准，否则细胞位置变化会在平均中被混合，降噪同时产生模糊。"
+    }
   },
   {
     "page": 56,
@@ -648,7 +868,11 @@
     "sourceIds": [
       "recSampling@01:37:06"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "先示范各占一半，再推广为 g=αf+βh，且 α+β=1；当 α、β非负时是凸组合，输出通常位于两输入值之间，形成双重曝光或渐变过渡效果。"
+    }
   },
   {
     "page": 57,
@@ -659,7 +883,11 @@
     "sourceIds": [
       "recSampling@01:37:06"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如 α=β=0.5 时，两图各贡献一半；若想瓶子更明显，可以增大 α 并相应减小 β，使和仍为 1。"
+    }
   },
   {
     "page": 58,
@@ -671,7 +899,11 @@
       "recSampling@01:38:17",
       "recSampling@01:41:10"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "应先转有符号或浮点格式计算，再另做显示映射；直接用某些无符号图像操作可能产生截断/饱和。"
+    }
   },
   {
     "page": 59,
@@ -682,7 +914,11 @@
     "sourceIds": [
       "recSampling@01:38:17"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这是显示差值图的方法，不是重新定义差值：display=255(g−g_min)/(g_max−g_min)。"
+    }
   },
   {
     "page": 60,
@@ -693,7 +929,11 @@
     "sourceIds": [
       "recSampling@01:39:42"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页的背景扣除模型是 g=f−b，其中 f 同时含目标与背景，b 是背景参考。"
+    }
   },
   {
     "page": 61,
@@ -704,7 +944,11 @@
     "sourceIds": [
       "recSampling@01:41:24"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "若只清除一个最低位，偶数像素不变，奇数像素减 1，所以原始差值仅为 0 或 1；放大显示后才会显得对比很强。"
+    }
   },
   {
     "page": 62,
@@ -715,7 +959,11 @@
     "sourceIds": [
       "recSampling@01:42:47"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "前后相减使共同的组织背景尽量抵消，新增的血管造影信号更突出；右下还进行了显示/对比增强，因此不应把它当作未经处理的原始数值差。"
+    }
   },
   {
     "page": 63,
@@ -726,7 +974,11 @@
     "sourceIds": [
       "recSampling@01:42:47"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左图 T₂ 是走廊里有人，中央 T₁ 是相似背景但该位置无人；计算 T₂−T₁ 后，静态走廊大部分抵消，变化的主体被保留在右图。"
+    }
   },
   {
     "page": 64,
@@ -737,7 +989,11 @@
     "sourceIds": [
       "recSampling@01:44:18"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "它近似两个方向的一阶导数，梯度幅值为 √(Gx²+Gy²)；max(|Gx|,|Gy|) 是更便宜、但不同的近似。"
+    }
   },
   {
     "page": 65,
@@ -746,7 +1002,11 @@
       "例如一个原本为100的格子因局部照明 L=0.5 只测得50，除以0.5可回到100。要区分：固定加性背景适合减法，乘性照明适合除法。L很小时除法也会放大噪声，因此实际处理要限制过小分母；这页不是在保证任意照明估计都能精确恢复图像。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "采用课件模型 I=F·L，若照明场已知且 L>0，就用 F=I/L=I·(1/L) 消除乘性明暗变化，而不是把中图直接减掉。"
+    }
   },
   {
     "page": 66,
@@ -757,7 +1017,11 @@
     "sourceIds": [
       "recSampling@01:45:42"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "对每个位置计算 g(x,y)=f(x,y)M(x,y)，M=1保留原强度，M=0把该位置置零。"
+    }
   },
   {
     "page": 67,
@@ -768,7 +1032,11 @@
     "sourceIds": [
       "recSampling@01:47:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "先算 fₘ=f−min(f)，把最小值平移到0；再算 fₛ=K·fₘ/max(fₘ)，把最大值缩放到K。"
+    }
   },
   {
     "page": 68,
@@ -779,7 +1047,11 @@
     "sourceIds": [
       "recSampling@01:47:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "交集 A∩B 留下重叠区，合并 A∪B 留下任一集合覆盖的区域，补集相对于全集Ω取反，差集 A−B 只留下属于A却不属于B的部分。"
+    }
   },
   {
     "page": 69,
@@ -790,7 +1062,11 @@
     "sourceIds": [
       "recSampling@01:47:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页把补集从二值集合推广到灰度图：用 s=K−z 做灰度反转，K是允许的最大强度。"
+    }
   },
   {
     "page": 70,
@@ -801,7 +1077,11 @@
     "sourceIds": [
       "recSampling@01:47:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页的灰度‘并’用逐位置最大值来定义：c(x,y)=max[a(x,y),b(x,y)]。"
+    }
   },
   {
     "page": 71,
@@ -810,7 +1090,11 @@
       "以8 bit为例，T(z)=255−z，白色表盘变黑、黑色刻度变白，而指针和刻度的位置不变。对照下一页，单点变换可以调亮暗、反相，却无法根据邻域识别一个孤立噪声点。提供的这段录音未可靠覆盖本页具体讲授，以上按当页图示解释。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页回到最小的空间操作：一个像素独立映射为另一个值，s=T(z)。"
+    }
   },
   {
     "page": 72,
@@ -819,7 +1103,11 @@
       "41×41意味着一次平均1681个像素；均匀噪声会被压下去，但细小血管和锐利边缘也被摊开。更小的3×3窗口只平均9点，模糊通常较轻。重点是理解‘利用邻域’与‘只改本像素强度’的区别，而不是把右图更平滑当成诊断信息更多。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "公式 g(x,y)=Σf(r,c)/(mn) 是局部均值：把窗口内所有像素相加，再除以像素数。"
+    }
   },
   {
     "page": 73,
@@ -830,7 +1118,11 @@
     "sourceIds": [
       "recFourier@03:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师在Quiz复盘03:00明确指出缩放、旋转会用到interpolation：几何变换决定从哪里取值，插值决定该位置取多少。"
+    }
   },
   {
     "page": 74,
@@ -839,7 +1131,11 @@
       "不能只凭左下看着‘摆正了’就认为配准完美：右下仍能看见字母、条纹轮廓，说明存在残余位置或插值误差，边界还可能没有有效数据。比如两张造影图只偏一像素，直接相减也会出现边缘双影；先配准才能更可靠地把差异解释为物体变化。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "输入图角落附近的小白方块表示对应控制点，用这些位置关系估计变换，再将图像对齐到参考坐标系。"
+    }
   },
   {
     "page": 75,
@@ -848,7 +1144,11 @@
       "例如一个像素RGB=(200,50,10)，可以用权重向量与它点乘得到加权亮度，或者用3×3颜色变换矩阵混合通道。矩阵运算在这里有明确的跨通道含义，不要与前面两个整幅数组的逐像素乘法混为一谈。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图中三层分别是R、G、B分量图；沿蓝线取出同一空间坐标的三个值，组成 z=[z₁,z₂,z₃]ᵀ。"
+    }
   },
   {
     "page": 76,
@@ -857,6 +1157,10 @@
       "用一个例子串起来：相机记录细胞图像，采样决定像素间距，量化决定强度编码；选4/8连通统计区域，再用掩膜保留ROI，用平均或差分处理噪声与变化。需要会解释各步的作用和限制：插值不能凭空补回真实细节，连通规则改变计数，平均降噪又可能模糊运动目标。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "用一个例子串起来：相机记录细胞图像，采样决定像素间距，量化决定强度编码；选4/8连通统计区域，再用掩膜保留ROI，用平均或差分处理噪声与变化。"
+    }
   }
 ]

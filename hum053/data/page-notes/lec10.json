@@ -15,7 +15,11 @@
       "rec11-p15"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图中礼分成文与质：孔子并不赞成空洞的文，他要让礼文成全质，达到文质彬彬；庄子则进一步怀疑，文是否会形成虚荣、虚伪的世界，使人离开真实生活。"
+    }
   },
   {
     "page": 3,
@@ -30,7 +34,11 @@
       "rec11-p17"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "按本课的孔子读法，礼文能使质显明、完成；按庄子的批评，天然羽毛已有纹理，再加彩绘可能多余甚至有害。"
+    }
   },
   {
     "page": 4,
@@ -45,7 +53,11 @@
       "rec11-p31"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师指出，类似天象在《论语》中也出现，但那里可与人的伦理秩序相贯通，庄子文本却利用相同意象作出不同转折。"
+    }
   },
   {
     "page": 5,
@@ -60,7 +72,11 @@
       "rec11-p33"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师借此防止只靠词语给学说贴标签：同样说天不言，儒家可以从中理解人所当遵循的秩序，庄子却会怀疑将道转为固定语言规范。"
+    }
   },
   {
     "page": 6,
@@ -77,7 +93,11 @@
       "rec11-p41"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "庄子在这里保留天道德，却质疑由它们必然推出仁义礼乐。"
+    }
   },
   {
     "page": 7,
@@ -94,7 +114,11 @@
       "rec11-p49"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师认为关键不在词语上的赞成与反对，而在是否把人的性视为确定基础，再由它规定伦理生活。"
+    }
   },
   {
     "page": 8,
@@ -110,7 +134,11 @@
       "rec11-p63"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师将它放进对知识化传承的反思：如果道只被理解为可写在书中的关于物的判断，我们是否已把它缩成了可命名、可分类的部分？"
+    }
   },
   {
     "page": 9,
@@ -126,7 +154,11 @@
       "rec11-p63"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页按四层推进：书承载语言，语言承载意义，意义又有所指向；但其所指未必能全部被文字保存。"
+    }
   },
   {
     "page": 10,
@@ -143,7 +175,11 @@
       "rec11-p73"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "轮扁以制轮经验反问桓公：斫轮的松紧快慢有实际分寸，得之于手、应之于心，却难以完整说出来，甚至难以直接传给儿子。"
+    }
   },
   {
     "page": 11,
@@ -159,7 +195,11 @@
       "rec11-p73"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "“不慢不快”不是随意，而是分寸确实存在，却难被一个普遍口令完全表达。"
+    }
   },
   {
     "page": 12,
@@ -174,7 +214,11 @@
       "rec11-p77"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "程艾蓝的引文借手艺说明与语言知识不同的把握方式，老师认为这个解释有帮助，却不充分：一般手艺仍常靠长期积累与学习，道在本课读法中不能简单等同于这一过程。"
+    }
   },
   {
     "page": 13,
@@ -191,7 +235,11 @@
       "rec11-p91"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "原文把庖丁的变化写成三层：起初所见无非全牛；三年后未尝见全牛；如今“以神遇而不以目视，官知止而神欲行”。"
+    }
   },
   {
     "page": 14,
@@ -206,7 +254,11 @@
       "rec11-p91"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂重心是从“看见一整头牛”到不再被整块对象的表象拘住，最终顺着它的结构活动。"
+    }
   },
   {
     "page": 15,
@@ -221,7 +273,11 @@
       "rec11-p91"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "画面把牛与持刀者相对摆放，正好可用来回忆原文的三个阶段：最初看整牛，继而见结构，最后神遇而官知止。"
+    }
   },
   {
     "page": 16,
@@ -237,7 +293,11 @@
       "rec11-p99"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师明确说这是粗略表述：儒家以人的性与规范把世界组织起来；庄子让人回到万物的变化中，最终还要突破人、物的固定对立。"
+    }
   },
   {
     "page": 17,
@@ -253,7 +313,11 @@
       "rec11-p103"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师把“无以人灭天”理解为不要让人为安排、功名与制度追求吞没生命本来的展开。"
+    }
   },
   {
     "page": 18,
@@ -269,7 +333,11 @@
       "rec11-p107"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页译文自己说明“火不能热、水不能溺”等，不是说接触火水时身体不会受伤，而是借此描述知安危、能应变、不被外物伤其心志的至德境界。"
+    }
   },
   {
     "page": 19,
@@ -285,7 +353,11 @@
       "rec11-p117"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "“物物而不物于物”可直观理解为能应对、使用外物，而不让外物反过来支配自己。"
+    }
   },
   {
     "page": 20,
@@ -301,7 +373,11 @@
       "rec11-p117"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师特别区分“顺应万物”与“顺应社会替你规定的人生”：后者可能恰是庄子要反思的束缚，不能把逍遥解释成永远忍受既定安排。"
+    }
   },
   {
     "page": 21,
@@ -317,7 +393,11 @@
       "rec11-p129"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "成玄英把《逍遥游》放在通道之境，再由《齐物论》到养生、处世、德、宗师、应帝王，构造一条由通达向生命与处世展开的路线。"
+    }
   },
   {
     "page": 22,
@@ -333,7 +413,11 @@
       "rec11-p129"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "译文说明这套编排如何被理解：先打开观物的范围，再涉及养生、应人间事务与自身之德，最后到“寂而能应”。"
+    }
   },
   {
     "page": 23,
@@ -348,7 +432,11 @@
       "rec11-p129"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "因此可把表当索引：想解释无待，回《逍遥游》；想解释成心与彼此，回《齐物论》；想解释顺其固然，回庖丁。"
+    }
   },
   {
     "page": 24,
@@ -365,7 +453,11 @@
       "rec11-p139"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "“化而为鸟”把变化放进最初场景，“小知不及大知、小年不及大年”则让习惯于局部的视角受到冲击。"
+    }
   },
   {
     "page": 25,
@@ -380,7 +472,11 @@
       "rec11-p135"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师提醒，这是用想象引出万物可化的思考，不应把鲲鹏当作一种待寻找的生物或真的飞行设备。"
+    }
   },
   {
     "page": 26,
@@ -396,7 +492,11 @@
       "rec11-p143"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师把“小大”首先解释成境界与视野的差异，而非财富、地位或体型的简单排序。"
+    }
   },
   {
     "page": 27,
@@ -414,7 +514,11 @@
       "rec11-p153"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "所谓“无待”不应按字面理解成身体可以没有任何物理条件，而是指向不把特定外在条件当作生命价值的唯一支撑。"
+    }
   },
   {
     "page": 28,
@@ -430,7 +534,11 @@
       "rec11-p153"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "译文的四步要连起来：社会能力与声望的自得；摆脱赞毁；御风而行仍依赖风；顺变化而不再执守某一凭借。"
+    }
   },
   {
     "page": 29,
@@ -446,7 +554,11 @@
       "rec11-p207"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "最直接的用法是先借阶梯发现局部视野，再反思任何阶梯能否穷尽变化，不能止于“我想成为最高那一级”。"
+    }
   },
   {
     "page": 30,
@@ -461,7 +573,11 @@
       "rec11-p211"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师用它承接上一页阶梯：重要的不只是另找一个更大的对象，还要识别自满所依赖的尺度。"
+    }
   },
   {
     "page": 31,
@@ -477,7 +593,11 @@
       "rec11-p221"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "三个比喻分别指出认识的条件：井蛙拘于居处，夏虫限于时段，曲士束于所受教化。"
+    }
   },
   {
     "page": 32,
@@ -492,7 +612,11 @@
       "rec11-p221"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "论证的推进在于每一个看来宏大的位置，都仍可以放进更大的关系中；因此不能只把“河伯错了，海神对了”当作全部结论。"
+    }
   },
   {
     "page": 33,
@@ -510,7 +634,11 @@
       "rec11-p253"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师以此说明庄子并非只想用更高等级替代旧等级，而要松动固定界限。"
+    }
   },
   {
     "page": 34,
@@ -527,7 +655,11 @@
       "rec11-p253"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师关切的是：人的生命与所知有限，却容易把自己已有的分类和尺度当成穷尽了世界。"
+    }
   },
   {
     "page": 35,
@@ -544,7 +676,11 @@
       "rec11-p263"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "“自细视大者不尽，自大视细者不明”指出两种尺度都有盲点：局部视角难穷全体，宏观视角又难见细节。"
+    }
   },
   {
     "page": 36,
@@ -560,7 +696,11 @@
       "rec11-p263"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂借它说明，任何抓住事物的方式都可能同时遗漏另一些面向。"
+    }
   },
   {
     "page": 37,
@@ -581,7 +721,11 @@
       "rec11-p309"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师把“非彼无我、非我无所取”尝试解释成彼与我相互界定：说这是A，同时划出非A。"
+    }
   },
   {
     "page": 38,
@@ -600,7 +744,11 @@
       "rec11-p313"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师把它同前面的神龟选择相连，说明生理存活与生命是否被固定身份耗尽，是两个问题。"
+    }
   },
   {
     "page": 39,
@@ -617,7 +765,11 @@
       "rec12-p73"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这张图重复“藏之庙堂／曳尾于涂”，此时已多了一层齐物的解释：固定地把自己识别为某个角色，再为它争功名，可能使生命进入无止境的相刃相靡。"
+    }
   },
   {
     "page": 40,
@@ -637,7 +789,11 @@
       "rec11-p327"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师强调，人人都有自己的判断标准，愚者也不例外；问题在于各人都把自己的标准奉为最终根据。"
+    }
   },
   {
     "page": 41,
@@ -654,7 +810,11 @@
       "rec11-p327"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "译文前段说明是非判断以成心为根据；后段“言非吹”承认言说有内容，接着追问这些内容怎样受到局部立场和华饰的遮蔽。"
+    }
   },
   {
     "page": 42,
@@ -670,7 +830,11 @@
       "rec11-p335"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "“道枢”像枢纽，“环中”提示不固着于环上的某一点，才可能回应不断变化的情况。"
+    }
   },
   {
     "page": 43,
@@ -686,7 +850,11 @@
       "rec11-p335"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "译文说此亦是彼、彼亦是此，针对的是视角互换及彼此依存：同一对象从自身看是“此”，从他方看又是“彼”。"
+    }
   },
   {
     "page": 44,
@@ -702,7 +870,11 @@
       "rec11-p343"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页从彼此问题进一步转向名称：路由行走形成，物在称谓与区分中被规定为某种物。"
+    }
   },
   {
     "page": 45,
@@ -717,7 +889,11 @@
       "rec11-p343"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂重点是：名称把存在确定为某物，同时排除其他可能；而变化可能跨过这种确定。"
+    }
   },
   {
     "page": 46,
@@ -732,7 +908,11 @@
       "rec11-p341"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页是老师对前文的浓缩：先通过确定与区分建立名，再据名规定事物；由界定产生彼此与是非；这些对立又相互倚赖；最后追求不执对立的观。"
+    }
   },
   {
     "page": 47,
@@ -746,7 +926,11 @@
       "rec11-p347"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师这里把“爱”重在解释为偏爱与执着：一旦确定某种好，就可能把全部世界按它衡量。"
+    }
   },
   {
     "page": 48,
@@ -760,7 +944,11 @@
       "rec11-p347"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "庄子批评的是局部成就僭越成全部尺度，并非只因人有所擅长就否定他。"
+    }
   },
   {
     "page": 49,
@@ -774,7 +962,11 @@
       "rec11-p347"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "“衰减”是本课在庄子视角下对认知固化的描述：世界逐渐被划定、判断并附着偏爱，通达的可能随之受限。"
+    }
   },
   {
     "page": 50,
@@ -790,7 +982,11 @@
       "rec11-p353"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "“周与胡蝶，则必有分矣”没有取消当下差异，结尾“物化”则把这种差异放入身份与形态可变的过程。"
+    }
   },
   {
     "page": 51,
@@ -804,7 +1000,11 @@
       "rec11-p357"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "这里不是反对提出问题，而是把问题自身预设的“通过什么方法占有道”也纳入反思。"
+    }
   },
   {
     "page": 52,
@@ -819,7 +1019,11 @@
       "rec11-p361"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "“为道日损”因此不是让能力每天退步，而是减去把握与控制的执着。"
+    }
   },
   {
     "page": 53,
@@ -834,7 +1038,11 @@
       "rec11-p361"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "故事把“懂得一套说法”和“在生活中体会它”分开，引导人把理解落实到自身。"
+    }
   },
   {
     "page": 54,
@@ -850,7 +1058,11 @@
       "rec11-p365"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课堂将它与“为学日益／为道日损”对照：前者累积关于确定对象的知识，后者减轻对确定的执持。"
+    }
   },
   {
     "page": 55,
@@ -866,7 +1078,11 @@
       "rec11-p365"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这里讨论的是道能否成为固定的知识对象，不能脱离语境认定任何无知都高于知识。"
+    }
   },
   {
     "page": 56,
@@ -882,7 +1098,11 @@
       "rec11-p365"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "译文后半写四时运行、万物浮沉、不守故态，说明本根不能再被想象成一个有固定形状、可被指认的巨大对象。"
+    }
   },
   {
     "page": 57,
@@ -898,6 +1118,10 @@
       "rec11-p367"
     ],
     "audioSupported": true,
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图右从感官的色、形、物，到知所确定的性与名，再到是非、仁义与礼乐；图左则以神、道、德、无为指向突破固定把握的方向。"
+    }
   }
 ]

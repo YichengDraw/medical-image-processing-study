@@ -10,7 +10,11 @@
       "rec0914@01:02"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这一页把计算机分成输入、输出、存储器、数据通路（Datapath）和控制（Control）五块。"
+    }
   },
   {
     "page": 4,
@@ -23,7 +27,11 @@
       "rec0914@02:26"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左下的模拟波形用连续变化的幅值表达信号；右下数字波形用约定的离散电平表达符号，在本课中主要是0和1。"
+    }
   },
   {
     "page": 5,
@@ -36,7 +44,11 @@
       "rec0914@04:32"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "十六进制在计算机中常用，因为16=2⁴，所以一位十六进制刚好对应4个二进制位。"
+    }
   },
   {
     "page": 6,
@@ -50,7 +62,11 @@
       "rec0914@06:35"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "十进制5374=5×10³+3×10²+7×10¹+4×10⁰；二进制把底数换成2，右起的权重依次是1、2、4、8。"
+    }
   },
   {
     "page": 7,
@@ -64,7 +80,11 @@
       "rec0914@07:41"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "反过来，把47拆成32+8+4+2+1，按32、16、8、4、2、1的位置写成101111₂；也可以连续除2，最后倒着读余数。"
+    }
   },
   {
     "page": 8,
@@ -77,7 +97,11 @@
       "rec0914@09:28"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "二进制转回十六进制时，从最低位开始每4位分一组，不足4位的最高组补0。"
+    }
   },
   {
     "page": 9,
@@ -92,7 +116,11 @@
       "rec0914@12:37"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "补码最高位的权重是−128，其余位仍是64、32、…、1，所以1000 0001=−128+1=−127。"
+    }
   },
   {
     "page": 10,
@@ -106,7 +134,11 @@
       "rec0914@16:33"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "把最高位设为0、其余全1，得到最大值2ⁿ⁻¹−1；把最高位设为1、其余全0，得到最小值−2ⁿ⁻¹。"
+    }
   },
   {
     "page": 11,
@@ -120,7 +152,11 @@
       "rec0914@29:28"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "组合电路（Combinational Circuit）根据当前输入算输出；时序电路（Sequential Circuit）还保存状态，因此也受过去影响。"
+    }
   },
   {
     "page": 12,
@@ -135,7 +171,11 @@
       "rec0914@21:34"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 2,
+      "text": "两端范围之间留出的余量叫噪声容限（Noise Margin）：高电平NM_H=V_OH−V_IH，低电平NM_L=V_IL−V_OL。"
+    }
   },
   {
     "page": 13,
@@ -151,7 +191,11 @@
       "rec0914@23:48"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这一页是门符号字典：AND要求所有输入为1，OR只要一个为1；输出端加小圆圈表示取反，于是分别成为NAND与NOR。"
+    }
   },
   {
     "page": 14,
@@ -165,7 +209,11 @@
       "rec0914@24:42"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "真值表（Truth Table）把全部输入组合列齐，再写出各自输出。"
+    }
   },
   {
     "page": 15,
@@ -179,7 +227,11 @@
       "rec0914@25:29"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "偶数个1输出1，奇数个1输出0，因此按000、001、010、011、100、101、110、111的顺序，输出依次是1、0、0、1、0、1、1、0。"
+    }
   },
   {
     "page": 16,
@@ -192,7 +244,11 @@
       "rec0914@29:28"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "框图写成Z=F(X)，意思是输入向量X经过固定的逻辑函数F得到输出向量Z。"
+    }
   },
   {
     "page": 17,
@@ -206,7 +262,11 @@
       "rec0914@30:38"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "流程图从“要做什么”走到“怎么连”：先写功能要求，再把每种输入对应的输出列成真值表，然后尽量化简，最后画出门电路。"
+    }
   },
   {
     "page": 18,
@@ -219,7 +279,11 @@
       "rec0914@32:09"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "要只用NAND实现AB+CD，关键是把最后的OR改写成NAND能处理的形式：AB+CD=¬(¬(AB)·¬(CD))。"
+    }
   },
   {
     "page": 19,
@@ -233,7 +297,11 @@
       "rec0914@36:29"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "传播延迟（Propagation Delay）是输入发生变化之后，输出完成相应变化所花的时间。"
+    }
   },
   {
     "page": 20,
@@ -246,7 +314,11 @@
       "rec0914@37:23"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "沿同一条时间轴读三行波形：先在X和Y上判断理想AND输出，再把每次会改变结果的边沿向右移动τ。"
+    }
   },
   {
     "page": 21,
@@ -260,7 +332,11 @@
       "rec0914@38:36"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "扇入（Fan-in）数一个门有几个输入引脚；扇出（Fan-out）数一个输出在驱动多少个下游门输入。"
+    }
   },
   {
     "page": 22,
@@ -274,7 +350,11 @@
       "rec0914@40:59"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "它虽然不改0/1的含义，却可以提供更强的电气驱动能力：让前面的门只带缓冲器，再由缓冲器带后面的多个负载。"
+    }
   },
   {
     "page": 23,
@@ -290,7 +370,11 @@
       "rec0914@44:59"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页2-to-4译码器有两个编号输入I₁、I₀和四个输出；EN=1时，00选Y₀、01选Y₁、10选Y₂、11选Y₃，只有被选中的一路为1，所以叫one-hot。"
+    }
   },
   {
     "page": 24,
@@ -304,7 +388,11 @@
       "rec0914@45:17"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "两个NOT产生¬I₀和¬I₁，每个AND挑选一对需要的原值或反值，再与EN相与：Y₀=EN·¬I₁·¬I₀，Y₁=EN·¬I₁·I₀，Y₂=EN·I₁·¬I₀，Y₃=EN·I₁·I₀。"
+    }
   },
   {
     "page": 25,
@@ -318,7 +406,11 @@
       "rec0914@57:02"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "译码器本身只输出选择信号，真正执行加法、开门或开空调还要连接相应功能电路。"
+    }
   },
   {
     "page": 26,
@@ -334,7 +426,11 @@
       "rec0914@59:54"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "看S列，输入编号1、2、4、7时S=1，因此把D₁、D₂、D₄、D₇接到上方OR；看C列，把D₃、D₅、D₆、D₇接到下方OR。"
+    }
   },
   {
     "page": 27,
@@ -348,7 +444,11 @@
       "rec0914@01:33:21"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "2ⁿ路数据需要n个选择位；选择位告诉它取谁，数据输入告诉它输出什么，两者角色不同。"
+    }
   },
   {
     "page": 28,
@@ -361,7 +461,11 @@
       "rec0914@01:02:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "存储元件保存“当前状态”，组合电路同时读取外部输入与当前状态，算出“下一状态”，再交给存储元件更新。"
+    }
   },
   {
     "page": 29,
@@ -375,7 +479,11 @@
       "rec0914@01:02:57"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "它能保存一位，因为两种稳定状态正好对应0和1；但没有外部输入可指定现在要保存哪一个值。"
+    }
   },
   {
     "page": 30,
@@ -389,7 +497,11 @@
       "rec0914@01:04:07"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "可以写成Q=¬(R∨Q̄)、Q̄=¬(S∨Q)。"
+    }
   },
   {
     "page": 31,
@@ -403,7 +515,11 @@
       "rec0914@01:06:03"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上图S=1、R=0时，下方NOR因为有输入1而必然输出Q̄=0；这个0反馈到上方，与R=0一起得到Q=1，所以完成Set。"
+    }
   },
   {
     "page": 32,
@@ -417,7 +533,11 @@
       "rec0914@01:07:02"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "S=R=1时两个NOR都被强制输出0，得到Q=Q̄=0，破坏了正常的互补关系；同时撤去这两个1还可能产生不确定的最终状态，设计时应避免。"
+    }
   },
   {
     "page": 33,
@@ -431,7 +551,11 @@
       "rec0914@01:08:25"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "按S、R的顺序，00保持，01复位成0，10置位成1，11是非法组合。"
+    }
   },
   {
     "page": 34,
@@ -446,7 +570,11 @@
       "rec0914@01:10:38"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本图CLK=1时透明，Q跟随D；CLK=0时关闭，Q保留之前的值。"
+    }
   },
   {
     "page": 35,
@@ -461,7 +589,11 @@
       "rec0914@01:13:57"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "因此在0→1的交界，前级刚采下的D会成为新的Q；之后即使CLK继续为1、D继续变化，关闭的L₁也挡住了后续变化。"
+    }
   },
   {
     "page": 36,
@@ -475,7 +607,11 @@
       "rec0914@01:15:20"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "D触发器（D Flip-flop）的外部规则更简单：只在有效时钟沿采样D，其他时刻保持Q。"
+    }
   },
   {
     "page": 37,
@@ -491,7 +627,11 @@
       "rec0914@01:19:14"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "最直接的区别是：锁存器看“有效电平这一整段”，触发器看“有效边沿那一刻”。"
+    }
   },
   {
     "page": 38,
@@ -505,7 +645,11 @@
       "rec0914@01:22:48"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "寄存器（Register）把多份1位存储并在一起，共用时钟，一次保存一个多位数。"
+    }
   },
   {
     "page": 39,
@@ -522,7 +666,11 @@
       "rec0914@01:25:57"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图中D₀到D₃分别进入四个D触发器，共享Clock，在同一个上升沿把四位同时写成Q₀到Q₃。"
+    }
   },
   {
     "page": 40,
@@ -538,7 +686,11 @@
       "rec0914@01:27:39"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "每个触发器的Q接到下一个的D，共用时钟；每次有效上升沿，所有级同时采样各自输入，而每一级采到的是前一级沿到来前的旧Q。"
+    }
   },
   {
     "page": 41,
@@ -555,6 +707,10 @@
       "rec0914@01:38:15"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "S₁S₀=00选输入0，即把本级旧Q送回自己，状态保持；01选输入1，即取左侧邻居或最左端串行输入，实现图中的右移；10选输入2，从右侧邻居或最右端串行输入取数，实现左移；11选输入3，直接取I₄…I₁并行装载。"
+    }
   }
 ]

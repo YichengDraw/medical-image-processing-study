@@ -201,6 +201,7 @@ button,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.33;curs
 .explanation-page{font-size:11px;letter-spacing:.8px;color:#7889ac;margin:0 0 10px}
 .page-explanation h2{font-size:19px;line-height:1.55;margin:0 0 20px;letter-spacing:-.2px;color:var(--ink)}
 .page-explanation>p{font-size:14px;line-height:2.05;font-weight:400;margin:0 0 19px;overflow-wrap:anywhere;color:#2d3c57}
+.page-explanation .key-sentence{background:#fff0a8;color:#382e14;font-weight:700;padding:.08em .12em;border-radius:.18em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .inline-sources{margin-top:23px;padding-top:15px;border-top:1px dashed var(--line);font-size:11px;line-height:1.9;color:#73839d}
 .inline-sources>summary{cursor:pointer;list-style-position:outside;margin-left:13px;font-weight:600;color:#7184a4}
 .source-caption{font-size:10px;line-height:1.8;margin:12px 0;color:#919cac}
@@ -262,6 +263,7 @@ button,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.33;curs
 .exam-hub .assessment-grid div{padding:10px}
 .exam-hub .assessment-grid b{font-size:19px}
 :root[data-theme="dark"] .page-explanation>p{color:#d5dbe6}
+:root[data-theme="dark"] .page-explanation .key-sentence{background:#4d3d0e;color:#fff0b5}
 :root[data-theme="dark"] .explanation-page{color:#91a0bb}
 :root[data-theme="dark"] .inline-sources{border-color:#303030;color:#8996a9}
 :root[data-theme="dark"] .inline-sources>summary{color:#9baecb}

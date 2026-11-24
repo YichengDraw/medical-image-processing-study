@@ -8,7 +8,11 @@
     "sourceIds": [
       "recSpatial@00:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "与上一部分“同一个输入灰度统一映射到一个输出灰度”不同，这一讲利用像素周围的邻居决定输出，主要解决平滑、去噪和锐化。"
+    }
   },
   {
     "page": 2,
@@ -19,7 +23,11 @@
     "sourceIds": [
       "recSpatial@01:03"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "四条学习目标分别是：会从小邻域算一个输出；说清核、边界规则和输出尺寸；按任务选平滑或锐化；检查噪声、细节损失与伪影。"
+    }
   },
   {
     "page": 3,
@@ -30,7 +38,11 @@
     "sourceIds": [
       "recSpatial@02:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "路线图先解决“怎样计算”，再解决“为什么选择这种计算”：邻域及边界实现 → 平滑和中值 → 导数锐化 → 多种方法组合及评价。"
+    }
   },
   {
     "page": 4,
@@ -39,7 +51,11 @@
       "加入邻域后就能分开：3×3 均值对 A 输出 100，对 B 输出 100/9≈11.1；中值则分别输出 100 和 0。不过“孤立亮点”是否真是噪声还取决于任务，它也可能是需要保留的小目标。本页的关键是上下文提供额外判断依据。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "加入邻域后就能分开：3×3 均值对 A 输出 100，对 B 输出 100/9≈11.1；中值则分别输出 100 和 0。"
+    }
   },
   {
     "page": 5,
@@ -50,7 +66,11 @@
     "sourceIds": [
       "recSpatial@02:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "滤波器不是只改变某个亮度值，而是把一块像素的信息压成中心位置的新值。"
+    }
   },
   {
     "page": 6,
@@ -61,7 +81,11 @@
     "sourceIds": [
       "recSpatial@03:33"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "看右图的耳缘、眼周以及颈部毛发，局部明暗交界比左图更突出；并非所有区域都均匀变亮，而是灰度变化被加强。"
+    }
   },
   {
     "page": 7,
@@ -72,7 +96,11 @@
     "sourceIds": [
       "recSpatial@03:33"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师让同学猜操作，课堂回答是取邻域的最小值：每个位置由周围最暗的像素替代，黑色区域就向邻近位置扩展。"
+    }
   },
   {
     "page": 8,
@@ -84,7 +112,11 @@
       "recSpatial@04:46",
       "recSpatial@05:11"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "滤波器在图像上移动时，每到一个中心就读取这块区域；常用矩形只是因为规则网格方便计算，并不要求邻域一定是正方形。"
+    }
   },
   {
     "page": 9,
@@ -95,7 +127,11 @@
     "sourceIds": [
       "recSpatial@05:11"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页将滤波器拆为四个可独立选择的部分：size 决定取多少邻居，shape 决定哪些位置算邻居，weights 决定各位置贡献，function 决定怎样聚合。"
+    }
   },
   {
     "page": 10,
@@ -106,7 +142,11 @@
     "sourceIds": [
       "recSpatial@06:28"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页三个规则都基于排序：min 选择邻域最暗值，max 选择最亮值，median 选排序后的中间值。"
+    }
   },
   {
     "page": 11,
@@ -118,7 +158,11 @@
       "recSpatial@07:24",
       "recSpatial@08:43"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "输出 e_new=ra+sb+tc+ud+ve+wf+xg+yh+zi，每个像素乘对应位置的权重，再把九项相加。"
+    }
   },
   {
     "page": 12,
@@ -129,7 +173,11 @@
     "sourceIds": [
       "recSpatial@08:43"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "公式 g(x,y)=Σ_sΣ_t w(s,t)f(x+s,y+t) 把上一页的九项写成统一形式。"
+    }
   },
   {
     "page": 13,
@@ -140,7 +188,11 @@
     "sourceIds": [
       "recSpatial@08:43"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这张立体图是上一页公式的几何解释：上方绿色核和下方蓝色图像块按对应位置连接，表示权重逐点乘到邻域像素上，然后求和形成中心位置的新值。"
+    }
   },
   {
     "page": 14,
@@ -151,7 +203,11 @@
     "sourceIds": [
       "recSpatial@10:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师在这里强调，边缘的邻域不完整是必须单独规定的计算条件。"
+    }
   },
   {
     "page": 15,
@@ -163,7 +219,11 @@
       "recSpatial@11:00",
       "recSpatial@12:10"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "Omit 是不使用缺失邻居，常需重设有效权重；pad 是给图外填固定值；replicate 是复制边缘像素；crop 是不输出那些邻域不完整的位置；wrap 是把图像两端按周期接起来。"
+    }
   },
   {
     "page": 16,
@@ -174,7 +234,11 @@
     "sourceIds": [
       "recSpatial@12:10"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这里不是把缺失像素猜出来，而是直接放弃受边界影响的输出，因此图像尺寸变小。"
+    }
   },
   {
     "page": 17,
@@ -185,7 +249,11 @@
     "sourceIds": [
       "recSpatial@11:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图像外面那一大圈黑色就是 zero padding：把不存在的外部像素假定为 0。"
+    }
   },
   {
     "page": 18,
@@ -196,7 +264,11 @@
     "sourceIds": [
       "recSpatial@13:22"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "Extend 这张图向上下延伸出竖条、向左右延伸出横条：它把最边缘的像素值一直复制到图外。"
+    }
   },
   {
     "page": 19,
@@ -207,7 +279,11 @@
     "sourceIds": [
       "recSpatial@13:22"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "Wrap 将整块眼睛图像在上下左右重复铺开，因此右边界外接的是原图左边界，底部外接的是顶部。"
+    }
   },
   {
     "page": 20,
@@ -220,7 +296,11 @@
       "recSpatial@16:00",
       "recSpatial@17:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "补零会把白色外边压暗；复制边界不引入新的对边颜色；周期延拓会把另一侧黑白带到边缘并混合成灰。"
+    }
   },
   {
     "page": 21,
@@ -231,7 +311,11 @@
     "sourceIds": [
       "recSpatial@18:32"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "相关把核原样叠到邻域；二维卷积先把核旋转 180°，使左上权重 r 移到右下、右下 z 移到左上，再逐点乘加。"
+    }
   },
   {
     "page": 22,
@@ -242,7 +326,11 @@
     "sourceIds": [
       "recSpatial@18:32"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左列先翻转红色三角函数再平移，与蓝色矩形逐位置相乘求面积；中列不先翻转；右列是同一函数与自身进行相关。"
+    }
   },
   {
     "page": 23,
@@ -254,7 +342,11 @@
       "recSpatial@21:00",
       "recSpatial@21:58"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师特别用这个例子解释为什么数学卷积要包含翻转：单位冲激与核卷积，应原样给出该核。"
+    }
   },
   {
     "page": 24,
@@ -265,7 +357,11 @@
     "sourceIds": [
       "recSpatial@22:47"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "相关结果从左上到右下变成 9–1；卷积结果则保持原核的 1–9 排列。"
+    }
   },
   {
     "page": 25,
@@ -277,7 +373,11 @@
       "recSpatial@33:19",
       "recSpatial@34:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "线性意味着先对图像加权相加再滤波，等于分别滤波后按相同权重相加；结合律意味着可把连续使用的两个卷积核合成为一个。"
+    }
   },
   {
     "page": 26,
@@ -289,7 +389,11 @@
       "recSpatial@35:25",
       "recSpatial@36:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这叫可分离核：先沿一个方向做一维卷积，再沿另一方向做一维卷积，可得到同一二维结果。"
+    }
   },
   {
     "page": 27,
@@ -300,7 +404,11 @@
     "sourceIds": [
       "recSpatial@36:40"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "权重总和为 1，所以在不受边界影响的常量区域，它保持原灰度；局部快速变化则被邻居平均掉，表现为平滑。"
+    }
   },
   {
     "page": 28,
@@ -311,7 +419,11 @@
     "sourceIds": [
       "recSpatial@38:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师用这张图强调核大小增大会更明显地抹掉细节。"
+    }
   },
   {
     "page": 29,
@@ -322,7 +434,11 @@
     "sourceIds": [
       "recSpatial@38:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "九项总和仍为 1，代表近邻更重要、远邻贡献更小；它也可分解为 [1,2,1]ᵀ[1,2,1]/16。"
+    }
   },
   {
     "page": 30,
@@ -333,7 +449,11 @@
     "sourceIds": [
       "recSpatial@39:26"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "三图是一条处理链：左图很多微小亮点和几个较大亮团；中图先平滑，让小点峰值降低、较大目标仍保持可见；右图再阈值化，只留下足够亮、较大的结构。"
+    }
   },
   {
     "page": 31,
@@ -344,7 +464,11 @@
     "sourceIds": [
       "recSpatial@40:21"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页先声明噪声模型，尚未推出滤波效果：观察图 f=f₀+w，f₀ 为真实图；噪声平均 E[w]=0；不同位置的噪声不相关，所以 E[w(m)w(n)]=0（m≠n），同一位置的二阶矩为 σ²。"
+    }
   },
   {
     "page": 32,
@@ -355,7 +479,11 @@
     "sourceIds": [
       "recSpatial@41:38"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "把 g=h★f 展开为 h★f₀+h★w，再对随机噪声取期望，因 E[w]=0，得到 E[g]=h★f₀。"
+    }
   },
   {
     "page": 33,
@@ -366,7 +494,11 @@
     "sourceIds": [
       "recSpatial@43:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "把输出写为平滑后的确定信号 f̄₀ 与随机噪声 w̄之和；确定项在 E[g²]−E[g]² 中抵消，零均值使交叉项消失，最后只剩 E[w̄²]。"
+    }
   },
   {
     "page": 34,
@@ -377,7 +509,11 @@
     "sourceIds": [
       "recSpatial@43:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "平均滤波输出的噪声是 w̄(n)=(1/N)Σ_{k∈Γ(n)}w(k)。"
+    }
   },
   {
     "page": 35,
@@ -388,7 +524,11 @@
     "sourceIds": [
       "recSpatial@43:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如两像素噪声完全相同，w₁=w₂，平均后还是 w₁，标准差不会下降。"
+    }
   },
   {
     "page": 36,
@@ -399,7 +539,11 @@
     "sourceIds": [
       "recSpatial@44:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页代入噪声假设：每个位置的 E[w(k)²]=σ²；不同位置的噪声不相关且均值为 0，因此 E[w_iw_j]=0。"
+    }
   },
   {
     "page": 37,
@@ -411,7 +555,11 @@
       "recSpatial@44:25",
       "recFourier@06:37"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "最终结果是方差 σ_out²=σ²/N，标准差则是 σ_out=σ/√N。"
+    }
   },
   {
     "page": 38,
@@ -423,7 +571,11 @@
       "recSpatial@45:11",
       "recSpatial@46:26"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "中值适合处理脉冲噪声；遇到高斯噪声、细小目标或细线时，还要检查噪声降低了多少、结构保留了多少。"
+    }
   },
   {
     "page": 39,
@@ -434,7 +586,11 @@
     "sourceIds": [
       "recSpatial@47:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如邻域 [10,10,100]，选 40 能使平方误差最小，选 10 能使绝对误差最小；后者更不受离群 100 的影响。"
+    }
   },
   {
     "page": 40,
@@ -445,7 +601,11 @@
     "sourceIds": [
       "recSpatial@48:24"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "对 m 求导并令其为零，得到 Σx(i)=Nm，因而 m=(1/N)Σx(i)，也就是算术均值。"
+    }
   },
   {
     "page": 41,
@@ -457,7 +617,11 @@
       "recSpatial@49:25",
       "recSpatial@50:30"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这里把平方误差改成绝对误差 E(m)=Σ|x(i)−m|，最优代表值变为中值。"
+    }
   },
   {
     "page": 42,
@@ -468,7 +632,11 @@
     "sourceIds": [
       "recSpatial@50:30"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "其优势是对椒盐等脉冲噪声稳健：只要窗口中正常值占多数，极端错误值不容易控制中位数。"
+    }
   },
   {
     "page": 43,
@@ -479,7 +647,11 @@
     "sourceIds": [
       "recSpatial@51:32"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "因此这组数据中，中值既删孤立脉冲又维持较陡边缘。"
+    }
   },
   {
     "page": 44,
@@ -490,7 +662,11 @@
     "sourceIds": [
       "recSpatial@52:15"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "原因是中值按窗口多数决定，细结构在九个位置中往往占不到五个。"
+    }
   },
   {
     "page": 45,
@@ -501,7 +677,11 @@
     "sourceIds": [
       "recSpatial@53:39"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "在水平直线中心，十字窗有横向 5 个前景点，刚好占九个位置的多数，因而可保留；对斜线则未必同样有效。"
+    }
   },
   {
     "page": 46,
@@ -512,7 +692,11 @@
     "sourceIds": [
       "recSpatial@54:15"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "从这一页进入锐化，与前面的平滑目标相反：平滑削弱细变化，锐化希望突出边缘及细节，常依赖空间微分。"
+    }
   },
   {
     "page": 47,
@@ -523,7 +707,11 @@
     "sourceIds": [
       "recSpatial@55:04"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "微分关心的是沿某方向灰度改变多快，而不是该像素本身有多亮。"
+    }
   },
   {
     "page": 48,
@@ -534,7 +722,11 @@
     "sourceIds": [
       "recSpatial@55:04"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如序列 …5,4,3,2,1,0… 的逐点差为 −1，而 …0,0,7,7… 只在跳变处有差 7。"
+    }
   },
   {
     "page": 49,
@@ -545,7 +737,11 @@
     "sourceIds": [
       "recSpatial@56:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这里用前向差分近似一阶导数：f′(x)≈f(x+1)−f(x)。"
+    }
   },
   {
     "page": 50,
@@ -556,7 +752,11 @@
     "sourceIds": [
       "recSpatial@56:46"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "缓降斜坡产生连续的 −1；孤立值 6 的亮点产生 +6、−6 一对响应；宽一点的尖峰 [0,1,3,1,0] 产生 +1,+2,−2,−1；最后 0→7 的阶跃只在交界产生 +7。"
+    }
   },
   {
     "page": 51,
@@ -568,7 +768,11 @@
       "recSpatial@57:23",
       "recSpatial@57:53"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "二阶差分为 f″(x)≈f(x+1)+f(x−1)−2f(x)，可看作“右侧一阶差分减去左侧一阶差分”，测量斜率如何改变。"
+    }
   },
   {
     "page": 52,
@@ -579,7 +783,11 @@
     "sourceIds": [
       "recSpatial@57:53"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "线性下降段内部为 0，只在斜率开始和结束处响应；孤立高度 6 的点产生 [6,−12,6]；最后高度 7 的阶跃在相邻位置产生 +7、−7。"
+    }
   },
   {
     "page": 53,
@@ -591,7 +799,11 @@
       "recSpatial@58:26",
       "recSpatial@59:46"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "斜坡内部一阶导数持续非零，若直接阈值化会形成一条较宽的边缘带；二阶导数在斜坡起点和终点出现相反符号，能通过符号结构辅助定位边缘。"
+    }
   },
   {
     "page": 54,
@@ -603,7 +815,11 @@
       "recSpatial@59:46",
       "recSpatial@01:01:27"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "中间数字行可直接核对：斜坡内部一阶导数为 −1、二阶为 0；右侧突升处一阶有 +5，二阶则出现 +5 和 −5。"
+    }
   },
   {
     "page": 55,
@@ -614,7 +830,11 @@
     "sourceIds": [
       "recSpatial@01:01:27"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "把两组要求并排记：常量区的一阶、二阶导数都为 0；斜坡开始处都可能非零；斜率恒定的斜坡内部，一阶非零、二阶为 0；二阶对斜率开始和结束特别敏感。"
+    }
   },
   {
     "page": 56,
@@ -625,7 +845,11 @@
     "sourceIds": [
       "recSpatial@01:02:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这一页总结四个常见差异：一阶直接阈值化往往产生较厚斜坡边缘；二阶对细线和孤立点更敏感；一阶更直观地描述灰度阶跃；二阶在阶跃附近给出正负双响应，可用于寻找过零。"
+    }
   },
   {
     "page": 57,
@@ -637,7 +861,11 @@
       "recSpatial@01:16:15",
       "recSpatial@01:17:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "梯度是二维向量 ∇f=[∂f/∂x,∂f/∂y]，指向灰度增长最快的方向。"
+    }
   },
   {
     "page": 58,
@@ -649,7 +877,11 @@
       "recSpatial@01:17:00",
       "recSpatial@01:18:23"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师指出只看一个方向会漏掉另一类边缘，所以常计算 √(Gx²+Gy²) 合并，而不是把两个有符号响应简单相加造成抵消。"
+    }
   },
   {
     "page": 59,
@@ -660,7 +892,11 @@
     "sourceIds": [
       "recSpatial@01:18:23"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页强调一个常见细节：偏导数运算本身是线性的，但梯度幅值 √(Gx²+Gy²) 不是线性的。"
+    }
   },
   {
     "page": 60,
@@ -671,7 +907,11 @@
     "sourceIds": [
       "recSpatial@01:19:40"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "两只 Sobel 核分别沿上下、左右做差，并在垂直于求导的方向用 [1,2,1] 加权平滑。"
+    }
   },
   {
     "page": 61,
@@ -683,7 +923,11 @@
       "recSpatial@01:21:00",
       "recSpatial@01:22:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师用此例说明：导数滤波可以去掉常量/慢变化背景，让微小断裂更易观察，但噪声造成的假边缘也仍须排查。"
+    }
   },
   {
     "page": 62,
@@ -694,7 +938,11 @@
     "sourceIds": [
       "recSpatial@01:03:14"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这里引出二阶的拉普拉斯 ∇²f=∂²f/∂x²+∂²f/∂y²。"
+    }
   },
   {
     "page": 63,
@@ -705,7 +953,11 @@
     "sourceIds": [
       "recSpatial@01:04:43"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这一页把连续定义落到像素上：x 向二阶差分取左右两个邻居减两倍中心；y 向取上下两个邻居减两倍中心；两者相加，中心就出现 −4。"
+    }
   },
   {
     "page": 64,
@@ -716,7 +968,11 @@
     "sourceIds": [
       "recSpatial@01:05:26"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "公式与 3×3 核完全对应：中心 −4，上下左右 +1，四角为 0，所以 L=f左+f右+f上+f下−4f中心。"
+    }
   },
   {
     "page": 65,
@@ -728,7 +984,11 @@
       "recSpatial@01:06:12",
       "recSpatial@01:07:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "计算时应保留有符号响应，显示时才另做映射。"
+    }
   },
   {
     "page": 66,
@@ -739,7 +999,11 @@
     "sourceIds": [
       "recSpatial@01:08:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "对于前面中心为 −4 的核，这页规定 g=f−∇²f：从原图减去有符号拉普拉斯，才能既保留主体明暗又加强边缘。"
+    }
   },
   {
     "page": 67,
@@ -750,7 +1014,11 @@
     "sourceIds": [
       "recSpatial@01:08:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师以这一结果说明锐化不是单独显示导数，而是把导数提供的变化信息与原图结合。"
+    }
   },
   {
     "page": 68,
@@ -761,7 +1029,11 @@
     "sourceIds": [
       "recSpatial@01:08:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "锐化提高的是局部对比，原来的细纹理因此更容易看见；空间采样仍沿用原图。"
+    }
   },
   {
     "page": 69,
@@ -772,7 +1044,11 @@
     "sourceIds": [
       "recSpatial@01:09:28"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "把 L=四邻域之和−4f 代入 g=f−L，中心系数变成 1−(−4)=5，四邻域变成 −1。"
+    }
   },
   {
     "page": 70,
@@ -783,7 +1059,11 @@
     "sourceIds": [
       "recSpatial@01:09:28"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "核的系数总和为 1，因此它不是单独的零和导数核，而是“保留原图 + 锐化”的组合核。"
+    }
   },
   {
     "page": 71,
@@ -794,7 +1074,11 @@
     "sourceIds": [
       "recSpatial@01:10:43"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "比较右上方细长平行纹理和下方片状结构的边缘，右图的局部对比更强；这些变化对应的是上一页中心 5、周围 −1 的锐化核。"
+    }
   },
   {
     "page": 72,
@@ -805,7 +1089,11 @@
     "sourceIds": [
       "recSpatial@01:10:43"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上方比较四邻域与八邻域拉普拉斯：左核中心 −4、四邻居为 1；右核中心 −8、八邻居全为 1。"
+    }
   },
   {
     "page": 73,
@@ -817,7 +1105,11 @@
       "recSpatial@01:11:40",
       "recSpatial@01:12:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "Unsharp masking 名字里有“钝化”，结果却是锐化：先得到模糊图 b=Blur(f)，再用 f−b 得到细节 mask，最后 g=f+k(f−b)。"
+    }
   },
   {
     "page": 74,
@@ -829,7 +1121,11 @@
       "recSpatial@01:13:49",
       "recSpatial@01:15:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "平滑把斜坡的两端磨圆；原图减模糊图后，暗侧附近产生负残差、亮侧附近产生正残差；再加回，就出现更强的局部明暗过渡。"
+    }
   },
   {
     "page": 75,
@@ -841,7 +1137,11 @@
       "recSpatial@01:13:49",
       "recSpatial@01:15:30"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "比较字母的白色细边：较大 k 更明显强调轮廓，灰色背景并非主要变化对象。"
+    }
   },
   {
     "page": 76,
@@ -852,7 +1152,11 @@
     "sourceIds": [
       "recFourier@11:28"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "单独锐化可能连噪声一起增强，单独平滑又可能抹掉弱结构，因此后面要组合二阶导数、梯度、平滑和灰度变换。"
+    }
   },
   {
     "page": 77,
@@ -864,7 +1168,11 @@
       "recFourier@12:21",
       "recFourier@13:34"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "按图标读前半流程：(a) 原图；(b) 拉普拉斯响应；(c) 用原图减去该有符号响应形成锐化结果；(d) 对原始 (a) 做 Sobel 得梯度图。"
+    }
   },
   {
     "page": 78,
@@ -876,7 +1184,11 @@
       "recFourier@13:34",
       "recFourier@14:47"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "后半流程：(e) 是对 Sobel 结果 d 做 5×5 平均；以 e 作为空间权重，选择性强调重要边缘；(g) 将加权的细节信息与原图 a 合成；(h) 再用幂律变换调整对比度。"
+    }
   },
   {
     "page": 79,
@@ -888,7 +1200,11 @@
       "recFourier@14:47",
       "recFourier@16:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如整体变亮可能来自幂律映射，局部边界更强则与细节融合有关；若要评价各模块贡献，应逐步看中间图。"
+    }
   },
   {
     "page": 80,
@@ -899,7 +1215,11 @@
     "sourceIds": [
       "recFourier@16:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "下方左图几乎只是九个小点，右图变成九个小光斑，直观展示点扩散函数会把理想点摊开。"
+    }
   },
   {
     "page": 81,
@@ -910,7 +1230,11 @@
     "sourceIds": [
       "recFourier@17:27"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页是 imnoise2 的函数说明：按指定分布生成 M×N 随机数，TYPE 决定分布，A、B 的意义随类型变化。"
+    }
   },
   {
     "page": 82,
@@ -921,7 +1245,11 @@
     "sourceIds": [
       "recFourier@17:27"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "特别看 salt & pepper：输出 0 表示椒噪声，1 表示盐噪声，0.5 是该辅助函数用于标记“这个位置不加脉冲”的状态；不是说每个未污染像素都应被改成灰度 0.5。"
+    }
   },
   {
     "page": 83,
@@ -932,7 +1260,11 @@
     "sourceIds": [
       "recFourier@17:27"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "要观察的是分布形状：高斯集中在均值附近呈钟形；椒盐例子在两端出现离散峰，同时该 imnoise2 标记方案的 0.5 表示未污染位置。"
+    }
   },
   {
     "page": 84,
@@ -949,7 +1281,11 @@
         "label": "MathWorks：imnoise 参数定义",
         "url": "https://www.mathworks.com/help/images/ref/imnoise.html"
       }
-    ]
+    ],
+    "keySentence": {
+      "paragraph": 1,
+      "text": "代码 imnoise(f,'gaussian',0.1) 的 0.1 按 MATLAB 调用习惯是均值参数，不是“10% 高斯噪声”；而 imnoise(f,'salt & pepper',0.1) 的 0.1 是噪声密度。"
+    }
   },
   {
     "page": 85,
@@ -961,7 +1297,11 @@
       "recFourier@18:29",
       "recFourier@19:34"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师明确把“找常量区域，再看直方图”作为估计噪声模型的实用思路，仍需检查照明渐变与纹理是否足够小。"
+    }
   },
   {
     "page": 86,
@@ -973,6 +1313,10 @@
       "recSpatial@01:03",
       "recFourier@19:34"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本讲总结可按一条链复述：先规定邻域、相关/卷积与边界；需要抑制随机波动时选均值或中值，并说明细节代价；需要突出变化时用一阶梯度、二阶拉普拉斯或 unsharp；复杂任务再组合方法。"
+    }
   }
 ]

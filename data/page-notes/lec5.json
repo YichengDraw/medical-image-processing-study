@@ -10,7 +10,11 @@
       "recFreq@01:41:33"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "先把“更好看”与“更接近退化前”分开：前者是上一讲增强的目标，后者是本讲复原的目标。"
+    }
   },
   {
     "page": 2,
@@ -23,7 +27,11 @@
       "recFreq@01:41:33"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这一页用引文引出问题：看到的图像是经过感知或成像系统后的结果，不应直接等同于物体本身。"
+    }
   },
   {
     "page": 3,
@@ -36,7 +44,11 @@
       "recFreq@01:43:10"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "结合老师对这些例图的介绍，A、B应先比较随机噪声与椒盐噪声，再考虑空间邻域统计；C的周期条纹提示检查频谱并做选择性滤波；D需要运动模糊的退化模型和去卷积。"
+    }
   },
   {
     "page": 4,
@@ -49,7 +61,11 @@
       "recFreq@01:44:50"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "复原的基本动作是识别 degradation process（退化过程），再尝试逆转它；“更客观”指目标受原始图像与退化模型约束，不是任意选择一种更讨喜的外观。"
+    }
   },
   {
     "page": 5,
@@ -61,7 +77,11 @@
       "recFreq@01:44:50"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "分析噪点时，要沿采集、传输等环节查找原因，随后再用统计模型描述噪声。"
+    }
   },
   {
     "page": 6,
@@ -74,7 +94,11 @@
       "recFreq@01:46:29"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "下方黄色式子g(x,y)=f(x,y)*h(x,y)+η(x,y)把这条流程写成“卷积造成的失真＋噪声”。"
+    }
   },
   {
     "page": 7,
@@ -87,7 +111,11 @@
       "recFreq@01:47:30"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "随机噪声对应估计统计特征并比较空间滤波器；孤立脉冲对应排除极端像素；周期干扰对应寻找集中的频谱成分；模糊叠加噪声则要估计PSF并让去卷积稳定。"
+    }
   },
   {
     "page": 8,
@@ -99,7 +127,11 @@
       "recFreq@01:47:30"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "Gaussian是对称钟形，Rayleigh和Gamma偏向一侧，Exponential随z衰减，Uniform在一个区间内等高，Impulse集中在少数极值。"
+    }
   },
   {
     "page": 9,
@@ -112,7 +144,11 @@
       "recFreq@01:49:31"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上半页是Gaussian噪声及其钟形曲线，旁边列readout、thermal和Gaussian white noise；下半页是Poisson的离散概率式e^(−λ)λ^z/z!，右图用不同λ展示计数分布的变化。"
+    }
   },
   {
     "page": 10,
@@ -124,7 +160,11 @@
       "recFreq@01:49:31"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "复习时可用“计数是Poisson，事件间隔是Exponential”区分相邻页的例子。"
+    }
   },
   {
     "page": 11,
@@ -136,7 +176,11 @@
       "recFreq@01:50:50"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右下直方图因此出现三根集中的竖线；它们的位置表示三个灰度等级，线高反映各区域所占的像素数量。"
+    }
   },
   {
     "page": 12,
@@ -148,7 +192,11 @@
       "recFreq@01:50:50"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "原来的三个尖峰扩展成三组分布，图像内部也从均匀灰块变成颗粒；不同列的峰形和偏斜并不相同。"
+    }
   },
   {
     "page": 13,
@@ -160,7 +208,11 @@
       "recFreq@01:50:50"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "指数噪声的直方图带偏向一侧的尾部；均匀噪声在每个原灰度附近形成较平的分布段；椒盐例子出现很多孤立黑白点，极端灰度处有明显贡献。"
+    }
   },
   {
     "page": 14,
@@ -172,7 +224,11 @@
       "recFreq@01:51:27"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "红字先否定直接拿整图直方图当噪声PDF；蓝字给出替代方法：选择本来强度恒定的一小块区域，再统计那里的灰度。"
+    }
   },
   {
     "page": 15,
@@ -185,7 +241,11 @@
       "recRestColor@02:22"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "黄色式子把窗口Sxy内的mn个像素加起来再除以mn；左下3×3核的九个权重都是1/9，说明算术均值滤波就是此前学过的局部平均。"
+    }
   },
   {
     "page": 16,
@@ -197,7 +257,11 @@
       "recRestColor@02:22"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页不是三个新窗口形状，而是同一邻域内三种不同的“平均”规则：Geometric mean用连乘和开根，Harmonic mean使用倒数，Contraharmonic mean再用阶数Q控制不同幅值的权重。"
+    }
   },
   {
     "page": 17,
@@ -209,7 +273,11 @@
       "recRestColor@02:22"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "黄色公式先把窗口里mn个g(s,t)连乘，再取mn次方根；右上角专门提醒mn是窗口内的像素数。"
+    }
   },
   {
     "page": 18,
@@ -221,7 +289,11 @@
       "recRestColor@03:31"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师指出几何均值例图的一些边角比算术平均保留得更好。"
+    }
   },
   {
     "page": 19,
@@ -234,7 +306,11 @@
       "recRestColor@04:42"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "谐波均值（Harmonic mean）把mn除以窗口内倒数之和：mn/Σ[1/g(s,t)]。"
+    }
   },
   {
     "page": 20,
@@ -246,7 +322,11 @@
       "recRestColor@06:04"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "先看下面四条结论：Q为正用于pepper暗脉冲，Q为负用于salt亮脉冲，不能用同一个Q同时消掉二者；Q=0退化成算术均值，Q=−1退化成谐波均值。"
+    }
   },
   {
     "page": 21,
@@ -258,7 +338,11 @@
       "recRestColor@07:18"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师用这两列说明Q符号要匹配噪声：正Q对应黑点，负Q对应白点。"
+    }
   },
   {
     "page": 22,
@@ -270,7 +354,11 @@
       "recRestColor@07:18"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如处理黑色脉冲用正Q，处理白色脉冲用负Q，先辨认噪声类型再选参数。"
+    }
   },
   {
     "page": 23,
@@ -282,7 +370,11 @@
       "recRestColor@08:36"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "最直接的区别是：mean算加权或普通平均，median先排序再取中间数，max/min取极值。"
+    }
   },
   {
     "page": 24,
@@ -296,7 +388,11 @@
       "recRestColor@11:41"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右侧箭头说明max抬高邻域中的暗点，用于pepper；min压低亮点，用于salt。"
+    }
   },
   {
     "page": 25,
@@ -308,7 +404,11 @@
       "recRestColor@08:36"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例：[0,48,49,50,51,52,53,54,255]的中值是51，两端的黑白脉冲不决定输出。"
+    }
   },
   {
     "page": 26,
@@ -320,7 +420,11 @@
       "recRestColor@09:55"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "第一次能明显去掉黑白点，继续重复后图像更整齐，但电路中央的小点和细线也逐渐损失。"
+    }
   },
   {
     "page": 27,
@@ -333,7 +437,11 @@
       "recRestColor@11:41"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "比较相同电路部位：左侧黑脉冲被亮邻居替代，但真实暗小块也会缩小；右侧白脉冲受抑制，真实亮小块也会受影响。"
+    }
   },
   {
     "page": 28,
@@ -346,7 +454,11 @@
       "recRestColor@13:28"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "Alpha-trimmed mean先排序，去掉最大的d/2个和最小的d/2个，再对剩下mn−d个值求均值。"
+    }
   },
   {
     "page": 29,
@@ -359,7 +471,11 @@
       "recRestColor@14:39"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师让大家比较混合噪声下的细节，尤其小点、细引脚，而不是把某一幅“最平滑”直接当作最好。"
+    }
   },
   {
     "page": 30,
@@ -371,7 +487,11 @@
       "recRestColor@15:24"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如两个窗口的噪声水平相似，但一个横跨黑白边界、另一个全在均匀背景，其局部方差会不同；下一页用这个差别控制平滑强度。"
+    }
   },
   {
     "page": 31,
@@ -385,7 +505,11 @@
       "recRestColor@18:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "若噪声方差为0，修正项为0；若局部方差远大于噪声方差，比值很小，输出接近原像素g，以保留边缘；若二者相等，比值为1，输出正好变成局部均值mL。"
+    }
   },
   {
     "page": 32,
@@ -398,7 +522,11 @@
       "recRestColor@19:05"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "具体看芯片引脚的分离程度、细黑线和小圆点：均匀平均易把它们抹成一团，自适应方法希望在平坦处抑噪、在变化大处少改。"
+    }
   },
   {
     "page": 33,
@@ -412,7 +540,11 @@
       "recRestColor@21:13"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "Level A先问窗口中值是否严格位于最小值与最大值之间，即zmin<zmedian<zmax；不满足就扩大窗口重试。"
+    }
   },
   {
     "page": 34,
@@ -425,7 +557,11 @@
       "recRestColor@21:13"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师强调只有需要替换的极端像素才改，其余尽量保留原样。"
+    }
   },
   {
     "page": 35,
@@ -438,7 +574,11 @@
       "recRestColor@23:23"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师用这个例子说明自适应窗口与有条件替换的作用：右图的Smax=7规定窗口最多扩到7×7，实际尺寸随局部情况变化；中图则在每个位置固定使用7×7。"
+    }
   },
   {
     "page": 36,
@@ -452,7 +592,11 @@
       "recRestColor@26:08"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "第一行“平滑背景上孤立亮暗脉冲”优先考虑中值，脉冲比例很高时再考虑自适应中值；第二行“细文字边缘旁的加性随机噪声”要兼顾保边缘，老师选局部自适应降噪；第三行“随机噪声混合少量极值”对应alpha-trimmed mean。"
+    }
   },
   {
     "page": 37,
@@ -464,7 +608,11 @@
       "recRestColor@26:08"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图注说明一对共轭脉冲对应一个正弦分量，所以空间中分布在许多位置的周期干扰，在频域可能集中到很少的位置。"
+    }
   },
   {
     "page": 38,
@@ -476,7 +624,11 @@
       "recRestColor@27:07"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师说明规则条纹的某些频率会特别显著，所以可针对这些分量处理。"
+    }
   },
   {
     "page": 39,
@@ -488,7 +640,11 @@
       "recRestColor@27:07"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "分段函数定义理想带阻（Band Reject）：距离中心D落在D0−W/2到D0+W/2之间时H=0，环带内外H=1。"
+    }
   },
   {
     "page": 40,
@@ -500,7 +656,11 @@
       "recRestColor@27:07"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左边Ideal的边缘突变；中间一阶Butterworth过渡较缓；右边Gaussian平滑过渡。"
+    }
   },
   {
     "page": 41,
@@ -512,7 +672,11 @@
       "recRestColor@27:07"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师说把噪声对应的固定频率滤除后，周期纹路就能减少。"
+    }
   },
   {
     "page": 42,
@@ -525,7 +689,11 @@
       "recRestColor@29:33"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "曲面上不是完整环形沟槽，而是在少数位置挖出成对的小坑，这就是陷波抑制（Notch Reject）。"
+    }
   },
   {
     "page": 43,
@@ -537,7 +705,11 @@
       "recRestColor@28:22"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左上是带水平条纹的场景，中上DFT中能看到竖直方向的干扰结构；右上给出用于分离这些成分的频域模板。"
+    }
   },
   {
     "page": 44,
@@ -550,7 +722,11 @@
       "recRestColor@29:33"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师回答倾向Option B：拒绝成对峰附近的小区域，而不是Option A那样删除整个频带，因为同一频率半径的其他方向可能仍有正常图像信息。"
+    }
   },
   {
     "page": 45,
@@ -562,7 +738,11 @@
       "recRestColor@30:47"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师解释噪声与真实信号可能在频率上重叠，所以“把亮点全部涂黑”不够稳妥。"
+    }
   },
   {
     "page": 46,
@@ -574,7 +754,11 @@
       "recRestColor@30:47"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师在这一段引入weight（权重）：估计出的干扰不能不加区分全额扣除，要控制扣除多少。"
+    }
   },
   {
     "page": 47,
@@ -586,7 +770,11 @@
       "recRestColor@32:13"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "三行公式是一条完整流程：在频域用H(k,l)G(k,l)取出候选干扰N；逆傅里叶变换得到空间干扰估计η；最后f̂(m,n)=g(m,n)−w(m,n)η(m,n)。"
+    }
   },
   {
     "page": 48,
@@ -598,7 +786,11 @@
       "recRestColor@33:23"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页保留f̂=g−wη，并把目标写为估计图像在局部邻域里的方差最小。"
+    }
   },
   {
     "page": 49,
@@ -610,7 +802,11 @@
       "recRestColor@34:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "中间一句simplification才是本页关键：在当前邻域里令w(m+k,n+l)=w(m,n)，把一个窗口内的权重看成相同，下面的式子才简化。"
+    }
   },
   {
     "page": 50,
@@ -623,7 +819,11 @@
       "recRestColor@35:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "分子是“g与η乘积的局部均值−各自局部均值的乘积”；分母是“η平方的局部均值−η局部均值的平方”。"
+    }
   },
   {
     "page": 51,
@@ -636,7 +836,11 @@
       "recRestColor@36:17"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师用这组结果结束最优陷波：面对多个频率峰，先分离干扰，再通过权重控制扣除。"
+    }
   },
   {
     "page": 52,
@@ -649,7 +853,11 @@
       "recRestColor@38:16"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "式子g=h*f+η中的h是冲激响应，也称point spread function（PSF，点扩散函数）。"
+    }
   },
   {
     "page": 53,
@@ -662,7 +870,11 @@
       "recRestColor@40:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "目标不是直接估计全部原图，而是先获得退化函数h或H；下方列三条来源：图像观察、实验测量、物理建模。"
+    }
   },
   {
     "page": 54,
@@ -677,7 +889,11 @@
       "recRestColor@42:26"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右上退化图中红框截取子图gs；虚线框内根据先验估计它应有的清晰样子f̂s；两者分别做DFT，再用Gs/F̂s估计Hs。"
+    }
   },
   {
     "page": 55,
@@ -689,7 +905,11 @@
       "recRestColor@42:26"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左边输入很小的亮点Aδ，经过系统H后，右边出现扩散亮斑g；理想输入的DFT为常数A，因此频域响应可按H=G/A估计。"
+    }
   },
   {
     "page": 56,
@@ -701,7 +921,11 @@
       "recRestColor@43:27"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右侧大气湍流传递函数为H(u,v)=exp[−k(u²+v²)^(5/6)]；四图依次给原图，以及k=0.0025、0.001、0.00025的退化，k更大的例图更模糊。"
+    }
   },
   {
     "page": 57,
@@ -713,7 +937,11 @@
       "recRestColor@44:19"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "第一行积分把曝光时间0到T内的图像位移累积起来：相机每个时刻看到f(x+x0(t),y+y0(t))，整段曝光叠加后形成g。"
+    }
   },
   {
     "page": 58,
@@ -726,7 +954,11 @@
       "recRestColor@46:50"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "黄色推导想利用“空间平移对应频域相位变化”，把与t无关的原图频谱F(u,v)提到积分外，剩下的时间积分定义为H(u,v)。"
+    }
   },
   {
     "page": 59,
@@ -738,7 +970,11 @@
       "recRestColor@47:29"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "它是在给定运动模型后，将原图频谱乘上本页H，再逆变换得到的退化例子；a、b控制两个方向的运动，T表示曝光时长。"
+    }
   },
   {
     "page": 60,
@@ -752,7 +988,11 @@
       "recRestColor@50:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "红圈特意圈住N/H：即使噪声本身不大，只要某频率的H很小，除法也会将它大幅放大。"
+    }
   },
   {
     "page": 61,
@@ -766,7 +1006,11 @@
       "recRestColor@01:02:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "全滤波结果严重失真；40保留频率范围太小，仍较糊；70在本例较清楚；85又引入更多不稳定频率，图像变差。"
+    }
   },
   {
     "page": 62,
@@ -780,7 +1024,11 @@
       "recRestColor@01:04:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "维纳滤波（Wiener filter）的目标写在页顶：最小化E[(f−f̂)²]。"
+    }
   },
   {
     "page": 63,
@@ -793,7 +1041,11 @@
       "recRestColor@01:05:27"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "红圈指出Sη(u,v)/Sf(u,v)难以精确估计；下一行用常数K替代这个频率相关比值。"
+    }
   },
   {
     "page": 64,
@@ -806,7 +1058,11 @@
       "recRestColor@01:06:25"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "小K对不稳定频率抑制较弱；较大K抑制更强，却可能丢细节。"
+    }
   },
   {
     "page": 65,
@@ -818,7 +1074,11 @@
       "recRestColor@01:06:25"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师说在K选得合适时Wiener往往比简单逆滤波更好。"
+    }
   },
   {
     "page": 66,
@@ -830,7 +1090,11 @@
       "recRestColor@01:06:25"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "缩略图里相似的结果，放大后可能在局部细节上差别明显；应对准相同结构观察。"
+    }
   },
   {
     "page": 67,
@@ -843,7 +1107,11 @@
       "recRestColor@01:08:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师用此图说明运动模糊叠加噪声时，直接除以H可能无法还原，而稳定滤波能取得更可用结果。"
+    }
   },
   {
     "page": 68,
@@ -856,7 +1124,11 @@
       "recRestColor@01:09:31"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "黄色目标式把两件事相加：||g−Hf||²要求复原图重新经过退化模型后解释实际观测；γ||Pf||²惩罚过大的高频变化。"
+    }
   },
   {
     "page": 69,
@@ -870,7 +1142,11 @@
       "recRestColor@01:12:21"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页把CLS（Constrained Least Squares，约束最小二乘）写成带约束问题：让拉普拉斯响应平方和C尽量小，同时使观测残差||g−Hf̂||²达到与噪声能量相应的水平。"
+    }
   },
   {
     "page": 70,
@@ -883,7 +1159,11 @@
       "recRestColor@01:13:28"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师将γ作为控制整体平滑的参数。"
+    }
   },
   {
     "page": 71,
@@ -895,7 +1175,11 @@
       "recRestColor@01:14:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "对同一行比较两种复原，才是在相同噪声水平下看效果；跨行同时改变了输入条件。"
+    }
   },
   {
     "page": 72,
@@ -908,7 +1192,11 @@
       "recRestColor@01:15:07"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "两种方法的分野在第一、二行：Wiener用信号和噪声功率统计；CLS用显式smoothness penalty和γ。"
+    }
   },
   {
     "page": 73,
@@ -921,7 +1209,11 @@
       "recRestColor@01:17:31"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "按本页判断举例，目标噪声能量100、a=5，则95到105可停止；残差90要增大γ，110则减小γ。"
+    }
   },
   {
     "page": 74,
@@ -933,7 +1225,11 @@
       "recRestColor@01:17:31"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右侧两个红括号把计算分开：上半由F̂和G−HF̂求残差，下半由噪声均值mη、方差ση²估计噪声量。"
+    }
   },
   {
     "page": 75,
@@ -945,7 +1241,11 @@
       "recRestColor@01:18:27"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师借此说明自动调γ仍依赖噪声参数：把噪声水平判断错，允许残差与平滑权衡也会随之偏离。"
+    }
   },
   {
     "page": 76,
@@ -957,7 +1257,11 @@
       "recRestColor@01:19:21"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上方第一因子带α次幂，第二因子带1−α；下方明确列α=1为逆滤波，α=0为参数化Wiener，α=0且β=1为标准Wiener。"
+    }
   },
   {
     "page": 111,
@@ -971,6 +1275,10 @@
       "recRestColor@01:15:07"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这张中文总结回到真正讲授的复原主线：建立退化模型，描述噪声，选空间滤波处理局部噪声，用频域选择性滤波处理周期干扰，估计退化函数，再比较逆滤波、维纳、CLS与频域几何均值。"
+    }
   }
 ]

@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parent
 SITE = ROOT.parent
 sys.path.insert(0, str(SITE))
 from exam_evidence import validate_teacher_evidence
+from note_highlights import validate_key_sentence
 EXPECTED_PAGES = {'lec1': 43, 'lec2': 44, 'lec3': 36, 'lec4': 30,
                   'lec5': 34, 'lec6': 49, 'lec7': 37, 'lec8': 50,
                   'lec9': 58, 'lec10': 57}
@@ -118,6 +119,7 @@ def build():
                 assert all(s in data['sources'] for s in note['sourceIds']), f'Unknown source: {did}/{number}'
                 paragraphs = note.get('paragraphs')
                 assert paragraphs and all(isinstance(p, str) and p.strip() for p in paragraphs)
+                validate_key_sentence(note, f'{did}/{number}')
                 assert not EMAIL.search('\n'.join(paragraphs))
                 signature = tuple(paragraphs)
                 assert signature not in seen_notes, f'Duplicate generic note: {did}/{number}'

@@ -8,7 +8,11 @@
     "sourceIds": [
       "recFreq@28:58"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "主线是先选要保留的频率，再处理 FFT 的周期边界，最后还原图像。"
+    }
   },
   {
     "page": 2,
@@ -19,7 +23,11 @@
     "sourceIds": [
       "recFreq@29:35"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "按这页的四行读出完整学习顺序：先解决 wraparound（首尾回卷），保证算对；再比较低通造成的 blur（模糊）与 ringing（振铃），保证没有把副作用当成细节；接着学习锐化时保留平均亮度；最后用同态滤波处理照明、选择性滤波处理周期干扰。"
+    }
   },
   {
     "page": 3,
@@ -30,7 +38,11 @@
     "sourceIds": [
       "recFreq@31:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "沿底部流程图从左读到右：输入 f(x,y) 经过预处理，做 DFT 得到 F(u,v)，与滤波器 H(u,v) 逐点相乘，得到 G=HF，再做逆 DFT 和后处理，输出 g(x,y)。"
+    }
   },
   {
     "page": 4,
@@ -42,7 +54,11 @@
       "recFreq@32:21",
       "recFreq@33:19"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "因此低通既可能削弱随机亮点，也会削弱文字边缘；高通既能提取边缘，也会放大噪声。"
+    }
   },
   {
     "page": 5,
@@ -53,7 +69,11 @@
     "sourceIds": [
       "recFreq@33:19"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "页底的 (−1)^(m+n) 是在空间域乘棋盘式正负号，使偶数尺寸 DFT 的零频移到中央；它与对频谱做 fftshift 达到同类的重排目的。"
+    }
   },
   {
     "page": 6,
@@ -65,7 +85,11 @@
       "recFreq@34:28",
       "recFreq@35:34"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "关键是 H(0,0)：它控制直流分量，也就是整体平均亮度。"
+    }
   },
   {
     "page": 7,
@@ -77,7 +101,11 @@
       "recFreq@36:25",
       "recFreq@37:33"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "想得到长度 A、B 两个序列的线性卷积，变换长度至少选 A+B−1，让结果在一个周期内装得下。"
+    }
   },
   {
     "page": 8,
@@ -89,7 +117,11 @@
       "recFreq@38:00",
       "recFreq@39:39"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师指出上下边缘会相互影响，补零正是为了隔离这种回卷，而不是为了增加图像信息。"
+    }
   },
   {
     "page": 9,
@@ -100,7 +132,11 @@
     "sourceIds": [
       "recFreq@40:02"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这里想说明“频域截得很硬”会对应一个延伸很长、带旁瓣的空间核。"
+    }
   },
   {
     "page": 10,
@@ -112,7 +148,11 @@
       "recFreq@40:02",
       "recFreq@41:24"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "要区分两件事：一个本来就有限长的卷积核，可以正常补零来计算线性卷积；但理想矩形频率响应对应无限长空间核，截取一段再补零，不能保持原来的理想频响。"
+    }
   },
   {
     "page": 11,
@@ -123,7 +163,11 @@
     "sourceIds": [
       "recFreq@42:35"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "课件建议先把图像补大，再直接在这个最终尺寸上设计 H(u,v)，而不是随意剪切一个已有的长空间核；另一条路线是用高斯、低阶 Butterworth 等平缓衰减的滤波器。"
+    }
   },
   {
     "page": 12,
@@ -135,7 +179,11 @@
       "recFreq@44:00",
       "recFreq@44:46"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "七步要按因果记：把 M×N 图像补成 P×Q（本页取 2M×2N）；乘 (−1)^(x+y) 做中心化；求 DFT；在同样 P×Q 网格设计居中的 H；逐元素相乘 G=HF；逆变换后取实部，并再次乘 (−1)^(x+y) 撤销中心化；最后裁出左上 M×N。"
+    }
   },
   {
     "page": 13,
@@ -147,7 +195,11 @@
       "recFreq@44:46",
       "recFreq@46:04"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这一页用 a–h 八张小图把七步具体画出来：a 原图；b 放入较大黑色补零画布；c 乘棋盘正负号；d 中心化频谱；e 中央发亮的高斯低通 H；f 相乘后的频谱，外围高频被压低；g 逆变换并撤销中心化的补零结果；h 裁回原尺寸。"
+    }
   },
   {
     "page": 14,
@@ -158,7 +210,11 @@
     "sourceIds": [
       "recFreq@47:13"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "答案是把核与图像补到同一尺寸，对核求 DFT 得 H，再计算 HF。"
+    }
   },
   {
     "page": 15,
@@ -169,7 +225,11 @@
     "sourceIds": [
       "recFreq@47:13"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "这个对照比“频域效果更好”更重要：只要同一个核、边界约定、对齐方式与数值处理相同，两种实现应得到相同结果。"
+    }
   },
   {
     "page": 16,
@@ -181,7 +241,11 @@
       "recFreq@48:38",
       "recFreq@49:42"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "FFT（Fast Fourier Transform）是计算 DFT 的快速算法，不是一种新的变换。"
+    }
   },
   {
     "page": 17,
@@ -193,7 +257,11 @@
       "recFreq@48:38",
       "recFreq@49:42"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如 3×3 均值直接算常很便宜；若核接近图像大小，FFT 的计算优势更容易显现。"
+    }
   },
   {
     "page": 18,
@@ -204,7 +272,11 @@
     "sourceIds": [
       "recFreq@51:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "G(u,v)=H(u,v)F(u,v) 中，F 是原图频谱、H 是频率传递函数、G 是处理后频谱；想平滑，就让 H 对中央低频接近 1，对外围高频较小。"
+    }
   },
   {
     "page": 19,
@@ -215,7 +287,11 @@
     "sourceIds": [
       "recFreq@51:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "中心内的频率完整通过，中心外完全截止，没有过渡带。"
+    }
   },
   {
     "page": 20,
@@ -226,7 +302,11 @@
     "sourceIds": [
       "recFreq@52:27"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "H=1 当 D≤D₀，H=0 当 D>D₀，所以可以用一个布尔圆形掩膜实现。"
+    }
   },
   {
     "page": 21,
@@ -237,7 +317,11 @@
     "sourceIds": [
       "recFreq@01:03:23"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页回答 D₀ 不能只靠猜：先算功率谱 P=|F|²，再求以中心为圆心、半径 D₀ 内的能量占比 α=Σ(D≤D₀)|F|² / Σ全部|F|²。"
+    }
   },
   {
     "page": 22,
@@ -249,7 +333,11 @@
       "recFreq@01:03:23",
       "recFreq@01:04:42"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "最小圆已经含 87% 能量，说明这张图能量高度集中于低频；但细字母和密集线条是否清楚，仍依赖外围那少量高频。"
+    }
   },
   {
     "page": 23,
@@ -261,7 +349,11 @@
       "recFreq@01:04:42",
       "recFreq@01:05:45"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "主瓣把像素向邻域摊开，造成 blur；正负旁瓣在边缘附近产生明暗交替，造成 ringing。"
+    }
   },
   {
     "page": 24,
@@ -272,7 +364,11 @@
     "sourceIds": [
       "recFreq@01:05:45"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "下方两条上升曲线强调：提高平滑程度同时可能增强可见振铃。"
+    }
   },
   {
     "page": 25,
@@ -284,7 +380,11 @@
       "recFreq@01:07:00",
       "recFreq@01:09:26"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师在 01:07:00 解释选择高斯的原因：它的逆傅里叶变换仍是高斯，理想空间核没有正负振荡旁瓣，因此避免理想低通那种 ringing。"
+    }
   },
   {
     "page": 26,
@@ -295,7 +395,11 @@
     "sourceIds": [
       "recFreq@01:08:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "它直观验证上一页的结论：频域高斯越宽，空间域模糊越弱。"
+    }
   },
   {
     "page": 27,
@@ -306,7 +410,11 @@
     "sourceIds": [
       "recFreq@01:08:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左侧文本的笔画带有缺口，放大的 ‘ea’ 尤其明显；右侧经过高斯低通后，缺口被周围灰度向内扩散填平，笔画看起来更连贯，但边缘也变软了。"
+    }
   },
   {
     "page": 28,
@@ -317,7 +425,11 @@
     "sourceIds": [
       "recFreq@01:08:43"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这里 D₀ 是频域宽度，因此“数值更小→美颜更强”，别与空间高斯的 σ 越大越模糊混淆。"
+    }
   },
   {
     "page": 29,
@@ -328,7 +440,11 @@
     "sourceIds": [
       "recFreq@01:10:09"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "Butterworth 低通 H(D)=1/[1+(D/D₀)^(2n)] 有两个独立旋钮：D₀ 决定过渡所在位置，n 决定过渡有多陡。"
+    }
   },
   {
     "page": 30,
@@ -339,7 +455,11 @@
     "sourceIds": [
       "recFreq@01:11:29"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "因此提高 n 不只是让频域切得更干净，还使空间响应更容易振荡，进而在物体边缘产生 ringing。"
+    }
   },
   {
     "page": 31,
@@ -350,7 +470,11 @@
     "sourceIds": [
       "recFreq@01:11:29"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "小 D₀ 时两边都变模糊，但右侧黑方块、圆点和字母周围有明显的振铃，左侧低阶 Butterworth 的可见波纹弱得多。"
+    }
   },
   {
     "page": 32,
@@ -361,7 +485,11 @@
     "sourceIds": [
       "recFreq@01:12:30"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "理论高斯空间核没有振荡旁瓣，代价是它对通带/阻带的区分较柔和；较高阶 Butterworth 截止更陡，但振铃风险更大。"
+    }
   },
   {
     "page": 33,
@@ -372,7 +500,11 @@
     "sourceIds": [
       "recFreq@01:13:41"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "关键等式 H_hp=1−H_lp 表示互补滤波：同一频率被低通保留多少，高通就保留剩下多少。"
+    }
   },
   {
     "page": 34,
@@ -383,7 +515,11 @@
     "sourceIds": [
       "recFreq@01:13:41"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "理想高通的三种图示与理想低通正相反：中心黑圆内 H=0、外围 H=1；三维表面中心挖空；剖面在 D₀ 处从 0 跳为 1。"
+    }
   },
   {
     "page": 35,
@@ -394,7 +530,11 @@
     "sourceIds": [
       "recFreq@01:15:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "它们都把平坦背景压暗，只保留字母、方块和线条的变化；D₀ 小的左图有较宽、明显的边缘波纹，D₀ 大时只剩更细、更弱的边缘响应。"
+    }
   },
   {
     "page": 36,
@@ -405,7 +545,11 @@
     "sourceIds": [
       "recFreq@01:15:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "高斯高通由高斯低通互补得到：H(D)=1−exp[−D²/(2D₀²)]。"
+    }
   },
   {
     "page": 37,
@@ -416,7 +560,11 @@
     "sourceIds": [
       "recFreq@01:15:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "区别在于下排边缘旁没有清楚的多圈振荡，背景黑、边缘亮的整体形态仍然存在；D₀ 增大时，较宽尺度的结构被进一步压低。"
+    }
   },
   {
     "page": 38,
@@ -427,7 +575,11 @@
     "sourceIds": [
       "recFreq@01:16:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上方 Butterworth 高通 H=1/[1+(D₀/D)^(2n)]，下方绿色框给出低通 H_lp=1/[1+(D/D₀)^(2n)]。"
+    }
   },
   {
     "page": 39,
@@ -438,7 +590,11 @@
     "sourceIds": [
       "recFreq@01:16:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上下两组图让你用形状识别高通与低通：上排中央凹、远处接近 1，灰度俯视中心黑，是高通；下排中央凸、远处衰减，中心白，是低通。"
+    }
   },
   {
     "page": 40,
@@ -449,7 +605,11 @@
     "sourceIds": [
       "recFreq@01:17:02"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "不要与上一页的参数作用混淆：改 D₀ 是移动被抑制频段的范围，改 n 才是改变截止陡峭程度。"
+    }
   },
   {
     "page": 41,
@@ -460,7 +620,11 @@
     "sourceIds": [
       "recFreq@01:17:02"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "固定一列比较类型，能看出理想高通的振荡光圈最明显，高斯最平滑；固定一行比较半径，能看出低中频删得越多，剩下的边缘响应越弱、越细。"
+    }
   },
   {
     "page": 42,
@@ -471,7 +635,11 @@
     "sourceIds": [
       "recFreq@01:17:02"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "因为 H_hp=1−H_lp，空间域是 h_hp=δ−h_lp：中心保留一个冲激，再减去平滑核。"
+    }
   },
   {
     "page": 43,
@@ -483,7 +651,11 @@
       "recFreq@01:18:11",
       "recFreq@01:19:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "按本页连续傅里叶频率约定，它对应乘子 H(u,v)=−4π²(u²+v²)：零频响应为零，离原点越远，负增益的绝对值越大，所以它尤其强调高频变化，也会放大高频噪声。"
+    }
   },
   {
     "page": 44,
@@ -494,7 +666,11 @@
     "sourceIds": [
       "recFreq@01:19:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "右下 3×3 核是离散差分近似，与直接采样连续乘子 −4π²D² 并非所有频率都完全相同；低频处可近似一致。"
+    }
   },
   {
     "page": 45,
@@ -505,7 +681,11 @@
     "sourceIds": [
       "recFreq@01:20:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "做锐化时要把导数按符号约定加回原图：采用中心 −4 的模板通常 g=f−c∇²f。"
+    }
   },
   {
     "page": 46,
@@ -517,7 +697,11 @@
       "recFreq@01:20:00",
       "recFreq@01:21:09"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "若把同一个空间核精确变成 H 并使用同样边界，两种实现应一致，如第15页。"
+    }
   },
   {
     "page": 47,
@@ -528,7 +712,11 @@
     "sourceIds": [
       "recFreq@01:22:28"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "因为 H_hp(0,0)=0，输出频谱 G(0,0)=0，即输出均值为零，正常背景亮度被去掉，只剩正负细节。"
+    }
   },
   {
     "page": 48,
@@ -541,7 +729,11 @@
       "recFreq@01:24:29",
       "recFreq@01:25:52"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "把它放到频域就是 G=[1+k(1−H_LP)]F=[1+kH_HP]F。"
+    }
   },
   {
     "page": 49,
@@ -553,7 +745,11 @@
       "recFreq@01:25:52",
       "recFreq@01:27:06"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上式的高频强调滤波器是 1+kH_HP：零频 H_HP=0 时总增益为 1，因此保留原图均值；高频 H_HP≈1 时总增益约 1+k，因而加强细节。"
+    }
   },
   {
     "page": 50,
@@ -565,7 +761,11 @@
       "recFreq@01:27:06",
       "recFreq@01:27:45"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师在01:27:45明确提到最后还做了histogram equalization：先用高频强调突出结构细节，再用直方图均衡调整强度分布，让原图已有的医学结构更容易观察。"
+    }
   },
   {
     "page": 51,
@@ -576,7 +776,11 @@
     "sourceIds": [
       "recFreq@01:29:11"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "同态滤波建立在乘性模型 f(x,y)=i(x,y)r(x,y) 上：i 是照明，r 是物体反射。"
+    }
   },
   {
     "page": 52,
@@ -588,7 +792,11 @@
       "recFreq@01:30:29",
       "recFreq@01:31:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "核心步骤在紫框：z=ln f=ln i+ln r，把乘性关系变成加性关系。"
+    }
   },
   {
     "page": 53,
@@ -600,7 +808,11 @@
       "recFreq@01:32:15",
       "recFreq@01:33:30"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "取 γ_L<1、γ_H>1，就会在对数域衰减低频照明、增强高频反射；D₀ 与 c 决定过渡所在的尺度和快慢。"
+    }
   },
   {
     "page": 54,
@@ -612,7 +824,11 @@
       "recFreq@01:34:22",
       "recFreq@01:35:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "纯高通会丢掉亮度基底，单纯低通又容易使细节模糊；同态处理在对数域分别调节低、高频增益。"
+    }
   },
   {
     "page": 55,
@@ -624,7 +840,11 @@
       "recFreq@01:35:25",
       "recFreq@01:36:41"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "理想带阻在 C₀−W/2≤D≤C₀+W/2 的环形范围内置 0，其余为 1；C₀ 是环的半径中心，W 是厚度。"
+    }
   },
   {
     "page": 56,
@@ -635,7 +855,11 @@
     "sourceIds": [
       "recFreq@01:37:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师说找到周期噪声所在频率后予以抑制。"
+    }
   },
   {
     "page": 57,
@@ -646,7 +870,11 @@
     "sourceIds": [
       "recFreq@01:37:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "与上一页带阻相比，它只删除少数位置，因而可减少对同半径其他方向真实纹理的损伤。"
+    }
   },
   {
     "page": 58,
@@ -657,7 +885,11 @@
     "sourceIds": [
       "recFreq@01:37:48"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "空间中水平条纹沿竖直方向变化，所以其频谱沿竖直频率轴集中；这就是选择该线而非任意画一道黑条的原因。"
+    }
   },
   {
     "page": 59,
@@ -668,7 +900,11 @@
     "sourceIds": [
       "recFreq@01:38:46"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "原函数在两处保持连续，只是斜率改变；过强高提升可能在这些拐点制造不自然的过冲。"
+    }
   },
   {
     "page": 60,
@@ -679,7 +915,11 @@
     "sourceIds": [
       "recFreq@01:38:46"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "补零后中央出现更明显的水平、竖直亮线，因为原图边界与零值之间形成了沿行、列排列的突变，而不是补零凭空提高了真实分辨率。"
+    }
   },
   {
     "page": 61,
@@ -690,6 +930,10 @@
     "sourceIds": [
       "recFreq@01:38:46"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这一页可以按任务串起整章：实现层面先补零、中心化、FFT、乘 H、逆变换并裁剪；平滑比较理想/高斯/Butterworth 的截止和振铃；锐化区分纯高通、拉普拉斯、unsharp 和 highboost；照明不均用对数域同态思路；特定周期干扰再考虑带阻或陷波。"
+    }
   }
 ]

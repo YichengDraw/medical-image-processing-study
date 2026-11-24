@@ -8,7 +8,11 @@
     "sourceIds": [
       "recFourier@21:54"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "封面标为 Frequency Filtering，但这一部分先搭好频域语言：图像如何拆成正弦分量、采样后频谱为何重复、二维 DFT 怎样计算，以及幅值/相位各表示什么。"
+    }
   },
   {
     "page": 2,
@@ -20,7 +24,11 @@
       "recFourier@21:54",
       "recFourier@23:15"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "四项路线存在依赖关系：先把图像看作正弦模式叠加；然后解释连续图像采样后出现的频谱副本与混叠；再把一维概念推广到二维 DFT；最后从复数频谱中读幅值和相位，并连接到滤波。"
+    }
   },
   {
     "page": 3,
@@ -32,7 +40,11 @@
       "recFourier@24:00",
       "recFourier@24:28"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "傅里叶变换用不同频率与方向的正弦图案表示图像，频域滤波则有选择地改变这些分量。"
+    }
   },
   {
     "page": 4,
@@ -44,7 +56,11 @@
       "recFourier@25:10",
       "recFourier@25:54"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页的两问可以先回答出来：竖直条纹越密，沿水平方向的亮暗变化越快，空间频率越高；在中心化频谱中，对应峰沿水平轴远离中心。"
+    }
   },
   {
     "page": 5,
@@ -56,7 +72,11 @@
       "recFourier@29:21",
       "recFourier@29:47"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "等号表达的是逐位置相加：慢波决定大轮廓，快波叠加细小抖动，各自前面的系数决定贡献大小。"
+    }
   },
   {
     "page": 6,
@@ -67,7 +87,11 @@
     "sourceIds": [
       "recFourier@34:08"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "紫框把上一页的叠加写成 f(x)=a₀/2+Σ[aₙcos(nπx/l)+bₙsin(nπx/l)]：a₀/2 是平均基底，n 是谐波序号，aₙ、bₙ分别给同频余弦与正弦分量加权；两者一起还能表示相位偏移。"
+    }
   },
   {
     "page": 7,
@@ -78,7 +102,11 @@
     "sourceIds": [
       "recFourier@31:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "可以想象先加基波，再加 3、5、7 次奇次谐波：波形更方，但边缘附近会出现下一页的过冲。"
+    }
   },
   {
     "page": 8,
@@ -90,7 +118,11 @@
       "recFourier@32:28",
       "recFourier@33:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "观察右图：方波平顶和跳变已经较准确，但边缘仍有小尖峰，这就是 Gibbs 现象；增加项数会把振荡挤到更窄区域，并不让相对过冲自动消失。"
+    }
   },
   {
     "page": 9,
@@ -102,7 +134,11 @@
       "recFourier@32:28",
       "recFourier@33:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "第一问选 B：方波最需要高频的是 sharp transitions，也就是很窄距离内从低变高的边缘；平坦部分主要由低频/直流描述。"
+    }
   },
   {
     "page": 10,
@@ -114,7 +150,11 @@
       "recFourier@36:00",
       "recFourier@37:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "极限 T₀→∞ 时，只剩一个非周期脉冲，对应连续频谱。"
+    }
   },
   {
     "page": 11,
@@ -125,7 +165,11 @@
     "sourceIds": [
       "recFourier@37:49"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上式 F(μ)=∫f(t)e^(−j2πμt)dt 做分解，下式 f(t)=∫F(μ)e^(j2πμt)dμ 做合成。"
+    }
   },
   {
     "page": 12,
@@ -134,7 +178,11 @@
       "例如一张图同时含稀疏明暗背景与密集条纹，就像一个低音叠加一个高音。PDF 保留的是静态图和链接，无法显示原网页的交互动画；复习时应回到“分解为频率基底”这一概念，而不是把链接标题作为知识点。"
     ],
     "sourceIds": [],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "正弦图配音符的意思是：纯音可以用一个时间频率描述，多种纯音叠加得到复杂声音；图像则把时间换成空间，用不同密度、方向的正弦条纹叠加。"
+    }
   },
   {
     "page": 13,
@@ -146,7 +194,11 @@
       "recFourier@39:00",
       "recFourier@40:21"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "因此 F(0)=AW，等于矩形面积；第一个零点在 μ=±1/W，矩形越宽，频谱主瓣越窄。"
+    }
   },
   {
     "page": 14,
@@ -157,7 +209,11 @@
     "sourceIds": [
       "recFourier@41:24"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "连续 δ(t) 是一种广义函数：除零点外为零、总积分为 1，箭头表示单位面积而非普通函数高度；离散 δ[n] 则真的是 n=0 取 1、其他位置取 0，总和为 1。"
+    }
   },
   {
     "page": 15,
@@ -168,7 +224,11 @@
     "sourceIds": [
       "recFourier@42:04"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "最重要的是抽样性质：∫f(x)δ(x−x₀)dx=f(x₀)，即只取函数在 x₀ 的值。"
+    }
   },
   {
     "page": 16,
@@ -180,7 +240,11 @@
       "recFourier@43:15",
       "recFourier@43:46"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "因为 δ 只抽取 t=0 的值，∫δ(t)e^(−j2πμt)dt=e⁰=1，所以原点冲激包含等幅的全部频率。"
+    }
   },
   {
     "page": 17,
@@ -191,7 +255,11 @@
     "sourceIds": [
       "recFourier@45:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "下方用 x(t) 乘这列冲激，就只留下 t=nΔT 处的采样值，写成 Σx(nΔT)δ(t−nΔT)。"
+    }
   },
   {
     "page": 18,
@@ -202,7 +270,11 @@
     "sourceIds": [
       "recFourier@45:45"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "第三行每根箭头的高度跟随第一行曲线，而横向位置由第二行决定，说明采样同时涉及“在何处取”与“该处值是多少”。"
+    }
   },
   {
     "page": 19,
@@ -214,7 +286,11 @@
       "recFourier@46:30",
       "recFourier@48:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "核心变换对是：时间域间隔 ΔT 的冲激串，变成频域间隔 1/ΔT 的冲激串，同时带一个 1/ΔT 的尺度因子。"
+    }
   },
   {
     "page": 20,
@@ -227,7 +303,11 @@
       "recFourier@01:00:48",
       "recFourier@01:01:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "蓝框再利用冲激的平移性质，得到 F̃(u)=(1/ΔT)ΣF(u−n/ΔT)：原频谱每隔采样频率 f_s=1/ΔT 复制一次并相加。"
+    }
   },
   {
     "page": 21,
@@ -238,7 +318,11 @@
     "sourceIds": [
       "recFourier@01:02:40"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页把上一页推导压缩为一句必须理解的结论：时间离散会让频谱周期重复，周期为 f_s=1/ΔT。"
+    }
   },
   {
     "page": 22,
@@ -250,7 +334,11 @@
       "recFourier@01:02:40",
       "recFourier@01:04:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "需区分 f_s 与 ΔT：应使 f_s 大于最高信号频率的两倍，等价于 ΔT 足够小，不能说‘采样间距要大于两倍频率’。"
+    }
   },
   {
     "page": 23,
@@ -262,7 +350,11 @@
       "recFourier@01:04:50",
       "recFourier@01:08:27"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左侧上图是互不重叠的重复频谱，中图是只截出中央副本的理想低通窗，底图恢复原谱。"
+    }
   },
   {
     "page": 24,
@@ -274,7 +366,11 @@
       "recFourier@01:05:55",
       "recFreq@25:01"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左侧上下两条频率不同的连续曲线却能穿过同一组采样点，直接说明：仅凭这些样本无法唯一判断原信号。"
+    }
   },
   {
     "page": 25,
@@ -285,7 +381,11 @@
     "sourceIds": [
       "recFourier@01:06:27"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左侧把重建写成 f=F⁻¹{H·F̃}=h*f̃：频域用理想低通截出未混叠的中央谱，空间域等价于用重建核 h 与加权采样冲激串卷积。"
+    }
   },
   {
     "page": 26,
@@ -297,7 +397,11 @@
       "recFourier@01:07:26",
       "recFourier@01:09:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "每个样本都对应一个以 nΔT 为中心的 sinc，样本值决定它的权重，再把所有 sinc 相加。"
+    }
   },
   {
     "page": 27,
@@ -309,7 +413,11 @@
       "recFourier@01:07:26",
       "recFourier@01:09:25"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "‘Perfectly reconstructed’的前提是信号带限、均匀足够密采样，以及理想无限 sinc 插值。"
+    }
   },
   {
     "page": 28,
@@ -321,7 +429,11 @@
       "recFourier@01:10:42",
       "recFourier@01:11:55"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "下半部分才定义 DFT：对长度 N 的信号，在一个频率周期里取 N 个点，频率位置 μ_k=k/(NΔT)，k=0,…,N−1。"
+    }
   },
   {
     "page": 29,
@@ -332,7 +444,11 @@
     "sourceIds": [
       "recFourier@01:11:55"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "下方得到 DFT 对：F[k]=Σf[n]e^(−j2πnk/N)，逆变换含1/N且指数符号相反。"
+    }
   },
   {
     "page": 30,
@@ -345,7 +461,11 @@
       "recFourier@01:14:35",
       "recFourier@01:15:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "一句话记双向关系：时域采样→频域复制；频域采样→时域复制。"
+    }
   },
   {
     "page": 31,
@@ -356,7 +476,11 @@
     "sourceIds": [
       "recFourier@01:17:55"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "把 k 换成 k+N，指数多出 e^(−j2πn)=1，所以每 N 个频率编号重复；只存一个周期就足够。"
+    }
   },
   {
     "page": 32,
@@ -368,7 +492,11 @@
       "recFourier@01:16:20",
       "recFourier@01:17:55"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "三行关系要连起来：M 个样本、间隔 ΔT，对应 DFT 记录长度/周期 T=MΔT；频率格点间隔 Δμ=1/T=f_s/M；整个频率周期宽度 Ω=1/ΔT=f_s。"
+    }
   },
   {
     "page": 33,
@@ -381,7 +509,11 @@
       "recFourier@01:20:47",
       "recFourier@01:21:42"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "这页演示的是频谱插值，不是增加观测信息。"
+    }
   },
   {
     "page": 34,
@@ -392,7 +524,11 @@
     "sourceIds": [
       "recFourier@01:23:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "按题目逐项计算：采样率100 Hz、实际样本100个，记录长度按DFT约定为1秒，原频率网格 Δf=100/100=1 Hz；补零到1000点后，计算出的网格间距变成100/1000=0.1 Hz。"
+    }
   },
   {
     "page": 35,
@@ -403,7 +539,11 @@
     "sourceIds": [
       "recFourier@01:24:21"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "下方双重积分把 f(x,y) 在该点的值抽取出来；它还能分解成 x、y 两个一维冲激的乘积。"
+    }
   },
   {
     "page": 36,
@@ -414,7 +554,11 @@
     "sourceIds": [
       "recFourier@01:24:21"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这是二维规则采样格，可写为 S_ΔX(x)S_ΔY(y)，即两个独立方向的冲激串相乘。"
+    }
   },
   {
     "page": 37,
@@ -426,7 +570,11 @@
       "recFourier@01:25:40",
       "recFourier@01:25:55"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "μ、ν 分别表示沿两个空间轴的频率；一对(μ,ν)可理解为一幅具有特定方向、密度的平面正弦条纹。"
+    }
   },
   {
     "page": 38,
@@ -437,7 +585,11 @@
     "sourceIds": [
       "recFourier@01:25:55"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "二维变换可拆开：x方向冲激变成常数1，y方向常数变成δ(ν)，因此右下频谱沿水平 μ 轴形成一条线。"
+    }
   },
   {
     "page": 39,
@@ -449,7 +601,11 @@
       "recFourier@01:25:55",
       "recFourier@01:28:19"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "利用冲激抽样，积分时令 x=y，指数合并成 e^(−j2π(μ+ν)y)，最后得到 δ(μ+ν)，即频域 μ+ν=0 的另一条对角线。"
+    }
   },
   {
     "page": 40,
@@ -461,7 +617,11 @@
       "recFourier@01:27:14",
       "recFourier@01:28:19"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页已经给出前三句答案：竖纹沿水平方向变化；正弦条纹的峰在水平频率轴；条纹越密，峰越远离 DC（零频中心）。"
+    }
   },
   {
     "page": 41,
@@ -472,7 +632,11 @@
     "sourceIds": [
       "recFourier@01:29:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "因它可分离为两个一维矩形，双重积分拆成两个积分，得到 F(μ,ν)=ATZ·sinc(μT)·sinc(νZ)（这里采用归一化 sinc）。"
+    }
   },
   {
     "page": 42,
@@ -483,7 +647,11 @@
     "sourceIds": [
       "recFreq@17:35"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "第二行给出核心对应 f*h ↔ F·H，这正是后续频域滤波能替代空间卷积的原因。"
+    }
   },
   {
     "page": 43,
@@ -494,7 +662,11 @@
     "sourceIds": [
       "recFourier@01:29:45"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "二维图像与网格冲激串相乘后，频谱会沿两个轴复制：复制中心间距分别1/ΔX和1/ΔY，整体尺度为1/(ΔXΔY)。"
+    }
   },
   {
     "page": 44,
@@ -505,7 +677,11 @@
     "sourceIds": [
       "recFourier@01:29:45"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "二维采样条件要在两个方向都满足：1/ΔX≥2μ_max、1/ΔY≥2ν_max（实际留严格余量）。"
+    }
   },
   {
     "page": 45,
@@ -517,7 +693,11 @@
       "recFourier@01:31:00",
       "recFourier@01:32:29"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "抗混叠低通必须在采样前削弱超出新采样能力的高频。"
+    }
   },
   {
     "page": 46,
@@ -529,7 +709,11 @@
       "recFourier@01:32:29",
       "recFourier@01:36:47"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页是上一页的中文归纳，最需要记的是最后两条：抗混叠发生在取样之前；成像时可在光学/传感器前端做低通，而数字缩图时也应在删除像素前低通。"
+    }
   },
   {
     "page": 47,
@@ -541,7 +725,11 @@
       "recFourier@01:33:43",
       "recFourier@01:34:37"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师指着红框解释先低通的代价与收益：牺牲部分高频，避免更严重的伪结构。"
+    }
   },
   {
     "page": 48,
@@ -553,7 +741,11 @@
       "recFourier@01:35:31",
       "recFourier@01:36:47"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "插值估计像素值，缩小前低通限制进入新网格的高频，二者职责不同。"
+    }
   },
   {
     "page": 49,
@@ -564,7 +756,11 @@
     "sourceIds": [
       "recFourier@01:37:48"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "直接每4格取一个点，原来密集的黑白格可能映射成假的大条纹；先低通是为了删除新网格无法表示的高频。"
+    }
   },
   {
     "page": 50,
@@ -575,7 +771,11 @@
     "sourceIds": [
       "recFourier@01:39:20"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "采样网格与被拍摄纹理的周期接近或角度略不同，会出现原纹理中没有的缓慢变化图案。"
+    }
   },
   {
     "page": 51,
@@ -586,7 +786,11 @@
     "sourceIds": [
       "recFourier@01:39:20"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "本页特意标明 not digitized：这是几何图案叠加造成的莫尔效应，用来帮助理解采样格与物体纹理的相互作用。"
+    }
   },
   {
     "page": 52,
@@ -597,7 +801,11 @@
     "sourceIds": [
       "recFourier@01:39:20"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "扫描报纸图片时，有两套规则结构：扫描仪的水平/垂直采样格，以及印刷照片原本的半色调网点。"
+    }
   },
   {
     "page": 53,
@@ -610,7 +818,11 @@
       "recFourier@01:40:35",
       "recFourier@01:45:53"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 2,
+      "text": "老师在录音01:45:53特别说，考试会问零频信号的含义：按本课未归一化正变换，F(0,0)是像素总和，F(0,0)/(MN)才是平均灰度。"
+    }
   },
   {
     "page": 54,
@@ -621,7 +833,11 @@
     "sourceIds": [
       "recFourier@01:40:35"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "两个方向的频率格点间隔分别 Δu=1/(MΔT)、Δv=1/(NΔZ)。"
+    }
   },
   {
     "page": 55,
@@ -632,7 +848,11 @@
     "sourceIds": [
       "recFourier@01:42:04"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "二维 DFT 可分离：先对每一行做一维 DFT，得到一个方向已经是频率、另一个方向仍是位置的中间数组，再沿另一方向做 DFT，得到 F(u,v)；先列后行也一样。"
+    }
   },
   {
     "page": 56,
@@ -644,7 +864,11 @@
       "recFourier@01:42:47",
       "recFreq@27:19"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例：把一个目标在画面里平移10像素，在无裁剪且边界约定一致的理想情形下，|F|不变，但相位带有线性变化。"
+    }
   },
   {
     "page": 57,
@@ -655,7 +879,11 @@
     "sourceIds": [
       "recFourier@01:44:50"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上方用极坐标写旋转：图像绕原点转过 θ₀，其二维傅里叶谱也转过相同角度；频谱不是永远与原图整体旋转方向相反。"
+    }
   },
   {
     "page": 58,
@@ -667,7 +895,11 @@
       "recFourier@01:46:47",
       "recFreq@06:45"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这一页的两组等式强调 DFT 的周期性：频率坐标 u 增加 M、v 增加 N，得到的谱值不变；与之对应，有限 M×N 数组被解释为在空间上周期延拓。"
+    }
   },
   {
     "page": 59,
@@ -678,7 +910,11 @@
     "sourceIds": [
       "recFourier@01:47:58"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "从图中的一维频谱读起：未移位时，零频放在数组起点，负频率的那一半排在后面；交换前后两半后，零频移到中间，左右便于对称观察。"
+    }
   },
   {
     "page": 60,
@@ -690,7 +926,11 @@
       "recFourier@01:48:33",
       "recFreq@10:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "将图像乘 (−1)^(m+n) 后再变换，可在偶数尺寸条件下把零频搬到 (M/2,N/2)，得到中央完整的一团低频结构。"
+    }
   },
   {
     "page": 61,
@@ -702,7 +942,11 @@
       "recFreq@08:02",
       "recFreq@21:22"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "F=R+jI=|F|e^(jφ)，幅值 |F|=√(R²+I²) 表示这个频率分量有多强；φ 表示该正弦分量相对于原点的位移；功率谱 P=|F|²，是幅值的平方，不能把三者混叫成同一个量。"
+    }
   },
   {
     "page": 62,
@@ -714,7 +958,11 @@
       "recFreq@08:45",
       "recFreq@11:02"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "这三种外观来自同一个频谱的不同显示方式：中心化重排坐标，对数压缩显示动态范围。"
+    }
   },
   {
     "page": 63,
@@ -726,7 +974,11 @@
       "recFreq@10:36",
       "recFreq@11:02"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "横条在水平方向宽，所以对应频谱在该频率方向较窄；条带在竖向薄，所以频谱在竖直频率方向展开得更宽。"
+    }
   },
   {
     "page": 64,
@@ -738,7 +990,11 @@
       "recFreq@11:35",
       "recFreq@12:27"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "由此应区分“平移改相位”与“旋转改频率方向”。"
+    }
   },
   {
     "page": 65,
@@ -749,7 +1005,11 @@
     "sourceIds": [
       "recFreq@13:33"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "幅值告诉我们：构成图像的某个正弦纹理占多大比例；相位告诉我们：这个纹理相对于坐标原点从哪里开始。"
+    }
   },
   {
     "page": 66,
@@ -760,7 +1020,11 @@
     "sourceIds": [
       "recFreq@13:33"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如同一个竖条向右平移，频谱幅值不变而相位改变；而把所有频率幅值都放大两倍，重建图也整体乘二。"
+    }
   },
   {
     "page": 67,
@@ -772,7 +1036,11 @@
       "recFreq@15:00",
       "recFreq@16:24"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师用交换实验说明相位承载很多结构信息。"
+    }
   },
   {
     "page": 68,
@@ -784,7 +1052,11 @@
       "recFreq@17:35",
       "recFreq@19:00"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "红框是二维卷积定理：空间域卷积 f★h 对应频域逐元素乘积 FH；反过来，空间域逐元素相乘对应频域卷积，并有与变换归一化约定相关的 1/(MN) 因子。"
+    }
   },
   {
     "page": 69,
@@ -796,7 +1068,11 @@
       "recFreq@20:22",
       "recFreq@21:22"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图下的蓝色条件 P≥A+B−1 正是避免这种回卷所需的最短长度。"
+    }
   },
   {
     "page": 70,
@@ -807,7 +1083,11 @@
     "sourceIds": [
       "recFreq@21:22"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "可以用一个例子串起来：读入图片 → FFT 得复数谱 → abs 得幅值、angle 得相位 → abs² 得功率；F(0,0)/(MN) 得平均灰度；频域乘滤波器前考虑补零。"
+    }
   },
   {
     "page": 71,
@@ -819,7 +1099,11 @@
       "recFreq@22:22",
       "recFreq@23:30"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "亮线一般沿边缘法向，而非沿边缘本身。"
+    }
   },
   {
     "page": 72,
@@ -830,7 +1114,11 @@
     "sourceIds": [
       "recFreq@24:03"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "做这类配对先看“是否周期”，再看“是否有主方向”，最后比较谱的密集/分散程度。"
+    }
   },
   {
     "page": 73,
@@ -843,7 +1131,11 @@
       "recFreq@26:35",
       "recFreq@27:19"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页五个自检可以直接口答：水平条纹的谱峰沿竖直频率轴，竖直条纹反之；混叠使多个原信号产生相同采样结果，因此不能唯一恢复；补零使频谱取样更密，或为线性卷积腾出长度，但不会增加实测细节；理想平移保持幅值而改变相位；长度 A、B 的线性卷积至少用 A+B−1 点。"
+    }
   },
   {
     "page": 74,
@@ -855,6 +1147,10 @@
       "recFreq@13:33",
       "recFreq@16:24"
     ],
-    "visualReviewed": true
+    "visualReviewed": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "正确主线仍是：低频慢变化、高频快变化，幅值表示成分强弱，相位对结构位置重要。"
+    }
   }
 ]

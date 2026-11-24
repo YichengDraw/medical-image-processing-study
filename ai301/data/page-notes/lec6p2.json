@@ -20,7 +20,11 @@
       "ai301-r08-s119"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "流水线充分工作时，五条不同指令可以各占一个阶段，同时向前推进。"
+    }
   },
   {
     "page": 2,
@@ -51,7 +55,11 @@
       "ai301-r08-s137"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "组合逻辑负责在这一拍算结果，流水寄存器在时钟边沿把结果接住，留给下一阶段在下一拍使用。"
+    }
   },
   {
     "page": 3,
@@ -75,7 +83,11 @@
       "ai301-r08-s148"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "数法很直接：把穿过蓝色竖条、后面还要用的信息宽度相加。"
+    }
   },
   {
     "page": 4,
@@ -94,7 +106,11 @@
       "ai301-r08-s155"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "沿一行看一条指令如何经历五阶段；沿一列看同一拍里各条指令占用哪个阶段。"
+    }
   },
   {
     "page": 5,
@@ -114,7 +130,11 @@
       "ai301-r08-s163"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "多周期图展示一段时间里的推进过程；单周期流水线图像一张硬件截图，展示某一拍各处在做什么。"
+    }
   },
   {
     "page": 6,
@@ -129,7 +149,11 @@
       "ai301-r08-s166"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "PC 给出指令地址，Instruction memory 读出 32 位机器指令，同时加法器计算 PC+4。"
+    }
   },
   {
     "page": 10,
@@ -143,7 +167,11 @@
       "ai301-r09-s005"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 2,
+      "text": "修复办法是把写回目标也当作这条指令的随行信息，保存在各级流水寄存器中。"
+    }
   },
   {
     "page": 11,
@@ -161,7 +189,11 @@
       "ai301-r09-s009"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "看图底部新增的蓝线：目的寄存器编号依次经过 ID/EX、EX/MEM、MEM/WB，再返回寄存器堆的 Write register 端。"
+    }
   },
   {
     "page": 12,
@@ -176,7 +208,11 @@
       "ai301-r09-s013"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 2,
+      "text": "例如 sw $5,12($1)，$1=100、$5=42：ALU 算出地址 112，下方路径带着数据 42。"
+    }
   },
   {
     "page": 13,
@@ -190,7 +226,11 @@
       "ai301-r09-s013"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "EX/MEM 一路送出 ALU 算好的地址，另一路送出从 rt 读到的待写数据；MemWrite 控制本次写入。"
+    }
   },
   {
     "page": 14,
@@ -204,7 +244,11 @@
       "ai301-r09-s016"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页整张图都没有高亮，因为 sw 已在 MEM 完成内存写入，到了 WB 只留下一个空的阶段位置。"
+    }
   },
   {
     "page": 15,
@@ -220,7 +264,11 @@
       "ai301-r09-s020"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "横着追踪一条指令，能看到它的五阶段过程；竖着查看某个 CC，能看到这一拍的资源分配。"
+    }
   },
   {
     "page": 16,
@@ -235,7 +283,11 @@
       "ai301-r09-s020"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 2,
+      "text": "老师把两种画法作了比较：前页画出资源，适合判断硬件使用；本页用阶段标签，适合看推进顺序。"
+    }
   },
   {
     "page": 17,
@@ -252,7 +304,11 @@
       "ai301-r09-s025"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师把它叫作从多周期图中取出的“竖切片”：把同一列的五个阶段放回同一套数据通路。"
+    }
   },
   {
     "page": 18,
@@ -286,7 +342,11 @@
       "ai301-r09-s046"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师让大家按实际使用阶段分组：EX 使用 RegDst、ALUOp、ALUSrc；MEM 使用 Branch、MemRead、MemWrite；WB 使用 MemtoReg、RegWrite。"
+    }
   },
   {
     "page": 19,
@@ -312,7 +372,11 @@
       "ai301-r09-s049"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "拿 lw 这一行练习：EX 设置 RegDst=0、ALUOp=00、ALUSrc=1，表示选 rt、做加法、使用立即数；MEM 设置 Branch=0、MemRead=1、MemWrite=0，读取内存；WB 设置 RegWrite=1、MemtoReg=1，把内存读数写回。"
+    }
   },
   {
     "page": 20,
@@ -338,7 +402,11 @@
       "ai301-r09-s063"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "沿蓝线从左往右数：ID/EX 保存 9 位；EX 用掉 RegDst、2 位 ALUOp、ALUSrc 共 4 位，剩下 M+WB 的 5 位进入 EX/MEM；MEM 再用掉 Branch、MemRead、MemWrite 共 3 位，最后 2 位进入 MEM/WB。"
+    }
   },
   {
     "page": 21,
@@ -353,6 +421,10 @@
       "ai301-r09-s065"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "黑线传数据，蓝线传控制；ID 中的 Control 根据指令生成控制位，各级流水寄存器把控制和对应的数据一起保存。"
+    }
   }
 ]

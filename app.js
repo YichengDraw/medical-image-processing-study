@@ -114,6 +114,14 @@ function sourceMarkup(ids,external=[]){
  if(!rows&&!links)return '';
  return '<details class="inline-sources"><summary>出处与核对线索'+(ids?.length?' · '+ids.length+'段课堂转写':'')+'</summary><div class="source-caption">按本页内容关联课堂片段，时间戳用于定位录音。下方保留自动转写原文，省略处用…标记。</div>'+rows+links+'</details>';
 }
+function noteParagraphsMarkup(note){
+ const chosen=note.keySentence;
+ return note.paragraphs.map((text,index)=>{
+  const start=chosen?.paragraph===index&&chosen.text?text.indexOf(chosen.text):-1;
+  const content=start<0?esc(text):esc(text.slice(0,start))+'<mark class="key-sentence" title="本页关键句">'+esc(chosen.text)+'</mark>'+esc(text.slice(start+chosen.text.length));
+  return '<p>'+content+'</p>';
+ }).join('');
+}
 function notes(){
  const grid=$("#study-grid"),panel=$("#companion-panel"),d=S.deck,p=slide();
  if(!pageHasAudio(d,p)||!S.panel){panel.classList.add("hidden");grid.classList.add("no-companion");return}
@@ -123,7 +131,7 @@ function notes(){
  $("#source-badge").classList.toggle("verified",Boolean(n?.sourceIds?.length));
  let html='<article class="page-explanation"><div class="explanation-page">'+esc(d.group)+' · 第 '+S.page+' 页</div><h2>'+esc(p.title)+'</h2>';
  const scope=noteSourceScope(d,p);if(scope)html+='<div class="explanation-page">来源性质：'+esc(scope)+'</div>';
- if(n){html+=n.paragraphs.map(t=>'<p>'+esc(t)+'</p>').join('');html+=sourceMarkup(n.sourceIds,n.externalSources||[])}
+ if(n){html+=noteParagraphsMarkup(n);html+=sourceMarkup(n.sourceIds,n.externalSources||[])}
  else html+='<p>本页尚无可核对的逐页注释，请以左侧原始课件为准。</p>';
  html+='</article>';
  $("#guide-container").innerHTML=html;$(".companion-scroll").scrollTop=0;
@@ -382,7 +390,7 @@ function bind(){
 }
 (async function init(){
  try{
-  const response=await fetch(course.data+"?v=20261123");if(!response.ok)throw Error("课程索引请求失败："+response.status);
+  const response=await fetch(course.data+"?v=20261124-key-sentence");if(!response.ok)throw Error("课程索引请求失败："+response.status);
   S.data=await response.json();if(S.data.schemaVersion!==2)throw Error("课程数据版本未更新，请刷新页面");$("#fit-mode").textContent=S.fit==="page"?"适应页面":"适应宽度";
   if(window.pdfjsLib)pdfjsLib.GlobalWorkerOptions.workerSrc="assets/vendor/pdf.worker.min.js";
   courseInit();navInit();bind();updateLibraryToggle();updateTheme();const [id,p]=route();navigate(id,p,false);routeWrite(id,S.page,true);

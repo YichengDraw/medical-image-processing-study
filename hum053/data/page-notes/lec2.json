@@ -12,7 +12,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "中国哲学导论课程大纲"
+    "title": "中国哲学导论课程大纲",
+    "keySentence": {
+      "paragraph": 1,
+      "text": "当前范围与占比以你转述的最新通知为准：孔子、孟子、庄子，覆盖本周已讲内容，50%。"
+    }
   },
   {
     "page": 3,
@@ -28,7 +32,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "古希腊的sophia概念：哲学作为生活方式"
+    "title": "古希腊的sophia概念：哲学作为生活方式",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "9月16日课堂特别指出，这种智慧形象起初接近日常生活中有经验、有见识的人，后来又出现与日常事务保持距离的哲学家形象。"
+    }
   },
   {
     "page": 4,
@@ -42,7 +50,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "哲学始于惊奇万物如其所是"
+    "title": "哲学始于惊奇万物如其所是",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师强调，哲学问题可以从自然的常见状态产生，而不必只围绕超常事件。"
+    }
   },
   {
     "page": 5,
@@ -57,7 +69,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "黑格尔：希腊精神的“惊奇”"
+    "title": "黑格尔：希腊精神的“惊奇”",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这里回到黑格尔对希腊精神的描述：哲学会对“自然中自然的东西”感到惊奇。"
+    }
   },
   {
     "page": 6,
@@ -72,7 +88,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "亚里士多德：第一哲学与其他科学"
+    "title": "亚里士多德：第一哲学与其他科学",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "9月16日课堂再次用苹果区分研究层次：物理研究运动，数学研究数量或形状，第一哲学则追问事物作为这种事物如何被理解。"
+    }
   },
   {
     "page": 7,
@@ -87,7 +107,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "柏拉图-亚里士多德传统中的哲学概念"
+    "title": "柏拉图-亚里士多德传统中的哲学概念",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这张总结页把生活智慧、理论生活以及本原研究放在一个变化过程中。"
+    }
   },
   {
     "page": 8,
@@ -102,7 +126,11 @@
     ],
     "visualReviewed": true,
     "audioSupported": true,
-    "title": "哲学家：生活的旁观者？"
+    "title": "哲学家：生活的旁观者？",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "第二讲强调，哲学不仅关乎知道多少，也关乎为什么追求知识：赚钱、赢得荣誉与理解问题，是可以区分的目的。"
+    }
   },
   {
     "page": 9,
@@ -117,7 +145,11 @@
     "visualReviewed": true,
     "audioSupported": true,
     "coverageBasis": "本页与前次课件内容重复，讲解采用9月9日对应原文的课堂片段。",
-    "title": "苏格拉底的次航"
+    "title": "苏格拉底的次航",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "苏格拉底转向在道理中追问真实，并检查自己的判断是否一致。"
+    }
   },
   {
     "page": 10,
@@ -132,7 +164,11 @@
     "visualReviewed": true,
     "audioSupported": true,
     "coverageBasis": "本页与前次课件内容重复，讲解采用9月9日对应原文的课堂片段。",
-    "title": "对城邦的省察"
+    "title": "对城邦的省察",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "问题是：人是否只追求财富和名声，而忽略自己认定这些东西好的依据。"
+    }
   },
   {
     "page": 11,
@@ -147,7 +183,11 @@
     "visualReviewed": true,
     "audioSupported": true,
     "coverageBasis": "本页与前次课件内容重复，讲解采用9月9日对应原文的课堂片段。",
-    "title": "省察人生的职责"
+    "title": "省察人生的职责",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "苏格拉底认为，把自己尚不知道的事情当成确定知识，是需要警惕的状态。"
+    }
   },
   {
     "page": 12,
@@ -162,6 +202,10 @@
     "visualReviewed": true,
     "audioSupported": true,
     "coverageBasis": "本页与前次课件内容重复，讲解采用9月9日对应原文的课堂片段。",
-    "title": "苏格拉底与雅典城邦：谁是正义的？"
+    "title": "苏格拉底与雅典城邦：谁是正义的？",
+    "keySentence": {
+      "paragraph": 0,
+      "text": "城邦将苏格拉底判为不义，而他的同伴将他称为最正义的人，冲突落在判断标准上。"
+    }
   }
 ]

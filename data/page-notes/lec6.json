@@ -11,7 +11,11 @@
       "recColorMorph@31:02"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如想调亮一张彩色图，在RGB中有三个分量要协调，在HSI中可关注单独的Intensity分量。"
+    }
   },
   {
     "page": 2,
@@ -23,7 +27,11 @@
       "recRestColor@01:22:13"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如同样较亮的区域可以呈红、绿或蓝，单一灰度不能完整区分这些外观；这正是下一页介绍彩色作为descriptor的动机。"
+    }
   },
   {
     "page": 3,
@@ -36,7 +44,11 @@
       "recRestColor@01:23:18"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "两条motivation分别讲任务价值和感知价值：颜色有助于识别、提取物体；课件还用可分辨的色彩组合多于灰度层次来解释为什么彩色显示能帮助观察。"
+    }
   },
   {
     "page": 4,
@@ -48,7 +60,11 @@
       "recRestColor@01:23:40"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这一页只有灰度草地图，要先观察再翻页：左下偏中的小动物与周围草的明暗、纹理接近，轮廓不容易立即跳出来。"
+    }
   },
   {
     "page": 5,
@@ -60,7 +76,11 @@
       "recRestColor@01:23:40"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "与上一页是同一场景：草地变成绿色，左下偏中的兔子呈灰褐色，目标与背景的差别更明显。"
+    }
   },
   {
     "page": 6,
@@ -72,7 +92,11 @@
       "recRestColor@01:24:27"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "它表达的是白光中包含不同波长成分，而非物体原本只携带一种固定“颜色数字”。"
+    }
   },
   {
     "page": 7,
@@ -84,7 +108,11 @@
       "recRestColor@01:24:27"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "沿箭头看：白光照向绿色物体，其余部分被吸收，向眼睛反射的绿光使物体呈绿色。"
+    }
   },
   {
     "page": 8,
@@ -97,7 +125,11 @@
       "recRestColor@01:27:35"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页按课堂口径区分Radiance、Luminance、Brightness：前者强调光的能量，第二个强调经过人眼视觉敏感度加权的量，第三个是主观明暗判断。"
+    }
   },
   {
     "page": 9,
@@ -109,7 +141,11 @@
       "recRestColor@01:28:24"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "下方电磁谱先给从射线到无线电的总体范围，再把可见部分放大成彩色条；上方文字将本课讨论的可见光约定在400–700 nm左右。"
+    }
   },
   {
     "page": 10,
@@ -121,7 +157,11 @@
       "recRestColor@01:28:24"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "黄色句子是关键：短、中、长波长视锥的光谱敏感度彼此重叠，不是三个完全不相交的波长箱子。"
+    }
   },
   {
     "page": 11,
@@ -133,7 +173,11 @@
       "recRestColor@01:29:54"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师用三类不同敏感度的共同响应说明颜色感知，而不是靠单个细胞独立报一个颜色名字。"
+    }
   },
   {
     "page": 12,
@@ -146,7 +190,11 @@
       "recRestColor@01:32:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "这页要联系第17页的色域三角形理解：三个固定端点组合的范围不覆盖整个色区。"
+    }
   },
   {
     "page": 13,
@@ -159,7 +207,11 @@
       "recRestColor@01:33:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "发光的三原色用R、G、B；颜料通过吸收一种光、反射其余部分来呈色，课件用cyan、magenta、yellow（CMY）描述这种减色思路，并写合适混合得到黑色。"
+    }
   },
   {
     "page": 14,
@@ -171,7 +223,11 @@
       "recRestColor@01:33:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右上图是光的加色：R+G为黄，G+B为青，R+B为品红，三者重叠中心为白；右下图是颜料减色示意，CMY重叠中心为黑。"
+    }
   },
   {
     "page": 15,
@@ -185,7 +241,11 @@
       "recRestColor@01:35:44"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "Brightness描述不带颜色的明暗强弱；Hue（色调）描述主导颜色；Saturation（饱和度）描述相对纯度或混入白光的程度。"
+    }
   },
   {
     "page": 16,
@@ -197,7 +257,11 @@
       "recRestColor@01:36:34"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "先注意每组总和为100%，因此只有两个独立比例，另一个由总和约束决定。"
+    }
   },
   {
     "page": 17,
@@ -209,7 +273,11 @@
       "recRestColor@01:37:49"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例：要求再现的颜色若落在这组三原色三角形外，仅调整三者比例不能将其移入可再现集合。"
+    }
   },
   {
     "page": 18,
@@ -221,7 +289,11 @@
       "recRestColor@01:38:59"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "同一张色域图在这页用来回答打印范围为何不规则：课件说打印涉及additive与subtractive混合，比显示颜色更难控制。"
+    }
   },
   {
     "page": 19,
@@ -233,7 +305,11 @@
       "recRestColor@01:38:59"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "后面的用途不是背一个孤立坐标，而是由白点向边界连线，比较同一色调从混白到较纯的变化。"
+    }
   },
   {
     "page": 20,
@@ -245,7 +321,11 @@
       "recRestColor@01:38:59"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "两条几何规则要分开：连接任意两种颜色的线段，表示它们加色混合可得到的颜色；从PEE连到边界某点，则沿这一方向得到该光谱颜色的不同混白程度。"
+    }
   },
   {
     "page": 21,
@@ -257,7 +337,11 @@
       "recRestColor@01:40:40"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这一页把上一页两点的线段推广为三点的三角形：三个给定颜色作顶点，它们混合得到的颜色落在三角形所包围的区域。"
+    }
   },
   {
     "page": 22,
@@ -269,7 +353,11 @@
       "recRestColor@01:40:40"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页把三类模型与用途配对：RGB用于显示器、视频相机；CMY/CMYK用于彩色打印；HSI更接近人描述颜色的方式。"
+    }
   },
   {
     "page": 23,
@@ -281,7 +369,11 @@
       "recRestColor@01:42:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "RGB把每个颜色表示成红、绿、蓝三个主分量，放进Cartesian（笛卡尔）坐标系。"
+    }
   },
   {
     "page": 24,
@@ -293,7 +385,11 @@
       "recRestColor@01:42:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "在立方体上逐个定位：原点是Black(0,0,0)，最远角是White(1,1,1)，三个单轴角是红、绿、蓝，双轴同时为1的角是黄、青、品红。"
+    }
   },
   {
     "page": 25,
@@ -305,7 +401,11 @@
       "recRestColor@01:42:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课件的24-bit指每像素总共24位：三个通道各8位，因此可编码的组合数是(2⁸)³=2²⁴=16,777,216，不是24个灰度等级。"
+    }
   },
   {
     "page": 26,
@@ -317,7 +417,11 @@
       "recRestColor@01:42:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "Red分量均匀，Green左右渐变，Blue上下渐变；各分量图用灰度展示该通道数值，再由显示器按RGB组合为最终颜色。"
+    }
   },
   {
     "page": 27,
@@ -329,7 +433,11 @@
       "recRestColor@01:43:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "中间向量式写得很直接：在RGB已归一化到0–1时，C=1−R，M=1−G，Y=1−B。"
+    }
   },
   {
     "page": 28,
@@ -342,7 +450,11 @@
       "recRestColor@01:44:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "RGB适合按三通道表示颜色，HSI方便按人的颜色感受来操作。"
+    }
   },
   {
     "page": 29,
@@ -355,7 +467,11 @@
       "recRestColor@01:44:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页重新定义HSI三个字母：Hue描述主导纯色，Saturation描述颜色被白光稀释多少，Intensity用来表示与灰度图类似的无彩色强度。"
+    }
   },
   {
     "page": 30,
@@ -367,7 +483,11 @@
       "recRestColor@01:45:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师用“立起来”帮助理解强度：从三分量都0的黑点，沿R=G=B的轴向三分量都1的白点走，明暗随之变化。"
+    }
   },
   {
     "page": 31,
@@ -379,7 +499,11 @@
       "recRestColor@01:45:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例：同一强度截面上，中心是无彩色，往纯色方向移动增加彩色成分，不能把沿轴变亮误当作饱和度增大。"
+    }
   },
   {
     "page": 32,
@@ -391,7 +515,11 @@
       "recRestColor@01:45:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课件借这一面说明：黑白只改变无彩色部分，不提供新的色调，所以在示意的cyan方向上混合黑或白，仍围绕同一青色色调变化。"
+    }
   },
   {
     "page": 33,
@@ -403,7 +531,11 @@
       "recRestColor@01:46:41"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例：围着中心转动改变色调，朝中心收回趋于灰色，上下换强度平面改变明暗。"
+    }
   },
   {
     "page": 34,
@@ -415,7 +547,11 @@
       "recRestColor@01:48:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师在这页重复“高度看I、角度看H、离中心远近理解S”。"
+    }
   },
   {
     "page": 35,
@@ -427,7 +563,11 @@
       "recRestColor@01:48:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "I=(R+G+B)/3是三分量平均；S=1−3min(R,G,B)/(R+G+B)体现相对纯度；H先通过反余弦得到θ，再用B≤G或B>G选择θ还是360°−θ，区分色轮的两侧。"
+    }
   },
   {
     "page": 36,
@@ -439,7 +579,11 @@
       "recRestColor@01:48:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "先求B=I(1−S)，再用含cos H与cos(60°−H)的式子求R，最后用G=3I−(R+B)补出第三分量，以维持三分量平均为I。"
+    }
   },
   {
     "page": 37,
@@ -451,7 +595,11 @@
       "recRestColor@01:48:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "第一步H←H−120°是把角度移到本扇区的局部范围；此时先求R=I(1−S)，再求G，最后由B=3I−(R+G)补齐。"
+    }
   },
   {
     "page": 38,
@@ -463,7 +611,11 @@
       "recRestColor@01:48:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "第三个BR sector覆盖240°≤H<360°，先令H←H−240°；G=I(1−S)，B使用余弦比例式，R再由3I−(G+B)得到。"
+    }
   },
   {
     "page": 39,
@@ -475,7 +627,11 @@
       "recRestColor@01:48:42"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "三张下图都用灰度显示数值，不能把H图的亮处直接叫“颜色更亮”：H灰度编码的是角度，S编码纯度，只有I对应强度。"
+    }
   },
   {
     "page": 40,
@@ -488,7 +644,11 @@
       "recRestColor@01:49:19"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "跟着三块框图走：输入RGB image先转HSI，在中间的Manipulations环节调整需要的分量，再转回RGB供显示。"
+    }
   },
   {
     "page": 41,
@@ -500,7 +660,11 @@
       "recRestColor@01:49:19"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "按第35页式子，白色(1,1,1)的S=0、I=1；它没有确定的红绿蓝色调，所以H图在该处的显示值不能解释成某一种有意义的色相。"
+    }
   },
   {
     "page": 42,
@@ -514,7 +678,11 @@
       "recColorMorph@00:02"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师用这组图收束到一个容易误解的点：S=0时不能由H判定颜色，但I仍决定灰度亮暗，并非“不管I是多少都同一灰色”。"
+    }
   },
   {
     "page": 43,
@@ -527,7 +695,11 @@
       "recColorMorph@01:07"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "伪彩色（Pseudocolor，也叫False color）是给原来的灰度值指定颜色。"
+    }
   },
   {
     "page": 44,
@@ -539,7 +711,11 @@
       "recColorMorph@00:02"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "落在平面上方和下方的像素分别配色，就把连续或多级灰度变成了几个易认的颜色区域。"
+    }
   },
   {
     "page": 45,
@@ -551,7 +727,11 @@
       "recColorMorph@00:02"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "超过这个高度的部分与其余部分被分开，右图则把同一个规则画成阶梯：阈值以下输出颜色c₁，以上输出c₂。"
+    }
   },
   {
     "page": 46,
@@ -564,7 +744,11 @@
       "recColorMorph@01:07"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师借这组图说明伪彩色为什么有用：人可以更快区分强度层次。"
+    }
   },
   {
     "page": 47,
@@ -576,7 +760,11 @@
       "recColorMorph@01:07"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页的规则非常直接：把强度255显示成黄色，其余全部显示成蓝色。"
+    }
   },
   {
     "page": 48,
@@ -588,7 +776,11 @@
       "recColorMorph@02:21"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师用天气预报作直接例子：如果降雨量只画成一片深浅灰，很难迅速找到强降雨区；配上从冷色到暖色的色标后，关注的高值区域更醒目。"
+    }
   },
   {
     "page": 49,
@@ -600,7 +792,11 @@
       "recColorMorph@02:59"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "框图从一个输入f(x,y)分成三路：同一灰度分别经过Red、Green、Blue transformation，再组成一个RGB像素。"
+    }
   },
   {
     "page": 50,
@@ -612,7 +808,11 @@
       "recColorMorph@02:59"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "它们用于后面比较不同伪彩色映射：同一灰度差异，在某套颜色规则里可能醒目，在另一套规则里可能被弱化。"
+    }
   },
   {
     "page": 51,
@@ -624,7 +824,11 @@
       "recColorMorph@04:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师说可以移动曲线的相位，使原来不显眼的灰度段出现明显颜色变化。"
+    }
   },
   {
     "page": 52,
@@ -637,7 +841,11 @@
       "recColorMorph@06:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右侧曲线说明了原因：周期函数会让不同灰度位置得到相近的RGB组合，于是原来灰度不同的区域可能显示成相近颜色。"
+    }
   },
   {
     "page": 53,
@@ -650,7 +858,11 @@
       "recColorMorph@06:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "换一套颜色映射后，观察者更容易把该位置与行李内容联系起来；这里改变的是已有数据的显示和分组方式。"
+    }
   },
   {
     "page": 54,
@@ -662,7 +874,11 @@
       "recColorMorph@06:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师在这里把伪彩色的思路扩展为多波段合成：从不同光谱通道取数，再分配给显示用的RGB。"
+    }
   },
   {
     "page": 55,
@@ -674,7 +890,11 @@
       "recColorMorph@07:21"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师说明这种合成可以包含非可见光信息，目的在于给人一个有意义的显示。"
+    }
   },
   {
     "page": 56,
@@ -686,7 +906,11 @@
       "recColorMorph@08:23"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "c=[R,G,B]ᵀ表示一个像素的颜色向量；写成c(x,y)后，三个分量都位于同一个空间坐标。"
+    }
   },
   {
     "page": 57,
@@ -698,7 +922,11 @@
       "recColorMorph@08:23"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如做3×3均值滤波时，可在R、G、B上分别取同样的3×3范围，得到一个新的三分量像素。"
+    }
   },
   {
     "page": 58,
@@ -711,7 +939,11 @@
       "recColorMorph@09:57"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上面的g=T[f]是图像处理的总写法，下面将彩色映射拆开：输出第i个分量sᵢ由Tᵢ(r₁,…,rₙ)计算。"
+    }
   },
   {
     "page": 59,
@@ -724,7 +956,11 @@
       "recColorMorph@11:06"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师特别解释了Hue图的两个特点：H是角度，接近0°与360°的相近颜色在数值编码上可能显得相差很大；S=0时没有唯一色调。"
+    }
   },
   {
     "page": 60,
@@ -737,7 +973,11 @@
       "recColorMorph@12:18"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "RGB三通道都乘k；CMY写成sᵢ=krᵢ+(1−k)，因为它们与RGB是互补表示；HSI则保持H、S，只把I乘k。"
+    }
   },
   {
     "page": 61,
@@ -750,7 +990,11 @@
       "recColorMorph@14:11"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "归一化RGB的补色可以逐通道取1−R、1−G、1−B；例如纯红(1,0,0)变成青色(0,1,1)，这也会把图像的明暗关系反过来。"
+    }
   },
   {
     "page": 62,
@@ -763,7 +1007,11 @@
       "recColorMorph@15:32"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右上曲线给出两套做法：RGB用下降直线；HSI的H平移半个色环并回绕，I变成1−I，S沿对角线保持原值。"
+    }
   },
   {
     "page": 63,
@@ -776,7 +1024,11 @@
       "recColorMorph@17:24"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "彩色分层（Color slicing）先在颜色空间选定一个目标范围：范围内保留原颜色，范围外变成中灰。"
+    }
   },
   {
     "page": 64,
@@ -788,7 +1040,11 @@
       "recColorMorph@17:24"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上式用立方体（Cube）圈定颜色：每个通道都必须满足|rⱼ−aⱼ|≤W/2；下式用球（Sphere）：各通道偏差的平方和不超过R₀²。"
+    }
   },
   {
     "page": 65,
@@ -800,7 +1056,11 @@
       "recColorMorph@18:31"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如草莓上的高光或暗部可能偏离目标红色，仍被变灰；这不是按“整颗草莓”做语义识别，而是按每个像素到目标颜色的距离做选择。"
+    }
   },
   {
     "page": 66,
@@ -812,7 +1072,11 @@
       "recColorMorph@19:15"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "Tonal range或key-type描述图像的颜色强度主要分布在哪一段：High-key集中在亮区，Low-key集中在暗区；这里的tone与表示颜色角度的Hue不同。"
+    }
   },
   {
     "page": 67,
@@ -824,7 +1088,11 @@
       "recColorMorph@20:29"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左图的花与背景看起来较平，右图经过S形曲线后明暗差别更强；右侧曲线中间较陡，两端较平，表示拉开中间强度的差异，同时压缩部分暗端和亮端范围。"
+    }
   },
   {
     "page": 68,
@@ -836,7 +1104,11 @@
       "recColorMorph@20:29"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右侧曲线在低中强度处输出偏低，接近亮端时变陡，因而能把原来挤在高强度附近的差异展开。"
+    }
   },
   {
     "page": 69,
@@ -848,7 +1120,11 @@
       "recColorMorph@20:29"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左图的岩石、溪流和树叶大多藏在暗部，右图通过向上弯的曲线提亮低中强度，显出更多可见层次。"
+    }
   },
   {
     "page": 70,
@@ -861,7 +1137,11 @@
       "recColorMorph@22:29"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图中品红位于红与蓝之间，对面是绿；右侧直接给出降低品红的两条思路：减少红和蓝，或增加互补的绿色分量。"
+    }
   },
   {
     "page": 71,
@@ -873,7 +1153,11 @@
       "recColorMorph@22:29"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "它们展示的是CMYK颜色平衡例子：只改一类分量，就足以让整张照片的肤色和背景明显变化。"
+    }
   },
   {
     "page": 72,
@@ -886,7 +1170,11 @@
       "recColorMorph@25:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例：让这张玻璃器皿照片的明暗层次更明显时，先只均衡I，再转回RGB；如果还想让颜色更鲜明，可另作S调整。"
+    }
   },
   {
     "page": 73,
@@ -898,7 +1186,11 @@
       "recColorMorph@25:29"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "展开后就是同一邻域内分别平均R、G、B：输出仍是一个三分量向量，三个通道都在各自的平面里累加。"
+    }
   },
   {
     "page": 74,
@@ -910,7 +1202,11 @@
       "recColorMorph@25:29"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如帽子边缘在三张分量图里有各自的强度变化，均值滤波会分别对这些变化作局部平均，再把结果合成为彩色。"
+    }
   },
   {
     "page": 75,
@@ -923,7 +1219,11 @@
       "recColorMorph@26:44"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如只想让明暗变得平滑，可对最右边的I图滤波，同时保留原H、S，再转换回RGB。"
+    }
   },
   {
     "page": 76,
@@ -936,7 +1236,11 @@
       "recColorMorph@26:44"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "一个直接例子是相邻纯红与纯蓝像素：两者I都为1/3，只平均I不会混合它们的色调；直接平均RGB却得到紫色(0.5,0,0.5)。"
+    }
   },
   {
     "page": 77,
@@ -948,7 +1252,11 @@
       "recColorMorph@26:44"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "向量c的拉普拉斯按分量计算：对R、G、B各自做空间二阶导数，再把三个结果组成向量。"
+    }
   },
   {
     "page": 78,
@@ -960,7 +1268,11 @@
       "recColorMorph@26:44"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师说这与前面平滑的比较是一类问题：处理哪个颜色空间、哪些分量，会改变最终结果。"
+    }
   },
   {
     "page": 79,
@@ -972,7 +1284,11 @@
       "recColorMorph@27:40"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如输入图只有某一个RGB通道受明显污染，不能直接假设转成HSI后也只剩一个对应的“脏通道”；H、S、I都由RGB联合计算。"
+    }
   },
   {
     "page": 80,
@@ -984,7 +1300,11 @@
       "recColorMorph@28:37"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师说在这组图里，噪声在灰度分量中比在合成彩照里更显眼。"
+    }
   },
   {
     "page": 81,
@@ -997,7 +1317,11 @@
       "recColorMorph@29:46"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "H和S明显受干扰，I看起来较平滑；课件把前者与颜色转换中的非线性运算联系起来，把后者与I=(R+G+B)/3的平均形式联系起来。"
+    }
   },
   {
     "page": 82,
@@ -1009,7 +1333,11 @@
       "recColorMorph@29:46"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "虽然最初只污染G，转换后三个HSI分量都受影响，因为计算每个分量时都用到了RGB信息。"
+    }
   },
   {
     "page": 83,
@@ -1021,6 +1349,10 @@
       "recColorMorph@31:02"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "可以用一个实际目标串起它们：想调亮照片而尽量保持颜色，考虑分离I；想突出某个灰度范围，用伪彩色；想保留红色区域，用color slicing；做滤波或转换时，再检查通道关系和噪声传播。"
+    }
   }
 ]

@@ -9,7 +9,11 @@
       "recColorMorph@32:09"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页列出的成绩构成为：出勤5%、Quiz 10%、Lab项目30%（Lab1–Lab9）、期末考试40%、期末展示15%。"
+    }
   },
   {
     "page": 2,
@@ -23,7 +27,11 @@
       "recColorMorph@35:16"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "人话就是把“想解决什么问题→如何处理图像→实现了什么效果”讲清楚。"
+    }
   },
   {
     "page": 3,
@@ -36,7 +44,11 @@
       "recColorMorph@36:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师据此计划从12月11日开始进行期末项目汇报，并提到12月18日的上机课继续汇报；11月27日不上课也在本段说明。"
+    }
   },
   {
     "page": 4,
@@ -48,7 +60,11 @@
       "recColorMorph@37:09"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "重点在于挑一个功能明确、自己能说明原理的项目。"
+    }
   },
   {
     "page": 5,
@@ -60,7 +76,11 @@
       "recColorMorph@37:09"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "可借鉴的汇报方式是“输入一张人脸图→展示关键中间步骤→给出是否戴口罩的结果”，并解释每一步解决什么问题；九格中间图能帮助观众看懂流程，而不只是相信一个最终标签。"
+    }
   },
   {
     "page": 6,
@@ -72,7 +92,11 @@
       "recColorMorph@37:09"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "一个窗口把“选图—选功能—看结果”连成了完整操作过程。"
+    }
   },
   {
     "page": 7,
@@ -84,7 +108,11 @@
       "recColorMorph@37:09"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图旁说明该学生的处理较慢，因此用进度条告诉用户程序正在运行，并区分单次处理与多种滤镜叠加后的结果。"
+    }
   },
   {
     "page": 8,
@@ -96,7 +124,11 @@
       "recColorMorph@38:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "直接例子是找到两张照片中同一栋楼的对应位置，再估计如何对齐；汇报时应说明自己的匹配与对齐办法，不能只说“把几张图放在一起”。"
+    }
   },
   {
     "page": 9,
@@ -108,7 +140,11 @@
       "recColorMorph@38:37"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "色盲视觉模拟GUI用同一张水果图片展示不同颜色感知情况下的外观；界面包含颜色选项，以及正常、色弱、色盲之间的调节。"
+    }
   },
   {
     "page": 10,
@@ -120,7 +156,11 @@
       "recColorMorph@39:14"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "与前面主要围绕像素强度和频率的处理相比，这一讲把注意力放在目标的形状、尺寸以及连通关系上。"
+    }
   },
   {
     "page": 11,
@@ -133,7 +173,11 @@
       "recColorMorph@40:33"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "蓝字的问题是“结构元素应该检查哪一种局部形状”，因此关键不只是选操作名称，还包括选模板的形状和尺度。"
+    }
   },
   {
     "page": 12,
@@ -145,7 +189,11 @@
       "recColorMorph@41:36"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图中A与B是两块前景区域：并集A∪B保留任一图中出现的前景，交集A∩B只保留共同部分；A−B留下在A里但不在B里的点，补集Aᶜ则把前景与背景交换。"
+    }
   },
   {
     "page": 13,
@@ -157,7 +205,11 @@
       "recColorMorph@41:36"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上一页讨论二值前景集合，这一页把并和交推广到同位置的灰度值：取并对应逐点max，取交对应逐点min。"
+    }
   },
   {
     "page": 14,
@@ -169,7 +221,11 @@
       "recColorMorph@42:27"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左下图把B变成B̂，公式是每个坐标b都换成−b，即关于原点反射；右下图把B平移为(B)z，所有点统一加位移z。"
+    }
   },
   {
     "page": 15,
@@ -183,7 +239,11 @@
       "recColorMorph@45:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "原点是模板对齐图像像素的参照点，老师特别说明它不一定必须位于几何中心，但必须事先指定。"
+    }
   },
   {
     "page": 16,
@@ -196,7 +256,11 @@
       "recColorMorph@46:21"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如做腐蚀，要检查模板中所有1是否都落在前景里；做膨胀则换成后面定义的交叠条件。"
+    }
   },
   {
     "page": 17,
@@ -208,7 +272,11 @@
       "recColorMorph@46:49"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "可以先用两个方向记住基本操作：腐蚀检查模板能否完全放进去，膨胀把前景向模板允许的方向扩展。"
+    }
   },
   {
     "page": 18,
@@ -221,7 +289,11 @@
       "recColorMorph@58:12"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "腐蚀的定义A⊖B={z｜(B)z⊆A}是在收集所有合格的模板原点：将B平移到z后，B要求的每个前景点都必须被A包含。"
+    }
   },
   {
     "page": 19,
@@ -233,7 +305,11 @@
       "recColorMorph@59:05"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "练习时就按本图方式逐格移动原点，检查十字的五个位置，最后只标出符合条件的原点；不要凭直觉把所有边缘统一删一圈，因为不同模板在拐角处的结果会不同。"
+    }
   },
   {
     "page": 20,
@@ -246,7 +322,11 @@
       "recColorMorph@01:00:24"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "这是在用“模板能完全放进去的原点范围”计算结果。"
+    }
   },
   {
     "page": 21,
@@ -258,7 +338,11 @@
       "recColorMorph@01:00:24"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师用这组图说明同一原图换结构元素，结果可以从一个区域变成一条线。"
+    }
   },
   {
     "page": 22,
@@ -271,7 +355,11 @@
       "recColorMorph@01:01:26"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "模板逐渐变大，细线和较小的白色结构依次消失，只剩能容纳较大模板的部分；观察四张图时要追踪同一条细线何时被删掉。"
+    }
   },
   {
     "page": 23,
@@ -283,7 +371,11 @@
       "recColorMorph@01:01:26"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师用这两组图总结腐蚀可以拆细连接、去细突出，但页底提醒目标整体会缩小。"
+    }
   },
   {
     "page": 24,
@@ -295,7 +387,11 @@
       "recColorMorph@01:02:21"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "只要反射后的模板与A至少有一个前景点重合，该原点位置就进入结果；相比腐蚀要求全部放入，这个条件允许原点扩到原边界外。"
+    }
   },
   {
     "page": 25,
@@ -307,7 +403,11 @@
       "recColorMorph@01:03:15"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "它与腐蚀的题目相同，但现在判断条件变成“至少碰到A”，所以模板原点可以移到A外面。"
+    }
   },
   {
     "page": 26,
@@ -319,7 +419,11 @@
       "recColorMorph@01:03:15"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "扩展方向由结构元形状决定：同样面积的长条与方形，会向不同方向增加不同厚度。"
+    }
   },
   {
     "page": 27,
@@ -332,7 +436,11 @@
       "recColorMorph@01:04:39"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左侧文字笔画有断点，右侧经十字形SE膨胀后笔画更粗、部分间隙被连接；下方列出十字的0/1布局。"
+    }
   },
   {
     "page": 28,
@@ -344,7 +452,11 @@
       "recColorMorph@01:04:39"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师用这页总结膨胀的两项用途：接断裂、填细小凹口。"
+    }
   },
   {
     "page": 29,
@@ -356,7 +468,11 @@
       "recColorMorph@01:05:16"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如先腐蚀去掉小白噪点，再膨胀扩回剩余大块；被完全删掉的小噪点没有种子可扩，因此不会简单恢复原状。"
+    }
   },
   {
     "page": 30,
@@ -368,7 +484,11 @@
       "recColorMorph@01:06:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "开运算Opening写为A○B=(A⊖B)⊕B：先用B腐蚀A，再用同一个B膨胀剩余结果。"
+    }
   },
   {
     "page": 31,
@@ -381,7 +501,11 @@
       "recColorMorph@01:06:50"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "圆形B在三角形A内部滚动，只允许完整放在A里的位置；把所有这些圆覆盖的区域合起来，就是开运算结果。"
+    }
   },
   {
     "page": 32,
@@ -393,7 +517,11 @@
       "recColorMorph@01:06:50"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "闭运算Closing写为A●B=(A⊕B)⊖B，顺序与开运算相反：先膨胀，再腐蚀。"
+    }
   },
   {
     "page": 33,
@@ -406,7 +534,11 @@
       "recColorMorph@01:09:25"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图中的窄V形凹口让圆无法一路贴到最深处，因此闭运算后的轮廓用更平缓的形状填过这段凹陷。"
+    }
   },
   {
     "page": 34,
@@ -419,7 +551,11 @@
       "recColorMorph@01:10:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "记“开削小前景、闭填小背景”，再用模板实际能否放入校正直觉。"
+    }
   },
   {
     "page": 35,
@@ -433,7 +569,11 @@
       "recColorMorph@01:13:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图上的第三条是幂等性：同一SE做开或闭，一次与重复多次结果相同。"
+    }
   },
   {
     "page": 36,
@@ -445,7 +585,11 @@
       "recColorMorph@01:13:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "开运算先去白色小噪点，闭运算再尝试填黑色小孔和细裂隙；可以把这页当作后面五页中间结果的起点，逐次判断每步解决了什么，又带来什么副作用。"
+    }
   },
   {
     "page": 37,
@@ -457,7 +601,11 @@
       "recColorMorph@01:14:31"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "左边原指纹图经腐蚀变成右边A⊖B：背景中的孤立白点少了，白色脊线也明显变细，原先脊线内的黑孔和断口相对变大。"
+    }
   },
   {
     "page": 38,
@@ -469,7 +617,11 @@
       "recColorMorph@01:14:31"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师把这一页接到闭运算的需要：开运算能去掉小前景噪声，也可能破坏细连接。"
+    }
   },
   {
     "page": 39,
@@ -481,7 +633,11 @@
       "recColorMorph@01:15:47"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如一段小裂隙两侧都有白色脊线，膨胀能让两侧往中间扩展；代价是脊线整体变宽，所以还要再腐蚀一次，尽量减轻这次额外加厚。"
+    }
   },
   {
     "page": 40,
@@ -493,7 +649,11 @@
       "recColorMorph@01:15:47"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "把四个基本步骤顺着写出来就是腐蚀→膨胀→膨胀→腐蚀；前两步是开，后两步是闭。"
+    }
   },
   {
     "page": 41,
@@ -506,7 +666,11 @@
       "recColorMorph@01:17:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课件和老师提醒读图时同时看两件事：背景噪点清掉了多少，指纹脊线的连接保留得怎样。"
+    }
   },
   {
     "page": 42,
@@ -519,7 +683,11 @@
       "recColorMorph@01:18:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页用B表示要匹配的前景，用B的背景模板配合Aᶜ；两路腐蚀结果取交集，表示前景条件与背景条件必须同时成立。"
+    }
   },
   {
     "page": 43,
@@ -532,7 +700,11 @@
       "recColorMorph@01:18:47"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "公式明确分成两套要求：(A⊖B₁)检查模板的前景落在A中，(Aᶜ⊖B₂)检查指定背景落在Aᶜ中，最后取交集。"
+    }
   },
   {
     "page": 44,
@@ -545,7 +717,11 @@
       "recColorMorph@01:20:43"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "因此本图能筛出指定大小的孤立结构，前提是按图中规定的完整模板匹配。"
+    }
   },
   {
     "page": 45,
@@ -558,7 +734,11 @@
       "recColorMorph@01:21:20"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师专门解释×表示don’t care：该位置是0或1都接受，不能当成必须为背景的0。"
+    }
   },
   {
     "page": 46,
@@ -570,7 +750,11 @@
       "recColorMorph@01:22:31"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这一页列出基本操作能够搭出的算法：提边界、填区域、找连通分量、求凸包、细化/粗化、提骨架，最后还会引入形态学重建。"
+    }
   },
   {
     "page": 47,
@@ -582,7 +766,11 @@
       "recColorMorph@01:23:18"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "边界公式β(A)=A−(A⊖B)：先腐蚀得到内部，再从原图中减掉内部。"
+    }
   },
   {
     "page": 48,
@@ -595,7 +783,11 @@
       "recColorMorph@01:24:29"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课件明确说本例的一像素边界来自所用3×3 SE，换结构元素可以得到更厚的边界。"
+    }
   },
   {
     "page": 49,
@@ -607,7 +799,11 @@
       "recColorMorph@01:24:29"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这是Region filling（区域填充）：先在待填区域选一个种子，再让它在允许的范围内向外生长。"
+    }
   },
   {
     "page": 50,
@@ -620,7 +816,11 @@
       "recColorMorph@01:25:51"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "初值X₀除种子外全为0，每一步Xₖ=(Xₖ₋₁⊕B)∩Aᶜ：先用3×3十字模板膨胀，再只保留原图背景中的位置。"
+    }
   },
   {
     "page": 51,
@@ -632,7 +832,11 @@
       "recColorMorph@01:26:51"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "膨胀负责增长，与Aᶜ取交集负责裁掉不允许进入的点；两个动作必须在每一次迭代都做。"
+    }
   },
   {
     "page": 52,
@@ -645,7 +849,11 @@
       "recColorMorph@01:28:20"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "种子逐渐长满封闭内部，外部背景虽然也属于Aᶜ，却被边界隔开而没有被触及。"
+    }
   },
   {
     "page": 53,
@@ -657,7 +865,11 @@
       "recColorMorph@01:28:20"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "与前面的单洞例子相比，这里同时放入多个种子，所以能在一次迭代流程中填多个彼此不连通的洞。"
+    }
   },
   {
     "page": 54,
@@ -670,7 +882,11 @@
       "recColorMorph@01:29:39"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "Connected components（连通分量提取）先在一个前景对象上选点，再找出与它连在一起的全部前景。"
+    }
   },
   {
     "page": 55,
@@ -682,7 +898,11 @@
       "recColorMorph@01:29:39"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页公式Xₖ=(Xₖ₋₁⊕B)∩A，把填洞中的Aᶜ换成了A：增长只能留在原前景上。"
+    }
   },
   {
     "page": 56,
@@ -695,7 +915,11 @@
       "recColorMorph@01:31:27"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "页上文字直接指出与Region filling的差别：此处取交的是A，因为要找前景；填洞时取交Aᶜ，因为要在背景孔洞中生长。"
+    }
   },
   {
     "page": 57,
@@ -707,7 +931,11 @@
       "recColorMorph@01:31:27"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "这里把多种操作连在一起：阈值回答“哪些像素值得关注”，形态学帮助筛掉小碎点，连通分量再回答“有几块、各有多大”。"
+    }
   },
   {
     "page": 58,
@@ -719,7 +947,11 @@
       "recColorMorph@01:32:17"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "Convex hull（凸包/凸壳）是包含原集合的最小凸集合；凸的意思是在集合内任取两点，它们之间整条线段仍在集合里。"
+    }
   },
   {
     "page": 59,
@@ -731,7 +963,11 @@
       "recColorMorph@01:33:46"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课件用四个方向的结构元素Bⁱ分别做Hit-or-Miss并与原图A合并，逐次补入符合条件的位置；各方向稳定后，再把结果Dⁱ取并。"
+    }
   },
   {
     "page": 60,
@@ -744,7 +980,11 @@
       "recColorMorph@01:35:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "匹配时只检查规定的三处前景与中心背景，其余位置不限制。"
+    }
   },
   {
     "page": 61,
@@ -757,7 +997,11 @@
       "recColorMorph@01:36:50"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "页底直接指出问题：结果可能比真正需要的凸包更大。"
+    }
   },
   {
     "page": 62,
@@ -770,7 +1014,11 @@
       "recColorMorph@01:37:37"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "约束增长不能超出原点集的上下左右范围，右图因此裁掉了不必要的外伸部分；课件还提示更细的结构可以加入对角线等更复杂边界。"
+    }
   },
   {
     "page": 63,
@@ -782,7 +1030,11 @@
       "recColorMorph@01:37:37"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "Thinning（细化）写为A⊗B=A−(A⊛B)：先用Hit-or-Miss找出符合指定边界配置的位置，再从前景里删除这些点。"
+    }
   },
   {
     "page": 64,
@@ -794,7 +1046,11 @@
       "recColorMorph@01:38:47"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上方嵌套公式表示按B¹、B²直到Bⁿ顺序做细化，每一步接着处理上一步结果。"
+    }
   },
   {
     "page": 65,
@@ -806,7 +1062,11 @@
       "recColorMorph@01:39:34"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右侧说明某些模板阶段结果不变，但仍需继续其它方向，最后才整体稳定。"
+    }
   },
   {
     "page": 66,
@@ -818,7 +1078,11 @@
       "recColorMorph@01:39:34"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "Thickening（粗化）的公式在本页改为取并：A⊙B=A∪(A⊛B)，将符合模板的位置加进前景。"
+    }
   },
   {
     "page": 67,
@@ -830,7 +1094,11 @@
       "recColorMorph@01:39:34"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课件给出的实用思路是先细化背景，再取补集，间接得到前景粗化；这样由细化后的背景给增长设出边界。"
+    }
   },
   {
     "page": 68,
@@ -843,7 +1111,11 @@
       "recColorMorph@01:41:25"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右边Y形区域中画出几个内部圆，它们接触两处或更多边界；这些圆的中心连成骨架。"
+    }
   },
   {
     "page": 69,
@@ -855,7 +1127,11 @@
       "recColorMorph@01:41:25"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页把骨架分成不同腐蚀层：Sₖ(A)=(A⊖kB)−[(A⊖kB)○B]，再将各层取并。"
+    }
   },
   {
     "page": 70,
@@ -868,7 +1144,11 @@
       "recColorMorph@01:42:54"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "上方恢复式A=∪ₖ[Sₖ(A)⊕kB]表示将第k层骨架按对应次数膨胀，再合并回来。"
+    }
   },
   {
     "page": 71,
@@ -880,7 +1160,11 @@
       "recColorMorph@01:42:54"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "形态学骨架的这套公式没有自动保证一像素宽和整体连通。"
+    }
   },
   {
     "page": 72,
@@ -894,7 +1178,11 @@
       "recColorMorph@01:44:50"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "测地膨胀Geodesic dilation每一步是Dᴳ(F)=(F⊕B)∩G：F是marker（标记），G是mask（掩模），先让标记膨胀，再把超出G的部分裁掉。"
+    }
   },
   {
     "page": 73,
@@ -906,7 +1194,11 @@
       "recColorMorph@01:44:50"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "沿箭头看，上方marker F先被B膨胀成较大块，再与下方mask G取交集，右边只留下两者共同的位置。"
+    }
   },
   {
     "page": 74,
@@ -918,7 +1210,11 @@
       "recColorMorph@01:46:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "测地腐蚀Geodesic erosion把上一页的组合换成(F⊖B)∪G：先腐蚀marker，再将mask并回来。"
+    }
   },
   {
     "page": 75,
@@ -930,7 +1226,11 @@
       "recColorMorph@01:46:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图下的“at least contain the mask”说明结果包含G，和测地膨胀的结果限制在G以内正好相对。"
+    }
   },
   {
     "page": 76,
@@ -942,6 +1242,10 @@
       "recColorMorph@01:47:23"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页收束测地膨胀与腐蚀：它们在取补集意义下对偶，并在常规定义下经过有限次迭代稳定。"
+    }
   }
 ]

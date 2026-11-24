@@ -117,7 +117,11 @@ Lecture 2 Part 2仍采用76页版。每份PDF哈希、视觉核对页码、讲�
 
 ## 维护
 
+右侧讲解每页选出一句核心知识，在原文位置用暖黄色加粗高亮，便于快速阅读；浅色和深色模式均支持。
+
 `data/page-notes/*.json` 是逐页讲解的唯一内容来源；`data/sources.json` 是去重后的来源片段；`data/exam-guide.json` 是考核条目；`data/slide-index.json` 保存课件页码与搜索文本。`data/content.json` 由这四者合成。
+
+每条页注的 `keySentence` 保存从零开始的 `paragraph` 段落序号和原文 `text`。三门课构建时由 `note_highlights.py` 检查每页恰好选定一句完整原句；修改正文时同步检查所选句。运行 `node tests/key-sentences.cjs` 验证全部讲解渲染为一处高亮，段落文字保持一致。
 
 运行 `python3 build_data.py` 重建并验证：PDF哈希未变、录音来源引用存在、631页讲解齐全且不重复，未讲页没有虚构的课堂讲解、所有考核页锚有效。不能再用旧的范围模板 `guides.ndjson`；该输入已删除。
 

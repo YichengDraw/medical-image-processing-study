@@ -11,6 +11,7 @@ import copy
 import hashlib
 import json
 from exam_evidence import validate_teacher_evidence
+from note_highlights import validate_key_sentence
 
 ROOT = Path(__file__).resolve().parent
 
@@ -77,6 +78,7 @@ def build():
                 assert n.get('audioSupported', True) is True
                 assert all(sid in data['sources'] for sid in n['sourceIds'])
                 assert n.get('paragraphs') and all(isinstance(t, str) and t.strip() for t in n['paragraphs'])
+                validate_key_sentence(n, f'{did}/{i}')
                 if did in ('lec5', 'lec6', 'lec8'):
                     assert n['sourceIds'], 'New explanation lacks classroom provenance'
                 text = tuple(n['paragraphs'])

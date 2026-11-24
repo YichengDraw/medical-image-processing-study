@@ -17,7 +17,11 @@
       "rec06@03:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右边循环图列出取指、译码、执行等逻辑步骤；本讲的单周期设计把一条指令所需步骤安排在同一个时钟周期内完成。"
+    }
   },
   {
     "page": 3,
@@ -36,7 +40,11 @@
       "rec05@01:02:10"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "一个周期内，数据从前一个状态元件读出，经过组合逻辑传播，必须在下一个有效时钟边沿前到达并稳定，随后才由目标状态元件保存。"
+    }
   },
   {
     "page": 4,
@@ -55,7 +63,11 @@
       "rec06@06:44"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右图从 PC 分出两条通路：一条把当前地址送到 Instruction memory，得到当前 32 位指令；另一条送入独立的加法器，加常数 4 形成下一顺序地址。"
+    }
   },
   {
     "page": 5,
@@ -72,7 +84,11 @@
       "rec06@10:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "译码把同一条指令的不同字段送到不同部件：opcode 与需要时的 funct 进入控制单元，rs、rt 的寄存器编号进入寄存器堆的两个读地址端。"
+    }
   },
   {
     "page": 6,
@@ -86,7 +102,11 @@
       "rec06@12:31"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "“Just in case” 指寄存器堆可以在完整译码结果出来前，就按指令中 rs、rt 所在位置读出两路数据。"
+    }
   },
   {
     "page": 7,
@@ -107,7 +127,11 @@
       "rec06@22:31"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页的 R 型运算先从 rs、rt 取两个操作数，让 ALU 按 opcode 与 funct 指定的功能运算，再把结果送到寄存器堆的 Write data 端，写入 rd 指定的位置。"
+    }
   },
   {
     "page": 8,
@@ -128,7 +152,11 @@
       "rec06@26:40"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "lw 与 sw 先做完全相同的有效地址计算：地址=寄存器 rs 的内容+符号扩展后的 16 位 offset。"
+    }
   },
   {
     "page": 9,
@@ -153,7 +181,11 @@
       "rec06@37:18"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "对 lw，MemRead=1、MemWrite=0，读出的内存数据沿右侧回线进入寄存器堆，目标编号来自 rt，且 RegWrite=1。"
+    }
   },
   {
     "page": 10,
@@ -175,7 +207,11 @@
       "rec06@44:13"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "分支目标为 PC+4+(sign-extend(offset) 左移 2 位)。"
+    }
   },
   {
     "page": 11,
@@ -198,7 +234,11 @@
       "rec06@01:01:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如 rs=7、rt=7、PC=100、offset=3，下方算出 Zero=1，上方独立算出目标 116；等两路都准备好，分支选择逻辑才决定是否采用 116。"
+    }
   },
   {
     "page": 12,
@@ -216,7 +256,11 @@
       "rec06@01:04:35"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "j 的地址形成与 beq 不同：取指令低 26 位，在末尾补两个 0 得到 28 位，再把 PC+4 的高 4 位放在最前面，拼成 32 位目标地址。"
+    }
   },
   {
     "page": 13,
@@ -240,7 +284,11 @@
       "rec06@01:11:59"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "单周期意味着同一条指令的取指、译码、执行和必要的访存、写回，都要在两个相邻有效时钟边沿之间完成。"
+    }
   },
   {
     "page": 14,
@@ -265,7 +313,11 @@
       "rec06@01:19:32"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 2,
+      "text": "不要把两个控制位混在一起：ALUSrc 决定“拿什么来算”，MemtoReg 决定“把哪一种结果写回”。"
+    }
   },
   {
     "page": 15,
@@ -289,7 +341,11 @@
       "rec06@01:27:17"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 2,
+      "text": "完整实现还须确认当前指令为 beq，即 PCSrc=Branch AND Zero；普通 add 恰好算出 0 时，也应继续顺序执行。"
+    }
   },
   {
     "page": 16,
@@ -311,7 +367,11 @@
       "rec06@01:34:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师强调时钟受最长路径限制，这里的“最长”指总传播延迟，不只是图上画得最远或经过模块最多。"
+    }
   },
   {
     "page": 17,
@@ -328,7 +388,11 @@
       "rec06@01:38:08"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "写回目标有一个必须选择的差异：R 型算术写 rd=[15:11]，lw 写 rt=[20:16]。"
+    }
   },
   {
     "page": 18,
@@ -364,7 +428,11 @@
       "ai301-r07-s011"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如lw $t0,8($s0)让RegDst=0选rt，ALUSrc=1选偏移8，MemtoReg=1选内存读数据，并令RegWrite=1；R型add则选rd、第二个源寄存器和ALU结果。"
+    }
   },
   {
     "page": 19,
@@ -381,7 +449,11 @@
       "ai301-r07-s017"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "ALU要做什么，先由指令的任务决定：lw/sw把基址与符号扩展偏移相加，得到数据内存地址；beq把两个源寄存器相减，再看Zero判断是否相等；R型才需要进一步看funct，选择add、sub、and、or、slt等运算。"
+    }
   },
   {
     "page": 20,
@@ -400,7 +472,11 @@
       "ai301-r07-s025"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这张表把译码拆成两级：主控制器先看指令最高6位opcode，产生2位ALUOp；ALU控制器再把ALUOp与最低6位funct组合，产生真正送进ALU的4位控制码。"
+    }
   },
   {
     "page": 21,
@@ -417,7 +493,11 @@
       "ai301-r07-s031"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师逐行解释X的含义：某一输入位无论取0还是1，都不影响该行要得到的输出，因此可用一行压缩多个等价组合。"
+    }
   },
   {
     "page": 22,
@@ -431,7 +511,11 @@
       "ai301-r07-s034"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页把R型、load/store与branch的字段竖向对齐：opcode始终在[31:26]，rs在[25:21]，rt在[20:16]；R型写回rd=[15:11]，lw写回rt，所以写寄存器编号需要一个RegDst选择器。"
+    }
   },
   {
     "page": 23,
@@ -454,7 +538,11 @@
       "ai301-r07-s025"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图下方已画出ALU control：它接收Instruction[5:0]与2位ALUOp，再输出4位ALU控制码；提供ALUOp及各读写、MUX选择信号的主控制器尚未展开，下一页才把它补进整图。"
+    }
   },
   {
     "page": 24,
@@ -470,7 +558,11 @@
       "ai301-r07-s045"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "可先问“这条指令改写什么状态”，再问“数据从哪条路来”：例如add要写寄存器、不读写数据内存，写回来自ALU；lw也写寄存器，但写回来自数据内存；beq不写寄存器或数据内存，只在相等时改变下一条PC。"
+    }
   },
   {
     "page": 25,
@@ -487,7 +579,11 @@
       "ai301-r07-s045"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "红圈把R型实际使用的路径标出来：RegDst=1选rd，ALUSrc=0让ALU第二输入来自rt，MemtoReg=0把ALU结果送回寄存器，RegWrite=1允许写入。"
+    }
   },
   {
     "page": 26,
@@ -503,7 +599,11 @@
       "ai301-r07-s050"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "lw要完成地址计算、读内存和写回rt三件事：RegDst=0选rt，ALUSrc=1选符号扩展偏移，ALUOp=00令ALU做基址加偏移；MemRead=1、MemWrite=0读取数据内存，再用MemtoReg=1选中读出的数据，RegWrite=1写入寄存器。"
+    }
   },
   {
     "page": 27,
@@ -518,7 +618,11 @@
       "ai301-r07-s053"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师重点解释红圈与门：Branch=1只说明当前是beq，还必须Zero=1表示两个源值相等，PCSrc=Branch AND Zero才会为1并选择分支目标。"
+    }
   },
   {
     "page": 28,
@@ -534,7 +638,11 @@
       "ai301-r07-s058"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师追问sw与beq的RegDst和MemtoReg为何写X：同一行的RegWrite=0已经关闭寄存器写入口，选择哪份写回地址和数据都不影响结果。"
+    }
   },
   {
     "page": 29,
@@ -548,7 +656,11 @@
       "ai301-r07-s064"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "J格式的opcode=2，剩余26位给出目标索引；它先左移2位补00，形成28位，再与PC+4的高4位拼接，得到32位目标地址。"
+    }
   },
   {
     "page": 30,
@@ -566,7 +678,11 @@
       "ai301-r07-s066"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师让大家比较为何beq旁有与门、j旁没有：beq要同时满足“这是分支指令”和“比较相等”，j则无条件跳转，所以Jump本身就足以控制新MUX。"
+    }
   },
   {
     "page": 31,
@@ -588,7 +704,11 @@
       "ai301-r07-s076"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 2,
+      "text": "最长的lw需要12 ns，因此单周期时钟至少容纳12 ns；j虽只需4 ns路径延迟，也使用同一个12 ns周期。"
+    }
   },
   {
     "page": 32,
@@ -602,7 +722,11 @@
       "ai301-r07-s083"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "最长组合路径决定单周期时钟的周期。"
+    }
   },
   {
     "page": 33,
@@ -617,6 +741,10 @@
       "ai301-r07-s087"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师总结单周期的优点是结构直接、容易理解；缺点是时间利用不充分，若再要求更复杂的指令也在一周期完成，最慢路径会把所有指令一起拖长。"
+    }
   }
 ]

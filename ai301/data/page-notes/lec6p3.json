@@ -13,7 +13,11 @@
       "ai301-r09-s081"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "Forwarding（转发）把已经算好的新值直接送到使用位置，省去等待写回的时间。"
+    }
   },
   {
     "page": 2,
@@ -43,7 +47,11 @@
       "ai301-r09-s098"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 2,
+      "text": "答案沿图就能找到：sub 在 CC3 的 EX 结束时已经算完，and 到 CC4 的 EX 才用这个值。"
+    }
   },
   {
     "page": 3,
@@ -68,7 +76,11 @@
       "ai301-r09-s109"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "图中 1a、1b 检查 EX/MEM 里的目的寄存器编号：它若等于当前 Rs，就给 ALU 的 A 输入转发；若等于当前 Rt，就给 B 输入转发。"
+    }
   },
   {
     "page": 4,
@@ -85,7 +97,11 @@
       "ai301-r09-s114"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "编号匹配之后，还要满足图中的两个条件：生产这个值的指令确实会写寄存器，也就是 RegWrite=1；它的目的编号也要非零。"
+    }
   },
   {
     "page": 5,
@@ -107,7 +123,11 @@
       "ai301-r09-s123"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 3,
+      "text": "最直接的做法就是看时间：紧邻的 and 在 CC4 从 EX/MEM 拿，隔一条的 or 在 CC5 从 MEM/WB 拿。"
+    }
   },
   {
     "page": 6,
@@ -132,7 +152,11 @@
       "ai301-r09-s137"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 2,
+      "text": "两个 MUX 独立选择，因此一条指令的两个输入可以来自不同位置。"
+    }
   },
   {
     "page": 7,
@@ -151,7 +175,11 @@
       "ai301-r09-s144"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "表格上半部分是 ForwardA，下半部分是 ForwardB，两边编码完全相同：00 选 ID/EX，10 选 EX/MEM，01 选 MEM/WB。"
+    }
   },
   {
     "page": 8,
@@ -171,7 +199,11 @@
       "ai301-r09-s151"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 2,
+      "text": "老师在这里把题目问法拆开说明：问 EX hazard 还是 MEM hazard，是让你确定数据来自 EX/MEM 还是 MEM/WB；问 ForwardA 还是 ForwardB，是让你确定当前使用 Rs 还是 Rt。"
+    }
   },
   {
     "page": 9,
@@ -187,7 +219,11 @@
       "ai301-r09-s155"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "因此这里选择 EX/MEM：它对应更靠近当前指令的生产者，结果更新。"
+    }
   },
   {
     "page": 10,
@@ -203,6 +239,10 @@
       "ai301-r09-s158"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "按顺序读就很简单：先检查 EX/MEM，有有效匹配就选 10；否则检查 MEM/WB，有有效匹配就选 01；两边都没有匹配就选 00，使用 ID/EX 原值。"
+    }
   }
 ]

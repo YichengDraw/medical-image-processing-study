@@ -10,7 +10,11 @@
       "rec02-s001"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本讲讨论指令集体系结构（ISA）：软件最终必须用哪些指令、寄存器和编码规则与硬件交互。"
+    }
   },
   {
     "page": 2,
@@ -25,7 +29,11 @@
       "rec02-s007"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右侧Memory框把机器码程序、编译器、工资数据、书稿和C源代码放在同一存储空间，说明存储程序计算机的两个原则：指令也用二进制数表示；程序可以像数据一样存入可读写的存储器。"
+    }
   },
   {
     "page": 3,
@@ -40,7 +48,11 @@
       "rec02-s012"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "存储程序使程序能够作为二进制文件传输：接收机器只要满足对应的执行环境，就可以使用现成机器码，无需把整个编译过程随程序一起搬过去。"
+    }
   },
   {
     "page": 4,
@@ -57,7 +69,11 @@
       "rec02-s018"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "汇编语言用add、lw等助记符和寄存器名，把机器指令写成人可以读懂的形式；机器码则是实际编码的0和1。"
+    }
   },
   {
     "page": 5,
@@ -74,7 +90,11 @@
       "rec02-s024"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页按课程采用的典型模型对比CISC与RISC：CISC有较复杂、长度可能不同的指令；本课MIPS则使用统一的32位指令和32个通用寄存器。"
+    }
   },
   {
     "page": 6,
@@ -89,7 +109,11 @@
       "rec02-s029"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "RISC的规则性主要体现在固定指令长度、load/store分工，以及受控的操作和寻址方式数量。"
+    }
   },
   {
     "page": 7,
@@ -109,7 +133,11 @@
       "rec02-s040"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "四条原则要与具体设计对应：规则性对应固定32位长度、少量格式和固定位置的6位opcode；小而快对应有限的寄存器与操作范围；加速常见情况对应直接把常量放进指令；合理折中对应R、I、J三种格式。"
+    }
   },
   {
     "page": 8,
@@ -129,7 +157,11 @@
       "rec02-s050"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "下方三条长框宽度相同，都表示32位：R格式放寄存器编号、移位量和功能码；I格式给立即数、访存偏移或分支位移留下16位；J格式给跳转目标留下更长字段。"
+    }
   },
   {
     "page": 9,
@@ -145,7 +177,11 @@
       "rec02-s055"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图中寄存器堆含32个32位寄存器，两个读端口可同时给出两份32位数据，一个写端口接收一份32位数据。"
+    }
   },
   {
     "page": 10,
@@ -162,7 +198,11 @@
       "rec02-s061"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "寄存器数量有限、靠近运算部件，通常比访问主存更快；增加寄存器数量或端口会增加电路与连线负担，因此不能只靠无限增加寄存器提高性能。"
+    }
   },
   {
     "page": 11,
@@ -185,7 +225,11 @@
       "rec02-s096"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这张表给出寄存器编号与调用约定：$v0–$v1常放返回值，$a0–$a3放参数，$t0–$t9放临时值，$s0–$s7放需要跨调用保留的值，$sp、$fp、$ra分别参与栈、帧和返回地址管理。"
+    }
   },
   {
     "page": 12,
@@ -199,7 +243,11 @@
       "rec02-s101"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "MIPS的add和sub采用“目的寄存器在前、两个源寄存器在后”的汇编写法。"
+    }
   },
   {
     "page": 13,
@@ -213,7 +261,11 @@
       "rec02-s104"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页把f=(g+h)−(i+j)拆成三个步骤：先算g+h放$t0，再算i+j放$t1，最后$t0−$t1放f。"
+    }
   },
   {
     "page": 14,
@@ -227,7 +279,11 @@
       "rec02-s107"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本课MIPS有32个32位通用寄存器；一个32位数据称为一个word，即4字节。"
+    }
   },
   {
     "page": 15,
@@ -242,7 +298,11 @@
       "rec02-s111"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "内存按字节编址，每个地址对应8位；本课普通对齐word占4字节，起始地址应是4的倍数，所以十六进制地址末位可为0、4、8、C。"
+    }
   },
   {
     "page": 16,
@@ -255,7 +315,11 @@
       "rec02-s112"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例如把0x12345678放到起始地址a，大端在a、a+1、a+2、a+3依次存12、34、56、78，小端依次存78、56、34、12。"
+    }
   },
   {
     "page": 17,
@@ -270,7 +334,11 @@
       "rec02-s115"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "老师反复强调这里的偏移单位是byte：A[8]距离A[0]有8个word，每个4字节，所以偏移8×4=32。"
+    }
   },
   {
     "page": 18,
@@ -286,7 +354,11 @@
       "rec02-s122"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "先lw $t0,32($s3)读取A[8]，再add $t0,$s2,$t0加上h，最后sw $t0,48($s3)把结果写入A[12]。"
+    }
   },
   {
     "page": 19,
@@ -298,7 +370,11 @@
       "rec02-s123"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这一页总结寄存器分配的目的：尽量让常用变量留在寄存器中，减少主存与寄存器之间的搬运。"
+    }
   },
   {
     "page": 20,
@@ -315,7 +391,11 @@
       "rec02-s129"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "addi $s3,$s3,4表示把$s3原值加4再写回$s3；本课不另设subi，减去常量可用加负数，例如addi $s2,$s1,-1得到$s1−1。"
+    }
   },
   {
     "page": 21,
@@ -328,7 +408,11 @@
       "rec02-s131"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "$zero是编号0的寄存器，读出值始终为0，写入不能改变它。"
+    }
   },
   {
     "page": 22,
@@ -342,7 +426,11 @@
       "rec02-s134"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "无符号范围是0到2ⁿ−1；补码范围是−2ⁿ⁻¹到2ⁿ⁻¹−1，负数比正数多一个。"
+    }
   },
   {
     "page": 23,
@@ -355,7 +443,11 @@
       "rec02-s136"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "补码数向左复制最高位：正数补0，负数补1；无符号数的零扩展则一律补0。"
+    }
   },
   {
     "page": 25,
@@ -371,7 +463,11 @@
       "rec02-s141"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "R格式从高位到低位是op(6)、rs(5)、rt(5)、rd(5)、shamt(5)、funct(6)，总共32位。"
+    }
   },
   {
     "page": 26,
@@ -387,7 +483,11 @@
       "rec02-s147"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "因此字段为0、17、18、8、0、32；逐个按6/5/5/5/5/6位补齐后连成32位。"
+    }
   },
   {
     "page": 27,
@@ -404,7 +504,11 @@
       "rec02-s153"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "I格式为op(6)、rs(5)、rt(5)、立即数/偏移(16)。"
+    }
   },
   {
     "page": 28,
@@ -417,7 +521,11 @@
       "rec02-s155"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "编码时字段为op=35、rs=19、rt=8、imm=24，可得到机器码0x8E680018；执行时若$s3=0x12004094，就先算有效访存地址0x12004094+0x18=0x120040AC，再把该地址处的一个word读入$t0。"
+    }
   },
   {
     "page": 29,
@@ -432,7 +540,11 @@
       "rec02-s172"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "表格把R格式与I格式放在一起比较：add、sub的opcode都为0，以funct=32和34区分；addi、lw、sw则分别用自己的opcode，尾部16位保存常量或偏移，没有rd、shamt、funct字段。"
+    }
   },
   {
     "page": 30,
@@ -451,7 +563,11 @@
       "rec02-s173"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "h在$s2，数组基址在$t1，32位元素的字节偏移为300×4=1200，因此可写lw $t0,1200($t1)；add $t0,$s2,$t0；sw $t0,1200($t1)。"
+    }
   },
   {
     "page": 32,
@@ -467,7 +583,11 @@
       "rec03-s004"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页把逻辑移位与R格式的shamt字段对应：shamt占5位，可表示0到31位的移位量；sll左移后右侧补0，srl右移后左侧补0。"
+    }
   },
   {
     "page": 33,
@@ -483,7 +603,11 @@
       "rec03-s011"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "AND用掩码选择位：掩码为1的位置保留原位，为0的位置清零。"
+    }
   },
   {
     "page": 34,
@@ -496,7 +620,11 @@
       "rec03-s015"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "OR用来把指定位置设为1，其余位置保持原样：掩码1会强制该位为1，掩码0会保留原位。"
+    }
   },
   {
     "page": 35,
@@ -508,7 +636,11 @@
       "rec03-s016"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "利用恒为0的$zero，nor $t0,$t1,$zero就得到NOT($t1 OR 0)=NOT $t1，因此不必另设计一个独立的三操作数NOT运算。"
+    }
   },
   {
     "page": 36,
@@ -522,7 +654,11 @@
       "rec03-s019"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师在这里专门强调：andi、ori的立即数先零扩展为32位，与addi的符号扩展不同。"
+    }
   },
   {
     "page": 37,
@@ -537,7 +673,11 @@
       "rec03-s023"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "beq rs,rt,L1比较两个寄存器内容是否相等，bne比较是否不等；j L1不比较条件，直接转去标签所代表的指令。"
+    }
   },
   {
     "page": 38,
@@ -554,7 +694,11 @@
       "rec03-s029"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "汇编先用bne $s3,$s4,Else判断“条件不成立”的情况：不等就跳到减法；相等则顺序执行add $s0,$s1,$s2，再用j Exit跳过Else，避免两条赋值都执行。"
+    }
   },
   {
     "page": 39,
@@ -576,7 +720,11 @@
       "rec03-s043"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "然后bne $t0,$s5,Exit在元素不等于k时退出；相等时继续addi $s3,$s3,1，再j Loop重新检查下一个元素。"
+    }
   },
   {
     "page": 40,
@@ -590,7 +738,11 @@
       "rec03-s047"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "基本块是一段顺序执行的指令：入口只在开头，改变控制流的分支或跳转只能出现在末尾，中间不能有其他跳入点。"
+    }
   },
   {
     "page": 41,
@@ -605,7 +757,11 @@
       "rec03-s051"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "slt先比较再把结果写为0或1，并不会自己跳转：slt rd,rs,rt在rs<rt时令rd=1，否则为0。"
+    }
   },
   {
     "page": 42,
@@ -629,7 +785,11 @@
       "rec03-s069"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "老师从硬件延迟解释：大小比较与改变控制流叠加可能拉长单条指令的执行路径；在本页讨论的统一时钟、单周期模型中，最慢路径会限制所有指令的时钟周期。"
+    }
   },
   {
     "page": 43,
@@ -644,7 +804,11 @@
       "rec03-s073"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "slt、slti按有符号补码比较，sltu、sltiu按无符号值比较；改变的是位串的解释，不是寄存器中的位本身。"
+    }
   },
   {
     "page": 44,
@@ -662,7 +826,11 @@
       "rec03-s079"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "在y是非负、可用有符号32位数表示的数组长度这一前提下，只做一次无符号比较x<y，就能同时检查有符号索引x是否满足0≤x<y。"
+    }
   },
   {
     "page": 45,
@@ -675,7 +843,11 @@
       "rec04@00:23"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页先分清两个角色：caller是发起调用并准备参数的调用者，callee是接收参数、执行任务、再交还控制权的被调用者。"
+    }
   },
   {
     "page": 46,
@@ -690,7 +862,11 @@
       "rec04@03:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "沿红色caller和绿色callee读这六步：caller把参数放到约定位置，转移控制权；callee取得所需存储资源、完成任务、放好返回值，最后交还控制权。"
+    }
   },
   {
     "page": 47,
@@ -705,7 +881,11 @@
       "rec04@18:23"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这张表是过程调用时的分工约定：$a0–$a3传参数，$v0、$v1放结果，$t0–$t9放临时量，$s0–$s7放需跨调用保持的值。"
+    }
   },
   {
     "page": 48,
@@ -720,7 +900,11 @@
       "rec04@05:32"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "jal把“跳到哪里”与“以后回哪里”一并处理：跳到ProcedureLabel，同时把返回地址写入$ra。"
+    }
   },
   {
     "page": 49,
@@ -735,7 +919,11 @@
       "rec04@07:34"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "叶子过程的关键是“不再调用别的过程”。"
+    }
   },
   {
     "page": 50,
@@ -751,7 +939,11 @@
       "rec04@13:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "按代码四段读：addi $sp,$sp,−4先向低地址申请4字节，sw $s0,0($sp)保存旧$s0；两条add分别算g+h与i+j，sub得到差；add $v0,$s0,$zero把结果复制到返回寄存器；最后lw恢复旧$s0、$sp加4释放空间，再jr $ra。"
+    }
   },
   {
     "page": 51,
@@ -766,7 +958,11 @@
       "rec04@16:33"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "例：保存三个32位寄存器，要让$sp减12；读回后再加12。"
+    }
   },
   {
     "page": 52,
@@ -780,7 +976,11 @@
       "rec04@18:23"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "原参数或临时寄存器若在子调用结束后还要使用，也应在调用前保存，调用后恢复。"
+    }
   },
   {
     "page": 53,
@@ -793,7 +993,11 @@
       "rec04@27:57"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这是递归阶乘：对非负整数n，基本情况返回1，其余情况返回n×fact(n−1)。"
+    }
   },
   {
     "page": 54,
@@ -812,7 +1016,11 @@
       "rec04@27:57"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "子调用返回后，lw恢复原n与原$ra，$sp加8；mul $v0,$a0,$v0把原n乘上子问题的结果，最后返回。"
+    }
   },
   {
     "page": 55,
@@ -829,7 +1037,11 @@
       "rec04@33:15"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图中一个过程帧（activation record）把这一层需要的保存参数、返回地址、需保持寄存器以及局部数组/结构放在一起。"
+    }
   },
   {
     "page": 56,
@@ -847,7 +1059,11 @@
       "rec04@39:24"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "堆放动态分配对象，栈放过程调用相关的自动变量与保存值；二者相向增长，便于共享中间尚未使用的空间。"
+    }
   },
   {
     "page": 57,
@@ -867,7 +1083,11 @@
         "label": "Unicode 官方：UTF-8、UTF-16 与 UTF-32 编码形式",
         "url": "https://www.unicode.org/faq/utf_bom.html"
       }
-    ]
+    ],
+    "keySentence": {
+      "paragraph": 1,
+      "text": "按Unicode官方定义，UTF-8用1到4个字节编码一个Unicode标量值，UTF-16用1或2个16位代码单元，UTF-32用一个32位代码单元。"
+    }
   },
   {
     "page": 58,
@@ -883,7 +1103,11 @@
       "rec04@45:26"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "沿三行指令对照：lb/lh读取1字节或2字节后符号扩展到32位；lbu/lhu读取相同宽度后零扩展；sb/sh只把寄存器最右侧的1字节或2字节写回内存。"
+    }
   },
   {
     "page": 59,
@@ -900,7 +1124,11 @@
       "rec04@50:41"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "lui先把给定16位放进寄存器的高半部，并把低16位清零；随后ori用零扩展后的立即数填入低半部。"
+    }
   },
   {
     "page": 60,
@@ -917,7 +1145,11 @@
       "rec04@01:08:31"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课件用PC相对寻址：字段保存的是以word为单位的有符号位移，目标=分支指令地址+4+sign_extend(offset)×4。"
+    }
   },
   {
     "page": 61,
@@ -935,7 +1167,11 @@
       "rec04@01:14:34"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图中两条路最后相加：下方先把PC加4；上方把16位offset符号扩展并在低端补两个0，相当于乘4。"
+    }
   },
   {
     "page": 62,
@@ -950,7 +1186,11 @@
       "rec04@01:17:15"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "它采用伪直接寻址：把26位字段左移2位形成低28位，再接上取指后PC的高4位，组成32位目标。"
+    }
   },
   {
     "page": 63,
@@ -963,7 +1203,11 @@
       "rec04@01:18:32"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "由高4位固定形成的区域大小是2^28字节，即256 MiB，区内有2^26个按4字节对齐的指令位置。"
+    }
   },
   {
     "page": 64,
@@ -978,7 +1222,11 @@
       "rec04@01:21:29"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "本页把太远的条件分支改写成“反条件近分支+无条件远跳转”。"
+    }
   },
   {
     "page": 65,
@@ -996,6 +1244,10 @@
       "rec04@01:25:29"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "从上到下辨认五种方式：立即数在指令内，寄存器寻址从指定寄存器取值，基址寻址用寄存器内容加字节偏移访问数据，PC相对寻址用PC+4加左移2位的有符号分支偏移，伪直接寻址把PC高4位与26位字段及00拼接。"
+    }
   }
 ]

@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parent
 SITE = ROOT.parent
 sys.path.insert(0, str(SITE))
 from exam_evidence import validate_teacher_evidence
+from note_highlights import validate_key_sentence
 
 
 def load(name):
@@ -83,6 +84,7 @@ def build():
                 assert note.get('sourceIds'), f'Missing classroom provenance: {did}/{expected}'
                 assert all(sid in data['sources'] for sid in note['sourceIds']), f'Unknown source: {did}/{expected}'
                 assert note.get('paragraphs') and all(isinstance(p, str) and p.strip() for p in note['paragraphs'])
+                validate_key_sentence(note, f'{did}/{expected}')
                 signature = tuple(note['paragraphs'])
                 assert signature not in seen_text, f'Repeated generic explanation: {did}/{expected}'
                 seen_text.add(signature)

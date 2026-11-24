@@ -13,7 +13,11 @@
       "rec04@01:29:25"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这一页列出本讲的两条线：整数运算从加减走向乘除，并检查结果是否超出可表示范围；浮点数则先解决实数怎样编码，再讨论怎样运算。"
+    }
   },
   {
     "page": 3,
@@ -29,7 +33,11 @@
       "rec04@01:32:48"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "右图先把 ALU 当成一个有明确接口的部件：A、B 各输入 32 位，result 输出 32 位，下面的 4 位 operation 信号选择运算。"
+    }
   },
   {
     "page": 5,
@@ -45,7 +53,11 @@
       "rec04@01:35:53"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "沿图从左往右读：Ainvert、Binvert 各控制一个输入选择器，决定送入原值还是反相值；中间的 AND、OR、加法器及 Less 输入产生候选结果；最右边的多路选择器再由 Operation 选择哪一个成为 Result。"
+    }
   },
   {
     "page": 6,
@@ -65,7 +77,11 @@
       "rec04@01:47:17"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "图中 32 个 1 位 ALU 从最低位 ALU0 连到最高位 ALU31，进位逐级传递，同一组控制信号送到各位。"
+    }
   },
   {
     "page": 7,
@@ -79,7 +95,11 @@
       "rec04@01:49:53"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "每个较高位的和不仅依赖本位的 A、B，还依赖低一位送来的 CarryOut，因此最坏情况下必须等进位一路传到最高位。"
+    }
   },
   {
     "page": 27,
@@ -94,7 +114,11 @@
       "rec05@03:27"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这一页把浮点数表示约定统一到 IEEE 754，并列出本课使用的两种格式：单精度占 32 位，双精度占 64 位。"
+    }
   },
   {
     "page": 28,
@@ -115,7 +139,11 @@
       "rec05@08:12"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "对规格化的普通数，数值是 (−1)ˢ×(1+fraction)×2ᴱ⁻¹²⁷。"
+    }
   },
   {
     "page": 29,
@@ -136,7 +164,11 @@
       "rec05@22:22"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 2,
+      "text": "下半页给出双精度：1 位符号、11 位指数、52 位 fraction，偏置从 127 改为 1023。"
+    }
   },
   {
     "page": 30,
@@ -159,7 +191,11 @@
       "rec05@30:23"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "按老师现场练习的顺序，先转二进制，再规格化，最后填三个字段：−0.75=−(0.5+0.25)=−0.11₂=−1.1₂×2⁻¹。"
+    }
   },
   {
     "page": 31,
@@ -178,7 +214,11 @@
       "rec05@34:58"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "这页用四位十进制有效数字演示浮点加法的四步：对阶、有效数相加、规格化、舍入。"
+    }
   },
   {
     "page": 32,
@@ -193,7 +233,11 @@
       "rec05@37:12"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "相减得到 0.001₂×2⁻¹；由于前导位不是 1，还要将有效数左移三位，同时把指数从 −1 减到 −4，得到 1.000₂×2⁻⁴=0.0625。"
+    }
   },
   {
     "page": 33,
@@ -210,7 +254,11 @@
       "rec05@41:08"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "让浮点单元跨周期工作，可以让全机继续采用短时钟；把浮点内部再做成流水线，则可让不同运算重叠推进。"
+    }
   },
   {
     "page": 34,
@@ -229,7 +277,11 @@
       "rec05@44:50"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "把左右两图对应起来看：左上 Small ALU 比较两个指数，控制器选择较小指数那一项并右移；中部 Big ALU 对齐后计算有效数；下部移位器配合指数增减完成规格化；最下方 Rounding hardware 把有效数收回规定的位数。"
+    }
   },
   {
     "page": 35,
@@ -242,7 +294,11 @@
       "rec05@46:07"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 0,
+      "text": "课件说乘法器的复杂度与加法器相近，但有效数部分改用乘法器；整个浮点单元还可能支持减法、除法、倒数、平方根以及浮点数与整数之间的转换。"
+    }
   },
   {
     "page": 36,
@@ -262,7 +318,11 @@
       "rec05@50:22"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "在课件采用的成对模型中，$f0/$f1、$f2/$f3 等偶奇配对组成双精度寄存器，通常以偶数编号命名。"
+    }
   },
   {
     "page": 37,
@@ -277,6 +337,10 @@
       "rec05@52:00"
     ],
     "visualReviewed": true,
-    "audioSupported": true
+    "audioSupported": true,
+    "keySentence": {
+      "paragraph": 1,
+      "text": "浮点比较与随后分支分成两步：c.lt.s $f3,$f4 先根据“小于”是否成立设置浮点条件码，再由 bc1t TargetLabel 在条件为真时跳转，或由 bc1f 在条件为假时跳转。"
+    }
   }
 ]
